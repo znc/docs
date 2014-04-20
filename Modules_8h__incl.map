@@ -1,0 +1,16 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$zncconfig_8h.html" title="znc/zncconfig.h" alt="" coords="2651,624,2771,653"/>
+<area shape="rect" id="node5" href="$WebModules_8h.html" title="znc/WebModules.h" alt="" coords="2775,83,2913,112"/>
+<area shape="rect" id="node125" href="$main_8h.html" title="znc/main.h" alt="" coords="2939,83,3029,112"/>
+<area shape="rect" id="node8" href="$Template_8h.html" title="znc/Template.h" alt="" coords="2340,315,2457,344"/>
+<area shape="rect" id="node53" href="$HTTPSock_8h.html" title="znc/HTTPSock.h" alt="" coords="2341,160,2464,189"/>
+<area shape="rect" id="node11" href="$Utils_8h.html" title="znc/Utils.h" alt="" coords="2355,392,2443,421"/>
+<area shape="rect" id="node14" href="$ZNCString_8h.html" title="znc/ZNCString.h" alt="" coords="849,547,975,576"/>
+<area shape="rect" id="node56" href="$Socket_8h.html" title="znc/Socket.h" alt="" coords="2225,237,2329,267"/>
+<area shape="rect" id="node112" href="$FileUtils_8h.html" title="znc/FileUtils.h" alt="" coords="512,392,619,421"/>
+<area shape="rect" id="node59" href="$Csocket_8h.html" title="znc/Csocket.h" alt="" coords="1140,315,1249,344"/>
+<area shape="rect" id="node109" href="$Threads_8h.html" title="znc/Threads.h" alt="" coords="1909,547,2019,576"/>
+<area shape="rect" id="node61" href="$defines_8h.html" title="znc/defines.h" alt="" coords="744,392,851,421"/>
+<area shape="rect" id="node64" href="$ZNCDebug_8h.html" title="znc/ZNCDebug.h" alt="" coords="847,469,977,499"/>
+<area shape="rect" id="node128" href="$version_8h.html" title="znc/version.h" alt="" coords="2976,160,3083,189"/>
+</map>

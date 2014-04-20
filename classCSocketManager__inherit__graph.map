@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classTSocketManager.html" title="Ease of use templated socket manager." alt="" coords="5,160,171,189"/>
+<area shape="rect" id="node9" href="$classTSocketManager.html" title="TSocketManager\&lt; CZNCSock \&gt;" alt="" coords="195,160,421,189"/>
+<area shape="rect" id="node2" title="STL class." alt="" coords="29,5,197,35"/>
+<area shape="rect" id="node4" href="$classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock" alt="" coords="221,5,341,35"/>
+<area shape="rect" id="node11" href="$classCSockManager.html" title="CSockManager" alt="" coords="249,237,367,267"/>
+</map>

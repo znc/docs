@@ -1,0 +1,25 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$Buffer_8h.html" title="Buffer.h" alt="" coords="114,315,183,344"/>
+<area shape="rect" id="node5" href="$Chan_8h.html" title="Chan.h" alt="" coords="43,392,110,421"/>
+<area shape="rect" id="node7" href="$IRCNetwork_8h.html" title="IRCNetwork.h" alt="" coords="363,701,467,731"/>
+<area shape="rect" id="node12" href="$Config_8h.html" title="Config.h" alt="" coords="299,83,374,112"/>
+<area shape="rect" id="node14" href="$defines_8h.html" title="defines.h" alt="" coords="550,160,630,189"/>
+<area shape="rect" id="node42" href="$FileUtils_8h.html" title="FileUtils.h" alt="" coords="740,160,823,189"/>
+<area shape="rect" id="node46" href="$Nick_8h.html" title="Nick.h" alt="" coords="207,315,268,344"/>
+<area shape="rect" id="node52" href="$Server_8h.html" title="Server.h" alt="" coords="627,83,702,112"/>
+<area shape="rect" id="node54" href="$Utils_8h.html" title="Utils.h" alt="" coords="380,315,442,344"/>
+<area shape="rect" id="node61" href="$ZNCDebug_8h.html" title="ZNCDebug.h" alt="" coords="448,83,552,112"/>
+<area shape="rect" id="node9" href="$User_8h.html" title="User.h" alt="" coords="134,392,195,421"/>
+<area shape="rect" id="node16" href="$Csocket_8h.html" title="Csocket.h" alt="" coords="551,237,636,267"/>
+<area shape="rect" id="node18" href="$Socket_8h.html" title="Socket.h" alt="" coords="559,315,636,344"/>
+<area shape="rect" id="node20" href="$Client_8h.html" title="Client.h" alt="" coords="376,392,446,421"/>
+<area shape="rect" id="node22" href="$znc_8h.html" title="znc.h" alt="" coords="570,624,626,653"/>
+<area shape="rect" id="node25" href="$ExecSock_8h.html" title="ExecSock.h" alt="" coords="686,392,779,421"/>
+<area shape="rect" id="node27" href="$HTTPSock_8h.html" title="HTTPSock.h" alt="" coords="803,392,899,421"/>
+<area shape="rect" id="node36" href="$IRCSock_8h.html" title="IRCSock.h" alt="" coords="270,392,352,421"/>
+<area shape="rect" id="node38" href="$Listener_8h.html" title="Listener.h" alt="" coords="635,469,718,499"/>
+<area shape="rect" id="node29" href="$WebModules_8h.html" title="WebModules.h" alt="" coords="742,469,854,499"/>
+<area shape="rect" id="node31" href="$Modules_8h.html" title="Modules.h" alt="" coords="728,547,814,576"/>
+<area shape="rect" id="node34" href="$modperl_2module_8h.html" title="module.h" alt="" coords="730,624,812,653"/>
+<area shape="rect" id="node57" href="$Template_8h.html" title="Template.h" alt="" coords="470,392,560,421"/>
+</map>
