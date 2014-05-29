@@ -189,6 +189,8 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a nickname change occurs.  <a href="#a41b493874ec9168ff131207a471a52d5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPyModule.html#a3cdc990738e698f15556d1287b4b4030">OnKick</a> (const <a class="el" href="classCNick.html">CNick</a> &amp;OpNick, const <a class="el" href="classCString.html">CString</a> &amp;sKickedNick, <a class="el" href="classCChan.html">CChan</a> &amp;Channel, const <a class="el" href="classCString.html">CString</a> &amp;sMessage)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a nick is kicked from a channel.  <a href="#a3cdc990738e698f15556d1287b4b4030"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPyModule.html#a0371ce0a76bb01066ded1f3b6e9867e1">OnJoining</a> (<a class="el" href="classCChan.html">CChan</a> &amp;Channel)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This module hook is called just before ZNC tries to join an IRC channel.  <a href="#a0371ce0a76bb01066ded1f3b6e9867e1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPyModule.html#a4a447c5a01e58fd1fdd1c297be5ea4ae">OnJoin</a> (const <a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCChan.html">CChan</a> &amp;Channel)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a nick joins a channel.  <a href="#a4a447c5a01e58fd1fdd1c297be5ea4ae"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPyModule.html#a703fc25db9304ec36fbc525b2490384d">OnPart</a> (const <a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCChan.html">CChan</a> &amp;Channel, const <a class="el" href="classCString.html">CString</a> &amp;sMessage)</td></tr>
@@ -2952,6 +2954,34 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a0371ce0a76bb01066ded1f3b6e9867e1"></a><!-- doxytag: member="CPyModule::OnJoining" ref="a0371ce0a76bb01066ded1f3b6e9867e1" args="(CChan &amp;Channel)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPyModule.html#a0371ce0a76bb01066ded1f3b6e9867e1">CPyModule::OnJoining</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCChan.html">CChan</a> &amp;&#160;</td>
+          <td class="paramname"><em>Channel</em></td><td>)</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>This module hook is called just before ZNC tries to join an IRC channel. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Chan</td><td>The channel which is about to get joined. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>See <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2" title="This enum is just used for return from module hooks.">CModule::EModRet</a>. </dd></dl>
+
+<p>Reimplemented from <a class="el" href="classCModule.html#a2c41ea19555d975fe5f7517b6161ff2b">CModule</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a3cdc990738e698f15556d1287b4b4030"></a><!-- doxytag: member="CPyModule::OnKick" ref="a3cdc990738e698f15556d1287b4b4030" args="(const CNick &amp;OpNick, const CString &amp;sKickedNick, CChan &amp;Channel, const CString &amp;sMessage)" -->
 <div class="memitem">
 <div class="memproto">
@@ -5540,7 +5570,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 29 2014 19:54:55 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu May 29 2014 21:51:42 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

@@ -158,6 +158,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#a4cfb721c00ed43bf58fd5a9120c5b38e">OnQuit</a> (const <a class="el" href="classCNick.html">CNick</a> &amp;Nick, const <a class="el" href="classCString.html">CString</a> &amp;sMessage, const std::vector&lt; <a class="el" href="classCChan.html">CChan</a> * &gt; &amp;vChans)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#acf4f52ae99687dc9a596954bd294c670">OnNick</a> (const <a class="el" href="classCNick.html">CNick</a> &amp;Nick, const <a class="el" href="classCString.html">CString</a> &amp;sNewNick, const std::vector&lt; <a class="el" href="classCChan.html">CChan</a> * &gt; &amp;vChans)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#a6f314b8342315df1da58faa747dbbb5a">OnKick</a> (const <a class="el" href="classCNick.html">CNick</a> &amp;Nick, const <a class="el" href="classCString.html">CString</a> &amp;sOpNick, <a class="el" href="classCChan.html">CChan</a> &amp;Channel, const <a class="el" href="classCString.html">CString</a> &amp;sMessage)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#adf0c885779a28254092323711acdd3d5">OnJoining</a> (<a class="el" href="classCChan.html">CChan</a> &amp;Channel)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#a09921903eb9ca6ccf190f28742e70550">OnJoin</a> (const <a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCChan.html">CChan</a> &amp;Channel)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#af3f59621e39eb1c155f2f318c53c962f">OnPart</a> (const <a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCChan.html">CChan</a> &amp;Channel, const <a class="el" href="classCString.html">CString</a> &amp;sMessage)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#a47b5930b6390721d7509c4e63cbbb03b">OnInvite</a> (const <a class="el" href="classCNick.html">CNick</a> &amp;Nick, const <a class="el" href="classCString.html">CString</a> &amp;sChan)</td></tr>
@@ -1575,6 +1576,23 @@ Protected Attributes</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adf0c885779a28254092323711acdd3d5"></a><!-- doxytag: member="CModules::OnJoining" ref="adf0c885779a28254092323711acdd3d5" args="(CChan &amp;Channel)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classCModules.html#adf0c885779a28254092323711acdd3d5">CModules::OnJoining</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCChan.html">CChan</a> &amp;&#160;</td>
+          <td class="paramname"><em>Channel</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div>
@@ -3064,7 +3082,7 @@ template&lt;typename T&gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 29 2014 19:54:55 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu May 29 2014 21:51:42 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
