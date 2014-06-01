@@ -163,7 +163,7 @@ var searchData=
   ['stripcontrols',['StripControls',['../classCString.html#ac652e12b358ade93dc2c4c77a3359e1e',1,'CString']]],
   ['stripcontrols_5fn',['StripControls_n',['../classCString.html#a506c033130128142d90b40631f0fca80',1,'CString']]],
   ['strnchr',['strnchr',['../classCString.html#ac63ee1a84c29c5ed960d46adb410b75d',1,'CString']]],
-  ['supportstype',['SupportsType',['../classCModInfo.html#ac1ba147c10465e55f4bc91128da0f7bb',1,'CModInfo']]],
+  ['supportstype',['SupportsType',['../classCModInfo.html#a1bfb9e21d6dfa58c34e3b67eb79abfbb',1,'CModInfo']]],
   ['swapsockbyaddr',['SwapSockByAddr',['../classCSocketManager.html#a19ac59ce922cab61680e59da1bc3f24a',1,'CSocketManager']]],
   ['swapsockbyidx',['SwapSockByIdx',['../classCSocketManager.html#aa68ca894193d5d5ee79dd3b65e2419f7',1,'CSocketManager']]],
   ['swig_5fmangledtypequery',['SWIG_MangledTypeQuery',['../swigperlrun_8h.html#a8f0d4e2a73cb2f33d6badc1b251b74ce',1,'SWIG_MangledTypeQuery(const char *name):&#160;swigperlrun.h'],['../swigpyrun_8h.html#a8f0d4e2a73cb2f33d6badc1b251b74ce',1,'SWIG_MangledTypeQuery(const char *name):&#160;swigpyrun.h']]],
