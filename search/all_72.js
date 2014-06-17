@@ -39,7 +39,7 @@ var searchData=
   ['replace',['Replace',['../classCString.html#a4ab2972a48d0bc1084fed5a1f5fe792c',1,'CString::Replace(CString &amp;sStr, const CString &amp;sReplace, const CString &amp;sWith, const CString &amp;sLeft=&quot;&quot;, const CString &amp;sRight=&quot;&quot;, bool bRemoveDelims=false)'],['../classCString.html#ac0c8ae7233080ee08424a095938c48a9',1,'CString::Replace(const CString &amp;sReplace, const CString &amp;sWith, const CString &amp;sLeft=&quot;&quot;, const CString &amp;sRight=&quot;&quot;, bool bRemoveDelims=false)']]],
   ['replace_5fn',['Replace_n',['../classCString.html#a176f24ea1423b28cfedf635a13baf62f',1,'CString']]],
   ['requiresadmin',['RequiresAdmin',['../classCWebSubPage.html#a216f8095c10c223967cf2360d3cc1b3f',1,'CWebSubPage']]],
-  ['reset',['Reset',['../classCChan.html#a6defdd3977e406f581b95f4e8f412261',1,'CChan::Reset()'],['../classCNick.html#ae793ab4d1023ff2568e77a2d27c3063d',1,'CNick::Reset()']]],
+  ['reset',['Reset',['../classCChan.html#a6defdd3977e406f581b95f4e8f412261',1,'CChan::Reset()'],['../classCCron.html#a5d146f6713c1b9e163bac0e3c84a5e74',1,'CCron::Reset()'],['../classCNick.html#ae793ab4d1023ff2568e77a2d27c3063d',1,'CNick::Reset()']]],
   ['resetbytesread',['ResetBytesRead',['../classCsock.html#a8d07fe5d296508b0a324444baa16eec0',1,'Csock']]],
   ['resetbyteswritten',['ResetBytesWritten',['../classCsock.html#ac872aac9bcf7d2f8465d1f708478395c',1,'Csock']]],
   ['resetchans',['ResetChans',['../classCIRCSock.html#a6cb0066551d7a541b8fb5c088b26e5f8',1,'CIRCSock']]],
