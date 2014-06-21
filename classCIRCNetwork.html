@@ -80,6 +80,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a>  </div>
@@ -101,6 +102,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p><a href="classCIRCNetwork-members.html">List of all members.</a></p>
 <table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="classCIRCNetwork.html#a9fed91ead68a69eb6c7e40d290fffe6ba1b5fc9ac194cb0117d86d675a9293a04">PING_TIMEOUT</a> =  270
+ }</td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a5af5cfea130fa4cf3052be186fb539dd">CIRCNetwork</a> (<a class="el" href="classCUser.html">CUser</a> *pUser, const <a class="el" href="classCString.html">CString</a> &amp;sName)</td></tr>
@@ -225,7 +230,29 @@ Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCBuffer.html">CBuffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a410597f307e5d183f3b20a2d3dd3a9b6">m_RawBuffer</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCBuffer.html">CBuffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a51c7df78ef57d45908173475eb980632">m_MotdBuffer</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCBuffer.html">CBuffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a907757e3ca82bf32d7d36f26fb4c2635">m_QueryBuffer</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">CIRCNetworkPingTimer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a6f681108797394360afadb84e5858700">m_pPingTimer</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">CIRCNetworkJoinTimer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a502ffe4f75fe06dee55b69df16a84e27">m_pJoinTimer</a></td></tr>
 </table>
+<hr/><h2>Member Enumeration Documentation</h2>
+<a class="anchor" id="a9fed91ead68a69eb6c7e40d290fffe6b"></a><!-- doxytag: member="CIRCNetwork::@1" ref="a9fed91ead68a69eb6c7e40d290fffe6b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="a9fed91ead68a69eb6c7e40d290fffe6ba1b5fc9ac194cb0117d86d675a9293a04"></a><!-- doxytag: member="PING_TIMEOUT" ref="a9fed91ead68a69eb6c7e40d290fffe6ba1b5fc9ac194cb0117d86d675a9293a04" args="" -->PING_TIMEOUT</em>&nbsp;</td><td>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+</div>
+</div>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a5af5cfea130fa4cf3052be186fb539dd"></a><!-- doxytag: member="CIRCNetwork::CIRCNetwork" ref="a5af5cfea130fa4cf3052be186fb539dd" args="(CUser *pUser, const CString &amp;sName)" -->
 <div class="memitem">
@@ -2128,6 +2155,19 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a502ffe4f75fe06dee55b69df16a84e27"></a><!-- doxytag: member="CIRCNetwork::m_pJoinTimer" ref="a502ffe4f75fe06dee55b69df16a84e27" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CIRCNetworkJoinTimer* <a class="el" href="classCIRCNetwork.html#a502ffe4f75fe06dee55b69df16a84e27">CIRCNetwork::m_pJoinTimer</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="acfaf517275a6937fe119abf0ac421b55"></a><!-- doxytag: member="CIRCNetwork::m_pModules" ref="acfaf517275a6937fe119abf0ac421b55" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -2140,6 +2180,19 @@ Protected Attributes</h2></td></tr>
 <div class="memdoc">
 
 <p>Referenced by <a class="el" href="classCIRCNetwork.html#a3bd545af4f02769c9e15d93dca28feee">GetModules()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6f681108797394360afadb84e5858700"></a><!-- doxytag: member="CIRCNetwork::m_pPingTimer" ref="a6f681108797394360afadb84e5858700" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CIRCNetworkPingTimer* <a class="el" href="classCIRCNetwork.html#a6f681108797394360afadb84e5858700">CIRCNetwork::m_pPingTimer</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
 
 </div>
 </div>
@@ -2399,7 +2452,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 17 2014 22:38:17 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 21 2014 22:07:43 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

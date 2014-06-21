@@ -1,7 +1,7 @@
 var searchData=
 [
   ['dcast',['dcast',['../structswig__type__info.html#a07df4bedf85be77b23756b531b60e0dd',1,'swig_type_info']]],
-  ['debug',['Debug',['../classCDebug.html#a4d49b5a02ac1bd965ca05ed7192986b4',1,'CDebug::Debug()'],['../classCDebug.html#a1639e4b89bfad4c29c9769e0bc3f4db5',1,'CDebug::debug()'],['../ZNCDebug_8h.html#a9c8bd5c22c538fb934e235b11ff3bf57',1,'DEBUG():&#160;ZNCDebug.h']]],
+  ['debug',['debug',['../classCDebug.html#a1639e4b89bfad4c29c9769e0bc3f4db5',1,'CDebug::debug()'],['../classCDebug.html#a4d49b5a02ac1bd965ca05ed7192986b4',1,'CDebug::Debug()'],['../ZNCDebug_8h.html#a9c8bd5c22c538fb934e235b11ff3bf57',1,'DEBUG():&#160;ZNCDebug.h']]],
   ['decode',['Decode',['../classMCString.html#ad0eaf05fcab06db0027802f02c23b0aa',1,'MCString']]],
   ['decrowindex',['DecRowIndex',['../classCTemplateLoopContext.html#a26d48bfd44148f9ae992c70b156ef2d3',1,'CTemplateLoopContext']]],
   ['decrypt',['Decrypt',['../classCString.html#ae30eccf1811c3054fc3159bcbac12e79',1,'CString']]],

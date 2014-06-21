@@ -6,5 +6,6 @@ var searchData=
   ['page_5fprint',['PAGE_PRINT',['../classCWebSock.html#a8b46819ec286f193efb0f8efcc8ace5aac14cae1c69bf0832310470531b1e4b51',1,'CWebSock']]],
   ['perl_5floaded',['Perl_Loaded',['../modperl_2module_8h.html#a1d4b8c407564f739022df8b5c4efaaa9a8f42bb5e0102a51c6758918758edf5f3',1,'module.h']]],
   ['perl_5floaderror',['Perl_LoadError',['../modperl_2module_8h.html#a1d4b8c407564f739022df8b5c4efaaa9a5c45aa54c01780e876d35e7ef9243adc',1,'module.h']]],
-  ['perl_5fnotfound',['Perl_NotFound',['../modperl_2module_8h.html#a1d4b8c407564f739022df8b5c4efaaa9ad8406ca4ca7a9df35409271685e928be',1,'module.h']]]
+  ['perl_5fnotfound',['Perl_NotFound',['../modperl_2module_8h.html#a1d4b8c407564f739022df8b5c4efaaa9ad8406ca4ca7a9df35409271685e928be',1,'module.h']]],
+  ['ping_5ftimeout',['PING_TIMEOUT',['../classCIRCNetwork.html#a9fed91ead68a69eb6c7e40d290fffe6ba1b5fc9ac194cb0117d86d675a9293a04',1,'CIRCNetwork']]]
 ];
