@@ -104,7 +104,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="classCIRCNetwork.html#a9fed91ead68a69eb6c7e40d290fffe6ba1b5fc9ac194cb0117d86d675a9293a04">PING_TIMEOUT</a> =  270
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="classCIRCNetwork.html#a9fed91ead68a69eb6c7e40d290fffe6ba3f207f8f9ab984372258f4363011138e">PING_FREQUENCY</a> =  270, 
+<a class="el" href="classCIRCNetwork.html#a9fed91ead68a69eb6c7e40d290fffe6bae044431ba9a775c6489d2383df14f4d3">PING_SLACK</a> =  30, 
+<a class="el" href="classCIRCNetwork.html#a9fed91ead68a69eb6c7e40d290fffe6bab30cf0fd44745403f459d4ee5ae0b527">NO_TRAFFIC_TIMEOUT</a> =  540
  }</td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -245,7 +247,15 @@ Protected Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 <dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
-<tr><td valign="top"><em><a class="anchor" id="a9fed91ead68a69eb6c7e40d290fffe6ba1b5fc9ac194cb0117d86d675a9293a04"></a><!-- doxytag: member="PING_TIMEOUT" ref="a9fed91ead68a69eb6c7e40d290fffe6ba1b5fc9ac194cb0117d86d675a9293a04" args="" -->PING_TIMEOUT</em>&nbsp;</td><td>
+<tr><td valign="top"><em><a class="anchor" id="a9fed91ead68a69eb6c7e40d290fffe6ba3f207f8f9ab984372258f4363011138e"></a><!-- doxytag: member="PING_FREQUENCY" ref="a9fed91ead68a69eb6c7e40d290fffe6ba3f207f8f9ab984372258f4363011138e" args="" -->PING_FREQUENCY</em>&nbsp;</td><td>
+<p>How long must an IRC connection be idle before ZNC sends a ping. </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a9fed91ead68a69eb6c7e40d290fffe6bae044431ba9a775c6489d2383df14f4d3"></a><!-- doxytag: member="PING_SLACK" ref="a9fed91ead68a69eb6c7e40d290fffe6bae044431ba9a775c6489d2383df14f4d3" args="" -->PING_SLACK</em>&nbsp;</td><td>
+<p>Time between checks if PINGs need to be sent. </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a9fed91ead68a69eb6c7e40d290fffe6bab30cf0fd44745403f459d4ee5ae0b527"></a><!-- doxytag: member="NO_TRAFFIC_TIMEOUT" ref="a9fed91ead68a69eb6c7e40d290fffe6bab30cf0fd44745403f459d4ee5ae0b527" args="" -->NO_TRAFFIC_TIMEOUT</em>&nbsp;</td><td>
+<p>Timeout after which IRC connections are closed. </p>
+<p>Must obviously be smaller than PING_FREQUENCY + PING_SLACK. </p>
 </td></tr>
 </table>
 </dd>
@@ -2452,7 +2462,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 1 2014 22:35:47 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jul 14 2014 13:49:00 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

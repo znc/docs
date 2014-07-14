@@ -10,6 +10,7 @@ var searchData=
   ['next',['next',['../structswig__cast__info.html#a2fc1b5702ec07bc23135df5c5db8e53e',1,'swig_cast_info::next()'],['../structswig__module__info.html#adc59649870cda1ab12f45e57de99e572',1,'swig_module_info::next()'],['../structSwigPyObject.html#af7b93d7ae49a6f3bdf6511043fe8e839',1,'SwigPyObject::next()']]],
   ['nick_2eh',['Nick.h',['../Nick_8h.html',1,'']]],
   ['nickequals',['NickEquals',['../classCNick.html#af8d11940b96b5bcaa376c26a61c75a69',1,'CNick']]],
+  ['no_5ftraffic_5ftimeout',['NO_TRAFFIC_TIMEOUT',['../classCIRCNetwork.html#a9fed91ead68a69eb6c7e40d290fffe6bab30cf0fd44745403f459d4ee5ae0b527',1,'CIRCNetwork']]],
   ['noarg',['NoArg',['../classCIRCSock.html#a8e68d9e0596157b56783e5e9603f7b69ad8393389d80a63f9b18ba1e05628edf1',1,'CIRCSock']]],
   ['nonblockingio',['NonBlockingIO',['../classCsock.html#abef02be96a92f5097556f1b7c082e76a',1,'Csock']]],
   ['nothing',['NOTHING',['../main_8h.html#aad4a7ebff687dc5228cc3fd4d25067f2',1,'main.h']]],
