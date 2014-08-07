@@ -21,6 +21,7 @@ var searchData=
   ['deleteusers',['DeleteUsers',['../classCZNC.html#a596d68f6a2f0a41780f7b6113a2656a4',1,'CZNC']]],
   ['dellistener',['DelListener',['../classCZNC.html#a8b217a34eb592bef8c395638406d3e5f',1,'CZNC']]],
   ['delnv',['DelNV',['../classCModule.html#a75c3a7f237be34db1b10b457979cbf4a',1,'CModule::DelNV(const CString &amp;sName, bool bWriteToDisk=true)'],['../classCModule.html#a931dc8ba80bd445cc0f0e287cc5a3427',1,'CModule::DelNV(MCString::iterator it)']]],
+  ['delquery',['DelQuery',['../classCIRCNetwork.html#a4da54a7debfa735b551f9d40bb544ff9',1,'CIRCNetwork']]],
   ['delserver',['DelServer',['../classCIRCNetwork.html#aa41c3df391a80704b62968f4ce7bba18',1,'CIRCNetwork']]],
   ['delservers',['DelServers',['../classCIRCNetwork.html#a083879cf7ce5253a7be92cdc9de7729d',1,'CIRCNetwork']]],
   ['delsock',['DelSock',['../classCSocketManager.html#aee351fd02bdd11badbefde04df270a91',1,'CSocketManager']]],

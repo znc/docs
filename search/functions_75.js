@@ -14,7 +14,7 @@ var searchData=
   ['updateline',['UpdateLine',['../classCBuffer.html#a2e1ea4120131546a7abd971b25a83d58',1,'CBuffer']]],
   ['updatemodule',['UpdateModule',['../classCZNC.html#aeb9494dc8f084bb869960556d7b5b80a',1,'CZNC']]],
   ['updatemotdbuffer',['UpdateMotdBuffer',['../classCIRCNetwork.html#ad2e93267b0a2707e8cd13a739f105956',1,'CIRCNetwork']]],
-  ['updatequerybuffer',['UpdateQueryBuffer',['../classCIRCNetwork.html#aba3defb67c27a3d36ac9c3ada6649e4a',1,'CIRCNetwork']]],
+  ['updatenoticebuffer',['UpdateNoticeBuffer',['../classCIRCNetwork.html#aee8a7a13b6f1a88608fab585869b1a8b',1,'CIRCNetwork']]],
   ['updaterawbuffer',['UpdateRawBuffer',['../classCIRCNetwork.html#a586fa42b6a103e3f732b3c846ead868a',1,'CIRCNetwork']]],
   ['updatetime',['UpdateTime',['../classCBufLine.html#a49e37d9c015679aa2fcc779b37671c1c',1,'CBufLine']]],
   ['urlsplit',['URLSplit',['../classCString.html#acb7d0bada8c196811df6bccb50e0b32f',1,'CString']]],

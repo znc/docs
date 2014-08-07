@@ -30,6 +30,7 @@ var searchData=
   ['_7ecperltimer',['~CPerlTimer',['../classCPerlTimer.html#aee15821c215b34ead8fa604a7dcd2ac8',1,'CPerlTimer']]],
   ['_7ecpysocket',['~CPySocket',['../classCPySocket.html#a7519b87c91a258707b915110220fc226',1,'CPySocket']]],
   ['_7ecpytimer',['~CPyTimer',['../classCPyTimer.html#a1e5417614a9f02d6553eb09f1c2175b3',1,'CPyTimer']]],
+  ['_7ecquery',['~CQuery',['../classCQuery.html#a15a30f4ed2c4ed93cf19281259eeefce',1,'CQuery']]],
   ['_7ecreallistener',['~CRealListener',['../classCRealListener.html#a5b98d7c0fab2f299a1837ecea3b74b67',1,'CRealListener']]],
   ['_7ecscharbuffer',['~CSCharBuffer',['../classCSCharBuffer.html#a13b9b5bd1fe6b3870ce263cb0b47aab2',1,'CSCharBuffer']]],
   ['_7ecsconnection',['~CSConnection',['../classCSConnection.html#ab393d80056ab3c7b4742c1bb62e31784',1,'CSConnection']]],

@@ -38,6 +38,7 @@ var searchData=
   ['cpyretstring',['CPyRetString',['../classCPyRetString.html',1,'']]],
   ['cpysocket',['CPySocket',['../classCPySocket.html',1,'']]],
   ['cpytimer',['CPyTimer',['../classCPyTimer.html',1,'']]],
+  ['cquery',['CQuery',['../classCQuery.html',1,'']]],
   ['creallistener',['CRealListener',['../classCRealListener.html',1,'']]],
   ['cscharbuffer',['CSCharBuffer',['../classCSCharBuffer.html',1,'']]],
   ['csconnection',['CSConnection',['../classCSConnection.html',1,'']]],

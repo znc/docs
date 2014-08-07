@@ -7,7 +7,7 @@ var searchData=
   ['add',['Add',['../classCSMonitorFD.html#adb2f7cb1cfa8e6bb331cd91f9461eb8a',1,'CSMonitorFD']]],
   ['addallowedhost',['AddAllowedHost',['../classCUser.html#a4e0035f6e23425108972ae56b2fcac7d',1,'CUser']]],
   ['addbindhost',['AddBindHost',['../classCZNC.html#a68573dcd13a9a71561a841b24c41cc00',1,'CZNC']]],
-  ['addbuffer',['AddBuffer',['../classCChan.html#a4ba878c2e1d4e247e10300726d88e2ca',1,'CChan']]],
+  ['addbuffer',['AddBuffer',['../classCChan.html#a4ba878c2e1d4e247e10300726d88e2ca',1,'CChan::AddBuffer()'],['../classCQuery.html#a77a57241859a9073d5c038ee72456cee',1,'CQuery::AddBuffer()']]],
   ['addbytesread',['AddBytesRead',['../classCUser.html#a726f152e63aa46f7029fae0c442a33f7',1,'CUser::AddBytesRead()'],['../classCZNC.html#aaa5a0c5c2d62570fa85cf5910b7c9573',1,'CZNC::AddBytesRead()']]],
   ['addbyteswritten',['AddBytesWritten',['../classCUser.html#a54c48c7771a1225804b0a981507b2e7d',1,'CUser::AddBytesWritten()'],['../classCZNC.html#ad1954109f26e8bb3cb4ab72f0444cf03',1,'CZNC::AddBytesWritten()']]],
   ['addchan',['AddChan',['../classCIRCNetwork.html#af60240fa84f6940b5953a540cbd8958f',1,'CIRCNetwork::AddChan(CChan *pChan)'],['../classCIRCNetwork.html#aa9aa30eea6e00e72f140cfbb4db9170e',1,'CIRCNetwork::AddChan(const CString &amp;sName, bool bInConfig)']]],
@@ -31,9 +31,10 @@ var searchData=
   ['addnetworktoqueue',['AddNetworkToQueue',['../classCZNC.html#a2755a8c3d9eb6062838a6825f89a21e5',1,'CZNC']]],
   ['addnick',['AddNick',['../classCChan.html#a62939f649bb33637c99cdd35b2fb9f89',1,'CChan']]],
   ['addnicks',['AddNicks',['../classCChan.html#ab9bef03bcfb658ac4d00aa305852da55',1,'CChan']]],
+  ['addnoticebuffer',['AddNoticeBuffer',['../classCIRCNetwork.html#a444af52611ea727b28fec56442e8f3da',1,'CIRCNetwork']]],
   ['addparam',['AddParam',['../classCWebSubPage.html#afefb57ca29e910deb03806e3e03b9868',1,'CWebSubPage']]],
   ['addperm',['AddPerm',['../classCChan.html#ac92ae268d818de765e354c4bfd1bc010',1,'CChan::AddPerm()'],['../classCNick.html#a235bf1c9611dcb1ddf9e3364b034fc78',1,'CNick::AddPerm()']]],
-  ['addquerybuffer',['AddQueryBuffer',['../classCIRCNetwork.html#a7deca951456f7bd66ea04270b5c6e22a',1,'CIRCNetwork']]],
+  ['addquery',['AddQuery',['../classCIRCNetwork.html#a235bbfbdc4bef0828cabbd411f388154',1,'CIRCNetwork']]],
   ['addrawbuffer',['AddRawBuffer',['../classCIRCNetwork.html#a3b1ce33a1816deb2868bfc59b18d3c96',1,'CIRCNetwork']]],
   ['addrow',['AddRow',['../classCTemplate.html#ab52ef0b224ea95e2b3db01b13526881d',1,'CTemplate::AddRow()'],['../classCTable.html#ac6817cb38f1e9ca815ceb16d69802192',1,'CTable::AddRow()']]],
   ['addserver',['AddServer',['../classCIRCNetwork.html#ac003e051e57791f3e9f807dbf366eb82',1,'CIRCNetwork::AddServer(const CString &amp;sName)'],['../classCIRCNetwork.html#ab9590922fa4b039e76a45763b0ca0a7e',1,'CIRCNetwork::AddServer(const CString &amp;sName, unsigned short uPort, const CString &amp;sPass=&quot;&quot;, bool bSSL=false)']]],
@@ -58,5 +59,6 @@ var searchData=
   ['attach',['Attach',['../classCSmartPtr.html#ad627d290d812326e76857f13abec7c84',1,'CSmartPtr']]],
   ['attachuser',['AttachUser',['../classCChan.html#a25d096b0c139d402e6b20c4570658874',1,'CChan']]],
   ['authuser',['AuthUser',['../classCClient.html#a070b00519b2415c2420f4b90679b1bc7',1,'CClient::AuthUser()'],['../classCZNC.html#aeed196f4cbfe3de4a77285991e21aee8',1,'CZNC::AuthUser()']]],
-  ['autoclearchanbuffer',['AutoClearChanBuffer',['../classCChan.html#a9778b5f611568aa8ea62a7634248cf34',1,'CChan::AutoClearChanBuffer()'],['../classCUser.html#afe0c8d6d66ec666a58a3ca0e8b82f850',1,'CUser::AutoClearChanBuffer()']]]
+  ['autoclearchanbuffer',['AutoClearChanBuffer',['../classCChan.html#a9778b5f611568aa8ea62a7634248cf34',1,'CChan::AutoClearChanBuffer()'],['../classCUser.html#afe0c8d6d66ec666a58a3ca0e8b82f850',1,'CUser::AutoClearChanBuffer()']]],
+  ['autoclearquerybuffer',['AutoClearQueryBuffer',['../classCUser.html#af0d6c7ca5c4ef5082125a4adee542e57',1,'CUser']]]
 ];

@@ -93,6 +93,7 @@ This is the complete list of members for <a class="el" href="classCUser.html">CU
   <tr class="memlist"><td><a class="el" href="classCUser.html#abfebf033ce05c4c37b23f29305fbffed">AddTimestamp</a>(const CString &amp;sStr) const </td><td><a class="el" href="classCUser.html">CUser</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCUser.html#a65b3b07bf03eecde46721595a828893a">AddTimestamp</a>(time_t tm, const CString &amp;sStr) const </td><td><a class="el" href="classCUser.html">CUser</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCUser.html#afe0c8d6d66ec666a58a3ca0e8b82f850">AutoClearChanBuffer</a>() const </td><td><a class="el" href="classCUser.html">CUser</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCUser.html#af0d6c7ca5c4ef5082125a4adee542e57">AutoClearQueryBuffer</a>() const </td><td><a class="el" href="classCUser.html">CUser</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCUser.html#a2d5a480c5ef887658312b2ffb018f6bb">BounceAllClients</a>()</td><td><a class="el" href="classCUser.html">CUser</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCUser.html#a1b369756c27a425c0774e657da4398bb">BytesRead</a>() const </td><td><a class="el" href="classCUser.html">CUser</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCUser.html#a586590690bc02b1a6eb1597b09ae67d3">BytesWritten</a>() const </td><td><a class="el" href="classCUser.html">CUser</a></td><td><code> [inline]</code></td></tr>
@@ -153,6 +154,7 @@ This is the complete list of members for <a class="el" href="classCUser.html">CU
   <tr class="memlist"><td><a class="el" href="classCUser.html#a3adfecf0c84bb907f28de26c0753bad1">m_bAdmin</a></td><td><a class="el" href="classCUser.html">CUser</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCUser.html#a9127812fa81d430dbe300e2432e00cd5">m_bAppendTimestamp</a></td><td><a class="el" href="classCUser.html">CUser</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCUser.html#a1f08040c6bab38f7b1981c7febe103d1">m_bAutoClearChanBuffer</a></td><td><a class="el" href="classCUser.html">CUser</a></td><td><code> [protected]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCUser.html#af6ab509314c9fb7fc289ef3d793868e5">m_bAutoClearQueryBuffer</a></td><td><a class="el" href="classCUser.html">CUser</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCUser.html#a99e99ef8cca25daff30a243576320ddc">m_bBeingDeleted</a></td><td><a class="el" href="classCUser.html">CUser</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCUser.html#a4b3371f0512f09c6024562c63b4860bc">m_bDenyLoadMod</a></td><td><a class="el" href="classCUser.html">CUser</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCUser.html#a21fc51fce7728f3402acf80f946c593c">m_bDenySetBindHost</a></td><td><a class="el" href="classCUser.html">CUser</a></td><td><code> [protected]</code></td></tr>
@@ -187,11 +189,13 @@ This is the complete list of members for <a class="el" href="classCUser.html">CU
   <tr class="memlist"><td><a class="el" href="classCUser.html#a8d813ccc606708f662d66cf1fd82d7de">m_uMaxJoins</a></td><td><a class="el" href="classCUser.html">CUser</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCUser.html#a83e2963681645a32d54b4b37e6ef75a7">m_uMaxJoinTries</a></td><td><a class="el" href="classCUser.html">CUser</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCUser.html#a921a8e1b22dff94138229239d14fdc8e">m_uMaxNetworks</a></td><td><a class="el" href="classCUser.html">CUser</a></td><td><code> [protected]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCUser.html#a98d449fa6716743231513d231f1231b3">m_uMaxQueryBuffers</a></td><td><a class="el" href="classCUser.html">CUser</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCUser.html#a3c4c1f6aa917bbbad3d29d216d308583">m_vClients</a></td><td><a class="el" href="classCUser.html">CUser</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCUser.html#a8f9d81b4e3ff7f1b3569a2b3370611a6">m_vIRCNetworks</a></td><td><a class="el" href="classCUser.html">CUser</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCUser.html#a4db7d0cc25784c80ae512b7799c457e3">MakeCleanUserName</a>(const CString &amp;sUserName)</td><td><a class="el" href="classCUser.html">CUser</a></td><td><code> [static]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCUser.html#aa927121a90a0663bf53fecf34d553eed">MaxJoins</a>() const </td><td><a class="el" href="classCUser.html">CUser</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCUser.html#a3449ca7b2f99e5275546d0611d0ac147">MaxNetworks</a>() const </td><td><a class="el" href="classCUser.html">CUser</a></td><td><code> [inline]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCUser.html#a776c59c908691f6486f96a177aac8a19">MaxQueryBuffers</a>() const </td><td><a class="el" href="classCUser.html">CUser</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCUser.html#a668a2fc9df60fe7c401dc56579ba2310">MultiClients</a>() const </td><td><a class="el" href="classCUser.html">CUser</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCUser.html#ae17386027db366333a5d1914dbef2622">ParseConfig</a>(CConfig *Config, CString &amp;sError)</td><td><a class="el" href="classCUser.html">CUser</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCUser.html#ab8ce63453333e82ce1be9a4f41da49a6">PutAllUser</a>(const CString &amp;sLine, CClient *pClient=NULL, CClient *pSkipClient=NULL)</td><td><a class="el" href="classCUser.html">CUser</a></td><td></td></tr>
@@ -205,6 +209,7 @@ This is the complete list of members for <a class="el" href="classCUser.html">CU
   <tr class="memlist"><td><a class="el" href="classCUser.html#afa77424fccbd7b9a2770eec5313c4a9f">SetAdmin</a>(bool b)</td><td><a class="el" href="classCUser.html">CUser</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCUser.html#a63553e33fdb763fda7bd652566e42bbc">SetAltNick</a>(const CString &amp;s)</td><td><a class="el" href="classCUser.html">CUser</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCUser.html#a335efbd77ee1ff8f1efa436548655b4c">SetAutoClearChanBuffer</a>(bool b)</td><td><a class="el" href="classCUser.html">CUser</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCUser.html#a033c5d3ae5f694a1d3fd9f3d9521aa70">SetAutoClearQueryBuffer</a>(bool b)</td><td><a class="el" href="classCUser.html">CUser</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCUser.html#a033ba9b6f43282315b1e23b2b79785df">SetBeingDeleted</a>(bool b)</td><td><a class="el" href="classCUser.html">CUser</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCUser.html#ac3adaad38aff57276c98328b83f2b045">SetBindHost</a>(const CString &amp;s)</td><td><a class="el" href="classCUser.html">CUser</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCUser.html#a50409191d3116e9952ff6e576bf443d8">SetBufferCount</a>(unsigned int u, bool bForce=false)</td><td><a class="el" href="classCUser.html">CUser</a></td><td></td></tr>
@@ -217,6 +222,7 @@ This is the complete list of members for <a class="el" href="classCUser.html">CU
   <tr class="memlist"><td><a class="el" href="classCUser.html#a93f48832a3e4da7c8ca952948d61f013">SetJoinTries</a>(unsigned int i)</td><td><a class="el" href="classCUser.html">CUser</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCUser.html#adb72f28c78ac482d5874d2fe43044fac">SetMaxJoins</a>(unsigned int i)</td><td><a class="el" href="classCUser.html">CUser</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCUser.html#aade627c876ac263dc8e7f3388ca752b1">SetMaxNetworks</a>(unsigned int i)</td><td><a class="el" href="classCUser.html">CUser</a></td><td><code> [inline]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCUser.html#a93b7d4c430420cadc30d039fdf1a3b15">SetMaxQueryBuffers</a>(unsigned int i)</td><td><a class="el" href="classCUser.html">CUser</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCUser.html#a676b2c86c6b4e494e249757f0d106d5a">SetMultiClients</a>(bool b)</td><td><a class="el" href="classCUser.html">CUser</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCUser.html#a40d7b7262a1462cfea0ceda8da68540c">SetNick</a>(const CString &amp;s)</td><td><a class="el" href="classCUser.html">CUser</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCUser.html#a1bf89a3d0ae097bcdc352aa047ef0db1">SetPass</a>(const CString &amp;s, eHashType eHash, const CString &amp;sSalt=&quot;&quot;)</td><td><a class="el" href="classCUser.html">CUser</a></td><td></td></tr>
@@ -250,7 +256,7 @@ This is the complete list of members for <a class="el" href="classCUser.html">CU
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 1 2014 21:57:10 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Aug 7 2014 19:57:32 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

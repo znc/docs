@@ -18,6 +18,8 @@ var searchData=
   ['findnetwork',['FindNetwork',['../classCUser.html#a5db8f6695ad8f07f3336febc6441cf1b',1,'CUser']]],
   ['findnick',['FindNick',['../classCChan.html#acbb873f53406abaa7e4e3413c740d18c',1,'CChan::FindNick(const CString &amp;sNick) const '],['../classCChan.html#a383388e1303926da4ed79897ca3c6611',1,'CChan::FindNick(const CString &amp;sNick)']]],
   ['findnv',['FindNV',['../classCModule.html#afd64bcaf0421f795b886ca0ffa587e26',1,'CModule']]],
+  ['findqueries',['FindQueries',['../classCIRCNetwork.html#afd9ca9addb026ddfa42d9c83f5b20965',1,'CIRCNetwork']]],
+  ['findquery',['FindQuery',['../classCIRCNetwork.html#a690d6435d82a42db3fb47069a9ea0c9e',1,'CIRCNetwork']]],
   ['findserver',['FindServer',['../classCIRCNetwork.html#addd049c31ec60607b2e78015a859c8e2',1,'CIRCNetwork']]],
   ['findsockbyfd',['FindSockByFD',['../classCSocketManager.html#a7d51b1baf621780b29434169f20a0bb9',1,'CSocketManager']]],
   ['findsockbylocalport',['FindSockByLocalPort',['../classCSocketManager.html#a6e5e60e1a40d0ce0d849c4a6d5a92287',1,'CSocketManager']]],
