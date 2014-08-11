@@ -157,7 +157,7 @@ Defines</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigpyrun_8h.html#af8527f0123949ec90e05d0fb156c11e3">SWIG_AddTmpMask</a>(r)&#160;&#160;&#160;(<a class="el" href="swigpyrun_8h.html#aea8ef410fde907633cb76d9d18131fa1">SWIG_IsOK</a>(r) ? (r | <a class="el" href="swigpyrun_8h.html#a399dafc6302bd9b309041d5570ae94c9">SWIG_TMPOBJMASK</a>) : r)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigpyrun_8h.html#ac08b44ea4ae9f73b19d915969f301a5d">SWIG_DelTmpMask</a>(r)&#160;&#160;&#160;(<a class="el" href="swigpyrun_8h.html#aea8ef410fde907633cb76d9d18131fa1">SWIG_IsOK</a>(r) ? (r &amp; ~<a class="el" href="swigpyrun_8h.html#a399dafc6302bd9b309041d5570ae94c9">SWIG_TMPOBJMASK</a>) : r)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigpyrun_8h.html#aa8f2563a536468b40dc33843d4bb7efe">SWIG_IsTmpObj</a>(r)&#160;&#160;&#160;(<a class="el" href="swigpyrun_8h.html#aea8ef410fde907633cb76d9d18131fa1">SWIG_IsOK</a>(r) &amp;&amp; (r &amp; <a class="el" href="swigpyrun_8h.html#a399dafc6302bd9b309041d5570ae94c9">SWIG_TMPOBJMASK</a>))</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigpyrun_8h.html#ad69473581dbf2292673b61e56b35d893">SWIG_AddCast</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigpyrun_8h.html#a4f6f5e0444e44e48aef51f6620438a5f">SWIG_AddCast</a>(r)&#160;&#160;&#160;(r)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigpyrun_8h.html#a1faed8ca17e98c961611bc35fde708a9">SWIG_CheckState</a>(r)&#160;&#160;&#160;(<a class="el" href="swigpyrun_8h.html#aea8ef410fde907633cb76d9d18131fa1">SWIG_IsOK</a>(r) ? 1 : 0)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigpyrun_8h.html#afd489119bf6e3552bdaa6bc365e35e59">Py_TYPE</a>(op)&#160;&#160;&#160;((op)-&gt;ob_type)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigpyrun_8h.html#a9b793ab094535913288a25a20906bc8e">SWIG_Python_str_FromFormat</a>&#160;&#160;&#160;PyString_FromFormat</td></tr>
@@ -173,6 +173,7 @@ Defines</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigpyrun_8h.html#ae0178153199e3020e8d586e0e50fc796">PySequence_Size</a>&#160;&#160;&#160;PySequence_Length</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigpyrun_8h.html#aa5b5990f814eb53730c24c7f911f9132">PY_SSIZE_T_MAX</a>&#160;&#160;&#160;INT_MAX</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigpyrun_8h.html#a9fbcf3e88f34de99fb3bd045cffd6ce4">PY_SSIZE_T_MIN</a>&#160;&#160;&#160;INT_MIN</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigpyrun_8h.html#a2a72c6061f4d23c35a8340448dd0cd2b">PyInt_FromSize_t</a>(x)&#160;&#160;&#160;PyInt_FromLong((long)x)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigpyrun_8h.html#a8a5af783da2cdbcfdc7c354f635df8be">Py_VISIT</a>(op)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigpyrun_8h.html#a0d2bc679367576eb4071b8c3bfe13edc">PyDescr_TYPE</a>(x)&#160;&#160;&#160;(((PyDescrObject *)(x))-&gt;d_type)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigpyrun_8h.html#a7b007021fc924eb74eccb0bb05d99ad1">PyDescr_NAME</a>(x)&#160;&#160;&#160;(((PyDescrObject *)(x))-&gt;d_name)</td></tr>
@@ -199,7 +200,7 @@ Defines</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigpyrun_8h.html#aab2f1993f97bd27040adf9836dafff18">SWIG_NewFunctionPtrObj</a>(ptr, type)&#160;&#160;&#160;<a class="el" href="swigpyrun_8h.html#a6c4b024081777ebd6c3b275d0cb3fddb">SWIG_Python_NewPointerObj</a>(NULL, ptr, type, 0)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigpyrun_8h.html#abb497a1b462ed19945a37c5cffb64de8">SWIG_ConvertMember</a>(obj, ptr, sz, ty)&#160;&#160;&#160;<a class="el" href="swigpyrun_8h.html#a03b3793a4bd02ab2e9dda57331f4b5f3">SWIG_Python_ConvertPacked</a>(obj, ptr, sz, ty)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigpyrun_8h.html#a4b628289fae4cd1c4ee9be55e1927f65">SWIG_NewMemberObj</a>(ptr, sz, type)&#160;&#160;&#160;<a class="el" href="swigpyrun_8h.html#a552754ea0a5290f4fa6d3181ff226cc2">SWIG_Python_NewPackedObj</a>(ptr, sz, type)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigpyrun_8h.html#ab97db3bbfc9e3a73de01e1ee95fa0bb5">SWIG_GetModule</a>(clientdata)&#160;&#160;&#160;<a class="el" href="swigpyrun_8h.html#af4931317560425925f44a6911adf2937">SWIG_Python_GetModule</a>()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigpyrun_8h.html#ab97db3bbfc9e3a73de01e1ee95fa0bb5">SWIG_GetModule</a>(clientdata)&#160;&#160;&#160;<a class="el" href="swigpyrun_8h.html#ac85fea1d3188d4ee0517aa685d7bcde3">SWIG_Python_GetModule</a>(clientdata)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigpyrun_8h.html#a673a7dcc5c15f5cffa7072785a6c7972">SWIG_SetModule</a>(clientdata, pointer)&#160;&#160;&#160;<a class="el" href="swigpyrun_8h.html#a97dcf2ac96af7ac919ccb8784322945d">SWIG_Python_SetModule</a>(pointer)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigpyrun_8h.html#a3b999f80821e34ecc8bded97723003fd">SWIG_NewClientData</a>(obj)&#160;&#160;&#160;<a class="el" href="swigpyrun_8h.html#a919f062d24409c7a7b727a8acea354a8">SwigPyClientData_New</a>(obj)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigpyrun_8h.html#a874120d0e9be7616d706e1bfe98cfe6f">SWIG_SetErrorObj</a>&#160;&#160;&#160;<a class="el" href="swigpyrun_8h.html#a92b9f2ba549f0c2e0c5118436f6c786c">SWIG_Python_SetErrorObj</a></td></tr>
@@ -240,8 +241,8 @@ Typedefs</h2></td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="swigpyrun_8h.html#a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigpyrun_8h.html#a2f69ad4207037cb391a2b2d5915fcba2">SWIG_TypeNameComp</a> (const char *f1, const char *l1, const char *f2, const char *l2)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="swigpyrun_8h.html#a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigpyrun_8h.html#a73131c439c907ed987c34da85b95a597">SWIG_TypeCmp</a> (const char *nb, const char *tb)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="swigpyrun_8h.html#a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigpyrun_8h.html#a23ecf039d651082ffc7582c4f50af780">SWIG_TypeEquiv</a> (const char *nb, const char *tb)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="swigpyrun_8h.html#a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigpyrun_8h.html#adc0e91b1eac793ed183ae989c62d33fb">SWIG_TypeCompare</a> (const char *nb, const char *tb)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="swigpyrun_8h.html#a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</a> <a class="el" href="structswig__cast__info.html">swig_cast_info</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigpyrun_8h.html#abd0cb78a9663e41312c8f14ab6715f04">SWIG_TypeCheck</a> (const char *c, <a class="el" href="structswig__type__info.html">swig_type_info</a> *ty)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="swigpyrun_8h.html#a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</a> <a class="el" href="structswig__cast__info.html">swig_cast_info</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigpyrun_8h.html#a898a1dfcdf96d53a2c7fd90e8500b36e">SWIG_TypeCheckStruct</a> (<a class="el" href="structswig__type__info.html">swig_type_info</a> *from, <a class="el" href="structswig__type__info.html">swig_type_info</a> *ty)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="swigpyrun_8h.html#affa7aa2bcce5bea24a20e5b184ae0533">SWIGRUNTIMEINLINE</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigpyrun_8h.html#a334486cb1e8f569c949a0384cbdb2a16">SWIG_TypeCast</a> (<a class="el" href="structswig__cast__info.html">swig_cast_info</a> *ty, void *ptr, int *newmemory)</td></tr>
@@ -278,8 +279,6 @@ Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="swigpyrun_8h.html#a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</a> PyObject *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigpyrun_8h.html#ac19d035c2f2617b773fb7b3bea5a26b3">SwigPyObject_oct</a> (<a class="el" href="structSwigPyObject.html">SwigPyObject</a> *v)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="swigpyrun_8h.html#a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</a> PyObject *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigpyrun_8h.html#a655c2dc99f0ce059357b97600a9d274a">SwigPyObject_hex</a> (<a class="el" href="structSwigPyObject.html">SwigPyObject</a> *v)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="swigpyrun_8h.html#a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</a> PyObject *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigpyrun_8h.html#a72e362e1099bd1b9a1d124c11a101a81">SwigPyObject_repr</a> (<a class="el" href="structSwigPyObject.html">SwigPyObject</a> *v, PyObject *args)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="swigpyrun_8h.html#a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigpyrun_8h.html#aa66fca4982f15113938d9d4435079a87">SwigPyObject_print</a> (<a class="el" href="structSwigPyObject.html">SwigPyObject</a> *v, FILE *fp, int <a class="el" href="swigpyrun_8h.html#a6a54164d0685c632e7540c5ad32a453a">SWIGUNUSEDPARM</a>(flags))</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="swigpyrun_8h.html#a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</a> PyObject *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigpyrun_8h.html#ae699fa8a32a6f093e4b1cceba4b64a32">SwigPyObject_str</a> (<a class="el" href="structSwigPyObject.html">SwigPyObject</a> *v)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="swigpyrun_8h.html#a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigpyrun_8h.html#a72434475ffb4b712774fb65344cf0292">SwigPyObject_compare</a> (<a class="el" href="structSwigPyObject.html">SwigPyObject</a> *v, <a class="el" href="structSwigPyObject.html">SwigPyObject</a> *w)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="swigpyrun_8h.html#a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</a> PyObject *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigpyrun_8h.html#ae977913145e8a243228c8e90fbe5f2ca">SwigPyObject_richcompare</a> (<a class="el" href="structSwigPyObject.html">SwigPyObject</a> *v, <a class="el" href="structSwigPyObject.html">SwigPyObject</a> *w, int op)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="swigpyrun_8h.html#a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</a> PyTypeObject *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigpyrun_8h.html#aea7d4126c1b77d06d8fcdf22619e9d77">SwigPyObject_TypeOnce</a> (void)</td></tr>
@@ -315,7 +314,7 @@ Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="swigpyrun_8h.html#a8f2319f775e5b9d5906c9ef25d9b819a">SWIGINTERN</a> PyObject *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigpyrun_8h.html#a77d3a8e01e24edf05e663b16f914e947">SWIG_Python_InitShadowInstance</a> (PyObject *args)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="swigpyrun_8h.html#a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</a> PyObject *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigpyrun_8h.html#a6c4b024081777ebd6c3b275d0cb3fddb">SWIG_Python_NewPointerObj</a> (PyObject *self, void *ptr, <a class="el" href="structswig__type__info.html">swig_type_info</a> *type, int flags)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="swigpyrun_8h.html#affa7aa2bcce5bea24a20e5b184ae0533">SWIGRUNTIMEINLINE</a> PyObject *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigpyrun_8h.html#a552754ea0a5290f4fa6d3181ff226cc2">SWIG_Python_NewPackedObj</a> (void *ptr, size_t sz, <a class="el" href="structswig__type__info.html">swig_type_info</a> *type)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="swigpyrun_8h.html#a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</a> <a class="el" href="structswig__module__info.html">swig_module_info</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigpyrun_8h.html#af4931317560425925f44a6911adf2937">SWIG_Python_GetModule</a> (void)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="swigpyrun_8h.html#a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</a> <a class="el" href="structswig__module__info.html">swig_module_info</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigpyrun_8h.html#ac85fea1d3188d4ee0517aa685d7bcde3">SWIG_Python_GetModule</a> (void *<a class="el" href="swigpyrun_8h.html#a6a54164d0685c632e7540c5ad32a453a">SWIGUNUSEDPARM</a>(clientdata))</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="swigpyrun_8h.html#a8f2319f775e5b9d5906c9ef25d9b819a">SWIGINTERN</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigpyrun_8h.html#a6a7f8a8dbdf7d7609e23b646bb88c64f">PyModule_AddObject</a> (PyObject *m, char *name, PyObject *o)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="swigpyrun_8h.html#a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigpyrun_8h.html#a7d3ea178e7face372657bf426fa15410">SWIG_Python_DestroyModule</a> (void *vptr)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="swigpyrun_8h.html#a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigpyrun_8h.html#a97dcf2ac96af7ac919ccb8784322945d">SWIG_Python_SetModule</a> (<a class="el" href="structswig__module__info.html">swig_module_info</a> *swig_module)</td></tr>
@@ -461,6 +460,23 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a2a72c6061f4d23c35a8340448dd0cd2b"></a><!-- doxytag: member="swigpyrun.h::PyInt_FromSize_t" ref="a2a72c6061f4d23c35a8340448dd0cd2b" args="(x)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="swigpyrun_8h.html#a2a72c6061f4d23c35a8340448dd0cd2b">PyInt_FromSize_t</a></td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;PyInt_FromLong((long)x)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a5777895532ba038acdbde39ef6f78a82"></a><!-- doxytag: member="swigpyrun.h::PyObject_Del" ref="a5777895532ba038acdbde39ef6f78a82" args="(op)" -->
 <div class="memitem">
 <div class="memproto">
@@ -596,12 +612,16 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ad69473581dbf2292673b61e56b35d893"></a><!-- doxytag: member="swigpyrun.h::SWIG_AddCast" ref="ad69473581dbf2292673b61e56b35d893" args="" -->
+<a class="anchor" id="a4f6f5e0444e44e48aef51f6620438a5f"></a><!-- doxytag: member="swigpyrun.h::SWIG_AddCast" ref="a4f6f5e0444e44e48aef51f6620438a5f" args="(r)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="swigpyrun_8h.html#ad69473581dbf2292673b61e56b35d893">SWIG_AddCast</a></td>
+          <td class="memname">#define <a class="el" href="swigpyrun_8h.html#a4f6f5e0444e44e48aef51f6620438a5f">SWIG_AddCast</a></td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">r</td><td>)</td>
+          <td>&#160;&#160;&#160;(r)</td>
         </tr>
       </table>
 </div>
@@ -720,7 +740,7 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Referenced by <a class="el" href="swigpyrun_8h.html#ae699fa8a32a6f093e4b1cceba4b64a32">SwigPyObject_str()</a>, <a class="el" href="swigpyrun_8h.html#a474b4790df1707c1c1165c167c10e256">SwigPyPacked_print()</a>, <a class="el" href="swigpyrun_8h.html#a7035b519064392d397664bd5a3f4f42b">SwigPyPacked_repr()</a>, and <a class="el" href="swigpyrun_8h.html#a7b50e11124d8cb98a44bef2cb264fab9">SwigPyPacked_str()</a>.</p>
+<p>Referenced by <a class="el" href="swigpyrun_8h.html#a474b4790df1707c1c1165c167c10e256">SwigPyPacked_print()</a>, <a class="el" href="swigpyrun_8h.html#a7035b519064392d397664bd5a3f4f42b">SwigPyPacked_repr()</a>, and <a class="el" href="swigpyrun_8h.html#a7b50e11124d8cb98a44bef2cb264fab9">SwigPyPacked_str()</a>.</p>
 
 </div>
 </div>
@@ -1180,13 +1200,13 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">clientdata</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="swigpyrun_8h.html#af4931317560425925f44a6911adf2937">SWIG_Python_GetModule</a>()</td>
+          <td>&#160;&#160;&#160;<a class="el" href="swigpyrun_8h.html#ac85fea1d3188d4ee0517aa685d7bcde3">SWIG_Python_GetModule</a>(clientdata)</td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Referenced by <a class="el" href="swigpyrun_8h.html#a8f0d4e2a73cb2f33d6badc1b251b74ce">SWIG_MangledTypeQuery()</a>, and <a class="el" href="swigpyrun_8h.html#a5bf256cecd146ec7840c31de25099f7a">SWIG_TypeQuery()</a>.</p>
+<p>Referenced by <a class="el" href="swigpyrun_8h.html#a8f0d4e2a73cb2f33d6badc1b251b74ce">SWIG_MangledTypeQuery()</a>, <a class="el" href="swigpyrun_8h.html#a00a2aa9762204b8a6a82fb5b1e0ef24c">SWIG_Python_TypeQuery()</a>, and <a class="el" href="swigpyrun_8h.html#a5bf256cecd146ec7840c31de25099f7a">SWIG_TypeQuery()</a>.</p>
 
 </div>
 </div>
@@ -1887,7 +1907,7 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Referenced by <a class="el" href="swigpyrun_8h.html#a26ba14592b463c53ad77c11ae322e44f">SWIG_Python_AddErrMesg()</a>, <a class="el" href="swigpyrun_8h.html#a95cdd9c41903a3fc5911ecc5c617da3f">SWIG_Python_AddErrorMsg()</a>, <a class="el" href="swigpyrun_8h.html#ac487bf25fd5238c01ad35edf4dde586f">SWIG_Python_TypeError()</a>, and <a class="el" href="swigpyrun_8h.html#aa66fca4982f15113938d9d4435079a87">SwigPyObject_print()</a>.</p>
+<p>Referenced by <a class="el" href="swigpyrun_8h.html#a26ba14592b463c53ad77c11ae322e44f">SWIG_Python_AddErrMesg()</a>, <a class="el" href="swigpyrun_8h.html#a95cdd9c41903a3fc5911ecc5c617da3f">SWIG_Python_AddErrorMsg()</a>, and <a class="el" href="swigpyrun_8h.html#ac487bf25fd5238c01ad35edf4dde586f">SWIG_Python_TypeError()</a>.</p>
 
 </div>
 </div>
@@ -1973,7 +1993,7 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Referenced by <a class="el" href="swigpyrun_8h.html#af4931317560425925f44a6911adf2937">SWIG_Python_GetModule()</a>, and <a class="el" href="swigpyrun_8h.html#a97dcf2ac96af7ac919ccb8784322945d">SWIG_Python_SetModule()</a>.</p>
+<p>Referenced by <a class="el" href="swigpyrun_8h.html#ac85fea1d3188d4ee0517aa685d7bcde3">SWIG_Python_GetModule()</a>, and <a class="el" href="swigpyrun_8h.html#a97dcf2ac96af7ac919ccb8784322945d">SWIG_Python_SetModule()</a>.</p>
 
 </div>
 </div>
@@ -2131,7 +2151,7 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Referenced by <a class="el" href="swigpyrun_8h.html#af4931317560425925f44a6911adf2937">SWIG_Python_GetModule()</a>, and <a class="el" href="swigpyrun_8h.html#a97dcf2ac96af7ac919ccb8784322945d">SWIG_Python_SetModule()</a>.</p>
+<p>Referenced by <a class="el" href="swigpyrun_8h.html#ac85fea1d3188d4ee0517aa685d7bcde3">SWIG_Python_GetModule()</a>, and <a class="el" href="swigpyrun_8h.html#a97dcf2ac96af7ac919ccb8784322945d">SWIG_Python_SetModule()</a>.</p>
 
 </div>
 </div>
@@ -3081,7 +3101,7 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="structswig__type__info.html#a2e1f9087e639dd7c8c131fbc6e399194">swig_type_info::clientdata</a>, <a class="el" href="structSwigPyClientData.html#a5f9ebdbc04a774559a64b926b6ec4070">SwigPyClientData::implicitconv</a>, <a class="el" href="structSwigPyClientData.html#a482d64908147c310a56d1541476079dc">SwigPyClientData::klass</a>, <a class="el" href="structswig__type__info.html#aa6c9f9ed3037043b6d346162cf932daf">swig_type_info::name</a>, <a class="el" href="structSwigPyObject.html#af7b93d7ae49a6f3bdf6511043fe8e839">SwigPyObject::next</a>, <a class="el" href="structSwigPyObject.html#a83cb6489fb1b171467f06c091ae6f283">SwigPyObject::own</a>, <a class="el" href="structSwigPyObject.html#a41b1d569a8ba4fa9b1d87579c144891b">SwigPyObject::ptr</a>, <a class="el" href="swigpyrun_8h.html#ad69473581dbf2292673b61e56b35d893">SWIG_AddCast</a>, <a class="el" href="swigpyrun_8h.html#af7ac7e424b623712f70e9b6640a54853">SWIG_AddNewMask</a>, <a class="el" href="swigpyrun_8h.html#ac8216459bfd45cbd2be36175ef6f1ccc">SWIG_CAST_NEW_MEMORY</a>, <a class="el" href="swigpyrun_8h.html#acfa11a770d66f9ca6ba170b173c56c94">SWIG_ERROR</a>, <a class="el" href="swigpyrun_8h.html#aea8ef410fde907633cb76d9d18131fa1">SWIG_IsOK</a>, <a class="el" href="swigpyrun_8h.html#af9ecbac56d4c5cd6104ae8f6bb82e9f7">SWIG_OK</a>, <a class="el" href="swigpyrun_8h.html#aa56139a289829795ed651d533826b65e">SWIG_POINTER_DISOWN</a>, <a class="el" href="swigpyrun_8h.html#a28a70d0513a11dd60735baa8e09c9e44">SWIG_POINTER_IMPLICIT_CONV</a>, <a class="el" href="swigpyrun_8h.html#a709f9240049521dd53af4010e5775ecd">SWIG_Python_CallFunctor</a>, <a class="el" href="swigpyrun_8h.html#a9160b127bcb2cef38bc6432c28b533c2">SWIG_Python_GetSwigThis()</a>, <a class="el" href="swigperlrun_8h.html#a334486cb1e8f569c949a0384cbdb2a16">SWIG_TypeCast()</a>, <a class="el" href="swigperlrun_8h.html#abd0cb78a9663e41312c8f14ab6715f04">SWIG_TypeCheck()</a>, and <a class="el" href="structSwigPyObject.html#a510b5a6f66a8a33c0a54c3eeb83e5ba5">SwigPyObject::ty</a>.</p>
+<p>References <a class="el" href="structswig__type__info.html#a2e1f9087e639dd7c8c131fbc6e399194">swig_type_info::clientdata</a>, <a class="el" href="structSwigPyClientData.html#a5f9ebdbc04a774559a64b926b6ec4070">SwigPyClientData::implicitconv</a>, <a class="el" href="structSwigPyClientData.html#a482d64908147c310a56d1541476079dc">SwigPyClientData::klass</a>, <a class="el" href="structswig__type__info.html#aa6c9f9ed3037043b6d346162cf932daf">swig_type_info::name</a>, <a class="el" href="structSwigPyObject.html#af7b93d7ae49a6f3bdf6511043fe8e839">SwigPyObject::next</a>, <a class="el" href="structSwigPyObject.html#a83cb6489fb1b171467f06c091ae6f283">SwigPyObject::own</a>, <a class="el" href="structSwigPyObject.html#a41b1d569a8ba4fa9b1d87579c144891b">SwigPyObject::ptr</a>, <a class="el" href="swigpyrun_8h.html#a4f6f5e0444e44e48aef51f6620438a5f">SWIG_AddCast</a>, <a class="el" href="swigpyrun_8h.html#af7ac7e424b623712f70e9b6640a54853">SWIG_AddNewMask</a>, <a class="el" href="swigpyrun_8h.html#ac8216459bfd45cbd2be36175ef6f1ccc">SWIG_CAST_NEW_MEMORY</a>, <a class="el" href="swigpyrun_8h.html#acfa11a770d66f9ca6ba170b173c56c94">SWIG_ERROR</a>, <a class="el" href="swigpyrun_8h.html#aea8ef410fde907633cb76d9d18131fa1">SWIG_IsOK</a>, <a class="el" href="swigpyrun_8h.html#af9ecbac56d4c5cd6104ae8f6bb82e9f7">SWIG_OK</a>, <a class="el" href="swigpyrun_8h.html#aa56139a289829795ed651d533826b65e">SWIG_POINTER_DISOWN</a>, <a class="el" href="swigpyrun_8h.html#a28a70d0513a11dd60735baa8e09c9e44">SWIG_POINTER_IMPLICIT_CONV</a>, <a class="el" href="swigpyrun_8h.html#a709f9240049521dd53af4010e5775ecd">SWIG_Python_CallFunctor</a>, <a class="el" href="swigpyrun_8h.html#a9160b127bcb2cef38bc6432c28b533c2">SWIG_Python_GetSwigThis()</a>, <a class="el" href="swigperlrun_8h.html#a334486cb1e8f569c949a0384cbdb2a16">SWIG_TypeCast()</a>, <a class="el" href="swigperlrun_8h.html#abd0cb78a9663e41312c8f14ab6715f04">SWIG_TypeCheck()</a>, and <a class="el" href="structSwigPyObject.html#a510b5a6f66a8a33c0a54c3eeb83e5ba5">SwigPyObject::ty</a>.</p>
 
 </div>
 </div>
@@ -3144,15 +3164,15 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af4931317560425925f44a6911adf2937"></a><!-- doxytag: member="swigpyrun.h::SWIG_Python_GetModule" ref="af4931317560425925f44a6911adf2937" args="(void)" -->
+<a class="anchor" id="ac85fea1d3188d4ee0517aa685d7bcde3"></a><!-- doxytag: member="swigpyrun.h::SWIG_Python_GetModule" ref="ac85fea1d3188d4ee0517aa685d7bcde3" args="(void *SWIGUNUSEDPARM(clientdata))" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="swigpyrun_8h.html#a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</a> <a class="el" href="structswig__module__info.html">swig_module_info</a>* <a class="el" href="swigpyrun_8h.html#af4931317560425925f44a6911adf2937">SWIG_Python_GetModule</a> </td>
+          <td class="memname"><a class="el" href="swigpyrun_8h.html#a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</a> <a class="el" href="structswig__module__info.html">swig_module_info</a>* <a class="el" href="swigpyrun_8h.html#ac85fea1d3188d4ee0517aa685d7bcde3">SWIG_Python_GetModule</a> </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>SWIGUNUSEDPARM</em>clientdata</td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -3160,8 +3180,6 @@ Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>References <a class="el" href="swigpyrun_8h.html#a4895907de5539551925ab5c03ea05d28">SWIG_RUNTIME_VERSION</a>, and <a class="el" href="swigpyrun_8h.html#ac619a84edecccb5e00c1b4a3180b8c3a">SWIG_TYPE_TABLE_NAME</a>.</p>
-
-<p>Referenced by <a class="el" href="swigpyrun_8h.html#a00a2aa9762204b8a6a82fb5b1e0ef24c">SWIG_Python_TypeQuery()</a>.</p>
 
 </div>
 </div>
@@ -3509,7 +3527,7 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Referenced by <a class="el" href="swigpyrun_8h.html#a26ba14592b463c53ad77c11ae322e44f">SWIG_Python_AddErrMesg()</a>, <a class="el" href="swigpyrun_8h.html#a95cdd9c41903a3fc5911ecc5c617da3f">SWIG_Python_AddErrorMsg()</a>, <a class="el" href="swigpyrun_8h.html#ac487bf25fd5238c01ad35edf4dde586f">SWIG_Python_TypeError()</a>, and <a class="el" href="swigpyrun_8h.html#aa66fca4982f15113938d9d4435079a87">SwigPyObject_print()</a>.</p>
+<p>Referenced by <a class="el" href="swigpyrun_8h.html#a26ba14592b463c53ad77c11ae322e44f">SWIG_Python_AddErrMesg()</a>, <a class="el" href="swigpyrun_8h.html#a95cdd9c41903a3fc5911ecc5c617da3f">SWIG_Python_AddErrorMsg()</a>, and <a class="el" href="swigpyrun_8h.html#ac487bf25fd5238c01ad35edf4dde586f">SWIG_Python_TypeError()</a>.</p>
 
 </div>
 </div>
@@ -3528,7 +3546,7 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Referenced by <a class="el" href="swigpyrun_8h.html#ab6b9406572a75bad483f518bcfcdfd9a">_SWIG_This()</a>, <a class="el" href="swigpyrun_8h.html#a00a2aa9762204b8a6a82fb5b1e0ef24c">SWIG_Python_TypeQuery()</a>, <a class="el" href="swigpyrun_8h.html#a6d2977b4ede610f6c7ef7fcad053237b">SwigPyObject_format()</a>, <a class="el" href="swigpyrun_8h.html#ae699fa8a32a6f093e4b1cceba4b64a32">SwigPyObject_str()</a>, and <a class="el" href="swigpyrun_8h.html#a7b50e11124d8cb98a44bef2cb264fab9">SwigPyPacked_str()</a>.</p>
+<p>Referenced by <a class="el" href="swigpyrun_8h.html#ab6b9406572a75bad483f518bcfcdfd9a">_SWIG_This()</a>, <a class="el" href="swigpyrun_8h.html#a00a2aa9762204b8a6a82fb5b1e0ef24c">SWIG_Python_TypeQuery()</a>, <a class="el" href="swigpyrun_8h.html#a6d2977b4ede610f6c7ef7fcad053237b">SwigPyObject_format()</a>, and <a class="el" href="swigpyrun_8h.html#a7b50e11124d8cb98a44bef2cb264fab9">SwigPyPacked_str()</a>.</p>
 
 </div>
 </div>
@@ -3599,7 +3617,7 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="swigpyrun_8h.html#af4931317560425925f44a6911adf2937">SWIG_Python_GetModule()</a>, <a class="el" href="swigpyrun_8h.html#a0ba3b72d0eb29ff47379e6e77b21d78a">SWIG_Python_str_FromChar()</a>, <a class="el" href="swigpyrun_8h.html#af654af2b686a4768f226970719c13bf2">SWIG_Python_TypeCache()</a>, and <a class="el" href="swigperlrun_8h.html#a5b6a2719f95288678fa55ade4493b175">SWIG_TypeQueryModule()</a>.</p>
+<p>References <a class="el" href="swigpyrun_8h.html#ab97db3bbfc9e3a73de01e1ee95fa0bb5">SWIG_GetModule</a>, <a class="el" href="swigpyrun_8h.html#a0ba3b72d0eb29ff47379e6e77b21d78a">SWIG_Python_str_FromChar()</a>, <a class="el" href="swigpyrun_8h.html#af654af2b686a4768f226970719c13bf2">SWIG_Python_TypeCache()</a>, and <a class="el" href="swigperlrun_8h.html#a5b6a2719f95288678fa55ade4493b175">SWIG_TypeQueryModule()</a>.</p>
 
 </div>
 </div>
@@ -3793,12 +3811,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="adc0e91b1eac793ed183ae989c62d33fb"></a><!-- doxytag: member="swigpyrun.h::SWIG_TypeCompare" ref="adc0e91b1eac793ed183ae989c62d33fb" args="(const char *nb, const char *tb)" -->
+<a class="anchor" id="a73131c439c907ed987c34da85b95a597"></a><!-- doxytag: member="swigpyrun.h::SWIG_TypeCmp" ref="a73131c439c907ed987c34da85b95a597" args="(const char *nb, const char *tb)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="swigpyrun_8h.html#a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</a> int <a class="el" href="swigpyrun_8h.html#adc0e91b1eac793ed183ae989c62d33fb">SWIG_TypeCompare</a> </td>
+          <td class="memname"><a class="el" href="swigpyrun_8h.html#a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</a> int <a class="el" href="swigpyrun_8h.html#a73131c439c907ed987c34da85b95a597">SWIG_TypeCmp</a> </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>nb</em>, </td>
@@ -3876,7 +3894,7 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="swigperlrun_8h.html#a2f69ad4207037cb391a2b2d5915fcba2">SWIG_TypeNameComp()</a>.</p>
+<p>References <a class="el" href="swigperlrun_8h.html#a73131c439c907ed987c34da85b95a597">SWIG_TypeCmp()</a>.</p>
 
 </div>
 </div>
@@ -4594,43 +4612,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aa66fca4982f15113938d9d4435079a87"></a><!-- doxytag: member="swigpyrun.h::SwigPyObject_print" ref="aa66fca4982f15113938d9d4435079a87" args="(SwigPyObject *v, FILE *fp, int SWIGUNUSEDPARM(flags))" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="swigpyrun_8h.html#a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</a> int <a class="el" href="swigpyrun_8h.html#aa66fca4982f15113938d9d4435079a87">SwigPyObject_print</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structSwigPyObject.html">SwigPyObject</a> *&#160;</td>
-          <td class="paramname"><em>v</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">FILE *&#160;</td>
-          <td class="paramname"><em>fp</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int &#160;</td>
-          <td class="paramname"><em>SWIGUNUSEDPARM</em>flags&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>References <a class="el" href="swigpyrun_8h.html#a933a38459f11308f715f19c1c0269682">SWIG_Python_str_AsChar()</a>, <a class="el" href="swigpyrun_8h.html#a866b998f49f1870f2a0af8e30c738d15">SWIG_Python_str_DelForPy3</a>, and <a class="el" href="swigpyrun_8h.html#a72e362e1099bd1b9a1d124c11a101a81">SwigPyObject_repr()</a>.</p>
-
-<p>Referenced by <a class="el" href="swigpyrun_8h.html#aea7d4126c1b77d06d8fcdf22619e9d77">SwigPyObject_TypeOnce()</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a72e362e1099bd1b9a1d124c11a101a81"></a><!-- doxytag: member="swigpyrun.h::SwigPyObject_repr" ref="a72e362e1099bd1b9a1d124c11a101a81" args="(SwigPyObject *v, PyObject *args)" -->
 <div class="memitem">
 <div class="memproto">
@@ -4658,7 +4639,7 @@ Functions</h2></td></tr>
 
 <p>References <a class="el" href="swigpyrun_8h.html#a9b793ab094535913288a25a20906bc8e">SWIG_Python_str_FromFormat</a>, <a class="el" href="swigperlrun_8h.html#a3f38ea686cb3f85bf6a15b08416f2684">SWIG_TypePrettyName()</a>, and <a class="el" href="structSwigPyObject.html#a510b5a6f66a8a33c0a54c3eeb83e5ba5">SwigPyObject::ty</a>.</p>
 
-<p>Referenced by <a class="el" href="swigpyrun_8h.html#aa66fca4982f15113938d9d4435079a87">SwigPyObject_print()</a>, and <a class="el" href="swigpyrun_8h.html#aea7d4126c1b77d06d8fcdf22619e9d77">SwigPyObject_TypeOnce()</a>.</p>
+<p>Referenced by <a class="el" href="swigpyrun_8h.html#aea7d4126c1b77d06d8fcdf22619e9d77">SwigPyObject_TypeOnce()</a>.</p>
 
 </div>
 </div>
@@ -4694,27 +4675,6 @@ Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>References <a class="el" href="swigpyrun_8h.html#ae5603e8c5fd8ec50c4936e1012a58cb4">Py_NotImplemented</a>, and <a class="el" href="swigpyrun_8h.html#a72434475ffb4b712774fb65344cf0292">SwigPyObject_compare()</a>.</p>
-
-<p>Referenced by <a class="el" href="swigpyrun_8h.html#aea7d4126c1b77d06d8fcdf22619e9d77">SwigPyObject_TypeOnce()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ae699fa8a32a6f093e4b1cceba4b64a32"></a><!-- doxytag: member="swigpyrun.h::SwigPyObject_str" ref="ae699fa8a32a6f093e4b1cceba4b64a32" args="(SwigPyObject *v)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="swigpyrun_8h.html#a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</a> PyObject* <a class="el" href="swigpyrun_8h.html#ae699fa8a32a6f093e4b1cceba4b64a32">SwigPyObject_str</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structSwigPyObject.html">SwigPyObject</a> *&#160;</td>
-          <td class="paramname"><em>v</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>References <a class="el" href="structswig__type__info.html#aa6c9f9ed3037043b6d346162cf932daf">swig_type_info::name</a>, <a class="el" href="structSwigPyObject.html#a41b1d569a8ba4fa9b1d87579c144891b">SwigPyObject::ptr</a>, <a class="el" href="swigpyrun_8h.html#a26324fcd1baceab72680dfec078da440">SWIG_BUFFER_SIZE</a>, <a class="el" href="swigperlrun_8h.html#a10c5572eb6206df7c95c8a2fcde90911">SWIG_PackVoidPtr()</a>, <a class="el" href="swigpyrun_8h.html#a0ba3b72d0eb29ff47379e6e77b21d78a">SWIG_Python_str_FromChar()</a>, and <a class="el" href="structSwigPyObject.html#a510b5a6f66a8a33c0a54c3eeb83e5ba5">SwigPyObject::ty</a>.</p>
 
 <p>Referenced by <a class="el" href="swigpyrun_8h.html#aea7d4126c1b77d06d8fcdf22619e9d77">SwigPyObject_TypeOnce()</a>.</p>
 
@@ -4756,7 +4716,7 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="swigpyrun_8h.html#a2d659e3ecdc8d792ec516753e6fd37a2">PyObject_GenericGetAttr</a>, <a class="el" href="swigpyrun_8h.html#a72434475ffb4b712774fb65344cf0292">SwigPyObject_compare()</a>, <a class="el" href="swigpyrun_8h.html#a31a09386e839d2080e2f56602c011263">SwigPyObject_dealloc()</a>, <a class="el" href="swigpyrun_8h.html#a68eddc0684157ef121380451acbbfa1f">SwigPyObject_getattr()</a>, <a class="el" href="swigpyrun_8h.html#a655c2dc99f0ce059357b97600a9d274a">SwigPyObject_hex()</a>, <a class="el" href="swigpyrun_8h.html#abc24d5684dfe838e99fc155a38160d84">SwigPyObject_long()</a>, <a class="el" href="swigpyrun_8h.html#ac19d035c2f2617b773fb7b3bea5a26b3">SwigPyObject_oct()</a>, <a class="el" href="swigpyrun_8h.html#aa66fca4982f15113938d9d4435079a87">SwigPyObject_print()</a>, <a class="el" href="swigpyrun_8h.html#a72e362e1099bd1b9a1d124c11a101a81">SwigPyObject_repr()</a>, <a class="el" href="swigpyrun_8h.html#ae977913145e8a243228c8e90fbe5f2ca">SwigPyObject_richcompare()</a>, <a class="el" href="swigpyrun_8h.html#ae699fa8a32a6f093e4b1cceba4b64a32">SwigPyObject_str()</a>, and <a class="el" href="swigpyrun_8h.html#a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</a>.</p>
+<p>References <a class="el" href="swigpyrun_8h.html#a2d659e3ecdc8d792ec516753e6fd37a2">PyObject_GenericGetAttr</a>, <a class="el" href="swigpyrun_8h.html#a72434475ffb4b712774fb65344cf0292">SwigPyObject_compare()</a>, <a class="el" href="swigpyrun_8h.html#a31a09386e839d2080e2f56602c011263">SwigPyObject_dealloc()</a>, <a class="el" href="swigpyrun_8h.html#a68eddc0684157ef121380451acbbfa1f">SwigPyObject_getattr()</a>, <a class="el" href="swigpyrun_8h.html#a655c2dc99f0ce059357b97600a9d274a">SwigPyObject_hex()</a>, <a class="el" href="swigpyrun_8h.html#abc24d5684dfe838e99fc155a38160d84">SwigPyObject_long()</a>, <a class="el" href="swigpyrun_8h.html#ac19d035c2f2617b773fb7b3bea5a26b3">SwigPyObject_oct()</a>, <a class="el" href="swigpyrun_8h.html#a72e362e1099bd1b9a1d124c11a101a81">SwigPyObject_repr()</a>, <a class="el" href="swigpyrun_8h.html#ae977913145e8a243228c8e90fbe5f2ca">SwigPyObject_richcompare()</a>, and <a class="el" href="swigpyrun_8h.html#a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</a>.</p>
 
 <p>Referenced by <a class="el" href="swigpyrun_8h.html#a70268be3151a2c800628b561be2b3d6d">SwigPyObject_type()</a>.</p>
 
@@ -5048,7 +5008,7 @@ Functions</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 11 2014 20:38:10 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 11 2014 23:29:12 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

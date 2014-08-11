@@ -85,6 +85,7 @@ var searchData=
   ['pydescr_5ftype',['PyDescr_TYPE',['../swigpyrun_8h.html#a0d2bc679367576eb4071b8c3bfe13edc',1,'swigpyrun.h']]],
   ['pyexc_5fstopiteration',['PyExc_StopIteration',['../swigpyrun_8h.html#a0cba46b26eb93c57b8b96696ba92adb4',1,'swigpyrun.h']]],
   ['pyheaptypeobject',['PyHeapTypeObject',['../structPyHeapTypeObject.html',1,'']]],
+  ['pyint_5ffromsize_5ft',['PyInt_FromSize_t',['../swigpyrun_8h.html#a2a72c6061f4d23c35a8340448dd0cd2b',1,'swigpyrun.h']]],
   ['pymodule_5faddobject',['PyModule_AddObject',['../swigpyrun_8h.html#a6a7f8a8dbdf7d7609e23b646bb88c64f',1,'swigpyrun.h']]],
   ['pyobject_5fdel',['PyObject_Del',['../swigpyrun_8h.html#a5777895532ba038acdbde39ef6f78a82',1,'PyObject_Del():&#160;swigpyrun.h'],['../swigpyrun_8h.html#a3e72f1bb4b2af8f115a750f832d421b4',1,'PyObject_DEL():&#160;swigpyrun.h']]],
   ['pyobject_5fgenericgetattr',['PyObject_GenericGetAttr',['../swigpyrun_8h.html#a2d659e3ecdc8d792ec516753e6fd37a2',1,'swigpyrun.h']]],

@@ -31,6 +31,7 @@ var searchData=
   ['hasspacefornewnetwork',['HasSpaceForNewNetwork',['../classCUser.html#a3e7d948bfa47e5701e326571e22408ae',1,'CUser']]],
   ['hasuhnames',['HasUHNames',['../classCClient.html#a48ee2d9821da1fd2ff595fed9234e1de',1,'CClient::HasUHNames()'],['../classCIRCSock.html#a0a2a10401a93deada603eb6c284d65a3',1,'CIRCSock::HasUHNames()']]],
   ['haswritebuffer',['HasWriteBuffer',['../classCsock.html#a556d37415c5c017c3336eb5228d1beb1',1,'Csock']]],
+  ['have_5fcxx11',['HAVE_CXX11',['../zncconfig_8h.html#adad73cb262d6d08e869992f5ba0e0f58',1,'zncconfig.h']]],
   ['have_5fgetopt_5flong',['HAVE_GETOPT_LONG',['../zncconfig_8h.html#a7d8d14d69f60bd296d253130f912bfc0',1,'zncconfig.h']]],
   ['have_5fipv6',['HAVE_IPV6',['../zncconfig_8h.html#a1c361904b3f5e87cc22d09b6089e4dea',1,'zncconfig.h']]],
   ['have_5flibssl',['HAVE_LIBSSL',['../zncconfig_8h.html#a599f6f40ec072a355a69090fe0034fae',1,'zncconfig.h']]],

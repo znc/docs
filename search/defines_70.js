@@ -31,6 +31,7 @@ var searchData=
   ['pydescr_5fname',['PyDescr_NAME',['../swigpyrun_8h.html#a7b007021fc924eb74eccb0bb05d99ad1',1,'swigpyrun.h']]],
   ['pydescr_5ftype',['PyDescr_TYPE',['../swigpyrun_8h.html#a0d2bc679367576eb4071b8c3bfe13edc',1,'swigpyrun.h']]],
   ['pyexc_5fstopiteration',['PyExc_StopIteration',['../swigpyrun_8h.html#a0cba46b26eb93c57b8b96696ba92adb4',1,'swigpyrun.h']]],
+  ['pyint_5ffromsize_5ft',['PyInt_FromSize_t',['../swigpyrun_8h.html#a2a72c6061f4d23c35a8340448dd0cd2b',1,'swigpyrun.h']]],
   ['pyobject_5fdel',['PyObject_Del',['../swigpyrun_8h.html#a5777895532ba038acdbde39ef6f78a82',1,'PyObject_Del():&#160;swigpyrun.h'],['../swigpyrun_8h.html#a3e72f1bb4b2af8f115a750f832d421b4',1,'PyObject_DEL():&#160;swigpyrun.h']]],
   ['pyobject_5fgenericgetattr',['PyObject_GenericGetAttr',['../swigpyrun_8h.html#a2d659e3ecdc8d792ec516753e6fd37a2',1,'swigpyrun.h']]],
   ['pyos_5fsnprintf',['PyOS_snprintf',['../swigpyrun_8h.html#aaf424b640ab3bb23906652e73030992b',1,'swigpyrun.h']]],

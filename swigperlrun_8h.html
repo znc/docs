@@ -161,7 +161,7 @@ Defines</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigperlrun_8h.html#af8527f0123949ec90e05d0fb156c11e3">SWIG_AddTmpMask</a>(r)&#160;&#160;&#160;(<a class="el" href="swigpyrun_8h.html#aea8ef410fde907633cb76d9d18131fa1">SWIG_IsOK</a>(r) ? (r | <a class="el" href="swigpyrun_8h.html#a399dafc6302bd9b309041d5570ae94c9">SWIG_TMPOBJMASK</a>) : r)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigperlrun_8h.html#ac08b44ea4ae9f73b19d915969f301a5d">SWIG_DelTmpMask</a>(r)&#160;&#160;&#160;(<a class="el" href="swigpyrun_8h.html#aea8ef410fde907633cb76d9d18131fa1">SWIG_IsOK</a>(r) ? (r &amp; ~<a class="el" href="swigpyrun_8h.html#a399dafc6302bd9b309041d5570ae94c9">SWIG_TMPOBJMASK</a>) : r)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigperlrun_8h.html#aa8f2563a536468b40dc33843d4bb7efe">SWIG_IsTmpObj</a>(r)&#160;&#160;&#160;(<a class="el" href="swigpyrun_8h.html#aea8ef410fde907633cb76d9d18131fa1">SWIG_IsOK</a>(r) &amp;&amp; (r &amp; <a class="el" href="swigpyrun_8h.html#a399dafc6302bd9b309041d5570ae94c9">SWIG_TMPOBJMASK</a>))</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigperlrun_8h.html#ad69473581dbf2292673b61e56b35d893">SWIG_AddCast</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigperlrun_8h.html#a4f6f5e0444e44e48aef51f6620438a5f">SWIG_AddCast</a>(r)&#160;&#160;&#160;(r)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigperlrun_8h.html#a1faed8ca17e98c961611bc35fde708a9">SWIG_CheckState</a>(r)&#160;&#160;&#160;(<a class="el" href="swigpyrun_8h.html#aea8ef410fde907633cb76d9d18131fa1">SWIG_IsOK</a>(r) ? 1 : 0)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigperlrun_8h.html#a974afb68f303594e49f261035b1f8495">PERL_PATCHLEVEL_H_IMPLICIT</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigperlrun_8h.html#a22ab29e6d2c6ffe2eea8fe1c8c6e4b18">PERL_REVISION</a>&#160;&#160;&#160;(5)</td></tr>
@@ -192,6 +192,7 @@ Defines</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigperlrun_8h.html#a692966f52b772f19e131220f3e20e27f">SWIG_ConvertPtr</a>(obj, pp, type, flags)&#160;&#160;&#160;<a class="el" href="swigperlrun_8h.html#aae3e224363aab252c32f26db442e1777">SWIG_Perl_ConvertPtr</a>(<a class="el" href="swigperlrun_8h.html#a1424d69c8f3413f4f20a342b66a0362e">SWIG_PERL_OBJECT_CALL</a> obj, pp, type, flags)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigperlrun_8h.html#a0d541f117e30b86e7905c69181968d6a">SWIG_ConvertPtrAndOwn</a>(obj, pp, type, flags, own)&#160;&#160;&#160;<a class="el" href="swigperlrun_8h.html#ae55d50e1d5041c68c8d78731054ab0eb">SWIG_Perl_ConvertPtrAndOwn</a>(<a class="el" href="swigperlrun_8h.html#a1424d69c8f3413f4f20a342b66a0362e">SWIG_PERL_OBJECT_CALL</a> obj, pp, type, flags, own)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigperlrun_8h.html#a7046db063c86cd2ce2a71b8937ad5765">SWIG_NewPointerObj</a>(p, type, flags)&#160;&#160;&#160;<a class="el" href="swigperlrun_8h.html#a9d96cf5eca2ad52079316e5d993affef">SWIG_Perl_NewPointerObj</a>(<a class="el" href="swigperlrun_8h.html#a1424d69c8f3413f4f20a342b66a0362e">SWIG_PERL_OBJECT_CALL</a> p, type, flags)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigperlrun_8h.html#ae8afee2b61d8b25aa291dc9574882369">swig_owntype</a>&#160;&#160;&#160;int</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigperlrun_8h.html#a9ef11e4e89f4e95cb9ff14ab00b45c60">SWIG_ConvertPacked</a>(obj, p, s, type)&#160;&#160;&#160;<a class="el" href="swigperlrun_8h.html#a9569c58a1d14d35c277a8131eebc1f82">SWIG_Perl_ConvertPacked</a>(<a class="el" href="swigperlrun_8h.html#a1424d69c8f3413f4f20a342b66a0362e">SWIG_PERL_OBJECT_CALL</a> obj, p, s, type)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigperlrun_8h.html#a40965240fc991febee43f6f131e1dc80">SWIG_NewPackedObj</a>(p, s, type)&#160;&#160;&#160;<a class="el" href="swigperlrun_8h.html#a4bace3b92cb52c95d5464236dd9f053f">SWIG_Perl_NewPackedObj</a>(<a class="el" href="swigperlrun_8h.html#a1424d69c8f3413f4f20a342b66a0362e">SWIG_PERL_OBJECT_CALL</a> p, s, type)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigperlrun_8h.html#a55a82f2c2bfcd0c1e514392867a5561c">SWIG_ConvertInstance</a>(obj, pptr, type, flags)&#160;&#160;&#160;<a class="el" href="swigpyrun_8h.html#a72b29226ccbfc8ab46f6247435daed44">SWIG_ConvertPtr</a>(obj, pptr, type, flags)</td></tr>
@@ -200,7 +201,7 @@ Defines</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigperlrun_8h.html#aab2f1993f97bd27040adf9836dafff18">SWIG_NewFunctionPtrObj</a>(ptr, type)&#160;&#160;&#160;<a class="el" href="swigpyrun_8h.html#a978ff8eb5e32b08b8a1b8399c1994f23">SWIG_NewPointerObj</a>(ptr, type, 0)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigperlrun_8h.html#abb497a1b462ed19945a37c5cffb64de8">SWIG_ConvertMember</a>(obj, ptr, sz, ty)&#160;&#160;&#160;<a class="el" href="swigpyrun_8h.html#a870d0838e4e08ed09cb8a5524e91bd56">SWIG_ConvertPacked</a>(obj, ptr, sz, ty)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigperlrun_8h.html#a4b628289fae4cd1c4ee9be55e1927f65">SWIG_NewMemberObj</a>(ptr, sz, type)&#160;&#160;&#160;<a class="el" href="swigpyrun_8h.html#ab6d4285e098e13c5797188b2cf77592e">SWIG_NewPackedObj</a>(ptr, sz, type)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigperlrun_8h.html#ab97db3bbfc9e3a73de01e1ee95fa0bb5">SWIG_GetModule</a>(clientdata)&#160;&#160;&#160;<a class="el" href="swigperlrun_8h.html#a9597e819b5d0e0b0f84fb72260e4597a">SWIG_Perl_GetModule</a>()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigperlrun_8h.html#ab97db3bbfc9e3a73de01e1ee95fa0bb5">SWIG_GetModule</a>(clientdata)&#160;&#160;&#160;<a class="el" href="swigperlrun_8h.html#a6c85867e684426bf5a5c54df6549f4c4">SWIG_Perl_GetModule</a>(clientdata)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigperlrun_8h.html#a673a7dcc5c15f5cffa7072785a6c7972">SWIG_SetModule</a>(clientdata, pointer)&#160;&#160;&#160;<a class="el" href="swigperlrun_8h.html#a21e5f3b69350ccf4c19867ec73caa8c1">SWIG_Perl_SetModule</a>(pointer)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigperlrun_8h.html#a21d4e75f4bb2519f73467e922c7b51d7">SWIG_ErrorType</a>(code)&#160;&#160;&#160;<a class="el" href="swigperlrun_8h.html#a6f98f2a2160aac5db6cc423391454aa3">SWIG_Perl_ErrorType</a>(code)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigperlrun_8h.html#a01b485cfacae7d870729eea43fb17cb0">SWIG_Error</a>(code, msg)&#160;&#160;&#160;sv_setpvf(<a class="el" href="swigperlrun_8h.html#a2356d5ec33faab63b43c3b430f529061">get_sv</a>(&quot;@&quot;, GV_ADD), &quot;%s %s&quot;, SWIG_ErrorType(code), msg)</td></tr>
@@ -222,7 +223,7 @@ Defines</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigperlrun_8h.html#a678497e986ef10cf215b835c5dc0398c">SWIGCLASS_STATIC</a>&#160;&#160;&#160;static <a class="el" href="swigpyrun_8h.html#a6ee41cd160d397aa76668bf4db65e2d1">SWIGUNUSED</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigperlrun_8h.html#ad5d64fd8d328003ce558041e8a135fd6">SWIG_MAGIC</a>(a, b)&#160;&#160;&#160;(SV *a, MAGIC *b)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigperlrun_8h.html#af0a0328b3a03ccd12c9d6ab3d8e6b5ea">SWIG_PERL_STRICT_STR2NUM</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigperlrun_8h.html#ae82e97d3b1089a9a879b14c265d03989">SWIG_Str2NumCast</a>(x)&#160;&#160;&#160;<a class="el" href="swigpyrun_8h.html#ad69473581dbf2292673b61e56b35d893">SWIG_AddCast</a>(x)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigperlrun_8h.html#ae82e97d3b1089a9a879b14c265d03989">SWIG_Str2NumCast</a>(x)&#160;&#160;&#160;<a class="el" href="swigpyrun_8h.html#a4f6f5e0444e44e48aef51f6620438a5f">SWIG_AddCast</a>(x)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigperlrun_8h.html#a24d4c93d777e5c3fa9a6d7d5094b86e2">SWIG_croak</a>(x)&#160;&#160;&#160;{ <a class="el" href="swigpyrun_8h.html#a01b485cfacae7d870729eea43fb17cb0">SWIG_Error</a>(<a class="el" href="swigpyrun_8h.html#a34d3d1c1310427d00140bf1cc8de3ef6">SWIG_RuntimeError</a>, x); <a class="el" href="swigpyrun_8h.html#ababf56889b69e7a569556eb38cd4f157">SWIG_fail</a>; }</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigperlrun_8h.html#aafc936b77173c074089a4a262abd07d2">SWIG_INT</a>&#160;&#160;&#160;1</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigperlrun_8h.html#a9b1c181da537025842999b11e2242787">SWIG_FLOAT</a>&#160;&#160;&#160;2</td></tr>
@@ -243,8 +244,8 @@ Typedefs</h2></td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="swigpyrun_8h.html#a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigperlrun_8h.html#a2f69ad4207037cb391a2b2d5915fcba2">SWIG_TypeNameComp</a> (const char *f1, const char *l1, const char *f2, const char *l2)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="swigpyrun_8h.html#a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigperlrun_8h.html#a73131c439c907ed987c34da85b95a597">SWIG_TypeCmp</a> (const char *nb, const char *tb)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="swigpyrun_8h.html#a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigperlrun_8h.html#a23ecf039d651082ffc7582c4f50af780">SWIG_TypeEquiv</a> (const char *nb, const char *tb)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="swigpyrun_8h.html#a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigperlrun_8h.html#adc0e91b1eac793ed183ae989c62d33fb">SWIG_TypeCompare</a> (const char *nb, const char *tb)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="swigpyrun_8h.html#a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</a> <a class="el" href="structswig__cast__info.html">swig_cast_info</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigperlrun_8h.html#abd0cb78a9663e41312c8f14ab6715f04">SWIG_TypeCheck</a> (const char *c, <a class="el" href="structswig__type__info.html">swig_type_info</a> *ty)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="swigpyrun_8h.html#a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</a> <a class="el" href="structswig__cast__info.html">swig_cast_info</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigperlrun_8h.html#a898a1dfcdf96d53a2c7fd90e8500b36e">SWIG_TypeCheckStruct</a> (<a class="el" href="structswig__type__info.html">swig_type_info</a> *from, <a class="el" href="structswig__type__info.html">swig_type_info</a> *ty)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="swigpyrun_8h.html#affa7aa2bcce5bea24a20e5b184ae0533">SWIGRUNTIMEINLINE</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigperlrun_8h.html#a334486cb1e8f569c949a0384cbdb2a16">SWIG_TypeCast</a> (<a class="el" href="structswig__cast__info.html">swig_cast_info</a> *ty, void *ptr, int *newmemory)</td></tr>
@@ -273,7 +274,7 @@ Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="swigpyrun_8h.html#a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigperlrun_8h.html#a9569c58a1d14d35c277a8131eebc1f82">SWIG_Perl_ConvertPacked</a> (<a class="el" href="swigperlrun_8h.html#a8b4cb2773ce956434fff97b4cc5e4959">SWIG_MAYBE_PERL_OBJECT</a> SV *obj, void *ptr, int sz, <a class="el" href="structswig__type__info.html">swig_type_info</a> *ty)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigperlrun_8h.html#ae71d9d801344c1adda98a1c75e1f655b">XSPROTO</a> (SwigPerlWrapper)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="swigpyrun_8h.html#a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigperlrun_8h.html#abc723a226c6c21b902f7996c5bb46245">_swig_create_magic</a> (SV *sv, char *name, int(*set)(SV *, MAGIC *), int(*get)(SV *, MAGIC *))</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="swigpyrun_8h.html#a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</a> <a class="el" href="structswig__module__info.html">swig_module_info</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigperlrun_8h.html#a9597e819b5d0e0b0f84fb72260e4597a">SWIG_Perl_GetModule</a> (void)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="swigpyrun_8h.html#a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</a> <a class="el" href="structswig__module__info.html">swig_module_info</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigperlrun_8h.html#a6c85867e684426bf5a5c54df6549f4c4">SWIG_Perl_GetModule</a> (void *<a class="el" href="swigpyrun_8h.html#a6a54164d0685c632e7540c5ad32a453a">SWIGUNUSEDPARM</a>(clientdata))</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="swigpyrun_8h.html#a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigperlrun_8h.html#a21e5f3b69350ccf4c19867ec73caa8c1">SWIG_Perl_SetModule</a> (<a class="el" href="structswig__module__info.html">swig_module_info</a> *module)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="swigpyrun_8h.html#affa7aa2bcce5bea24a20e5b184ae0533">SWIGRUNTIMEINLINE</a> <a class="el" href="structswig__type__info.html">swig_type_info</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigperlrun_8h.html#a5bf256cecd146ec7840c31de25099f7a">SWIG_TypeQuery</a> (const char *name)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="swigpyrun_8h.html#affa7aa2bcce5bea24a20e5b184ae0533">SWIGRUNTIMEINLINE</a> <a class="el" href="structswig__type__info.html">swig_type_info</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="swigperlrun_8h.html#a8f0d4e2a73cb2f33d6badc1b251b74ce">SWIG_MangledTypeQuery</a> (const char *name)</td></tr>
@@ -303,7 +304,7 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Referenced by <a class="el" href="swigperlrun_8h.html#a9597e819b5d0e0b0f84fb72260e4597a">SWIG_Perl_GetModule()</a>, and <a class="el" href="swigperlrun_8h.html#a21e5f3b69350ccf4c19867ec73caa8c1">SWIG_Perl_SetModule()</a>.</p>
+<p>Referenced by <a class="el" href="swigperlrun_8h.html#a6c85867e684426bf5a5c54df6549f4c4">SWIG_Perl_GetModule()</a>, and <a class="el" href="swigperlrun_8h.html#a21e5f3b69350ccf4c19867ec73caa8c1">SWIG_Perl_SetModule()</a>.</p>
 
 </div>
 </div>
@@ -332,7 +333,7 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Referenced by <a class="el" href="swigperlrun_8h.html#ae55d50e1d5041c68c8d78731054ab0eb">SWIG_Perl_ConvertPtrAndOwn()</a>, and <a class="el" href="swigperlrun_8h.html#a9597e819b5d0e0b0f84fb72260e4597a">SWIG_Perl_GetModule()</a>.</p>
+<p>Referenced by <a class="el" href="swigperlrun_8h.html#ae55d50e1d5041c68c8d78731054ab0eb">SWIG_Perl_ConvertPtrAndOwn()</a>, and <a class="el" href="swigperlrun_8h.html#a6c85867e684426bf5a5c54df6549f4c4">SWIG_Perl_GetModule()</a>.</p>
 
 </div>
 </div>
@@ -668,12 +669,16 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ad69473581dbf2292673b61e56b35d893"></a><!-- doxytag: member="swigperlrun.h::SWIG_AddCast" ref="ad69473581dbf2292673b61e56b35d893" args="" -->
+<a class="anchor" id="a4f6f5e0444e44e48aef51f6620438a5f"></a><!-- doxytag: member="swigperlrun.h::SWIG_AddCast" ref="a4f6f5e0444e44e48aef51f6620438a5f" args="(r)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="swigpyrun_8h.html#ad69473581dbf2292673b61e56b35d893">SWIG_AddCast</a></td>
+          <td class="memname">#define <a class="el" href="swigpyrun_8h.html#a4f6f5e0444e44e48aef51f6620438a5f">SWIG_AddCast</a></td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">r</td><td>)</td>
+          <td>&#160;&#160;&#160;(r)</td>
         </tr>
       </table>
 </div>
@@ -1281,7 +1286,7 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">clientdata</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="swigperlrun_8h.html#a9597e819b5d0e0b0f84fb72260e4597a">SWIG_Perl_GetModule</a>()</td>
+          <td>&#160;&#160;&#160;<a class="el" href="swigperlrun_8h.html#a6c85867e684426bf5a5c54df6549f4c4">SWIG_Perl_GetModule</a>(clientdata)</td>
         </tr>
       </table>
 </div>
@@ -1776,6 +1781,19 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ae8afee2b61d8b25aa291dc9574882369"></a><!-- doxytag: member="swigperlrun.h::swig_owntype" ref="ae8afee2b61d8b25aa291dc9574882369" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="swigpyrun_8h.html#ae8afee2b61d8b25aa291dc9574882369">swig_owntype</a>&#160;&#160;&#160;int</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a47047755d0044f64eb52a5c1eb81d76a"></a><!-- doxytag: member="swigperlrun.h::SWIG_PERL_CALL_ARGS_1" ref="a47047755d0044f64eb52a5c1eb81d76a" args="(arg1)" -->
 <div class="memitem">
 <div class="memproto">
@@ -1970,7 +1988,7 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Referenced by <a class="el" href="swigperlrun_8h.html#a9597e819b5d0e0b0f84fb72260e4597a">SWIG_Perl_GetModule()</a>, and <a class="el" href="swigperlrun_8h.html#a21e5f3b69350ccf4c19867ec73caa8c1">SWIG_Perl_SetModule()</a>.</p>
+<p>Referenced by <a class="el" href="swigperlrun_8h.html#a6c85867e684426bf5a5c54df6549f4c4">SWIG_Perl_GetModule()</a>, and <a class="el" href="swigperlrun_8h.html#a21e5f3b69350ccf4c19867ec73caa8c1">SWIG_Perl_SetModule()</a>.</p>
 
 </div>
 </div>
@@ -2057,7 +2075,7 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">x</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="swigpyrun_8h.html#ad69473581dbf2292673b61e56b35d893">SWIG_AddCast</a>(x)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="swigpyrun_8h.html#a4f6f5e0444e44e48aef51f6620438a5f">SWIG_AddCast</a>(x)</td>
         </tr>
       </table>
 </div>
@@ -2145,7 +2163,7 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Referenced by <a class="el" href="swigperlrun_8h.html#a9597e819b5d0e0b0f84fb72260e4597a">SWIG_Perl_GetModule()</a>, and <a class="el" href="swigperlrun_8h.html#a21e5f3b69350ccf4c19867ec73caa8c1">SWIG_Perl_SetModule()</a>.</p>
+<p>Referenced by <a class="el" href="swigperlrun_8h.html#a6c85867e684426bf5a5c54df6549f4c4">SWIG_Perl_GetModule()</a>, and <a class="el" href="swigperlrun_8h.html#a21e5f3b69350ccf4c19867ec73caa8c1">SWIG_Perl_SetModule()</a>.</p>
 
 </div>
 </div>
@@ -2267,6 +2285,8 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Referenced by <a class="el" href="swigperlrun_8h.html#ae55d50e1d5041c68c8d78731054ab0eb">SWIG_Perl_ConvertPtrAndOwn()</a>.</p>
 
 </div>
 </div>
@@ -2680,8 +2700,6 @@ Functions</h2></td></tr>
 
 <p>References <a class="el" href="swigperlrun_8h.html#a02c2ac3db8ce87dd62813334e66c9a3a">SWIG_PackData()</a>.</p>
 
-<p>Referenced by <a class="el" href="swigpyrun_8h.html#ae699fa8a32a6f093e4b1cceba4b64a32">SwigPyObject_str()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a9569c58a1d14d35c277a8131eebc1f82"></a><!-- doxytag: member="swigperlrun.h::SWIG_Perl_ConvertPacked" ref="a9569c58a1d14d35c277a8131eebc1f82" args="(SWIG_MAYBE_PERL_OBJECT SV *obj, void *ptr, int sz, swig_type_info *ty)" -->
@@ -2809,7 +2827,7 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="swigperlrun_8h.html#abbc4a3f90370716e2313006d8e7d5053">INT2PTR</a>, <a class="el" href="swigperlrun_8h.html#ac8216459bfd45cbd2be36175ef6f1ccc">SWIG_CAST_NEW_MEMORY</a>, <a class="el" href="swigperlrun_8h.html#acfa11a770d66f9ca6ba170b173c56c94">SWIG_ERROR</a>, <a class="el" href="swigperlrun_8h.html#af9ecbac56d4c5cd6104ae8f6bb82e9f7">SWIG_OK</a>, <a class="el" href="swigperlrun_8h.html#aa56139a289829795ed651d533826b65e">SWIG_POINTER_DISOWN</a>, <a class="el" href="swigperlrun_8h.html#a334486cb1e8f569c949a0384cbdb2a16">SWIG_TypeCast()</a>, and <a class="el" href="swigperlrun_8h.html#a2be62c26425cfa66608ec0b552b2eb77">SWIG_TypeProxyCheck()</a>.</p>
+<p>References <a class="el" href="swigperlrun_8h.html#abbc4a3f90370716e2313006d8e7d5053">INT2PTR</a>, <a class="el" href="swigperlrun_8h.html#ac8216459bfd45cbd2be36175ef6f1ccc">SWIG_CAST_NEW_MEMORY</a>, <a class="el" href="swigperlrun_8h.html#acfa11a770d66f9ca6ba170b173c56c94">SWIG_ERROR</a>, <a class="el" href="swigperlrun_8h.html#af9ecbac56d4c5cd6104ae8f6bb82e9f7">SWIG_OK</a>, <a class="el" href="swigperlrun_8h.html#a51e8ed07c4a785c665d064e06faaab98">SWIG_Perl_TypeProxyName()</a>, <a class="el" href="swigperlrun_8h.html#aa56139a289829795ed651d533826b65e">SWIG_POINTER_DISOWN</a>, <a class="el" href="swigperlrun_8h.html#a334486cb1e8f569c949a0384cbdb2a16">SWIG_TypeCast()</a>, <a class="el" href="swigperlrun_8h.html#a2be62c26425cfa66608ec0b552b2eb77">SWIG_TypeProxyCheck()</a>, and <a class="el" href="swigperlrun_8h.html#a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</a>.</p>
 
 <p>Referenced by <a class="el" href="swigperlrun_8h.html#aae3e224363aab252c32f26db442e1777">SWIG_Perl_ConvertPtr()</a>.</p>
 
@@ -2834,15 +2852,15 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a9597e819b5d0e0b0f84fb72260e4597a"></a><!-- doxytag: member="swigperlrun.h::SWIG_Perl_GetModule" ref="a9597e819b5d0e0b0f84fb72260e4597a" args="(void)" -->
+<a class="anchor" id="a6c85867e684426bf5a5c54df6549f4c4"></a><!-- doxytag: member="swigperlrun.h::SWIG_Perl_GetModule" ref="a6c85867e684426bf5a5c54df6549f4c4" args="(void *SWIGUNUSEDPARM(clientdata))" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="swigpyrun_8h.html#a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</a> <a class="el" href="structswig__module__info.html">swig_module_info</a>* <a class="el" href="swigperlrun_8h.html#a9597e819b5d0e0b0f84fb72260e4597a">SWIG_Perl_GetModule</a> </td>
+          <td class="memname"><a class="el" href="swigpyrun_8h.html#a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</a> <a class="el" href="structswig__module__info.html">swig_module_info</a>* <a class="el" href="swigperlrun_8h.html#a6c85867e684426bf5a5c54df6549f4c4">SWIG_Perl_GetModule</a> </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>SWIGUNUSEDPARM</em>clientdata</td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -3043,7 +3061,7 @@ Functions</h2></td></tr>
 
 <p>References <a class="el" href="structswig__type__info.html#a2e1f9087e639dd7c8c131fbc6e399194">swig_type_info::clientdata</a>, and <a class="el" href="structswig__type__info.html#aa6c9f9ed3037043b6d346162cf932daf">swig_type_info::name</a>.</p>
 
-<p>Referenced by <a class="el" href="swigperlrun_8h.html#a6cb34635dee7062df76e4e71c0494903">SWIG_Perl_MakePackedObj()</a>, <a class="el" href="swigperlrun_8h.html#ad3ceecd3a7e8bcbe662ad103afc3629d">SWIG_Perl_MakePtr()</a>, and <a class="el" href="swigperlrun_8h.html#a2be62c26425cfa66608ec0b552b2eb77">SWIG_TypeProxyCheck()</a>.</p>
+<p>Referenced by <a class="el" href="swigperlrun_8h.html#ae55d50e1d5041c68c8d78731054ab0eb">SWIG_Perl_ConvertPtrAndOwn()</a>, <a class="el" href="swigperlrun_8h.html#a6cb34635dee7062df76e4e71c0494903">SWIG_Perl_MakePackedObj()</a>, <a class="el" href="swigperlrun_8h.html#ad3ceecd3a7e8bcbe662ad103afc3629d">SWIG_Perl_MakePtr()</a>, and <a class="el" href="swigperlrun_8h.html#a2be62c26425cfa66608ec0b552b2eb77">SWIG_TypeProxyCheck()</a>.</p>
 
 </div>
 </div>
@@ -3175,12 +3193,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="adc0e91b1eac793ed183ae989c62d33fb"></a><!-- doxytag: member="swigperlrun.h::SWIG_TypeCompare" ref="adc0e91b1eac793ed183ae989c62d33fb" args="(const char *nb, const char *tb)" -->
+<a class="anchor" id="a73131c439c907ed987c34da85b95a597"></a><!-- doxytag: member="swigperlrun.h::SWIG_TypeCmp" ref="a73131c439c907ed987c34da85b95a597" args="(const char *nb, const char *tb)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="swigpyrun_8h.html#a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</a> int <a class="el" href="swigpyrun_8h.html#adc0e91b1eac793ed183ae989c62d33fb">SWIG_TypeCompare</a> </td>
+          <td class="memname"><a class="el" href="swigpyrun_8h.html#a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</a> int <a class="el" href="swigpyrun_8h.html#a73131c439c907ed987c34da85b95a597">SWIG_TypeCmp</a> </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>nb</em>, </td>
@@ -3201,6 +3219,8 @@ Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>References <a class="el" href="swigperlrun_8h.html#a2f69ad4207037cb391a2b2d5915fcba2">SWIG_TypeNameComp()</a>.</p>
+
+<p>Referenced by <a class="el" href="swigperlrun_8h.html#a23ecf039d651082ffc7582c4f50af780">SWIG_TypeEquiv()</a>.</p>
 
 </div>
 </div>
@@ -3258,7 +3278,7 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="swigperlrun_8h.html#a2f69ad4207037cb391a2b2d5915fcba2">SWIG_TypeNameComp()</a>.</p>
+<p>References <a class="el" href="swigperlrun_8h.html#a73131c439c907ed987c34da85b95a597">SWIG_TypeCmp()</a>.</p>
 
 <p>Referenced by <a class="el" href="swigperlrun_8h.html#a5b6a2719f95288678fa55ade4493b175">SWIG_TypeQueryModule()</a>.</p>
 
@@ -3320,7 +3340,7 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Referenced by <a class="el" href="swigperlrun_8h.html#adc0e91b1eac793ed183ae989c62d33fb">SWIG_TypeCompare()</a>, and <a class="el" href="swigperlrun_8h.html#a23ecf039d651082ffc7582c4f50af780">SWIG_TypeEquiv()</a>.</p>
+<p>Referenced by <a class="el" href="swigperlrun_8h.html#a73131c439c907ed987c34da85b95a597">SWIG_TypeCmp()</a>.</p>
 
 </div>
 </div>
@@ -3611,7 +3631,7 @@ Functions</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 11 2014 20:38:10 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 11 2014 23:29:11 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
