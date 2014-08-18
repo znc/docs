@@ -70,6 +70,7 @@ var searchData=
   ['getdccbindhost',['GetDCCBindHost',['../classCUser.html#abe73d7c42e02edb18f31f959272d7784',1,'CUser']]],
   ['getdefaultchanmodes',['GetDefaultChanModes',['../classCUser.html#a10c02b8254d210bf76db8906be969d1d',1,'CUser']]],
   ['getdefaultmodes',['GetDefaultModes',['../classCChan.html#a2dacd87bfa59c7234779b1380ddf9fd8',1,'CChan']]],
+  ['getdefaultmods',['GetDefaultMods',['../classCModules.html#a67ec546939c05dcb4a7ac3eef51143df',1,'CModules']]],
   ['getdefaulttype',['GetDefaultType',['../classCModInfo.html#a7456b625a16e717adc34b8e72b9c6aba',1,'CModInfo']]],
   ['getdescription',['GetDescription',['../classCTimer.html#a163c52850a7ba16b5ab602ebfb46a4a1',1,'CTimer::GetDescription()'],['../classCModInfo.html#a1576f58881e4f5442095d0a1279aa789',1,'CModInfo::GetDescription()'],['../classCModCommand.html#a69e03fabd7d02ae276d62fed82c2f180',1,'CModCommand::GetDescription()'],['../classCModule.html#adfb083f7b8da65f6ea9a9e9db2e3767d',1,'CModule::GetDescription()']]],
   ['getdetach',['GetDetach',['../classCSListener.html#a505f7f22d13585680add6432434ed4cf',1,'CSListener']]],
