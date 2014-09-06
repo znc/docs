@@ -258,5 +258,6 @@ var searchData=
   ['moduletypetostring',['ModuleTypeToString',['../classCModInfo.html#a791e3525a64244528c0b7ef2d800da06',1,'CModInfo']]],
   ['monitorfd',['MonitorFD',['../classCSockCommon.html#a7a5acbe54d37f4a3f4c85a339451ee2e',1,'CSockCommon']]],
   ['move',['Move',['../classCFile.html#a3e79191bd6051aee03b038150a23ab6b',1,'CFile::Move(const CString &amp;sNewFileName, bool bOverwrite=false)'],['../classCFile.html#a1539989d0d16c147b91b09462f00e738',1,'CFile::Move(const CString &amp;sOldFileName, const CString &amp;sNewFileName, bool bOverwrite=false)']]],
+  ['moveregistry',['MoveRegistry',['../classCModule.html#a0f268b75ec025ff3ccc8e9b526134fef',1,'CModule']]],
   ['multiclients',['MultiClients',['../classCUser.html#a668a2fc9df60fe7c401dc56579ba2310',1,'CUser']]]
 ];
