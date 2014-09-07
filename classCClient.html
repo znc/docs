@@ -193,7 +193,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#af0e0e58754ea6f99da246c71fd841308">IsCapEnabled</a> (const <a class="el" href="classCString.html">CString</a> &amp;sCap)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#add920a2c00e5c1184667b310c1b05bc6">ReadLine</a> (const <a class="el" href="classCString.html">CString</a> &amp;sData)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#ac822872ee0c32117eccdee1398240a6b">SendMotd</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a9c041467bf930996c459ecae6ab603ae">HelpUser</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a6e669ae3c33d7d0102d5b6c5804a5151">HelpUser</a> (const <a class="el" href="classCString.html">CString</a> &amp;sFilter=&quot;&quot;)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a070b00519b2415c2420f4b90679b1bc7">AuthUser</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#af8a127634d58083035eb834a4c85b238">Connected</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Override these functions for an easy interface when using the Socket Manager Don't bother using these callbacks if you are using this class directly (without Socket Manager) as the Socket Manager calls most of these callbacks.  <a href="#af8a127634d58083035eb834a4c85b238"></a><br/></td></tr>
@@ -2618,14 +2618,15 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a9c041467bf930996c459ecae6ab603ae"></a><!-- doxytag: member="CClient::HelpUser" ref="a9c041467bf930996c459ecae6ab603ae" args="()" -->
+<a class="anchor" id="a6e669ae3c33d7d0102d5b6c5804a5151"></a><!-- doxytag: member="CClient::HelpUser" ref="a6e669ae3c33d7d0102d5b6c5804a5151" args="(const CString &amp;sFilter=&quot;&quot;)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classCClient.html#a9c041467bf930996c459ecae6ab603ae">CClient::HelpUser</a> </td>
+          <td class="memname">void <a class="el" href="classCClient.html#a6e669ae3c33d7d0102d5b6c5804a5151">CClient::HelpUser</a> </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
+          <td class="paramname"><em>sFilter</em> = <code>&quot;&quot;</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -4650,7 +4651,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 6 2014 22:31:24 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Sep 7 2014 15:30:42 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

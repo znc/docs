@@ -47,6 +47,6 @@ var searchData=
   ['haveipv6_5f',['HaveIPv6_',['../modpython_2module_8h.html#a59296936c509a373f2e36127f9a2dbf8',1,'module.h']]],
   ['havessl',['HaveSSL',['../modperl_2module_8h.html#a280ad0741d3ca062ee20ebceb38f2dbb',1,'module.h']]],
   ['havessl_5f',['HaveSSL_',['../modpython_2module_8h.html#a5cb855e7db1a7ec806ec56f38cf3cb2b',1,'module.h']]],
-  ['helpuser',['HelpUser',['../classCClient.html#a9c041467bf930996c459ecae6ab603ae',1,'CClient']]],
+  ['helpuser',['HelpUser',['../classCClient.html#a6e669ae3c33d7d0102d5b6c5804a5151',1,'CClient']]],
   ['httpsock_2eh',['HTTPSock.h',['../HTTPSock_8h.html',1,'']]]
 ];
