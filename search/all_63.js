@@ -113,6 +113,7 @@ var searchData=
   ['cs_5fblocksize',['CS_BLOCKSIZE',['../Csocket_8h.html#ab74f57cb6a8c20475287974443ad1367',1,'Csocket.h']]],
   ['cs_5fdebug',['CS_DEBUG',['../Csocket_8h.html#a310acab4b9485259268b9c729ffd2b39',1,'CS_DEBUG():&#160;Csocket.h'],['../defines_8h.html#a310acab4b9485259268b9c729ffd2b39',1,'CS_DEBUG():&#160;defines.h']]],
   ['cs_5fdelete',['CS_Delete',['../Csocket_8h.html#a59ef365f3a755f41243d269f0305398d',1,'Csocket.h']]],
+  ['cs_5fexport',['CS_EXPORT',['../Csocket_8h.html#a912dbe0f0d3074e2d17b36975950c0de',1,'Csocket.h']]],
   ['cs_5finvalid_5fsock',['CS_INVALID_SOCK',['../Csocket_8h.html#ac7c7a74c1982fb7cd171a87ea30b32a8',1,'Csocket.h']]],
   ['cs_5fsock_5ft',['cs_sock_t',['../Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730',1,'Csocket.h']]],
   ['cs_5fssize_5ft',['cs_ssize_t',['../Csocket_8h.html#a78fb384df356e425a637e1b3de358c78',1,'Csocket.h']]],

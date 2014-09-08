@@ -239,7 +239,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#af5503bfd5516bd1bb281d2616d9321b0">PushBuff</a> (const char *data, size_t len, bool bStartAtZero=false)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">pushes data up on the buffer, if a line is ready it calls the ReadLine event  <a href="#af5503bfd5516bd1bb281d2616d9321b0"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a1a8fedcc5a3e9ddf4381d1ffd5fb2950">GetInternalReadBuffer</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This gives access to the internal read buffer, if your not going to use <a class="el" href="classCsock.html#a81e28ab1c689ee3e8496d7d717a5a402" title="Override these functions for an easy interface when using the Socket Manager Don&#39;t bother using these...">ReadLine()</a>, then you may want to clear this out (if its binary data and not many '\n')  <a href="#a1a8fedcc5a3e9ddf4381d1ffd5fb2950"></a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This gives access to the internal read buffer, if your not going to use <a class="el" href="classCsock.html#a81e28ab1c689ee3e8496d7d717a5a402" title="Ready to Read a full line event.">ReadLine()</a>, then you may want to clear this out (if its binary data and not many '\n')  <a href="#a1a8fedcc5a3e9ddf4381d1ffd5fb2950"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a96ccad4113fb78c04081be167738dd54">GetInternalWriteBuffer</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This gives access to the internal write buffer.  <a href="#a96ccad4113fb78c04081be167738dd54"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a06f840efef58b550473f4fe1e5f27efa">SetMaxBufferThreshold</a> (uint32_t iThreshold)</td></tr>
@@ -328,30 +328,30 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a95a214a3cba719326de94befc68eabe4">GetRateBytes</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a5a3c9b91a06971f24ed47b038609ba62">GetRateTime</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#adb18e57324c2abe83eea8bf8dc32cd33">Connected</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Override these functions for an easy interface when using the Socket Manager Don't bother using these callbacks if you are using this class directly (without Socket Manager) as the Socket Manager calls most of these callbacks.  <a href="#adb18e57324c2abe83eea8bf8dc32cd33"></a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Connected event.  <a href="#adb18e57324c2abe83eea8bf8dc32cd33"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#aea4ef32ddae3f80d3d9296f52bd51431">Disconnected</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Override these functions for an easy interface when using the Socket Manager Don't bother using these callbacks if you are using this class directly (without Socket Manager) as the Socket Manager calls most of these callbacks.  <a href="#aea4ef32ddae3f80d3d9296f52bd51431"></a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnected event.  <a href="#aea4ef32ddae3f80d3d9296f52bd51431"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#ac32577c8dac5ec04fdbdf22ff813a874">Timeout</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Override these functions for an easy interface when using the Socket Manager Don't bother using these callbacks if you are using this class directly (without Socket Manager) as the Socket Manager calls most of these callbacks.  <a href="#ac32577c8dac5ec04fdbdf22ff813a874"></a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Sock Timed out event.  <a href="#ac32577c8dac5ec04fdbdf22ff813a874"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a0b807704b265df360de15a1cfcbb23e0">ReadData</a> (const char *data, size_t len)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Override these functions for an easy interface when using the Socket Manager Don't bother using these callbacks if you are using this class directly (without Socket Manager) as the Socket Manager calls most of these callbacks.  <a href="#a0b807704b265df360de15a1cfcbb23e0"></a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Ready to read data event.  <a href="#a0b807704b265df360de15a1cfcbb23e0"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a81e28ab1c689ee3e8496d7d717a5a402">ReadLine</a> (const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sLine)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Override these functions for an easy interface when using the Socket Manager Don't bother using these callbacks if you are using this class directly (without Socket Manager) as the Socket Manager calls most of these callbacks.  <a href="#a81e28ab1c689ee3e8496d7d717a5a402"></a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Ready to Read a full line event.  <a href="#a81e28ab1c689ee3e8496d7d717a5a402"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#af748608ba80f9bd54294292930db560e">EnableReadLine</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">set the value of m_bEnableReadLine to true, we don't want to store a buffer for ReadLine, unless we want it  <a href="#af748608ba80f9bd54294292930db560e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#adfee091e6a74b7ad8db05171465412c0">DisableReadLine</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a30d7c0b563bd61256cab129b6c567829">HasReadLine</a> () const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the value of m_bEnableReadLine, if ReadLine is enabled  <a href="#a30d7c0b563bd61256cab129b6c567829"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a5fa71d73d2eed4e5ddd59d7a11b72ea2">ReachedMaxBuffer</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Override these functions for an easy interface when using the Socket Manager Don't bother using these callbacks if you are using this class directly (without Socket Manager) as the Socket Manager calls most of these callbacks This WARNING event is called when your buffer for readline exceeds the warning threshold and triggers this event.  <a href="#a5fa71d73d2eed4e5ddd59d7a11b72ea2"></a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This WARNING event is called when your buffer for readline exceeds the warning threshold and triggers this event.  <a href="#a5fa71d73d2eed4e5ddd59d7a11b72ea2"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a2092f1cfd768211741d4d3c4b092563b">SockError</a> (int iErrno, const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sDescription)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">A sock error occured event.  <a href="#a2092f1cfd768211741d4d3c4b092563b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a46eaa8d1a67946a6d2f6349f40d551e2">ConnectionFrom</a> (const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sHost, uint16_t iPort)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Override these functions for an easy interface when using the Socket Manager Don't bother using these callbacks if you are using this class directly (without Socket Manager) as the Socket Manager calls most of these callbacks.  <a href="#a46eaa8d1a67946a6d2f6349f40d551e2"></a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Incoming Connection Event return false and the connection will fail default returns true.  <a href="#a46eaa8d1a67946a6d2f6349f40d551e2"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#aa8ab288dec0530dac35001c20694a86e">Listening</a> (const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sBindIP, uint16_t uPort)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">called when type is LISTENER and the listening port is up and running  <a href="#aa8ab288dec0530dac35001c20694a86e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#acc930b9f368c7226e9fd36f9f6b6ef91">ConnectionRefused</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Override these functions for an easy interface when using the Socket Manager Don't bother using these callbacks if you are using this class directly (without Socket Manager) as the Socket Manager calls most of these callbacks.  <a href="#acc930b9f368c7226e9fd36f9f6b6ef91"></a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Connection Refused Event.  <a href="#acc930b9f368c7226e9fd36f9f6b6ef91"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#ab7c9de4f24a9fa1ef9e3bb506e6ddd33">ReadPaused</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This gets called every iteration of <a class="el" href="classCSocketManager.html#acf705393b54ade69835134e900c7bf85">CSocketManager::Select()</a> if the socket is ReadPaused.  <a href="#ab7c9de4f24a9fa1ef9e3bb506e6ddd33"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#ab16f04115dc73a586503fd96926bf8ae">SSLFinishSetup</a> (SSL *pSSL)</td></tr>
@@ -1011,8 +1011,7 @@ Protected Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Override these functions for an easy interface when using the Socket Manager Don't bother using these callbacks if you are using this class directly (without Socket Manager) as the Socket Manager calls most of these callbacks. </p>
-<p>Connected event </p>
+<p>Connected event. </p>
 
 <p>Reimplemented in <a class="el" href="classCPySocket.html#a3e54bb0e5b0935389e7c861438371532">CPySocket</a>, <a class="el" href="classCPerlSocket.html#a60f8924c1b886327664e4a853dc22055">CPerlSocket</a>, <a class="el" href="classCClient.html#af8a127634d58083035eb834a4c85b238">CClient</a>, <a class="el" href="classCIRCSock.html#aeff4c1a575f5f79c65569a7fbd7c8abd">CIRCSock</a>, and <a class="el" href="classCHTTPSock.html#a4b5c7c36802a5e8e89fa771f9547d0ec">CHTTPSock</a>.</p>
 
@@ -1121,8 +1120,7 @@ Protected Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Override these functions for an easy interface when using the Socket Manager Don't bother using these callbacks if you are using this class directly (without Socket Manager) as the Socket Manager calls most of these callbacks. </p>
-<p>Incoming Connection Event return false and the connection will fail default returns true </p>
+<p>Incoming Connection Event return false and the connection will fail default returns true. </p>
 
 </div>
 </div>
@@ -1140,8 +1138,7 @@ Protected Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Override these functions for an easy interface when using the Socket Manager Don't bother using these callbacks if you are using this class directly (without Socket Manager) as the Socket Manager calls most of these callbacks. </p>
-<p>Connection Refused Event </p>
+<p>Connection Refused Event. </p>
 
 <p>Reimplemented in <a class="el" href="classCPySocket.html#ad2b9451511b989aafb7a0ab1178ed885">CPySocket</a>, <a class="el" href="classCPerlSocket.html#a7dc8ab8e8c3f04d3c73b4ed0a3abb8a4">CPerlSocket</a>, <a class="el" href="classCClient.html#af6734b37352aa8dc76af148b3c0691f5">CClient</a>, and <a class="el" href="classCIRCSock.html#a8da20f2aed2cb795868add5abb74a3cc">CIRCSock</a>.</p>
 
@@ -1445,8 +1442,7 @@ Protected Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Override these functions for an easy interface when using the Socket Manager Don't bother using these callbacks if you are using this class directly (without Socket Manager) as the Socket Manager calls most of these callbacks. </p>
-<p>Disconnected event </p>
+<p>Disconnected event. </p>
 
 <p>Reimplemented in <a class="el" href="classCPySocket.html#a4a145fe73a06f8e1039215b28e6dfceb">CPySocket</a>, <a class="el" href="classCPerlSocket.html#a4fc6479a5f35ecf8b9ffc41d68fe3fdc">CPerlSocket</a>, <a class="el" href="classCClient.html#a45a253d43ced7a020b7f3814d7f0d597">CClient</a>, and <a class="el" href="classCIRCSock.html#ab633f090638cf7bc010cef9a17031671">CIRCSock</a>.</p>
 
@@ -1725,7 +1721,7 @@ Protected Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>This gives access to the internal read buffer, if your not going to use <a class="el" href="classCsock.html#a81e28ab1c689ee3e8496d7d717a5a402" title="Override these functions for an easy interface when using the Socket Manager Don&#39;t bother using these...">ReadLine()</a>, then you may want to clear this out (if its binary data and not many '\n') </p>
+<p>This gives access to the internal read buffer, if your not going to use <a class="el" href="classCsock.html#a81e28ab1c689ee3e8496d7d717a5a402" title="Ready to Read a full line event.">ReadLine()</a>, then you may want to clear this out (if its binary data and not many '\n') </p>
 
 </div>
 </div>
@@ -2747,7 +2743,7 @@ Protected Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Override these functions for an easy interface when using the Socket Manager Don't bother using these callbacks if you are using this class directly (without Socket Manager) as the Socket Manager calls most of these callbacks This WARNING event is called when your buffer for readline exceeds the warning threshold and triggers this event. </p>
+<p>This WARNING event is called when your buffer for readline exceeds the warning threshold and triggers this event. </p>
 <p>Either Override it and do nothing, or <a class="el" href="classCsock.html#a06f840efef58b550473f4fe1e5f27efa" title="sets the max buffered threshold when EnableReadLine() is enabled">SetMaxBufferThreshold()</a> This event will only get called if m_bEnableReadLine is enabled </p>
 
 <p>Reimplemented in <a class="el" href="classCSocket.html#a006813cba95395cb701d3c57c2578749">CSocket</a>, <a class="el" href="classCClient.html#abc2fb0f9308d7525a721d32147d19a80">CClient</a>, <a class="el" href="classCIncomingConnection.html#a37e651666d35a45a9e1e82edc22eed50">CIncomingConnection</a>, and <a class="el" href="classCIRCSock.html#a5fa3b42031d1a97f15bc50f5dcce4430">CIRCSock</a>.</p>
@@ -2816,8 +2812,7 @@ Protected Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Override these functions for an easy interface when using the Socket Manager Don't bother using these callbacks if you are using this class directly (without Socket Manager) as the Socket Manager calls most of these callbacks. </p>
-<p>Ready to read data event </p>
+<p>Ready to read data event. </p>
 
 <p>Reimplemented in <a class="el" href="classCPySocket.html#a3c3566df44b128a5c68f8f76ae79abf6">CPySocket</a>, <a class="el" href="classCPerlSocket.html#aae51f7936fe123ed397dc05d0fb066a3">CPerlSocket</a>, and <a class="el" href="classCHTTPSock.html#a8ea23d2b09f415d71c6dd92431b6d947">CHTTPSock</a>.</p>
 
@@ -2838,10 +2833,8 @@ Protected Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Override these functions for an easy interface when using the Socket Manager Don't bother using these callbacks if you are using this class directly (without Socket Manager) as the Socket Manager calls most of these callbacks. </p>
-<p>With ReadLine, if your not going to use it IE a data stream, </p>
-<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classCsock.html#af748608ba80f9bd54294292930db560e" title="set the value of m_bEnableReadLine to true, we don&#39;t want to store a buffer for ReadLine, unless we want it">EnableReadLine()</a></dd></dl>
-<p>Ready to Read a full line event. If encoding is provided, this is guaranteed to be UTF-8 </p>
+<p>Ready to Read a full line event. </p>
+<p>If encoding is provided, this is guaranteed to be UTF-8 </p>
 
 </div>
 </div>
@@ -3524,7 +3517,6 @@ Protected Attributes</h2></td></tr>
 <div class="memdoc">
 
 <p>A sock error occured event. </p>
-<p>Override these functions for an easy interface when using the Socket Manager Don't bother using these callbacks if you are using this class directly (without Socket Manager) as the Socket Manager calls most of these callbacks </p>
 
 </div>
 </div>
@@ -3633,8 +3625,7 @@ Protected Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Override these functions for an easy interface when using the Socket Manager Don't bother using these callbacks if you are using this class directly (without Socket Manager) as the Socket Manager calls most of these callbacks. </p>
-<p>Sock Timed out event </p>
+<p>Sock Timed out event. </p>
 
 <p>Reimplemented in <a class="el" href="classCPySocket.html#a7ff57dc35e9234334549ce0381b4352a">CPySocket</a>, <a class="el" href="classCPerlSocket.html#a7a2f14c187bf68879283ed2e50eb5102">CPerlSocket</a>, <a class="el" href="classCClient.html#af08c3caca437453b513ec9aa45bf0841">CClient</a>, and <a class="el" href="classCIRCSock.html#a9ad0428beb9047f9dfaedddcbf7226e6">CIRCSock</a>.</p>
 
@@ -3768,7 +3759,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 7 2014 21:33:28 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Sep 8 2014 21:08:10 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

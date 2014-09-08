@@ -227,11 +227,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00144"></a>00144                 <span class="keywordflow">return</span> sv_2mortal(newSVsv(m_perlObj));
 <a name="l00145"></a>00145         }
 <a name="l00146"></a>00146         <a class="code" href="classCPerlSocket.html#a79c843d10f0e666a60635334bd0c9106">~CPerlSocket</a>();
-<a name="l00147"></a>00147         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCPerlSocket.html#a60f8924c1b886327664e4a853dc22055" title="Override these functions for an easy interface when using the Socket Manager Don&#39;t bother using these...">Connected</a>();
-<a name="l00148"></a>00148         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCPerlSocket.html#a4fc6479a5f35ecf8b9ffc41d68fe3fdc" title="Override these functions for an easy interface when using the Socket Manager Don&#39;t bother using these...">Disconnected</a>();
-<a name="l00149"></a>00149         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCPerlSocket.html#a7a2f14c187bf68879283ed2e50eb5102" title="Override these functions for an easy interface when using the Socket Manager Don&#39;t bother using these...">Timeout</a>();
-<a name="l00150"></a>00150         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCPerlSocket.html#a7dc8ab8e8c3f04d3c73b4ed0a3abb8a4" title="Override these functions for an easy interface when using the Socket Manager Don&#39;t bother using these...">ConnectionRefused</a>();
-<a name="l00151"></a>00151         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCPerlSocket.html#aae51f7936fe123ed397dc05d0fb066a3" title="Override these functions for an easy interface when using the Socket Manager Don&#39;t bother using these...">ReadData</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *data, <span class="keywordtype">size_t</span> len);
+<a name="l00147"></a>00147         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCPerlSocket.html#a60f8924c1b886327664e4a853dc22055" title="Connected event.">Connected</a>();
+<a name="l00148"></a>00148         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCPerlSocket.html#a4fc6479a5f35ecf8b9ffc41d68fe3fdc" title="Disconnected event.">Disconnected</a>();
+<a name="l00149"></a>00149         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCPerlSocket.html#a7a2f14c187bf68879283ed2e50eb5102" title="Sock Timed out event.">Timeout</a>();
+<a name="l00150"></a>00150         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCPerlSocket.html#a7dc8ab8e8c3f04d3c73b4ed0a3abb8a4" title="Connection Refused Event.">ConnectionRefused</a>();
+<a name="l00151"></a>00151         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCPerlSocket.html#aae51f7936fe123ed397dc05d0fb066a3" title="Ready to read data event.">ReadData</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *data, <span class="keywordtype">size_t</span> len);
 <a name="l00152"></a>00152         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCPerlSocket.html#aeaefe49c6f4136fddb32c25b79a42315">ReadLine</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sLine);
 <a name="l00153"></a>00153         <span class="keyword">virtual</span> <a class="code" href="classCsock.html" title="Basic socket class.">Csock</a>* <a class="code" href="classCPerlSocket.html#a726193bb849e1264cc435c536beb06f3">GetSockObj</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sHost, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> uPort);
 <a name="l00154"></a>00154 };
@@ -301,7 +301,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 7 2014 21:33:25 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Sep 8 2014 21:08:08 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

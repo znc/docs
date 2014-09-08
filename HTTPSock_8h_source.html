@@ -113,9 +113,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00030"></a>00030         <span class="keyword">virtual</span> <a class="code" href="classCHTTPSock.html#a68dcd9d2c25a1d6b36cea101586bf127">~CHTTPSock</a>();
 <a name="l00031"></a>00031 
 <a name="l00032"></a>00032         <span class="comment">// Csocket derived members</span>
-<a name="l00033"></a>00033         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCHTTPSock.html#a8ea23d2b09f415d71c6dd92431b6d947" title="Override these functions for an easy interface when using the Socket Manager Don&#39;t bother using these...">ReadData</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* data, <span class="keywordtype">size_t</span> len);
+<a name="l00033"></a>00033         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCHTTPSock.html#a8ea23d2b09f415d71c6dd92431b6d947" title="Ready to read data event.">ReadData</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* data, <span class="keywordtype">size_t</span> len);
 <a name="l00034"></a>00034         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCHTTPSock.html#afed70d5398f4ca160badb0f6171f768c">ReadLine</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sData);
-<a name="l00035"></a>00035         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCHTTPSock.html#a4b5c7c36802a5e8e89fa771f9547d0ec" title="Override these functions for an easy interface when using the Socket Manager Don&#39;t bother using these...">Connected</a>();
+<a name="l00035"></a>00035         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCHTTPSock.html#a4b5c7c36802a5e8e89fa771f9547d0ec" title="Connected event.">Connected</a>();
 <a name="l00036"></a>00036         <span class="keyword">virtual</span> <a class="code" href="classCsock.html" title="Basic socket class.">Csock</a>* <a class="code" href="classCHTTPSock.html#a027fffe91e66a64241db5dda8fcb9c54">GetSockObj</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sHost, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> uPort) = 0;
 <a name="l00037"></a>00037         <span class="comment">// !Csocket derived members</span>
 <a name="l00038"></a>00038 
@@ -227,7 +227,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 7 2014 21:33:25 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Sep 8 2014 21:08:08 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

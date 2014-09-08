@@ -139,12 +139,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00056"></a>00056         <span class="comment">// !Message Handlers</span>
 <a name="l00057"></a>00057 
 <a name="l00058"></a>00058         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCIRCSock.html#ab4efcd165d9122fde712222a41334208">ReadLine</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sData);
-<a name="l00059"></a>00059         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCIRCSock.html#aeff4c1a575f5f79c65569a7fbd7c8abd" title="Override these functions for an easy interface when using the Socket Manager Don&#39;t bother using these...">Connected</a>();
-<a name="l00060"></a>00060         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCIRCSock.html#ab633f090638cf7bc010cef9a17031671" title="Override these functions for an easy interface when using the Socket Manager Don&#39;t bother using these...">Disconnected</a>();
-<a name="l00061"></a>00061         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCIRCSock.html#a8da20f2aed2cb795868add5abb74a3cc" title="Override these functions for an easy interface when using the Socket Manager Don&#39;t bother using these...">ConnectionRefused</a>();
+<a name="l00059"></a>00059         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCIRCSock.html#aeff4c1a575f5f79c65569a7fbd7c8abd" title="Connected event.">Connected</a>();
+<a name="l00060"></a>00060         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCIRCSock.html#ab633f090638cf7bc010cef9a17031671" title="Disconnected event.">Disconnected</a>();
+<a name="l00061"></a>00061         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCIRCSock.html#a8da20f2aed2cb795868add5abb74a3cc" title="Connection Refused Event.">ConnectionRefused</a>();
 <a name="l00062"></a>00062         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCIRCSock.html#a89673a2248ea06c5f0fb91dd1b1d3cbb">SockError</a>(<span class="keywordtype">int</span> iErrno, <span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sDescription);
-<a name="l00063"></a>00063         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCIRCSock.html#a9ad0428beb9047f9dfaedddcbf7226e6" title="Override these functions for an easy interface when using the Socket Manager Don&#39;t bother using these...">Timeout</a>();
-<a name="l00064"></a>00064         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCIRCSock.html#a5fa3b42031d1a97f15bc50f5dcce4430" title="Override these functions for an easy interface when using the Socket Manager Don&#39;t bother using these...">ReachedMaxBuffer</a>();
+<a name="l00063"></a>00063         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCIRCSock.html#a9ad0428beb9047f9dfaedddcbf7226e6" title="Sock Timed out event.">Timeout</a>();
+<a name="l00064"></a>00064         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCIRCSock.html#a5fa3b42031d1a97f15bc50f5dcce4430" title="This WARNING event is called when your buffer for readline exceeds the warning threshold and triggers...">ReachedMaxBuffer</a>();
 <a name="l00065"></a>00065 
 <a name="l00066"></a>00066         <span class="keywordtype">void</span> <a class="code" href="classCIRCSock.html#afba5876713b8cad27a6a2603041f62b7">PutIRC</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sLine);
 <a name="l00067"></a>00067         <span class="keywordtype">void</span> <a class="code" href="classCIRCSock.html#a5defb75dbdf797eaa8744547bd079ff5" title="Should be used for PONG only.">PutIRCQuick</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sLine); 
@@ -243,7 +243,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 7 2014 21:33:25 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Sep 8 2014 21:08:08 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
