@@ -102,7 +102,7 @@ var searchData=
   ['setpempass',['SetPemPass',['../classCsock.html#afb4f2a1faad29d40ba76611b83c9605b',1,'Csock::SetPemPass()'],['../classCSConnection.html#a9a89d42e748c840e31d9bae37bb67565',1,'CSConnection::SetPemPass()'],['../classCSListener.html#a3ac08e7906501674a6063a1e277ca40d',1,'CSListener::SetPemPass()']]],
   ['setport',['SetPort',['../classCsock.html#ac2baac0cc8570993e537b3bcb3f7fdd2',1,'Csock::SetPort()'],['../classCSConnection.html#aedb9c54bf961475cef2e30feac6b29e2',1,'CSConnection::SetPort()'],['../classCSListener.html#afae86e364a5e977809066bbdfe72b41b',1,'CSListener::SetPort()']]],
   ['setprotectwebsessions',['SetProtectWebSessions',['../classCZNC.html#a241329b8a382193ef5edba3fc2c6dcef',1,'CZNC']]],
-  ['setquitmsg',['SetQuitMsg',['../classCUser.html#abd72abdb30d7f4dd7eaf90775eb40ff0',1,'CUser']]],
+  ['setquitmsg',['SetQuitMsg',['../classCIRCNetwork.html#a0998482b8b3b327101ded389c9eb1cec',1,'CIRCNetwork::SetQuitMsg()'],['../classCUser.html#abd72abdb30d7f4dd7eaf90775eb40ff0',1,'CUser::SetQuitMsg()']]],
   ['setrate',['SetRate',['../classCsock.html#ad5cea2c7a97045e3867bdc9c59f489c8',1,'Csock']]],
   ['setrealname',['SetRealName',['../classCIRCNetwork.html#af8343cfe4543aa6c66d3d31908c40b1b',1,'CIRCNetwork::SetRealName()'],['../classCUser.html#a6663895d835ad30ae8bcc583ae5578b3',1,'CUser::SetRealName()']]],
   ['setrequireclientcertflags',['SetRequireClientCertFlags',['../classCsock.html#ad3ec3c47121398d0aa0978e844843e4a',1,'Csock::SetRequireClientCertFlags()'],['../classCSListener.html#aecdbbf2bb3a146ae5564d8f4391cb8f2',1,'CSListener::SetRequireClientCertFlags()']]],

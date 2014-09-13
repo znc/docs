@@ -197,7 +197,7 @@ var searchData=
   ['getpyexceptionstr',['GetPyExceptionStr',['../classCPyModule.html#a7e5fa542664dcef3cee052ffc603d54c',1,'CPyModule']]],
   ['getpyobj',['GetPyObj',['../classCPyModule.html#aef5ca5415f8ce291971e561c0d0b37fd',1,'CPyModule::GetPyObj()'],['../classCPyTimer.html#ac78eb284bfae142b10367f6bb37c1a04',1,'CPyTimer::GetPyObj()'],['../classCPySocket.html#a24b8afa902cc0c6373ec2a5d0737847f',1,'CPySocket::GetPyObj()']]],
   ['getqueries',['GetQueries',['../classCIRCNetwork.html#a9fb0cdf132505bdc61a3baaecd2b03bb',1,'CIRCNetwork']]],
-  ['getquitmsg',['GetQuitMsg',['../classCUser.html#af85a1ff66019804346eb333ed60c205f',1,'CUser']]],
+  ['getquitmsg',['GetQuitMsg',['../classCIRCNetwork.html#aa872b1d9c29c312950f5f48e51c2ba21',1,'CIRCNetwork::GetQuitMsg()'],['../classCUser.html#af85a1ff66019804346eb333ed60c205f',1,'CUser::GetQuitMsg()']]],
   ['getratebytes',['GetRateBytes',['../classCsock.html#a95a214a3cba719326de94befc68eabe4',1,'Csock']]],
   ['getratetime',['GetRateTime',['../classCsock.html#a5a3c9b91a06971f24ed47b038609ba62',1,'Csock']]],
   ['getrawparam',['GetRawParam',['../classCHTTPSock.html#a973ec6b5579ceb0be3b9b1e2a3c6e7e1',1,'CHTTPSock']]],

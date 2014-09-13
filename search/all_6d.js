@@ -151,7 +151,7 @@ var searchData=
   ['m_5fsperms',['m_sPerms',['../classCIRCSock.html#a21169efc297c6470a2a3289f4067a863',1,'CIRCSock']]],
   ['m_5fspidfile',['m_sPidFile',['../classCZNC.html#ae07602863ceb77f3d52adb5c9053dd62',1,'CZNC']]],
   ['m_5fspostdata',['m_sPostData',['../classCHTTPSock.html#a37b304fc3e867c363bef20e4478cf588',1,'CHTTPSock']]],
-  ['m_5fsquitmsg',['m_sQuitMsg',['../classCUser.html#af7be12f87b8e38948cc75b4adb64cc34',1,'CUser']]],
+  ['m_5fsquitmsg',['m_sQuitMsg',['../classCIRCNetwork.html#ad1f9a954080d07200135ff4e51bcef5c',1,'CIRCNetwork::m_sQuitMsg()'],['../classCUser.html#af7be12f87b8e38948cc75b4adb64cc34',1,'CUser::m_sQuitMsg()']]],
   ['m_5fsrealname',['m_sRealName',['../classCIRCNetwork.html#a0f79841fdf0700e902432cdc4917c987',1,'CIRCNetwork::m_sRealName()'],['../classCUser.html#aba17a468cb22be8947c4d22b8b3e7c9d',1,'CUser::m_sRealName()']]],
   ['m_5fssacceptedcaps',['m_ssAcceptedCaps',['../classCClient.html#a62864e3b21dccefddeb0c9292cd6e531',1,'CClient::m_ssAcceptedCaps()'],['../classCIRCSock.html#a8604f843ed64f545cdd8e3886b560691',1,'CIRCSock::m_ssAcceptedCaps()']]],
   ['m_5fssallowedhosts',['m_ssAllowedHosts',['../classCUser.html#a391cd3a8c62f7ecf94a486532ed8834f',1,'CUser']]],

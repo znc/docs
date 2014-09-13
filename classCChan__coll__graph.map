@@ -1,14 +1,14 @@
 <map id="G" name="G">
 <area shape="rect" id="node4" href="$classCString.html" title="String class that is used inside ZNC." alt="" coords="679,595,748,624"/>
-<area shape="rect" id="node10" href="$classCNick.html" title="CNick" alt="" coords="3199,411,3257,440"/>
+<area shape="rect" id="node10" href="$classCNick.html" title="CNick" alt="" coords="3199,413,3257,443"/>
 <area shape="rect" id="node13" href="$classCIRCNetwork.html" title="CIRCNetwork" alt="" coords="2829,736,2931,765"/>
 <area shape="rect" id="node18" href="$classCClient.html" title="CClient" alt="" coords="3817,549,3884,579"/>
 <area shape="rect" id="node39" href="$classCUser.html" title="CUser" alt="" coords="3560,853,3621,883"/>
 <area shape="rect" id="node74" href="$classCIRCSock.html" title="CIRCSock" alt="" coords="2553,688,2633,717"/>
-<area shape="rect" id="node104" href="$classCServer.html" title="CServer" alt="" coords="1148,1024,1220,1053"/>
+<area shape="rect" id="node104" href="$classCServer.html" title="CServer" alt="" coords="1148,1059,1220,1088"/>
 <area shape="rect" id="node6" title="STL class." alt="" coords="395,595,480,624"/>
 <area shape="rect" id="node8" title="STL class." alt="" coords="20,595,204,624"/>
-<area shape="rect" id="node42" href="$classCModules.html" title="CModules" alt="" coords="4057,889,4140,919"/>
+<area shape="rect" id="node42" href="$classCModules.html" title="CModules" alt="" coords="4057,888,4140,917"/>
 <area shape="rect" id="node20" href="$classCZNCSock.html" title="CZNCSock" alt="" coords="2081,45,2172,75"/>
 <area shape="rect" id="node22" href="$classCsock.html" title="Basic socket class." alt="" coords="1604,45,1663,75"/>
 <area shape="rect" id="node24" href="$classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock" alt="" coords="1124,45,1244,75"/>
@@ -16,9 +16,9 @@
 <area shape="rect" id="node32" href="$classCSMonitorFD.html" title="Class to tie sockets to for monitoring by Csocket at either the Csock or TSockManager." alt="" coords="385,8,489,37"/>
 <area shape="rect" id="node36" href="$classCSmartPtr.html" title="CSmartPtr\&lt; CAuthBase \&gt;" alt="" coords="3496,599,3685,628"/>
 <area shape="rect" id="node44" title="STL class." alt="" coords="845,1220,1032,1249"/>
-<area shape="rect" id="node57" title="STL class." alt="" coords="1528,1297,1739,1327"/>
-<area shape="rect" id="node70" title="STL class." alt="" coords="625,1353,801,1383"/>
+<area shape="rect" id="node57" title="STL class." alt="" coords="1528,1299,1739,1328"/>
+<area shape="rect" id="node70" title="STL class." alt="" coords="625,1355,801,1384"/>
 <area shape="rect" id="node55" href="$classMCString.html" title="A dictionary for strings." alt="" coords="2087,1285,2167,1315"/>
-<area shape="rect" id="node68" href="$classCBuffer.html" title="CBuffer" alt="" coords="1149,1353,1219,1383"/>
+<area shape="rect" id="node68" href="$classCBuffer.html" title="CBuffer" alt="" coords="1149,1355,1219,1384"/>
 <area shape="rect" id="node95" href="$classCQuery.html" title="CQuery" alt="" coords="2092,967,2161,996"/>
 </map>
