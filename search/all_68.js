@@ -13,6 +13,7 @@ var searchData=
   ['handlevalue',['HandleValue',['../classCTemplateTagHandler.html#afd5c5ba2bf9fb315e667638804e2e730',1,'CTemplateTagHandler']]],
   ['handlevar',['HandleVar',['../classCTemplateTagHandler.html#a7beaeb4197567e3f6866ba05e3d3568f',1,'CTemplateTagHandler']]],
   ['hasarg',['HasArg',['../classCIRCSock.html#a8e68d9e0596157b56783e5e9603f7b69a2175a3f8935ca47e0cc580af476f5903',1,'CIRCSock']]],
+  ['hasbatch',['HasBatch',['../classCClient.html#a7203f3eecefc2f9a7fc787591d9303e2',1,'CClient']]],
   ['hasdata',['HasData',['../classCTemplateLoopContext.html#aebed149b8cb71ffbaed87bd2be1a5f1b',1,'CTemplateLoopContext']]],
   ['hasfds',['HasFDs',['../classCSocketManager.html#a808c4aecd65f24b156b095f2209f4570',1,'CSocketManager']]],
   ['hash_5fdefault',['HASH_DEFAULT',['../classCUser.html#af1c920f65be0d78a064858cf139d15afa5e2d0347b9c6f5b6a0c1b1082185d700',1,'CUser']]],

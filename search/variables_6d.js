@@ -7,6 +7,7 @@ var searchData=
   ['m_5fbautoclearchanbuffer',['m_bAutoClearChanBuffer',['../classCChan.html#ad7caaee836d1a81c3a11a064c276617c',1,'CChan::m_bAutoClearChanBuffer()'],['../classCUser.html#a1f08040c6bab38f7b1981c7febe103d1',1,'CUser::m_bAutoClearChanBuffer()']]],
   ['m_5fbautoclearquerybuffer',['m_bAutoClearQueryBuffer',['../classCUser.html#af6ab509314c9fb7fc289ef3d793868e5',1,'CUser']]],
   ['m_5fbaway',['m_bAway',['../classCClient.html#a2712e5bf9b58c9763b67d1afeb50b90f',1,'CClient']]],
+  ['m_5fbbatch',['m_bBatch',['../classCClient.html#a2c5d770392a8933365723db5171ffc33',1,'CClient']]],
   ['m_5fbbeingdeleted',['m_bBeingDeleted',['../classCUser.html#a99e99ef8cca25daff30a243576320ddc',1,'CUser']]],
   ['m_5fbdenyloadmod',['m_bDenyLoadMod',['../classCUser.html#a4b3371f0512f09c6024562c63b4860bc',1,'CUser']]],
   ['m_5fbdenysetbindhost',['m_bDenySetBindHost',['../classCUser.html#a21fc51fce7728f3402acf80f946c593c',1,'CUser']]],

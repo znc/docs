@@ -178,6 +178,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a48ee2d9821da1fd2ff595fed9234e1de">HasUHNames</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#aa6d2ffa5742cdf22f946d96190c54e7c">IsAway</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#ac310500d908b99efdbf4db08233aced4">HasServerTime</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a7203f3eecefc2f9a7fc787591d9303e2">HasBatch</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a18f6ed2268a3443e2f1e448241a2f712">UserCommand</a> (<a class="el" href="classCString.html">CString</a> &amp;sLine)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#aa561e6329945d6362bd5a9f19065672e">UserPortCommand</a> (<a class="el" href="classCString.html">CString</a> &amp;sLine)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a4a3b1d2d480961b57d63e69fe0cc0284">StatusCTCP</a> (const <a class="el" href="classCString.html">CString</a> &amp;sCommand)</td></tr>
@@ -451,6 +452,7 @@ Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#af01077729afee80f51b9491e129983bc">m_bUHNames</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a2712e5bf9b58c9763b67d1afeb50b90f">m_bAway</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a8afc9e0fc6830144ba363339375dfc29">m_bServerTime</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a2c5d770392a8933365723db5171ffc33">m_bBatch</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCUser.html">CUser</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#aa0b3a299915fec31fcef9a4e5f19f5cd">m_pUser</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCIRCNetwork.html">CIRCNetwork</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a1146f9ac0d39c8d432ec0c2ec8725202">m_pNetwork</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a18fec1438f472e1a0224f0cbc5f1f169">m_sNick</a></td></tr>
@@ -704,7 +706,7 @@ Protected Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="classCsock.html#af748608ba80f9bd54294292930db560e">Csock::EnableReadLine()</a>, <a class="el" href="classCClient.html#a2712e5bf9b58c9763b67d1afeb50b90f">m_bAway</a>, <a class="el" href="classCClient.html#a4dcb6bfc77a9c36629c0381743074d22">m_bGotNick</a>, <a class="el" href="classCClient.html#a6586825382dd1a43746c454a9f41e43f">m_bGotPass</a>, <a class="el" href="classCClient.html#a98e36e2a964f8aad1dba1d2bbd102339">m_bGotUser</a>, <a class="el" href="classCClient.html#a4677879435714d40ed86fb4015574544">m_bInCap</a>, <a class="el" href="classCClient.html#ab64f13eeabc94d15da06307cb6b5dd0d">m_bNamesx</a>, <a class="el" href="classCClient.html#a8afc9e0fc6830144ba363339375dfc29">m_bServerTime</a>, <a class="el" href="classCClient.html#af01077729afee80f51b9491e129983bc">m_bUHNames</a>, <a class="el" href="classCClient.html#a1146f9ac0d39c8d432ec0c2ec8725202">m_pNetwork</a>, <a class="el" href="classCClient.html#aa0b3a299915fec31fcef9a4e5f19f5cd">m_pUser</a>, <a class="el" href="classCsock.html#a06f840efef58b550473f4fe1e5f27efa">Csock::SetMaxBufferThreshold()</a>, and <a class="el" href="classCClient.html#aa1d9f0d1711ed9c26af9cd556aee7873">SetNick()</a>.</p>
+<p>References <a class="el" href="classCsock.html#af748608ba80f9bd54294292930db560e">Csock::EnableReadLine()</a>, <a class="el" href="classCClient.html#a2712e5bf9b58c9763b67d1afeb50b90f">m_bAway</a>, <a class="el" href="classCClient.html#a2c5d770392a8933365723db5171ffc33">m_bBatch</a>, <a class="el" href="classCClient.html#a4dcb6bfc77a9c36629c0381743074d22">m_bGotNick</a>, <a class="el" href="classCClient.html#a6586825382dd1a43746c454a9f41e43f">m_bGotPass</a>, <a class="el" href="classCClient.html#a98e36e2a964f8aad1dba1d2bbd102339">m_bGotUser</a>, <a class="el" href="classCClient.html#a4677879435714d40ed86fb4015574544">m_bInCap</a>, <a class="el" href="classCClient.html#ab64f13eeabc94d15da06307cb6b5dd0d">m_bNamesx</a>, <a class="el" href="classCClient.html#a8afc9e0fc6830144ba363339375dfc29">m_bServerTime</a>, <a class="el" href="classCClient.html#af01077729afee80f51b9491e129983bc">m_bUHNames</a>, <a class="el" href="classCClient.html#a1146f9ac0d39c8d432ec0c2ec8725202">m_pNetwork</a>, <a class="el" href="classCClient.html#aa0b3a299915fec31fcef9a4e5f19f5cd">m_pUser</a>, <a class="el" href="classCsock.html#a06f840efef58b550473f4fe1e5f27efa">Csock::SetMaxBufferThreshold()</a>, and <a class="el" href="classCClient.html#aa1d9f0d1711ed9c26af9cd556aee7873">SetNick()</a>.</p>
 
 </div>
 </div>
@@ -2521,6 +2523,24 @@ Protected Attributes</h2></td></tr>
 <div class="memdoc">
 
 <p>Get the peer's X509 cert. </p>
+
+</div>
+</div>
+<a class="anchor" id="a7203f3eecefc2f9a7fc787591d9303e2"></a><!-- doxytag: member="CClient::HasBatch" ref="a7203f3eecefc2f9a7fc787591d9303e2" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classCClient.html#a7203f3eecefc2f9a7fc787591d9303e2">CClient::HasBatch</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="classCClient.html#a2c5d770392a8933365723db5171ffc33">m_bBatch</a>.</p>
 
 </div>
 </div>
@@ -4380,6 +4400,21 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a2c5d770392a8933365723db5171ffc33"></a><!-- doxytag: member="CClient::m_bBatch" ref="a2c5d770392a8933365723db5171ffc33" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classCClient.html#a2c5d770392a8933365723db5171ffc33">CClient::m_bBatch</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Referenced by <a class="el" href="classCClient.html#a51f196439c3218b2dce8f7c6610dad14">CClient()</a>, and <a class="el" href="classCClient.html#a7203f3eecefc2f9a7fc787591d9303e2">HasBatch()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a4dcb6bfc77a9c36629c0381743074d22"></a><!-- doxytag: member="CClient::m_bGotNick" ref="a4dcb6bfc77a9c36629c0381743074d22" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -4642,7 +4677,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 28 2014 20:29:24 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Sep 28 2014 20:46:51 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
