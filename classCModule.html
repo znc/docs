@@ -371,7 +371,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#a5ac28f0a79051c8185802626d3e3a16f">OnFailedLogin</a> (const <a class="el" href="classCString.html">CString</a> &amp;sUsername, const <a class="el" href="classCString.html">CString</a> &amp;sRemoteIP)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called after a client login was rejected.  <a href="#a5ac28f0a79051c8185802626d3e3a16f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#a31767a5b3baa78e1ef97f3baac8b3115">OnUnknownUserRaw</a> (<a class="el" href="classCClient.html">CClient</a> *pClient, <a class="el" href="classCString.html">CString</a> &amp;sLine)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This function behaves like <a class="el" href="classCModule.html#a90f4ce597d5461c003052ec01ae1ef2f" title="Called on any raw IRC line received from the IRC server.">CModule::OnRaw()</a>, but is also called before the client successfully logged in to ZNC.  <a href="#a31767a5b3baa78e1ef97f3baac8b3115"></a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This function behaves like <a class="el" href="classCModule.html#adaf1b0874330d69acc99e621bcaa3bfc" title="This module hook is called when a client sends a raw traffic line to ZNC.">CModule::OnUserRaw()</a>, but is also called before the client successfully logged in to ZNC.  <a href="#a31767a5b3baa78e1ef97f3baac8b3115"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#a9bf13ed830dec77315b26fc3227a18f8">OnClientCapLs</a> (<a class="el" href="classCClient.html">CClient</a> *pClient, <a class="el" href="ZNCString_8h.html#a84b05218977775b974a8db49e81f02a4">SCString</a> &amp;ssCaps)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a client told us CAP LS.  <a href="#a9bf13ed830dec77315b26fc3227a18f8"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#ad3d0aa8a65decbf6ae65dd09e9612d18">IsClientCapSupported</a> (<a class="el" href="classCClient.html">CClient</a> *pClient, const <a class="el" href="classCString.html">CString</a> &amp;sCap, bool bState)</td></tr>
@@ -4218,8 +4218,8 @@ Protected Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>This function behaves like <a class="el" href="classCModule.html#a90f4ce597d5461c003052ec01ae1ef2f" title="Called on any raw IRC line received from the IRC server.">CModule::OnRaw()</a>, but is also called before the client successfully logged in to ZNC. </p>
-<p>You should always prefer to use <a class="el" href="classCModule.html#a90f4ce597d5461c003052ec01ae1ef2f" title="Called on any raw IRC line received from the IRC server.">CModule::OnRaw()</a> if possible. </p>
+<p>This function behaves like <a class="el" href="classCModule.html#adaf1b0874330d69acc99e621bcaa3bfc" title="This module hook is called when a client sends a raw traffic line to ZNC.">CModule::OnUserRaw()</a>, but is also called before the client successfully logged in to ZNC. </p>
+<p>You should always prefer to use <a class="el" href="classCModule.html#adaf1b0874330d69acc99e621bcaa3bfc" title="This module hook is called when a client sends a raw traffic line to ZNC.">CModule::OnUserRaw()</a> if possible. </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">pClient</td><td>The client which send this line. </td></tr>
@@ -5520,7 +5520,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 26 2014 20:12:45 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Sep 28 2014 17:16:15 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
