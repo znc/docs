@@ -22,6 +22,8 @@ var searchData=
   ['m_5fbgotpass',['m_bGotPass',['../classCClient.html#a6586825382dd1a43746c454a9f41e43f',1,'CClient']]],
   ['m_5fbgotuser',['m_bGotUser',['../classCClient.html#a98e36e2a964f8aad1dba1d2bbd102339',1,'CClient']]],
   ['m_5fbhasargs',['m_bHasArgs',['../classCModInfo.html#a493840b63c7420c5a26ce4c62dc5eb11',1,'CModInfo']]],
+  ['m_5fbhasautoclearchanbufferset',['m_bHasAutoClearChanBufferSet',['../classCChan.html#a2e7f6819e9ce225be18230ca107afee1',1,'CChan']]],
+  ['m_5fbhasbuffercountset',['m_bHasBufferCountSet',['../classCChan.html#aef037ef5ed75feb23dd3bf9a92718222',1,'CChan']]],
   ['m_5fbhttp10client',['m_bHTTP10Client',['../classCHTTPSock.html#a32cd76c44b9526d4cfe8ddebffbefaa4',1,'CHTTPSock']]],
   ['m_5fbincap',['m_bInCap',['../classCClient.html#a4677879435714d40ed86fb4015574544',1,'CClient']]],
   ['m_5fbinconfig',['m_bInConfig',['../classCChan.html#a346c4812186035e5c54083383c3c4f06',1,'CChan']]],
