@@ -32,6 +32,7 @@ var searchData=
   ['emoduletype',['EModuleType',['../classCModInfo.html#a616fabebbbf49bf06cfff90b8f32c57f',1,'CModInfo']]],
   ['empty',['empty',['../classCConfig.html#a5c101487b193fa2e10c75689041b4644',1,'CConfig']]],
   ['emptymap',['EmptyMap',['../classMCString.html#a3685e619a8c946b897e33de99347fc70',1,'MCString']]],
+  ['emsgtag',['EMSGTAG',['../classCString.html#a8f63759db4ef372abb9cfa4751648e1fae314cdc57a80ca57bf6deceddb389ab1',1,'CString']]],
   ['enable',['Enable',['../classCChan.html#add0d10be0340775b5e9670e972c2f377',1,'CChan']]],
   ['enableconnectqueue',['EnableConnectQueue',['../classCZNC.html#aa22f774fb9b846c6e95180a94920e6cb',1,'CZNC']]],
   ['enablereadline',['EnableReadLine',['../classCsock.html#af748608ba80f9bd54294292930db560e',1,'Csock']]],
