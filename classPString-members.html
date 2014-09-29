@@ -94,6 +94,9 @@ This is the complete list of members for <a class="el" href="classPString.html">
   <tr class="memlist"><td><a class="el" href="classCString.html#a16727bd81045c0d4e2f2207b4a4a3e22">Base64Encode_n</a>(unsigned int uWrap=0) const </td><td><a class="el" href="classCString.html">CString</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classPString.html#a3d15380aec9d92c71dd759f5fa4d9661a96044e136b135ccfe737aa0b4e23349f">BOOL</a> enum value</td><td><a class="el" href="classPString.html">PString</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCString.html#a882fb767088c6f57a3cfcc2d3ceeb4bf">CaseCmp</a>(const CString &amp;s, CString::size_type uLen=CString::npos) const </td><td><a class="el" href="classCString.html">CString</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCString.html#a5733db47a1cbad5ebe79bca80afdd3f1">CaseInsensitive</a></td><td><a class="el" href="classCString.html">CString</a></td><td><code> [static]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCString.html#a4ab48ee7748580ed1aa9e2643c31210c">CaseSensitive</a></td><td><a class="el" href="classCString.html">CString</a></td><td><code> [static]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCString.html#a401cf6414dda568b2d566fbb6b78f824">Contains</a>(const CString &amp;s, CaseSensitivity cs=CaseInsensitive) const </td><td><a class="el" href="classCString.html">CString</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCString.html#a6ddd53291db7dd02225c8d2ce4254f15">Convert</a>(T *target) const </td><td><a class="el" href="classCString.html">CString</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCString.html#a63fee9048ec4cdc27dcb6b6df637fba5">Crypt</a>(const CString &amp;sPass, bool bEncrypt, const CString &amp;sIvec=&quot;&quot;)</td><td><a class="el" href="classCString.html">CString</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCString.html#a15309c1cdd54243dec4c4b3b3b9b24e4">CString</a>(bool b)</td><td><a class="el" href="classCString.html">CString</a></td><td><code> [inline, explicit]</code></td></tr>
@@ -124,8 +127,9 @@ This is the complete list of members for <a class="el" href="classPString.html">
   <tr class="memlist"><td><a class="el" href="classCString.html#a8f63759db4ef372abb9cfa4751648e1fa67ff7b2e0153ba73fb8058882e5d2548">ENAMEDFMT</a> enum value</td><td><a class="el" href="classCString.html">CString</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCString.html#a793e477cb76806dcf824ae81b9ee4fac">Encrypt</a>(const CString &amp;sPass, const CString &amp;sIvec=&quot;&quot;)</td><td><a class="el" href="classCString.html">CString</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCString.html#adfd1753e7276cbce3af1a311bfd80dd0">Encrypt_n</a>(const CString &amp;sPass, const CString &amp;sIvec=&quot;&quot;) const </td><td><a class="el" href="classCString.html">CString</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="classCString.html#afc8fb2f7e6a4ce96e6e6af54658320d7">EndsWith</a>(const CString &amp;sSuffix) const </td><td><a class="el" href="classCString.html">CString</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="classCString.html#ad6570b9a4284e8d78512a52ca1e147d6">Equals</a>(const CString &amp;s, bool bCaseSensitive=false, CString::size_type uLen=CString::npos) const </td><td><a class="el" href="classCString.html">CString</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCString.html#a951daa2ad2198f1e9acf943831bab94e">EndsWith</a>(const CString &amp;sSuffix, CaseSensitivity cs=CaseInsensitive) const </td><td><a class="el" href="classCString.html">CString</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCString.html#a2bbac3280dc943bf6a68ee023d707a06">Equals</a>(const CString &amp;s, CaseSensitivity cs=CaseInsensitive) const </td><td><a class="el" href="classCString.html">CString</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCString.html#a24a659b4abcb3b406fa9529d0df4f398">Equals</a>(const CString &amp;s, bool bCaseSensitive, CString::size_type uLen=CString::npos) const </td><td><a class="el" href="classCString.html">CString</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCString.html#acc8330c48fac287ed655268b12771ddc">Escape</a>(EEscape eFrom, EEscape eTo)</td><td><a class="el" href="classCString.html">CString</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCString.html#acb33c1aff1ad63ccbb676a24ea062ebe">Escape</a>(EEscape eTo)</td><td><a class="el" href="classCString.html">CString</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCString.html#acff39c9ac5bf2994a9fb511b2b972387">Escape_n</a>(EEscape eFrom, EEscape eTo) const </td><td><a class="el" href="classCString.html">CString</a></td><td></td></tr>
@@ -133,6 +137,7 @@ This is the complete list of members for <a class="el" href="classPString.html">
   <tr class="memlist"><td><a class="el" href="classCString.html#a8f63759db4ef372abb9cfa4751648e1fa5528b3d17d10fc5d915c4888b2c0c142">ESQL</a> enum value</td><td><a class="el" href="classCString.html">CString</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classPString.html#a3d15380aec9d92c71dd759f5fa4d9661">EType</a> enum name</td><td><a class="el" href="classPString.html">PString</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCString.html#a8f63759db4ef372abb9cfa4751648e1fa51df786ffcb52b401ad2ef2d10170f75">EURL</a> enum value</td><td><a class="el" href="classCString.html">CString</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCString.html#a7e1a54afe490b204997e6d99d8c7689f">Find</a>(const CString &amp;s, CaseSensitivity cs=CaseInsensitive) const </td><td><a class="el" href="classCString.html">CString</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCString.html#a5a010f8cc2c01a65907b4ab9ed0ae471">FirstLine</a>() const </td><td><a class="el" href="classCString.html">CString</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classPString.html#acd1c6f4b91b7aa661edac99f01478bf7">GetSV</a>(bool bMakeMortal=true) const </td><td><a class="el" href="classPString.html">PString</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classPString.html#a33e3ba957a6563a9509ff150e0dd5a69">GetType</a>() const </td><td><a class="el" href="classPString.html">PString</a></td><td><code> [inline]</code></td></tr>
@@ -171,7 +176,7 @@ This is the complete list of members for <a class="el" href="classPString.html">
   <tr class="memlist"><td><a class="el" href="classCString.html#a32b667736f28f7244d3e910bf1d7e995">SHA256</a>() const </td><td><a class="el" href="classCString.html">CString</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCString.html#afc992e453be9545c96a6c69d1701e349">Split</a>(const CString &amp;sDelim, VCString &amp;vsRet, bool bAllowEmpty=true, const CString &amp;sLeft=&quot;&quot;, const CString &amp;sRight=&quot;&quot;, bool bTrimQuotes=true, bool bTrimWhiteSpace=false) const </td><td><a class="el" href="classCString.html">CString</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCString.html#a6703330320d0a7c4eb30a986c5bfdb47">Split</a>(const CString &amp;sDelim, SCString &amp;ssRet, bool bAllowEmpty=true, const CString &amp;sLeft=&quot;&quot;, const CString &amp;sRight=&quot;&quot;, bool bTrimQuotes=true, bool bTrimWhiteSpace=false) const </td><td><a class="el" href="classCString.html">CString</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="classCString.html#a7238da45a50117bc7e4c1a7b298cede9">StartsWith</a>(const CString &amp;sPrefix) const </td><td><a class="el" href="classCString.html">CString</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCString.html#a92761f2b5001763a545d9d59cc7ffdf9">StartsWith</a>(const CString &amp;sPrefix, CaseSensitivity cs=CaseInsensitive) const </td><td><a class="el" href="classCString.html">CString</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCString.html#ad6fbe0a4cea284c346e0b2619421e12c">StrCmp</a>(const CString &amp;s, CString::size_type uLen=CString::npos) const </td><td><a class="el" href="classCString.html">CString</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classPString.html#a3d15380aec9d92c71dd759f5fa4d9661a10a37bd2d367147c8e607c1b200ef541">STRING</a> enum value</td><td><a class="el" href="classPString.html">PString</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCString.html#ac652e12b358ade93dc2c4c77a3359e1e">StripControls</a>()</td><td><a class="el" href="classCString.html">CString</a></td><td></td></tr>
@@ -227,7 +232,7 @@ This is the complete list of members for <a class="el" href="classPString.html">
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 28 2014 20:46:52 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Sep 29 2014 22:52:53 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

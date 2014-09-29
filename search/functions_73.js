@@ -156,7 +156,7 @@ var searchData=
   ['sslserversetup',['SSLServerSetup',['../classCsock.html#af4d988ee04ca005ea414eae536cc00e3',1,'Csock']]],
   ['start',['Start',['../classCCron.html#a212dfe7e35c65f3c40d4da753088ccc8',1,'CCron::Start(double dTimeSequence)'],['../classCCron.html#abaa282705c567ee2d7ac90feb6fbb613',1,'CCron::Start(const timeval &amp;TimeSequence)']]],
   ['startmaxcycles',['StartMaxCycles',['../classCCron.html#ac10efd222d184d781a06605b8b1454e7',1,'CCron::StartMaxCycles(double dTimeSequence, uint32_t iMaxCycles)'],['../classCCron.html#a566dafa71bdd78ea3f600fc176178dcc',1,'CCron::StartMaxCycles(const timeval &amp;tTimeSequence, uint32_t iMaxCycles)']]],
-  ['startswith',['StartsWith',['../classCString.html#a7238da45a50117bc7e4c1a7b298cede9',1,'CString']]],
+  ['startswith',['StartsWith',['../classCString.html#a92761f2b5001763a545d9d59cc7ffdf9',1,'CString']]],
   ['starttls',['StartTLS',['../classCsock.html#a564bc3d66c7e2396afe204691673435c',1,'Csock']]],
   ['statusctcp',['StatusCTCP',['../classCClient.html#a4a3b1d2d480961b57d63e69fe0cc0284',1,'CClient']]],
   ['stdoutistty',['StdoutIsTTY',['../classCDebug.html#adb24f500710ed31406b8c6baaf91ec22',1,'CDebug']]],

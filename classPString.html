@@ -83,6 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a>  </div>
   <div class="headertitle">
 <div class="title">PString Class Reference</div>  </div>
@@ -160,8 +161,9 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare this string caselessly to some other string.  <a href="#a882fb767088c6f57a3cfcc2d3ceeb4bf"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCString.html#ad6fbe0a4cea284c346e0b2619421e12c">StrCmp</a> (const <a class="el" href="classCString.html">CString</a> &amp;s, CString::size_type uLen=CString::npos) const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare this string case sensitively to some other string.  <a href="#ad6fbe0a4cea284c346e0b2619421e12c"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCString.html#ad6570b9a4284e8d78512a52ca1e147d6">Equals</a> (const <a class="el" href="classCString.html">CString</a> &amp;s, bool bCaseSensitive=false, CString::size_type uLen=CString::npos) const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if this string is equal to some other string.  <a href="#ad6570b9a4284e8d78512a52ca1e147d6"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCString.html#a2bbac3280dc943bf6a68ee023d707a06">Equals</a> (const <a class="el" href="classCString.html">CString</a> &amp;s, <a class="el" href="ZNCString_8h.html#aaa929f83398f109dfbff9789108b159b">CaseSensitivity</a> cs=<a class="el" href="classCString.html#a5733db47a1cbad5ebe79bca80afdd3f1">CaseInsensitive</a>) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if this string is equal to some other string.  <a href="#a2bbac3280dc943bf6a68ee023d707a06"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCString.html#a24a659b4abcb3b406fa9529d0df4f398">Equals</a> (const <a class="el" href="classCString.html">CString</a> &amp;s, bool bCaseSensitive, CString::size_type uLen=CString::npos) const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCString.html#a57499abb3bac751ef978fe1c6e50941a">WildCmp</a> (const <a class="el" href="classCString.html">CString</a> &amp;sWild) const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Do a wild compare on this string.  <a href="#a57499abb3bac751ef978fe1c6e50941a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCString.html#ae2e7cf5ab3a7113d895dca8d583819ab">MakeUpper</a> ()</td></tr>
@@ -248,10 +250,14 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Trim a given prefix.  <a href="#a5a9f904e4443437c6a014fdf2e1e3231"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCString.html#adc1db7cf11c29b20d30c706dc1edb992">TrimSuffix_n</a> (const <a class="el" href="classCString.html">CString</a> &amp;sSuffix) const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Trim a given suffix.  <a href="#adc1db7cf11c29b20d30c706dc1edb992"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCString.html#a7238da45a50117bc7e4c1a7b298cede9">StartsWith</a> (const <a class="el" href="classCString.html">CString</a> &amp;sPrefix) const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the string starts with a given prefix.  <a href="#a7238da45a50117bc7e4c1a7b298cede9"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCString.html#afc8fb2f7e6a4ce96e6e6af54658320d7">EndsWith</a> (const <a class="el" href="classCString.html">CString</a> &amp;sSuffix) const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the string ends with a given suffix.  <a href="#afc8fb2f7e6a4ce96e6e6af54658320d7"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCString.html#a7e1a54afe490b204997e6d99d8c7689f">Find</a> (const <a class="el" href="classCString.html">CString</a> &amp;s, <a class="el" href="ZNCString_8h.html#aaa929f83398f109dfbff9789108b159b">CaseSensitivity</a> cs=<a class="el" href="classCString.html#a5733db47a1cbad5ebe79bca80afdd3f1">CaseInsensitive</a>) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the position of the given substring.  <a href="#a7e1a54afe490b204997e6d99d8c7689f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCString.html#a92761f2b5001763a545d9d59cc7ffdf9">StartsWith</a> (const <a class="el" href="classCString.html">CString</a> &amp;sPrefix, <a class="el" href="ZNCString_8h.html#aaa929f83398f109dfbff9789108b159b">CaseSensitivity</a> cs=<a class="el" href="classCString.html#a5733db47a1cbad5ebe79bca80afdd3f1">CaseInsensitive</a>) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the string starts with a given prefix.  <a href="#a92761f2b5001763a545d9d59cc7ffdf9"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCString.html#a951daa2ad2198f1e9acf943831bab94e">EndsWith</a> (const <a class="el" href="classCString.html">CString</a> &amp;sSuffix, <a class="el" href="ZNCString_8h.html#aaa929f83398f109dfbff9789108b159b">CaseSensitivity</a> cs=<a class="el" href="classCString.html#a5733db47a1cbad5ebe79bca80afdd3f1">CaseInsensitive</a>) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the string ends with a given suffix.  <a href="#a951daa2ad2198f1e9acf943831bab94e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCString.html#a401cf6414dda568b2d566fbb6b78f824">Contains</a> (const <a class="el" href="classCString.html">CString</a> &amp;s, <a class="el" href="ZNCString_8h.html#aaa929f83398f109dfbff9789108b159b">CaseSensitivity</a> cs=<a class="el" href="classCString.html#a5733db47a1cbad5ebe79bca80afdd3f1">CaseInsensitive</a>) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the string contains a given string.  <a href="#a401cf6414dda568b2d566fbb6b78f824"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCString.html#a6eca14fb138e2fd9eeaecad903b42d00">LeftChomp</a> (size_type uLen=1)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove characters from the beginning of this string.  <a href="#a6eca14fb138e2fd9eeaecad903b42d00"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCString.html#a7bc85d37b1db399a890527512f631248">RightChomp</a> (size_type uLen=1)</td></tr>
@@ -281,6 +287,10 @@ Static Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Pretty-print a number of bytes.  <a href="#afbcc4f1f3b33d43521a7a47374b172e2"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCString.html#a8612ac17ce7175e593af16019be7077f">ToTimeStr</a> (unsigned long s)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Pretty-print a time span.  <a href="#a8612ac17ce7175e593af16019be7077f"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="ZNCString_8h.html#aaa929f83398f109dfbff9789108b159b">CaseSensitivity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCString.html#a4ab48ee7748580ed1aa9e2643c31210c">CaseSensitive</a> = <a class="el" href="ZNCString_8h.html#aaa929f83398f109dfbff9789108b159ba69a0083547e2ee614b9ab57d7e0471a9">CaseSensitivity::CaseSensitive</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="ZNCString_8h.html#aaa929f83398f109dfbff9789108b159b">CaseSensitivity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCString.html#a5733db47a1cbad5ebe79bca80afdd3f1">CaseInsensitive</a> = <a class="el" href="ZNCString_8h.html#aaa929f83398f109dfbff9789108b159ba661bce8278aa797301d87df7dcd5cf10">CaseSensitivity::CaseInsensitive</a></td></tr>
 <tr><td colspan="2"><h2><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">unsigned char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCString.html#ac63ee1a84c29c5ed960d46adb410b75d">strnchr</a> (const unsigned char *src, unsigned char c, unsigned int iMaxBytes, unsigned char *pFill=NULL, unsigned int *piCount=NULL) const </td></tr>
@@ -807,6 +817,43 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a401cf6414dda568b2d566fbb6b78f824"></a><!-- doxytag: member="PString::Contains" ref="a401cf6414dda568b2d566fbb6b78f824" args="(const CString &amp;s, CaseSensitivity cs=CaseInsensitive) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classCString.html#a401cf6414dda568b2d566fbb6b78f824">CString::Contains</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ZNCString_8h.html#aaa929f83398f109dfbff9789108b159b">CaseSensitivity</a>&#160;</td>
+          <td class="paramname"><em>cs</em> = <code><a class="el" href="classCString.html#a5733db47a1cbad5ebe79bca80afdd3f1">CaseInsensitive</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const<code> [inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Check whether the string contains a given string. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>The string to search. </td></tr>
+    <tr><td class="paramname">bCaseSensitive</td><td>Whether the search is case sensitive. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>True if this string contains the other string, falser otherwise. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a6ddd53291db7dd02225c8d2ce4254f15"></a><!-- doxytag: member="PString::Convert" ref="a6ddd53291db7dd02225c8d2ce4254f15" args="(T *target) const " -->
 <div class="memitem">
 <div class="memproto">
@@ -1004,16 +1051,26 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="afc8fb2f7e6a4ce96e6e6af54658320d7"></a><!-- doxytag: member="PString::EndsWith" ref="afc8fb2f7e6a4ce96e6e6af54658320d7" args="(const CString &amp;sSuffix) const " -->
+<a class="anchor" id="a951daa2ad2198f1e9acf943831bab94e"></a><!-- doxytag: member="PString::EndsWith" ref="a951daa2ad2198f1e9acf943831bab94e" args="(const CString &amp;sSuffix, CaseSensitivity cs=CaseInsensitive) const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classCString.html#afc8fb2f7e6a4ce96e6e6af54658320d7">CString::EndsWith</a> </td>
+          <td class="memname">bool <a class="el" href="classCString.html#a951daa2ad2198f1e9acf943831bab94e">CString::EndsWith</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
-          <td class="paramname"><em>sSuffix</em></td><td>)</td>
-          <td> const<code> [inherited]</code></td>
+          <td class="paramname"><em>sSuffix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ZNCString_8h.html#aaa929f83398f109dfbff9789108b159b">CaseSensitivity</a>&#160;</td>
+          <td class="paramname"><em>cs</em> = <code><a class="el" href="classCString.html#a5733db47a1cbad5ebe79bca80afdd3f1">CaseInsensitive</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const<code> [inherited]</code></td>
         </tr>
       </table>
 </div>
@@ -1023,6 +1080,7 @@ template&lt;typename T &gt; </div>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">sSuffix</td><td>The suffix. </td></tr>
+    <tr><td class="paramname">cs</td><td>CaseSensitive if you want the comparision to be case sensitive, CaseInsensitive (default) otherwise. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1030,12 +1088,49 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ad6570b9a4284e8d78512a52ca1e147d6"></a><!-- doxytag: member="PString::Equals" ref="ad6570b9a4284e8d78512a52ca1e147d6" args="(const CString &amp;s, bool bCaseSensitive=false, CString::size_type uLen=CString::npos) const " -->
+<a class="anchor" id="a2bbac3280dc943bf6a68ee023d707a06"></a><!-- doxytag: member="PString::Equals" ref="a2bbac3280dc943bf6a68ee023d707a06" args="(const CString &amp;s, CaseSensitivity cs=CaseInsensitive) const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classCString.html#ad6570b9a4284e8d78512a52ca1e147d6">CString::Equals</a> </td>
+          <td class="memname">bool <a class="el" href="classCString.html#a2bbac3280dc943bf6a68ee023d707a06">CString::Equals</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ZNCString_8h.html#aaa929f83398f109dfbff9789108b159b">CaseSensitivity</a>&#160;</td>
+          <td class="paramname"><em>cs</em> = <code><a class="el" href="classCString.html#a5733db47a1cbad5ebe79bca80afdd3f1">CaseInsensitive</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const<code> [inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Check if this string is equal to some other string. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>The string to compare to. </td></tr>
+    <tr><td class="paramname">cs</td><td>CaseSensitive if you want the comparision to be case sensitive, CaseInsensitive (default) otherwise. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>True if the strings are equal. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a24a659b4abcb3b406fa9529d0df4f398"></a><!-- doxytag: member="PString::Equals" ref="a24a659b4abcb3b406fa9529d0df4f398" args="(const CString &amp;s, bool bCaseSensitive, CString::size_type uLen=CString::npos) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classCString.html#a2bbac3280dc943bf6a68ee023d707a06">CString::Equals</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>s</em>, </td>
@@ -1044,7 +1139,7 @@ template&lt;typename T &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>bCaseSensitive</em> = <code>false</code>, </td>
+          <td class="paramname"><em>bCaseSensitive</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1060,17 +1155,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-
-<p>Check if this string is equal to some other string. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">s</td><td>The string to compare to. </td></tr>
-    <tr><td class="paramname">bCaseSensitive</td><td>True if you want the comparision to be case sensitive. </td></tr>
-    <tr><td class="paramname">uLen</td><td>Number of characters to consider. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd>True if the strings are equal. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd></dd></dl>
 
 </div>
 </div>
@@ -1159,6 +1244,43 @@ template&lt;typename T &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7e1a54afe490b204997e6d99d8c7689f"></a><!-- doxytag: member="PString::Find" ref="a7e1a54afe490b204997e6d99d8c7689f" args="(const CString &amp;s, CaseSensitivity cs=CaseInsensitive) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t <a class="el" href="classCString.html#a7e1a54afe490b204997e6d99d8c7689f">CString::Find</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ZNCString_8h.html#aaa929f83398f109dfbff9789108b159b">CaseSensitivity</a>&#160;</td>
+          <td class="paramname"><em>cs</em> = <code><a class="el" href="classCString.html#a5733db47a1cbad5ebe79bca80afdd3f1">CaseInsensitive</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const<code> [inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Find the position of the given substring. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>The substring to search for. </td></tr>
+    <tr><td class="paramname">cs</td><td>CaseSensitive if you want the comparision to be case sensitive, CaseInsensitive (default) otherwise. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>The position of the substring if found, CString::npos otherwise. </dd></dl>
 
 </div>
 </div>
@@ -1934,16 +2056,26 @@ template&lt;typename Iterator &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a7238da45a50117bc7e4c1a7b298cede9"></a><!-- doxytag: member="PString::StartsWith" ref="a7238da45a50117bc7e4c1a7b298cede9" args="(const CString &amp;sPrefix) const " -->
+<a class="anchor" id="a92761f2b5001763a545d9d59cc7ffdf9"></a><!-- doxytag: member="PString::StartsWith" ref="a92761f2b5001763a545d9d59cc7ffdf9" args="(const CString &amp;sPrefix, CaseSensitivity cs=CaseInsensitive) const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classCString.html#a7238da45a50117bc7e4c1a7b298cede9">CString::StartsWith</a> </td>
+          <td class="memname">bool <a class="el" href="classCString.html#a92761f2b5001763a545d9d59cc7ffdf9">CString::StartsWith</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
-          <td class="paramname"><em>sPrefix</em></td><td>)</td>
-          <td> const<code> [inherited]</code></td>
+          <td class="paramname"><em>sPrefix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ZNCString_8h.html#aaa929f83398f109dfbff9789108b159b">CaseSensitivity</a>&#160;</td>
+          <td class="paramname"><em>cs</em> = <code><a class="el" href="classCString.html#a5733db47a1cbad5ebe79bca80afdd3f1">CaseInsensitive</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const<code> [inherited]</code></td>
         </tr>
       </table>
 </div>
@@ -1953,6 +2085,7 @@ template&lt;typename Iterator &gt; </div>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">sPrefix</td><td>The prefix. </td></tr>
+    <tr><td class="paramname">cs</td><td>CaseSensitive if you want the comparision to be case sensitive, CaseInsensitive (default) otherwise. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2825,6 +2958,33 @@ template&lt;typename Iterator &gt; </div>
 
 </div>
 </div>
+<hr/><h2>Member Data Documentation</h2>
+<a class="anchor" id="a5733db47a1cbad5ebe79bca80afdd3f1"></a><!-- doxytag: member="PString::CaseInsensitive" ref="a5733db47a1cbad5ebe79bca80afdd3f1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="ZNCString_8h.html#aaa929f83398f109dfbff9789108b159b">CaseSensitivity</a> <a class="el" href="classCString.html#a5733db47a1cbad5ebe79bca80afdd3f1">CString::CaseInsensitive</a> = <a class="el" href="ZNCString_8h.html#aaa929f83398f109dfbff9789108b159ba661bce8278aa797301d87df7dcd5cf10">CaseSensitivity::CaseInsensitive</a><code> [static, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4ab48ee7748580ed1aa9e2643c31210c"></a><!-- doxytag: member="PString::CaseSensitive" ref="a4ab48ee7748580ed1aa9e2643c31210c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="ZNCString_8h.html#aaa929f83398f109dfbff9789108b159b">CaseSensitivity</a> <a class="el" href="classCString.html#a4ab48ee7748580ed1aa9e2643c31210c">CString::CaseSensitive</a> = <a class="el" href="ZNCString_8h.html#aaa929f83398f109dfbff9789108b159ba69a0083547e2ee614b9ab57d7e0471a9">CaseSensitivity::CaseSensitive</a><code> [static, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="pstring_8h_source.html">pstring.h</a></li>
 </ul>
@@ -2846,7 +3006,7 @@ template&lt;typename Iterator &gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 28 2014 20:46:52 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Sep 29 2014 22:52:53 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

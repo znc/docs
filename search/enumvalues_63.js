@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['caseinsensitive',['CaseInsensitive',['../ZNCString_8h.html#aaa929f83398f109dfbff9789108b159ba661bce8278aa797301d87df7dcd5cf10',1,'ZNCString.h']]],
+  ['casesensitive',['CaseSensitive',['../ZNCString_8h.html#aaa929f83398f109dfbff9789108b159ba69a0083547e2ee614b9ab57d7e0471a9',1,'ZNCString.h']]],
   ['clt_5fafterwrite',['CLT_AFTERWRITE',['../classCsock.html#a8b185717b466c70d2934fce9775c54daa17e42b544a73d414d03212c5ffe3404d',1,'Csock']]],
   ['clt_5fdereference',['CLT_DEREFERENCE',['../classCsock.html#a8b185717b466c70d2934fce9775c54daae8fc175ce4b5343fb8089632487c0285',1,'Csock']]],
   ['clt_5fdont',['CLT_DONT',['../classCsock.html#a8b185717b466c70d2934fce9775c54daaf5c0492f5ab5acb8bf746df8e5355512',1,'Csock']]],
