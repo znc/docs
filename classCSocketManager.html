@@ -156,10 +156,10 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; <a class="el" href="classCsock.html">Csock</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSocketManager.html#aa3e5eb0876cfcb2b6b99a036389ffdca">FindSocksByName</a> (const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sName)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; <a class="el" href="classCsock.html">Csock</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSocketManager.html#ae5dfc3708c1f2836fa7e071bbeae7d3f">FindSocksByRemoteHost</a> (const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sHostname)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">returns a vector of pointers to socks with sHostname as being connected  <a href="#ae5dfc3708c1f2836fa7e071bbeae7d3f"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSocketManager.html#a269f20f6d4137e209d268ac1718f4724">GetErrno</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">return the last known error as set by this class  <a href="#a269f20f6d4137e209d268ac1718f4724"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSocketManager.html#aea78b8ff3dca7ccf7f151fb130ec67f8">GetSelectTimeout</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Select Timeout in MICROSECONDS ( 1000 == 1 millisecond )  <a href="#aea78b8ff3dca7ccf7f151fb130ec67f8"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSocketManager.html#a6f9847ab23fa9444d960b3bf21819adf">GetErrno</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">return the last known error as set by this class  <a href="#a6f9847ab23fa9444d960b3bf21819adf"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSocketManager.html#aa6f1e9a6d8885227e14354f78432dbb4">GetSelectTimeout</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Select Timeout in MICROSECONDS ( 1000 == 1 millisecond )  <a href="#aa6f1e9a6d8885227e14354f78432dbb4"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSocketManager.html#aa4cf0e5844d640d1308af68b62273944">SetSelectTimeout</a> (uint64_t iTimeout)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Select Timeout in MICROSECONDS ( 1000 == 1 millisecond ) Setting this to 0 will cause no timeout to happen, <a class="el" href="classCSocketManager.html#acf705393b54ade69835134e900c7bf85">Select()</a> will return instantly.  <a href="#aa4cf0e5844d640d1308af68b62273944"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSocketManager.html#a1a0731cb30af8a552de36b4c2cf9e931">DelSockByAddr</a> (<a class="el" href="classCsock.html">Csock</a> *pcSock)</td></tr>
@@ -914,15 +914,15 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a269f20f6d4137e209d268ac1718f4724"></a><!-- doxytag: member="CSocketManager::GetErrno" ref="a269f20f6d4137e209d268ac1718f4724" args="()" -->
+<a class="anchor" id="a6f9847ab23fa9444d960b3bf21819adf"></a><!-- doxytag: member="CSocketManager::GetErrno" ref="a6f9847ab23fa9444d960b3bf21819adf" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int <a class="el" href="classCSocketManager.html#a269f20f6d4137e209d268ac1718f4724">CSocketManager::GetErrno</a> </td>
+          <td class="memname">int <a class="el" href="classCSocketManager.html#a6f9847ab23fa9444d960b3bf21819adf">CSocketManager::GetErrno</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [inline]</code></td>
+          <td> const<code> [inline]</code></td>
         </tr>
       </table>
 </div>
@@ -932,15 +932,15 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aea78b8ff3dca7ccf7f151fb130ec67f8"></a><!-- doxytag: member="CSocketManager::GetSelectTimeout" ref="aea78b8ff3dca7ccf7f151fb130ec67f8" args="()" -->
+<a class="anchor" id="aa6f1e9a6d8885227e14354f78432dbb4"></a><!-- doxytag: member="CSocketManager::GetSelectTimeout" ref="aa6f1e9a6d8885227e14354f78432dbb4" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint64_t <a class="el" href="classCSocketManager.html#aea78b8ff3dca7ccf7f151fb130ec67f8">CSocketManager::GetSelectTimeout</a> </td>
+          <td class="memname">uint64_t <a class="el" href="classCSocketManager.html#aa6f1e9a6d8885227e14354f78432dbb4">CSocketManager::GetSelectTimeout</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [inline]</code></td>
+          <td> const<code> [inline]</code></td>
         </tr>
       </table>
 </div>
@@ -1272,7 +1272,7 @@ template&lt;typename T&gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 30 2014 17:39:51 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 3 2014 07:05:43 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

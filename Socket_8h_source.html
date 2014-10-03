@@ -112,7 +112,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00029"></a><a class="code" href="classCZNCSock.html#a1141e3b6e49b036d3060ebb4d9ad4528">00029</a>         <a class="code" href="classCZNCSock.html#a1141e3b6e49b036d3060ebb4d9ad4528">CZNCSock</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sHost, u_short port, <span class="keywordtype">int</span> timeout = 60) : <a class="code" href="classCsock.html" title="Basic socket class.">Csock</a>(sHost, port, timeout) {}
 <a name="l00030"></a><a class="code" href="classCZNCSock.html#a6b9a8d182f1c73c24cc171d72f9da021">00030</a>         <a class="code" href="classCZNCSock.html#a6b9a8d182f1c73c24cc171d72f9da021">~CZNCSock</a>() {}
 <a name="l00031"></a>00031 
-<a name="l00032"></a>00032         <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classCZNCSock.html#ae2e9edc2b9dd45e61cafc7f451e5abec">ConvertAddress</a>(<span class="keyword">const</span> <span class="keyword">struct</span> sockaddr_storage * pAddr, socklen_t iAddrLen, <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; sIP, u_short * piPort);
+<a name="l00032"></a>00032         <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classCZNCSock.html#a573ed9061b8c532a9749af8158ad1bb2">ConvertAddress</a>(<span class="keyword">const</span> <span class="keyword">struct</span> sockaddr_storage * pAddr, socklen_t iAddrLen, <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; sIP, u_short * piPort) <span class="keyword">const</span>;
 <a name="l00033"></a>00033 
 <a name="l00034"></a>00034 <span class="preprocessor">#ifndef HAVE_ICU</span>
 <a name="l00035"></a>00035 <span class="preprocessor"></span>        <span class="comment">// Don&#39;t fail to compile when ICU is not enabled</span>
@@ -279,7 +279,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 30 2014 17:39:49 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 3 2014 07:05:42 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

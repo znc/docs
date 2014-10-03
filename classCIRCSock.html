@@ -230,9 +230,9 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#ad028960726b2b661f4aa86863821369b">GetISupport</a> (const <a class="el" href="classCString.html">CString</a> &amp;sKey, const <a class="el" href="classCString.html">CString</a> &amp;sDefault=&quot;&quot;) const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#a717035665f7473a273830fec9f8feb5b">ForwardRaw353</a> (const <a class="el" href="classCString.html">CString</a> &amp;sLine) const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#af08ee392ba4edd792cb8581f3050be48">ForwardRaw353</a> (const <a class="el" href="classCString.html">CString</a> &amp;sLine, <a class="el" href="classCClient.html">CClient</a> *pClient) const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNCSock.html#ae2e9edc2b9dd45e61cafc7f451e5abec">ConvertAddress</a> (const struct sockaddr_storage *pAddr, socklen_t iAddrLen, <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sIP, u_short *piPort)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a19caa2d7383a6754848d620bfabeff4f">ConvertAddress</a> (const struct sockaddr_storage *pAddr, socklen_t iAddrLen, <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sIP, uint16_t *piPort)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve name info (numeric only) for a given sockaddr_storage  <a href="#a19caa2d7383a6754848d620bfabeff4f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNCSock.html#a573ed9061b8c532a9749af8158ad1bb2">ConvertAddress</a> (const struct sockaddr_storage *pAddr, socklen_t iAddrLen, <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sIP, u_short *piPort) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#ab03fd24a2d7a397ef9bbe864df6dda31">ConvertAddress</a> (const struct sockaddr_storage *pAddr, socklen_t iAddrLen, <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sIP, uint16_t *piPort) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve name info (numeric only) for a given sockaddr_storage  <a href="#ab03fd24a2d7a397ef9bbe864df6dda31"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNCSock.html#ad45449663df4443887919b744b6560fc">SetEncoding</a> (const <a class="el" href="classCString.html">CString</a> &amp;)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCsock.html">Csock</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a9f3b85490d28167617cf0e85782512b4">GetSockObj</a> (const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sHostname, uint16_t iPort)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">override this for accept sockets  <a href="#a9f3b85490d28167617cf0e85782512b4"></a><br/></td></tr>
@@ -270,19 +270,22 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a text string to the socket.  <a href="#a050b782a4f3767a5ed7a6b6eed1fda1c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="Csocket_8h.html#a78fb384df356e425a637e1b3de358c78">cs_ssize_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a714d883a38fd8ca785b4db54fba629be">Read</a> (char *data, size_t len)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Read from the socket Just pass in a pointer, big enough to hold len bytes.  <a href="#a714d883a38fd8ca785b4db54fba629be"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#ad1007f2abe8cd653488a834597a42b4a">GetLocalIP</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#aa495c183a48fcfd976443e92aaf31394">GetRemoteIP</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a40508bd28d1a96ccbfdce064d8c0686e">GetLocalIP</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a78d123687411e81b5b85fb64c8468162">GetRemoteIP</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a2365716c0ba19168718d3b2b9a3417ee">IsConnected</a> () const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Tells you if the socket is connected.  <a href="#a2365716c0ba19168718d3b2b9a3417ee"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#adc39deaebf3358602e01e70091d8991e">SetIsConnected</a> (bool b)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the sock, telling it its connected (internal use only)  <a href="#adc39deaebf3358602e01e70091d8991e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#ae1f84de0d38450c53dce99f8f4d649ab">GetRSock</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">returns a reference to the sock  <a href="#ae1f84de0d38450c53dce99f8f4d649ab"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#ab7e1d5bc3d514e73fe3a7e7d8f38091a">GetRSock</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a8c0b180de5d12104c0f7018eec13e57a">SetRSock</a> (<a class="el" href="Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a> iSock)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a56f9ff0e03c457b40e146f34d39a6589">GetWSock</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#ab68bc795b1051b75af46c17a21d8ca12">GetWSock</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a66a0fe0e53850900f824ca60ced81e05">SetWSock</a> (<a class="el" href="Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a> iSock)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#aca21af633fa1fd1b115281f03bdddcd7">SetSock</a> (<a class="el" href="Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a> iSock)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#ac1002a688e16094328430f5d2ec8e793">GetSock</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#ad3b89b95816e682074af647efcda1d79">GetSock</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a852f8794b44be3038fc00af483907de9">CallSockError</a> (int iErrno, const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sDescription=&quot;&quot;)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">calls SockError, if sDescription is not set, then strerror is used to pull out a default description  <a href="#a852f8794b44be3038fc00af483907de9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a51258305f0f1e2c84d76a0fd8a258b35">ResetTimer</a> ()</td></tr>
@@ -290,7 +293,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a41d8b0fb0cc4884bdc90d5010cc7ab3b">PauseRead</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">will pause/unpause reading on this socket  <a href="#a41d8b0fb0cc4884bdc90d5010cc7ab3b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a7ce960e8ee0f890f668673c0e9cdceeb">UnPauseRead</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a40a6e7fefb306a56087702b96b76091e">IsReadPaused</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a7f2bf004de57a5ebf6450941e4d7eceb">IsReadPaused</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a8d9f4c33c736ec6153257c647cf8fa9d">SetTimeout</a> (int iTimeout, uint32_t iTimeoutType=<a class="el" href="classCsock.html#a02fc87b0c2dceedeaa8df5407b389f6aaf53c83452a73e97d1b89e9e7743ddb13">TMO_ALL</a>)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Currently this uses the same value for all timeouts, and iTimeoutType merely states which event will be checked for timeouts.  <a href="#a8d9f4c33c736ec6153257c647cf8fa9d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#acff43c3905e9753cf948f97c297c89b9">SetTimeoutType</a> (uint32_t iTimeoutType)</td></tr>
@@ -326,69 +329,69 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a2a548094f359949b3fd3a5c6402e008b">GetBytesWritten</a> () const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the amount of data written during the existence of the socket.  <a href="#a2a548094f359949b3fd3a5c6402e008b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#ac872aac9bcf7d2f8465d1f708478395c">ResetBytesWritten</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a5cc1afd5fc0bde22186db6d6ea56246c">GetAvgRead</a> (uint64_t iSample=1000)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get Avg Read Speed in sample milliseconds (default is 1000 milliseconds or 1 second)  <a href="#a5cc1afd5fc0bde22186db6d6ea56246c"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a77e5aa586f5b254979eda2fcd1e7bd5f">GetAvgWrite</a> (uint64_t iSample=1000)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get Avg Write Speed in sample milliseconds (default is 1000 milliseconds or 1 second)  <a href="#a77e5aa586f5b254979eda2fcd1e7bd5f"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#acc0c1250ed8cbf64d1f738fb52eae965">GetRemotePort</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the remote port.  <a href="#acc0c1250ed8cbf64d1f738fb52eae965"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a382a3ddf89fe4b5fcb85c481a2a31eec">GetLocalPort</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the local port.  <a href="#a382a3ddf89fe4b5fcb85c481a2a31eec"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a6cda2151807aa01cac8bdcda6feddc72">GetPort</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the port.  <a href="#a6cda2151807aa01cac8bdcda6feddc72"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a92f9a9a4d065e1d6090ba00992aaf415">GetAvgRead</a> (uint64_t iSample=1000) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get Avg Read Speed in sample milliseconds (default is 1000 milliseconds or 1 second)  <a href="#a92f9a9a4d065e1d6090ba00992aaf415"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#aa1f8c7afcd3523705055633f2a383a03">GetAvgWrite</a> (uint64_t iSample=1000) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get Avg Write Speed in sample milliseconds (default is 1000 milliseconds or 1 second)  <a href="#aa1f8c7afcd3523705055633f2a383a03"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a8c1ac2cce4c95c901d750f0f398988b1">GetRemotePort</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the remote port.  <a href="#a8c1ac2cce4c95c901d750f0f398988b1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a520e7d24e870eea2c1143695b5ce5c9d">GetLocalPort</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the local port.  <a href="#a520e7d24e870eea2c1143695b5ce5c9d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a1ab5e51aa127202f398880b263b6aa00">GetPort</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the port.  <a href="#a1ab5e51aa127202f398880b263b6aa00"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#ac2baac0cc8570993e537b3bcb3f7fdd2">SetPort</a> (uint16_t iPort)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#ace2cccec9d2ba551369b41b60324496f">Close</a> (<a class="el" href="classCsock.html#a8b185717b466c70d2934fce9775c54da">ECloseType</a> eCloseType=<a class="el" href="classCsock.html#a8b185717b466c70d2934fce9775c54daaab188649e45cb1b209e25364a1672290">CLT_NOW</a>)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">just mark us as closed, the parent can pick it up  <a href="#ace2cccec9d2ba551369b41b60324496f"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCsock.html#a8b185717b466c70d2934fce9775c54da">ECloseType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a34da333c86dd50f8305e831ee853f5bd">GetCloseType</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">returns int of type to close  <a href="#a34da333c86dd50f8305e831ee853f5bd"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a6e51a4a3787e2c182e94843977aaecf1">IsClosed</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCsock.html#a8b185717b466c70d2934fce9775c54da">ECloseType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#ae1c4d966c376031c5a4422dd0c6fd80c">GetCloseType</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">returns int of type to close  <a href="#ae1c4d966c376031c5a4422dd0c6fd80c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a11af52e0b49707c84438ec73533bb094">IsClosed</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#abef02be96a92f5097556f1b7c082e76a">NonBlockingIO</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Use this to change your fd's to blocking or none blocking.  <a href="#abef02be96a92f5097556f1b7c082e76a"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a99a58b721ef03ab2c4a605dbe990b9e1">GetSSL</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if this socket is using ssl. Note this does not mean the SSL state is finished, but simply that its configured to use ssl.  <a href="#a99a58b721ef03ab2c4a605dbe990b9e1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#adfe38d92769d41132435094784524930">GetSSL</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if this socket is using ssl. Note this does not mean the SSL state is finished, but simply that its configured to use ssl.  <a href="#adfe38d92769d41132435094784524930"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a71bd0fb35012cf8d006b8098b6eac15e">SetSSL</a> (bool b)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#aa59f3b858f55d5cf2e2574140dd5bf4e">SetCipher</a> (const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sCipher)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the cipher type ( openssl cipher [to see ciphers available] )  <a href="#aa59f3b858f55d5cf2e2574140dd5bf4e"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#ac4068667c224b759b3482d806d81dff5">GetCipher</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a9492afdd7b765fe5badffa5781381717">GetCipher</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#ad600bfd1eb0f130283d18e71af795a92">SetPemLocation</a> (const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sPemFile)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the pem file location.  <a href="#ad600bfd1eb0f130283d18e71af795a92"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a61ec67dfb922e824ebd41f8334665fed">GetPemLocation</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#af10b64de89e3068c9b83a1491c2d898b">GetPemLocation</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#afb4f2a1faad29d40ba76611b83c9605b">SetPemPass</a> (const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sPassword)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a4f2383c7e96aa239c1dcae7b5febcddf">GetPemPass</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a8a4f12f682ecbe70809daef29f23bd23">SetSSLMethod</a> (int iMethod)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the SSL method type.  <a href="#a8a4f12f682ecbe70809daef29f23bd23"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a5b43e3302b7983f32e9a509a24dd5c80">GetSSLMethod</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#abffe3da5cb2bc43cfdc2235cbbad43c9">GetSSLMethod</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a222e5d24c1660d53a31d35a806a568d6">SetSSLObject</a> (SSL *ssl)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a13f51097f497be73270f5125b972ce5a">SetCTXObject</a> (SSL_CTX *sslCtx)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">SSL_SESSION *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#aa3fc2843f6827395011086b7e323577d">GetSSLSession</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">SSL_SESSION *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#ab519dfdc201e09bf8453ab259861f3d2">GetSSLSession</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#afc8a1e27ea57bf894a7d1bb0d78dd33d">SetCertVerifyCB</a> (<a class="el" href="Csocket_8h.html#aa5463d49fb8abd380d534f606e69f6d4">FPCertVerifyCB</a> pFP)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a556d37415c5c017c3336eb5228d1beb1">HasWriteBuffer</a> () const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the send buffer.  <a href="#a556d37415c5c017c3336eb5228d1beb1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#ade75f55f69d6cfebf3eaccd320928e72">ClearWriteBuffer</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a07fe653dd38a705bd39395503fc1093c">SslIsEstablished</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">is SSL_accept finished ? is the ssl properly finished (from write no error)  <a href="#a07fe653dd38a705bd39395503fc1093c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a823b15d60b631e504125da49bedcf825">SslIsEstablished</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">is SSL_accept finished ? is the ssl properly finished (from write no error)  <a href="#a823b15d60b631e504125da49bedcf825"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a258d1a2583c9e550e290850d4647e747">ConnectInetd</a> (bool bIsSSL=false, const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sHostname=&quot;&quot;)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Use this to bind this socket to inetd.  <a href="#a258d1a2583c9e550e290850d4647e747"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#aed53de4046def7f4efbed8f449ec5fcb">ConnectFD</a> (int iReadFD, int iWriteFD, const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sName, bool bIsSSL=false, <a class="el" href="classCsock.html#a12ece5f34b7f197eb764e25b0b43b999">ETConn</a> eDirection=<a class="el" href="classCsock.html#a12ece5f34b7f197eb764e25b0b43b999ac4fe8c4f02e6767f844ac9016e332763">INBOUND</a>)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Tie this guy to an existing real file descriptor.  <a href="#aed53de4046def7f4efbed8f449ec5fcb"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">X509 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#aba8609ac93f1a937f7a2740bc070b26e">GetX509</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the peer's X509 cert.  <a href="#aba8609ac93f1a937f7a2740bc070b26e"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a37a0a71f0a14b8bf74beff0828373f83">GetPeerPubKey</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the peer's public key.  <a href="#a37a0a71f0a14b8bf74beff0828373f83"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a38595c2e4677650903c534d7553bad01">GetPeerFingerprint</a> (<a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sFP)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the peer's certificate finger print.  <a href="#a38595c2e4677650903c534d7553bad01"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#af603ab521f01390358b2fb6d0f967b14">GetRequireClientCertFlags</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">X509 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#aeb6a4d1ddf20fdb16287d23c26092836">GetX509</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the peer's X509 cert.  <a href="#aeb6a4d1ddf20fdb16287d23c26092836"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#ac367734097dbc24edbb12e4ea3742443">GetPeerPubKey</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the peer's public key.  <a href="#ac367734097dbc24edbb12e4ea3742443"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#ae8beef81ea513ee521a399c405de7aab">GetPeerFingerprint</a> (<a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sFP) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the peer's certificate finger print.  <a href="#ae8beef81ea513ee521a399c405de7aab"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#aec0192524b5b28167057a399f8e685c7">GetRequireClientCertFlags</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#af967d46f072fcc97766cab0586364d2e">SetRequiresClientCert</a> (bool bRequiresCert)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">legacy, deprecated  <a href="#af967d46f072fcc97766cab0586364d2e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#ad3ec3c47121398d0aa0978e844843e4a">SetRequireClientCertFlags</a> (uint32_t iRequireClientCertFlags)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">bitwise flags, 0 means don't require cert, SSL_VERIFY_PEER verifies peers, SSL_VERIFY_FAIL_IF_NO_PEER_CERT will cause the connection to fail if no cert  <a href="#ad3ec3c47121398d0aa0978e844843e4a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a15b6cad8607be4ab31e7a46f0eca55e1">SetParentSockName</a> (const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sParentName)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set The INBOUND Parent sockname.  <a href="#a15b6cad8607be4ab31e7a46f0eca55e1"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a48c0a1f7717c1e03d007022b555d0705">GetParentSockName</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#aed7e5f834710bf11347759f739393562">GetParentSockName</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#ad5cea2c7a97045e3867bdc9c59f489c8">SetRate</a> (uint32_t iBytes, uint64_t iMilliseconds)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the rate at which we can send data  <a href="#ad5cea2c7a97045e3867bdc9c59f489c8"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a95a214a3cba719326de94befc68eabe4">GetRateBytes</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a5a3c9b91a06971f24ed47b038609ba62">GetRateTime</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#ad16442f2f2efa33b62a49f63542c003c">GetRateBytes</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#af51066c44ae932bfb7ff5436a1332eef">GetRateTime</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a0b807704b265df360de15a1cfcbb23e0">ReadData</a> (const char *data, size_t len)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Ready to read data event.  <a href="#a0b807704b265df360de15a1cfcbb23e0"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a81e28ab1c689ee3e8496d7d717a5a402">ReadLine</a> (const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sLine)</td></tr>
@@ -408,13 +411,13 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This gets called every iteration of <a class="el" href="classCSocketManager.html#acf705393b54ade69835134e900c7bf85">CSocketManager::Select()</a> if the socket is ReadPaused.  <a href="#ab7c9de4f24a9fa1ef9e3bb506e6ddd33"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#ab16f04115dc73a586503fd96926bf8ae">SSLFinishSetup</a> (SSL *pSSL)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets called immediatly after the m_ssl member is setup and initialized, useful if you need to assign anything to this ssl session via SSL_set_ex_data.  <a href="#ab16f04115dc73a586503fd96926bf8ae"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a26dd1888424aa63fa80dac4151cfcf24">GetTimeSinceLastDataTransaction</a> (time_t iNow=0)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">return how long it has been (in seconds) since the last read or successful write  <a href="#a26dd1888424aa63fa80dac4151cfcf24"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a9c1b195d96bf51e7f55a94d81a4495be">GetLastCheckTimeout</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a627316deeb975941fdd6f38a63b6d6d6">GetNextCheckTimeout</a> (time_t iNow=0)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the time when <a class="el" href="classCsock.html#a44a3d6622b5b845f4d3097cc69c84fb6" title="returns true if the socket has timed out">CheckTimeout()</a> should be called next.  <a href="#a627316deeb975941fdd6f38a63b6d6d6"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#ad18994b18fe695f1ce7110eefd3e4ca4">GetPending</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">return the data imediatly ready for read  <a href="#ad18994b18fe695f1ce7110eefd3e4ca4"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#adac00464034930dff05bf104b958f0e8">GetTimeSinceLastDataTransaction</a> (time_t iNow=0) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">return how long it has been (in seconds) since the last read or successful write  <a href="#adac00464034930dff05bf104b958f0e8"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a182c33dc4074eeb0f304a0b3d775ac78">GetLastCheckTimeout</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a73e056b2b0c00d95db0b0b1a64210857">GetNextCheckTimeout</a> (time_t iNow=0) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the time when <a class="el" href="classCsock.html#a44a3d6622b5b845f4d3097cc69c84fb6" title="returns true if the socket has timed out">CheckTimeout()</a> should be called next.  <a href="#a73e056b2b0c00d95db0b0b1a64210857"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#ae449e1837057bf83d374265d5c466deb">GetPending</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">return the data imediatly ready for read  <a href="#ae449e1837057bf83d374265d5c466deb"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCsock.html#a1ddb2a5d92aefe7db7a88b3824d7c4da">ECONState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#aa09f26f997f90406b7291547c559f4a6">GetConState</a> () const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the current connection state  <a href="#aa09f26f997f90406b7291547c559f4a6"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a5a772e6316c7d432899f71d42c6b974f">SetConState</a> (<a class="el" href="classCsock.html#a1ddb2a5d92aefe7db7a88b3824d7c4da">ECONState</a> eState)</td></tr>
@@ -1240,12 +1243,12 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ae2e9edc2b9dd45e61cafc7f451e5abec"></a><!-- doxytag: member="CIRCSock::ConvertAddress" ref="ae2e9edc2b9dd45e61cafc7f451e5abec" args="(const struct sockaddr_storage *pAddr, socklen_t iAddrLen, CS_STRING &amp;sIP, u_short *piPort)" -->
+<a class="anchor" id="a573ed9061b8c532a9749af8158ad1bb2"></a><!-- doxytag: member="CIRCSock::ConvertAddress" ref="a573ed9061b8c532a9749af8158ad1bb2" args="(const struct sockaddr_storage *pAddr, socklen_t iAddrLen, CS_STRING &amp;sIP, u_short *piPort) const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual int <a class="el" href="classCZNCSock.html#ae2e9edc2b9dd45e61cafc7f451e5abec">CZNCSock::ConvertAddress</a> </td>
+          <td class="memname">virtual int <a class="el" href="classCZNCSock.html#a573ed9061b8c532a9749af8158ad1bb2">CZNCSock::ConvertAddress</a> </td>
           <td>(</td>
           <td class="paramtype">const struct sockaddr_storage *&#160;</td>
           <td class="paramname"><em>pAddr</em>, </td>
@@ -1271,7 +1274,7 @@ Friends</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [virtual, inherited]</code></td>
+          <td></td><td> const<code> [virtual, inherited]</code></td>
         </tr>
       </table>
 </div>
@@ -1279,12 +1282,12 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a19caa2d7383a6754848d620bfabeff4f"></a><!-- doxytag: member="CIRCSock::ConvertAddress" ref="a19caa2d7383a6754848d620bfabeff4f" args="(const struct sockaddr_storage *pAddr, socklen_t iAddrLen, CS_STRING &amp;sIP, uint16_t *piPort)" -->
+<a class="anchor" id="ab03fd24a2d7a397ef9bbe864df6dda31"></a><!-- doxytag: member="CIRCSock::ConvertAddress" ref="ab03fd24a2d7a397ef9bbe864df6dda31" args="(const struct sockaddr_storage *pAddr, socklen_t iAddrLen, CS_STRING &amp;sIP, uint16_t *piPort) const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual int <a class="el" href="classCsock.html#a19caa2d7383a6754848d620bfabeff4f">Csock::ConvertAddress</a> </td>
+          <td class="memname">virtual int <a class="el" href="classCsock.html#ab03fd24a2d7a397ef9bbe864df6dda31">Csock::ConvertAddress</a> </td>
           <td>(</td>
           <td class="paramtype">const struct sockaddr_storage *&#160;</td>
           <td class="paramname"><em>pAddr</em>, </td>
@@ -1310,7 +1313,7 @@ Friends</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [virtual, inherited]</code></td>
+          <td></td><td> const<code> [virtual, inherited]</code></td>
         </tr>
       </table>
 </div>
@@ -1648,16 +1651,16 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a5cc1afd5fc0bde22186db6d6ea56246c"></a><!-- doxytag: member="CIRCSock::GetAvgRead" ref="a5cc1afd5fc0bde22186db6d6ea56246c" args="(uint64_t iSample=1000)" -->
+<a class="anchor" id="a92f9a9a4d065e1d6090ba00992aaf415"></a><!-- doxytag: member="CIRCSock::GetAvgRead" ref="a92f9a9a4d065e1d6090ba00992aaf415" args="(uint64_t iSample=1000) const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double <a class="el" href="classCsock.html#a5cc1afd5fc0bde22186db6d6ea56246c">Csock::GetAvgRead</a> </td>
+          <td class="memname">double <a class="el" href="classCsock.html#a92f9a9a4d065e1d6090ba00992aaf415">Csock::GetAvgRead</a> </td>
           <td>(</td>
           <td class="paramtype">uint64_t&#160;</td>
           <td class="paramname"><em>iSample</em> = <code>1000</code></td><td>)</td>
-          <td><code> [inherited]</code></td>
+          <td> const<code> [inherited]</code></td>
         </tr>
       </table>
 </div>
@@ -1667,16 +1670,16 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a77e5aa586f5b254979eda2fcd1e7bd5f"></a><!-- doxytag: member="CIRCSock::GetAvgWrite" ref="a77e5aa586f5b254979eda2fcd1e7bd5f" args="(uint64_t iSample=1000)" -->
+<a class="anchor" id="aa1f8c7afcd3523705055633f2a383a03"></a><!-- doxytag: member="CIRCSock::GetAvgWrite" ref="aa1f8c7afcd3523705055633f2a383a03" args="(uint64_t iSample=1000) const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double <a class="el" href="classCsock.html#a77e5aa586f5b254979eda2fcd1e7bd5f">Csock::GetAvgWrite</a> </td>
+          <td class="memname">double <a class="el" href="classCsock.html#aa1f8c7afcd3523705055633f2a383a03">Csock::GetAvgWrite</a> </td>
           <td>(</td>
           <td class="paramtype">uint64_t&#160;</td>
           <td class="paramname"><em>iSample</em> = <code>1000</code></td><td>)</td>
-          <td><code> [inherited]</code></td>
+          <td> const<code> [inherited]</code></td>
         </tr>
       </table>
 </div>
@@ -1756,15 +1759,15 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac4068667c224b759b3482d806d81dff5"></a><!-- doxytag: member="CIRCSock::GetCipher" ref="ac4068667c224b759b3482d806d81dff5" args="()" -->
+<a class="anchor" id="a9492afdd7b765fe5badffa5781381717"></a><!-- doxytag: member="CIRCSock::GetCipher" ref="a9492afdd7b765fe5badffa5781381717" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a>&amp; <a class="el" href="classCsock.html#ac4068667c224b759b3482d806d81dff5">Csock::GetCipher</a> </td>
+          <td class="memname">const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a>&amp; <a class="el" href="classCsock.html#a9492afdd7b765fe5badffa5781381717">Csock::GetCipher</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [inherited]</code></td>
+          <td> const<code> [inherited]</code></td>
         </tr>
       </table>
 </div>
@@ -1772,15 +1775,15 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a34da333c86dd50f8305e831ee853f5bd"></a><!-- doxytag: member="CIRCSock::GetCloseType" ref="a34da333c86dd50f8305e831ee853f5bd" args="()" -->
+<a class="anchor" id="ae1c4d966c376031c5a4422dd0c6fd80c"></a><!-- doxytag: member="CIRCSock::GetCloseType" ref="ae1c4d966c376031c5a4422dd0c6fd80c" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCsock.html#a8b185717b466c70d2934fce9775c54da">ECloseType</a> <a class="el" href="classCsock.html#a34da333c86dd50f8305e831ee853f5bd">Csock::GetCloseType</a> </td>
+          <td class="memname"><a class="el" href="classCsock.html#a8b185717b466c70d2934fce9775c54da">ECloseType</a> <a class="el" href="classCsock.html#ae1c4d966c376031c5a4422dd0c6fd80c">Csock::GetCloseType</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [inline, inherited]</code></td>
+          <td> const<code> [inline, inherited]</code></td>
         </tr>
       </table>
 </div>
@@ -1943,15 +1946,15 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a9c1b195d96bf51e7f55a94d81a4495be"></a><!-- doxytag: member="CIRCSock::GetLastCheckTimeout" ref="a9c1b195d96bf51e7f55a94d81a4495be" args="()" -->
+<a class="anchor" id="a182c33dc4074eeb0f304a0b3d775ac78"></a><!-- doxytag: member="CIRCSock::GetLastCheckTimeout" ref="a182c33dc4074eeb0f304a0b3d775ac78" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">time_t <a class="el" href="classCsock.html#a9c1b195d96bf51e7f55a94d81a4495be">Csock::GetLastCheckTimeout</a> </td>
+          <td class="memname">time_t <a class="el" href="classCsock.html#a182c33dc4074eeb0f304a0b3d775ac78">Csock::GetLastCheckTimeout</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [inline, inherited]</code></td>
+          <td> const<code> [inline, inherited]</code></td>
         </tr>
       </table>
 </div>
@@ -1959,15 +1962,15 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ad1007f2abe8cd653488a834597a42b4a"></a><!-- doxytag: member="CIRCSock::GetLocalIP" ref="ad1007f2abe8cd653488a834597a42b4a" args="()" -->
+<a class="anchor" id="a40508bd28d1a96ccbfdce064d8c0686e"></a><!-- doxytag: member="CIRCSock::GetLocalIP" ref="a40508bd28d1a96ccbfdce064d8c0686e" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> <a class="el" href="classCsock.html#ad1007f2abe8cd653488a834597a42b4a">Csock::GetLocalIP</a> </td>
+          <td class="memname"><a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> <a class="el" href="classCsock.html#a40508bd28d1a96ccbfdce064d8c0686e">Csock::GetLocalIP</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [inherited]</code></td>
+          <td> const<code> [inherited]</code></td>
         </tr>
       </table>
 </div>
@@ -1975,15 +1978,15 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a382a3ddf89fe4b5fcb85c481a2a31eec"></a><!-- doxytag: member="CIRCSock::GetLocalPort" ref="a382a3ddf89fe4b5fcb85c481a2a31eec" args="()" -->
+<a class="anchor" id="a520e7d24e870eea2c1143695b5ce5c9d"></a><!-- doxytag: member="CIRCSock::GetLocalPort" ref="a520e7d24e870eea2c1143695b5ce5c9d" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t <a class="el" href="classCsock.html#a382a3ddf89fe4b5fcb85c481a2a31eec">Csock::GetLocalPort</a> </td>
+          <td class="memname">uint16_t <a class="el" href="classCsock.html#a520e7d24e870eea2c1143695b5ce5c9d">Csock::GetLocalPort</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [inherited]</code></td>
+          <td> const<code> [inherited]</code></td>
         </tr>
       </table>
 </div>
@@ -2080,16 +2083,16 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a627316deeb975941fdd6f38a63b6d6d6"></a><!-- doxytag: member="CIRCSock::GetNextCheckTimeout" ref="a627316deeb975941fdd6f38a63b6d6d6" args="(time_t iNow=0)" -->
+<a class="anchor" id="a73e056b2b0c00d95db0b0b1a64210857"></a><!-- doxytag: member="CIRCSock::GetNextCheckTimeout" ref="a73e056b2b0c00d95db0b0b1a64210857" args="(time_t iNow=0) const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">time_t <a class="el" href="classCsock.html#a627316deeb975941fdd6f38a63b6d6d6">Csock::GetNextCheckTimeout</a> </td>
+          <td class="memname">time_t <a class="el" href="classCsock.html#a73e056b2b0c00d95db0b0b1a64210857">Csock::GetNextCheckTimeout</a> </td>
           <td>(</td>
           <td class="paramtype">time_t&#160;</td>
           <td class="paramname"><em>iNow</em> = <code>0</code></td><td>)</td>
-          <td><code> [inherited]</code></td>
+          <td> const<code> [inherited]</code></td>
         </tr>
       </table>
 </div>
@@ -2135,15 +2138,15 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a48c0a1f7717c1e03d007022b555d0705"></a><!-- doxytag: member="CIRCSock::GetParentSockName" ref="a48c0a1f7717c1e03d007022b555d0705" args="()" -->
+<a class="anchor" id="aed7e5f834710bf11347759f739393562"></a><!-- doxytag: member="CIRCSock::GetParentSockName" ref="aed7e5f834710bf11347759f739393562" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a>&amp; <a class="el" href="classCsock.html#a48c0a1f7717c1e03d007022b555d0705">Csock::GetParentSockName</a> </td>
+          <td class="memname">const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a>&amp; <a class="el" href="classCsock.html#aed7e5f834710bf11347759f739393562">Csock::GetParentSockName</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [inherited]</code></td>
+          <td> const<code> [inherited]</code></td>
         </tr>
       </table>
 </div>
@@ -2169,16 +2172,16 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a38595c2e4677650903c534d7553bad01"></a><!-- doxytag: member="CIRCSock::GetPeerFingerprint" ref="a38595c2e4677650903c534d7553bad01" args="(CS_STRING &amp;sFP)" -->
+<a class="anchor" id="ae8beef81ea513ee521a399c405de7aab"></a><!-- doxytag: member="CIRCSock::GetPeerFingerprint" ref="ae8beef81ea513ee521a399c405de7aab" args="(CS_STRING &amp;sFP) const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">long <a class="el" href="classCsock.html#a38595c2e4677650903c534d7553bad01">Csock::GetPeerFingerprint</a> </td>
+          <td class="memname">long <a class="el" href="classCsock.html#ae8beef81ea513ee521a399c405de7aab">Csock::GetPeerFingerprint</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td>
           <td class="paramname"><em>sFP</em></td><td>)</td>
-          <td><code> [inherited]</code></td>
+          <td> const<code> [inherited]</code></td>
         </tr>
       </table>
 </div>
@@ -2188,15 +2191,15 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a37a0a71f0a14b8bf74beff0828373f83"></a><!-- doxytag: member="CIRCSock::GetPeerPubKey" ref="a37a0a71f0a14b8bf74beff0828373f83" args="()" -->
+<a class="anchor" id="ac367734097dbc24edbb12e4ea3742443"></a><!-- doxytag: member="CIRCSock::GetPeerPubKey" ref="ac367734097dbc24edbb12e4ea3742443" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> <a class="el" href="classCsock.html#a37a0a71f0a14b8bf74beff0828373f83">Csock::GetPeerPubKey</a> </td>
+          <td class="memname"><a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> <a class="el" href="classCsock.html#ac367734097dbc24edbb12e4ea3742443">Csock::GetPeerPubKey</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [inherited]</code></td>
+          <td> const<code> [inherited]</code></td>
         </tr>
       </table>
 </div>
@@ -2206,15 +2209,15 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a61ec67dfb922e824ebd41f8334665fed"></a><!-- doxytag: member="CIRCSock::GetPemLocation" ref="a61ec67dfb922e824ebd41f8334665fed" args="()" -->
+<a class="anchor" id="af10b64de89e3068c9b83a1491c2d898b"></a><!-- doxytag: member="CIRCSock::GetPemLocation" ref="af10b64de89e3068c9b83a1491c2d898b" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a>&amp; <a class="el" href="classCsock.html#a61ec67dfb922e824ebd41f8334665fed">Csock::GetPemLocation</a> </td>
+          <td class="memname">const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a>&amp; <a class="el" href="classCsock.html#af10b64de89e3068c9b83a1491c2d898b">Csock::GetPemLocation</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [inherited]</code></td>
+          <td> const<code> [inherited]</code></td>
         </tr>
       </table>
 </div>
@@ -2238,15 +2241,15 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ad18994b18fe695f1ce7110eefd3e4ca4"></a><!-- doxytag: member="CIRCSock::GetPending" ref="ad18994b18fe695f1ce7110eefd3e4ca4" args="()" -->
+<a class="anchor" id="ae449e1837057bf83d374265d5c466deb"></a><!-- doxytag: member="CIRCSock::GetPending" ref="ae449e1837057bf83d374265d5c466deb" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual int <a class="el" href="classCsock.html#ad18994b18fe695f1ce7110eefd3e4ca4">Csock::GetPending</a> </td>
+          <td class="memname">virtual int <a class="el" href="classCsock.html#ae449e1837057bf83d374265d5c466deb">Csock::GetPending</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [virtual, inherited]</code></td>
+          <td> const<code> [virtual, inherited]</code></td>
         </tr>
       </table>
 </div>
@@ -2313,15 +2316,15 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a6cda2151807aa01cac8bdcda6feddc72"></a><!-- doxytag: member="CIRCSock::GetPort" ref="a6cda2151807aa01cac8bdcda6feddc72" args="()" -->
+<a class="anchor" id="a1ab5e51aa127202f398880b263b6aa00"></a><!-- doxytag: member="CIRCSock::GetPort" ref="a1ab5e51aa127202f398880b263b6aa00" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t <a class="el" href="classCsock.html#a6cda2151807aa01cac8bdcda6feddc72">Csock::GetPort</a> </td>
+          <td class="memname">uint16_t <a class="el" href="classCsock.html#a1ab5e51aa127202f398880b263b6aa00">Csock::GetPort</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [inherited]</code></td>
+          <td> const<code> [inherited]</code></td>
         </tr>
       </table>
 </div>
@@ -2331,15 +2334,15 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a95a214a3cba719326de94befc68eabe4"></a><!-- doxytag: member="CIRCSock::GetRateBytes" ref="a95a214a3cba719326de94befc68eabe4" args="()" -->
+<a class="anchor" id="ad16442f2f2efa33b62a49f63542c003c"></a><!-- doxytag: member="CIRCSock::GetRateBytes" ref="ad16442f2f2efa33b62a49f63542c003c" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t <a class="el" href="classCsock.html#a95a214a3cba719326de94befc68eabe4">Csock::GetRateBytes</a> </td>
+          <td class="memname">uint32_t <a class="el" href="classCsock.html#ad16442f2f2efa33b62a49f63542c003c">Csock::GetRateBytes</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [inherited]</code></td>
+          <td> const<code> [inherited]</code></td>
         </tr>
       </table>
 </div>
@@ -2347,15 +2350,15 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a5a3c9b91a06971f24ed47b038609ba62"></a><!-- doxytag: member="CIRCSock::GetRateTime" ref="a5a3c9b91a06971f24ed47b038609ba62" args="()" -->
+<a class="anchor" id="af51066c44ae932bfb7ff5436a1332eef"></a><!-- doxytag: member="CIRCSock::GetRateTime" ref="af51066c44ae932bfb7ff5436a1332eef" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint64_t <a class="el" href="classCsock.html#a5a3c9b91a06971f24ed47b038609ba62">Csock::GetRateTime</a> </td>
+          <td class="memname">uint64_t <a class="el" href="classCsock.html#af51066c44ae932bfb7ff5436a1332eef">Csock::GetRateTime</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [inherited]</code></td>
+          <td> const<code> [inherited]</code></td>
         </tr>
       </table>
 </div>
@@ -2363,33 +2366,31 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aa495c183a48fcfd976443e92aaf31394"></a><!-- doxytag: member="CIRCSock::GetRemoteIP" ref="aa495c183a48fcfd976443e92aaf31394" args="()" -->
+<a class="anchor" id="a78d123687411e81b5b85fb64c8468162"></a><!-- doxytag: member="CIRCSock::GetRemoteIP" ref="a78d123687411e81b5b85fb64c8468162" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> <a class="el" href="classCsock.html#aa495c183a48fcfd976443e92aaf31394">Csock::GetRemoteIP</a> </td>
+          <td class="memname"><a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> <a class="el" href="classCsock.html#a78d123687411e81b5b85fb64c8468162">Csock::GetRemoteIP</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [inherited]</code></td>
+          <td> const<code> [inherited]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="classCHTTPSock.html#ad5aadd6720fccef34d576eb24df92e21">CHTTPSock</a>.</p>
-
 </div>
 </div>
-<a class="anchor" id="acc0c1250ed8cbf64d1f738fb52eae965"></a><!-- doxytag: member="CIRCSock::GetRemotePort" ref="acc0c1250ed8cbf64d1f738fb52eae965" args="()" -->
+<a class="anchor" id="a8c1ac2cce4c95c901d750f0f398988b1"></a><!-- doxytag: member="CIRCSock::GetRemotePort" ref="a8c1ac2cce4c95c901d750f0f398988b1" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t <a class="el" href="classCsock.html#acc0c1250ed8cbf64d1f738fb52eae965">Csock::GetRemotePort</a> </td>
+          <td class="memname">uint16_t <a class="el" href="classCsock.html#a8c1ac2cce4c95c901d750f0f398988b1">Csock::GetRemotePort</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [inherited]</code></td>
+          <td> const<code> [inherited]</code></td>
         </tr>
       </table>
 </div>
@@ -2399,15 +2400,15 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af603ab521f01390358b2fb6d0f967b14"></a><!-- doxytag: member="CIRCSock::GetRequireClientCertFlags" ref="af603ab521f01390358b2fb6d0f967b14" args="()" -->
+<a class="anchor" id="aec0192524b5b28167057a399f8e685c7"></a><!-- doxytag: member="CIRCSock::GetRequireClientCertFlags" ref="aec0192524b5b28167057a399f8e685c7" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t <a class="el" href="classCsock.html#af603ab521f01390358b2fb6d0f967b14">Csock::GetRequireClientCertFlags</a> </td>
+          <td class="memname">uint32_t <a class="el" href="classCsock.html#aec0192524b5b28167057a399f8e685c7">Csock::GetRequireClientCertFlags</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [inherited]</code></td>
+          <td> const<code> [inherited]</code></td>
         </tr>
       </table>
 </div>
@@ -2435,6 +2436,22 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ab7e1d5bc3d514e73fe3a7e7d8f38091a"></a><!-- doxytag: member="CIRCSock::GetRSock" ref="ab7e1d5bc3d514e73fe3a7e7d8f38091a" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a>&amp; <a class="el" href="classCsock.html#ae1f84de0d38450c53dce99f8f4d649ab">Csock::GetRSock</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ac1002a688e16094328430f5d2ec8e793"></a><!-- doxytag: member="CIRCSock::GetSock" ref="ac1002a688e16094328430f5d2ec8e793" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -2444,6 +2461,22 @@ Friends</h2></td></tr>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td><code> [inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad3b89b95816e682074af647efcda1d79"></a><!-- doxytag: member="CIRCSock::GetSock" ref="ad3b89b95816e682074af647efcda1d79" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a>&amp; <a class="el" href="classCsock.html#ac1002a688e16094328430f5d2ec8e793">Csock::GetSock</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inherited]</code></td>
         </tr>
       </table>
 </div>
@@ -2498,15 +2531,15 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a99a58b721ef03ab2c4a605dbe990b9e1"></a><!-- doxytag: member="CIRCSock::GetSSL" ref="a99a58b721ef03ab2c4a605dbe990b9e1" args="()" -->
+<a class="anchor" id="adfe38d92769d41132435094784524930"></a><!-- doxytag: member="CIRCSock::GetSSL" ref="adfe38d92769d41132435094784524930" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classCsock.html#a99a58b721ef03ab2c4a605dbe990b9e1">Csock::GetSSL</a> </td>
+          <td class="memname">bool <a class="el" href="classCsock.html#adfe38d92769d41132435094784524930">Csock::GetSSL</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [inherited]</code></td>
+          <td> const<code> [inherited]</code></td>
         </tr>
       </table>
 </div>
@@ -2516,15 +2549,15 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a5b43e3302b7983f32e9a509a24dd5c80"></a><!-- doxytag: member="CIRCSock::GetSSLMethod" ref="a5b43e3302b7983f32e9a509a24dd5c80" args="()" -->
+<a class="anchor" id="abffe3da5cb2bc43cfdc2235cbbad43c9"></a><!-- doxytag: member="CIRCSock::GetSSLMethod" ref="abffe3da5cb2bc43cfdc2235cbbad43c9" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int <a class="el" href="classCsock.html#a5b43e3302b7983f32e9a509a24dd5c80">Csock::GetSSLMethod</a> </td>
+          <td class="memname">int <a class="el" href="classCsock.html#abffe3da5cb2bc43cfdc2235cbbad43c9">Csock::GetSSLMethod</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [inherited]</code></td>
+          <td> const<code> [inherited]</code></td>
         </tr>
       </table>
 </div>
@@ -2532,15 +2565,15 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aa3fc2843f6827395011086b7e323577d"></a><!-- doxytag: member="CIRCSock::GetSSLSession" ref="aa3fc2843f6827395011086b7e323577d" args="()" -->
+<a class="anchor" id="ab519dfdc201e09bf8453ab259861f3d2"></a><!-- doxytag: member="CIRCSock::GetSSLSession" ref="ab519dfdc201e09bf8453ab259861f3d2" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">SSL_SESSION* <a class="el" href="classCsock.html#aa3fc2843f6827395011086b7e323577d">Csock::GetSSLSession</a> </td>
+          <td class="memname">SSL_SESSION* <a class="el" href="classCsock.html#ab519dfdc201e09bf8453ab259861f3d2">Csock::GetSSLSession</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [inherited]</code></td>
+          <td> const<code> [inherited]</code></td>
         </tr>
       </table>
 </div>
@@ -2598,16 +2631,16 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a26dd1888424aa63fa80dac4151cfcf24"></a><!-- doxytag: member="CIRCSock::GetTimeSinceLastDataTransaction" ref="a26dd1888424aa63fa80dac4151cfcf24" args="(time_t iNow=0)" -->
+<a class="anchor" id="adac00464034930dff05bf104b958f0e8"></a><!-- doxytag: member="CIRCSock::GetTimeSinceLastDataTransaction" ref="adac00464034930dff05bf104b958f0e8" args="(time_t iNow=0) const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">time_t <a class="el" href="classCsock.html#a26dd1888424aa63fa80dac4151cfcf24">Csock::GetTimeSinceLastDataTransaction</a> </td>
+          <td class="memname">time_t <a class="el" href="classCsock.html#adac00464034930dff05bf104b958f0e8">Csock::GetTimeSinceLastDataTransaction</a> </td>
           <td>(</td>
           <td class="paramtype">time_t&#160;</td>
           <td class="paramname"><em>iNow</em> = <code>0</code></td><td>)</td>
-          <td><code> [inherited]</code></td>
+          <td> const<code> [inherited]</code></td>
         </tr>
       </table>
 </div>
@@ -2671,15 +2704,31 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aba8609ac93f1a937f7a2740bc070b26e"></a><!-- doxytag: member="CIRCSock::GetX509" ref="aba8609ac93f1a937f7a2740bc070b26e" args="()" -->
+<a class="anchor" id="ab68bc795b1051b75af46c17a21d8ca12"></a><!-- doxytag: member="CIRCSock::GetWSock" ref="ab68bc795b1051b75af46c17a21d8ca12" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">X509* <a class="el" href="classCsock.html#aba8609ac93f1a937f7a2740bc070b26e">Csock::GetX509</a> </td>
+          <td class="memname">const <a class="el" href="Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a>&amp; <a class="el" href="classCsock.html#a56f9ff0e03c457b40e146f34d39a6589">Csock::GetWSock</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [inherited]</code></td>
+          <td> const<code> [inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aeb6a4d1ddf20fdb16287d23c26092836"></a><!-- doxytag: member="CIRCSock::GetX509" ref="aeb6a4d1ddf20fdb16287d23c26092836" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">X509* <a class="el" href="classCsock.html#aeb6a4d1ddf20fdb16287d23c26092836">Csock::GetX509</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inherited]</code></td>
         </tr>
       </table>
 </div>
@@ -2798,15 +2847,15 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a6e51a4a3787e2c182e94843977aaecf1"></a><!-- doxytag: member="CIRCSock::IsClosed" ref="a6e51a4a3787e2c182e94843977aaecf1" args="()" -->
+<a class="anchor" id="a11af52e0b49707c84438ec73533bb094"></a><!-- doxytag: member="CIRCSock::IsClosed" ref="a11af52e0b49707c84438ec73533bb094" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classCsock.html#a6e51a4a3787e2c182e94843977aaecf1">Csock::IsClosed</a> </td>
+          <td class="memname">bool <a class="el" href="classCsock.html#a11af52e0b49707c84438ec73533bb094">Csock::IsClosed</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [inline, inherited]</code></td>
+          <td> const<code> [inline, inherited]</code></td>
         </tr>
       </table>
 </div>
@@ -2887,15 +2936,15 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a40a6e7fefb306a56087702b96b76091e"></a><!-- doxytag: member="CIRCSock::IsReadPaused" ref="a40a6e7fefb306a56087702b96b76091e" args="()" -->
+<a class="anchor" id="a7f2bf004de57a5ebf6450941e4d7eceb"></a><!-- doxytag: member="CIRCSock::IsReadPaused" ref="a7f2bf004de57a5ebf6450941e4d7eceb" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classCsock.html#a40a6e7fefb306a56087702b96b76091e">Csock::IsReadPaused</a> </td>
+          <td class="memname">bool <a class="el" href="classCsock.html#a7f2bf004de57a5ebf6450941e4d7eceb">Csock::IsReadPaused</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [inherited]</code></td>
+          <td> const<code> [inherited]</code></td>
         </tr>
       </table>
 </div>
@@ -4470,15 +4519,15 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a07fe653dd38a705bd39395503fc1093c"></a><!-- doxytag: member="CIRCSock::SslIsEstablished" ref="a07fe653dd38a705bd39395503fc1093c" args="()" -->
+<a class="anchor" id="a823b15d60b631e504125da49bedcf825"></a><!-- doxytag: member="CIRCSock::SslIsEstablished" ref="a823b15d60b631e504125da49bedcf825" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classCsock.html#a07fe653dd38a705bd39395503fc1093c">Csock::SslIsEstablished</a> </td>
+          <td class="memname">bool <a class="el" href="classCsock.html#a823b15d60b631e504125da49bedcf825">Csock::SslIsEstablished</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [inherited]</code></td>
+          <td> const<code> [inherited]</code></td>
         </tr>
       </table>
 </div>
@@ -5037,7 +5086,7 @@ Friends</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 30 2014 17:39:50 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 3 2014 07:05:43 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

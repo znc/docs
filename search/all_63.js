@@ -92,7 +92,7 @@ var searchData=
   ['contains',['Contains',['../classCString.html#a401cf6414dda568b2d566fbb6b78f824',1,'CString']]],
   ['continue',['CONTINUE',['../classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2ad0e6943f41ec5685684313d482f372aa',1,'CModule']]],
   ['convert',['Convert',['../classCString.html#a6ddd53291db7dd02225c8d2ce4254f15',1,'CString']]],
-  ['convertaddress',['ConvertAddress',['../classCsock.html#a19caa2d7383a6754848d620bfabeff4f',1,'Csock::ConvertAddress()'],['../classCZNCSock.html#ae2e9edc2b9dd45e61cafc7f451e5abec',1,'CZNCSock::ConvertAddress()']]],
+  ['convertaddress',['ConvertAddress',['../classCsock.html#ab03fd24a2d7a397ef9bbe864df6dda31',1,'Csock::ConvertAddress()'],['../classCZNCSock.html#a573ed9061b8c532a9749af8158ad1bb2',1,'CZNCSock::ConvertAddress()']]],
   ['converter',['converter',['../structswig__cast__info.html#aa630fddfbb1bf9c97a03f9479ba32f76',1,'swig_cast_info']]],
   ['copy',['Copy',['../classCsock.html#a6de0e591c1bc2a80bbfd7462f8ad14fa',1,'Csock::Copy()'],['../classCFile.html#afbed76c582157ac4b43732a04c99849d',1,'CFile::Copy(const CString &amp;sNewFileName, bool bOverwrite=false)'],['../classCFile.html#a0fe06e8cfcc4a426d79d93dc6bd0b840',1,'CFile::Copy(const CString &amp;sOldFileName, const CString &amp;sNewFileName, bool bOverwrite=false)']]],
   ['cperlmodule',['CPerlModule',['../classCPerlModule.html',1,'CPerlModule'],['../classCPerlModule.html#ae761cc022a76a578037111407df44eff',1,'CPerlModule::CPerlModule()']]],

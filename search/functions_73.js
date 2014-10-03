@@ -152,7 +152,7 @@ var searchData=
   ['sslclientsetup',['SSLClientSetup',['../classCsock.html#aea9dc7b9ef30b78fe2abe28245643071',1,'Csock']]],
   ['sslerrors',['SSLErrors',['../Csocket_8h.html#a0aba33081137e5fcc44b38b6986ddc3e',1,'Csocket.h']]],
   ['sslfinishsetup',['SSLFinishSetup',['../classCsock.html#ab16f04115dc73a586503fd96926bf8ae',1,'Csock']]],
-  ['sslisestablished',['SslIsEstablished',['../classCsock.html#a07fe653dd38a705bd39395503fc1093c',1,'Csock']]],
+  ['sslisestablished',['SslIsEstablished',['../classCsock.html#a823b15d60b631e504125da49bedcf825',1,'Csock']]],
   ['sslserversetup',['SSLServerSetup',['../classCsock.html#af4d988ee04ca005ea414eae536cc00e3',1,'Csock']]],
   ['start',['Start',['../classCCron.html#a212dfe7e35c65f3c40d4da753088ccc8',1,'CCron::Start(double dTimeSequence)'],['../classCCron.html#abaa282705c567ee2d7ac90feb6fbb613',1,'CCron::Start(const timeval &amp;TimeSequence)']]],
   ['startmaxcycles',['StartMaxCycles',['../classCCron.html#ac10efd222d184d781a06605b8b1454e7',1,'CCron::StartMaxCycles(double dTimeSequence, uint32_t iMaxCycles)'],['../classCCron.html#a566dafa71bdd78ea3f600fc176178dcc',1,'CCron::StartMaxCycles(const timeval &amp;tTimeSequence, uint32_t iMaxCycles)']]],
