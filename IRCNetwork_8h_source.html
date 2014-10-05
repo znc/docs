@@ -135,12 +135,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00057"></a>00057 
 <a name="l00058"></a>00058         <span class="keywordtype">void</span> <a class="code" href="classCIRCNetwork.html#aef7328c0eced7ec97c3aa438edcb98ca">Clone</a>(<span class="keyword">const</span> <a class="code" href="classCIRCNetwork.html">CIRCNetwork</a>&amp; Network, <span class="keywordtype">bool</span> bCloneName = <span class="keyword">true</span>);
 <a name="l00059"></a>00059 
-<a name="l00060"></a>00060         <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a> <a class="code" href="classCIRCNetwork.html#ab4574b308b8d001120f8e273710d758d">GetNetworkPath</a>();
+<a name="l00060"></a>00060         <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a> <a class="code" href="classCIRCNetwork.html#a1baae4c558557e57063b560b37f0cfe7">GetNetworkPath</a>() <span class="keyword">const</span>;
 <a name="l00061"></a>00061 
 <a name="l00062"></a>00062         <span class="keywordtype">void</span> <a class="code" href="classCIRCNetwork.html#a083879cf7ce5253a7be92cdc9de7729d">DelServers</a>();
 <a name="l00063"></a>00063 
 <a name="l00064"></a>00064         <span class="keywordtype">bool</span> <a class="code" href="classCIRCNetwork.html#aa33dd310b9d1d43c5a2d8dbd360f0637">ParseConfig</a>(<a class="code" href="classCConfig.html">CConfig</a> *pConfig, <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sError, <span class="keywordtype">bool</span> bUpgrade = <span class="keyword">false</span>);
-<a name="l00065"></a>00065         <a class="code" href="classCConfig.html">CConfig</a> <a class="code" href="classCIRCNetwork.html#a3ab15c1078bde29eb4bc383b02bfe6b3">ToConfig</a>();
+<a name="l00065"></a>00065         <a class="code" href="classCConfig.html">CConfig</a> <a class="code" href="classCIRCNetwork.html#ae9960f2152cb6a8402717c3e26fe0471">ToConfig</a>() <span class="keyword">const</span>;
 <a name="l00066"></a>00066 
 <a name="l00067"></a>00067         <span class="keywordtype">void</span> <a class="code" href="classCIRCNetwork.html#a042c3c87829e1ea910fa7fd54dbb8d1f">BounceAllClients</a>();
 <a name="l00068"></a>00068 
@@ -149,10 +149,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00071"></a>00071         <span class="keywordtype">void</span> <a class="code" href="classCIRCNetwork.html#a3e87a136a4b1353f7cbf58f10471396b">ClientConnected</a>(<a class="code" href="classCClient.html">CClient</a> *pClient);
 <a name="l00072"></a>00072         <span class="keywordtype">void</span> <a class="code" href="classCIRCNetwork.html#ab842d39ec47bf29311a711e7afe8cfbb">ClientDisconnected</a>(<a class="code" href="classCClient.html">CClient</a> *pClient);
 <a name="l00073"></a>00073 
-<a name="l00074"></a>00074         <a class="code" href="classCUser.html">CUser</a>* <a class="code" href="classCIRCNetwork.html#aa4398844cab7e701db99fe2f18885492">GetUser</a>();
+<a name="l00074"></a>00074         <a class="code" href="classCUser.html">CUser</a>* <a class="code" href="classCIRCNetwork.html#a3e571fa2a9ce1c9d172adb088e71b266">GetUser</a>() <span class="keyword">const</span>;
 <a name="l00075"></a>00075         <span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; <a class="code" href="classCIRCNetwork.html#a01ba5149da8cd78e1880495ce24f740a">GetName</a>() <span class="keyword">const</span>;
-<a name="l00076"></a><a class="code" href="classCIRCNetwork.html#a698ec6c257bd98a5b95c3d1f5c876587">00076</a>         <span class="keywordtype">bool</span> <a class="code" href="classCIRCNetwork.html#a698ec6c257bd98a5b95c3d1f5c876587">IsNetworkAttached</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> !<a class="code" href="classCIRCNetwork.html#afc0f3f3f0cf7dddf07796a81b55832b0">m_vClients</a>.empty(); };
-<a name="l00077"></a><a class="code" href="classCIRCNetwork.html#a80000fde3d4abc6607fb2a8de88c19db">00077</a>         std::vector&lt;CClient*&gt;&amp; <a class="code" href="classCIRCNetwork.html#a80000fde3d4abc6607fb2a8de88c19db">GetClients</a>() { <span class="keywordflow">return</span> <a class="code" href="classCIRCNetwork.html#afc0f3f3f0cf7dddf07796a81b55832b0">m_vClients</a>; }
+<a name="l00076"></a><a class="code" href="classCIRCNetwork.html#a698ec6c257bd98a5b95c3d1f5c876587">00076</a>         <span class="keywordtype">bool</span> <a class="code" href="classCIRCNetwork.html#a698ec6c257bd98a5b95c3d1f5c876587">IsNetworkAttached</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> !<a class="code" href="classCIRCNetwork.html#afc0f3f3f0cf7dddf07796a81b55832b0">m_vClients</a>.empty(); }
+<a name="l00077"></a><a class="code" href="classCIRCNetwork.html#ab6bb2773e570953262b61aec47136229">00077</a>         <span class="keyword">const</span> std::vector&lt;CClient*&gt;&amp; <a class="code" href="classCIRCNetwork.html#ab6bb2773e570953262b61aec47136229">GetClients</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classCIRCNetwork.html#afc0f3f3f0cf7dddf07796a81b55832b0">m_vClients</a>; }
 <a name="l00078"></a>00078 
 <a name="l00079"></a>00079         <span class="keywordtype">void</span> <a class="code" href="classCIRCNetwork.html#a8cbad7c3410053ac1256bae3fcc80a2b">SetUser</a>(<a class="code" href="classCUser.html">CUser</a> *pUser);
 <a name="l00080"></a>00080         <span class="keywordtype">bool</span> <a class="code" href="classCIRCNetwork.html#ac224d498d7ce11a73fa398679a2f6bd5">SetName</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sName);
@@ -181,8 +181,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00103"></a>00103         <a class="code" href="classCQuery.html">CQuery</a>* <a class="code" href="classCIRCNetwork.html#a235bbfbdc4bef0828cabbd411f388154">AddQuery</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sName);
 <a name="l00104"></a>00104         <span class="keywordtype">bool</span> <a class="code" href="classCIRCNetwork.html#a4da54a7debfa735b551f9d40bb544ff9">DelQuery</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sName);
 <a name="l00105"></a>00105 
-<a name="l00106"></a><a class="code" href="classCIRCNetwork.html#ac387e94b68797013a2da2e731b9fcad9">00106</a>         <span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; <a class="code" href="classCIRCNetwork.html#ac387e94b68797013a2da2e731b9fcad9">GetChanPrefixes</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classCIRCNetwork.html#a70d4ecfcbb5b35986a45fe7373358ef5">m_sChanPrefixes</a>; };
-<a name="l00107"></a><a class="code" href="classCIRCNetwork.html#adad6e6212521f2631bb994882c81620f">00107</a>         <span class="keywordtype">void</span> <a class="code" href="classCIRCNetwork.html#adad6e6212521f2631bb994882c81620f">SetChanPrefixes</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; s) { <a class="code" href="classCIRCNetwork.html#a70d4ecfcbb5b35986a45fe7373358ef5">m_sChanPrefixes</a> = s; };
+<a name="l00106"></a><a class="code" href="classCIRCNetwork.html#ac387e94b68797013a2da2e731b9fcad9">00106</a>         <span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; <a class="code" href="classCIRCNetwork.html#ac387e94b68797013a2da2e731b9fcad9">GetChanPrefixes</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classCIRCNetwork.html#a70d4ecfcbb5b35986a45fe7373358ef5">m_sChanPrefixes</a>; }
+<a name="l00107"></a><a class="code" href="classCIRCNetwork.html#adad6e6212521f2631bb994882c81620f">00107</a>         <span class="keywordtype">void</span> <a class="code" href="classCIRCNetwork.html#adad6e6212521f2631bb994882c81620f">SetChanPrefixes</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; s) { <a class="code" href="classCIRCNetwork.html#a70d4ecfcbb5b35986a45fe7373358ef5">m_sChanPrefixes</a> = s; }
 <a name="l00108"></a>00108         <span class="keywordtype">bool</span> <a class="code" href="classCIRCNetwork.html#a496f09c3282f684015ebda2316a7abe1">IsChan</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sChan) <span class="keyword">const</span>;
 <a name="l00109"></a>00109 
 <a name="l00110"></a>00110         <span class="keyword">const</span> std::vector&lt;CServer*&gt;&amp; <a class="code" href="classCIRCNetwork.html#a2d0dca1ae1f6bd7a29caaed5496f0254">GetServers</a>() <span class="keyword">const</span>;
@@ -320,7 +320,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 5 2014 20:30:04 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 5 2014 21:01:50 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

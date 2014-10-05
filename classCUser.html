@@ -114,7 +114,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a09ed8b6f56cb6203daa91d6d4d5d531d">CUser</a> (const <a class="el" href="classCString.html">CString</a> &amp;sUserName)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a7db79de57f4dcefec21be181c3df7eca">~CUser</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#ae17386027db366333a5d1914dbef2622">ParseConfig</a> (<a class="el" href="classCConfig.html">CConfig</a> *Config, <a class="el" href="classCString.html">CString</a> &amp;sError)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCConfig.html">CConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a38984a191fc5ccd61d6ca7db2123a79b">ToConfig</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCConfig.html">CConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#abf4e4513f1c83036fa8e6204c5f17f71">ToConfig</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a01f18d381b7fabf84b77f30b6b7073b2">CheckPass</a> (const <a class="el" href="classCString.html">CString</a> &amp;sPass) const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a4e0035f6e23425108972ae56b2fcac7d">AddAllowedHost</a> (const <a class="el" href="classCString.html">CString</a> &amp;sHostMask)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a59c776e3cfa9c38314a9cbf9b6e0938b">IsHostAllowed</a> (const <a class="el" href="classCString.html">CString</a> &amp;sHostMask) const </td></tr>
@@ -137,7 +137,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a7fa71a02c2b9a9e10de1ae4371938532">IsUserAttached</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#ad3741634ad3ae4d81a607010152bc71c">UserConnected</a> (<a class="el" href="classCClient.html">CClient</a> *pClient)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#ae1c60057cfb6fa7a7b95380b10861a9f">UserDisconnected</a> (<a class="el" href="classCClient.html">CClient</a> *pClient)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a0740c37f4d5e6534e71f3a1deecc24a2">GetLocalDCCIP</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#adddb42fcce22650c8554cd10d2de4167">GetLocalDCCIP</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a64d3d69784917803fc6cbb9ba546e9ce">ExpandString</a> (const <a class="el" href="classCString.html">CString</a> &amp;sStr) const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#af72015acbd8c7e9a600dfde091daed29">ExpandString</a> (const <a class="el" href="classCString.html">CString</a> &amp;sStr, <a class="el" href="classCString.html">CString</a> &amp;sRet) const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#abfebf033ce05c4c37b23f29305fbffed">AddTimestamp</a> (const <a class="el" href="classCString.html">CString</a> &amp;sStr) const </td></tr>
@@ -177,8 +177,8 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#ac06394fd1a41e42b9296d3488852fbe7">SetSkinName</a> (const <a class="el" href="classCString.html">CString</a> &amp;s)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#aade627c876ac263dc8e7f3388ca752b1">SetMaxNetworks</a> (unsigned int i)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a93b7d4c430420cadc30d039fdf1a3b15">SetMaxQueryBuffers</a> (unsigned int i)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classCClient.html">CClient</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a1470f9beeb4852f46f01ee4ef89c910e">GetUserClients</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classCClient.html">CClient</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#aef861605f0f14e0d329a47939d136e43">GetAllClients</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="classCClient.html">CClient</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#addc8e65212da0ef36eae15664645af63">GetUserClients</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classCClient.html">CClient</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a1ff9c638b064f4852df3dcc98c2f2741">GetAllClients</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#ad99e4e5f3db7611f72edec359d7eb749">GetUserName</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a30fbc4bd63582b04717bf0e63ef54788">GetCleanUserName</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a2a8b987e0bed0733f515a562d6fd0688">GetNick</a> (bool bAllowDefault=true) const </td></tr>
@@ -774,15 +774,15 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aef861605f0f14e0d329a47939d136e43"></a><!-- doxytag: member="CUser::GetAllClients" ref="aef861605f0f14e0d329a47939d136e43" args="()" -->
+<a class="anchor" id="a1ff9c638b064f4852df3dcc98c2f2741"></a><!-- doxytag: member="CUser::GetAllClients" ref="a1ff9c638b064f4852df3dcc98c2f2741" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="classCClient.html">CClient</a>*&gt; <a class="el" href="classCUser.html#aef861605f0f14e0d329a47939d136e43">CUser::GetAllClients</a> </td>
+          <td class="memname">std::vector&lt;<a class="el" href="classCClient.html">CClient</a>*&gt; <a class="el" href="classCUser.html#a1ff9c638b064f4852df3dcc98c2f2741">CUser::GetAllClients</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div>
@@ -952,15 +952,15 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a0740c37f4d5e6534e71f3a1deecc24a2"></a><!-- doxytag: member="CUser::GetLocalDCCIP" ref="a0740c37f4d5e6534e71f3a1deecc24a2" args="()" -->
+<a class="anchor" id="adddb42fcce22650c8554cd10d2de4167"></a><!-- doxytag: member="CUser::GetLocalDCCIP" ref="adddb42fcce22650c8554cd10d2de4167" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCString.html">CString</a> <a class="el" href="classCUser.html#a0740c37f4d5e6534e71f3a1deecc24a2">CUser::GetLocalDCCIP</a> </td>
+          <td class="memname"><a class="el" href="classCString.html">CString</a> <a class="el" href="classCUser.html#adddb42fcce22650c8554cd10d2de4167">CUser::GetLocalDCCIP</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div>
@@ -1215,15 +1215,15 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a1470f9beeb4852f46f01ee4ef89c910e"></a><!-- doxytag: member="CUser::GetUserClients" ref="a1470f9beeb4852f46f01ee4ef89c910e" args="()" -->
+<a class="anchor" id="addc8e65212da0ef36eae15664645af63"></a><!-- doxytag: member="CUser::GetUserClients" ref="addc8e65212da0ef36eae15664645af63" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="classCClient.html">CClient</a>*&gt;&amp; <a class="el" href="classCUser.html#a1470f9beeb4852f46f01ee4ef89c910e">CUser::GetUserClients</a> </td>
+          <td class="memname">const std::vector&lt;<a class="el" href="classCClient.html">CClient</a>*&gt;&amp; <a class="el" href="classCUser.html#addc8e65212da0ef36eae15664645af63">CUser::GetUserClients</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [inline]</code></td>
+          <td> const<code> [inline]</code></td>
         </tr>
       </table>
 </div>
@@ -2302,15 +2302,15 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a38984a191fc5ccd61d6ca7db2123a79b"></a><!-- doxytag: member="CUser::ToConfig" ref="a38984a191fc5ccd61d6ca7db2123a79b" args="()" -->
+<a class="anchor" id="abf4e4513f1c83036fa8e6204c5f17f71"></a><!-- doxytag: member="CUser::ToConfig" ref="abf4e4513f1c83036fa8e6204c5f17f71" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCConfig.html">CConfig</a> <a class="el" href="classCUser.html#a38984a191fc5ccd61d6ca7db2123a79b">CUser::ToConfig</a> </td>
+          <td class="memname"><a class="el" href="classCConfig.html">CConfig</a> <a class="el" href="classCUser.html#abf4e4513f1c83036fa8e6204c5f17f71">CUser::ToConfig</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div>
@@ -2897,7 +2897,7 @@ Protected Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Referenced by <a class="el" href="classCUser.html#a1470f9beeb4852f46f01ee4ef89c910e">GetUserClients()</a>.</p>
+<p>Referenced by <a class="el" href="classCUser.html#addc8e65212da0ef36eae15664645af63">GetUserClients()</a>.</p>
 
 </div>
 </div>
@@ -2935,7 +2935,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 5 2014 20:30:06 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 5 2014 21:01:52 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

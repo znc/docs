@@ -185,7 +185,6 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCWebSock.html#a6815cf108c8d7cd606ca4151f710faa1">PrintErrorPage</a> (const <a class="el" href="classCString.html">CString</a> &amp;sMessage)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCSmartPtr.html">CSmartPtr</a>&lt; <a class="el" href="classCWebSession.html">CWebSession</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCWebSock.html#a32c4ce2d145f124165fb7b2f8b2ae58f">GetSession</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCsock.html">Csock</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCWebSock.html#ae5a23673a2642548d98525dd804541bc">GetSockObj</a> (const <a class="el" href="classCString.html">CString</a> &amp;sHost, unsigned short uPort)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCModule.html">CModule</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCWebSock.html#a4c1dd7de35817b9618320ab565551493">GetModule</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCWebSock.html#a4389ee004e4b881b2c3d1f3be467da63">GetAvailSkins</a> (<a class="el" href="ZNCString_8h.html#af7252b7c4a0d4ec44ddc136c6055ae51">VCString</a> &amp;vRet) const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCWebSock.html#ae853ce14f89e4dc811db42b820cd01a0">GetSkinName</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCWebSock.html#a25aeaf960cd900649ffbd7e5729c48b2">GetRequestCookie</a> (const <a class="el" href="classCString.html">CString</a> &amp;sKey)</td></tr>
@@ -210,8 +209,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCHTTPSock.html#a4d389989bd6902284562f132ddfe49ae">PrintErrorPage</a> (unsigned int uStatusId, const <a class="el" href="classCString.html">CString</a> &amp;sStatusMsg, const <a class="el" href="classCString.html">CString</a> &amp;sMessage)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCHTTPSock.html#a97c1a62abb2e45c435433066bc003e6d">ParseURI</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCHTTPSock.html#a0585d0cde5a393c8fd892106c00f6c31">GetPage</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCHTTPSock.html#ad5aadd6720fccef34d576eb24df92e21">GetRemoteIP</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a78d123687411e81b5b85fb64c8468162">GetRemoteIP</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCHTTPSock.html#a2b8fd121e94d3ba30c648cab0ffcd720">GetRemoteIP</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCHTTPSock.html#a6d1ea3ef1c0e0dad9040c5f1c1b26542">GetRequestCookie</a> (const <a class="el" href="classCString.html">CString</a> &amp;sKey) const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCHTTPSock.html#a9e22370636a2976663ecaffcfeaa3008">SetDocRoot</a> (const <a class="el" href="classCString.html">CString</a> &amp;s)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCHTTPSock.html#ad15bcec13e49e25ab2e8ff95fac7d546">SetLoggedIn</a> (bool b)</td></tr>
@@ -248,6 +246,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Ease of use Listen, assigned to the manager and is subsequently tracked.  <a href="#a98f071f787be897681135271cce7d9d6"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a32e80e3b3e655ceb34127c2c0ef8f3b0">Listen</a> (uint16_t iPort, int iMaxConns=SOMAXCONN, const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sBindHost=&quot;&quot;, uint32_t iTimeout=0, bool bDetach=false)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Listens for connections.  <a href="#a32e80e3b3e655ceb34127c2c0ef8f3b0"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCModule.html">CModule</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSocket.html#a99c24906ec37c7bbabfdfd90c2611bf2">GetModule</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNCSock.html#a573ed9061b8c532a9749af8158ad1bb2">ConvertAddress</a> (const struct sockaddr_storage *pAddr, socklen_t iAddrLen, <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sIP, u_short *piPort) const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#ab03fd24a2d7a397ef9bbe864df6dda31">ConvertAddress</a> (const struct sockaddr_storage *pAddr, socklen_t iAddrLen, <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sIP, uint16_t *piPort) const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve name info (numeric only) for a given sockaddr_storage  <a href="#ab03fd24a2d7a397ef9bbe864df6dda31"></a><br/></td></tr>
@@ -2255,23 +2254,19 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a4c1dd7de35817b9618320ab565551493"></a><!-- doxytag: member="CWebSock::GetModule" ref="a4c1dd7de35817b9618320ab565551493" args="() const " -->
+<a class="anchor" id="a99c24906ec37c7bbabfdfd90c2611bf2"></a><!-- doxytag: member="CWebSock::GetModule" ref="a99c24906ec37c7bbabfdfd90c2611bf2" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCModule.html">CModule</a>* <a class="el" href="classCWebSock.html#a4c1dd7de35817b9618320ab565551493">CWebSock::GetModule</a> </td>
+          <td class="memname"><a class="el" href="classCModule.html">CModule</a>* <a class="el" href="classCSocket.html#a99c24906ec37c7bbabfdfd90c2611bf2">CSocket::GetModule</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const<code> [inline]</code></td>
+          <td> const<code> [inherited]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="classCSocket.html#a99c24906ec37c7bbabfdfd90c2611bf2">CSocket</a>.</p>
-
-<p>References <a class="el" href="classCSocket.html#a3c86946768409f8f05246be3d7f3da76">CSocket::m_pModule</a>.</p>
 
 </div>
 </div>
@@ -2666,35 +2661,21 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ad5aadd6720fccef34d576eb24df92e21"></a><!-- doxytag: member="CWebSock::GetRemoteIP" ref="ad5aadd6720fccef34d576eb24df92e21" args="()" -->
+<a class="anchor" id="a2b8fd121e94d3ba30c648cab0ffcd720"></a><!-- doxytag: member="CWebSock::GetRemoteIP" ref="a2b8fd121e94d3ba30c648cab0ffcd720" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classCString.html">CString</a> <a class="el" href="classCHTTPSock.html#ad5aadd6720fccef34d576eb24df92e21">CHTTPSock::GetRemoteIP</a> </td>
+          <td class="memname">virtual <a class="el" href="classCString.html">CString</a> <a class="el" href="classCHTTPSock.html#a2b8fd121e94d3ba30c648cab0ffcd720">CHTTPSock::GetRemoteIP</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [virtual, inherited]</code></td>
+          <td> const<code> [virtual, inherited]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-</div>
-</div>
-<a class="anchor" id="a78d123687411e81b5b85fb64c8468162"></a><!-- doxytag: member="CWebSock::GetRemoteIP" ref="a78d123687411e81b5b85fb64c8468162" args="() const " -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> <a class="el" href="classCsock.html#a78d123687411e81b5b85fb64c8468162">Csock::GetRemoteIP</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const<code> [inherited]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
+<p>Reimplemented from <a class="el" href="classCsock.html#a78d123687411e81b5b85fb64c8468162">Csock</a>.</p>
 
 </div>
 </div>
@@ -5358,8 +5339,6 @@ Protected Attributes</h2></td></tr>
 
 <p>pointer to the module that this sock instance belongs to </p>
 
-<p>Referenced by <a class="el" href="classCWebSock.html#a4c1dd7de35817b9618320ab565551493">GetModule()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="acf8b15b11e0b5996c4b1642c81be06cf"></a><!-- doxytag: member="CWebSock::m_sContentType" ref="acf8b15b11e0b5996c4b1642c81be06cf" args="" -->
@@ -5539,7 +5518,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 5 2014 20:30:06 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 5 2014 21:01:52 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

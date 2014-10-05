@@ -121,8 +121,8 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDir.html#ae54b36850105c776527e918d6f25b9a3">FillByWildcard</a> (const <a class="el" href="classCString.html">CString</a> &amp;sDir, const <a class="el" href="classCString.html">CString</a> &amp;sWildcard)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDir.html#a70c953085aa8b1a9d113a82785940259">Chmod</a> (mode_t mode)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDir.html#a14d7ab34eb9ff0196752ad39721502d5">Delete</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCFile.html#afc91ecc432088c036bba86b9fb726cbb">CFile::EFileAttr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDir.html#a07939da6e6b5d1d8b59e279326fa5e27">GetSortAttr</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDir.html#aea9c35c20d5abfd6f7ec3382ac5f8d47">IsDescending</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCFile.html#afc91ecc432088c036bba86b9fb726cbb">CFile::EFileAttr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDir.html#ad2957d15c3522dd1b364d9dfd88b26b2">GetSortAttr</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDir.html#aab5cf2ade15e158b19d632290d66151c">IsDescending</a> () const </td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDir.html#a2fe90698ddcc3349426f5bb63a7cabef">Chmod</a> (mode_t mode, const <a class="el" href="classCString.html">CString</a> &amp;sWildcard, const <a class="el" href="classCString.html">CString</a> &amp;sDir=&quot;.&quot;)</td></tr>
@@ -450,15 +450,15 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a07939da6e6b5d1d8b59e279326fa5e27"></a><!-- doxytag: member="CDir::GetSortAttr" ref="a07939da6e6b5d1d8b59e279326fa5e27" args="()" -->
+<a class="anchor" id="ad2957d15c3522dd1b364d9dfd88b26b2"></a><!-- doxytag: member="CDir::GetSortAttr" ref="ad2957d15c3522dd1b364d9dfd88b26b2" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCFile.html#afc91ecc432088c036bba86b9fb726cbb">CFile::EFileAttr</a> <a class="el" href="classCDir.html#a07939da6e6b5d1d8b59e279326fa5e27">CDir::GetSortAttr</a> </td>
+          <td class="memname"><a class="el" href="classCFile.html#afc91ecc432088c036bba86b9fb726cbb">CFile::EFileAttr</a> <a class="el" href="classCDir.html#ad2957d15c3522dd1b364d9dfd88b26b2">CDir::GetSortAttr</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [inline]</code></td>
+          <td> const<code> [inline]</code></td>
         </tr>
       </table>
 </div>
@@ -468,15 +468,15 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aea9c35c20d5abfd6f7ec3382ac5f8d47"></a><!-- doxytag: member="CDir::IsDescending" ref="aea9c35c20d5abfd6f7ec3382ac5f8d47" args="()" -->
+<a class="anchor" id="aab5cf2ade15e158b19d632290d66151c"></a><!-- doxytag: member="CDir::IsDescending" ref="aab5cf2ade15e158b19d632290d66151c" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classCDir.html#aea9c35c20d5abfd6f7ec3382ac5f8d47">CDir::IsDescending</a> </td>
+          <td class="memname">bool <a class="el" href="classCDir.html#aab5cf2ade15e158b19d632290d66151c">CDir::IsDescending</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [inline]</code></td>
+          <td> const<code> [inline]</code></td>
         </tr>
       </table>
 </div>
@@ -542,7 +542,7 @@ template&lt;typename T&gt; </div>
 </div>
 <div class="memdoc">
 
-<p>Referenced by <a class="el" href="classCDir.html#a2710fd55eccc1d12b1514f235c52d709">CDir()</a>, and <a class="el" href="classCDir.html#aea9c35c20d5abfd6f7ec3382ac5f8d47">IsDescending()</a>.</p>
+<p>Referenced by <a class="el" href="classCDir.html#a2710fd55eccc1d12b1514f235c52d709">CDir()</a>, and <a class="el" href="classCDir.html#aab5cf2ade15e158b19d632290d66151c">IsDescending()</a>.</p>
 
 </div>
 </div>
@@ -557,7 +557,7 @@ template&lt;typename T&gt; </div>
 </div>
 <div class="memdoc">
 
-<p>Referenced by <a class="el" href="classCDir.html#a2710fd55eccc1d12b1514f235c52d709">CDir()</a>, and <a class="el" href="classCDir.html#a07939da6e6b5d1d8b59e279326fa5e27">GetSortAttr()</a>.</p>
+<p>Referenced by <a class="el" href="classCDir.html#a2710fd55eccc1d12b1514f235c52d709">CDir()</a>, and <a class="el" href="classCDir.html#ad2957d15c3522dd1b364d9dfd88b26b2">GetSortAttr()</a>.</p>
 
 </div>
 </div>
@@ -582,7 +582,7 @@ template&lt;typename T&gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 5 2014 20:30:05 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 5 2014 21:01:51 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

@@ -191,7 +191,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a7b305ee8cbb4556e4148d62edeb05536">PutStatusNotice</a> (const <a class="el" href="classCString.html">CString</a> &amp;sLine)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#ac1225b37e969e3cd455aa8691c93ada8">PutModule</a> (const <a class="el" href="classCString.html">CString</a> &amp;sModule, const <a class="el" href="classCString.html">CString</a> &amp;sLine)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#ab0f17c6d5c59a5646142215811904468">PutModNotice</a> (const <a class="el" href="classCString.html">CString</a> &amp;sModule, const <a class="el" href="classCString.html">CString</a> &amp;sLine)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#af0e0e58754ea6f99da246c71fd841308">IsCapEnabled</a> (const <a class="el" href="classCString.html">CString</a> &amp;sCap)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a3098078b005655df1b30c27107cd825d">IsCapEnabled</a> (const <a class="el" href="classCString.html">CString</a> &amp;sCap) const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#add920a2c00e5c1184667b310c1b05bc6">ReadLine</a> (const <a class="el" href="classCString.html">CString</a> &amp;sData)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#ac822872ee0c32117eccdee1398240a6b">SendMotd</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a6e669ae3c33d7d0102d5b6c5804a5151">HelpUser</a> (const <a class="el" href="classCString.html">CString</a> &amp;sFilter=&quot;&quot;)</td></tr>
@@ -211,10 +211,10 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCUser.html">CUser</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#ad1543836f72c4fa603db70127c80d9fc">GetUser</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a0a7b770435e3b67bcffe88e7f86c1f19">SetNetwork</a> (<a class="el" href="classCIRCNetwork.html">CIRCNetwork</a> *pNetwork, bool bDisconnect=true, bool bReconnect=true)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCIRCNetwork.html">CIRCNetwork</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#ac8994cca3bd12195a3edf4f6fee417d2">GetNetwork</a> () const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classCClient.html">CClient</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a96b990225c3637ac8476789c5e9a91ed">GetClients</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="classCClient.html">CClient</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a2e39bf0168dee93075140fb2fc3015c2">GetClients</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classCIRCSock.html">CIRCSock</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#afa137d1c662482f08c3cc58dd41be2c5">GetIRCSock</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCIRCSock.html">CIRCSock</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a366e273daf69f208ad0c83dbb46b2658">GetIRCSock</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a85e48b5e8b7d70e134ff38c867e4ca17">GetFullName</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a3b2b74d3e1ddb2aa9bbc99733679c79c">GetFullName</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNCSock.html#a573ed9061b8c532a9749af8158ad1bb2">ConvertAddress</a> (const struct sockaddr_storage *pAddr, socklen_t iAddrLen, <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sIP, u_short *piPort) const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#ab03fd24a2d7a397ef9bbe864df6dda31">ConvertAddress</a> (const struct sockaddr_storage *pAddr, socklen_t iAddrLen, <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sIP, uint16_t *piPort) const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve name info (numeric only) for a given sockaddr_storage  <a href="#ab03fd24a2d7a397ef9bbe864df6dda31"></a><br/></td></tr>
@@ -1706,15 +1706,15 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a96b990225c3637ac8476789c5e9a91ed"></a><!-- doxytag: member="CClient::GetClients" ref="a96b990225c3637ac8476789c5e9a91ed" args="()" -->
+<a class="anchor" id="a2e39bf0168dee93075140fb2fc3015c2"></a><!-- doxytag: member="CClient::GetClients" ref="a2e39bf0168dee93075140fb2fc3015c2" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="classCClient.html">CClient</a>*&gt;&amp; <a class="el" href="classCClient.html#a96b990225c3637ac8476789c5e9a91ed">CClient::GetClients</a> </td>
+          <td class="memname">const std::vector&lt;<a class="el" href="classCClient.html">CClient</a>*&gt;&amp; <a class="el" href="classCClient.html#a2e39bf0168dee93075140fb2fc3015c2">CClient::GetClients</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div>
@@ -1777,15 +1777,15 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a85e48b5e8b7d70e134ff38c867e4ca17"></a><!-- doxytag: member="CClient::GetFullName" ref="a85e48b5e8b7d70e134ff38c867e4ca17" args="()" -->
+<a class="anchor" id="a3b2b74d3e1ddb2aa9bbc99733679c79c"></a><!-- doxytag: member="CClient::GetFullName" ref="a3b2b74d3e1ddb2aa9bbc99733679c79c" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCString.html">CString</a> <a class="el" href="classCClient.html#a85e48b5e8b7d70e134ff38c867e4ca17">CClient::GetFullName</a> </td>
+          <td class="memname"><a class="el" href="classCString.html">CString</a> <a class="el" href="classCClient.html#a3b2b74d3e1ddb2aa9bbc99733679c79c">CClient::GetFullName</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div>
@@ -2216,6 +2216,8 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="classCHTTPSock.html#a2b8fd121e94d3ba30c648cab0ffcd720">CHTTPSock</a>.</p>
 
 </div>
 </div>
@@ -2736,16 +2738,16 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af0e0e58754ea6f99da246c71fd841308"></a><!-- doxytag: member="CClient::IsCapEnabled" ref="af0e0e58754ea6f99da246c71fd841308" args="(const CString &amp;sCap)" -->
+<a class="anchor" id="a3098078b005655df1b30c27107cd825d"></a><!-- doxytag: member="CClient::IsCapEnabled" ref="a3098078b005655df1b30c27107cd825d" args="(const CString &amp;sCap) const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classCClient.html#af0e0e58754ea6f99da246c71fd841308">CClient::IsCapEnabled</a> </td>
+          <td class="memname">bool <a class="el" href="classCClient.html#a3098078b005655df1b30c27107cd825d">CClient::IsCapEnabled</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>sCap</em></td><td>)</td>
-          <td><code> [inline]</code></td>
+          <td> const<code> [inline]</code></td>
         </tr>
       </table>
 </div>
@@ -4662,7 +4664,7 @@ Protected Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Referenced by <a class="el" href="classCClient.html#af0e0e58754ea6f99da246c71fd841308">IsCapEnabled()</a>.</p>
+<p>Referenced by <a class="el" href="classCClient.html#a3098078b005655df1b30c27107cd825d">IsCapEnabled()</a>.</p>
 
 </div>
 </div>
@@ -4726,7 +4728,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 5 2014 20:30:05 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 5 2014 21:01:50 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

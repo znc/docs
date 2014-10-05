@@ -321,8 +321,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00238"></a>00238                 <span class="keywordflow">return</span> uRet;
 <a name="l00239"></a>00239         }
 <a name="l00240"></a>00240 
-<a name="l00241"></a><a class="code" href="classCDir.html#a07939da6e6b5d1d8b59e279326fa5e27">00241</a>         <a class="code" href="classCFile.html#afc91ecc432088c036bba86b9fb726cbb">CFile::EFileAttr</a> <a class="code" href="classCDir.html#a07939da6e6b5d1d8b59e279326fa5e27">GetSortAttr</a>() { <span class="keywordflow">return</span> <a class="code" href="classCDir.html#a04a36f8b7bf20a29d15f148e9ddf8b5b">m_eSortAttr</a>; }
-<a name="l00242"></a><a class="code" href="classCDir.html#aea9c35c20d5abfd6f7ec3382ac5f8d47">00242</a>         <span class="keywordtype">bool</span> <a class="code" href="classCDir.html#aea9c35c20d5abfd6f7ec3382ac5f8d47">IsDescending</a>() { <span class="keywordflow">return</span> <a class="code" href="classCDir.html#a6c2d871de33e02bfc0ad6a5d642afb55">m_bDesc</a>; }
+<a name="l00241"></a><a class="code" href="classCDir.html#ad2957d15c3522dd1b364d9dfd88b26b2">00241</a>         <a class="code" href="classCFile.html#afc91ecc432088c036bba86b9fb726cbb">CFile::EFileAttr</a> <a class="code" href="classCDir.html#ad2957d15c3522dd1b364d9dfd88b26b2">GetSortAttr</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classCDir.html#a04a36f8b7bf20a29d15f148e9ddf8b5b">m_eSortAttr</a>; }
+<a name="l00242"></a><a class="code" href="classCDir.html#aab5cf2ade15e158b19d632290d66151c">00242</a>         <span class="keywordtype">bool</span> <a class="code" href="classCDir.html#aab5cf2ade15e158b19d632290d66151c">IsDescending</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classCDir.html#a6c2d871de33e02bfc0ad6a5d642afb55">m_bDesc</a>; }
 <a name="l00243"></a>00243 
 <a name="l00244"></a>00244         <span class="comment">// Check if sPath + &quot;/&quot; + sAdd (~/ is handled) is an absolute path which</span>
 <a name="l00245"></a>00245         <span class="comment">// resides under sPath. Returns absolute path on success, else &quot;&quot;.</span>
@@ -365,7 +365,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 5 2014 20:30:04 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 5 2014 21:01:50 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
