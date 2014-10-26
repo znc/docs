@@ -154,6 +154,7 @@ var searchData=
   ['m_5fssockname',['m_sSockName',['../classCSConnection.html#a389f49c0a5045b40062140ec9395a2fc',1,'CSConnection']]],
   ['m_5fsspendingcaps',['m_ssPendingCaps',['../classCIRCSock.html#a1525e1b6c629a82e7b488d549f7a902b',1,'CIRCSock']]],
   ['m_5fssslcertfile',['m_sSSLCertFile',['../classCZNC.html#ab2c0b3d47c1f1ef777c330c304a64dd3',1,'CZNC']]],
+  ['m_5fssslciphers',['m_sSSLCiphers',['../classCZNC.html#a713bc1c6831f78d839436943ee2a55d9',1,'CZNC']]],
   ['m_5fsstatusprefix',['m_sStatusPrefix',['../classCUser.html#afe7977edbe977a22a468a65a11918ca2',1,'CUser::m_sStatusPrefix()'],['../classCZNC.html#a23003acd39148cc03a18abc14c5f05d2',1,'CZNC::m_sStatusPrefix()']]],
   ['m_5fstext',['m_sText',['../classCBufLine.html#a3310db35cdf223943441e77d745b603d',1,'CBufLine']]],
   ['m_5fstimers',['m_sTimers',['../classCModule.html#a0f30eae029b7d126173ed8862f09ae5c',1,'CModule']]],

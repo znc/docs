@@ -1,17 +1,17 @@
 <map id="G" name="G">
-<area shape="rect" id="node2" href="$classTCacheMap.html" title="TCacheMap\&lt; CString \&gt;" alt="" coords="1711,1293,1881,1323"/>
-<area shape="rect" id="node6" href="$classCString.html" title="String class that is used inside ZNC." alt="" coords="679,1215,748,1244"/>
+<area shape="rect" id="node2" href="$classTCacheMap.html" title="TCacheMap\&lt; CString \&gt;" alt="" coords="1711,1296,1881,1325"/>
+<area shape="rect" id="node6" href="$classCString.html" title="String class that is used inside ZNC." alt="" coords="679,1216,748,1245"/>
 <area shape="rect" id="node33" href="$classCUser.html" title="CUser" alt="" coords="1535,560,1596,589"/>
 <area shape="rect" id="node37" href="$classCClient.html" title="CClient" alt="" coords="2805,425,2872,455"/>
 <area shape="rect" id="node49" href="$classCIRCNetwork.html" title="CIRCNetwork" alt="" coords="2312,688,2413,717"/>
-<area shape="rect" id="node51" href="$classCNick.html" title="CNick" alt="" coords="2809,777,2868,807"/>
+<area shape="rect" id="node51" href="$classCNick.html" title="CNick" alt="" coords="2809,780,2868,809"/>
 <area shape="rect" id="node62" href="$classCIRCSock.html" title="CIRCSock" alt="" coords="4215,660,4295,689"/>
 <area shape="rect" id="node69" href="$classCChan.html" title="CChan" alt="" coords="3519,908,3583,937"/>
 <area shape="rect" id="node111" href="$classCServer.html" title="CServer" alt="" coords="1291,893,1363,923"/>
 <area shape="rect" id="node129" href="$classCListener.html" title="CListener" alt="" coords="2321,1184,2404,1213"/>
-<area shape="rect" id="node135" href="$classCFile.html" title="CFile" alt="" coords="2187,1489,2237,1519"/>
-<area shape="rect" id="node8" title="STL class." alt="" coords="305,1215,391,1244"/>
-<area shape="rect" id="node10" title="STL class." alt="" coords="5,1215,189,1244"/>
+<area shape="rect" id="node135" href="$classCFile.html" title="CFile" alt="" coords="2187,1508,2237,1537"/>
+<area shape="rect" id="node8" title="STL class." alt="" coords="305,1216,391,1245"/>
+<area shape="rect" id="node10" title="STL class." alt="" coords="5,1216,189,1245"/>
 <area shape="rect" id="node12" href="$classCSockManager.html" title="CSockManager" alt="" coords="2153,1039,2271,1068"/>
 <area shape="rect" id="node14" href="$classTSocketManager.html" title="TSocketManager\&lt; CZNCSock \&gt;" alt="" coords="1452,935,1679,964"/>
 <area shape="rect" id="node16" href="$classCSocketManager.html" title="Best class to use to interact with the sockets." alt="" coords="1063,377,1193,407"/>
