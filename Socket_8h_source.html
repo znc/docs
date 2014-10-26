@@ -108,8 +108,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00025"></a>00025 
 <a name="l00026"></a><a class="code" href="classCZNCSock.html">00026</a> <span class="keyword">class </span><a class="code" href="classCZNCSock.html">CZNCSock</a> : <span class="keyword">public</span> <a class="code" href="classCsock.html" title="Basic socket class.">Csock</a> {
 <a name="l00027"></a>00027 <span class="keyword">public</span>:
-<a name="l00028"></a><a class="code" href="classCZNCSock.html#add82c89b245fccc103e225a9bf0f2211">00028</a>         <a class="code" href="classCZNCSock.html#add82c89b245fccc103e225a9bf0f2211">CZNCSock</a>(<span class="keywordtype">int</span> timeout = 60) : <a class="code" href="classCsock.html" title="Basic socket class.">Csock</a>(timeout) {}
-<a name="l00029"></a><a class="code" href="classCZNCSock.html#a1141e3b6e49b036d3060ebb4d9ad4528">00029</a>         <a class="code" href="classCZNCSock.html#a1141e3b6e49b036d3060ebb4d9ad4528">CZNCSock</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sHost, u_short port, <span class="keywordtype">int</span> timeout = 60) : <a class="code" href="classCsock.html" title="Basic socket class.">Csock</a>(sHost, port, timeout) {}
+<a name="l00028"></a>00028         <a class="code" href="classCZNCSock.html#add82c89b245fccc103e225a9bf0f2211">CZNCSock</a>(<span class="keywordtype">int</span> timeout = 60);
+<a name="l00029"></a>00029         <a class="code" href="classCZNCSock.html#add82c89b245fccc103e225a9bf0f2211">CZNCSock</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sHost, u_short port, <span class="keywordtype">int</span> timeout = 60);
 <a name="l00030"></a><a class="code" href="classCZNCSock.html#a6b9a8d182f1c73c24cc171d72f9da021">00030</a>         <a class="code" href="classCZNCSock.html#a6b9a8d182f1c73c24cc171d72f9da021">~CZNCSock</a>() {}
 <a name="l00031"></a>00031 
 <a name="l00032"></a>00032         <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classCZNCSock.html#a573ed9061b8c532a9749af8158ad1bb2">ConvertAddress</a>(<span class="keyword">const</span> <span class="keyword">struct</span> sockaddr_storage * pAddr, socklen_t iAddrLen, <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; sIP, u_short * piPort) <span class="keyword">const</span>;
@@ -279,7 +279,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 18 2014 11:52:58 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 26 2014 12:12:16 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

@@ -111,6 +111,7 @@ var searchData=
   ['getisssl',['GetIsSSL',['../classCSConnection.html#ac4964a0add41edda97656d4901355e83',1,'CSConnection::GetIsSSL()'],['../classCSListener.html#adea9f2623c03262b02f5303e3d7bc424',1,'CSListener::GetIsSSL()']]],
   ['getisupport',['GetISupport',['../classCIRCSock.html#a9cff083da920fa15836194dde3515c98',1,'CIRCSock::GetISupport() const '],['../classCIRCSock.html#ad028960726b2b661f4aa86863821369b',1,'CIRCSock::GetISupport(const CString &amp;sKey, const CString &amp;sDefault=&quot;&quot;) const ']]],
   ['getitem',['GetItem',['../classTCacheMap.html#af5ad62704308d4b69ae91588c0269a07',1,'TCacheMap']]],
+  ['getjoindelay',['GetJoinDelay',['../classCIRCNetwork.html#a71f040790117703f1dfba65e315b0550',1,'CIRCNetwork']]],
   ['getjointries',['GetJoinTries',['../classCChan.html#a2341c95bb4ec31a25f52d381d0f4d94d',1,'CChan']]],
   ['getkey',['GetKey',['../classCChan.html#a404af6c153833a43e5914ca5d76a7489',1,'CChan']]],
   ['getlastactive',['GetLastActive',['../classCWebSession.html#affd1eaa18427e4d1032e83b0545b1745',1,'CWebSession']]],

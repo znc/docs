@@ -16,6 +16,7 @@ var searchData=
   ['int',['INT',['../classPString.html#a3d15380aec9d92c71dd759f5fa4d9661a30752768571556cd19012ffc099c9730',1,'PString']]],
   ['int2ptr',['INT2PTR',['../swigperlrun_8h.html#abbc4a3f90370716e2313006d8e7d5053',1,'swigperlrun.h']]],
   ['invalidate',['Invalidate',['../classCAuthBase.html#a83d7e2b0877b17244680b72df6ec46c6',1,'CAuthBase::Invalidate()'],['../classCClientAuth.html#a8ba777640972a7f81998a25b8f5800ea',1,'CClientAuth::Invalidate()']]],
+  ['ircconnected',['IRCConnected',['../classCIRCNetwork.html#acb59f974abebead9826ec900c4cda3d7',1,'CIRCNetwork']]],
   ['ircdisconnected',['IRCDisconnected',['../classCIRCNetwork.html#a11ceb1ea1c998695e9dc1bd3840a133a',1,'CIRCNetwork']]],
   ['ircnetwork_2eh',['IRCNetwork.h',['../IRCNetwork_8h.html',1,'']]],
   ['ircsock_2eh',['IRCSock.h',['../IRCSock_8h.html',1,'']]],

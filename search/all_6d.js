@@ -193,6 +193,7 @@ var searchData=
   ['m_5fuiconnectdelay',['m_uiConnectDelay',['../classCZNC.html#a59803f38f09bbdf31753849c452a9e79',1,'CZNC']]],
   ['m_5fuiconnectpaused',['m_uiConnectPaused',['../classCZNC.html#a0cdab8cadfd599304fad46542f9efa84',1,'CZNC']]],
   ['m_5fuimaxbuffersize',['m_uiMaxBufferSize',['../classCZNC.html#a433c1098f7463f9665bdb4611dfc1b37',1,'CZNC']]],
+  ['m_5fujoindelay',['m_uJoinDelay',['../classCIRCNetwork.html#a3b112d6ab6397e713f6c27618c2a83df',1,'CIRCNetwork']]],
   ['m_5fujointries',['m_uJoinTries',['../classCChan.html#aec6b3aff60a4ee8575d11786920fa464',1,'CChan']]],
   ['m_5fulcreationdate',['m_ulCreationDate',['../classCChan.html#a89e172aff611b5b635a1c2508c0586ae',1,'CChan']]],
   ['m_5fulinecount',['m_uLineCount',['../classCBuffer.html#a899bbaeb79a050df4b19964ad738ff86',1,'CBuffer']]],

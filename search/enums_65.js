@@ -8,6 +8,7 @@ var searchData=
   ['eclosetype',['ECloseType',['../classCsock.html#a8b185717b466c70d2934fce9775c54da',1,'Csock']]],
   ['ecomptype',['ECompType',['../Csocket_8h.html#a233f31a47c2ebf7099843a7b37a1bf61',1,'Csocket.h']]],
   ['econstate',['ECONState',['../classCsock.html#a1ddb2a5d92aefe7db7a88b3824d7c4da',1,'Csock']]],
+  ['edisableprotocol',['EDisableProtocol',['../classCsock.html#a5386b79c9e11eb2e3e175473378abf44',1,'Csock']]],
   ['ednsltype',['EDNSLType',['../classCsock.html#a94aab05249b29e4446077664dee91e5e',1,'Csock']]],
   ['eescape',['EEscape',['../classCString.html#a8f63759db4ef372abb9cfa4751648e1f',1,'CString']]],
   ['efileattr',['EFileAttr',['../classCFile.html#afc91ecc432088c036bba86b9fb726cbb',1,'CFile']]],

@@ -143,6 +143,15 @@ Public Types</h2></td></tr>
 <a class="el" href="classCsock.html#aa7da8fe2945d8cfca7c53aec88fdad68af4dceb7a8d0001e838430f7cbed6b9cb">TLS12</a> =  6
 <br/>
  }</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a5386b79c9e11eb2e3e175473378abf44">EDisableProtocol</a> { <br/>
+&#160;&#160;<a class="el" href="classCsock.html#a5386b79c9e11eb2e3e175473378abf44a59b55d8cfc243b43df5e12e00544d030">EDP_None</a> =  0, 
+<a class="el" href="classCsock.html#a5386b79c9e11eb2e3e175473378abf44a18e8b29d9c18958001881ebef94cd137">EDP_SSLv2</a> =  1, 
+<a class="el" href="classCsock.html#a5386b79c9e11eb2e3e175473378abf44a50a4b735cf309d3f911aba67b5eb4456">EDP_SSLv3</a> =  2, 
+<a class="el" href="classCsock.html#a5386b79c9e11eb2e3e175473378abf44a8e63eea5f9969988064de016e9fa7652">EDP_TLSv1</a> =  4, 
+<br/>
+&#160;&#160;<a class="el" href="classCsock.html#a5386b79c9e11eb2e3e175473378abf44a8f9be19101663d878f5ac184d3d7822d">EDP_SSL</a> =  (EDP_SSLv2|EDP_SSLv3)
+<br/>
+ }</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a1ddb2a5d92aefe7db7a88b3824d7c4da">ECONState</a> { <br/>
 &#160;&#160;<a class="el" href="classCsock.html#a1ddb2a5d92aefe7db7a88b3824d7c4daaa319f60f9dd920e4a51f93f27f552a87">CST_START</a> =  0, 
 <a class="el" href="classCsock.html#a1ddb2a5d92aefe7db7a88b3824d7c4daa5f7ae08bb9a49611e35aaca56e47b583">CST_DNS</a> =  CST_START, 
@@ -305,6 +314,8 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#adfe38d92769d41132435094784524930">GetSSL</a> () const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if this socket is using ssl. Note this does not mean the SSL state is finished, but simply that its configured to use ssl.  <a href="#adfe38d92769d41132435094784524930"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a71bd0fb35012cf8d006b8098b6eac15e">SetSSL</a> (bool b)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a0256789d876431c52f9e2e905440319f">DisableSSLProtocols</a> (u_int uDisableOpts)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">bitwise setter,  <a href="#a0256789d876431c52f9e2e905440319f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#aa59f3b858f55d5cf2e2574140dd5bf4e">SetCipher</a> (const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sCipher)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the cipher type ( openssl cipher [to see ciphers available] )  <a href="#aa59f3b858f55d5cf2e2574140dd5bf4e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a9492afdd7b765fe5badffa5781381717">GetCipher</a> () const </td></tr>
@@ -519,6 +530,37 @@ Protected Attributes</h2></td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a1ddb2a5d92aefe7db7a88b3824d7c4daabb9dc057b8111a31121aa34271cfccd1"></a><!-- doxytag: member="CST_CONNECTSSL" ref="a1ddb2a5d92aefe7db7a88b3824d7c4daabb9dc057b8111a31121aa34271cfccd1" args="" -->CST_CONNECTSSL</em>&nbsp;</td><td>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a1ddb2a5d92aefe7db7a88b3824d7c4daa59f976336ffa12f10e0eebcccd5b84f7"></a><!-- doxytag: member="CST_OK" ref="a1ddb2a5d92aefe7db7a88b3824d7c4daa59f976336ffa12f10e0eebcccd5b84f7" args="" -->CST_OK</em>&nbsp;</td><td>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a5386b79c9e11eb2e3e175473378abf44"></a><!-- doxytag: member="CSocket::EDisableProtocol" ref="a5386b79c9e11eb2e3e175473378abf44" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classCsock.html#a5386b79c9e11eb2e3e175473378abf44">Csock::EDisableProtocol</a><code> [inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="a5386b79c9e11eb2e3e175473378abf44a59b55d8cfc243b43df5e12e00544d030"></a><!-- doxytag: member="EDP_None" ref="a5386b79c9e11eb2e3e175473378abf44a59b55d8cfc243b43df5e12e00544d030" args="" -->EDP_None</em>&nbsp;</td><td>
+<p>disable nothing </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a5386b79c9e11eb2e3e175473378abf44a18e8b29d9c18958001881ebef94cd137"></a><!-- doxytag: member="EDP_SSLv2" ref="a5386b79c9e11eb2e3e175473378abf44a18e8b29d9c18958001881ebef94cd137" args="" -->EDP_SSLv2</em>&nbsp;</td><td>
+<p>disable SSL verion 2 </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a5386b79c9e11eb2e3e175473378abf44a50a4b735cf309d3f911aba67b5eb4456"></a><!-- doxytag: member="EDP_SSLv3" ref="a5386b79c9e11eb2e3e175473378abf44a50a4b735cf309d3f911aba67b5eb4456" args="" -->EDP_SSLv3</em>&nbsp;</td><td>
+<p>disable SSL verion 3 </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a5386b79c9e11eb2e3e175473378abf44a8e63eea5f9969988064de016e9fa7652"></a><!-- doxytag: member="EDP_TLSv1" ref="a5386b79c9e11eb2e3e175473378abf44a8e63eea5f9969988064de016e9fa7652" args="" -->EDP_TLSv1</em>&nbsp;</td><td>
+<p>disable TLS verion 1 </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a5386b79c9e11eb2e3e175473378abf44a8f9be19101663d878f5ac184d3d7822d"></a><!-- doxytag: member="EDP_SSL" ref="a5386b79c9e11eb2e3e175473378abf44a8f9be19101663d878f5ac184d3d7822d" args="" -->EDP_SSL</em>&nbsp;</td><td>
 </td></tr>
 </table>
 </dd>
@@ -1547,6 +1589,26 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0256789d876431c52f9e2e905440319f"></a><!-- doxytag: member="CSocket::DisableSSLProtocols" ref="a0256789d876431c52f9e2e905440319f" args="(u_int uDisableOpts)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classCsock.html#a0256789d876431c52f9e2e905440319f">Csock::DisableSSLProtocols</a> </td>
+          <td>(</td>
+          <td class="paramtype">u_int&#160;</td>
+          <td class="paramname"><em>uDisableOpts</em></td><td>)</td>
+          <td><code> [inline, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>bitwise setter, </p>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classCsock.html#a5386b79c9e11eb2e3e175473378abf44">EDisableProtocol</a> </dd></dl>
 
 </div>
 </div>
@@ -4021,7 +4083,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 18 2014 11:52:59 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 26 2014 12:12:17 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

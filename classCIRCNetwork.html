@@ -104,7 +104,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="classCIRCNetwork.html#a9fed91ead68a69eb6c7e40d290fffe6ba3f207f8f9ab984372258f4363011138e">PING_FREQUENCY</a> =  270, 
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="classCIRCNetwork.html#a9fed91ead68a69eb6c7e40d290fffe6ba2cd38901acab59419312f3227a0bd438">JOIN_FREQUENCY</a> =  30, 
+<a class="el" href="classCIRCNetwork.html#a9fed91ead68a69eb6c7e40d290fffe6ba3f207f8f9ab984372258f4363011138e">PING_FREQUENCY</a> =  270, 
 <a class="el" href="classCIRCNetwork.html#a9fed91ead68a69eb6c7e40d290fffe6bae044431ba9a775c6489d2383df14f4d3">PING_SLACK</a> =  30, 
 <a class="el" href="classCIRCNetwork.html#a9fed91ead68a69eb6c7e40d290fffe6bab30cf0fd44745403f459d4ee5ae0b527">NO_TRAFFIC_TIMEOUT</a> =  540
  }</td></tr>
@@ -175,6 +176,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a224fd484b0cf83611ee8469eac0d234c">IsIRCConnected</a> () const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This method will return whether the user is connected and authenticated to an IRC server.  <a href="#a224fd484b0cf83611ee8469eac0d234c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a23ef621ca9761ce85529b2f48f44bcd9">SetIRCSocket</a> (<a class="el" href="classCIRCSock.html">CIRCSock</a> *pIRCSock)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#acb59f974abebead9826ec900c4cda3d7">IRCConnected</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a11ceb1ea1c998695e9dc1bd3840a133a">IRCDisconnected</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#aa2947b26744629753ef41994192ccd89">CheckIRCConnect</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#ab4f833676f163957e60b7f7e4290d093">PutIRC</a> (const <a class="el" href="classCString.html">CString</a> &amp;sLine)</td></tr>
@@ -206,6 +208,8 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">unsigned short int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#af81b56bb902c049c2a6a750c80c6df75">GetFloodBurst</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#ae9891f68f0aa0858b3820415ee3842ec">SetFloodRate</a> (double fFloodRate)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a67e80f525b607bb1cc554c50b3df83da">SetFloodBurst</a> (unsigned short int uFloodBurst)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">unsigned short int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a71f040790117703f1dfba65e315b0550">GetJoinDelay</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#aa89ade21d65d1aa1cea5c58e22517eae">SetJoinDelay</a> (unsigned short int uJoinDelay)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a2350ac58e306613e32a4aa95a92e7ce9">ExpandString</a> (const <a class="el" href="classCString.html">CString</a> &amp;sStr) const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a3326cc965187db6551375ee4f7582d49">ExpandString</a> (const <a class="el" href="classCString.html">CString</a> &amp;sStr, <a class="el" href="classCString.html">CString</a> &amp;sRet) const </td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-methods"></a>
@@ -243,6 +247,7 @@ Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCBuffer.html">CBuffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a835da32349d9fde2ba7a2f6e4426ffc5">m_NoticeBuffer</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">CIRCNetworkPingTimer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a6f681108797394360afadb84e5858700">m_pPingTimer</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">CIRCNetworkJoinTimer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a502ffe4f75fe06dee55b69df16a84e27">m_pJoinTimer</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">unsigned short int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a3b112d6ab6397e713f6c27618c2a83df">m_uJoinDelay</a></td></tr>
 </table>
 <hr/><h2>Member Enumeration Documentation</h2>
 <a class="anchor" id="a9fed91ead68a69eb6c7e40d290fffe6b"></a><!-- doxytag: member="CIRCNetwork::@1" ref="a9fed91ead68a69eb6c7e40d290fffe6b" args="" -->
@@ -256,6 +261,8 @@ Protected Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 <dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="a9fed91ead68a69eb6c7e40d290fffe6ba2cd38901acab59419312f3227a0bd438"></a><!-- doxytag: member="JOIN_FREQUENCY" ref="a9fed91ead68a69eb6c7e40d290fffe6ba2cd38901acab59419312f3227a0bd438" args="" -->JOIN_FREQUENCY</em>&nbsp;</td><td>
+</td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a9fed91ead68a69eb6c7e40d290fffe6ba3f207f8f9ab984372258f4363011138e"></a><!-- doxytag: member="PING_FREQUENCY" ref="a9fed91ead68a69eb6c7e40d290fffe6ba3f207f8f9ab984372258f4363011138e" args="" -->PING_FREQUENCY</em>&nbsp;</td><td>
 <p>How long must an IRC connection be idle before ZNC sends a ping. </p>
 </td></tr>
@@ -1195,6 +1202,24 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a71f040790117703f1dfba65e315b0550"></a><!-- doxytag: member="CIRCNetwork::GetJoinDelay" ref="a71f040790117703f1dfba65e315b0550" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short int <a class="el" href="classCIRCNetwork.html#a71f040790117703f1dfba65e315b0550">CIRCNetwork::GetJoinDelay</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="classCIRCNetwork.html#a3b112d6ab6397e713f6c27618c2a83df">m_uJoinDelay</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a3bd545af4f02769c9e15d93dca28feee"></a><!-- doxytag: member="CIRCNetwork::GetModules" ref="a3bd545af4f02769c9e15d93dca28feee" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -1391,6 +1416,22 @@ Protected Attributes</h2></td></tr>
 <div class="memdoc">
 
 <p>References <a class="el" href="classCIRCNetwork.html#a9739ab622c0fb97073a6ea10c14f8058">m_vServers</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acb59f974abebead9826ec900c4cda3d7"></a><!-- doxytag: member="CIRCNetwork::IRCConnected" ref="acb59f974abebead9826ec900c4cda3d7" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classCIRCNetwork.html#acb59f974abebead9826ec900c4cda3d7">CIRCNetwork::IRCConnected</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
 
 </div>
 </div>
@@ -1945,6 +1986,25 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa89ade21d65d1aa1cea5c58e22517eae"></a><!-- doxytag: member="CIRCNetwork::SetJoinDelay" ref="aa89ade21d65d1aa1cea5c58e22517eae" args="(unsigned short int uJoinDelay)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classCIRCNetwork.html#aa89ade21d65d1aa1cea5c58e22517eae">CIRCNetwork::SetJoinDelay</a> </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short int&#160;</td>
+          <td class="paramname"><em>uJoinDelay</em></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="classCIRCNetwork.html#a3b112d6ab6397e713f6c27618c2a83df">m_uJoinDelay</a>.</p>
 
 </div>
 </div>
@@ -2522,6 +2582,21 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a3b112d6ab6397e713f6c27618c2a83df"></a><!-- doxytag: member="CIRCNetwork::m_uJoinDelay" ref="a3b112d6ab6397e713f6c27618c2a83df" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short int <a class="el" href="classCIRCNetwork.html#a3b112d6ab6397e713f6c27618c2a83df">CIRCNetwork::m_uJoinDelay</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Referenced by <a class="el" href="classCIRCNetwork.html#a71f040790117703f1dfba65e315b0550">GetJoinDelay()</a>, and <a class="el" href="classCIRCNetwork.html#aa89ade21d65d1aa1cea5c58e22517eae">SetJoinDelay()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="aa1281c5c6b0c68315706ddc1e11c53cd"></a><!-- doxytag: member="CIRCNetwork::m_uServerIdx" ref="aa1281c5c6b0c68315706ddc1e11c53cd" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -2614,7 +2689,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 18 2014 11:52:59 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 26 2014 12:12:16 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
