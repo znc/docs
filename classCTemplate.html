@@ -127,12 +127,12 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCTemplate.html#abd7c53e8d71f3f840edb64b7d68948b0">CTemplate</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCTemplate.html#adbc15e113468e753805dac342acc0745">CTemplate</a> (const <a class="el" href="classCString.html">CString</a> &amp;sFileName)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCTemplate.html#af83c69839a72368567e8b6e85e635b8c">CTemplate</a> (const <a class="el" href="classCSmartPtr.html">CSmartPtr</a>&lt; <a class="el" href="classCTemplateOptions.html">CTemplateOptions</a> &gt; &amp;Options, <a class="el" href="classCTemplate.html">CTemplate</a> *pParent=NULL)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCTemplate.html#ad08d408ed9b9e7508e02a84d6f494771">CTemplate</a> (const std::shared_ptr&lt; <a class="el" href="classCTemplateOptions.html">CTemplateOptions</a> &gt; &amp;Options, <a class="el" href="classCTemplate.html">CTemplate</a> *pParent=NULL)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCTemplate.html#adf55261a315e6f0ae57290026621106a">~CTemplate</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCTemplate.html#a0c3f97f51747dbcd2620704d9d8c999e">AddTagHandler</a> (<a class="el" href="classCSmartPtr.html">CSmartPtr</a>&lt; <a class="el" href="classCTemplateTagHandler.html">CTemplateTagHandler</a> &gt; spTagHandler)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for implementing custom tags in subclasses.  <a href="#a0c3f97f51747dbcd2620704d9d8c999e"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classCSmartPtr.html">CSmartPtr</a><br class="typebreak"/>
-&lt; <a class="el" href="classCTemplateTagHandler.html">CTemplateTagHandler</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCTemplate.html#af7f640855a3c7e3c810a05d7fd12bab8">GetTagHandlers</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCTemplate.html#a35a6ab024db19c7b1a6b124cc30333af">AddTagHandler</a> (std::shared_ptr&lt; <a class="el" href="classCTemplateTagHandler.html">CTemplateTagHandler</a> &gt; spTagHandler)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for implementing custom tags in subclasses.  <a href="#a35a6ab024db19c7b1a6b124cc30333af"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr<br class="typebreak"/>
+&lt; <a class="el" href="classCTemplateTagHandler.html">CTemplateTagHandler</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCTemplate.html#a54f2f7d4febc2d934b1fb0846acfedb5">GetTagHandlers</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCTemplate.html#aa65f4e7a28eb4c2ff746af2e774be2e3">ResolveLiteral</a> (const <a class="el" href="classCString.html">CString</a> &amp;sString)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCTemplate.html#a61f7ee7dfe6a2eb10a6c3ba8ae9e4bfa">Init</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCTemplate.html">CTemplate</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCTemplate.html#ad419cff450a6cbd71a8016054353ecdf">GetParent</a> (bool bRoot)</td></tr>
@@ -255,14 +255,14 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af83c69839a72368567e8b6e85e635b8c"></a><!-- doxytag: member="CTemplate::CTemplate" ref="af83c69839a72368567e8b6e85e635b8c" args="(const CSmartPtr&lt; CTemplateOptions &gt; &amp;Options, CTemplate *pParent=NULL)" -->
+<a class="anchor" id="ad08d408ed9b9e7508e02a84d6f494771"></a><!-- doxytag: member="CTemplate::CTemplate" ref="ad08d408ed9b9e7508e02a84d6f494771" args="(const std::shared_ptr&lt; CTemplateOptions &gt; &amp;Options, CTemplate *pParent=NULL)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classCTemplate.html#abd7c53e8d71f3f840edb64b7d68948b0">CTemplate::CTemplate</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCSmartPtr.html">CSmartPtr</a>&lt; <a class="el" href="classCTemplateOptions.html">CTemplateOptions</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="classCTemplateOptions.html">CTemplateOptions</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>Options</em>, </td>
         </tr>
         <tr>
@@ -318,14 +318,14 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a0c3f97f51747dbcd2620704d9d8c999e"></a><!-- doxytag: member="CTemplate::AddTagHandler" ref="a0c3f97f51747dbcd2620704d9d8c999e" args="(CSmartPtr&lt; CTemplateTagHandler &gt; spTagHandler)" -->
+<a class="anchor" id="a35a6ab024db19c7b1a6b124cc30333af"></a><!-- doxytag: member="CTemplate::AddTagHandler" ref="a35a6ab024db19c7b1a6b124cc30333af" args="(std::shared_ptr&lt; CTemplateTagHandler &gt; spTagHandler)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classCTemplate.html#a0c3f97f51747dbcd2620704d9d8c999e">CTemplate::AddTagHandler</a> </td>
+          <td class="memname">void <a class="el" href="classCTemplate.html#a35a6ab024db19c7b1a6b124cc30333af">CTemplate::AddTagHandler</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classCSmartPtr.html">CSmartPtr</a>&lt; <a class="el" href="classCTemplateTagHandler.html">CTemplateTagHandler</a> &gt;&#160;</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classCTemplateTagHandler.html">CTemplateTagHandler</a> &gt;&#160;</td>
           <td class="paramname"><em>spTagHandler</em></td><td>)</td>
           <td><code> [inline]</code></td>
         </tr>
@@ -572,12 +572,12 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af7f640855a3c7e3c810a05d7fd12bab8"></a><!-- doxytag: member="CTemplate::GetTagHandlers" ref="af7f640855a3c7e3c810a05d7fd12bab8" args="()" -->
+<a class="anchor" id="a54f2f7d4febc2d934b1fb0846acfedb5"></a><!-- doxytag: member="CTemplate::GetTagHandlers" ref="a54f2f7d4febc2d934b1fb0846acfedb5" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="classCSmartPtr.html">CSmartPtr</a>&lt;<a class="el" href="classCTemplateTagHandler.html">CTemplateTagHandler</a>&gt; &gt;&amp; <a class="el" href="classCTemplate.html#af7f640855a3c7e3c810a05d7fd12bab8">CTemplate::GetTagHandlers</a> </td>
+          <td class="memname">std::vector&lt;std::shared_ptr&lt;<a class="el" href="classCTemplateTagHandler.html">CTemplateTagHandler</a>&gt; &gt;&amp; <a class="el" href="classCTemplate.html#a54f2f7d4febc2d934b1fb0846acfedb5">CTemplate::GetTagHandlers</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td><code> [inline]</code></td>
@@ -586,9 +586,9 @@ Static Public Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="classCTemplate.html#af7f640855a3c7e3c810a05d7fd12bab8">GetTagHandlers()</a>.</p>
+<p>References <a class="el" href="classCTemplate.html#a54f2f7d4febc2d934b1fb0846acfedb5">GetTagHandlers()</a>.</p>
 
-<p>Referenced by <a class="el" href="classCTemplate.html#af7f640855a3c7e3c810a05d7fd12bab8">GetTagHandlers()</a>.</p>
+<p>Referenced by <a class="el" href="classCTemplate.html#a54f2f7d4febc2d934b1fb0846acfedb5">GetTagHandlers()</a>.</p>
 
 </div>
 </div>
@@ -1090,7 +1090,7 @@ template&lt;typename K, typename T&gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 26 2014 12:12:17 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 26 2014 20:41:50 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

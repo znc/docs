@@ -1,10 +1,3 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$Client_8h.html" title="Client.h" alt="" coords="7,160,76,189"/>
-<area shape="rect" id="node9" href="$Template_8h.html" title="Template.h" alt="" coords="103,83,193,112"/>
-<area shape="rect" id="node18" href="$User_8h.html" title="User.h" alt="" coords="217,83,279,112"/>
-<area shape="rect" id="node5" href="$znc_8h.html" title="znc.h" alt="" coords="29,315,85,344"/>
-<area shape="rect" id="node7" href="$IRCNetwork_8h.html" title="IRCNetwork.h" alt="" coords="5,392,109,421"/>
-<area shape="rect" id="node11" href="$WebModules_8h.html" title="WebModules.h" alt="" coords="100,160,212,189"/>
-<area shape="rect" id="node13" href="$Modules_8h.html" title="Modules.h" alt="" coords="111,237,196,267"/>
-<area shape="rect" id="node16" href="$modperl_2module_8h.html" title="module.h" alt="" coords="112,315,195,344"/>
+<area shape="rect" id="node3" href="$User_8h.html" title="User.h" alt="" coords="5,83,67,112"/>
 </map>

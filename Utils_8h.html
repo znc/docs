@@ -78,8 +78,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle">
 <div class="title">Utils.h File Reference</div>  </div>
 </div><!--header-->
@@ -113,7 +112,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="Utils_8h__dep__incl.png" border="0" usemap="#Utils_8hdep" alt=""/></div>
 <map name="Utils_8hdep" id="Utils_8hdep">
-<area shape="rect" id="node3" href="Client_8h.html" title="Client.h" alt="" coords="7,160,76,189"/><area shape="rect" id="node9" href="Template_8h.html" title="Template.h" alt="" coords="103,83,193,112"/><area shape="rect" id="node18" href="User_8h.html" title="User.h" alt="" coords="217,83,279,112"/><area shape="rect" id="node5" href="znc_8h.html" title="znc.h" alt="" coords="29,315,85,344"/><area shape="rect" id="node7" href="IRCNetwork_8h.html" title="IRCNetwork.h" alt="" coords="5,392,109,421"/><area shape="rect" id="node11" href="WebModules_8h.html" title="WebModules.h" alt="" coords="100,160,212,189"/><area shape="rect" id="node13" href="Modules_8h.html" title="Modules.h" alt="" coords="111,237,196,267"/><area shape="rect" id="node16" href="modperl_2module_8h.html" title="module.h" alt="" coords="112,315,195,344"/></map>
+<area shape="rect" id="node3" href="User_8h.html" title="User.h" alt="" coords="5,83,67,112"/></map>
 </div>
 </div>
 <p><a href="Utils_8h_source.html">Go to the source code of this file.</a></p>
@@ -128,111 +127,7 @@ Classes</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">does Blowfish w/64 bit feedback, no padding  <a href="classCBlowfish.html#details">More...</a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTCacheMap.html">TCacheMap&lt; K, V &gt;</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert an object with a time-to-live and check later if it still exists.  <a href="classTCacheMap.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSmartPtr.html">CSmartPtr&lt; T &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a standard reference counting pointer. Be careful not to have two of these point to the same raw pointer or one will be deleted while the other still thinks it is valid.  <a href="classCSmartPtr.html#details">More...</a><br/></td></tr>
-<tr><td colspan="2"><h2><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Utils_8h.html#ab44a70f3883a351c0290925493a4aaf2">operator==</a> (T *lhs, const <a class="el" href="classCSmartPtr.html">CSmartPtr</a>&lt; T &gt; &amp;rhs)</td></tr>
-<tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Utils_8h.html#a0dcdd60914c1743298d0ad484bb3fcfc">operator==</a> (const <a class="el" href="classCSmartPtr.html">CSmartPtr</a>&lt; T &gt; &amp;lhs, T *rhs)</td></tr>
-<tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Utils_8h.html#aa202e22f35bd53635f47f6c98d488dba">operator==</a> (const <a class="el" href="classCSmartPtr.html">CSmartPtr</a>&lt; T &gt; &amp;lhs, const <a class="el" href="classCSmartPtr.html">CSmartPtr</a>&lt; T &gt; &amp;rhs)</td></tr>
 </table>
-<hr/><h2>Function Documentation</h2>
-<a class="anchor" id="ab44a70f3883a351c0290925493a4aaf2"></a><!-- doxytag: member="Utils.h::operator==" ref="ab44a70f3883a351c0290925493a4aaf2" args="(T *lhs, const CSmartPtr&lt; T &gt; &amp;rhs)" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">bool operator== </td>
-          <td>(</td>
-          <td class="paramtype">T *&#160;</td>
-          <td class="paramname"><em>lhs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classCSmartPtr.html">CSmartPtr</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>rhs</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>References <a class="el" href="classCSmartPtr.html#aca1d20eb04f32eaafe66ef60d0a9098f">CSmartPtr&lt; T &gt;::GetPtr()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a0dcdd60914c1743298d0ad484bb3fcfc"></a><!-- doxytag: member="Utils.h::operator==" ref="a0dcdd60914c1743298d0ad484bb3fcfc" args="(const CSmartPtr&lt; T &gt; &amp;lhs, T *rhs)" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">bool operator== </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCSmartPtr.html">CSmartPtr</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>lhs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">T *&#160;</td>
-          <td class="paramname"><em>rhs</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>References <a class="el" href="classCSmartPtr.html#aca1d20eb04f32eaafe66ef60d0a9098f">CSmartPtr&lt; T &gt;::GetPtr()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aa202e22f35bd53635f47f6c98d488dba"></a><!-- doxytag: member="Utils.h::operator==" ref="aa202e22f35bd53635f47f6c98d488dba" args="(const CSmartPtr&lt; T &gt; &amp;lhs, const CSmartPtr&lt; T &gt; &amp;rhs)" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">bool operator== </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCSmartPtr.html">CSmartPtr</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>lhs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classCSmartPtr.html">CSmartPtr</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>rhs</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>References <a class="el" href="classCSmartPtr.html#aca1d20eb04f32eaafe66ef60d0a9098f">CSmartPtr&lt; T &gt;::GetPtr()</a>.</p>
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -251,7 +146,7 @@ template&lt;typename T &gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 26 2014 12:12:16 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 26 2014 20:41:49 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

@@ -44,7 +44,6 @@ var searchData=
   ['isloggedin',['IsLoggedIn',['../classCHTTPSock.html#a39ef574a146f568e19edd2a9a5e73e7d',1,'CHTTPSock::IsLoggedIn()'],['../classCWebSession.html#a68178ab44a97ffcfa4e63559954bd0b6',1,'CWebSession::IsLoggedIn()']]],
   ['ismodeknown',['IsModeKnown',['../classCChan.html#a31bc39d64ff6b4d04d7bc15544dbec84',1,'CChan']]],
   ['isnetworkattached',['IsNetworkAttached',['../classCIRCNetwork.html#a698ec6c257bd98a5b95c3d1f5c876587',1,'CIRCNetwork']]],
-  ['isnull',['IsNull',['../classCSmartPtr.html#adc7376de1801c7dc8aab5f73d3454047',1,'CSmartPtr']]],
   ['ison',['IsOn',['../classCChan.html#ab912c7484360b264b8d3d2f31c03c7de',1,'CChan']]],
   ['isopen',['IsOpen',['../classCFile.html#afd772a296bdd5786abe95ee768505593',1,'CFile']]],
   ['ispermchar',['IsPermChar',['../classCIRCSock.html#a9bb4928b65d9aa3056a28c2e4aeffb45',1,'CIRCSock']]],

@@ -108,9 +108,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00025"></a>00025 <span class="keyword">class </span><a class="code" href="classCUser.html">CUser</a>;
 <a name="l00026"></a>00026 <span class="keyword">class </span><a class="code" href="classCWebSock.html">CWebSock</a>;
 <a name="l00027"></a>00027 <span class="keyword">class </span><a class="code" href="classCModule.html" title="The base class for your own ZNC modules.">CModule</a>;
-<a name="l00028"></a><a class="code" href="WebModules_8h.html#aef1d6286f817484224e663ef3b0b73a0">00028</a> <span class="keyword">class </span><a class="code" href="classCWebSubPage.html">CWebSubPage</a>;
+<a name="l00028"></a><a class="code" href="WebModules_8h.html#ada19e8ed0a50222c36dbddbe175af39c">00028</a> <span class="keyword">class </span><a class="code" href="classCWebSubPage.html">CWebSubPage</a>;
 <a name="l00029"></a>00029 
-<a name="l00030"></a>00030 <span class="keyword">typedef</span> <a class="code" href="classCSmartPtr.html" title="This is a standard reference counting pointer. Be careful not to have two of these point to the same ...">CSmartPtr&lt;CWebSubPage&gt;</a> <a class="code" href="WebModules_8h.html#aef1d6286f817484224e663ef3b0b73a0">TWebSubPage</a>;
+<a name="l00030"></a>00030 <span class="keyword">typedef</span> std::shared_ptr&lt;CWebSubPage&gt; <a class="code" href="WebModules_8h.html#ada19e8ed0a50222c36dbddbe175af39c">TWebSubPage</a>;
 <a name="l00031"></a><a class="code" href="WebModules_8h.html#ab585ce11740587b08deb0da25de3c2d6">00031</a> <span class="keyword">typedef</span> std::vector&lt;TWebSubPage&gt; <a class="code" href="WebModules_8h.html#ab585ce11740587b08deb0da25de3c2d6">VWebSubPages</a>;
 <a name="l00032"></a>00032 
 <a name="l00033"></a><a class="code" href="classCZNCTagHandler.html">00033</a> <span class="keyword">class </span><a class="code" href="classCZNCTagHandler.html">CZNCTagHandler</a> : <span class="keyword">public</span> <a class="code" href="classCTemplateTagHandler.html">CTemplateTagHandler</a> {
@@ -185,9 +185,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00102"></a>00102         <a class="code" href="ZNCString_8h.html#a293a93c83fd11c40659f9bcb9f21419f">VPair</a>           m_vParams;
 <a name="l00103"></a>00103 };
 <a name="l00104"></a>00104 
-<a name="l00105"></a><a class="code" href="classCWebSessionMap.html">00105</a> <span class="keyword">class </span><a class="code" href="classCWebSessionMap.html">CWebSessionMap</a> : <span class="keyword">public</span> <a class="code" href="classTCacheMap.html" title="Insert an object with a time-to-live and check later if it still exists.">TCacheMap</a>&lt;CString, CSmartPtr&lt;CWebSession&gt; &gt; {
+<a name="l00105"></a><a class="code" href="classCWebSessionMap.html">00105</a> <span class="keyword">class </span><a class="code" href="classCWebSessionMap.html">CWebSessionMap</a> : <span class="keyword">public</span> <a class="code" href="classTCacheMap.html" title="Insert an object with a time-to-live and check later if it still exists.">TCacheMap</a>&lt;CString, std::shared_ptr&lt;CWebSession&gt; &gt; {
 <a name="l00106"></a>00106         <span class="keyword">public</span>:
-<a name="l00107"></a><a class="code" href="classCWebSessionMap.html#ae0642de954db1ac9828cecd9a5002068">00107</a>                 <a class="code" href="classCWebSessionMap.html#ae0642de954db1ac9828cecd9a5002068">CWebSessionMap</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> uTTL = 5000) : <a class="code" href="classTCacheMap.html" title="Insert an object with a time-to-live and check later if it still exists.">TCacheMap</a>&lt;<a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>, <a class="code" href="classCSmartPtr.html" title="This is a standard reference counting pointer. Be careful not to have two of these point to the same ...">CSmartPtr</a>&lt;<a class="code" href="classCWebSession.html">CWebSession</a>&gt; &gt;(uTTL) {}
+<a name="l00107"></a><a class="code" href="classCWebSessionMap.html#ae0642de954db1ac9828cecd9a5002068">00107</a>                 <a class="code" href="classCWebSessionMap.html#ae0642de954db1ac9828cecd9a5002068">CWebSessionMap</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> uTTL = 5000) : <a class="code" href="classTCacheMap.html" title="Insert an object with a time-to-live and check later if it still exists.">TCacheMap</a>&lt;<a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>, std::shared_ptr&lt;<a class="code" href="classCWebSession.html">CWebSession</a>&gt; &gt;(uTTL) {}
 <a name="l00108"></a>00108                 <span class="keywordtype">void</span> <a class="code" href="classCWebSessionMap.html#a71ab1a2c317d49283475559b8b3833e0">FinishUserSessions</a>(<span class="keyword">const</span> <a class="code" href="classCUser.html">CUser</a>&amp; User);
 <a name="l00109"></a>00109 };
 <a name="l00110"></a>00110 
@@ -214,7 +214,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00131"></a>00131 
 <a name="l00132"></a>00132         <span class="keywordtype">void</span> <a class="code" href="classCWebSock.html#a6815cf108c8d7cd606ca4151f710faa1">PrintErrorPage</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sMessage);
 <a name="l00133"></a>00133 
-<a name="l00134"></a>00134         <a class="code" href="classCSmartPtr.html">CSmartPtr&lt;CWebSession&gt;</a> <a class="code" href="classCWebSock.html#a32c4ce2d145f124165fb7b2f8b2ae58f">GetSession</a>();
+<a name="l00134"></a>00134         std::shared_ptr&lt;CWebSession&gt; <a class="code" href="classCWebSock.html#a4b7b8fe230a8832dd27332e4835d718c">GetSession</a>();
 <a name="l00135"></a>00135 
 <a name="l00136"></a>00136         <span class="keyword">virtual</span> <a class="code" href="classCsock.html" title="Basic socket class.">Csock</a>* <a class="code" href="classCWebSock.html#ae5a23673a2642548d98525dd804541bc">GetSockObj</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sHost, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> uPort);
 <a name="l00137"></a>00137         <span class="keyword">static</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a> <a class="code" href="classCWebSock.html#a80dcdfe1927c7e38122fd196efcf8070">GetSkinPath</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sSkinName);
@@ -240,11 +240,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00157"></a>00157 
 <a name="l00158"></a>00158         <span class="keywordtype">bool</span>                    m_bPathsSet;
 <a name="l00159"></a>00159         <a class="code" href="classCTemplate.html">CTemplate</a>               m_Template;
-<a name="l00160"></a>00160         <a class="code" href="classCSmartPtr.html">CSmartPtr&lt;CAuthBase&gt;</a>    m_spAuth;
+<a name="l00160"></a>00160         std::shared_ptr&lt;CAuthBase&gt; m_spAuth;
 <a name="l00161"></a>00161         <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>                 m_sModName;
 <a name="l00162"></a>00162         <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>                 m_sPath;
 <a name="l00163"></a>00163         <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>                 m_sPage;
-<a name="l00164"></a>00164         <a class="code" href="classCSmartPtr.html">CSmartPtr&lt;CWebSession&gt;</a>  m_spSession;
+<a name="l00164"></a>00164         std::shared_ptr&lt;CWebSession&gt; m_spSession;
 <a name="l00165"></a>00165 
 <a name="l00166"></a>00166         <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> m_uiMaxSessions;
 <a name="l00167"></a>00167 };
@@ -268,7 +268,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 26 2014 12:12:16 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 26 2014 20:41:48 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

@@ -87,7 +87,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">CWebSessionMap Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="CWebSessionMap" --><!-- doxytag: inherits="TCacheMap&lt; CString, CSmartPtr&lt; CWebSession &gt; &gt;" -->
+<!-- doxytag: class="CWebSessionMap" --><!-- doxytag: inherits="TCacheMap&lt; CString, std::shared_ptr&lt; CWebSession &gt; &gt;" -->
 <p><code>#include &lt;<a class="el" href="WebModules_8h_source.html">WebModules.h</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for CWebSessionMap:</div>
@@ -96,7 +96,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classCWebSessionMap__inherit__graph.png" border="0" usemap="#CWebSessionMap_inherit__map" alt="Inheritance graph"/></div>
 <map name="CWebSessionMap_inherit__map" id="CWebSessionMap_inherit__map">
-<area shape="rect" id="node2" href="classTCacheMap.html" title="TCacheMap\&lt; CString, CSmartPtr\&lt; CWebSession \&gt; \&gt;" alt="" coords="5,5,368,35"/></map>
+<area shape="rect" id="node2" href="classTCacheMap.html" title="TCacheMap\&lt; CString, std::shared_ptr\&lt; CWebSession \&gt; \&gt;" alt="" coords="5,5,397,35"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for CWebSessionMap:</div>
@@ -105,7 +105,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classCWebSessionMap__coll__graph.png" border="0" usemap="#CWebSessionMap_coll__map" alt="Collaboration graph"/></div>
 <map name="CWebSessionMap_coll__map" id="CWebSessionMap_coll__map">
-<area shape="rect" id="node2" href="classTCacheMap.html" title="TCacheMap\&lt; CString, CSmartPtr\&lt; CWebSession \&gt; \&gt;" alt="" coords="5,357,368,387"/><area shape="rect" id="node6" href="classCString.html" title="String class that is used inside ZNC." alt="" coords="152,165,221,195"/><area shape="rect" id="node8" title="STL class." alt="" coords="144,85,229,115"/><area shape="rect" id="node10" title="STL class." alt="" coords="95,5,279,35"/></map>
+<area shape="rect" id="node2" href="classTCacheMap.html" title="TCacheMap\&lt; CString, std::shared_ptr\&lt; CWebSession \&gt; \&gt;" alt="" coords="5,357,397,387"/><area shape="rect" id="node6" href="classCString.html" title="String class that is used inside ZNC." alt="" coords="167,165,236,195"/><area shape="rect" id="node8" title="STL class." alt="" coords="159,85,244,115"/><area shape="rect" id="node10" title="STL class." alt="" coords="109,5,293,35"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 
 <p><a href="classCWebSessionMap-members.html">List of all members.</a></p>
@@ -118,13 +118,13 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This function adds an item to the cache using the default time-to-live value.  <a href="#a6d5fccb8e4b75aacf76f38d67ad8a86c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTCacheMap.html#a05caef09f2b92e8b176d66389050cd08">AddItem</a> (const <a class="el" href="classCString.html">CString</a> &amp;Item, unsigned int uTTL)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This function adds an item to the cache using a custom time-to-live value.  <a href="#a05caef09f2b92e8b176d66389050cd08"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTCacheMap.html#aba9653280014e5e6b9a04374c61620e6">AddItem</a> (const <a class="el" href="classCString.html">CString</a> &amp;Item, const <a class="el" href="classCSmartPtr.html">CSmartPtr</a>&lt; <a class="el" href="classCWebSession.html">CWebSession</a> &gt; &amp;Val)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTCacheMap.html#aba9653280014e5e6b9a04374c61620e6">AddItem</a> (const <a class="el" href="classCString.html">CString</a> &amp;Item, const std::shared_ptr&lt; <a class="el" href="classCWebSession.html">CWebSession</a> &gt; &amp;Val)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This function adds an item to the cache using the default time-to-live value.  <a href="#aba9653280014e5e6b9a04374c61620e6"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTCacheMap.html#ab6b68331b3c3a23f839534adfb1ac813">AddItem</a> (const <a class="el" href="classCString.html">CString</a> &amp;Item, const <a class="el" href="classCSmartPtr.html">CSmartPtr</a>&lt; <a class="el" href="classCWebSession.html">CWebSession</a> &gt; &amp;Val, unsigned int uTTL)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTCacheMap.html#ab6b68331b3c3a23f839534adfb1ac813">AddItem</a> (const <a class="el" href="classCString.html">CString</a> &amp;Item, const std::shared_ptr&lt; <a class="el" href="classCWebSession.html">CWebSession</a> &gt; &amp;Val, unsigned int uTTL)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This function adds an item to the cache using a custom time-to-live value.  <a href="#ab6b68331b3c3a23f839534adfb1ac813"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTCacheMap.html#a1e71e07184c9db482dcb7a99ae5bc119">HasItem</a> (const <a class="el" href="classCString.html">CString</a> &amp;Item)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs a <a class="el" href="classTCacheMap.html#a310531274916c803f033df8fc47a8abc" title="Cycles through the queue removing all of the stale entries.">Cleanup()</a> and then checks to see if your item exists.  <a href="#a1e71e07184c9db482dcb7a99ae5bc119"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCSmartPtr.html">CSmartPtr</a>&lt; <a class="el" href="classCWebSession.html">CWebSession</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTCacheMap.html#af5ad62704308d4b69ae91588c0269a07">GetItem</a> (const <a class="el" href="classCString.html">CString</a> &amp;Item)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classCWebSession.html">CWebSession</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTCacheMap.html#af5ad62704308d4b69ae91588c0269a07">GetItem</a> (const <a class="el" href="classCString.html">CString</a> &amp;Item)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs a <a class="el" href="classTCacheMap.html#a310531274916c803f033df8fc47a8abc" title="Cycles through the queue removing all of the stale entries.">Cleanup()</a> and returns a pointer to the object, or NULL.  <a href="#af5ad62704308d4b69ae91588c0269a07"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTCacheMap.html#a4e80ed1aede8eeb8d9f6092950358c04">RemItem</a> (const <a class="el" href="classCString.html">CString</a> &amp;Item)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a specific item from the cache.  <a href="#a4e80ed1aede8eeb8d9f6092950358c04"></a><br/></td></tr>
@@ -137,7 +137,7 @@ Public Member Functions</h2></td></tr>
 <tr><td colspan="2"><h2><a name="pro-types"></a>
 Protected Types</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef std::pair&lt; unsigned <br class="typebreak"/>
-long long, <a class="el" href="classCSmartPtr.html">CSmartPtr</a><br class="typebreak"/>
+long long, std::shared_ptr<br class="typebreak"/>
 &lt; <a class="el" href="classCWebSession.html">CWebSession</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTCacheMap.html#ad030261fdb9f2ec14b4afcffbce47b31">value</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; <a class="el" href="classCString.html">CString</a>, <br class="typebreak"/>
 <a class="el" href="classTCacheMap.html#ad030261fdb9f2ec14b4afcffbce47b31">value</a> &gt;::<a class="el" href="classTCacheMap.html#ac29fbd1d01dec1b68e626e1c1bed4f8c">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTCacheMap.html#ac29fbd1d01dec1b68e626e1c1bed4f8c">iterator</a></td></tr>
@@ -154,7 +154,7 @@ Protected Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::map&lt;<a class="el" href="classCString.html">CString</a> , <a class="el" href="classTCacheMap.html#ad030261fdb9f2ec14b4afcffbce47b31">value</a>&gt;::<a class="el" href="classTCacheMap.html#ac29fbd1d01dec1b68e626e1c1bed4f8c">iterator</a> <a class="el" href="classTCacheMap.html">TCacheMap</a>&lt; <a class="el" href="classCString.html">CString</a> , <a class="el" href="classCSmartPtr.html">CSmartPtr</a>&lt; <a class="el" href="classCWebSession.html">CWebSession</a> &gt;  &gt;::<a class="el" href="classTCacheMap.html#ac29fbd1d01dec1b68e626e1c1bed4f8c">iterator</a><code> [protected, inherited]</code></td>
+          <td class="memname">typedef std::map&lt;<a class="el" href="classCString.html">CString</a> , <a class="el" href="classTCacheMap.html#ad030261fdb9f2ec14b4afcffbce47b31">value</a>&gt;::<a class="el" href="classTCacheMap.html#ac29fbd1d01dec1b68e626e1c1bed4f8c">iterator</a> <a class="el" href="classTCacheMap.html">TCacheMap</a>&lt; <a class="el" href="classCString.html">CString</a> , std::shared_ptr&lt; <a class="el" href="classCWebSession.html">CWebSession</a> &gt;  &gt;::<a class="el" href="classTCacheMap.html#ac29fbd1d01dec1b68e626e1c1bed4f8c">iterator</a><code> [protected, inherited]</code></td>
         </tr>
       </table>
 </div>
@@ -167,7 +167,7 @@ Protected Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::pair&lt;unsigned long long, <a class="el" href="classCSmartPtr.html">CSmartPtr</a>&lt; <a class="el" href="classCWebSession.html">CWebSession</a> &gt; &gt; <a class="el" href="classTCacheMap.html">TCacheMap</a>&lt; <a class="el" href="classCString.html">CString</a> , <a class="el" href="classCSmartPtr.html">CSmartPtr</a>&lt; <a class="el" href="classCWebSession.html">CWebSession</a> &gt;  &gt;::<a class="el" href="classTCacheMap.html#ad030261fdb9f2ec14b4afcffbce47b31">value</a><code> [protected, inherited]</code></td>
+          <td class="memname">typedef std::pair&lt;unsigned long long, std::shared_ptr&lt; <a class="el" href="classCWebSession.html">CWebSession</a> &gt; &gt; <a class="el" href="classTCacheMap.html">TCacheMap</a>&lt; <a class="el" href="classCString.html">CString</a> , std::shared_ptr&lt; <a class="el" href="classCWebSession.html">CWebSession</a> &gt;  &gt;::<a class="el" href="classTCacheMap.html#ad030261fdb9f2ec14b4afcffbce47b31">value</a><code> [protected, inherited]</code></td>
         </tr>
       </table>
 </div>
@@ -199,7 +199,7 @@ Protected Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classTCacheMap.html">TCacheMap</a>&lt; <a class="el" href="classCString.html">CString</a> , <a class="el" href="classCSmartPtr.html">CSmartPtr</a>&lt; <a class="el" href="classCWebSession.html">CWebSession</a> &gt;  &gt;::<a class="el" href="classTCacheMap.html#a6d5fccb8e4b75aacf76f38d67ad8a86c">AddItem</a> </td>
+          <td class="memname">void <a class="el" href="classTCacheMap.html">TCacheMap</a>&lt; <a class="el" href="classCString.html">CString</a> , std::shared_ptr&lt; <a class="el" href="classCWebSession.html">CWebSession</a> &gt;  &gt;::<a class="el" href="classTCacheMap.html#a6d5fccb8e4b75aacf76f38d67ad8a86c">AddItem</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a>  &amp;&#160;</td>
           <td class="paramname"><em>Item</em></td><td>)</td>
@@ -224,7 +224,7 @@ Protected Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classTCacheMap.html">TCacheMap</a>&lt; <a class="el" href="classCString.html">CString</a> , <a class="el" href="classCSmartPtr.html">CSmartPtr</a>&lt; <a class="el" href="classCWebSession.html">CWebSession</a> &gt;  &gt;::<a class="el" href="classTCacheMap.html#a6d5fccb8e4b75aacf76f38d67ad8a86c">AddItem</a> </td>
+          <td class="memname">void <a class="el" href="classTCacheMap.html">TCacheMap</a>&lt; <a class="el" href="classCString.html">CString</a> , std::shared_ptr&lt; <a class="el" href="classCWebSession.html">CWebSession</a> &gt;  &gt;::<a class="el" href="classTCacheMap.html#a6d5fccb8e4b75aacf76f38d67ad8a86c">AddItem</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a>  &amp;&#160;</td>
           <td class="paramname"><em>Item</em>, </td>
@@ -255,12 +255,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aba9653280014e5e6b9a04374c61620e6"></a><!-- doxytag: member="CWebSessionMap::AddItem" ref="aba9653280014e5e6b9a04374c61620e6" args="(const CString &amp;Item, const CSmartPtr&lt; CWebSession &gt; &amp;Val)" -->
+<a class="anchor" id="aba9653280014e5e6b9a04374c61620e6"></a><!-- doxytag: member="CWebSessionMap::AddItem" ref="aba9653280014e5e6b9a04374c61620e6" args="(const CString &amp;Item, const std::shared_ptr&lt; CWebSession &gt; &amp;Val)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classTCacheMap.html">TCacheMap</a>&lt; <a class="el" href="classCString.html">CString</a> , <a class="el" href="classCSmartPtr.html">CSmartPtr</a>&lt; <a class="el" href="classCWebSession.html">CWebSession</a> &gt;  &gt;::<a class="el" href="classTCacheMap.html#a6d5fccb8e4b75aacf76f38d67ad8a86c">AddItem</a> </td>
+          <td class="memname">void <a class="el" href="classTCacheMap.html">TCacheMap</a>&lt; <a class="el" href="classCString.html">CString</a> , std::shared_ptr&lt; <a class="el" href="classCWebSession.html">CWebSession</a> &gt;  &gt;::<a class="el" href="classTCacheMap.html#a6d5fccb8e4b75aacf76f38d67ad8a86c">AddItem</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a>  &amp;&#160;</td>
           <td class="paramname"><em>Item</em>, </td>
@@ -268,7 +268,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classCSmartPtr.html">CSmartPtr</a>&lt; <a class="el" href="classCWebSession.html">CWebSession</a> &gt;  &amp;&#160;</td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="classCWebSession.html">CWebSession</a> &gt;  &amp;&#160;</td>
           <td class="paramname"><em>Val</em>&#160;</td>
         </tr>
         <tr>
@@ -291,12 +291,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab6b68331b3c3a23f839534adfb1ac813"></a><!-- doxytag: member="CWebSessionMap::AddItem" ref="ab6b68331b3c3a23f839534adfb1ac813" args="(const CString &amp;Item, const CSmartPtr&lt; CWebSession &gt; &amp;Val, unsigned int uTTL)" -->
+<a class="anchor" id="ab6b68331b3c3a23f839534adfb1ac813"></a><!-- doxytag: member="CWebSessionMap::AddItem" ref="ab6b68331b3c3a23f839534adfb1ac813" args="(const CString &amp;Item, const std::shared_ptr&lt; CWebSession &gt; &amp;Val, unsigned int uTTL)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classTCacheMap.html">TCacheMap</a>&lt; <a class="el" href="classCString.html">CString</a> , <a class="el" href="classCSmartPtr.html">CSmartPtr</a>&lt; <a class="el" href="classCWebSession.html">CWebSession</a> &gt;  &gt;::<a class="el" href="classTCacheMap.html#a6d5fccb8e4b75aacf76f38d67ad8a86c">AddItem</a> </td>
+          <td class="memname">void <a class="el" href="classTCacheMap.html">TCacheMap</a>&lt; <a class="el" href="classCString.html">CString</a> , std::shared_ptr&lt; <a class="el" href="classCWebSession.html">CWebSession</a> &gt;  &gt;::<a class="el" href="classTCacheMap.html#a6d5fccb8e4b75aacf76f38d67ad8a86c">AddItem</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a>  &amp;&#160;</td>
           <td class="paramname"><em>Item</em>, </td>
@@ -304,7 +304,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classCSmartPtr.html">CSmartPtr</a>&lt; <a class="el" href="classCWebSession.html">CWebSession</a> &gt;  &amp;&#160;</td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="classCWebSession.html">CWebSession</a> &gt;  &amp;&#160;</td>
           <td class="paramname"><em>Val</em>, </td>
         </tr>
         <tr>
@@ -339,7 +339,7 @@ Protected Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classTCacheMap.html">TCacheMap</a>&lt; <a class="el" href="classCString.html">CString</a> , <a class="el" href="classCSmartPtr.html">CSmartPtr</a>&lt; <a class="el" href="classCWebSession.html">CWebSession</a> &gt;  &gt;::<a class="el" href="classTCacheMap.html#a310531274916c803f033df8fc47a8abc">Cleanup</a> </td>
+          <td class="memname">void <a class="el" href="classTCacheMap.html">TCacheMap</a>&lt; <a class="el" href="classCString.html">CString</a> , std::shared_ptr&lt; <a class="el" href="classCWebSession.html">CWebSession</a> &gt;  &gt;::<a class="el" href="classTCacheMap.html#a310531274916c803f033df8fc47a8abc">Cleanup</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td><code> [inline, inherited]</code></td>
@@ -357,7 +357,7 @@ Protected Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classTCacheMap.html">TCacheMap</a>&lt; <a class="el" href="classCString.html">CString</a> , <a class="el" href="classCSmartPtr.html">CSmartPtr</a>&lt; <a class="el" href="classCWebSession.html">CWebSession</a> &gt;  &gt;::<a class="el" href="classTCacheMap.html#ab73bfc280a8b52c7664118c123eb317e">Clear</a> </td>
+          <td class="memname">void <a class="el" href="classTCacheMap.html">TCacheMap</a>&lt; <a class="el" href="classCString.html">CString</a> , std::shared_ptr&lt; <a class="el" href="classCWebSession.html">CWebSession</a> &gt;  &gt;::<a class="el" href="classTCacheMap.html#ab73bfc280a8b52c7664118c123eb317e">Clear</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td><code> [inline, inherited]</code></td>
@@ -392,7 +392,7 @@ Protected Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCSmartPtr.html">CSmartPtr</a>&lt; <a class="el" href="classCWebSession.html">CWebSession</a> &gt; * <a class="el" href="classTCacheMap.html">TCacheMap</a>&lt; <a class="el" href="classCString.html">CString</a> , <a class="el" href="classCSmartPtr.html">CSmartPtr</a>&lt; <a class="el" href="classCWebSession.html">CWebSession</a> &gt;  &gt;::<a class="el" href="classTCacheMap.html#af5ad62704308d4b69ae91588c0269a07">GetItem</a> </td>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="classCWebSession.html">CWebSession</a> &gt; * <a class="el" href="classTCacheMap.html">TCacheMap</a>&lt; <a class="el" href="classCString.html">CString</a> , std::shared_ptr&lt; <a class="el" href="classCWebSession.html">CWebSession</a> &gt;  &gt;::<a class="el" href="classTCacheMap.html#af5ad62704308d4b69ae91588c0269a07">GetItem</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a>  &amp;&#160;</td>
           <td class="paramname"><em>Item</em></td><td>)</td>
@@ -418,7 +418,7 @@ Protected Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned int <a class="el" href="classTCacheMap.html">TCacheMap</a>&lt; <a class="el" href="classCString.html">CString</a> , <a class="el" href="classCSmartPtr.html">CSmartPtr</a>&lt; <a class="el" href="classCWebSession.html">CWebSession</a> &gt;  &gt;::<a class="el" href="classTCacheMap.html#a2d7a76002e7f16e0e9eed0c5738f58fb">GetTTL</a> </td>
+          <td class="memname">unsigned int <a class="el" href="classTCacheMap.html">TCacheMap</a>&lt; <a class="el" href="classCString.html">CString</a> , std::shared_ptr&lt; <a class="el" href="classCWebSession.html">CWebSession</a> &gt;  &gt;::<a class="el" href="classTCacheMap.html#a2d7a76002e7f16e0e9eed0c5738f58fb">GetTTL</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const<code> [inline, inherited]</code></td>
@@ -434,7 +434,7 @@ Protected Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classTCacheMap.html">TCacheMap</a>&lt; <a class="el" href="classCString.html">CString</a> , <a class="el" href="classCSmartPtr.html">CSmartPtr</a>&lt; <a class="el" href="classCWebSession.html">CWebSession</a> &gt;  &gt;::<a class="el" href="classTCacheMap.html#a1e71e07184c9db482dcb7a99ae5bc119">HasItem</a> </td>
+          <td class="memname">bool <a class="el" href="classTCacheMap.html">TCacheMap</a>&lt; <a class="el" href="classCString.html">CString</a> , std::shared_ptr&lt; <a class="el" href="classCWebSession.html">CWebSession</a> &gt;  &gt;::<a class="el" href="classTCacheMap.html#a1e71e07184c9db482dcb7a99ae5bc119">HasItem</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a>  &amp;&#160;</td>
           <td class="paramname"><em>Item</em></td><td>)</td>
@@ -460,7 +460,7 @@ Protected Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classTCacheMap.html">TCacheMap</a>&lt; <a class="el" href="classCString.html">CString</a> , <a class="el" href="classCSmartPtr.html">CSmartPtr</a>&lt; <a class="el" href="classCWebSession.html">CWebSession</a> &gt;  &gt;::<a class="el" href="classTCacheMap.html#a4e80ed1aede8eeb8d9f6092950358c04">RemItem</a> </td>
+          <td class="memname">bool <a class="el" href="classTCacheMap.html">TCacheMap</a>&lt; <a class="el" href="classCString.html">CString</a> , std::shared_ptr&lt; <a class="el" href="classCWebSession.html">CWebSession</a> &gt;  &gt;::<a class="el" href="classTCacheMap.html#a4e80ed1aede8eeb8d9f6092950358c04">RemItem</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a>  &amp;&#160;</td>
           <td class="paramname"><em>Item</em></td><td>)</td>
@@ -486,7 +486,7 @@ Protected Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classTCacheMap.html">TCacheMap</a>&lt; <a class="el" href="classCString.html">CString</a> , <a class="el" href="classCSmartPtr.html">CSmartPtr</a>&lt; <a class="el" href="classCWebSession.html">CWebSession</a> &gt;  &gt;::<a class="el" href="classTCacheMap.html#abe04718bbc0379ab673d5ab2b99c00f2">SetTTL</a> </td>
+          <td class="memname">void <a class="el" href="classTCacheMap.html">TCacheMap</a>&lt; <a class="el" href="classCString.html">CString</a> , std::shared_ptr&lt; <a class="el" href="classCWebSession.html">CWebSession</a> &gt;  &gt;::<a class="el" href="classTCacheMap.html#abe04718bbc0379ab673d5ab2b99c00f2">SetTTL</a> </td>
           <td>(</td>
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><em>u</em></td><td>)</td>
@@ -504,7 +504,7 @@ Protected Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt;<a class="el" href="classCString.html">CString</a> , <a class="el" href="classTCacheMap.html#ad030261fdb9f2ec14b4afcffbce47b31">value</a>&gt; <a class="el" href="classTCacheMap.html">TCacheMap</a>&lt; <a class="el" href="classCString.html">CString</a> , <a class="el" href="classCSmartPtr.html">CSmartPtr</a>&lt; <a class="el" href="classCWebSession.html">CWebSession</a> &gt;  &gt;::<a class="el" href="classTCacheMap.html#a9d5a76f1b92e3d3a8d873e5e66823e39">m_mItems</a><code> [protected, inherited]</code></td>
+          <td class="memname">std::map&lt;<a class="el" href="classCString.html">CString</a> , <a class="el" href="classTCacheMap.html#ad030261fdb9f2ec14b4afcffbce47b31">value</a>&gt; <a class="el" href="classTCacheMap.html">TCacheMap</a>&lt; <a class="el" href="classCString.html">CString</a> , std::shared_ptr&lt; <a class="el" href="classCWebSession.html">CWebSession</a> &gt;  &gt;::<a class="el" href="classTCacheMap.html#a9d5a76f1b92e3d3a8d873e5e66823e39">m_mItems</a><code> [protected, inherited]</code></td>
         </tr>
       </table>
 </div>
@@ -520,7 +520,7 @@ Protected Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned int <a class="el" href="classTCacheMap.html">TCacheMap</a>&lt; <a class="el" href="classCString.html">CString</a> , <a class="el" href="classCSmartPtr.html">CSmartPtr</a>&lt; <a class="el" href="classCWebSession.html">CWebSession</a> &gt;  &gt;::<a class="el" href="classTCacheMap.html#a2d8a4c593429354d3a442ba77173ed80">m_uTTL</a><code> [protected, inherited]</code></td>
+          <td class="memname">unsigned int <a class="el" href="classTCacheMap.html">TCacheMap</a>&lt; <a class="el" href="classCString.html">CString</a> , std::shared_ptr&lt; <a class="el" href="classCWebSession.html">CWebSession</a> &gt;  &gt;::<a class="el" href="classTCacheMap.html#a2d8a4c593429354d3a442ba77173ed80">m_uTTL</a><code> [protected, inherited]</code></td>
         </tr>
       </table>
 </div>
@@ -551,7 +551,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 26 2014 12:12:17 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 26 2014 20:41:50 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

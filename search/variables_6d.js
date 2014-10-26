@@ -136,7 +136,7 @@ var searchData=
   ['m_5fspass',['m_sPass',['../classCClient.html#a5bf114d698dba2c077a67508c3823518',1,'CClient::m_sPass()'],['../classCHTTPSock.html#a55234ab297db49fafeba986e80d6c623',1,'CHTTPSock::m_sPass()'],['../classCIRCSock.html#afd9c7f6f1075612f831588722eff005d',1,'CIRCSock::m_sPass()'],['../classCServer.html#ad6032bd527989254497bc086e129fe25',1,'CServer::m_sPass()'],['../classCUser.html#ac1b38d144d4df79b98fbaa2f7ab922c2',1,'CUser::m_sPass()']]],
   ['m_5fspasssalt',['m_sPassSalt',['../classCUser.html#a73ed015cf2c37263e697ab46d703fee3',1,'CUser']]],
   ['m_5fspath',['m_sPath',['../classCModInfo.html#ae95738c05b5cb667ffc323351413d717',1,'CModInfo']]],
-  ['m_5fspauth',['m_spAuth',['../classCClient.html#af0ff77f48864b482cffa1af08b3d6173',1,'CClient']]],
+  ['m_5fspauth',['m_spAuth',['../classCClient.html#a3529524d8d2150e0d9209f2f8fdbae2b',1,'CClient']]],
   ['m_5fspemlocation',['m_sPemLocation',['../classCSConnection.html#ae8baafa6df2e90c6d8a38a1a4d712d0d',1,'CSConnection']]],
   ['m_5fspempass',['m_sPemPass',['../classCSConnection.html#ad89a92c62a4c58177d44673112444bfa',1,'CSConnection']]],
   ['m_5fspermmodes',['m_sPermModes',['../classCIRCSock.html#a0aec6eb58b4b0442193110ba43f8a933',1,'CIRCSock']]],

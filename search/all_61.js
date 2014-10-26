@@ -50,7 +50,7 @@ var searchData=
   ['addsubconfig',['AddSubConfig',['../classCConfig.html#a6b1ef9332ac11c5d15792d859d407a87',1,'CConfig']]],
   ['addsubpage',['AddSubPage',['../classCModule.html#aaebd70e381be4722362fc03aba822ce7',1,'CModule']]],
   ['addsuccess',['AddSuccess',['../classCWebSession.html#a1dc26ce3934faa7c41ead3d59900960c',1,'CWebSession']]],
-  ['addtaghandler',['AddTagHandler',['../classCTemplate.html#a0c3f97f51747dbcd2620704d9d8c999e',1,'CTemplate']]],
+  ['addtaghandler',['AddTagHandler',['../classCTemplate.html#a35a6ab024db19c7b1a6b124cc30333af',1,'CTemplate']]],
   ['addtimer',['AddTimer',['../classCModule.html#a78e82821472be1bc20fb19c91134cca7',1,'CModule::AddTimer(CTimer *pTimer)'],['../classCModule.html#a05d1fa1c215db68dc63b1b76c8bfb698',1,'CModule::AddTimer(FPTimer_t pFBCallback, const CString &amp;sLabel, u_int uInterval, u_int uCycles=0, const CString &amp;sDescription=&quot;&quot;)']]],
   ['addtimestamp',['AddTimestamp',['../classCUser.html#abfebf033ce05c4c37b23f29305fbffed',1,'CUser::AddTimestamp(const CString &amp;sStr) const '],['../classCUser.html#a65b3b07bf03eecde46721595a828893a',1,'CUser::AddTimestamp(time_t tm, const CString &amp;sStr) const ']]],
   ['addtrustedproxy',['AddTrustedProxy',['../classCZNC.html#a62ffd51ce624e2dd8dac0a5b9c8fb7a0',1,'CZNC']]],
@@ -69,9 +69,8 @@ var searchData=
   ['aslower',['AsLower',['../classCString.html#aa078d780cc25d1870daf1c794649d0de',1,'CString']]],
   ['assignfds',['AssignFDs',['../classCSockCommon.html#a0f90529eb2f0bdf2f4e8d7899e931f07',1,'CSockCommon']]],
   ['asupper',['AsUpper',['../classCString.html#a3346365be83be1ae40e5d953f3fd29c5',1,'CString']]],
-  ['attach',['Attach',['../classCSmartPtr.html#ad627d290d812326e76857f13abec7c84',1,'CSmartPtr']]],
   ['attachuser',['AttachUser',['../classCChan.html#a25d096b0c139d402e6b20c4570658874',1,'CChan']]],
-  ['authuser',['AuthUser',['../classCClient.html#a070b00519b2415c2420f4b90679b1bc7',1,'CClient::AuthUser()'],['../classCZNC.html#aeed196f4cbfe3de4a77285991e21aee8',1,'CZNC::AuthUser()']]],
+  ['authuser',['AuthUser',['../classCClient.html#a070b00519b2415c2420f4b90679b1bc7',1,'CClient::AuthUser()'],['../classCZNC.html#a39f72cb18b8762775dfb545cbd5fc7ec',1,'CZNC::AuthUser()']]],
   ['autoclearchanbuffer',['AutoClearChanBuffer',['../classCChan.html#a9778b5f611568aa8ea62a7634248cf34',1,'CChan::AutoClearChanBuffer()'],['../classCUser.html#afe0c8d6d66ec666a58a3ca0e8b82f850',1,'CUser::AutoClearChanBuffer()']]],
   ['autoclearquerybuffer',['AutoClearQueryBuffer',['../classCUser.html#af0d6c7ca5c4ef5082125a4adee542e57',1,'CUser']]]
 ];

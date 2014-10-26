@@ -1,4 +1,3 @@
 <map id="G" name="G">
-<area shape="rect" id="node1" href="$classCString.html" title="String class that is used inside ZNC." alt="" coords="5,5,75,35"/>
-<area shape="rect" id="node3" href="$classPString.html" title="PString" alt="" coords="124,5,191,35"/>
+<area shape="rect" id="node1" href="$classCTable.html" title="Generate a grid&#45;like output from a given input." alt="" coords="7,5,68,35"/>
 </map>

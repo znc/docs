@@ -36,7 +36,6 @@ var searchData=
   ['_7ecsconnection',['~CSConnection',['../classCSConnection.html#ab393d80056ab3c7b4742c1bb62e31784',1,'CSConnection']]],
   ['_7ecserver',['~CServer',['../classCServer.html#af6da9f8b52bdc049e21cd7c687ef4d4b',1,'CServer']]],
   ['_7ecslistener',['~CSListener',['../classCSListener.html#a63bd34c9aac6e4f936a21dff54e19c03',1,'CSListener']]],
-  ['_7ecsmartptr',['~CSmartPtr',['../classCSmartPtr.html#aa1928c876bdff48089240e08b80ffe9e',1,'CSmartPtr']]],
   ['_7ecsmonitorfd',['~CSMonitorFD',['../classCSMonitorFD.html#a6dfde6e3e600b25908b90e3d160eac56',1,'CSMonitorFD']]],
   ['_7ecsock',['~Csock',['../classCsock.html#abbd005371771c9c4e648b2c9ecfe0957',1,'Csock']]],
   ['_7ecsockcommon',['~CSockCommon',['../classCSockCommon.html#ac05e3c8a4d65d195baeec43f08c0838f',1,'CSockCommon']]],
