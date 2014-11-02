@@ -19,6 +19,7 @@ var searchData=
   ['hasparam',['HasParam',['../classCHTTPSock.html#aa3cb230874197fdecef8bac13446b111',1,'CHTTPSock']]],
   ['hasperm',['HasPerm',['../classCChan.html#adb55690d23658dedc1e4f864a37a3ee6',1,'CChan::HasPerm()'],['../classCNick.html#a6d82457b97a3ee83400c1037b71d1528',1,'CNick::HasPerm()']]],
   ['hasreadline',['HasReadLine',['../classCsock.html#a30d7c0b563bd61256cab129b6c567829',1,'Csock']]],
+  ['hasselfmessage',['HasSelfMessage',['../classCClient.html#a6a503b2b1723d5a175d4fa7c3ef5bf2d',1,'CClient']]],
   ['hasservers',['HasServers',['../classCIRCNetwork.html#a9c0f16b35306bf8efc22f9d89c806016',1,'CIRCNetwork']]],
   ['hasservertime',['HasServerTime',['../classCClient.html#ac310500d908b99efdbf4db08233aced4',1,'CClient']]],
   ['hasspacefornewnetwork',['HasSpaceForNewNetwork',['../classCUser.html#a3e7d948bfa47e5701e326571e22408ae',1,'CUser']]],

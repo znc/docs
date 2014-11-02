@@ -39,6 +39,7 @@ var searchData=
   ['m_5fbprependtimestamp',['m_bPrependTimestamp',['../classCUser.html#a589661139897e636e3620df14d4fb979',1,'CUser']]],
   ['m_5fbprotectwebsessions',['m_bProtectWebSessions',['../classCZNC.html#a0946e948111699c1d35b1caf66c73c0b',1,'CZNC']]],
   ['m_5fbrunonnextcall',['m_bRunOnNextCall',['../classCCron.html#a79b83f6b3ce71f986a06279b9c72e5e3',1,'CCron']]],
+  ['m_5fbselfmessage',['m_bSelfMessage',['../classCClient.html#a9bb61c829304606106fd7dc2fd3de042',1,'CClient']]],
   ['m_5fbsentheader',['m_bSentHeader',['../classCHTTPSock.html#a82e75c672e7cb7e1ca3e5899cee929aa',1,'CHTTPSock']]],
   ['m_5fbservertime',['m_bServerTime',['../classCClient.html#a8afc9e0fc6830144ba363339375dfc29',1,'CClient']]],
   ['m_5fbssl',['m_bSSL',['../classCListener.html#ac64c9693713396bc58f20a1c66f356f7',1,'CListener::m_bSSL()'],['../classCServer.html#abccacd6f614737b67e4559737b4c610a',1,'CServer::m_bSSL()']]],
