@@ -125,6 +125,7 @@ var searchData=
   ['m_5fshost',['m_sHost',['../classCNick.html#a451e4c072b867d831dac39fba071a9ff',1,'CNick']]],
   ['m_5fshostname',['m_sHostname',['../classCSConnection.html#a59852c398c4a3a8f6793216d9e19cb29',1,'CSConnection']]],
   ['m_5fsident',['m_sIdent',['../classCIRCNetwork.html#aaf0105554d73b2a10f018e625f90d1f7',1,'CIRCNetwork::m_sIdent()'],['../classCNick.html#a35516ead2b2f87ad1a4efe6805171f3a',1,'CNick::m_sIdent()'],['../classCUser.html#ab209736726de81bbdad4333f70d1e676',1,'CUser::m_sIdent()']]],
+  ['m_5fsidentifier',['m_sIdentifier',['../classCClient.html#af4bdc6c45bd119b25bc039121343ca9a',1,'CClient']]],
   ['m_5fsifnonematch',['m_sIfNoneMatch',['../classCHTTPSock.html#a61136667e1e181275c70a3fe5aeaafc6',1,'CHTTPSock']]],
   ['m_5fsircserver',['m_sIRCServer',['../classCIRCNetwork.html#aa7d7c9c9124050fc12a5c01370e0bca0',1,'CIRCNetwork']]],
   ['m_5fskey',['m_sKey',['../classCChan.html#a16b7db863a1c7fffe5d4dd016c7651e9',1,'CChan']]],

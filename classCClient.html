@@ -82,7 +82,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a>  </div>
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#friends">Friends</a>  </div>
   <div class="headertitle">
 <div class="title">CClient Class Reference</div>  </div>
 </div><!--header-->
@@ -105,7 +107,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classCClient__coll__graph.png" border="0" usemap="#CClient_coll__map" alt="Collaboration graph"/></div>
 <map name="CClient_coll__map" id="CClient_coll__map">
-<area shape="rect" id="node29" href="classCModules.html" title="CModules" alt="" coords="3384,376,3467,405"/><area shape="rect" id="node2" href="classCZNCSock.html" title="CZNCSock" alt="" coords="1364,37,1455,67"/><area shape="rect" id="node49" href="classCIRCSock.html" title="CIRCSock" alt="" coords="4676,687,4756,716"/><area shape="rect" id="node4" href="classCsock.html" title="Basic socket class." alt="" coords="1152,37,1211,67"/><area shape="rect" id="node6" href="classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock" alt="" coords="975,37,1095,67"/><area shape="rect" id="node10" href="classCCron.html" title="this is the main cron job class" alt="" coords="407,8,468,37"/><area shape="rect" id="node14" href="classCSMonitorFD.html" title="Class to tie sockets to for monitoring by Csocket at either the Csock or TSockManager." alt="" coords="385,61,489,91"/><area shape="rect" id="node18" href="classCString.html" title="String class that is used inside ZNC." alt="" coords="1147,1025,1216,1055"/><area shape="rect" id="node24" href="classCUser.html" title="CUser" alt="" coords="2699,489,2760,519"/><area shape="rect" id="node36" href="classCIRCNetwork.html" title="CIRCNetwork" alt="" coords="3039,728,3140,757"/><area shape="rect" id="node38" href="classCNick.html" title="CNick" alt="" coords="3396,897,3455,927"/><area shape="rect" id="node56" href="classCChan.html" title="CChan" alt="" coords="4005,969,4069,999"/><area shape="rect" id="node100" href="classCServer.html" title="CServer" alt="" coords="1373,913,1445,943"/><area shape="rect" id="node20" title="STL class." alt="" coords="992,1025,1077,1055"/><area shape="rect" id="node22" title="STL class." alt="" coords="621,1025,805,1055"/><area shape="rect" id="node31" title="STL class." alt="" coords="2429,255,2616,284"/><area shape="rect" id="node45" title="STL class." alt="" coords="2025,752,2201,781"/><area shape="rect" id="node79" title="STL class." alt="" coords="1787,665,1997,695"/><area shape="rect" id="node43" href="classCBuffer.html" title="CBuffer" alt="" coords="2695,827,2764,856"/><area shape="rect" id="node77" href="classMCString.html" title="A dictionary for strings." alt="" coords="2277,665,2357,695"/><area shape="rect" id="node91" href="classCQuery.html" title="CQuery" alt="" coords="2283,769,2352,799"/></map>
+<area shape="rect" id="node29" href="classCModules.html" title="CModules" alt="" coords="3384,380,3467,409"/><area shape="rect" id="node2" href="classCZNCSock.html" title="CZNCSock" alt="" coords="1364,37,1455,67"/><area shape="rect" id="node49" href="classCIRCSock.html" title="CIRCSock" alt="" coords="4676,691,4756,720"/><area shape="rect" id="node4" href="classCsock.html" title="Basic socket class." alt="" coords="1152,37,1211,67"/><area shape="rect" id="node6" href="classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock" alt="" coords="975,37,1095,67"/><area shape="rect" id="node10" href="classCCron.html" title="this is the main cron job class" alt="" coords="407,8,468,37"/><area shape="rect" id="node14" href="classCSMonitorFD.html" title="Class to tie sockets to for monitoring by Csocket at either the Csock or TSockManager." alt="" coords="385,61,489,91"/><area shape="rect" id="node18" href="classCString.html" title="String class that is used inside ZNC." alt="" coords="1147,1031,1216,1060"/><area shape="rect" id="node24" href="classCUser.html" title="CUser" alt="" coords="2699,491,2760,520"/><area shape="rect" id="node36" href="classCIRCNetwork.html" title="CIRCNetwork" alt="" coords="3039,733,3140,763"/><area shape="rect" id="node38" href="classCNick.html" title="CNick" alt="" coords="3396,901,3455,931"/><area shape="rect" id="node56" href="classCChan.html" title="CChan" alt="" coords="4005,973,4069,1003"/><area shape="rect" id="node100" href="classCServer.html" title="CServer" alt="" coords="1373,920,1445,949"/><area shape="rect" id="node20" title="STL class." alt="" coords="992,1031,1077,1060"/><area shape="rect" id="node22" title="STL class." alt="" coords="621,1031,805,1060"/><area shape="rect" id="node31" title="STL class." alt="" coords="2429,256,2616,285"/><area shape="rect" id="node45" title="STL class." alt="" coords="2025,757,2201,787"/><area shape="rect" id="node79" title="STL class." alt="" coords="1787,681,1997,711"/><area shape="rect" id="node43" href="classCBuffer.html" title="CBuffer" alt="" coords="2695,832,2764,861"/><area shape="rect" id="node77" href="classMCString.html" title="A dictionary for strings." alt="" coords="2277,671,2357,700"/><area shape="rect" id="node91" href="classCQuery.html" title="CQuery" alt="" coords="2283,775,2352,804"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 
 <p><a href="classCClient-members.html">List of all members.</a></p>
@@ -183,6 +185,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#afd72c7bef3316b2bf787d255169704df">RefuseLogin</a> (const <a class="el" href="classCString.html">CString</a> &amp;sReason)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#af901810b926e6ba76ef8c87a1b3714bf">GetNick</a> (bool bAllowIRCNick=true) const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#ace936e366f5ae08b0c645c257bc72635">GetNickMask</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a319a96bce425a463b9d1f0dd2e5d45f5">GetIdentifier</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#ace6094779c4996b22120498f96721d8b">HasNamesx</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a48ee2d9821da1fd2ff595fed9234e1de">HasUHNames</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#aa6d2ffa5742cdf22f946d96190c54e7c">IsAway</a> () const </td></tr>
@@ -457,6 +460,9 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSockCommon.html#a0f90529eb2f0bdf2f4e8d7899e931f07">AssignFDs</a> (std::map&lt; <a class="el" href="Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a>, short &gt; &amp;miiReadyFds, struct timeval *tvtimeout)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSockCommon.html#a7a5acbe54d37f4a3f4c85a339451ee2e">MonitorFD</a> (<a class="el" href="classCSMonitorFD.html">CSMonitorFD</a> *pMonitorFD)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">add an FD set to monitor  <a href="#a7a5acbe54d37f4a3f4c85a339451ee2e"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a25e8c5f0e58ba2b8132d073576a295ef">IsValidIdentifier</a> (const <a class="el" href="classCString.html">CString</a> &amp;sIdentifier)</td></tr>
 <tr><td colspan="2"><h2><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a6586825382dd1a43746c454a9f41e43f">m_bGotPass</a></td></tr>
@@ -475,10 +481,14 @@ Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a5bf114d698dba2c077a67508c3823518">m_sPass</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#acb1bede81befb4622824eebbea08effa">m_sUser</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a2afd6cf37349a4a6bb4d82742eefc9e9">m_sNetwork</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#af4bdc6c45bd119b25bc039121343ca9a">m_sIdentifier</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classCAuthBase.html">CAuthBase</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a3529524d8d2150e0d9209f2f8fdbae2b">m_spAuth</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="ZNCString_8h.html#a84b05218977775b974a8db49e81f02a4">SCString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a62864e3b21dccefddeb0c9292cd6e531">m_ssAcceptedCaps</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classCCron.html">CCron</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSockCommon.html#a92eef1e1d3476ba9e3e766d5dcc37bfe">m_vcCrons</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classCSMonitorFD.html">CSMonitorFD</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSockCommon.html#ae108fc0c73aaefe520ab489d78c05174">m_vcMonitorFD</a></td></tr>
+<tr><td colspan="2"><h2><a name="friends"></a>
+Friends</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#aba2affbf999dd265d3a7f8c30598fec7">ClientTest</a></td></tr>
 </table>
 <hr/><h2>Member Enumeration Documentation</h2>
 <a class="anchor" id="a02fc87b0c2dceedeaa8df5407b389f6a"></a><!-- doxytag: member="CClient::@0" ref="a02fc87b0c2dceedeaa8df5407b389f6a" args="" -->
@@ -1875,6 +1885,24 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a319a96bce425a463b9d1f0dd2e5d45f5"></a><!-- doxytag: member="CClient::GetIdentifier" ref="a319a96bce425a463b9d1f0dd2e5d45f5" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCString.html">CString</a> <a class="el" href="classCClient.html#a319a96bce425a463b9d1f0dd2e5d45f5">CClient::GetIdentifier</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="classCClient.html#af4bdc6c45bd119b25bc039121343ca9a">m_sIdentifier</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a1a8fedcc5a3e9ddf4381d1ffd5fb2950"></a><!-- doxytag: member="CClient::GetInternalReadBuffer" ref="a1a8fedcc5a3e9ddf4381d1ffd5fb2950" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -2882,6 +2910,23 @@ Protected Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const<code> [inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a25e8c5f0e58ba2b8132d073576a295ef"></a><!-- doxytag: member="CClient::IsValidIdentifier" ref="a25e8c5f0e58ba2b8132d073576a295ef" args="(const CString &amp;sIdentifier)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool <a class="el" href="classCClient.html#a25e8c5f0e58ba2b8132d073576a295ef">CClient::IsValidIdentifier</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
+          <td class="paramname"><em>sIdentifier</em></td><td>)</td>
+          <td><code> [static]</code></td>
         </tr>
       </table>
 </div>
@@ -4517,6 +4562,20 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<hr/><h2>Friends And Related Function Documentation</h2>
+<a class="anchor" id="aba2affbf999dd265d3a7f8c30598fec7"></a><!-- doxytag: member="CClient::ClientTest" ref="aba2affbf999dd265d3a7f8c30598fec7" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="classCClient.html#aba2affbf999dd265d3a7f8c30598fec7">ClientTest</a><code> [friend]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <hr/><h2>Member Data Documentation</h2>
 <a class="anchor" id="a2712e5bf9b58c9763b67d1afeb50b90f"></a><!-- doxytag: member="CClient::m_bAway" ref="a2712e5bf9b58c9763b67d1afeb50b90f" args="" -->
 <div class="memitem">
@@ -4698,6 +4757,21 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="af4bdc6c45bd119b25bc039121343ca9a"></a><!-- doxytag: member="CClient::m_sIdentifier" ref="af4bdc6c45bd119b25bc039121343ca9a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCString.html">CString</a> <a class="el" href="classCClient.html#af4bdc6c45bd119b25bc039121343ca9a">CClient::m_sIdentifier</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Referenced by <a class="el" href="classCClient.html#a319a96bce425a463b9d1f0dd2e5d45f5">GetIdentifier()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a2afd6cf37349a4a6bb4d82742eefc9e9"></a><!-- doxytag: member="CClient::m_sNetwork" ref="a2afd6cf37349a4a6bb4d82742eefc9e9" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -4825,7 +4899,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Nov 3 2014 23:35:25 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 4 2014 07:39:33 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

@@ -1,23 +1,23 @@
 <map id="G" name="G">
-<area shape="rect" id="node29" href="$classCModules.html" title="CModules" alt="" coords="3384,376,3467,405"/>
+<area shape="rect" id="node29" href="$classCModules.html" title="CModules" alt="" coords="3384,380,3467,409"/>
 <area shape="rect" id="node2" href="$classCZNCSock.html" title="CZNCSock" alt="" coords="1364,37,1455,67"/>
-<area shape="rect" id="node49" href="$classCIRCSock.html" title="CIRCSock" alt="" coords="4676,687,4756,716"/>
+<area shape="rect" id="node49" href="$classCIRCSock.html" title="CIRCSock" alt="" coords="4676,691,4756,720"/>
 <area shape="rect" id="node4" href="$classCsock.html" title="Basic socket class." alt="" coords="1152,37,1211,67"/>
 <area shape="rect" id="node6" href="$classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock" alt="" coords="975,37,1095,67"/>
 <area shape="rect" id="node10" href="$classCCron.html" title="this is the main cron job class" alt="" coords="407,8,468,37"/>
 <area shape="rect" id="node14" href="$classCSMonitorFD.html" title="Class to tie sockets to for monitoring by Csocket at either the Csock or TSockManager." alt="" coords="385,61,489,91"/>
-<area shape="rect" id="node18" href="$classCString.html" title="String class that is used inside ZNC." alt="" coords="1147,1025,1216,1055"/>
-<area shape="rect" id="node24" href="$classCUser.html" title="CUser" alt="" coords="2699,489,2760,519"/>
-<area shape="rect" id="node36" href="$classCIRCNetwork.html" title="CIRCNetwork" alt="" coords="3039,728,3140,757"/>
-<area shape="rect" id="node38" href="$classCNick.html" title="CNick" alt="" coords="3396,897,3455,927"/>
-<area shape="rect" id="node56" href="$classCChan.html" title="CChan" alt="" coords="4005,969,4069,999"/>
-<area shape="rect" id="node100" href="$classCServer.html" title="CServer" alt="" coords="1373,913,1445,943"/>
-<area shape="rect" id="node20" title="STL class." alt="" coords="992,1025,1077,1055"/>
-<area shape="rect" id="node22" title="STL class." alt="" coords="621,1025,805,1055"/>
-<area shape="rect" id="node31" title="STL class." alt="" coords="2429,255,2616,284"/>
-<area shape="rect" id="node45" title="STL class." alt="" coords="2025,752,2201,781"/>
-<area shape="rect" id="node79" title="STL class." alt="" coords="1787,665,1997,695"/>
-<area shape="rect" id="node43" href="$classCBuffer.html" title="CBuffer" alt="" coords="2695,827,2764,856"/>
-<area shape="rect" id="node77" href="$classMCString.html" title="A dictionary for strings." alt="" coords="2277,665,2357,695"/>
-<area shape="rect" id="node91" href="$classCQuery.html" title="CQuery" alt="" coords="2283,769,2352,799"/>
+<area shape="rect" id="node18" href="$classCString.html" title="String class that is used inside ZNC." alt="" coords="1147,1031,1216,1060"/>
+<area shape="rect" id="node24" href="$classCUser.html" title="CUser" alt="" coords="2699,491,2760,520"/>
+<area shape="rect" id="node36" href="$classCIRCNetwork.html" title="CIRCNetwork" alt="" coords="3039,733,3140,763"/>
+<area shape="rect" id="node38" href="$classCNick.html" title="CNick" alt="" coords="3396,901,3455,931"/>
+<area shape="rect" id="node56" href="$classCChan.html" title="CChan" alt="" coords="4005,973,4069,1003"/>
+<area shape="rect" id="node100" href="$classCServer.html" title="CServer" alt="" coords="1373,920,1445,949"/>
+<area shape="rect" id="node20" title="STL class." alt="" coords="992,1031,1077,1060"/>
+<area shape="rect" id="node22" title="STL class." alt="" coords="621,1031,805,1060"/>
+<area shape="rect" id="node31" title="STL class." alt="" coords="2429,256,2616,285"/>
+<area shape="rect" id="node45" title="STL class." alt="" coords="2025,757,2201,787"/>
+<area shape="rect" id="node79" title="STL class." alt="" coords="1787,681,1997,711"/>
+<area shape="rect" id="node43" href="$classCBuffer.html" title="CBuffer" alt="" coords="2695,832,2764,861"/>
+<area shape="rect" id="node77" href="$classMCString.html" title="A dictionary for strings." alt="" coords="2277,671,2357,700"/>
+<area shape="rect" id="node91" href="$classCQuery.html" title="CQuery" alt="" coords="2283,775,2352,804"/>
 </map>

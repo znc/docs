@@ -63,6 +63,7 @@ var searchData=
   ['clientconnected',['ClientConnected',['../classCIRCNetwork.html#a3e87a136a4b1353f7cbf58f10471396b',1,'CIRCNetwork']]],
   ['clientdata',['clientdata',['../structswig__type__info.html#a2e1f9087e639dd7c8c131fbc6e399194',1,'swig_type_info::clientdata()'],['../structswig__module__info.html#a39999692b76f191b66a5ce746681dc84',1,'swig_module_info::clientdata()']]],
   ['clientdisconnected',['ClientDisconnected',['../classCIRCNetwork.html#ab842d39ec47bf29311a711e7afe8cfbb',1,'CIRCNetwork']]],
+  ['clienttest',['ClientTest',['../classCClient.html#aba2affbf999dd265d3a7f8c30598fec7',1,'CClient']]],
   ['clistener',['CListener',['../classCListener.html',1,'CListener'],['../classCListener.html#ace70960cb65bb0c6d0055ed994bb75f1',1,'CListener::CListener()']]],
   ['clone',['Clone',['../classCChan.html#aa47c7a184261b74b8db076f725ced6d1',1,'CChan::Clone()'],['../classCIRCNetwork.html#aef7328c0eced7ec97c3aa438edcb98ca',1,'CIRCNetwork::Clone()'],['../classCNick.html#a94f31635eb8654883aad974127ab2ab1',1,'CNick::Clone()'],['../classCUser.html#a60fe6b1c9c815b05c507538f9f038652',1,'CUser::Clone()']]],
   ['clonenetworks',['CloneNetworks',['../classCUser.html#aa76e1f784692a58d779f4e01d1d8c527',1,'CUser']]],

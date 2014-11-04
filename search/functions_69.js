@@ -58,6 +58,7 @@ var searchData=
   ['isuseronline',['IsUserOnline',['../classCIRCNetwork.html#a3f64579e2ed802ed1d27cfc11a16c46e',1,'CIRCNetwork']]],
   ['isvalid',['IsValid',['../classCUser.html#ade961df399b28c1175f304bd5e0b4f8f',1,'CUser::IsValid()'],['../classCCron.html#affd2692d29c623ab825c1c8cb07f563a',1,'CCron::isValid()']]],
   ['isvalidhostname',['IsValidHostName',['../classCServer.html#a90810ca5e292e219244a800ad8e7cee0',1,'CServer']]],
+  ['isvalididentifier',['IsValidIdentifier',['../classCClient.html#a25e8c5f0e58ba2b8132d073576a295ef',1,'CClient']]],
   ['isvalidnetwork',['IsValidNetwork',['../classCIRCNetwork.html#a3253620b3dc05b53547a5cbc84c1872f',1,'CIRCNetwork']]],
   ['isvalidusername',['IsValidUserName',['../classCUser.html#a018b0c276ec64e156b023696157e2e85',1,'CUser']]]
 ];

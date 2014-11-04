@@ -164,7 +164,7 @@ var searchData=
   ['shutdowncsocket',['ShutdownCsocket',['../Csocket_8h.html#a8d3997938ecf25d4877f26706ce89de5',1,'Csocket.h']]],
   ['sinfamily',['SinFamily',['../classCSSockAddr.html#ad623af0b89f38d7310a80d325b31b3df',1,'CSSockAddr']]],
   ['sinport',['SinPort',['../classCSSockAddr.html#aac74ad78513de1b3ccf52212543e405a',1,'CSSockAddr']]],
-  ['size',['Size',['../classCBuffer.html#ada8cad56b0d0e3cacfceb5705a38b4e2',1,'CBuffer::Size()'],['../structswig__module__info.html#aaf8907cf8509ee0464af8c9dfd909042',1,'swig_module_info::size()'],['../structSwigPyPacked.html#aed2bfb8fb3c9f804c386215db63921cb',1,'SwigPyPacked::size()']]],
+  ['size',['size',['../structswig__module__info.html#aaf8907cf8509ee0464af8c9dfd909042',1,'swig_module_info::size()'],['../structSwigPyPacked.html#aed2bfb8fb3c9f804c386215db63921cb',1,'SwigPyPacked::size()'],['../classCBuffer.html#ada8cad56b0d0e3cacfceb5705a38b4e2',1,'CBuffer::Size()']]],
   ['slots',['slots',['../structPyHeapTypeObject.html#a15212a8f85d939b3f4b133ecda1b62e5',1,'PyHeapTypeObject']]],
   ['sockerror',['SockError',['../classCsock.html#a2092f1cfd768211741d4d3c4b092563b',1,'Csock::SockError()'],['../classCIRCSock.html#a89673a2248ea06c5f0fb91dd1b1d3cbb',1,'CIRCSock::SockError()'],['../classCRealListener.html#a1e6f0b8b477eeededf914720f612db78',1,'CRealListener::SockError()'],['../classCSocket.html#a84cd201737bd8fc7e5fc8d1f59e1b3be',1,'CSocket::SockError()']]],
   ['socket_2eh',['Socket.h',['../Socket_8h.html',1,'']]],
