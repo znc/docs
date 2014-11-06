@@ -183,8 +183,8 @@ Enumerations</h2></td></tr>
 Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Csocket_8h.html#a29bff300a60b5369a0ed488a9411429e">GetAddrInfo</a> (const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sHostname, <a class="el" href="classCsock.html">Csock</a> *pSock, <a class="el" href="classCSSockAddr.html">CSSockAddr</a> &amp;csSockAddr)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">backwards compatible wrapper around <a class="el" href="classCGetAddrInfo.html" title="this function is a wrapper around getaddrinfo (for ipv6)">CGetAddrInfo</a> and gethostbyname  <a href="#a29bff300a60b5369a0ed488a9411429e"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Csocket_8h.html#a641ed271fd5f4dbe85af85c43aaf158f">GetCsockClassIdx</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">used to retrieve the context position of the socket to its associated ssl connection. Setup once in <a class="el" href="Csocket_8h.html#a21432c8f7ba3dea407ec00c03cc3e13e" title="You HAVE to call this in order to use the SSL library, calling InitCsocket() also calls this so unles...">InitSSL()</a> via SSL_get_ex_new_index  <a href="#a641ed271fd5f4dbe85af85c43aaf158f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Csocket_8h.html#a7385a980b6d95fd45b12b235d875ff2d">GetCsockSSLIdx</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This returns the [ex_]data index position for SSL objects only.  <a href="#a7385a980b6d95fd45b12b235d875ff2d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCsock.html">Csock</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Csocket_8h.html#aea50301bc3134c0e200baf9a2e6a1175">GetCsockFromCTX</a> (X509_STORE_CTX *pCTX)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the sock object associated to the particular context. returns NULL on failure or if not available  <a href="#aea50301bc3134c0e200baf9a2e6a1175"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
@@ -470,24 +470,6 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a641ed271fd5f4dbe85af85c43aaf158f"></a><!-- doxytag: member="Csocket.h::GetCsockClassIdx" ref="a641ed271fd5f4dbe85af85c43aaf158f" args="()" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int <a class="el" href="Csocket_8h.html#a641ed271fd5f4dbe85af85c43aaf158f">GetCsockClassIdx</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>used to retrieve the context position of the socket to its associated ssl connection. Setup once in <a class="el" href="Csocket_8h.html#a21432c8f7ba3dea407ec00c03cc3e13e" title="You HAVE to call this in order to use the SSL library, calling InitCsocket() also calls this so unles...">InitSSL()</a> via SSL_get_ex_new_index </p>
-
-</div>
-</div>
 <a class="anchor" id="aea50301bc3134c0e200baf9a2e6a1175"></a><!-- doxytag: member="Csocket.h::GetCsockFromCTX" ref="aea50301bc3134c0e200baf9a2e6a1175" args="(X509_STORE_CTX *pCTX)" -->
 <div class="memitem">
 <div class="memproto">
@@ -504,6 +486,25 @@ template&lt;class T &gt; </div>
 <div class="memdoc">
 
 <p>returns the sock object associated to the particular context. returns NULL on failure or if not available </p>
+
+</div>
+</div>
+<a class="anchor" id="a7385a980b6d95fd45b12b235d875ff2d"></a><!-- doxytag: member="Csocket.h::GetCsockSSLIdx" ref="a7385a980b6d95fd45b12b235d875ff2d" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="Csocket_8h.html#a7385a980b6d95fd45b12b235d875ff2d">GetCsockSSLIdx</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>This returns the [ex_]data index position for SSL objects only. </p>
+<p>If you want to tie more data to the SSL object, you should generate your own at application start so as to avoid collision with Csocket SSL_set_ex_data() </p>
 
 </div>
 </div>
@@ -755,7 +756,7 @@ template&lt;class T &gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Nov 6 2014 22:48:17 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Nov 6 2014 23:22:44 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

@@ -13,6 +13,8 @@ var searchData=
   ['edp_5fsslv2',['EDP_SSLv2',['../classCsock.html#a5386b79c9e11eb2e3e175473378abf44a18e8b29d9c18958001881ebef94cd137',1,'Csock']]],
   ['edp_5fsslv3',['EDP_SSLv3',['../classCsock.html#a5386b79c9e11eb2e3e175473378abf44a50a4b735cf309d3f911aba67b5eb4456',1,'Csock']]],
   ['edp_5ftlsv1',['EDP_TLSv1',['../classCsock.html#a5386b79c9e11eb2e3e175473378abf44a8e63eea5f9969988064de016e9fa7652',1,'Csock']]],
+  ['edp_5ftlsv1_5f1',['EDP_TLSv1_1',['../classCsock.html#a5386b79c9e11eb2e3e175473378abf44a57b79b6443dddb0500032f9ce5253b74',1,'Csock']]],
+  ['edp_5ftlsv1_5f2',['EDP_TLSv1_2',['../classCsock.html#a5386b79c9e11eb2e3e175473378abf44aa826ca758814e77dcdf9ea517cc78792',1,'Csock']]],
   ['ehtml',['EHTML',['../classCString.html#a8f63759db4ef372abb9cfa4751648e1fa32bc4b62f40af2f5fdf24c20efb2399f',1,'CString']]],
   ['emsgtag',['EMSGTAG',['../classCString.html#a8f63759db4ef372abb9cfa4751648e1fae314cdc57a80ca57bf6deceddb389ab1',1,'CString']]],
   ['enamedfmt',['ENAMEDFMT',['../classCString.html#a8f63759db4ef372abb9cfa4751648e1fa67ff7b2e0153ba73fb8058882e5d2548',1,'CString']]],

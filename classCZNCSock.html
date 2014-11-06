@@ -146,7 +146,9 @@ Public Types</h2></td></tr>
 <a class="el" href="classCsock.html#a5386b79c9e11eb2e3e175473378abf44a50a4b735cf309d3f911aba67b5eb4456">EDP_SSLv3</a> =  2, 
 <a class="el" href="classCsock.html#a5386b79c9e11eb2e3e175473378abf44a8e63eea5f9969988064de016e9fa7652">EDP_TLSv1</a> =  4, 
 <br/>
-&#160;&#160;<a class="el" href="classCsock.html#a5386b79c9e11eb2e3e175473378abf44a8f9be19101663d878f5ac184d3d7822d">EDP_SSL</a> =  (EDP_SSLv2|EDP_SSLv3)
+&#160;&#160;<a class="el" href="classCsock.html#a5386b79c9e11eb2e3e175473378abf44a57b79b6443dddb0500032f9ce5253b74">EDP_TLSv1_1</a> =  8, 
+<a class="el" href="classCsock.html#a5386b79c9e11eb2e3e175473378abf44aa826ca758814e77dcdf9ea517cc78792">EDP_TLSv1_2</a> =  16, 
+<a class="el" href="classCsock.html#a5386b79c9e11eb2e3e175473378abf44a8f9be19101663d878f5ac184d3d7822d">EDP_SSL</a> =  (EDP_SSLv2|EDP_SSLv3)
 <br/>
  }</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a1ddb2a5d92aefe7db7a88b3824d7c4da">ECONState</a> { <br/>
@@ -299,6 +301,8 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a71bd0fb35012cf8d006b8098b6eac15e">SetSSL</a> (bool b)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a0256789d876431c52f9e2e905440319f">DisableSSLProtocols</a> (u_int uDisableOpts)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">bitwise setter,  <a href="#a0256789d876431c52f9e2e905440319f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a7969b6b06ee2d2e9997b00c47c2a1898">DisableSSLCompression</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">allow disabling compression  <a href="#a7969b6b06ee2d2e9997b00c47c2a1898"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#aa59f3b858f55d5cf2e2574140dd5bf4e">SetCipher</a> (const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sCipher)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the cipher type ( openssl cipher [to see ciphers available] )  <a href="#aa59f3b858f55d5cf2e2574140dd5bf4e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a9492afdd7b765fe5badffa5781381717">GetCipher</a> () const </td></tr>
@@ -310,10 +314,11 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a8a4f12f682ecbe70809daef29f23bd23">SetSSLMethod</a> (int iMethod)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the SSL method type.  <a href="#a8a4f12f682ecbe70809daef29f23bd23"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#abffe3da5cb2bc43cfdc2235cbbad43c9">GetSSLMethod</a> () const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a222e5d24c1660d53a31d35a806a568d6">SetSSLObject</a> (SSL *ssl)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a13f51097f497be73270f5125b972ce5a">SetCTXObject</a> (SSL_CTX *sslCtx)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a6a57e3e3f986353b91ee7f2ab14f0ed5">SetSSLObject</a> (SSL *ssl, bool bDeleteExisting=false)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a5ec2d81846289cdd70407691d9345591">SetCTXObject</a> (SSL_CTX *sslCtx, bool bDeleteExisting=false)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">SSL_SESSION *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#ab519dfdc201e09bf8453ab259861f3d2">GetSSLSession</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#afc8a1e27ea57bf894a7d1bb0d78dd33d">SetCertVerifyCB</a> (<a class="el" href="Csocket_8h.html#aa5463d49fb8abd380d534f606e69f6d4">FPCertVerifyCB</a> pFP)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">setting this to NULL will allow the default openssl verification process kick in  <a href="#afc8a1e27ea57bf894a7d1bb0d78dd33d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a556d37415c5c017c3336eb5228d1beb1">HasWriteBuffer</a> () const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the send buffer.  <a href="#a556d37415c5c017c3336eb5228d1beb1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#ade75f55f69d6cfebf3eaccd320928e72">ClearWriteBuffer</a> ()</td></tr>
@@ -370,6 +375,16 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This gets called every iteration of <a class="el" href="classCSocketManager.html#acf705393b54ade69835134e900c7bf85">CSocketManager::Select()</a> if the socket is ReadPaused.  <a href="#ab7c9de4f24a9fa1ef9e3bb506e6ddd33"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#ab16f04115dc73a586503fd96926bf8ae">SSLFinishSetup</a> (SSL *pSSL)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets called immediatly after the m_ssl member is setup and initialized, useful if you need to assign anything to this ssl session via SSL_set_ex_data.  <a href="#ab16f04115dc73a586503fd96926bf8ae"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a47ac65949b3713a2b32c5167225ffd99">SNIConfigureServer</a> (const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sHostname, <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sPemFile, <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sPemPass)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">gets called when a SNI request is sent, and used to configure a SNI session  <a href="#a47ac65949b3713a2b32c5167225ffd99"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#ab8a870f8df305f21a0307364fdb3c027">SNIConfigureClient</a> (<a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sHostname)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">called to configure the SNI client  <a href="#ab8a870f8df305f21a0307364fdb3c027"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">SSL_CTX *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#ae61306403bb7bbff4e2fd766d9854a4b">SetupServerCTX</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">creates a new SSL_CTX based on the setup of this sock  <a href="#ae61306403bb7bbff4e2fd766d9854a4b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a91e326e9416c4d6703ef06ecdc8f41ce">SSLHandShakeFinished</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">called once the SSL handshake is complete, this is triggered via SSL_CB_HANDSHAKE_DONE in SSL_set_info_callback()  <a href="#a91e326e9416c4d6703ef06ecdc8f41ce"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a40aec412d77fb21e3213271fc4a4f01c">VerifyPeerCertificate</a> (int iPreVerify, X509_STORE_CTX *pStoreCTX)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">this is hooked in via SSL_set_verify, and be default it just returns 1 meaning success  <a href="#a40aec412d77fb21e3213271fc4a4f01c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#adac00464034930dff05bf104b958f0e8">GetTimeSinceLastDataTransaction</a> (time_t iNow=0) const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">return how long it has been (in seconds) since the last read or successful write  <a href="#adac00464034930dff05bf104b958f0e8"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a182c33dc4074eeb0f304a0b3d775ac78">GetLastCheckTimeout</a> () const </td></tr>
@@ -529,13 +544,19 @@ Protected Attributes</h2></td></tr>
 <p>disable nothing </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a5386b79c9e11eb2e3e175473378abf44a18e8b29d9c18958001881ebef94cd137"></a><!-- doxytag: member="EDP_SSLv2" ref="a5386b79c9e11eb2e3e175473378abf44a18e8b29d9c18958001881ebef94cd137" args="" -->EDP_SSLv2</em>&nbsp;</td><td>
-<p>disable SSL verion 2 </p>
+<p>disable SSL version 2 </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a5386b79c9e11eb2e3e175473378abf44a50a4b735cf309d3f911aba67b5eb4456"></a><!-- doxytag: member="EDP_SSLv3" ref="a5386b79c9e11eb2e3e175473378abf44a50a4b735cf309d3f911aba67b5eb4456" args="" -->EDP_SSLv3</em>&nbsp;</td><td>
-<p>disable SSL verion 3 </p>
+<p>disable SSL version 3 </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a5386b79c9e11eb2e3e175473378abf44a8e63eea5f9969988064de016e9fa7652"></a><!-- doxytag: member="EDP_TLSv1" ref="a5386b79c9e11eb2e3e175473378abf44a8e63eea5f9969988064de016e9fa7652" args="" -->EDP_TLSv1</em>&nbsp;</td><td>
-<p>disable TLS verion 1 </p>
+<p>disable TLS version 1 </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a5386b79c9e11eb2e3e175473378abf44a57b79b6443dddb0500032f9ce5253b74"></a><!-- doxytag: member="EDP_TLSv1_1" ref="a5386b79c9e11eb2e3e175473378abf44a57b79b6443dddb0500032f9ce5253b74" args="" -->EDP_TLSv1_1</em>&nbsp;</td><td>
+<p>disable TLS version 1.1 </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a5386b79c9e11eb2e3e175473378abf44aa826ca758814e77dcdf9ea517cc78792"></a><!-- doxytag: member="EDP_TLSv1_2" ref="a5386b79c9e11eb2e3e175473378abf44aa826ca758814e77dcdf9ea517cc78792" args="" -->EDP_TLSv1_2</em>&nbsp;</td><td>
+<p>disable TLS version 1.2 </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a5386b79c9e11eb2e3e175473378abf44a8f9be19101663d878f5ac184d3d7822d"></a><!-- doxytag: member="EDP_SSL" ref="a5386b79c9e11eb2e3e175473378abf44a8f9be19101663d878f5ac184d3d7822d" args="" -->EDP_SSL</em>&nbsp;</td><td>
 </td></tr>
@@ -1470,6 +1491,24 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7969b6b06ee2d2e9997b00c47c2a1898"></a><!-- doxytag: member="CZNCSock::DisableSSLCompression" ref="a7969b6b06ee2d2e9997b00c47c2a1898" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classCsock.html#a7969b6b06ee2d2e9997b00c47c2a1898">Csock::DisableSSLCompression</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [inline, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>allow disabling compression </p>
 
 </div>
 </div>
@@ -2434,6 +2473,7 @@ Protected Attributes</h2></td></tr>
 <div class="memdoc">
 
 <p>Get the peer's X509 cert. </p>
+<p>it is up to you, the caller to call X509_free() on this object </p>
 
 </div>
 </div>
@@ -3086,6 +3126,8 @@ Protected Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>setting this to NULL will allow the default openssl verification process kick in </p>
+
 </div>
 </div>
 <a class="anchor" id="aa59f3b858f55d5cf2e2574140dd5bf4e"></a><!-- doxytag: member="CZNCSock::SetCipher" ref="aa59f3b858f55d5cf2e2574140dd5bf4e" args="(const CS_STRING &amp;sCipher)" -->
@@ -3126,16 +3168,26 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a13f51097f497be73270f5125b972ce5a"></a><!-- doxytag: member="CZNCSock::SetCTXObject" ref="a13f51097f497be73270f5125b972ce5a" args="(SSL_CTX *sslCtx)" -->
+<a class="anchor" id="a5ec2d81846289cdd70407691d9345591"></a><!-- doxytag: member="CZNCSock::SetCTXObject" ref="a5ec2d81846289cdd70407691d9345591" args="(SSL_CTX *sslCtx, bool bDeleteExisting=false)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classCsock.html#a13f51097f497be73270f5125b972ce5a">Csock::SetCTXObject</a> </td>
+          <td class="memname">void <a class="el" href="classCsock.html#a5ec2d81846289cdd70407691d9345591">Csock::SetCTXObject</a> </td>
           <td>(</td>
           <td class="paramtype">SSL_CTX *&#160;</td>
-          <td class="paramname"><em>sslCtx</em></td><td>)</td>
-          <td><code> [inherited]</code></td>
+          <td class="paramname"><em>sslCtx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bDeleteExisting</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [inherited]</code></td>
         </tr>
       </table>
 </div>
@@ -3487,16 +3539,26 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a222e5d24c1660d53a31d35a806a568d6"></a><!-- doxytag: member="CZNCSock::SetSSLObject" ref="a222e5d24c1660d53a31d35a806a568d6" args="(SSL *ssl)" -->
+<a class="anchor" id="a6a57e3e3f986353b91ee7f2ab14f0ed5"></a><!-- doxytag: member="CZNCSock::SetSSLObject" ref="a6a57e3e3f986353b91ee7f2ab14f0ed5" args="(SSL *ssl, bool bDeleteExisting=false)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classCsock.html#a222e5d24c1660d53a31d35a806a568d6">Csock::SetSSLObject</a> </td>
+          <td class="memname">void <a class="el" href="classCsock.html#a6a57e3e3f986353b91ee7f2ab14f0ed5">Csock::SetSSLObject</a> </td>
           <td>(</td>
           <td class="paramtype">SSL *&#160;</td>
-          <td class="paramname"><em>ssl</em></td><td>)</td>
-          <td><code> [inherited]</code></td>
+          <td class="paramname"><em>ssl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bDeleteExisting</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [inherited]</code></td>
         </tr>
       </table>
 </div>
@@ -3567,6 +3629,24 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ae61306403bb7bbff4e2fd766d9854a4b"></a><!-- doxytag: member="CZNCSock::SetupServerCTX" ref="ae61306403bb7bbff4e2fd766d9854a4b" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SSL_CTX* <a class="el" href="classCsock.html#ae61306403bb7bbff4e2fd766d9854a4b">Csock::SetupServerCTX</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>creates a new SSL_CTX based on the setup of this sock </p>
+
+</div>
+</div>
 <a class="anchor" id="a88be1c5135a3beef0b47c77f941a5ee6"></a><!-- doxytag: member="CZNCSock::SetupVHost" ref="a88be1c5135a3beef0b47c77f941a5ee6" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -3601,6 +3681,76 @@ Protected Attributes</h2></td></tr>
 <div class="memdoc">
 
 <p>Referenced by <a class="el" href="classCExecSock.html#aafd98b69a6096f4e5fae7727dce57e15">CExecSock::~CExecSock()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab8a870f8df305f21a0307364fdb3c027"></a><!-- doxytag: member="CZNCSock::SNIConfigureClient" ref="ab8a870f8df305f21a0307364fdb3c027" args="(CS_STRING &amp;sHostname)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool <a class="el" href="classCsock.html#ab8a870f8df305f21a0307364fdb3c027">Csock::SNIConfigureClient</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td>
+          <td class="paramname"><em>sHostname</em></td><td>)</td>
+          <td><code> [inline, virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>called to configure the SNI client </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sHostname,the</td><td>hostname to configure SNI with, you can fill this with GetHostname() if its a valid hostname and not an OP </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>returning true causes a call to configure SNI with the hostname returned </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a47ac65949b3713a2b32c5167225ffd99"></a><!-- doxytag: member="CZNCSock::SNIConfigureServer" ref="a47ac65949b3713a2b32c5167225ffd99" args="(const CS_STRING &amp;sHostname, CS_STRING &amp;sPemFile, CS_STRING &amp;sPemPass)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool <a class="el" href="classCsock.html#a47ac65949b3713a2b32c5167225ffd99">Csock::SNIConfigureServer</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td>
+          <td class="paramname"><em>sHostname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td>
+          <td class="paramname"><em>sPemFile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td>
+          <td class="paramname"><em>sPemPass</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [inline, virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>gets called when a SNI request is sent, and used to configure a SNI session </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sHostname</td><td>the hostname sent from the client </td></tr>
+    <tr><td class="paramname">sPemFile</td><td>fill this with the location to the pemfile </td></tr>
+    <tr><td class="paramname">sPemPass</td><td>fill this with the pemfile password if there is one </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>return true to proceed with the SNI server configuration </dd></dl>
 
 </div>
 </div>
@@ -3668,6 +3818,32 @@ Protected Attributes</h2></td></tr>
 
 <p>Gets called immediatly after the m_ssl member is setup and initialized, useful if you need to assign anything to this ssl session via SSL_set_ex_data. </p>
 
+</div>
+</div>
+<a class="anchor" id="a91e326e9416c4d6703ef06ecdc8f41ce"></a><!-- doxytag: member="CZNCSock::SSLHandShakeFinished" ref="a91e326e9416c4d6703ef06ecdc8f41ce" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="classCsock.html#a91e326e9416c4d6703ef06ecdc8f41ce">Csock::SSLHandShakeFinished</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [inline, virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>called once the SSL handshake is complete, this is triggered via SSL_CB_HANDSHAKE_DONE in SSL_set_info_callback() </p>
+<p>This is a spot where you can look at the finished peer certifificate ... IE </p>
+<pre>
+ X509 * pCert = <a class="el" href="classCsock.html#aeb6a4d1ddf20fdb16287d23c26092836" title="Get the peer&#39;s X509 cert.">GetX509()</a>;
+ char szName[256];
+ memset( szName, '\0', 256 );
+ X509_NAME_get_text_by_NID ( X509_get_subject_name( pCert ), NID_commonName, szName, 255 );
+ cerr &lt;&lt; "Name! " &lt;&lt; szName &lt;&lt; endl;
+ X509_free( pCert );
+ </pre> 
 </div>
 </div>
 <a class="anchor" id="a823b15d60b631e504125da49bedcf825"></a><!-- doxytag: member="CZNCSock::SslIsEstablished" ref="a823b15d60b631e504125da49bedcf825" args="() const " -->
@@ -3757,6 +3933,45 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a40aec412d77fb21e3213271fc4a4f01c"></a><!-- doxytag: member="CZNCSock::VerifyPeerCertificate" ref="a40aec412d77fb21e3213271fc4a4f01c" args="(int iPreVerify, X509_STORE_CTX *pStoreCTX)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int <a class="el" href="classCsock.html#a40aec412d77fb21e3213271fc4a4f01c">Csock::VerifyPeerCertificate</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPreVerify</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">X509_STORE_CTX *&#160;</td>
+          <td class="paramname"><em>pStoreCTX</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [inline, virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>this is hooked in via SSL_set_verify, and be default it just returns 1 meaning success </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iPreVerify</td><td>the pre-verification status as determined by openssl internally </td></tr>
+    <tr><td class="paramname">pStoreCTX</td><td>the X509_STORE_CTX containing the certificate </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>1 to continue, 0 to abort</dd></dl>
+<p>This may get called multiple times, for example with a chain certificate which is fairly typical with certificates from godaddy, freessl, etc. Additionally, openssl does not do any host verification, they leave that up to the you. One easy way to deal with this is to wait for <a class="el" href="classCsock.html#a91e326e9416c4d6703ef06ecdc8f41ce" title="called once the SSL handshake is complete, this is triggered via SSL_CB_HANDSHAKE_DONE in SSL_set_inf...">SSLHandShakeFinished()</a> and examine the peer certificate </p>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classCsock.html#a91e326e9416c4d6703ef06ecdc8f41ce" title="called once the SSL handshake is complete, this is triggered via SSL_CB_HANDSHAKE_DONE in SSL_set_inf...">SSLHandShakeFinished</a> </dd></dl>
 
 </div>
 </div>
@@ -3872,7 +4087,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Nov 6 2014 22:48:18 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Nov 6 2014 23:22:45 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

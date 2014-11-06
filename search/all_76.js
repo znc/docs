@@ -4,6 +4,7 @@ var searchData=
   ['validif',['ValidIf',['../classCTemplate.html#afada5e466c6e0aac83320ffdb1dabfa9',1,'CTemplate']]],
   ['value',['value',['../classTCacheMap.html#ad030261fdb9f2ec14b4afcffbce47b31',1,'TCacheMap']]],
   ['vcstring',['VCString',['../ZNCString_8h.html#af7252b7c4a0d4ec44ddc136c6055ae51',1,'ZNCString.h']]],
+  ['verifypeercertificate',['VerifyPeerCertificate',['../classCsock.html#a40aec412d77fb21e3213271fc4a4f01c',1,'Csock']]],
   ['version',['VERSION',['../version_8h.html#a1c6d5de492ac61ad29aec7aa9a436bbf',1,'version.h']]],
   ['version_2eh',['version.h',['../version_8h.html',1,'']]],
   ['version_5fmajor',['VERSION_MAJOR',['../version_8h.html#a1a53b724b6de666faa8a9e0d06d1055f',1,'version.h']]],

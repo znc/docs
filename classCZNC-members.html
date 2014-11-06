@@ -133,6 +133,7 @@ This is the complete list of members for <a class="el" href="classCZNC.html">CZN
   <tr class="memlist"><td><a class="el" href="classCZNC.html#a0f5077bfeebc05494c58cc199db3ff47">GetConnectDelay</a>() const </td><td><a class="el" href="classCZNC.html">CZNC</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCZNC.html#a8563f1feacb931f1572ea37675e39805">GetConnectionQueue</a>()</td><td><a class="el" href="classCZNC.html">CZNC</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCZNC.html#a98fbf66b9299c1ca635e9e1f26f73e30">GetCurPath</a>() const </td><td><a class="el" href="classCZNC.html">CZNC</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCZNC.html#a56d1656c4b9fb895762a284a4cf8ad00">GetDisabledSSLProtocols</a>() const </td><td><a class="el" href="classCZNC.html">CZNC</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCZNC.html#ad3ac4e4c4c0312991abccd6fa9628639">GetHomePath</a>() const </td><td><a class="el" href="classCZNC.html">CZNC</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCZNC.html#a39860dbb247acb4d8940ba0961cfe6b3">GetListeners</a>() const </td><td><a class="el" href="classCZNC.html">CZNC</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCZNC.html#a381caa7205b21e33ffc70f2bb0499cd1">GetManager</a>()</td><td><a class="el" href="classCZNC.html">CZNC</a></td><td><code> [inline]</code></td></tr>
@@ -176,11 +177,13 @@ This is the complete list of members for <a class="el" href="classCZNC.html">CZN
   <tr class="memlist"><td><a class="el" href="classCZNC.html#a0fa2332836ff474f08355cc8b2002302">m_sSkinName</a></td><td><a class="el" href="classCZNC.html">CZNC</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCZNC.html#ab2c0b3d47c1f1ef777c330c304a64dd3">m_sSSLCertFile</a></td><td><a class="el" href="classCZNC.html">CZNC</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCZNC.html#a713bc1c6831f78d839436943ee2a55d9">m_sSSLCiphers</a></td><td><a class="el" href="classCZNC.html">CZNC</a></td><td><code> [protected]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCZNC.html#a68980526cc0a63bc397c003206bae79f">m_sSSLProtocols</a></td><td><a class="el" href="classCZNC.html">CZNC</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCZNC.html#a23003acd39148cc03a18abc14c5f05d2">m_sStatusPrefix</a></td><td><a class="el" href="classCZNC.html">CZNC</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCZNC.html#a25b76eec73ae75031aa61d31188944ca">m_sZNCPath</a></td><td><a class="el" href="classCZNC.html">CZNC</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCZNC.html#a5442e43d135b1731061ab967ebfa12cf">m_TimeStarted</a></td><td><a class="el" href="classCZNC.html">CZNC</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCZNC.html#aae7722aeddcc00996fcd2424d8e0f555">m_uBytesRead</a></td><td><a class="el" href="classCZNC.html">CZNC</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCZNC.html#afbd7c00bcfb2a0d802065455c1d0fc9f">m_uBytesWritten</a></td><td><a class="el" href="classCZNC.html">CZNC</a></td><td><code> [protected]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCZNC.html#a0d2b0ff0fedb95b367ac133ed9706c1c">m_uDisabledSSLProtocols</a></td><td><a class="el" href="classCZNC.html">CZNC</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCZNC.html#a37f66d036e671ef914430c8e3217df2f">m_uiAnonIPLimit</a></td><td><a class="el" href="classCZNC.html">CZNC</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCZNC.html#a59803f38f09bbdf31753849c452a9e79">m_uiConnectDelay</a></td><td><a class="el" href="classCZNC.html">CZNC</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCZNC.html#a0cdab8cadfd599304fad46542f9efa84">m_uiConnectPaused</a></td><td><a class="el" href="classCZNC.html">CZNC</a></td><td><code> [protected]</code></td></tr>
@@ -233,7 +236,7 @@ This is the complete list of members for <a class="el" href="classCZNC.html">CZN
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Nov 6 2014 22:48:18 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Nov 6 2014 23:22:45 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
