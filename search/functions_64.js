@@ -33,7 +33,7 @@ var searchData=
   ['disablemonitor',['DisableMonitor',['../classCSMonitorFD.html#a4c34edbe1c49b818671d1b9311beb97b',1,'CSMonitorFD']]],
   ['disablereadline',['DisableReadLine',['../classCsock.html#adfee091e6a74b7ad8db05171465412c0',1,'Csock']]],
   ['disablesslprotocols',['DisableSSLProtocols',['../classCsock.html#a0256789d876431c52f9e2e905440319f',1,'Csock']]],
-  ['disconnected',['Disconnected',['../classCClient.html#a45a253d43ced7a020b7f3814d7f0d597',1,'CClient::Disconnected()'],['../classCsock.html#aea4ef32ddae3f80d3d9296f52bd51431',1,'Csock::Disconnected()'],['../classCIRCSock.html#ab633f090638cf7bc010cef9a17031671',1,'CIRCSock::Disconnected()'],['../classCPerlSocket.html#a4fc6479a5f35ecf8b9ffc41d68fe3fdc',1,'CPerlSocket::Disconnected()'],['../classCPySocket.html#a4a145fe73a06f8e1039215b28e6dfceb',1,'CPySocket::Disconnected()']]],
+  ['disconnected',['Disconnected',['../classCClient.html#a45a253d43ced7a020b7f3814d7f0d597',1,'CClient::Disconnected()'],['../classCsock.html#aea4ef32ddae3f80d3d9296f52bd51431',1,'Csock::Disconnected()'],['../classCIRCSock.html#ab633f090638cf7bc010cef9a17031671',1,'CIRCSock::Disconnected()'],['../classCPerlSocket.html#a07ccc67f368845b69d365fd75051c86f',1,'CPerlSocket::Disconnected()'],['../classCPySocket.html#ae3a1765d9522ad5d15a9ba91b0f8a250',1,'CPySocket::Disconnected()']]],
   ['dnslookup',['DNSLookup',['../classCsock.html#a765aca4259f116588f591762286905f4',1,'Csock']]],
   ['dumpconfig',['DumpConfig',['../classCZNC.html#a94777b3548358a6b32a9512993d2bbc3',1,'CZNC']]],
   ['dynamicselectloop',['DynamicSelectLoop',['../classCSocketManager.html#aa5259aaf7a27ee048eb2a6480f45c387',1,'CSocketManager']]]

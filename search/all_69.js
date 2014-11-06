@@ -31,7 +31,7 @@ var searchData=
   ['iscapenabled',['IsCapEnabled',['../classCClient.html#a3098078b005655df1b30c27107cd825d',1,'CClient']]],
   ['ischan',['IsChan',['../classCIRCNetwork.html#a496f09c3282f684015ebda2316a7abe1',1,'CIRCNetwork']]],
   ['ischr',['IsChr',['../classCFile.html#ac488314ef8e47803bdf86e7eefbd3756',1,'CFile::IsChr(const CString &amp;sLongName, bool bUseLstat=false)'],['../classCFile.html#a1e326aaea2b42be07a5dc5adaf6bc989',1,'CFile::IsChr(bool bUseLstat=false) const ']]],
-  ['isclientcapsupported',['IsClientCapSupported',['../classCModule.html#ad3d0aa8a65decbf6ae65dd09e9612d18',1,'CModule::IsClientCapSupported()'],['../classCModules.html#a41ebd2ca878a44c5efc69ce6c06e39b4',1,'CModules::IsClientCapSupported()'],['../classCPyModule.html#a1cb7a326af78511d0b5a863514cff85f',1,'CPyModule::IsClientCapSupported()']]],
+  ['isclientcapsupported',['IsClientCapSupported',['../classCModule.html#ad3d0aa8a65decbf6ae65dd09e9612d18',1,'CModule::IsClientCapSupported()'],['../classCModules.html#a41ebd2ca878a44c5efc69ce6c06e39b4',1,'CModules::IsClientCapSupported()'],['../classCPyModule.html#a03a8d0e232e60ee22a3397394851c8af',1,'CPyModule::IsClientCapSupported()']]],
   ['isclosed',['IsClosed',['../classCsock.html#a11af52e0b49707c84438ec73533bb094',1,'Csock']]],
   ['isconnected',['IsConnected',['../classCsock.html#a2365716c0ba19168718d3b2b9a3417ee',1,'Csock']]],
   ['isdescending',['IsDescending',['../classCDir.html#aab5cf2ade15e158b19d632290d66151c',1,'CDir']]],

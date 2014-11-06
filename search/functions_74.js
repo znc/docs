@@ -5,7 +5,7 @@ var searchData=
   ['tfd_5fisset',['TFD_ISSET',['../Csocket_8h.html#af91be9257227987d925a6a94f374a159',1,'Csocket.h']]],
   ['tfd_5fset',['TFD_SET',['../Csocket_8h.html#aee53fc7af5f16bf981e905376f1b4a03',1,'Csocket.h']]],
   ['tfd_5fzero',['TFD_ZERO',['../Csocket_8h.html#a014d92d71a823e32f770ce32065003fc',1,'Csocket.h']]],
-  ['timeout',['Timeout',['../classCClient.html#af08c3caca437453b513ec9aa45bf0841',1,'CClient::Timeout()'],['../classCsock.html#ac32577c8dac5ec04fdbdf22ff813a874',1,'Csock::Timeout()'],['../classCIRCSock.html#a9ad0428beb9047f9dfaedddcbf7226e6',1,'CIRCSock::Timeout()'],['../classCPerlSocket.html#a7a2f14c187bf68879283ed2e50eb5102',1,'CPerlSocket::Timeout()'],['../classCPySocket.html#a7ff57dc35e9234334549ce0381b4352a',1,'CPySocket::Timeout()']]],
+  ['timeout',['Timeout',['../classCClient.html#af08c3caca437453b513ec9aa45bf0841',1,'CClient::Timeout()'],['../classCsock.html#ac32577c8dac5ec04fdbdf22ff813a874',1,'Csock::Timeout()'],['../classCIRCSock.html#a9ad0428beb9047f9dfaedddcbf7226e6',1,'CIRCSock::Timeout()'],['../classCPerlSocket.html#ac9ed859a69d966c580f2cef442718edd',1,'CPerlSocket::Timeout()'],['../classCPySocket.html#a42b0c747f4ad635b989b02bb40932cbd',1,'CPySocket::Timeout()']]],
   ['timestarted',['TimeStarted',['../classCZNC.html#aa304f58b58088d44a7fc663eea8f60f7',1,'CZNC']]],
   ['tmodinfo',['TModInfo',['../Modules_8h.html#a5d7c3884ce014df7cd13a5a90347ecf1',1,'Modules.h']]],
   ['tmodload',['TModLoad',['../Modules_8h.html#af904302dd2a4dba2790f07894c670df7',1,'Modules.h']]],

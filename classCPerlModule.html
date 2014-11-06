@@ -125,140 +125,140 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#ae761cc022a76a578037111407df44eff">CPerlModule</a> (<a class="el" href="classCUser.html">CUser</a> *pUser, <a class="el" href="classCIRCNetwork.html">CIRCNetwork</a> *pNetwork, const <a class="el" href="classCString.html">CString</a> &amp;sModName, const <a class="el" href="classCString.html">CString</a> &amp;sDataPath, SV *perlObj)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">SV *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a8d1e5131568a0384584557f005ce907a">GetPerlObj</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#aede6d0431b69b07e36b0de2e6c05769d">OnBoot</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This module hook is called during ZNC startup.  <a href="#aede6d0431b69b07e36b0de2e6c05769d"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#af1a527a36de5cd83db4a7379f75c6ca6">WebRequiresLogin</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Modules which can only be used with an active user session have to return true here.  <a href="#af1a527a36de5cd83db4a7379f75c6ca6"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#aaf9740c532cbbd2d1ba31895d696f4c4">WebRequiresAdmin</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if this module should only be usable for admins on the web.  <a href="#aaf9740c532cbbd2d1ba31895d696f4c4"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#aaf423b377f94b3046079fc6094ee30a4">GetWebMenuTitle</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the title of the module's section in the web interface's side bar.  <a href="#aaf423b377f94b3046079fc6094ee30a4"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a89bc16bd7f04c20c5da616de14a4203a">OnWebPreRequest</a> (<a class="el" href="classCWebSock.html">CWebSock</a> &amp;WebSock, const <a class="el" href="classCString.html">CString</a> &amp;sPageName)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">For WebMods: Called before the list of registered SubPages will be checked.  <a href="#a89bc16bd7f04c20c5da616de14a4203a"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a626d268b890a1c0c9f80b708da33a1eb">OnWebRequest</a> (<a class="el" href="classCWebSock.html">CWebSock</a> &amp;WebSock, const <a class="el" href="classCString.html">CString</a> &amp;sPageName, <a class="el" href="classCTemplate.html">CTemplate</a> &amp;Tmpl)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">If OnWebPreRequest returned false, and the RequiresAdmin/IsAdmin check has been passed, this method will be called with the page name.  <a href="#a626d268b890a1c0c9f80b708da33a1eb"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="WebModules_8h.html#ab585ce11740587b08deb0da25de3c2d6">VWebSubPages</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a0e721d31f34ca374622d48997c36e285">GetSubPages</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a list of all registered SubPages.  <a href="#a0e721d31f34ca374622d48997c36e285"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a6909e73528d3c7ffbd97bf83ab730b3c">OnPreRehash</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called just before znc.conf is rehashed.  <a href="#a6909e73528d3c7ffbd97bf83ab730b3c"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#ade870bb0997223150c17cca8a4ec3f45">OnPostRehash</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This module hook is called after a <em>successful</em> rehash.  <a href="#ade870bb0997223150c17cca8a4ec3f45"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#ac73835d5e1070206c659d40b2cd186a4">OnIRCDisconnected</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This module hook is called when a user gets disconnected from IRC.  <a href="#ac73835d5e1070206c659d40b2cd186a4"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a1c231ccc05770d9cc10b4b95078745a0">OnIRCConnected</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This module hook is called after a successful login to IRC.  <a href="#a1c231ccc05770d9cc10b4b95078745a0"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a2e2d0cb662963b2f94de0a496b3b9b43">OnIRCConnecting</a> (<a class="el" href="classCIRCSock.html">CIRCSock</a> *pIRCSock)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This module hook is called just before ZNC tries to establish a connection to an IRC server.  <a href="#a2e2d0cb662963b2f94de0a496b3b9b43"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#aaff0283dcfc78920718b6fa9472fe82a">OnIRCConnectionError</a> (<a class="el" href="classCIRCSock.html">CIRCSock</a> *pIRCSock)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This module hook is called when a <a class="el" href="classCIRCSock.html">CIRCSock</a> fails to connect or a module returned HALTCORE from OnIRCConnecting.  <a href="#aaff0283dcfc78920718b6fa9472fe82a"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#af71181c5f12e00ca125cb21c26002bbf">OnIRCRegistration</a> (<a class="el" href="classCString.html">CString</a> &amp;sPass, <a class="el" href="classCString.html">CString</a> &amp;sNick, <a class="el" href="classCString.html">CString</a> &amp;sIdent, <a class="el" href="classCString.html">CString</a> &amp;sRealName)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This module hook is called before loging in to the IRC server.  <a href="#af71181c5f12e00ca125cb21c26002bbf"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a3f6727fe01b630ba3393c0ea9257b8a8">OnBroadcast</a> (<a class="el" href="classCString.html">CString</a> &amp;sMessage)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This module hook is called when a message is broadcasted to all users.  <a href="#a3f6727fe01b630ba3393c0ea9257b8a8"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a22006e91c3c682a366208752a988d1c4">OnChanPermission2</a> (const <a class="el" href="classCNick.html">CNick</a> *pOpNick, const <a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCChan.html">CChan</a> &amp;Channel, unsigned char uMode, bool bAdded, bool bNoChange)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This module hook is called when a user mode on a channel changes.  <a href="#a22006e91c3c682a366208752a988d1c4"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a4b5e0e32b930ba3b55971459a5fa7596">OnOp2</a> (const <a class="el" href="classCNick.html">CNick</a> *pOpNick, const <a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCChan.html">CChan</a> &amp;Channel, bool bNoChange)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a nick is opped on a channel.  <a href="#a4b5e0e32b930ba3b55971459a5fa7596"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a0509aa25a1efa0795624a34049fabcfc">OnDeop2</a> (const <a class="el" href="classCNick.html">CNick</a> *pOpNick, const <a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCChan.html">CChan</a> &amp;Channel, bool bNoChange)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a nick is deopped on a channel.  <a href="#a0509aa25a1efa0795624a34049fabcfc"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#aa09b2161c2a640a52b3e7565a2ac3f31">OnVoice2</a> (const <a class="el" href="classCNick.html">CNick</a> *pOpNick, const <a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCChan.html">CChan</a> &amp;Channel, bool bNoChange)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a nick is voiced on a channel.  <a href="#aa09b2161c2a640a52b3e7565a2ac3f31"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a1b875197ad5f2286bc126301eb558750">OnDevoice2</a> (const <a class="el" href="classCNick.html">CNick</a> *pOpNick, const <a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCChan.html">CChan</a> &amp;Channel, bool bNoChange)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a nick is devoiced on a channel.  <a href="#a1b875197ad5f2286bc126301eb558750"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#acc021d1aa6e491fc166f7158b5d8aa80">OnMode2</a> (const <a class="el" href="classCNick.html">CNick</a> *pOpNick, <a class="el" href="classCChan.html">CChan</a> &amp;Channel, char uMode, const <a class="el" href="classCString.html">CString</a> &amp;sArg, bool bAdded, bool bNoChange)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called on an individual channel mode change.  <a href="#acc021d1aa6e491fc166f7158b5d8aa80"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a9acab27918b3e1b96f6343ab5f696060">OnRawMode2</a> (const <a class="el" href="classCNick.html">CNick</a> *pOpNick, <a class="el" href="classCChan.html">CChan</a> &amp;Channel, const <a class="el" href="classCString.html">CString</a> &amp;sModes, const <a class="el" href="classCString.html">CString</a> &amp;sArgs)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called on any channel mode change.  <a href="#a9acab27918b3e1b96f6343ab5f696060"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a1a9b34f54652e4c58b1015a31c5bd757">OnRaw</a> (<a class="el" href="classCString.html">CString</a> &amp;sLine)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called on any raw IRC line received from the <em>IRC server</em>.  <a href="#a1a9b34f54652e4c58b1015a31c5bd757"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#abb54936736e8c94c65406caa06b8f185">OnStatusCommand</a> (<a class="el" href="classCString.html">CString</a> &amp;sCommand)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a command to *status is sent.  <a href="#abb54936736e8c94c65406caa06b8f185"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#adf2d96550ba258a77f91215647e2b0a4">OnModCommand</a> (const <a class="el" href="classCString.html">CString</a> &amp;sCommand)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a command to your module is sent, e.g.  <a href="#adf2d96550ba258a77f91215647e2b0a4"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a0516e70afc35b8e958699d29ca07ff06">OnModNotice</a> (const <a class="el" href="classCString.html">CString</a> &amp;sMessage)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a your module nick was sent a notice.  <a href="#a0516e70afc35b8e958699d29ca07ff06"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a437da60afada2e088422b42705123879">OnModCTCP</a> (const <a class="el" href="classCString.html">CString</a> &amp;sMessage)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when your module nick was sent a CTCP message.  <a href="#a437da60afada2e088422b42705123879"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#aba8175ee876013edbe0540e9b83f488e">OnQuit</a> (const <a class="el" href="classCNick.html">CNick</a> &amp;Nick, const <a class="el" href="classCString.html">CString</a> &amp;sMessage, const std::vector&lt; <a class="el" href="classCChan.html">CChan</a> * &gt; &amp;vChans)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a nick quit from IRC.  <a href="#aba8175ee876013edbe0540e9b83f488e"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a40f02781a0b90720a62e1e633f0a34f7">OnNick</a> (const <a class="el" href="classCNick.html">CNick</a> &amp;Nick, const <a class="el" href="classCString.html">CString</a> &amp;sNewNick, const std::vector&lt; <a class="el" href="classCChan.html">CChan</a> * &gt; &amp;vChans)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a nickname change occurs.  <a href="#a40f02781a0b90720a62e1e633f0a34f7"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a4a2d9b2f5c3737083581c267c5b99401">OnKick</a> (const <a class="el" href="classCNick.html">CNick</a> &amp;OpNick, const <a class="el" href="classCString.html">CString</a> &amp;sKickedNick, <a class="el" href="classCChan.html">CChan</a> &amp;Channel, const <a class="el" href="classCString.html">CString</a> &amp;sMessage)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a nick is kicked from a channel.  <a href="#a4a2d9b2f5c3737083581c267c5b99401"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#ad6009d35adbc36261e163c099ee67e2f">OnJoining</a> (<a class="el" href="classCChan.html">CChan</a> &amp;Channel)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This module hook is called just before ZNC tries to join an IRC channel.  <a href="#ad6009d35adbc36261e163c099ee67e2f"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#ac7d9ca8c8e9be5b347de1d68828ae295">OnJoin</a> (const <a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCChan.html">CChan</a> &amp;Channel)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a nick joins a channel.  <a href="#ac7d9ca8c8e9be5b347de1d68828ae295"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#af27a3b99f2d4858c9a885cac46584aa5">OnPart</a> (const <a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCChan.html">CChan</a> &amp;Channel, const <a class="el" href="classCString.html">CString</a> &amp;sMessage)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a nick parts a channel.  <a href="#af27a3b99f2d4858c9a885cac46584aa5"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a206a76b2efab26ea670c5629715a0b33">OnChanBufferStarting</a> (<a class="el" href="classCChan.html">CChan</a> &amp;Chan, <a class="el" href="classCClient.html">CClient</a> &amp;Client)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called before a channel buffer is played back to a client.  <a href="#a206a76b2efab26ea670c5629715a0b33"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a1d92ff0ad09e204d134e3b4fcb3ee74b">OnChanBufferEnding</a> (<a class="el" href="classCChan.html">CChan</a> &amp;Chan, <a class="el" href="classCClient.html">CClient</a> &amp;Client)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called after a channel buffer was played back to a client.  <a href="#a1d92ff0ad09e204d134e3b4fcb3ee74b"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a364a929063b37f8687e9bd2793e1f845">OnChanBufferPlayLine</a> (<a class="el" href="classCChan.html">CChan</a> &amp;Chan, <a class="el" href="classCClient.html">CClient</a> &amp;Client, <a class="el" href="classCString.html">CString</a> &amp;sLine)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when for each line during a channel's buffer play back.  <a href="#a364a929063b37f8687e9bd2793e1f845"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a7479678d49ebe7c5476ca2db98c2d7cf">OnPrivBufferPlayLine</a> (<a class="el" href="classCClient.html">CClient</a> &amp;Client, <a class="el" href="classCString.html">CString</a> &amp;sLine)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a line from the query buffer is played back.  <a href="#a7479678d49ebe7c5476ca2db98c2d7cf"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#aca622796f531fbcf57c48245a5ef0a50">OnClientLogin</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a client successfully logged in to ZNC.  <a href="#aca622796f531fbcf57c48245a5ef0a50"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a53a7469a84cbac9dd54d683d78d40a2d">OnClientDisconnect</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a client disconnected from ZNC.  <a href="#a53a7469a84cbac9dd54d683d78d40a2d"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a50bece90f112a95f73b2808486a9b9f5">OnUserRaw</a> (<a class="el" href="classCString.html">CString</a> &amp;sLine)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This module hook is called when a client sends a raw traffic line to ZNC.  <a href="#a50bece90f112a95f73b2808486a9b9f5"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#ae45eff0e1a2c082087615ed3d72368b7">OnUserCTCPReply</a> (<a class="el" href="classCString.html">CString</a> &amp;sTarget, <a class="el" href="classCString.html">CString</a> &amp;sMessage)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This module hook is called when a client sends a CTCP reply.  <a href="#ae45eff0e1a2c082087615ed3d72368b7"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a0f83f2de841b85bac4a8e908dd5fa71a">OnUserCTCP</a> (<a class="el" href="classCString.html">CString</a> &amp;sTarget, <a class="el" href="classCString.html">CString</a> &amp;sMessage)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This module hook is called when a client sends a CTCP request.  <a href="#a0f83f2de841b85bac4a8e908dd5fa71a"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a05b498d4e662c582fc5529521675e6be">OnUserAction</a> (<a class="el" href="classCString.html">CString</a> &amp;sTarget, <a class="el" href="classCString.html">CString</a> &amp;sMessage)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a client sends a CTCP ACTION request ("/me").  <a href="#a05b498d4e662c582fc5529521675e6be"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a5f5ce2e2adf7bf3597bac17e25148636">OnUserMsg</a> (<a class="el" href="classCString.html">CString</a> &amp;sTarget, <a class="el" href="classCString.html">CString</a> &amp;sMessage)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This module hook is called when a user sends a normal IRC message.  <a href="#a5f5ce2e2adf7bf3597bac17e25148636"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#afaf43ff78efdaa05fbfc96a30bc16f4b">OnUserNotice</a> (<a class="el" href="classCString.html">CString</a> &amp;sTarget, <a class="el" href="classCString.html">CString</a> &amp;sMessage)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This module hook is called when a user sends a notice message.  <a href="#afaf43ff78efdaa05fbfc96a30bc16f4b"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a26be7cf647e7a6c5e1dfe7c07e77ebaf">OnUserJoin</a> (<a class="el" href="classCString.html">CString</a> &amp;sChannel, <a class="el" href="classCString.html">CString</a> &amp;sKey)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This hooks is called when a user sends a JOIN message.  <a href="#a26be7cf647e7a6c5e1dfe7c07e77ebaf"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#aa991e67df21124a25ea346998a9f602e">OnUserPart</a> (<a class="el" href="classCString.html">CString</a> &amp;sChannel, <a class="el" href="classCString.html">CString</a> &amp;sMessage)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This hooks is called when a user sends a PART message.  <a href="#aa991e67df21124a25ea346998a9f602e"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a85c4a44124a6291e53882ebafbcae7db">OnUserTopic</a> (<a class="el" href="classCString.html">CString</a> &amp;sChannel, <a class="el" href="classCString.html">CString</a> &amp;sTopic)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This module hook is called when a user wants to change a channel topic.  <a href="#a85c4a44124a6291e53882ebafbcae7db"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a6e919ca532b065312107b7cefb110af6">OnUserTopicRequest</a> (<a class="el" href="classCString.html">CString</a> &amp;sChannel)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This hook is called when a user requests a channel's topic.  <a href="#a6e919ca532b065312107b7cefb110af6"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#adf546a7b8b792723978341733e057cec">OnCTCPReply</a> (<a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCString.html">CString</a> &amp;sMessage)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when we receive a CTCP reply <em>from IRC</em>.  <a href="#adf546a7b8b792723978341733e057cec"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#ab262aff3566190c2377556f442eb19dc">OnPrivCTCP</a> (<a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCString.html">CString</a> &amp;sMessage)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when we receive a private CTCP request <em>from IRC</em>.  <a href="#ab262aff3566190c2377556f442eb19dc"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a95fe3cccde850f5145a92bf5a8a26394">OnChanCTCP</a> (<a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCChan.html">CChan</a> &amp;Channel, <a class="el" href="classCString.html">CString</a> &amp;sMessage)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when we receive a channel CTCP request <em>from IRC</em>.  <a href="#a95fe3cccde850f5145a92bf5a8a26394"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a5ed5ab7b51e5764a0395c29295d870d2">OnPrivAction</a> (<a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCString.html">CString</a> &amp;sMessage)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when we receive a private CTCP ACTION ("/me" in query) <em>from IRC</em>.  <a href="#a5ed5ab7b51e5764a0395c29295d870d2"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a901cff59a8831798bac2133c381c1ed5">OnChanAction</a> (<a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCChan.html">CChan</a> &amp;Channel, <a class="el" href="classCString.html">CString</a> &amp;sMessage)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when we receive a channel CTCP ACTION ("/me" in a channel) <em>from IRC</em>.  <a href="#a901cff59a8831798bac2133c381c1ed5"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#aaf94ba93f0799a4833a87ac60a697dc9">OnPrivMsg</a> (<a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCString.html">CString</a> &amp;sMessage)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when we receive a private message <em>from IRC</em>.  <a href="#aaf94ba93f0799a4833a87ac60a697dc9"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#ae00854df079b67c533fd38f380232baa">OnChanMsg</a> (<a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCChan.html">CChan</a> &amp;Channel, <a class="el" href="classCString.html">CString</a> &amp;sMessage)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when we receive a channel message <em>from IRC</em>.  <a href="#ae00854df079b67c533fd38f380232baa"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#aaa33b0ad451209f2633dde330266e55b">OnPrivNotice</a> (<a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCString.html">CString</a> &amp;sMessage)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when we receive a private notice.  <a href="#aaa33b0ad451209f2633dde330266e55b"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a552df2568efef55d64d987eb9dd7301a">OnChanNotice</a> (<a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCChan.html">CChan</a> &amp;Channel, <a class="el" href="classCString.html">CString</a> &amp;sMessage)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when we receive a channel notice.  <a href="#a552df2568efef55d64d987eb9dd7301a"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a294cb66f709e294535e13809854515d2">OnTopic</a> (<a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCChan.html">CChan</a> &amp;Channel, <a class="el" href="classCString.html">CString</a> &amp;sTopic)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when we receive a channel topic change <em>from IRC</em>.  <a href="#a294cb66f709e294535e13809854515d2"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#af39659e1ebcc306530b705b18b99babc">OnServerCapAvailable</a> (const <a class="el" href="classCString.html">CString</a> &amp;sCap)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called for every CAP received via CAP LS from server.  <a href="#af39659e1ebcc306530b705b18b99babc"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a1d7938d3abb0e044ad235c0c13c493b1">OnServerCapResult</a> (const <a class="el" href="classCString.html">CString</a> &amp;sCap, bool bSuccess)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called for every CAP accepted or rejected by server (with CAP ACK or CAP NAK after our CAP REQ).  <a href="#a1d7938d3abb0e044ad235c0c13c493b1"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a5f6965adb91827f7567b38ffd960157d">OnTimerAutoJoin</a> (<a class="el" href="classCChan.html">CChan</a> &amp;Channel)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This module hook is called just before ZNC tries to join a channel by itself because it's in the config but wasn't joined yet.  <a href="#a5f6965adb91827f7567b38ffd960157d"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a691b52e7f45e58c42414a1770a5c7d15">OnEmbeddedWebRequest</a> (<a class="el" href="classCWebSock.html">CWebSock</a> &amp;, const <a class="el" href="classCString.html">CString</a> &amp;, <a class="el" href="classCTemplate.html">CTemplate</a> &amp;)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Using this hook, module can embed web stuff directly to different places.  <a href="#a691b52e7f45e58c42414a1770a5c7d15"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#abe062c8bceaaa685ea72ed33f8803268">OnAddNetwork</a> (<a class="el" href="classCIRCNetwork.html">CIRCNetwork</a> &amp;Network, <a class="el" href="classCString.html">CString</a> &amp;sErrorRet)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This module hook is called when a network is being added.  <a href="#abe062c8bceaaa685ea72ed33f8803268"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a574c1519fde096881550aa494d56a1ba">OnDeleteNetwork</a> (<a class="el" href="classCIRCNetwork.html">CIRCNetwork</a> &amp;Network)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This module hook is called when a network is deleted.  <a href="#a574c1519fde096881550aa494d56a1ba"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a93b9c8e77468d0284de2e7ac08f6bf20">OnSendToClient</a> (<a class="el" href="classCString.html">CString</a> &amp;sLine, <a class="el" href="classCClient.html">CClient</a> &amp;Client)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when ZNC sends a raw traffic line to a client.  <a href="#a93b9c8e77468d0284de2e7ac08f6bf20"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#afb08ed34365f2f4360739e9d43f0dd7b">OnSendToIRC</a> (<a class="el" href="classCString.html">CString</a> &amp;sLine)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when ZNC sends a raw traffic line to the IRC server.  <a href="#afb08ed34365f2f4360739e9d43f0dd7b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a3f93e565f6ee2a71c926d689f2032938">OnBoot</a> () override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This module hook is called during ZNC startup.  <a href="#a3f93e565f6ee2a71c926d689f2032938"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a703ad3fa0556574eb636e61e3c718581">WebRequiresLogin</a> () override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Modules which can only be used with an active user session have to return true here.  <a href="#a703ad3fa0556574eb636e61e3c718581"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#aed3eefa97e6ec795cb9b4282ab66ec28">WebRequiresAdmin</a> () override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if this module should only be usable for admins on the web.  <a href="#aed3eefa97e6ec795cb9b4282ab66ec28"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a23802cd386d148d2a353ca7846a35172">GetWebMenuTitle</a> () override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the title of the module's section in the web interface's side bar.  <a href="#a23802cd386d148d2a353ca7846a35172"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#aeaeb032cd627393ec6c7cc5aa09557f4">OnWebPreRequest</a> (<a class="el" href="classCWebSock.html">CWebSock</a> &amp;WebSock, const <a class="el" href="classCString.html">CString</a> &amp;sPageName) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">For WebMods: Called before the list of registered SubPages will be checked.  <a href="#aeaeb032cd627393ec6c7cc5aa09557f4"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a66560a01bd59bb7650a17e614c2de47e">OnWebRequest</a> (<a class="el" href="classCWebSock.html">CWebSock</a> &amp;WebSock, const <a class="el" href="classCString.html">CString</a> &amp;sPageName, <a class="el" href="classCTemplate.html">CTemplate</a> &amp;Tmpl) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">If OnWebPreRequest returned false, and the RequiresAdmin/IsAdmin check has been passed, this method will be called with the page name.  <a href="#a66560a01bd59bb7650a17e614c2de47e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="WebModules_8h.html#ab585ce11740587b08deb0da25de3c2d6">VWebSubPages</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#ada019b00ce8c8666f40ad5f729d0eedb">GetSubPages</a> () override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a list of all registered SubPages.  <a href="#ada019b00ce8c8666f40ad5f729d0eedb"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a1f48285ec5942df1738a877a1391fb11">OnPreRehash</a> () override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called just before znc.conf is rehashed.  <a href="#a1f48285ec5942df1738a877a1391fb11"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a6494a2bb057a76de86addc215125a62b">OnPostRehash</a> () override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This module hook is called after a <em>successful</em> rehash.  <a href="#a6494a2bb057a76de86addc215125a62b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#ad5a53f76746f2e22e95ef9d489b6b93d">OnIRCDisconnected</a> () override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This module hook is called when a user gets disconnected from IRC.  <a href="#ad5a53f76746f2e22e95ef9d489b6b93d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a7d5fc16e1794d04af39951f2adc079a8">OnIRCConnected</a> () override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This module hook is called after a successful login to IRC.  <a href="#a7d5fc16e1794d04af39951f2adc079a8"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#ae5a4541928ada8c775c2144125c4910c">OnIRCConnecting</a> (<a class="el" href="classCIRCSock.html">CIRCSock</a> *pIRCSock) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This module hook is called just before ZNC tries to establish a connection to an IRC server.  <a href="#ae5a4541928ada8c775c2144125c4910c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#ab03dc2d42c959df6638546f176251d61">OnIRCConnectionError</a> (<a class="el" href="classCIRCSock.html">CIRCSock</a> *pIRCSock) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This module hook is called when a <a class="el" href="classCIRCSock.html">CIRCSock</a> fails to connect or a module returned HALTCORE from OnIRCConnecting.  <a href="#ab03dc2d42c959df6638546f176251d61"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#ace58c7f5d08695dbd94a07336ba233c7">OnIRCRegistration</a> (<a class="el" href="classCString.html">CString</a> &amp;sPass, <a class="el" href="classCString.html">CString</a> &amp;sNick, <a class="el" href="classCString.html">CString</a> &amp;sIdent, <a class="el" href="classCString.html">CString</a> &amp;sRealName) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This module hook is called before loging in to the IRC server.  <a href="#ace58c7f5d08695dbd94a07336ba233c7"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#ad689dff83dc54649ca3c44faff711c4c">OnBroadcast</a> (<a class="el" href="classCString.html">CString</a> &amp;sMessage) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This module hook is called when a message is broadcasted to all users.  <a href="#ad689dff83dc54649ca3c44faff711c4c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a0f9017d959dfcc92cfb86a6f77487f03">OnChanPermission2</a> (const <a class="el" href="classCNick.html">CNick</a> *pOpNick, const <a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCChan.html">CChan</a> &amp;Channel, unsigned char uMode, bool bAdded, bool bNoChange) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This module hook is called when a user mode on a channel changes.  <a href="#a0f9017d959dfcc92cfb86a6f77487f03"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#af006f7ae8104f15ae7e9837e937c7c98">OnOp2</a> (const <a class="el" href="classCNick.html">CNick</a> *pOpNick, const <a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCChan.html">CChan</a> &amp;Channel, bool bNoChange) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a nick is opped on a channel.  <a href="#af006f7ae8104f15ae7e9837e937c7c98"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#afaed18adaf9e52419a0ca1351cf16b04">OnDeop2</a> (const <a class="el" href="classCNick.html">CNick</a> *pOpNick, const <a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCChan.html">CChan</a> &amp;Channel, bool bNoChange) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a nick is deopped on a channel.  <a href="#afaed18adaf9e52419a0ca1351cf16b04"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a2909766317bdaa7bd958954a77372ee7">OnVoice2</a> (const <a class="el" href="classCNick.html">CNick</a> *pOpNick, const <a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCChan.html">CChan</a> &amp;Channel, bool bNoChange) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a nick is voiced on a channel.  <a href="#a2909766317bdaa7bd958954a77372ee7"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a26a322004fd592df95c05f43ffe7f16e">OnDevoice2</a> (const <a class="el" href="classCNick.html">CNick</a> *pOpNick, const <a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCChan.html">CChan</a> &amp;Channel, bool bNoChange) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a nick is devoiced on a channel.  <a href="#a26a322004fd592df95c05f43ffe7f16e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a94111aed5d8b49f95e23956f345c0e00">OnMode2</a> (const <a class="el" href="classCNick.html">CNick</a> *pOpNick, <a class="el" href="classCChan.html">CChan</a> &amp;Channel, char uMode, const <a class="el" href="classCString.html">CString</a> &amp;sArg, bool bAdded, bool bNoChange) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called on an individual channel mode change.  <a href="#a94111aed5d8b49f95e23956f345c0e00"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a313a3c9050921e863965dcc8fefdb4d1">OnRawMode2</a> (const <a class="el" href="classCNick.html">CNick</a> *pOpNick, <a class="el" href="classCChan.html">CChan</a> &amp;Channel, const <a class="el" href="classCString.html">CString</a> &amp;sModes, const <a class="el" href="classCString.html">CString</a> &amp;sArgs) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called on any channel mode change.  <a href="#a313a3c9050921e863965dcc8fefdb4d1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#ac7bab3c0448acf298327a001ed1807a5">OnRaw</a> (<a class="el" href="classCString.html">CString</a> &amp;sLine) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called on any raw IRC line received from the <em>IRC server</em>.  <a href="#ac7bab3c0448acf298327a001ed1807a5"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#adef29581c51a0c7b53bc165436f973d8">OnStatusCommand</a> (<a class="el" href="classCString.html">CString</a> &amp;sCommand) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a command to *status is sent.  <a href="#adef29581c51a0c7b53bc165436f973d8"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a4121c9b29b3630e610fcf4c4e5b256ac">OnModCommand</a> (const <a class="el" href="classCString.html">CString</a> &amp;sCommand) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a command to your module is sent, e.g.  <a href="#a4121c9b29b3630e610fcf4c4e5b256ac"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a766f246d34bb96fff44238c59ddc1114">OnModNotice</a> (const <a class="el" href="classCString.html">CString</a> &amp;sMessage) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a your module nick was sent a notice.  <a href="#a766f246d34bb96fff44238c59ddc1114"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a3a4a952bfb3b921264b8f8a73317bddd">OnModCTCP</a> (const <a class="el" href="classCString.html">CString</a> &amp;sMessage) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when your module nick was sent a CTCP message.  <a href="#a3a4a952bfb3b921264b8f8a73317bddd"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a21f519b343e6eeffc57981c1cc2059ae">OnQuit</a> (const <a class="el" href="classCNick.html">CNick</a> &amp;Nick, const <a class="el" href="classCString.html">CString</a> &amp;sMessage, const std::vector&lt; <a class="el" href="classCChan.html">CChan</a> * &gt; &amp;vChans) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a nick quit from IRC.  <a href="#a21f519b343e6eeffc57981c1cc2059ae"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a25f097a994e432ac43995573a7ada40f">OnNick</a> (const <a class="el" href="classCNick.html">CNick</a> &amp;Nick, const <a class="el" href="classCString.html">CString</a> &amp;sNewNick, const std::vector&lt; <a class="el" href="classCChan.html">CChan</a> * &gt; &amp;vChans) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a nickname change occurs.  <a href="#a25f097a994e432ac43995573a7ada40f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#abddd7280a62a962940601a9f293fff55">OnKick</a> (const <a class="el" href="classCNick.html">CNick</a> &amp;OpNick, const <a class="el" href="classCString.html">CString</a> &amp;sKickedNick, <a class="el" href="classCChan.html">CChan</a> &amp;Channel, const <a class="el" href="classCString.html">CString</a> &amp;sMessage) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a nick is kicked from a channel.  <a href="#abddd7280a62a962940601a9f293fff55"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#ad732596493d6a98f3e991880a7903d3d">OnJoining</a> (<a class="el" href="classCChan.html">CChan</a> &amp;Channel) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This module hook is called just before ZNC tries to join an IRC channel.  <a href="#ad732596493d6a98f3e991880a7903d3d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#af131728f5caa4047883888ac37417b5b">OnJoin</a> (const <a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCChan.html">CChan</a> &amp;Channel) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a nick joins a channel.  <a href="#af131728f5caa4047883888ac37417b5b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a1cbcc2227a302511af41a12943008235">OnPart</a> (const <a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCChan.html">CChan</a> &amp;Channel, const <a class="el" href="classCString.html">CString</a> &amp;sMessage) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a nick parts a channel.  <a href="#a1cbcc2227a302511af41a12943008235"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a7c557b63c4efa961119b6cf197ff44dd">OnChanBufferStarting</a> (<a class="el" href="classCChan.html">CChan</a> &amp;Chan, <a class="el" href="classCClient.html">CClient</a> &amp;Client) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called before a channel buffer is played back to a client.  <a href="#a7c557b63c4efa961119b6cf197ff44dd"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a2bd5aee2c3e468538074cda30d2abd30">OnChanBufferEnding</a> (<a class="el" href="classCChan.html">CChan</a> &amp;Chan, <a class="el" href="classCClient.html">CClient</a> &amp;Client) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called after a channel buffer was played back to a client.  <a href="#a2bd5aee2c3e468538074cda30d2abd30"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a2eda24beb5dd2223840a764a50baef0f">OnChanBufferPlayLine</a> (<a class="el" href="classCChan.html">CChan</a> &amp;Chan, <a class="el" href="classCClient.html">CClient</a> &amp;Client, <a class="el" href="classCString.html">CString</a> &amp;sLine) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when for each line during a channel's buffer play back.  <a href="#a2eda24beb5dd2223840a764a50baef0f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a20bbdd2c3fbc5adbf946dd6d8d3b0c6a">OnPrivBufferPlayLine</a> (<a class="el" href="classCClient.html">CClient</a> &amp;Client, <a class="el" href="classCString.html">CString</a> &amp;sLine) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a line from the query buffer is played back.  <a href="#a20bbdd2c3fbc5adbf946dd6d8d3b0c6a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#ab0c0008e47cff79ca5f2ab3382dbc980">OnClientLogin</a> () override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a client successfully logged in to ZNC.  <a href="#ab0c0008e47cff79ca5f2ab3382dbc980"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a70f3b27dd13d7fa68f005b4e56cc9b81">OnClientDisconnect</a> () override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a client disconnected from ZNC.  <a href="#a70f3b27dd13d7fa68f005b4e56cc9b81"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a80ee58b4683c45a01aa00f97fe2480c1">OnUserRaw</a> (<a class="el" href="classCString.html">CString</a> &amp;sLine) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This module hook is called when a client sends a raw traffic line to ZNC.  <a href="#a80ee58b4683c45a01aa00f97fe2480c1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a0fac047450f649137d6321e0e203f2e5">OnUserCTCPReply</a> (<a class="el" href="classCString.html">CString</a> &amp;sTarget, <a class="el" href="classCString.html">CString</a> &amp;sMessage) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This module hook is called when a client sends a CTCP reply.  <a href="#a0fac047450f649137d6321e0e203f2e5"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a7adb16de8874864ee45eea0e8a4ad5d3">OnUserCTCP</a> (<a class="el" href="classCString.html">CString</a> &amp;sTarget, <a class="el" href="classCString.html">CString</a> &amp;sMessage) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This module hook is called when a client sends a CTCP request.  <a href="#a7adb16de8874864ee45eea0e8a4ad5d3"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a154a284985a2f532ae62fde7c6fb3cbc">OnUserAction</a> (<a class="el" href="classCString.html">CString</a> &amp;sTarget, <a class="el" href="classCString.html">CString</a> &amp;sMessage) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a client sends a CTCP ACTION request ("/me").  <a href="#a154a284985a2f532ae62fde7c6fb3cbc"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#aa570481a2b3479d334f731661ba0a8c4">OnUserMsg</a> (<a class="el" href="classCString.html">CString</a> &amp;sTarget, <a class="el" href="classCString.html">CString</a> &amp;sMessage) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This module hook is called when a user sends a normal IRC message.  <a href="#aa570481a2b3479d334f731661ba0a8c4"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a7e9ac3e97f104ba107a0f11c5efddc4a">OnUserNotice</a> (<a class="el" href="classCString.html">CString</a> &amp;sTarget, <a class="el" href="classCString.html">CString</a> &amp;sMessage) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This module hook is called when a user sends a notice message.  <a href="#a7e9ac3e97f104ba107a0f11c5efddc4a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#aaa60007b70b172b56328c6649ae66cc9">OnUserJoin</a> (<a class="el" href="classCString.html">CString</a> &amp;sChannel, <a class="el" href="classCString.html">CString</a> &amp;sKey) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This hooks is called when a user sends a JOIN message.  <a href="#aaa60007b70b172b56328c6649ae66cc9"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#ade2fe4cbb886156590e1497b23de04d5">OnUserPart</a> (<a class="el" href="classCString.html">CString</a> &amp;sChannel, <a class="el" href="classCString.html">CString</a> &amp;sMessage) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This hooks is called when a user sends a PART message.  <a href="#ade2fe4cbb886156590e1497b23de04d5"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a5c5596a75db523d607b9372ef2a2f1e6">OnUserTopic</a> (<a class="el" href="classCString.html">CString</a> &amp;sChannel, <a class="el" href="classCString.html">CString</a> &amp;sTopic) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This module hook is called when a user wants to change a channel topic.  <a href="#a5c5596a75db523d607b9372ef2a2f1e6"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a39e676842ec907fbe9c38d16f4b07b88">OnUserTopicRequest</a> (<a class="el" href="classCString.html">CString</a> &amp;sChannel) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This hook is called when a user requests a channel's topic.  <a href="#a39e676842ec907fbe9c38d16f4b07b88"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#af8499ef6661c38c30df4cab7aa3d4d33">OnCTCPReply</a> (<a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCString.html">CString</a> &amp;sMessage) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when we receive a CTCP reply <em>from IRC</em>.  <a href="#af8499ef6661c38c30df4cab7aa3d4d33"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a81aebb41213129f7e7fa86a396cfadea">OnPrivCTCP</a> (<a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCString.html">CString</a> &amp;sMessage) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when we receive a private CTCP request <em>from IRC</em>.  <a href="#a81aebb41213129f7e7fa86a396cfadea"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#ad17c16cb7c83a81debcf97b4a45ed42a">OnChanCTCP</a> (<a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCChan.html">CChan</a> &amp;Channel, <a class="el" href="classCString.html">CString</a> &amp;sMessage) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when we receive a channel CTCP request <em>from IRC</em>.  <a href="#ad17c16cb7c83a81debcf97b4a45ed42a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#abf750d565d4b282c3578d877fa13fc7e">OnPrivAction</a> (<a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCString.html">CString</a> &amp;sMessage) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when we receive a private CTCP ACTION ("/me" in query) <em>from IRC</em>.  <a href="#abf750d565d4b282c3578d877fa13fc7e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a65fd039361e34df93205aaebd174edde">OnChanAction</a> (<a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCChan.html">CChan</a> &amp;Channel, <a class="el" href="classCString.html">CString</a> &amp;sMessage) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when we receive a channel CTCP ACTION ("/me" in a channel) <em>from IRC</em>.  <a href="#a65fd039361e34df93205aaebd174edde"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#ae0db647ee749976d618039134116932f">OnPrivMsg</a> (<a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCString.html">CString</a> &amp;sMessage) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when we receive a private message <em>from IRC</em>.  <a href="#ae0db647ee749976d618039134116932f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a157418d7059030e7db6a2d009c6eb51e">OnChanMsg</a> (<a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCChan.html">CChan</a> &amp;Channel, <a class="el" href="classCString.html">CString</a> &amp;sMessage) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when we receive a channel message <em>from IRC</em>.  <a href="#a157418d7059030e7db6a2d009c6eb51e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#ad4d174c892c09185f05593416e600215">OnPrivNotice</a> (<a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCString.html">CString</a> &amp;sMessage) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when we receive a private notice.  <a href="#ad4d174c892c09185f05593416e600215"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a45250b46adc79d742ea21000e6ca7e6d">OnChanNotice</a> (<a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCChan.html">CChan</a> &amp;Channel, <a class="el" href="classCString.html">CString</a> &amp;sMessage) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when we receive a channel notice.  <a href="#a45250b46adc79d742ea21000e6ca7e6d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#ab0da7fa409fb03a59f0887d366577713">OnTopic</a> (<a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCChan.html">CChan</a> &amp;Channel, <a class="el" href="classCString.html">CString</a> &amp;sTopic) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when we receive a channel topic change <em>from IRC</em>.  <a href="#ab0da7fa409fb03a59f0887d366577713"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a63c35b012b12825ced29604577b3623e">OnServerCapAvailable</a> (const <a class="el" href="classCString.html">CString</a> &amp;sCap) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called for every CAP received via CAP LS from server.  <a href="#a63c35b012b12825ced29604577b3623e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a3f9990294f8f3f72299e0b0c84e683cf">OnServerCapResult</a> (const <a class="el" href="classCString.html">CString</a> &amp;sCap, bool bSuccess) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called for every CAP accepted or rejected by server (with CAP ACK or CAP NAK after our CAP REQ).  <a href="#a3f9990294f8f3f72299e0b0c84e683cf"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a81405cf97c1edfb1c2c99c807652f72e">OnTimerAutoJoin</a> (<a class="el" href="classCChan.html">CChan</a> &amp;Channel) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This module hook is called just before ZNC tries to join a channel by itself because it's in the config but wasn't joined yet.  <a href="#a81405cf97c1edfb1c2c99c807652f72e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a92b6c23bf4c77eb6832ba89e6049f3b7">OnEmbeddedWebRequest</a> (<a class="el" href="classCWebSock.html">CWebSock</a> &amp;, const <a class="el" href="classCString.html">CString</a> &amp;, <a class="el" href="classCTemplate.html">CTemplate</a> &amp;) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Using this hook, module can embed web stuff directly to different places.  <a href="#a92b6c23bf4c77eb6832ba89e6049f3b7"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#ad7dd5776adcddde0c0a8b36b85254829">OnAddNetwork</a> (<a class="el" href="classCIRCNetwork.html">CIRCNetwork</a> &amp;Network, <a class="el" href="classCString.html">CString</a> &amp;sErrorRet) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This module hook is called when a network is being added.  <a href="#ad7dd5776adcddde0c0a8b36b85254829"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#afd47f76f5986f43ff32be1adff8bb577">OnDeleteNetwork</a> (<a class="el" href="classCIRCNetwork.html">CIRCNetwork</a> &amp;Network) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This module hook is called when a network is deleted.  <a href="#afd47f76f5986f43ff32be1adff8bb577"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a790d34381e05ee5f8b473653d9cc471e">OnSendToClient</a> (<a class="el" href="classCString.html">CString</a> &amp;sLine, <a class="el" href="classCClient.html">CClient</a> &amp;Client) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when ZNC sends a raw traffic line to a client.  <a href="#a790d34381e05ee5f8b473653d9cc471e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#aa24bd19d84788d09e9458ae06e208b4e">OnSendToIRC</a> (<a class="el" href="classCString.html">CString</a> &amp;sLine) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when ZNC sends a raw traffic line to the IRC server.  <a href="#aa24bd19d84788d09e9458ae06e208b4e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#a46edcc71ac53f3368eea289fe197e9c6">SetUser</a> (<a class="el" href="classCUser.html">CUser</a> *pUser)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#af4f9c3de904e118e827b927ecb4e8015">SetNetwork</a> (<a class="el" href="classCIRCNetwork.html">CIRCNetwork</a> *pNetwork)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#a650ba1a9af6b91ec0175a245382344eb">SetClient</a> (<a class="el" href="classCClient.html">CClient</a> *pClient)</td></tr>
@@ -1238,15 +1238,15 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a0e721d31f34ca374622d48997c36e285"></a><!-- doxytag: member="CPerlModule::GetSubPages" ref="a0e721d31f34ca374622d48997c36e285" args="()" -->
+<a class="anchor" id="ada019b00ce8c8666f40ad5f729d0eedb"></a><!-- doxytag: member="CPerlModule::GetSubPages" ref="ada019b00ce8c8666f40ad5f729d0eedb" args="() override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="WebModules_8h.html#ab585ce11740587b08deb0da25de3c2d6">VWebSubPages</a>&amp; <a class="el" href="classCPerlModule.html#a0e721d31f34ca374622d48997c36e285">CPerlModule::GetSubPages</a> </td>
+          <td class="memname">virtual <a class="el" href="WebModules_8h.html#ab585ce11740587b08deb0da25de3c2d6">VWebSubPages</a>&amp; <a class="el" href="classCPerlModule.html#ada019b00ce8c8666f40ad5f729d0eedb">CPerlModule::GetSubPages</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -1313,15 +1313,15 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aaf423b377f94b3046079fc6094ee30a4"></a><!-- doxytag: member="CPerlModule::GetWebMenuTitle" ref="aaf423b377f94b3046079fc6094ee30a4" args="()" -->
+<a class="anchor" id="a23802cd386d148d2a353ca7846a35172"></a><!-- doxytag: member="CPerlModule::GetWebMenuTitle" ref="a23802cd386d148d2a353ca7846a35172" args="() override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classCString.html">CString</a> <a class="el" href="classCPerlModule.html#aaf423b377f94b3046079fc6094ee30a4">CPerlModule::GetWebMenuTitle</a> </td>
+          <td class="memname">virtual <a class="el" href="classCString.html">CString</a> <a class="el" href="classCPerlModule.html#a23802cd386d148d2a353ca7846a35172">CPerlModule::GetWebMenuTitle</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -1444,7 +1444,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>true if your module supports this capability in the specified state. </dd></dl>
 
-<p>Reimplemented in <a class="el" href="classCPyModule.html#a1cb7a326af78511d0b5a863514cff85f">CPyModule</a>.</p>
+<p>Reimplemented in <a class="el" href="classCPyModule.html#a03a8d0e232e60ee22a3397394851c8af">CPyModule</a>.</p>
 
 </div>
 </div>
@@ -1513,12 +1513,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="abe062c8bceaaa685ea72ed33f8803268"></a><!-- doxytag: member="CPerlModule::OnAddNetwork" ref="abe062c8bceaaa685ea72ed33f8803268" args="(CIRCNetwork &amp;Network, CString &amp;sErrorRet)" -->
+<a class="anchor" id="ad7dd5776adcddde0c0a8b36b85254829"></a><!-- doxytag: member="CPerlModule::OnAddNetwork" ref="ad7dd5776adcddde0c0a8b36b85254829" args="(CIRCNetwork &amp;Network, CString &amp;sErrorRet) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#abe062c8bceaaa685ea72ed33f8803268">CPerlModule::OnAddNetwork</a> </td>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#ad7dd5776adcddde0c0a8b36b85254829">CPerlModule::OnAddNetwork</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classCIRCNetwork.html">CIRCNetwork</a> &amp;&#160;</td>
           <td class="paramname"><em>Network</em>, </td>
@@ -1532,7 +1532,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
+          <td></td><td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -1587,19 +1587,19 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>See <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2" title="This enum is just used for return from module hooks.">CModule::EModRet</a>. </dd></dl>
 
-<p>Reimplemented in <a class="el" href="classCPyModule.html#ae00afd3cb43624d97430d8fa7cee639e">CPyModule</a>.</p>
+<p>Reimplemented in <a class="el" href="classCPyModule.html#a0853ef087e620c51416028bb1665bed1">CPyModule</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aede6d0431b69b07e36b0de2e6c05769d"></a><!-- doxytag: member="CPerlModule::OnBoot" ref="aede6d0431b69b07e36b0de2e6c05769d" args="()" -->
+<a class="anchor" id="a3f93e565f6ee2a71c926d689f2032938"></a><!-- doxytag: member="CPerlModule::OnBoot" ref="a3f93e565f6ee2a71c926d689f2032938" args="() override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool <a class="el" href="classCPerlModule.html#aede6d0431b69b07e36b0de2e6c05769d">CPerlModule::OnBoot</a> </td>
+          <td class="memname">virtual bool <a class="el" href="classCPerlModule.html#a3f93e565f6ee2a71c926d689f2032938">CPerlModule::OnBoot</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -1613,16 +1613,16 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a3f6727fe01b630ba3393c0ea9257b8a8"></a><!-- doxytag: member="CPerlModule::OnBroadcast" ref="a3f6727fe01b630ba3393c0ea9257b8a8" args="(CString &amp;sMessage)" -->
+<a class="anchor" id="ad689dff83dc54649ca3c44faff711c4c"></a><!-- doxytag: member="CPerlModule::OnBroadcast" ref="ad689dff83dc54649ca3c44faff711c4c" args="(CString &amp;sMessage) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#a3f6727fe01b630ba3393c0ea9257b8a8">CPerlModule::OnBroadcast</a> </td>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#ad689dff83dc54649ca3c44faff711c4c">CPerlModule::OnBroadcast</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>sMessage</em></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -1641,12 +1641,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a901cff59a8831798bac2133c381c1ed5"></a><!-- doxytag: member="CPerlModule::OnChanAction" ref="a901cff59a8831798bac2133c381c1ed5" args="(CNick &amp;Nick, CChan &amp;Channel, CString &amp;sMessage)" -->
+<a class="anchor" id="a65fd039361e34df93205aaebd174edde"></a><!-- doxytag: member="CPerlModule::OnChanAction" ref="a65fd039361e34df93205aaebd174edde" args="(CNick &amp;Nick, CChan &amp;Channel, CString &amp;sMessage) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#a901cff59a8831798bac2133c381c1ed5">CPerlModule::OnChanAction</a> </td>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#a65fd039361e34df93205aaebd174edde">CPerlModule::OnChanAction</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classCNick.html">CNick</a> &amp;&#160;</td>
           <td class="paramname"><em>Nick</em>, </td>
@@ -1666,7 +1666,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
+          <td></td><td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -1688,12 +1688,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a1d92ff0ad09e204d134e3b4fcb3ee74b"></a><!-- doxytag: member="CPerlModule::OnChanBufferEnding" ref="a1d92ff0ad09e204d134e3b4fcb3ee74b" args="(CChan &amp;Chan, CClient &amp;Client)" -->
+<a class="anchor" id="a2bd5aee2c3e468538074cda30d2abd30"></a><!-- doxytag: member="CPerlModule::OnChanBufferEnding" ref="a2bd5aee2c3e468538074cda30d2abd30" args="(CChan &amp;Chan, CClient &amp;Client) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#a1d92ff0ad09e204d134e3b4fcb3ee74b">CPerlModule::OnChanBufferEnding</a> </td>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#a2bd5aee2c3e468538074cda30d2abd30">CPerlModule::OnChanBufferEnding</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classCChan.html">CChan</a> &amp;&#160;</td>
           <td class="paramname"><em>Chan</em>, </td>
@@ -1707,7 +1707,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
+          <td></td><td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -1727,12 +1727,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a364a929063b37f8687e9bd2793e1f845"></a><!-- doxytag: member="CPerlModule::OnChanBufferPlayLine" ref="a364a929063b37f8687e9bd2793e1f845" args="(CChan &amp;Chan, CClient &amp;Client, CString &amp;sLine)" -->
+<a class="anchor" id="a2eda24beb5dd2223840a764a50baef0f"></a><!-- doxytag: member="CPerlModule::OnChanBufferPlayLine" ref="a2eda24beb5dd2223840a764a50baef0f" args="(CChan &amp;Chan, CClient &amp;Client, CString &amp;sLine) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#a364a929063b37f8687e9bd2793e1f845">CPerlModule::OnChanBufferPlayLine</a> </td>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#a2eda24beb5dd2223840a764a50baef0f">CPerlModule::OnChanBufferPlayLine</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classCChan.html">CChan</a> &amp;&#160;</td>
           <td class="paramname"><em>Chan</em>, </td>
@@ -1752,7 +1752,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
+          <td></td><td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -1773,12 +1773,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a206a76b2efab26ea670c5629715a0b33"></a><!-- doxytag: member="CPerlModule::OnChanBufferStarting" ref="a206a76b2efab26ea670c5629715a0b33" args="(CChan &amp;Chan, CClient &amp;Client)" -->
+<a class="anchor" id="a7c557b63c4efa961119b6cf197ff44dd"></a><!-- doxytag: member="CPerlModule::OnChanBufferStarting" ref="a7c557b63c4efa961119b6cf197ff44dd" args="(CChan &amp;Chan, CClient &amp;Client) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#a206a76b2efab26ea670c5629715a0b33">CPerlModule::OnChanBufferStarting</a> </td>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#a7c557b63c4efa961119b6cf197ff44dd">CPerlModule::OnChanBufferStarting</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classCChan.html">CChan</a> &amp;&#160;</td>
           <td class="paramname"><em>Chan</em>, </td>
@@ -1792,7 +1792,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
+          <td></td><td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -1812,12 +1812,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a95fe3cccde850f5145a92bf5a8a26394"></a><!-- doxytag: member="CPerlModule::OnChanCTCP" ref="a95fe3cccde850f5145a92bf5a8a26394" args="(CNick &amp;Nick, CChan &amp;Channel, CString &amp;sMessage)" -->
+<a class="anchor" id="ad17c16cb7c83a81debcf97b4a45ed42a"></a><!-- doxytag: member="CPerlModule::OnChanCTCP" ref="ad17c16cb7c83a81debcf97b4a45ed42a" args="(CNick &amp;Nick, CChan &amp;Channel, CString &amp;sMessage) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#a95fe3cccde850f5145a92bf5a8a26394">CPerlModule::OnChanCTCP</a> </td>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#ad17c16cb7c83a81debcf97b4a45ed42a">CPerlModule::OnChanCTCP</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classCNick.html">CNick</a> &amp;&#160;</td>
           <td class="paramname"><em>Nick</em>, </td>
@@ -1837,7 +1837,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
+          <td></td><td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -1858,12 +1858,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ae00854df079b67c533fd38f380232baa"></a><!-- doxytag: member="CPerlModule::OnChanMsg" ref="ae00854df079b67c533fd38f380232baa" args="(CNick &amp;Nick, CChan &amp;Channel, CString &amp;sMessage)" -->
+<a class="anchor" id="a157418d7059030e7db6a2d009c6eb51e"></a><!-- doxytag: member="CPerlModule::OnChanMsg" ref="a157418d7059030e7db6a2d009c6eb51e" args="(CNick &amp;Nick, CChan &amp;Channel, CString &amp;sMessage) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#ae00854df079b67c533fd38f380232baa">CPerlModule::OnChanMsg</a> </td>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#a157418d7059030e7db6a2d009c6eb51e">CPerlModule::OnChanMsg</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classCNick.html">CNick</a> &amp;&#160;</td>
           <td class="paramname"><em>Nick</em>, </td>
@@ -1883,7 +1883,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
+          <td></td><td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -1904,12 +1904,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a552df2568efef55d64d987eb9dd7301a"></a><!-- doxytag: member="CPerlModule::OnChanNotice" ref="a552df2568efef55d64d987eb9dd7301a" args="(CNick &amp;Nick, CChan &amp;Channel, CString &amp;sMessage)" -->
+<a class="anchor" id="a45250b46adc79d742ea21000e6ca7e6d"></a><!-- doxytag: member="CPerlModule::OnChanNotice" ref="a45250b46adc79d742ea21000e6ca7e6d" args="(CNick &amp;Nick, CChan &amp;Channel, CString &amp;sMessage) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#a552df2568efef55d64d987eb9dd7301a">CPerlModule::OnChanNotice</a> </td>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#a45250b46adc79d742ea21000e6ca7e6d">CPerlModule::OnChanNotice</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classCNick.html">CNick</a> &amp;&#160;</td>
           <td class="paramname"><em>Nick</em>, </td>
@@ -1929,7 +1929,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
+          <td></td><td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -2001,12 +2001,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a22006e91c3c682a366208752a988d1c4"></a><!-- doxytag: member="CPerlModule::OnChanPermission2" ref="a22006e91c3c682a366208752a988d1c4" args="(const CNick *pOpNick, const CNick &amp;Nick, CChan &amp;Channel, unsigned char uMode, bool bAdded, bool bNoChange)" -->
+<a class="anchor" id="a0f9017d959dfcc92cfb86a6f77487f03"></a><!-- doxytag: member="CPerlModule::OnChanPermission2" ref="a0f9017d959dfcc92cfb86a6f77487f03" args="(const CNick *pOpNick, const CNick &amp;Nick, CChan &amp;Channel, unsigned char uMode, bool bAdded, bool bNoChange) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCPerlModule.html#a22006e91c3c682a366208752a988d1c4">CPerlModule::OnChanPermission2</a> </td>
+          <td class="memname">virtual void <a class="el" href="classCPerlModule.html#a0f9017d959dfcc92cfb86a6f77487f03">CPerlModule::OnChanPermission2</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCNick.html">CNick</a> *&#160;</td>
           <td class="paramname"><em>pOpNick</em>, </td>
@@ -2044,7 +2044,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
+          <td></td><td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -2103,7 +2103,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="classCPyModule.html#ac10ee147c8af6dc17b90fa71c665a116">CPyModule</a>.</p>
+<p>Reimplemented in <a class="el" href="classCPyModule.html#a03b37265bf3a5bd4ead149382278ab9c">CPyModule</a>.</p>
 
 </div>
 </div>
@@ -2148,7 +2148,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="classCPyModule.html#a039d003bda9b04865461abc5ee164fb1">CPyModule</a>.</p>
+<p>Reimplemented in <a class="el" href="classCPyModule.html#a1f68b4cf023fff05eae2f52d79f98d04">CPyModule</a>.</p>
 
 </div>
 </div>
@@ -2193,19 +2193,19 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="classCPyModule.html#ab1640271685a8833b2fafc90ea2071b6">CPyModule</a>.</p>
+<p>Reimplemented in <a class="el" href="classCPyModule.html#a327c6315bc8b3b3efb5acc9d52ff6d5d">CPyModule</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a53a7469a84cbac9dd54d683d78d40a2d"></a><!-- doxytag: member="CPerlModule::OnClientDisconnect" ref="a53a7469a84cbac9dd54d683d78d40a2d" args="()" -->
+<a class="anchor" id="a70f3b27dd13d7fa68f005b4e56cc9b81"></a><!-- doxytag: member="CPerlModule::OnClientDisconnect" ref="a70f3b27dd13d7fa68f005b4e56cc9b81" args="() override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCPerlModule.html#a53a7469a84cbac9dd54d683d78d40a2d">CPerlModule::OnClientDisconnect</a> </td>
+          <td class="memname">virtual void <a class="el" href="classCPerlModule.html#a70f3b27dd13d7fa68f005b4e56cc9b81">CPerlModule::OnClientDisconnect</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -2217,15 +2217,15 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aca622796f531fbcf57c48245a5ef0a50"></a><!-- doxytag: member="CPerlModule::OnClientLogin" ref="aca622796f531fbcf57c48245a5ef0a50" args="()" -->
+<a class="anchor" id="ab0c0008e47cff79ca5f2ab3382dbc980"></a><!-- doxytag: member="CPerlModule::OnClientLogin" ref="ab0c0008e47cff79ca5f2ab3382dbc980" args="() override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCPerlModule.html#aca622796f531fbcf57c48245a5ef0a50">CPerlModule::OnClientLogin</a> </td>
+          <td class="memname">virtual void <a class="el" href="classCPerlModule.html#ab0c0008e47cff79ca5f2ab3382dbc980">CPerlModule::OnClientLogin</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -2237,12 +2237,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="adf546a7b8b792723978341733e057cec"></a><!-- doxytag: member="CPerlModule::OnCTCPReply" ref="adf546a7b8b792723978341733e057cec" args="(CNick &amp;Nick, CString &amp;sMessage)" -->
+<a class="anchor" id="af8499ef6661c38c30df4cab7aa3d4d33"></a><!-- doxytag: member="CPerlModule::OnCTCPReply" ref="af8499ef6661c38c30df4cab7aa3d4d33" args="(CNick &amp;Nick, CString &amp;sMessage) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#adf546a7b8b792723978341733e057cec">CPerlModule::OnCTCPReply</a> </td>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#af8499ef6661c38c30df4cab7aa3d4d33">CPerlModule::OnCTCPReply</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classCNick.html">CNick</a> &amp;&#160;</td>
           <td class="paramname"><em>Nick</em>, </td>
@@ -2256,7 +2256,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
+          <td></td><td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -2276,16 +2276,16 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a574c1519fde096881550aa494d56a1ba"></a><!-- doxytag: member="CPerlModule::OnDeleteNetwork" ref="a574c1519fde096881550aa494d56a1ba" args="(CIRCNetwork &amp;Network)" -->
+<a class="anchor" id="afd47f76f5986f43ff32be1adff8bb577"></a><!-- doxytag: member="CPerlModule::OnDeleteNetwork" ref="afd47f76f5986f43ff32be1adff8bb577" args="(CIRCNetwork &amp;Network) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#a574c1519fde096881550aa494d56a1ba">CPerlModule::OnDeleteNetwork</a> </td>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#afd47f76f5986f43ff32be1adff8bb577">CPerlModule::OnDeleteNetwork</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classCIRCNetwork.html">CIRCNetwork</a> &amp;&#160;</td>
           <td class="paramname"><em>Network</em></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -2328,7 +2328,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>See <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2" title="This enum is just used for return from module hooks.">CModule::EModRet</a>. </dd></dl>
 
-<p>Reimplemented in <a class="el" href="classCPyModule.html#aa68cbc97349c1e2482858c33d90cd714">CPyModule</a>.</p>
+<p>Reimplemented in <a class="el" href="classCPyModule.html#a1d50467ba5ca8317200bf4d172e80beb">CPyModule</a>.</p>
 
 </div>
 </div>
@@ -2371,12 +2371,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a0509aa25a1efa0795624a34049fabcfc"></a><!-- doxytag: member="CPerlModule::OnDeop2" ref="a0509aa25a1efa0795624a34049fabcfc" args="(const CNick *pOpNick, const CNick &amp;Nick, CChan &amp;Channel, bool bNoChange)" -->
+<a class="anchor" id="afaed18adaf9e52419a0ca1351cf16b04"></a><!-- doxytag: member="CPerlModule::OnDeop2" ref="afaed18adaf9e52419a0ca1351cf16b04" args="(const CNick *pOpNick, const CNick &amp;Nick, CChan &amp;Channel, bool bNoChange) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCPerlModule.html#a0509aa25a1efa0795624a34049fabcfc">CPerlModule::OnDeop2</a> </td>
+          <td class="memname">virtual void <a class="el" href="classCPerlModule.html#afaed18adaf9e52419a0ca1351cf16b04">CPerlModule::OnDeop2</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCNick.html">CNick</a> *&#160;</td>
           <td class="paramname"><em>pOpNick</em>, </td>
@@ -2402,7 +2402,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
+          <td></td><td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -2453,12 +2453,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a1b875197ad5f2286bc126301eb558750"></a><!-- doxytag: member="CPerlModule::OnDevoice2" ref="a1b875197ad5f2286bc126301eb558750" args="(const CNick *pOpNick, const CNick &amp;Nick, CChan &amp;Channel, bool bNoChange)" -->
+<a class="anchor" id="a26a322004fd592df95c05f43ffe7f16e"></a><!-- doxytag: member="CPerlModule::OnDevoice2" ref="a26a322004fd592df95c05f43ffe7f16e" args="(const CNick *pOpNick, const CNick &amp;Nick, CChan &amp;Channel, bool bNoChange) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCPerlModule.html#a1b875197ad5f2286bc126301eb558750">CPerlModule::OnDevoice2</a> </td>
+          <td class="memname">virtual void <a class="el" href="classCPerlModule.html#a26a322004fd592df95c05f43ffe7f16e">CPerlModule::OnDevoice2</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCNick.html">CNick</a> *&#160;</td>
           <td class="paramname"><em>pOpNick</em>, </td>
@@ -2484,7 +2484,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
+          <td></td><td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -2496,12 +2496,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a691b52e7f45e58c42414a1770a5c7d15"></a><!-- doxytag: member="CPerlModule::OnEmbeddedWebRequest" ref="a691b52e7f45e58c42414a1770a5c7d15" args="(CWebSock &amp;, const CString &amp;, CTemplate &amp;)" -->
+<a class="anchor" id="a92b6c23bf4c77eb6832ba89e6049f3b7"></a><!-- doxytag: member="CPerlModule::OnEmbeddedWebRequest" ref="a92b6c23bf4c77eb6832ba89e6049f3b7" args="(CWebSock &amp;, const CString &amp;, CTemplate &amp;) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool <a class="el" href="classCPerlModule.html#a691b52e7f45e58c42414a1770a5c7d15">CPerlModule::OnEmbeddedWebRequest</a> </td>
+          <td class="memname">virtual bool <a class="el" href="classCPerlModule.html#a92b6c23bf4c77eb6832ba89e6049f3b7">CPerlModule::OnEmbeddedWebRequest</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classCWebSock.html">CWebSock</a> &amp;&#160;</td>
           <td class="paramname"><em>WebSock</em>, </td>
@@ -2521,7 +2521,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
+          <td></td><td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -2577,7 +2577,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="classCPyModule.html#a7c031771aa279f7a6fcdf21af0e505d9">CPyModule</a>.</p>
+<p>Reimplemented in <a class="el" href="classCPyModule.html#a651a093905867e4105f615a9100c0ff8">CPyModule</a>.</p>
 
 </div>
 </div>
@@ -2615,7 +2615,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="classCPyModule.html#af0df24b7415cad6646e5437aeaccddeb">CPyModule</a>.</p>
+<p>Reimplemented in <a class="el" href="classCPyModule.html#abc3d896f843e44ff3ab44a1fd42fd28e">CPyModule</a>.</p>
 
 </div>
 </div>
@@ -2668,7 +2668,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>See <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2" title="This enum is just used for return from module hooks.">CModule::EModRet</a>. </dd></dl>
 
-<p>Reimplemented in <a class="el" href="classCPyModule.html#a17be0977c116216e65b49329718a65d6">CPyModule</a>.</p>
+<p>Reimplemented in <a class="el" href="classCPyModule.html#ae1ca5062318ede7d53010803e602916d">CPyModule</a>.</p>
 
 </div>
 </div>
@@ -2709,15 +2709,15 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a1c231ccc05770d9cc10b4b95078745a0"></a><!-- doxytag: member="CPerlModule::OnIRCConnected" ref="a1c231ccc05770d9cc10b4b95078745a0" args="()" -->
+<a class="anchor" id="a7d5fc16e1794d04af39951f2adc079a8"></a><!-- doxytag: member="CPerlModule::OnIRCConnected" ref="a7d5fc16e1794d04af39951f2adc079a8" args="() override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCPerlModule.html#a1c231ccc05770d9cc10b4b95078745a0">CPerlModule::OnIRCConnected</a> </td>
+          <td class="memname">virtual void <a class="el" href="classCPerlModule.html#a7d5fc16e1794d04af39951f2adc079a8">CPerlModule::OnIRCConnected</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -2729,16 +2729,16 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a2e2d0cb662963b2f94de0a496b3b9b43"></a><!-- doxytag: member="CPerlModule::OnIRCConnecting" ref="a2e2d0cb662963b2f94de0a496b3b9b43" args="(CIRCSock *pIRCSock)" -->
+<a class="anchor" id="ae5a4541928ada8c775c2144125c4910c"></a><!-- doxytag: member="CPerlModule::OnIRCConnecting" ref="ae5a4541928ada8c775c2144125c4910c" args="(CIRCSock *pIRCSock) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#a2e2d0cb662963b2f94de0a496b3b9b43">CPerlModule::OnIRCConnecting</a> </td>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#ae5a4541928ada8c775c2144125c4910c">CPerlModule::OnIRCConnecting</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classCIRCSock.html">CIRCSock</a> *&#160;</td>
           <td class="paramname"><em>pIRCSock</em></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -2757,16 +2757,16 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aaff0283dcfc78920718b6fa9472fe82a"></a><!-- doxytag: member="CPerlModule::OnIRCConnectionError" ref="aaff0283dcfc78920718b6fa9472fe82a" args="(CIRCSock *pIRCSock)" -->
+<a class="anchor" id="ab03dc2d42c959df6638546f176251d61"></a><!-- doxytag: member="CPerlModule::OnIRCConnectionError" ref="ab03dc2d42c959df6638546f176251d61" args="(CIRCSock *pIRCSock) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCPerlModule.html#aaff0283dcfc78920718b6fa9472fe82a">CPerlModule::OnIRCConnectionError</a> </td>
+          <td class="memname">virtual void <a class="el" href="classCPerlModule.html#ab03dc2d42c959df6638546f176251d61">CPerlModule::OnIRCConnectionError</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classCIRCSock.html">CIRCSock</a> *&#160;</td>
           <td class="paramname"><em>pIRCSock</em></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -2784,15 +2784,15 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac73835d5e1070206c659d40b2cd186a4"></a><!-- doxytag: member="CPerlModule::OnIRCDisconnected" ref="ac73835d5e1070206c659d40b2cd186a4" args="()" -->
+<a class="anchor" id="ad5a53f76746f2e22e95ef9d489b6b93d"></a><!-- doxytag: member="CPerlModule::OnIRCDisconnected" ref="ad5a53f76746f2e22e95ef9d489b6b93d" args="() override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCPerlModule.html#ac73835d5e1070206c659d40b2cd186a4">CPerlModule::OnIRCDisconnected</a> </td>
+          <td class="memname">virtual void <a class="el" href="classCPerlModule.html#ad5a53f76746f2e22e95ef9d489b6b93d">CPerlModule::OnIRCDisconnected</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -2804,12 +2804,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af71181c5f12e00ca125cb21c26002bbf"></a><!-- doxytag: member="CPerlModule::OnIRCRegistration" ref="af71181c5f12e00ca125cb21c26002bbf" args="(CString &amp;sPass, CString &amp;sNick, CString &amp;sIdent, CString &amp;sRealName)" -->
+<a class="anchor" id="ace58c7f5d08695dbd94a07336ba233c7"></a><!-- doxytag: member="CPerlModule::OnIRCRegistration" ref="ace58c7f5d08695dbd94a07336ba233c7" args="(CString &amp;sPass, CString &amp;sNick, CString &amp;sIdent, CString &amp;sRealName) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#af71181c5f12e00ca125cb21c26002bbf">CPerlModule::OnIRCRegistration</a> </td>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#ace58c7f5d08695dbd94a07336ba233c7">CPerlModule::OnIRCRegistration</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>sPass</em>, </td>
@@ -2835,7 +2835,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
+          <td></td><td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -2858,12 +2858,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac7d9ca8c8e9be5b347de1d68828ae295"></a><!-- doxytag: member="CPerlModule::OnJoin" ref="ac7d9ca8c8e9be5b347de1d68828ae295" args="(const CNick &amp;Nick, CChan &amp;Channel)" -->
+<a class="anchor" id="af131728f5caa4047883888ac37417b5b"></a><!-- doxytag: member="CPerlModule::OnJoin" ref="af131728f5caa4047883888ac37417b5b" args="(const CNick &amp;Nick, CChan &amp;Channel) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCPerlModule.html#ac7d9ca8c8e9be5b347de1d68828ae295">CPerlModule::OnJoin</a> </td>
+          <td class="memname">virtual void <a class="el" href="classCPerlModule.html#af131728f5caa4047883888ac37417b5b">CPerlModule::OnJoin</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCNick.html">CNick</a> &amp;&#160;</td>
           <td class="paramname"><em>Nick</em>, </td>
@@ -2877,7 +2877,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
+          <td></td><td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -2896,16 +2896,16 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ad6009d35adbc36261e163c099ee67e2f"></a><!-- doxytag: member="CPerlModule::OnJoining" ref="ad6009d35adbc36261e163c099ee67e2f" args="(CChan &amp;Channel)" -->
+<a class="anchor" id="ad732596493d6a98f3e991880a7903d3d"></a><!-- doxytag: member="CPerlModule::OnJoining" ref="ad732596493d6a98f3e991880a7903d3d" args="(CChan &amp;Channel) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#ad6009d35adbc36261e163c099ee67e2f">CPerlModule::OnJoining</a> </td>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#ad732596493d6a98f3e991880a7903d3d">CPerlModule::OnJoining</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classCChan.html">CChan</a> &amp;&#160;</td>
           <td class="paramname"><em>Channel</em></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -2924,12 +2924,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a4a2d9b2f5c3737083581c267c5b99401"></a><!-- doxytag: member="CPerlModule::OnKick" ref="a4a2d9b2f5c3737083581c267c5b99401" args="(const CNick &amp;OpNick, const CString &amp;sKickedNick, CChan &amp;Channel, const CString &amp;sMessage)" -->
+<a class="anchor" id="abddd7280a62a962940601a9f293fff55"></a><!-- doxytag: member="CPerlModule::OnKick" ref="abddd7280a62a962940601a9f293fff55" args="(const CNick &amp;OpNick, const CString &amp;sKickedNick, CChan &amp;Channel, const CString &amp;sMessage) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCPerlModule.html#a4a2d9b2f5c3737083581c267c5b99401">CPerlModule::OnKick</a> </td>
+          <td class="memname">virtual void <a class="el" href="classCPerlModule.html#abddd7280a62a962940601a9f293fff55">CPerlModule::OnKick</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCNick.html">CNick</a> &amp;&#160;</td>
           <td class="paramname"><em>OpNick</em>, </td>
@@ -2955,7 +2955,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
+          <td></td><td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -3038,20 +3038,20 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>See <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2" title="This enum is just used for return from module hooks.">CModule::EModRet</a>. </dd></dl>
 
-<p>Reimplemented in <a class="el" href="classCPyModule.html#aa80c847c92922f33331d48d5af543cc6">CPyModule</a>.</p>
+<p>Reimplemented in <a class="el" href="classCPyModule.html#a33cf131b7f6f775784c559d52a15c2ab">CPyModule</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="adf2d96550ba258a77f91215647e2b0a4"></a><!-- doxytag: member="CPerlModule::OnModCommand" ref="adf2d96550ba258a77f91215647e2b0a4" args="(const CString &amp;sCommand)" -->
+<a class="anchor" id="a4121c9b29b3630e610fcf4c4e5b256ac"></a><!-- doxytag: member="CPerlModule::OnModCommand" ref="a4121c9b29b3630e610fcf4c4e5b256ac" args="(const CString &amp;sCommand) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCPerlModule.html#adf2d96550ba258a77f91215647e2b0a4">CPerlModule::OnModCommand</a> </td>
+          <td class="memname">virtual void <a class="el" href="classCPerlModule.html#a4121c9b29b3630e610fcf4c4e5b256ac">CPerlModule::OnModCommand</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>sCommand</em></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -3070,23 +3070,23 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a437da60afada2e088422b42705123879"></a><!-- doxytag: member="CPerlModule::OnModCTCP" ref="a437da60afada2e088422b42705123879" args="(const CString &amp;sMessage)" -->
+<a class="anchor" id="a3a4a952bfb3b921264b8f8a73317bddd"></a><!-- doxytag: member="CPerlModule::OnModCTCP" ref="a3a4a952bfb3b921264b8f8a73317bddd" args="(const CString &amp;sMessage) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCPerlModule.html#a437da60afada2e088422b42705123879">CPerlModule::OnModCTCP</a> </td>
+          <td class="memname">virtual void <a class="el" href="classCPerlModule.html#a3a4a952bfb3b921264b8f8a73317bddd">CPerlModule::OnModCTCP</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>sMessage</em></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
 <p>Called when your module nick was sent a CTCP message. </p>
-<p><a class="el" href="classCPerlModule.html#adf2d96550ba258a77f91215647e2b0a4" title="Called when a command to your module is sent, e.g.">OnModCommand()</a> won't be called for this message. </p>
+<p><a class="el" href="classCPerlModule.html#a4121c9b29b3630e610fcf4c4e5b256ac" title="Called when a command to your module is sent, e.g.">OnModCommand()</a> won't be called for this message. </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">sMessage</td><td>The message which was sent. </td></tr>
@@ -3149,12 +3149,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="acc021d1aa6e491fc166f7158b5d8aa80"></a><!-- doxytag: member="CPerlModule::OnMode2" ref="acc021d1aa6e491fc166f7158b5d8aa80" args="(const CNick *pOpNick, CChan &amp;Channel, char uMode, const CString &amp;sArg, bool bAdded, bool bNoChange)" -->
+<a class="anchor" id="a94111aed5d8b49f95e23956f345c0e00"></a><!-- doxytag: member="CPerlModule::OnMode2" ref="a94111aed5d8b49f95e23956f345c0e00" args="(const CNick *pOpNick, CChan &amp;Channel, char uMode, const CString &amp;sArg, bool bAdded, bool bNoChange) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCPerlModule.html#acc021d1aa6e491fc166f7158b5d8aa80">CPerlModule::OnMode2</a> </td>
+          <td class="memname">virtual void <a class="el" href="classCPerlModule.html#a94111aed5d8b49f95e23956f345c0e00">CPerlModule::OnMode2</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCNick.html">CNick</a> *&#160;</td>
           <td class="paramname"><em>pOpNick</em>, </td>
@@ -3192,7 +3192,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
+          <td></td><td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -3215,16 +3215,16 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a0516e70afc35b8e958699d29ca07ff06"></a><!-- doxytag: member="CPerlModule::OnModNotice" ref="a0516e70afc35b8e958699d29ca07ff06" args="(const CString &amp;sMessage)" -->
+<a class="anchor" id="a766f246d34bb96fff44238c59ddc1114"></a><!-- doxytag: member="CPerlModule::OnModNotice" ref="a766f246d34bb96fff44238c59ddc1114" args="(const CString &amp;sMessage) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCPerlModule.html#a0516e70afc35b8e958699d29ca07ff06">CPerlModule::OnModNotice</a> </td>
+          <td class="memname">virtual void <a class="el" href="classCPerlModule.html#a766f246d34bb96fff44238c59ddc1114">CPerlModule::OnModNotice</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>sMessage</em></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -3298,7 +3298,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>See <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2" title="This enum is just used for return from module hooks.">CModule::EModRet</a>. </dd></dl>
 
-<p>Reimplemented in <a class="el" href="classCPyModule.html#a6f2f35a40c70ccea00c2dcd9dc2122b5">CPyModule</a>.</p>
+<p>Reimplemented in <a class="el" href="classCPyModule.html#a452f9166be866ab653f975750eb2c607">CPyModule</a>.</p>
 
 </div>
 </div>
@@ -3344,16 +3344,16 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>See <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2" title="This enum is just used for return from module hooks.">CModule::EModRet</a>. </dd></dl>
 
-<p>Reimplemented in <a class="el" href="classCPyModule.html#aa49330322e6067159ab8c4e5b10d8d67">CPyModule</a>.</p>
+<p>Reimplemented in <a class="el" href="classCPyModule.html#a2b6ad4867375f8fed5961698d2c6aba9">CPyModule</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a40f02781a0b90720a62e1e633f0a34f7"></a><!-- doxytag: member="CPerlModule::OnNick" ref="a40f02781a0b90720a62e1e633f0a34f7" args="(const CNick &amp;Nick, const CString &amp;sNewNick, const std::vector&lt; CChan * &gt; &amp;vChans)" -->
+<a class="anchor" id="a25f097a994e432ac43995573a7ada40f"></a><!-- doxytag: member="CPerlModule::OnNick" ref="a25f097a994e432ac43995573a7ada40f" args="(const CNick &amp;Nick, const CString &amp;sNewNick, const std::vector&lt; CChan * &gt; &amp;vChans) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCPerlModule.html#a40f02781a0b90720a62e1e633f0a34f7">CPerlModule::OnNick</a> </td>
+          <td class="memname">virtual void <a class="el" href="classCPerlModule.html#a25f097a994e432ac43995573a7ada40f">CPerlModule::OnNick</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCNick.html">CNick</a> &amp;&#160;</td>
           <td class="paramname"><em>Nick</em>, </td>
@@ -3373,7 +3373,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
+          <td></td><td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -3433,12 +3433,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a4b5e0e32b930ba3b55971459a5fa7596"></a><!-- doxytag: member="CPerlModule::OnOp2" ref="a4b5e0e32b930ba3b55971459a5fa7596" args="(const CNick *pOpNick, const CNick &amp;Nick, CChan &amp;Channel, bool bNoChange)" -->
+<a class="anchor" id="af006f7ae8104f15ae7e9837e937c7c98"></a><!-- doxytag: member="CPerlModule::OnOp2" ref="af006f7ae8104f15ae7e9837e937c7c98" args="(const CNick *pOpNick, const CNick &amp;Nick, CChan &amp;Channel, bool bNoChange) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCPerlModule.html#a4b5e0e32b930ba3b55971459a5fa7596">CPerlModule::OnOp2</a> </td>
+          <td class="memname">virtual void <a class="el" href="classCPerlModule.html#af006f7ae8104f15ae7e9837e937c7c98">CPerlModule::OnOp2</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCNick.html">CNick</a> *&#160;</td>
           <td class="paramname"><em>pOpNick</em>, </td>
@@ -3464,7 +3464,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
+          <td></td><td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -3476,12 +3476,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af27a3b99f2d4858c9a885cac46584aa5"></a><!-- doxytag: member="CPerlModule::OnPart" ref="af27a3b99f2d4858c9a885cac46584aa5" args="(const CNick &amp;Nick, CChan &amp;Channel, const CString &amp;sMessage)" -->
+<a class="anchor" id="a1cbcc2227a302511af41a12943008235"></a><!-- doxytag: member="CPerlModule::OnPart" ref="a1cbcc2227a302511af41a12943008235" args="(const CNick &amp;Nick, CChan &amp;Channel, const CString &amp;sMessage) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCPerlModule.html#af27a3b99f2d4858c9a885cac46584aa5">CPerlModule::OnPart</a> </td>
+          <td class="memname">virtual void <a class="el" href="classCPerlModule.html#a1cbcc2227a302511af41a12943008235">CPerlModule::OnPart</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCNick.html">CNick</a> &amp;&#160;</td>
           <td class="paramname"><em>Nick</em>, </td>
@@ -3501,7 +3501,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
+          <td></td><td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -3521,15 +3521,15 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ade870bb0997223150c17cca8a4ec3f45"></a><!-- doxytag: member="CPerlModule::OnPostRehash" ref="ade870bb0997223150c17cca8a4ec3f45" args="()" -->
+<a class="anchor" id="a6494a2bb057a76de86addc215125a62b"></a><!-- doxytag: member="CPerlModule::OnPostRehash" ref="a6494a2bb057a76de86addc215125a62b" args="() override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCPerlModule.html#ade870bb0997223150c17cca8a4ec3f45">CPerlModule::OnPostRehash</a> </td>
+          <td class="memname">virtual void <a class="el" href="classCPerlModule.html#a6494a2bb057a76de86addc215125a62b">CPerlModule::OnPostRehash</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -3541,15 +3541,15 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a6909e73528d3c7ffbd97bf83ab730b3c"></a><!-- doxytag: member="CPerlModule::OnPreRehash" ref="a6909e73528d3c7ffbd97bf83ab730b3c" args="()" -->
+<a class="anchor" id="a1f48285ec5942df1738a877a1391fb11"></a><!-- doxytag: member="CPerlModule::OnPreRehash" ref="a1f48285ec5942df1738a877a1391fb11" args="() override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCPerlModule.html#a6909e73528d3c7ffbd97bf83ab730b3c">CPerlModule::OnPreRehash</a> </td>
+          <td class="memname">virtual void <a class="el" href="classCPerlModule.html#a1f48285ec5942df1738a877a1391fb11">CPerlModule::OnPreRehash</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -3561,12 +3561,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a5ed5ab7b51e5764a0395c29295d870d2"></a><!-- doxytag: member="CPerlModule::OnPrivAction" ref="a5ed5ab7b51e5764a0395c29295d870d2" args="(CNick &amp;Nick, CString &amp;sMessage)" -->
+<a class="anchor" id="abf750d565d4b282c3578d877fa13fc7e"></a><!-- doxytag: member="CPerlModule::OnPrivAction" ref="abf750d565d4b282c3578d877fa13fc7e" args="(CNick &amp;Nick, CString &amp;sMessage) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#a5ed5ab7b51e5764a0395c29295d870d2">CPerlModule::OnPrivAction</a> </td>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#abf750d565d4b282c3578d877fa13fc7e">CPerlModule::OnPrivAction</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classCNick.html">CNick</a> &amp;&#160;</td>
           <td class="paramname"><em>Nick</em>, </td>
@@ -3580,7 +3580,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
+          <td></td><td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -3601,12 +3601,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a7479678d49ebe7c5476ca2db98c2d7cf"></a><!-- doxytag: member="CPerlModule::OnPrivBufferPlayLine" ref="a7479678d49ebe7c5476ca2db98c2d7cf" args="(CClient &amp;Client, CString &amp;sLine)" -->
+<a class="anchor" id="a20bbdd2c3fbc5adbf946dd6d8d3b0c6a"></a><!-- doxytag: member="CPerlModule::OnPrivBufferPlayLine" ref="a20bbdd2c3fbc5adbf946dd6d8d3b0c6a" args="(CClient &amp;Client, CString &amp;sLine) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#a7479678d49ebe7c5476ca2db98c2d7cf">CPerlModule::OnPrivBufferPlayLine</a> </td>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#a20bbdd2c3fbc5adbf946dd6d8d3b0c6a">CPerlModule::OnPrivBufferPlayLine</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classCClient.html">CClient</a> &amp;&#160;</td>
           <td class="paramname"><em>Client</em>, </td>
@@ -3620,7 +3620,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
+          <td></td><td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -3640,12 +3640,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab262aff3566190c2377556f442eb19dc"></a><!-- doxytag: member="CPerlModule::OnPrivCTCP" ref="ab262aff3566190c2377556f442eb19dc" args="(CNick &amp;Nick, CString &amp;sMessage)" -->
+<a class="anchor" id="a81aebb41213129f7e7fa86a396cfadea"></a><!-- doxytag: member="CPerlModule::OnPrivCTCP" ref="a81aebb41213129f7e7fa86a396cfadea" args="(CNick &amp;Nick, CString &amp;sMessage) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#ab262aff3566190c2377556f442eb19dc">CPerlModule::OnPrivCTCP</a> </td>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#a81aebb41213129f7e7fa86a396cfadea">CPerlModule::OnPrivCTCP</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classCNick.html">CNick</a> &amp;&#160;</td>
           <td class="paramname"><em>Nick</em>, </td>
@@ -3659,7 +3659,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
+          <td></td><td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -3679,12 +3679,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aaf94ba93f0799a4833a87ac60a697dc9"></a><!-- doxytag: member="CPerlModule::OnPrivMsg" ref="aaf94ba93f0799a4833a87ac60a697dc9" args="(CNick &amp;Nick, CString &amp;sMessage)" -->
+<a class="anchor" id="ae0db647ee749976d618039134116932f"></a><!-- doxytag: member="CPerlModule::OnPrivMsg" ref="ae0db647ee749976d618039134116932f" args="(CNick &amp;Nick, CString &amp;sMessage) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#aaf94ba93f0799a4833a87ac60a697dc9">CPerlModule::OnPrivMsg</a> </td>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#ae0db647ee749976d618039134116932f">CPerlModule::OnPrivMsg</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classCNick.html">CNick</a> &amp;&#160;</td>
           <td class="paramname"><em>Nick</em>, </td>
@@ -3698,7 +3698,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
+          <td></td><td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -3718,12 +3718,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aaa33b0ad451209f2633dde330266e55b"></a><!-- doxytag: member="CPerlModule::OnPrivNotice" ref="aaa33b0ad451209f2633dde330266e55b" args="(CNick &amp;Nick, CString &amp;sMessage)" -->
+<a class="anchor" id="ad4d174c892c09185f05593416e600215"></a><!-- doxytag: member="CPerlModule::OnPrivNotice" ref="ad4d174c892c09185f05593416e600215" args="(CNick &amp;Nick, CString &amp;sMessage) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#aaa33b0ad451209f2633dde330266e55b">CPerlModule::OnPrivNotice</a> </td>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#ad4d174c892c09185f05593416e600215">CPerlModule::OnPrivNotice</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classCNick.html">CNick</a> &amp;&#160;</td>
           <td class="paramname"><em>Nick</em>, </td>
@@ -3737,7 +3737,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
+          <td></td><td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -3757,12 +3757,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aba8175ee876013edbe0540e9b83f488e"></a><!-- doxytag: member="CPerlModule::OnQuit" ref="aba8175ee876013edbe0540e9b83f488e" args="(const CNick &amp;Nick, const CString &amp;sMessage, const std::vector&lt; CChan * &gt; &amp;vChans)" -->
+<a class="anchor" id="a21f519b343e6eeffc57981c1cc2059ae"></a><!-- doxytag: member="CPerlModule::OnQuit" ref="a21f519b343e6eeffc57981c1cc2059ae" args="(const CNick &amp;Nick, const CString &amp;sMessage, const std::vector&lt; CChan * &gt; &amp;vChans) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCPerlModule.html#aba8175ee876013edbe0540e9b83f488e">CPerlModule::OnQuit</a> </td>
+          <td class="memname">virtual void <a class="el" href="classCPerlModule.html#a21f519b343e6eeffc57981c1cc2059ae">CPerlModule::OnQuit</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCNick.html">CNick</a> &amp;&#160;</td>
           <td class="paramname"><em>Nick</em>, </td>
@@ -3782,7 +3782,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
+          <td></td><td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -3802,16 +3802,16 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a1a9b34f54652e4c58b1015a31c5bd757"></a><!-- doxytag: member="CPerlModule::OnRaw" ref="a1a9b34f54652e4c58b1015a31c5bd757" args="(CString &amp;sLine)" -->
+<a class="anchor" id="ac7bab3c0448acf298327a001ed1807a5"></a><!-- doxytag: member="CPerlModule::OnRaw" ref="ac7bab3c0448acf298327a001ed1807a5" args="(CString &amp;sLine) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#a1a9b34f54652e4c58b1015a31c5bd757">CPerlModule::OnRaw</a> </td>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#ac7bab3c0448acf298327a001ed1807a5">CPerlModule::OnRaw</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>sLine</em></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -3869,12 +3869,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a9acab27918b3e1b96f6343ab5f696060"></a><!-- doxytag: member="CPerlModule::OnRawMode2" ref="a9acab27918b3e1b96f6343ab5f696060" args="(const CNick *pOpNick, CChan &amp;Channel, const CString &amp;sModes, const CString &amp;sArgs)" -->
+<a class="anchor" id="a313a3c9050921e863965dcc8fefdb4d1"></a><!-- doxytag: member="CPerlModule::OnRawMode2" ref="a313a3c9050921e863965dcc8fefdb4d1" args="(const CNick *pOpNick, CChan &amp;Channel, const CString &amp;sModes, const CString &amp;sArgs) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCPerlModule.html#a9acab27918b3e1b96f6343ab5f696060">CPerlModule::OnRawMode2</a> </td>
+          <td class="memname">virtual void <a class="el" href="classCPerlModule.html#a313a3c9050921e863965dcc8fefdb4d1">CPerlModule::OnRawMode2</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCNick.html">CNick</a> *&#160;</td>
           <td class="paramname"><em>pOpNick</em>, </td>
@@ -3900,7 +3900,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
+          <td></td><td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -3922,12 +3922,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a93b9c8e77468d0284de2e7ac08f6bf20"></a><!-- doxytag: member="CPerlModule::OnSendToClient" ref="a93b9c8e77468d0284de2e7ac08f6bf20" args="(CString &amp;sLine, CClient &amp;Client)" -->
+<a class="anchor" id="a790d34381e05ee5f8b473653d9cc471e"></a><!-- doxytag: member="CPerlModule::OnSendToClient" ref="a790d34381e05ee5f8b473653d9cc471e" args="(CString &amp;sLine, CClient &amp;Client) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#a93b9c8e77468d0284de2e7ac08f6bf20">CPerlModule::OnSendToClient</a> </td>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#a790d34381e05ee5f8b473653d9cc471e">CPerlModule::OnSendToClient</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>sLine</em>, </td>
@@ -3941,7 +3941,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
+          <td></td><td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -3962,16 +3962,16 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="afb08ed34365f2f4360739e9d43f0dd7b"></a><!-- doxytag: member="CPerlModule::OnSendToIRC" ref="afb08ed34365f2f4360739e9d43f0dd7b" args="(CString &amp;sLine)" -->
+<a class="anchor" id="aa24bd19d84788d09e9458ae06e208b4e"></a><!-- doxytag: member="CPerlModule::OnSendToIRC" ref="aa24bd19d84788d09e9458ae06e208b4e" args="(CString &amp;sLine) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#afb08ed34365f2f4360739e9d43f0dd7b">CPerlModule::OnSendToIRC</a> </td>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#aa24bd19d84788d09e9458ae06e208b4e">CPerlModule::OnSendToIRC</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>sLine</em></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -3991,16 +3991,16 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af39659e1ebcc306530b705b18b99babc"></a><!-- doxytag: member="CPerlModule::OnServerCapAvailable" ref="af39659e1ebcc306530b705b18b99babc" args="(const CString &amp;sCap)" -->
+<a class="anchor" id="a63c35b012b12825ced29604577b3623e"></a><!-- doxytag: member="CPerlModule::OnServerCapAvailable" ref="a63c35b012b12825ced29604577b3623e" args="(const CString &amp;sCap) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool <a class="el" href="classCPerlModule.html#af39659e1ebcc306530b705b18b99babc">CPerlModule::OnServerCapAvailable</a> </td>
+          <td class="memname">virtual bool <a class="el" href="classCPerlModule.html#a63c35b012b12825ced29604577b3623e">CPerlModule::OnServerCapAvailable</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>sCap</em></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -4019,12 +4019,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a1d7938d3abb0e044ad235c0c13c493b1"></a><!-- doxytag: member="CPerlModule::OnServerCapResult" ref="a1d7938d3abb0e044ad235c0c13c493b1" args="(const CString &amp;sCap, bool bSuccess)" -->
+<a class="anchor" id="a3f9990294f8f3f72299e0b0c84e683cf"></a><!-- doxytag: member="CPerlModule::OnServerCapResult" ref="a3f9990294f8f3f72299e0b0c84e683cf" args="(const CString &amp;sCap, bool bSuccess) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCPerlModule.html#a1d7938d3abb0e044ad235c0c13c493b1">CPerlModule::OnServerCapResult</a> </td>
+          <td class="memname">virtual void <a class="el" href="classCPerlModule.html#a3f9990294f8f3f72299e0b0c84e683cf">CPerlModule::OnServerCapResult</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>sCap</em>, </td>
@@ -4038,7 +4038,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
+          <td></td><td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -4057,16 +4057,16 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="abb54936736e8c94c65406caa06b8f185"></a><!-- doxytag: member="CPerlModule::OnStatusCommand" ref="abb54936736e8c94c65406caa06b8f185" args="(CString &amp;sCommand)" -->
+<a class="anchor" id="adef29581c51a0c7b53bc165436f973d8"></a><!-- doxytag: member="CPerlModule::OnStatusCommand" ref="adef29581c51a0c7b53bc165436f973d8" args="(CString &amp;sCommand) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#abb54936736e8c94c65406caa06b8f185">CPerlModule::OnStatusCommand</a> </td>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#adef29581c51a0c7b53bc165436f973d8">CPerlModule::OnStatusCommand</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>sCommand</em></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -4085,16 +4085,16 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a5f6965adb91827f7567b38ffd960157d"></a><!-- doxytag: member="CPerlModule::OnTimerAutoJoin" ref="a5f6965adb91827f7567b38ffd960157d" args="(CChan &amp;Channel)" -->
+<a class="anchor" id="a81405cf97c1edfb1c2c99c807652f72e"></a><!-- doxytag: member="CPerlModule::OnTimerAutoJoin" ref="a81405cf97c1edfb1c2c99c807652f72e" args="(CChan &amp;Channel) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#a5f6965adb91827f7567b38ffd960157d">CPerlModule::OnTimerAutoJoin</a> </td>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#a81405cf97c1edfb1c2c99c807652f72e">CPerlModule::OnTimerAutoJoin</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classCChan.html">CChan</a> &amp;&#160;</td>
           <td class="paramname"><em>Channel</em></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -4113,12 +4113,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a294cb66f709e294535e13809854515d2"></a><!-- doxytag: member="CPerlModule::OnTopic" ref="a294cb66f709e294535e13809854515d2" args="(CNick &amp;Nick, CChan &amp;Channel, CString &amp;sTopic)" -->
+<a class="anchor" id="ab0da7fa409fb03a59f0887d366577713"></a><!-- doxytag: member="CPerlModule::OnTopic" ref="ab0da7fa409fb03a59f0887d366577713" args="(CNick &amp;Nick, CChan &amp;Channel, CString &amp;sTopic) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#a294cb66f709e294535e13809854515d2">CPerlModule::OnTopic</a> </td>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#ab0da7fa409fb03a59f0887d366577713">CPerlModule::OnTopic</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classCNick.html">CNick</a> &amp;&#160;</td>
           <td class="paramname"><em>Nick</em>, </td>
@@ -4138,7 +4138,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
+          <td></td><td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -4220,16 +4220,16 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="classCPyModule.html#a80a7d8efcf1542233c9d0567ba90ab24">CPyModule</a>.</p>
+<p>Reimplemented in <a class="el" href="classCPyModule.html#ab4e4a1f607ab4893e34d5660739b0da1">CPyModule</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a05b498d4e662c582fc5529521675e6be"></a><!-- doxytag: member="CPerlModule::OnUserAction" ref="a05b498d4e662c582fc5529521675e6be" args="(CString &amp;sTarget, CString &amp;sMessage)" -->
+<a class="anchor" id="a154a284985a2f532ae62fde7c6fb3cbc"></a><!-- doxytag: member="CPerlModule::OnUserAction" ref="a154a284985a2f532ae62fde7c6fb3cbc" args="(CString &amp;sTarget, CString &amp;sMessage) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#a05b498d4e662c582fc5529521675e6be">CPerlModule::OnUserAction</a> </td>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#a154a284985a2f532ae62fde7c6fb3cbc">CPerlModule::OnUserAction</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>sTarget</em>, </td>
@@ -4243,7 +4243,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
+          <td></td><td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -4264,12 +4264,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a0f83f2de841b85bac4a8e908dd5fa71a"></a><!-- doxytag: member="CPerlModule::OnUserCTCP" ref="a0f83f2de841b85bac4a8e908dd5fa71a" args="(CString &amp;sTarget, CString &amp;sMessage)" -->
+<a class="anchor" id="a7adb16de8874864ee45eea0e8a4ad5d3"></a><!-- doxytag: member="CPerlModule::OnUserCTCP" ref="a7adb16de8874864ee45eea0e8a4ad5d3" args="(CString &amp;sTarget, CString &amp;sMessage) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#a0f83f2de841b85bac4a8e908dd5fa71a">CPerlModule::OnUserCTCP</a> </td>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#a7adb16de8874864ee45eea0e8a4ad5d3">CPerlModule::OnUserCTCP</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>sTarget</em>, </td>
@@ -4283,7 +4283,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
+          <td></td><td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -4304,12 +4304,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ae45eff0e1a2c082087615ed3d72368b7"></a><!-- doxytag: member="CPerlModule::OnUserCTCPReply" ref="ae45eff0e1a2c082087615ed3d72368b7" args="(CString &amp;sTarget, CString &amp;sMessage)" -->
+<a class="anchor" id="a0fac047450f649137d6321e0e203f2e5"></a><!-- doxytag: member="CPerlModule::OnUserCTCPReply" ref="a0fac047450f649137d6321e0e203f2e5" args="(CString &amp;sTarget, CString &amp;sMessage) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#ae45eff0e1a2c082087615ed3d72368b7">CPerlModule::OnUserCTCPReply</a> </td>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#a0fac047450f649137d6321e0e203f2e5">CPerlModule::OnUserCTCPReply</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>sTarget</em>, </td>
@@ -4323,7 +4323,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
+          <td></td><td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -4343,12 +4343,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a26be7cf647e7a6c5e1dfe7c07e77ebaf"></a><!-- doxytag: member="CPerlModule::OnUserJoin" ref="a26be7cf647e7a6c5e1dfe7c07e77ebaf" args="(CString &amp;sChannel, CString &amp;sKey)" -->
+<a class="anchor" id="aaa60007b70b172b56328c6649ae66cc9"></a><!-- doxytag: member="CPerlModule::OnUserJoin" ref="aaa60007b70b172b56328c6649ae66cc9" args="(CString &amp;sChannel, CString &amp;sKey) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#a26be7cf647e7a6c5e1dfe7c07e77ebaf">CPerlModule::OnUserJoin</a> </td>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#aaa60007b70b172b56328c6649ae66cc9">CPerlModule::OnUserJoin</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>sChannel</em>, </td>
@@ -4362,7 +4362,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
+          <td></td><td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -4382,12 +4382,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a5f5ce2e2adf7bf3597bac17e25148636"></a><!-- doxytag: member="CPerlModule::OnUserMsg" ref="a5f5ce2e2adf7bf3597bac17e25148636" args="(CString &amp;sTarget, CString &amp;sMessage)" -->
+<a class="anchor" id="aa570481a2b3479d334f731661ba0a8c4"></a><!-- doxytag: member="CPerlModule::OnUserMsg" ref="aa570481a2b3479d334f731661ba0a8c4" args="(CString &amp;sTarget, CString &amp;sMessage) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#a5f5ce2e2adf7bf3597bac17e25148636">CPerlModule::OnUserMsg</a> </td>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#aa570481a2b3479d334f731661ba0a8c4">CPerlModule::OnUserMsg</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>sTarget</em>, </td>
@@ -4401,7 +4401,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
+          <td></td><td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -4421,12 +4421,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="afaf43ff78efdaa05fbfc96a30bc16f4b"></a><!-- doxytag: member="CPerlModule::OnUserNotice" ref="afaf43ff78efdaa05fbfc96a30bc16f4b" args="(CString &amp;sTarget, CString &amp;sMessage)" -->
+<a class="anchor" id="a7e9ac3e97f104ba107a0f11c5efddc4a"></a><!-- doxytag: member="CPerlModule::OnUserNotice" ref="a7e9ac3e97f104ba107a0f11c5efddc4a" args="(CString &amp;sTarget, CString &amp;sMessage) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#afaf43ff78efdaa05fbfc96a30bc16f4b">CPerlModule::OnUserNotice</a> </td>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#a7e9ac3e97f104ba107a0f11c5efddc4a">CPerlModule::OnUserNotice</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>sTarget</em>, </td>
@@ -4440,7 +4440,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
+          <td></td><td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -4460,12 +4460,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aa991e67df21124a25ea346998a9f602e"></a><!-- doxytag: member="CPerlModule::OnUserPart" ref="aa991e67df21124a25ea346998a9f602e" args="(CString &amp;sChannel, CString &amp;sMessage)" -->
+<a class="anchor" id="ade2fe4cbb886156590e1497b23de04d5"></a><!-- doxytag: member="CPerlModule::OnUserPart" ref="ade2fe4cbb886156590e1497b23de04d5" args="(CString &amp;sChannel, CString &amp;sMessage) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#aa991e67df21124a25ea346998a9f602e">CPerlModule::OnUserPart</a> </td>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#ade2fe4cbb886156590e1497b23de04d5">CPerlModule::OnUserPart</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>sChannel</em>, </td>
@@ -4479,7 +4479,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
+          <td></td><td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -4499,16 +4499,16 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a50bece90f112a95f73b2808486a9b9f5"></a><!-- doxytag: member="CPerlModule::OnUserRaw" ref="a50bece90f112a95f73b2808486a9b9f5" args="(CString &amp;sLine)" -->
+<a class="anchor" id="a80ee58b4683c45a01aa00f97fe2480c1"></a><!-- doxytag: member="CPerlModule::OnUserRaw" ref="a80ee58b4683c45a01aa00f97fe2480c1" args="(CString &amp;sLine) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#a50bece90f112a95f73b2808486a9b9f5">CPerlModule::OnUserRaw</a> </td>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#a80ee58b4683c45a01aa00f97fe2480c1">CPerlModule::OnUserRaw</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>sLine</em></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -4527,12 +4527,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a85c4a44124a6291e53882ebafbcae7db"></a><!-- doxytag: member="CPerlModule::OnUserTopic" ref="a85c4a44124a6291e53882ebafbcae7db" args="(CString &amp;sChannel, CString &amp;sTopic)" -->
+<a class="anchor" id="a5c5596a75db523d607b9372ef2a2f1e6"></a><!-- doxytag: member="CPerlModule::OnUserTopic" ref="a5c5596a75db523d607b9372ef2a2f1e6" args="(CString &amp;sChannel, CString &amp;sTopic) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#a85c4a44124a6291e53882ebafbcae7db">CPerlModule::OnUserTopic</a> </td>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#a5c5596a75db523d607b9372ef2a2f1e6">CPerlModule::OnUserTopic</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>sChannel</em>, </td>
@@ -4546,7 +4546,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
+          <td></td><td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -4566,16 +4566,16 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a6e919ca532b065312107b7cefb110af6"></a><!-- doxytag: member="CPerlModule::OnUserTopicRequest" ref="a6e919ca532b065312107b7cefb110af6" args="(CString &amp;sChannel)" -->
+<a class="anchor" id="a39e676842ec907fbe9c38d16f4b07b88"></a><!-- doxytag: member="CPerlModule::OnUserTopicRequest" ref="a39e676842ec907fbe9c38d16f4b07b88" args="(CString &amp;sChannel) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#a6e919ca532b065312107b7cefb110af6">CPerlModule::OnUserTopicRequest</a> </td>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCPerlModule.html#a39e676842ec907fbe9c38d16f4b07b88">CPerlModule::OnUserTopicRequest</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>sChannel</em></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -4633,12 +4633,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aa09b2161c2a640a52b3e7565a2ac3f31"></a><!-- doxytag: member="CPerlModule::OnVoice2" ref="aa09b2161c2a640a52b3e7565a2ac3f31" args="(const CNick *pOpNick, const CNick &amp;Nick, CChan &amp;Channel, bool bNoChange)" -->
+<a class="anchor" id="a2909766317bdaa7bd958954a77372ee7"></a><!-- doxytag: member="CPerlModule::OnVoice2" ref="a2909766317bdaa7bd958954a77372ee7" args="(const CNick *pOpNick, const CNick &amp;Nick, CChan &amp;Channel, bool bNoChange) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCPerlModule.html#aa09b2161c2a640a52b3e7565a2ac3f31">CPerlModule::OnVoice2</a> </td>
+          <td class="memname">virtual void <a class="el" href="classCPerlModule.html#a2909766317bdaa7bd958954a77372ee7">CPerlModule::OnVoice2</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCNick.html">CNick</a> *&#160;</td>
           <td class="paramname"><em>pOpNick</em>, </td>
@@ -4664,7 +4664,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
+          <td></td><td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -4676,12 +4676,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a89bc16bd7f04c20c5da616de14a4203a"></a><!-- doxytag: member="CPerlModule::OnWebPreRequest" ref="a89bc16bd7f04c20c5da616de14a4203a" args="(CWebSock &amp;WebSock, const CString &amp;sPageName)" -->
+<a class="anchor" id="aeaeb032cd627393ec6c7cc5aa09557f4"></a><!-- doxytag: member="CPerlModule::OnWebPreRequest" ref="aeaeb032cd627393ec6c7cc5aa09557f4" args="(CWebSock &amp;WebSock, const CString &amp;sPageName) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool <a class="el" href="classCPerlModule.html#a89bc16bd7f04c20c5da616de14a4203a">CPerlModule::OnWebPreRequest</a> </td>
+          <td class="memname">virtual bool <a class="el" href="classCPerlModule.html#aeaeb032cd627393ec6c7cc5aa09557f4">CPerlModule::OnWebPreRequest</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classCWebSock.html">CWebSock</a> &amp;&#160;</td>
           <td class="paramname"><em>WebSock</em>, </td>
@@ -4695,7 +4695,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
+          <td></td><td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -4716,12 +4716,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a626d268b890a1c0c9f80b708da33a1eb"></a><!-- doxytag: member="CPerlModule::OnWebRequest" ref="a626d268b890a1c0c9f80b708da33a1eb" args="(CWebSock &amp;WebSock, const CString &amp;sPageName, CTemplate &amp;Tmpl)" -->
+<a class="anchor" id="a66560a01bd59bb7650a17e614c2de47e"></a><!-- doxytag: member="CPerlModule::OnWebRequest" ref="a66560a01bd59bb7650a17e614c2de47e" args="(CWebSock &amp;WebSock, const CString &amp;sPageName, CTemplate &amp;Tmpl) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool <a class="el" href="classCPerlModule.html#a626d268b890a1c0c9f80b708da33a1eb">CPerlModule::OnWebRequest</a> </td>
+          <td class="memname">virtual bool <a class="el" href="classCPerlModule.html#a66560a01bd59bb7650a17e614c2de47e">CPerlModule::OnWebRequest</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classCWebSock.html">CWebSock</a> &amp;&#160;</td>
           <td class="paramname"><em>WebSock</em>, </td>
@@ -4741,7 +4741,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
+          <td></td><td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -5240,15 +5240,15 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aaf9740c532cbbd2d1ba31895d696f4c4"></a><!-- doxytag: member="CPerlModule::WebRequiresAdmin" ref="aaf9740c532cbbd2d1ba31895d696f4c4" args="()" -->
+<a class="anchor" id="aed3eefa97e6ec795cb9b4282ab66ec28"></a><!-- doxytag: member="CPerlModule::WebRequiresAdmin" ref="aed3eefa97e6ec795cb9b4282ab66ec28" args="() override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool <a class="el" href="classCPerlModule.html#aaf9740c532cbbd2d1ba31895d696f4c4">CPerlModule::WebRequiresAdmin</a> </td>
+          <td class="memname">virtual bool <a class="el" href="classCPerlModule.html#aed3eefa97e6ec795cb9b4282ab66ec28">CPerlModule::WebRequiresAdmin</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -5261,15 +5261,15 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af1a527a36de5cd83db4a7379f75c6ca6"></a><!-- doxytag: member="CPerlModule::WebRequiresLogin" ref="af1a527a36de5cd83db4a7379f75c6ca6" args="()" -->
+<a class="anchor" id="a703ad3fa0556574eb636e61e3c718581"></a><!-- doxytag: member="CPerlModule::WebRequiresLogin" ref="a703ad3fa0556574eb636e61e3c718581" args="() override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool <a class="el" href="classCPerlModule.html#af1a527a36de5cd83db4a7379f75c6ca6">CPerlModule::WebRequiresLogin</a> </td>
+          <td class="memname">virtual bool <a class="el" href="classCPerlModule.html#a703ad3fa0556574eb636e61e3c718581">CPerlModule::WebRequiresLogin</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -5512,7 +5512,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Nov 6 2014 22:17:19 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Nov 6 2014 22:26:00 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

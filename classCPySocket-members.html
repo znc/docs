@@ -103,12 +103,12 @@ This is the complete list of members for <a class="el" href="classCPySocket.html
   <tr class="memlist"><td><a class="el" href="classCsock.html#a8b185717b466c70d2934fce9775c54daaab188649e45cb1b209e25364a1672290">CLT_NOW</a> enum value</td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCSocket.html#aeb45ba68fff1f1740cec0e52f636418a">Connect</a>(const CString &amp;sHostname, unsigned short uPort, bool bSSL=false, unsigned int uTimeout=60)</td><td><a class="el" href="classCSocket.html">CSocket</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#aca10fb9ed6fae8ab232df34964be7e47">CZNCSock::Connect</a>()</td><td><a class="el" href="classCsock.html">Csock</a></td><td><code> [virtual]</code></td></tr>
-  <tr class="memlist"><td><a class="el" href="classCPySocket.html#a3e54bb0e5b0935389e7c861438371532">Connected</a>()</td><td><a class="el" href="classCPySocket.html">CPySocket</a></td><td><code> [virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCPySocket.html#a5a7e627db5ba37122e6a9c680d6a90b2">Connected</a>() override</td><td><a class="el" href="classCPySocket.html">CPySocket</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#aed53de4046def7f4efbed8f449ec5fcb">ConnectFD</a>(int iReadFD, int iWriteFD, const CS_STRING &amp;sName, bool bIsSSL=false, ETConn eDirection=INBOUND)</td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#a258d1a2583c9e550e290850d4647e747">ConnectInetd</a>(bool bIsSSL=false, const CS_STRING &amp;sHostname=&quot;&quot;)</td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCSocket.html#ac91d8849bfa3a2e8272f9d3edab00eba">ConnectionFrom</a>(const CString &amp;sHost, unsigned short uPort)</td><td><a class="el" href="classCSocket.html">CSocket</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#a46eaa8d1a67946a6d2f6349f40d551e2">CZNCSock::ConnectionFrom</a>(const CS_STRING &amp;sHost, uint16_t iPort)</td><td><a class="el" href="classCsock.html">Csock</a></td><td><code> [inline, virtual]</code></td></tr>
-  <tr class="memlist"><td><a class="el" href="classCPySocket.html#ad2b9451511b989aafb7a0ab1178ed885">ConnectionRefused</a>()</td><td><a class="el" href="classCPySocket.html">CPySocket</a></td><td><code> [virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCPySocket.html#a4e363a251df417b4af82cdaa1f9242a3">ConnectionRefused</a>() override</td><td><a class="el" href="classCPySocket.html">CPySocket</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#a85c79bd1cfd6893e4a828085fcf197d6">ConnectSSL</a>()</td><td><a class="el" href="classCsock.html">Csock</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCZNCSock.html#a573ed9061b8c532a9749af8158ad1bb2">ConvertAddress</a>(const struct sockaddr_storage *pAddr, socklen_t iAddrLen, CS_STRING &amp;sIP, u_short *piPort) const </td><td><a class="el" href="classCZNCSock.html">CZNCSock</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#ab03fd24a2d7a397ef9bbe864df6dda31">Csock::ConvertAddress</a>(const struct sockaddr_storage *pAddr, socklen_t iAddrLen, CS_STRING &amp;sIP, uint16_t *piPort) const </td><td><a class="el" href="classCsock.html">Csock</a></td><td><code> [virtual]</code></td></tr>
@@ -136,7 +136,7 @@ This is the complete list of members for <a class="el" href="classCPySocket.html
   <tr class="memlist"><td><a class="el" href="classCsock.html#a0ffefa30e1140bac8aec4e397b7d9895">Dereference</a>()</td><td><a class="el" href="classCsock.html">Csock</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#adfee091e6a74b7ad8db05171465412c0">DisableReadLine</a>()</td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#a0256789d876431c52f9e2e905440319f">DisableSSLProtocols</a>(u_int uDisableOpts)</td><td><a class="el" href="classCsock.html">Csock</a></td><td><code> [inline]</code></td></tr>
-  <tr class="memlist"><td><a class="el" href="classCPySocket.html#a4a145fe73a06f8e1039215b28e6dfceb">Disconnected</a>()</td><td><a class="el" href="classCPySocket.html">CPySocket</a></td><td><code> [virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCPySocket.html#ae3a1765d9522ad5d15a9ba91b0f8a250">Disconnected</a>() override</td><td><a class="el" href="classCPySocket.html">CPySocket</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#a94aab05249b29e4446077664dee91e5ea61e4aa93fa8c8d34d7393f13767f3817">DNS_DEST</a> enum value</td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#a94aab05249b29e4446077664dee91e5ea7ad7bffbc3827e2b09ded86d9d95e0c5">DNS_VHOST</a> enum value</td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#a765aca4259f116588f591762286905f4">DNSLookup</a>(EDNSLType eDNSLType)</td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
@@ -194,7 +194,7 @@ This is the complete list of members for <a class="el" href="classCPySocket.html
   <tr class="memlist"><td><a class="el" href="classCsock.html#ac1002a688e16094328430f5d2ec8e793">GetSock</a>()</td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#ad3b89b95816e682074af647efcda1d79">GetSock</a>() const </td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#a34976b96561b164c82a03570aa8ea733">GetSockName</a>() const </td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="classCPySocket.html#a78ebab49e155177acf1dd8f0f9de6517">GetSockObj</a>(const CString &amp;sHost, unsigned short uPort)</td><td><a class="el" href="classCPySocket.html">CPySocket</a></td><td><code> [virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCPySocket.html#a09a342697739c191bad79e0a099222d2">GetSockObj</a>(const CString &amp;sHost, unsigned short uPort) override</td><td><a class="el" href="classCPySocket.html">CPySocket</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#a9f3b85490d28167617cf0e85782512b4">CSocket::GetSockObj</a>(const CS_STRING &amp;sHostname, uint16_t iPort)</td><td><a class="el" href="classCsock.html">Csock</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#adfe38d92769d41132435094784524930">GetSSL</a>() const </td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#abffe3da5cb2bc43cfdc2235cbbad43c9">GetSSLMethod</a>() const </td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
@@ -240,8 +240,8 @@ This is the complete list of members for <a class="el" href="classCPySocket.html
   <tr class="memlist"><td><a class="el" href="classCsock.html#ae0bf394f0683437a754dd535a7d1df65a17d2e48f4d5431e9821404f4fdb56816">READ_EOF</a> enum value</td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#ae0bf394f0683437a754dd535a7d1df65a86e032a7631c0139f255b98b72d04b46">READ_ERR</a> enum value</td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#ae0bf394f0683437a754dd535a7d1df65a7c8e273409d721a821034ca6ef301997">READ_TIMEDOUT</a> enum value</td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="classCPySocket.html#a3c3566df44b128a5c68f8f76ae79abf6">ReadData</a>(const char *data, size_t len)</td><td><a class="el" href="classCPySocket.html">CPySocket</a></td><td><code> [virtual]</code></td></tr>
-  <tr class="memlist"><td><a class="el" href="classCPySocket.html#a5861bd1f90dd6ba9a6b32a29d6991f7f">ReadLine</a>(const CString &amp;sLine)</td><td><a class="el" href="classCPySocket.html">CPySocket</a></td><td><code> [virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCPySocket.html#a36bdc6492bd58528defb8d15f8ad70ab">ReadData</a>(const char *data, size_t len) override</td><td><a class="el" href="classCPySocket.html">CPySocket</a></td><td><code> [virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCPySocket.html#afe48c3ae886d2990235c04d2a91a75a0">ReadLine</a>(const CString &amp;sLine) override</td><td><a class="el" href="classCPySocket.html">CPySocket</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#a81e28ab1c689ee3e8496d7d717a5a402">CSocket::ReadLine</a>(const CS_STRING &amp;sLine)</td><td><a class="el" href="classCsock.html">Csock</a></td><td><code> [inline, virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#ab7c9de4f24a9fa1ef9e3bb506e6ddd33">ReadPaused</a>()</td><td><a class="el" href="classCsock.html">Csock</a></td><td><code> [inline, virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#a8d07fe5d296508b0a324444baa16eec0">ResetBytesRead</a>()</td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
@@ -292,7 +292,7 @@ This is the complete list of members for <a class="el" href="classCPySocket.html
   <tr class="memlist"><td><a class="el" href="classCsock.html#a823b15d60b631e504125da49bedcf825">SslIsEstablished</a>() const </td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#af4d988ee04ca005ea414eae536cc00e3">SSLServerSetup</a>()</td><td><a class="el" href="classCsock.html">Csock</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#a564bc3d66c7e2396afe204691673435c">StartTLS</a>()</td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="classCPySocket.html#a7ff57dc35e9234334549ce0381b4352a">Timeout</a>()</td><td><a class="el" href="classCPySocket.html">CPySocket</a></td><td><code> [virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCPySocket.html#a42b0c747f4ad635b989b02bb40932cbd">Timeout</a>() override</td><td><a class="el" href="classCPySocket.html">CPySocket</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#aa7da8fe2945d8cfca7c53aec88fdad68aa5f0d66c54b5d1d1dc470a8de2196f3b">TLS1</a> enum value</td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#aa7da8fe2945d8cfca7c53aec88fdad68afe7b977cb013e4e4cecf52c5e556685e">TLS11</a> enum value</td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#aa7da8fe2945d8cfca7c53aec88fdad68af4dceb7a8d0001e838430f7cbed6b9cb">TLS12</a> enum value</td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
@@ -326,7 +326,7 @@ This is the complete list of members for <a class="el" href="classCPySocket.html
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Nov 6 2014 22:17:20 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Nov 6 2014 22:26:00 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

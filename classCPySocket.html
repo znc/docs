@@ -180,18 +180,18 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">PyObject *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPySocket.html#a24b8afa902cc0c6373ec2a5d0737847f">GetPyObj</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">PyObject *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPySocket.html#a7f4e7b6c551bedd0c854b34e5b163c31">GetNewPyObj</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPySocket.html#a7519b87c91a258707b915110220fc226">~CPySocket</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPySocket.html#a3e54bb0e5b0935389e7c861438371532">Connected</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Connected event.  <a href="#a3e54bb0e5b0935389e7c861438371532"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPySocket.html#a4a145fe73a06f8e1039215b28e6dfceb">Disconnected</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnected event.  <a href="#a4a145fe73a06f8e1039215b28e6dfceb"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPySocket.html#a7ff57dc35e9234334549ce0381b4352a">Timeout</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Sock Timed out event.  <a href="#a7ff57dc35e9234334549ce0381b4352a"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPySocket.html#ad2b9451511b989aafb7a0ab1178ed885">ConnectionRefused</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Connection Refused Event.  <a href="#ad2b9451511b989aafb7a0ab1178ed885"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPySocket.html#a3c3566df44b128a5c68f8f76ae79abf6">ReadData</a> (const char *data, size_t len)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Ready to read data event.  <a href="#a3c3566df44b128a5c68f8f76ae79abf6"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPySocket.html#a5861bd1f90dd6ba9a6b32a29d6991f7f">ReadLine</a> (const <a class="el" href="classCString.html">CString</a> &amp;sLine)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCsock.html">Csock</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPySocket.html#a78ebab49e155177acf1dd8f0f9de6517">GetSockObj</a> (const <a class="el" href="classCString.html">CString</a> &amp;sHost, unsigned short uPort)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPySocket.html#a5a7e627db5ba37122e6a9c680d6a90b2">Connected</a> () override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Connected event.  <a href="#a5a7e627db5ba37122e6a9c680d6a90b2"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPySocket.html#ae3a1765d9522ad5d15a9ba91b0f8a250">Disconnected</a> () override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnected event.  <a href="#ae3a1765d9522ad5d15a9ba91b0f8a250"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPySocket.html#a42b0c747f4ad635b989b02bb40932cbd">Timeout</a> () override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Sock Timed out event.  <a href="#a42b0c747f4ad635b989b02bb40932cbd"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPySocket.html#a4e363a251df417b4af82cdaa1f9242a3">ConnectionRefused</a> () override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Connection Refused Event.  <a href="#a4e363a251df417b4af82cdaa1f9242a3"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPySocket.html#a36bdc6492bd58528defb8d15f8ad70ab">ReadData</a> (const char *data, size_t len) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Ready to read data event.  <a href="#a36bdc6492bd58528defb8d15f8ad70ab"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPySocket.html#afe48c3ae886d2990235c04d2a91a75a0">ReadLine</a> (const <a class="el" href="classCString.html">CString</a> &amp;sLine) override</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCsock.html">Csock</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPySocket.html#a09a342697739c191bad79e0a099222d2">GetSockObj</a> (const <a class="el" href="classCString.html">CString</a> &amp;sHost, unsigned short uPort) override</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSocket.html#a006813cba95395cb701d3c57c2578749">ReachedMaxBuffer</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This defaults to closing the socket, feel free to override.  <a href="#a006813cba95395cb701d3c57c2578749"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSocket.html#a84cd201737bd8fc7e5fc8d1f59e1b3be">SockError</a> (int iErrno, const <a class="el" href="classCString.html">CString</a> &amp;sDescription)</td></tr>
@@ -1075,15 +1075,15 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a3e54bb0e5b0935389e7c861438371532"></a><!-- doxytag: member="CPySocket::Connected" ref="a3e54bb0e5b0935389e7c861438371532" args="()" -->
+<a class="anchor" id="a5a7e627db5ba37122e6a9c680d6a90b2"></a><!-- doxytag: member="CPySocket::Connected" ref="a5a7e627db5ba37122e6a9c680d6a90b2" args="() override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCPySocket.html#a3e54bb0e5b0935389e7c861438371532">CPySocket::Connected</a> </td>
+          <td class="memname">virtual void <a class="el" href="classCPySocket.html#a5a7e627db5ba37122e6a9c680d6a90b2">CPySocket::Connected</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -1232,15 +1232,15 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ad2b9451511b989aafb7a0ab1178ed885"></a><!-- doxytag: member="CPySocket::ConnectionRefused" ref="ad2b9451511b989aafb7a0ab1178ed885" args="()" -->
+<a class="anchor" id="a4e363a251df417b4af82cdaa1f9242a3"></a><!-- doxytag: member="CPySocket::ConnectionRefused" ref="a4e363a251df417b4af82cdaa1f9242a3" args="() override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCPySocket.html#ad2b9451511b989aafb7a0ab1178ed885">CPySocket::ConnectionRefused</a> </td>
+          <td class="memname">virtual void <a class="el" href="classCPySocket.html#a4e363a251df417b4af82cdaa1f9242a3">CPySocket::ConnectionRefused</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -1556,15 +1556,15 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a4a145fe73a06f8e1039215b28e6dfceb"></a><!-- doxytag: member="CPySocket::Disconnected" ref="a4a145fe73a06f8e1039215b28e6dfceb" args="()" -->
+<a class="anchor" id="ae3a1765d9522ad5d15a9ba91b0f8a250"></a><!-- doxytag: member="CPySocket::Disconnected" ref="ae3a1765d9522ad5d15a9ba91b0f8a250" args="() override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCPySocket.html#a4a145fe73a06f8e1039215b28e6dfceb">CPySocket::Disconnected</a> </td>
+          <td class="memname">virtual void <a class="el" href="classCPySocket.html#ae3a1765d9522ad5d15a9ba91b0f8a250">CPySocket::Disconnected</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -2330,12 +2330,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a78ebab49e155177acf1dd8f0f9de6517"></a><!-- doxytag: member="CPySocket::GetSockObj" ref="a78ebab49e155177acf1dd8f0f9de6517" args="(const CString &amp;sHost, unsigned short uPort)" -->
+<a class="anchor" id="a09a342697739c191bad79e0a099222d2"></a><!-- doxytag: member="CPySocket::GetSockObj" ref="a09a342697739c191bad79e0a099222d2" args="(const CString &amp;sHost, unsigned short uPort) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classCsock.html">Csock</a>* <a class="el" href="classCPySocket.html#a78ebab49e155177acf1dd8f0f9de6517">CPySocket::GetSockObj</a> </td>
+          <td class="memname">virtual <a class="el" href="classCsock.html">Csock</a>* <a class="el" href="classCPySocket.html#a09a342697739c191bad79e0a099222d2">CPySocket::GetSockObj</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>sHost</em>, </td>
@@ -2349,7 +2349,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
+          <td></td><td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -3072,12 +3072,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a3c3566df44b128a5c68f8f76ae79abf6"></a><!-- doxytag: member="CPySocket::ReadData" ref="a3c3566df44b128a5c68f8f76ae79abf6" args="(const char *data, size_t len)" -->
+<a class="anchor" id="a36bdc6492bd58528defb8d15f8ad70ab"></a><!-- doxytag: member="CPySocket::ReadData" ref="a36bdc6492bd58528defb8d15f8ad70ab" args="(const char *data, size_t len) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCPySocket.html#a3c3566df44b128a5c68f8f76ae79abf6">CPySocket::ReadData</a> </td>
+          <td class="memname">virtual void <a class="el" href="classCPySocket.html#a36bdc6492bd58528defb8d15f8ad70ab">CPySocket::ReadData</a> </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>data</em>, </td>
@@ -3091,7 +3091,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
+          <td></td><td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -3103,16 +3103,16 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a5861bd1f90dd6ba9a6b32a29d6991f7f"></a><!-- doxytag: member="CPySocket::ReadLine" ref="a5861bd1f90dd6ba9a6b32a29d6991f7f" args="(const CString &amp;sLine)" -->
+<a class="anchor" id="afe48c3ae886d2990235c04d2a91a75a0"></a><!-- doxytag: member="CPySocket::ReadLine" ref="afe48c3ae886d2990235c04d2a91a75a0" args="(const CString &amp;sLine) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCPySocket.html#a5861bd1f90dd6ba9a6b32a29d6991f7f">CPySocket::ReadLine</a> </td>
+          <td class="memname">virtual void <a class="el" href="classCPySocket.html#afe48c3ae886d2990235c04d2a91a75a0">CPySocket::ReadLine</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>sLine</em></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -3940,15 +3940,15 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a7ff57dc35e9234334549ce0381b4352a"></a><!-- doxytag: member="CPySocket::Timeout" ref="a7ff57dc35e9234334549ce0381b4352a" args="()" -->
+<a class="anchor" id="a42b0c747f4ad635b989b02bb40932cbd"></a><!-- doxytag: member="CPySocket::Timeout" ref="a42b0c747f4ad635b989b02bb40932cbd" args="() override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCPySocket.html#a7ff57dc35e9234334549ce0381b4352a">CPySocket::Timeout</a> </td>
+          <td class="memname">virtual void <a class="el" href="classCPySocket.html#a42b0c747f4ad635b989b02bb40932cbd">CPySocket::Timeout</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -4103,7 +4103,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Nov 6 2014 22:17:20 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Nov 6 2014 22:26:00 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
