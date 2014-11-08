@@ -1,9 +1,9 @@
 <map id="G" name="G">
-<area shape="rect" id="node9" href="$Modules_8h.html" title="znc/Modules.h" alt="" coords="3234,83,3346,112"/>
+<area shape="rect" id="node9" href="$Modules_8h.html" title="znc/Modules.h" alt="" coords="3309,83,3421,112"/>
 <area shape="rect" id="node11" href="$zncconfig_8h.html" title="znc/zncconfig.h" alt="" coords="3006,701,3126,731"/>
 <area shape="rect" id="node13" href="$WebModules_8h.html" title="znc/WebModules.h" alt="" coords="3031,160,3170,189"/>
 <area shape="rect" id="node100" href="$Threads_8h.html" title="znc/Threads.h" alt="" coords="3218,392,3327,421"/>
-<area shape="rect" id="node117" href="$main_8h.html" title="znc/main.h" alt="" coords="3290,160,3381,189"/>
+<area shape="rect" id="node117" href="$main_8h.html" title="znc/main.h" alt="" coords="3319,160,3410,189"/>
 <area shape="rect" id="node16" href="$Template_8h.html" title="znc/Template.h" alt="" coords="2769,392,2886,421"/>
 <area shape="rect" id="node40" href="$HTTPSock_8h.html" title="znc/HTTPSock.h" alt="" coords="3018,237,3141,267"/>
 <area shape="rect" id="node19" href="$ZNCString_8h.html" title="znc/ZNCString.h" alt="" coords="869,624,994,653"/>

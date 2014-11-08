@@ -89,7 +89,7 @@ var searchData=
   ['getfloodrate',['GetFloodRate',['../classCIRCNetwork.html#a43f6c9795e2f7629981f760876c3e5cf',1,'CIRCNetwork']]],
   ['getformat',['GetFormat',['../classCBufLine.html#af2b9f9a5ab176f6d3260e913f4f68386',1,'CBufLine']]],
   ['getfullname',['GetFullName',['../classCClient.html#a3b2b74d3e1ddb2aa9bbc99733679c79c',1,'CClient']]],
-  ['getfunction',['GetFunction',['../classCModCommand.html#a74433c8bc25d0d94340284f0c2d216ed',1,'CModCommand']]],
+  ['getfunction',['GetFunction',['../classCModCommand.html#a266f0d164ab3989a92b031cb909de6c3',1,'CModCommand']]],
   ['getgid',['GetGID',['../classCFile.html#a76aba0a5b96e6b5e0d99dfbdacb55789',1,'CFile::GetGID() const '],['../classCFile.html#a299f750a837ac4c9ab7722a999f3e59b',1,'CFile::GetGID(const CString &amp;sFile)']]],
   ['gethasargs',['GetHasArgs',['../classCModInfo.html#a9f4dfb2e2841b1083afdae999d8b7e81',1,'CModInfo']]],
   ['gethomepath',['GetHomePath',['../classCFile.html#a345df2684500c66f8585c2b03ae4c4a5',1,'CFile::GetHomePath()'],['../classCZNC.html#ad3ac4e4c4c0312991abccd6fa9628639',1,'CZNC::GetHomePath()']]],

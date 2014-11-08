@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['call',['Call',['../classCModCommand.html#a4ed36483b17c67e7e0f974768f24c9ea',1,'CModCommand']]],
+  ['call',['Call',['../classCModCommand.html#a615b1a613674fd3ced2647f31dcd37b8',1,'CModCommand']]],
   ['callsockerror',['CallSockError',['../classCsock.html#a852f8794b44be3038fc00af483907de9',1,'Csock']]],
   ['casecmp',['CaseCmp',['../classCString.html#a882fb767088c6f57a3cfcc2d3ceeb4bf',1,'CString']]],
   ['caseinsensitive',['CaseInsensitive',['../classCString.html#a5733db47a1cbad5ebe79bca80afdd3f1',1,'CString::CaseInsensitive()'],['../ZNCString_8h.html#aaa929f83398f109dfbff9789108b159ba661bce8278aa797301d87df7dcd5cf10',1,'CaseInsensitive():&#160;ZNCString.h']]],
@@ -75,7 +75,8 @@ var searchData=
   ['clt_5fdont',['CLT_DONT',['../classCsock.html#a8b185717b466c70d2934fce9775c54daaf5c0492f5ab5acb8bf746df8e5355512',1,'Csock']]],
   ['clt_5fnow',['CLT_NOW',['../classCsock.html#a8b185717b466c70d2934fce9775c54daaab188649e45cb1b209e25364a1672290',1,'Csock']]],
   ['cmd5',['CMD5',['../classCMD5.html',1,'CMD5'],['../classCMD5.html#ad541a1803913fea185899e84bb124b7a',1,'CMD5::CMD5()'],['../classCMD5.html#acb5a66fe4dcc1dfd3bda781a73419652',1,'CMD5::CMD5(const string &amp;sText)'],['../classCMD5.html#af47271d4cff503cb748c6c1d237f87f5',1,'CMD5::CMD5(const char *szText, uint32 nTextLen)']]],
-  ['cmodcommand',['CModCommand',['../classCModCommand.html',1,'CModCommand'],['../classCModCommand.html#a5927847912aa40744eda4f9dc2959310',1,'CModCommand::CModCommand()'],['../classCModCommand.html#a6c784b1f4a03944e8017206da54bf5f3',1,'CModCommand::CModCommand(const CString &amp;sCmd, ModCmdFunc func, const CString &amp;sArgs, const CString &amp;sDesc)'],['../classCModCommand.html#a4a7ddb90c3b921eecd72de5b17da55ad',1,'CModCommand::CModCommand(const CModCommand &amp;other)']]],
+  ['cmdfunc',['CmdFunc',['../classCModCommand.html#a9604b3868931bd9cb0f5bd74e7b13f52',1,'CModCommand']]],
+  ['cmodcommand',['CModCommand',['../classCModCommand.html',1,'CModCommand'],['../classCModCommand.html#a5927847912aa40744eda4f9dc2959310',1,'CModCommand::CModCommand()'],['../classCModCommand.html#a26a487bc2c76ed8ab9159b030cd18578',1,'CModCommand::CModCommand(const CString &amp;sCmd, CModule *pMod, ModCmdFunc func, const CString &amp;sArgs, const CString &amp;sDesc)'],['../classCModCommand.html#aa2ba4e55bc53ac1173ee3e5c5f71e5b0',1,'CModCommand::CModCommand(const CString &amp;sCmd, CmdFunc func, const CString &amp;sArgs, const CString &amp;sDesc)'],['../classCModCommand.html#a4a7ddb90c3b921eecd72de5b17da55ad',1,'CModCommand::CModCommand(const CModCommand &amp;other)']]],
   ['cmodinfo',['CModInfo',['../classCModInfo.html',1,'CModInfo'],['../classCModInfo.html#aef3c193c9312894e3871a2229072b44b',1,'CModInfo::CModInfo()'],['../classCModInfo.html#adae4a5752c4ccc41bea4456ef58e48c8',1,'CModInfo::CModInfo(const CString &amp;sName, const CString &amp;sPath, EModuleType eType)']]],
   ['cmodule',['CModule',['../classCModule.html',1,'CModule'],['../classCModule.html#a3d7691ccde221ebc3221a3db9977b365',1,'CModule::CModule()']]],
   ['cmodules',['CModules',['../classCModules.html',1,'CModules'],['../classCModules.html#a455e7255a181c5a1a5d348e3ca163c5a',1,'CModules::CModules()']]],

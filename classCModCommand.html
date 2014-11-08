@@ -99,12 +99,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Public Types</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef void(CModule::*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModCommand.html#ac1b783f249d3acaa8c43173e4afc7415">ModCmdFunc</a> )(const <a class="el" href="classCString.html">CString</a> &amp;sLine)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for the callback function that handles the actual command.  <a href="#ac1b783f249d3acaa8c43173e4afc7415"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; void(const <br class="typebreak"/>
+<a class="el" href="classCString.html">CString</a> &amp;sLine)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModCommand.html#a9604b3868931bd9cb0f5bd74e7b13f52">CmdFunc</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModCommand.html#a5927847912aa40744eda4f9dc2959310">CModCommand</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor, needed so that this can be saved in a std::map.  <a href="#a5927847912aa40744eda4f9dc2959310"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModCommand.html#a6c784b1f4a03944e8017206da54bf5f3">CModCommand</a> (const <a class="el" href="classCString.html">CString</a> &amp;sCmd, <a class="el" href="classCModCommand.html#ac1b783f249d3acaa8c43173e4afc7415">ModCmdFunc</a> func, const <a class="el" href="classCString.html">CString</a> &amp;sArgs, const <a class="el" href="classCString.html">CString</a> &amp;sDesc)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classCModCommand.html" title="A helper class for handling commands in modules.">CModCommand</a>.  <a href="#a6c784b1f4a03944e8017206da54bf5f3"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModCommand.html#a26a487bc2c76ed8ab9159b030cd18578">CModCommand</a> (const <a class="el" href="classCString.html">CString</a> &amp;sCmd, <a class="el" href="classCModule.html">CModule</a> *pMod, <a class="el" href="classCModCommand.html#ac1b783f249d3acaa8c43173e4afc7415">ModCmdFunc</a> func, const <a class="el" href="classCString.html">CString</a> &amp;sArgs, const <a class="el" href="classCString.html">CString</a> &amp;sDesc)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classCModCommand.html" title="A helper class for handling commands in modules.">CModCommand</a>.  <a href="#a26a487bc2c76ed8ab9159b030cd18578"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModCommand.html#aa2ba4e55bc53ac1173ee3e5c5f71e5b0">CModCommand</a> (const <a class="el" href="classCString.html">CString</a> &amp;sCmd, <a class="el" href="classCModCommand.html#a9604b3868931bd9cb0f5bd74e7b13f52">CmdFunc</a> func, const <a class="el" href="classCString.html">CString</a> &amp;sArgs, const <a class="el" href="classCString.html">CString</a> &amp;sDesc)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModCommand.html#a4a7ddb90c3b921eecd72de5b17da55ad">CModCommand</a> (const <a class="el" href="classCModCommand.html">CModCommand</a> &amp;other)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor, needed so that this can be saved in a std::map.  <a href="#a4a7ddb90c3b921eecd72de5b17da55ad"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCModCommand.html">CModCommand</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModCommand.html#ae63118e26cd5e3e124a042597cda714b">operator=</a> (const <a class="el" href="classCModCommand.html">CModCommand</a> &amp;other)</td></tr>
@@ -112,10 +115,10 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModCommand.html#a6eb7e51050a9f7b17bb1f39f823b442c">AddHelp</a> (<a class="el" href="classCTable.html">CTable</a> &amp;Table) const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Add this command to the <a class="el" href="classCTable.html" title="Generate a grid-like output from a given input.">CTable</a> instance.  <a href="#a6eb7e51050a9f7b17bb1f39f823b442c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModCommand.html#accfec670153307b7392729372624eab6">GetCommand</a> () const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCModCommand.html#ac1b783f249d3acaa8c43173e4afc7415">ModCmdFunc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModCommand.html#a74433c8bc25d0d94340284f0c2d216ed">GetFunction</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCModCommand.html#a9604b3868931bd9cb0f5bd74e7b13f52">CmdFunc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModCommand.html#a266f0d164ab3989a92b031cb909de6c3">GetFunction</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModCommand.html#acce5bb1b8ee84191cab29afce021b8ed">GetArgs</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModCommand.html#a69e03fabd7d02ae276d62fed82c2f180">GetDescription</a> () const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModCommand.html#a4ed36483b17c67e7e0f974768f24c9ea">Call</a> (<a class="el" href="classCModule.html">CModule</a> *pMod, const <a class="el" href="classCString.html">CString</a> &amp;sLine) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModCommand.html#a615b1a613674fd3ced2647f31dcd37b8">Call</a> (const <a class="el" href="classCString.html">CString</a> &amp;sLine) const </td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModCommand.html#a4c19704b10e804b3447c6c90ce66d793">InitHelp</a> (<a class="el" href="classCTable.html">CTable</a> &amp;Table)</td></tr>
@@ -124,6 +127,19 @@ Static Public Member Functions</h2></td></tr>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>A helper class for handling commands in modules. </p>
 </div><hr/><h2>Member Typedef Documentation</h2>
+<a class="anchor" id="a9604b3868931bd9cb0f5bd74e7b13f52"></a><!-- doxytag: member="CModCommand::CmdFunc" ref="a9604b3868931bd9cb0f5bd74e7b13f52" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::function&lt;void(const <a class="el" href="classCString.html">CString</a>&amp; sLine)&gt; <a class="el" href="classCModCommand.html#a9604b3868931bd9cb0f5bd74e7b13f52">CModCommand::CmdFunc</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ac1b783f249d3acaa8c43173e4afc7415"></a><!-- doxytag: member="CModCommand::ModCmdFunc" ref="ac1b783f249d3acaa8c43173e4afc7415" args=")(const CString &amp;sLine)" -->
 <div class="memitem">
 <div class="memproto">
@@ -158,7 +174,7 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a6c784b1f4a03944e8017206da54bf5f3"></a><!-- doxytag: member="CModCommand::CModCommand" ref="a6c784b1f4a03944e8017206da54bf5f3" args="(const CString &amp;sCmd, ModCmdFunc func, const CString &amp;sArgs, const CString &amp;sDesc)" -->
+<a class="anchor" id="a26a487bc2c76ed8ab9159b030cd18578"></a><!-- doxytag: member="CModCommand::CModCommand" ref="a26a487bc2c76ed8ab9159b030cd18578" args="(const CString &amp;sCmd, CModule *pMod, ModCmdFunc func, const CString &amp;sArgs, const CString &amp;sDesc)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -167,6 +183,12 @@ Static Public Member Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>sCmd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classCModule.html">CModule</a> *&#160;</td>
+          <td class="paramname"><em>pMod</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -205,6 +227,45 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a class="anchor" id="aa2ba4e55bc53ac1173ee3e5c5f71e5b0"></a><!-- doxytag: member="CModCommand::CModCommand" ref="aa2ba4e55bc53ac1173ee3e5c5f71e5b0" args="(const CString &amp;sCmd, CmdFunc func, const CString &amp;sArgs, const CString &amp;sDesc)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCModCommand.html#a5927847912aa40744eda4f9dc2959310">CModCommand::CModCommand</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
+          <td class="paramname"><em>sCmd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classCModCommand.html#a9604b3868931bd9cb0f5bd74e7b13f52">CmdFunc</a>&#160;</td>
+          <td class="paramname"><em>func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
+          <td class="paramname"><em>sArgs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
+          <td class="paramname"><em>sDesc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
 
 </div>
 </div>
@@ -260,26 +321,16 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a4ed36483b17c67e7e0f974768f24c9ea"></a><!-- doxytag: member="CModCommand::Call" ref="a4ed36483b17c67e7e0f974768f24c9ea" args="(CModule *pMod, const CString &amp;sLine) const " -->
+<a class="anchor" id="a615b1a613674fd3ced2647f31dcd37b8"></a><!-- doxytag: member="CModCommand::Call" ref="a615b1a613674fd3ced2647f31dcd37b8" args="(const CString &amp;sLine) const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classCModCommand.html#a4ed36483b17c67e7e0f974768f24c9ea">CModCommand::Call</a> </td>
+          <td class="memname">void <a class="el" href="classCModCommand.html#a615b1a613674fd3ced2647f31dcd37b8">CModCommand::Call</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classCModule.html">CModule</a> *&#160;</td>
-          <td class="paramname"><em>pMod</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
-          <td class="paramname"><em>sLine</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const<code> [inline]</code></td>
+          <td class="paramname"><em>sLine</em></td><td>)</td>
+          <td> const<code> [inline]</code></td>
         </tr>
       </table>
 </div>
@@ -335,12 +386,12 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a74433c8bc25d0d94340284f0c2d216ed"></a><!-- doxytag: member="CModCommand::GetFunction" ref="a74433c8bc25d0d94340284f0c2d216ed" args="() const " -->
+<a class="anchor" id="a266f0d164ab3989a92b031cb909de6c3"></a><!-- doxytag: member="CModCommand::GetFunction" ref="a266f0d164ab3989a92b031cb909de6c3" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCModCommand.html#ac1b783f249d3acaa8c43173e4afc7415">ModCmdFunc</a> <a class="el" href="classCModCommand.html#a74433c8bc25d0d94340284f0c2d216ed">CModCommand::GetFunction</a> </td>
+          <td class="memname"><a class="el" href="classCModCommand.html#a9604b3868931bd9cb0f5bd74e7b13f52">CmdFunc</a> <a class="el" href="classCModCommand.html#a266f0d164ab3989a92b031cb909de6c3">CModCommand::GetFunction</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const<code> [inline]</code></td>
@@ -422,7 +473,7 @@ Static Public Member Functions</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Nov 6 2014 23:22:44 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 8 2014 16:53:05 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
