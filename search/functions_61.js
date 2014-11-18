@@ -56,7 +56,7 @@ var searchData=
   ['aslower',['AsLower',['../classCString.html#aa078d780cc25d1870daf1c794649d0de',1,'CString']]],
   ['assignfds',['AssignFDs',['../classCSockCommon.html#a0f90529eb2f0bdf2f4e8d7899e931f07',1,'CSockCommon']]],
   ['asupper',['AsUpper',['../classCString.html#a3346365be83be1ae40e5d953f3fd29c5',1,'CString']]],
-  ['attachuser',['AttachUser',['../classCChan.html#a25d096b0c139d402e6b20c4570658874',1,'CChan']]],
+  ['attachuser',['AttachUser',['../classCChan.html#ad55baecfe54e10239bc3759b798ab6e9',1,'CChan']]],
   ['authuser',['AuthUser',['../classCClient.html#a070b00519b2415c2420f4b90679b1bc7',1,'CClient::AuthUser()'],['../classCZNC.html#a39f72cb18b8762775dfb545cbd5fc7ec',1,'CZNC::AuthUser()']]],
   ['autoclearchanbuffer',['AutoClearChanBuffer',['../classCChan.html#a9778b5f611568aa8ea62a7634248cf34',1,'CChan::AutoClearChanBuffer()'],['../classCUser.html#afe0c8d6d66ec666a58a3ca0e8b82f850',1,'CUser::AutoClearChanBuffer()']]],
   ['autoclearquerybuffer',['AutoClearQueryBuffer',['../classCUser.html#af0d6c7ca5c4ef5082125a4adee542e57',1,'CUser']]]
