@@ -128,7 +128,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a01ba5149da8cd78e1880495ce24f740a">GetName</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a698ec6c257bd98a5b95c3d1f5c876587">IsNetworkAttached</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="classCClient.html">CClient</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#ab6bb2773e570953262b61aec47136229">GetClients</a> () const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCClient.html">CClient</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a626ff4feebb0923b29557c2aa89428ab">FindClient</a> (const <a class="el" href="classCString.html">CString</a> &amp;sIdentifier) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classCClient.html">CClient</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a4147787a1404867cc802a65c99db2dea">FindClients</a> (const <a class="el" href="classCString.html">CString</a> &amp;sIdentifier) const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a8cbad7c3410053ac1256bae3fcc80a2b">SetUser</a> (<a class="el" href="classCUser.html">CUser</a> *pUser)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#ac224d498d7ce11a73fa398679a2f6bd5">SetName</a> (const <a class="el" href="classCString.html">CString</a> &amp;sName)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCModules.html">CModules</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a3bd545af4f02769c9e15d93dca28feee">GetModules</a> ()</td></tr>
@@ -880,12 +880,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a626ff4feebb0923b29557c2aa89428ab"></a><!-- doxytag: member="CIRCNetwork::FindClient" ref="a626ff4feebb0923b29557c2aa89428ab" args="(const CString &amp;sIdentifier) const " -->
+<a class="anchor" id="a4147787a1404867cc802a65c99db2dea"></a><!-- doxytag: member="CIRCNetwork::FindClients" ref="a4147787a1404867cc802a65c99db2dea" args="(const CString &amp;sIdentifier) const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCClient.html">CClient</a>* <a class="el" href="classCIRCNetwork.html#a626ff4feebb0923b29557c2aa89428ab">CIRCNetwork::FindClient</a> </td>
+          <td class="memname">std::vector&lt;<a class="el" href="classCClient.html">CClient</a>*&gt; <a class="el" href="classCIRCNetwork.html#a4147787a1404867cc802a65c99db2dea">CIRCNetwork::FindClients</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>sIdentifier</em></td><td>)</td>
@@ -2707,7 +2707,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 18 2014 23:43:26 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Nov 19 2014 23:48:27 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

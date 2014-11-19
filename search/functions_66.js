@@ -10,7 +10,7 @@ var searchData=
   ['findboolentry',['FindBoolEntry',['../classCConfig.html#a68b5550db6774a3c301b7eabdfe1db37',1,'CConfig']]],
   ['findchan',['FindChan',['../classCIRCNetwork.html#a578b03ef1ae44f29dc53f7c9597f06a0',1,'CIRCNetwork']]],
   ['findchans',['FindChans',['../classCIRCNetwork.html#a107b507491a0013449bb04dddf955359',1,'CIRCNetwork']]],
-  ['findclient',['FindClient',['../classCIRCNetwork.html#a626ff4feebb0923b29557c2aa89428ab',1,'CIRCNetwork']]],
+  ['findclients',['FindClients',['../classCIRCNetwork.html#a4147787a1404867cc802a65c99db2dea',1,'CIRCNetwork']]],
   ['findcommand',['FindCommand',['../classCModule.html#aedfef504a752c93618e2ff2a8433c3f1',1,'CModule']]],
   ['finddoubleentry',['FindDoubleEntry',['../classCConfig.html#ae95d2f8b265d63748cc9175d02569d79',1,'CConfig']]],
   ['findlistener',['FindListener',['../classCZNC.html#ab542d6909ec3b6cbc74b30de84412d6a',1,'CZNC']]],
