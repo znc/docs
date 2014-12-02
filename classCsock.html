@@ -3808,6 +3808,8 @@ Protected Attributes</h2></td></tr>
  cerr &lt;&lt; "Name! " &lt;&lt; szName &lt;&lt; endl;
  X509_free( pCert );
  </pre> 
+<p>Reimplemented in <a class="el" href="classCZNCSock.html#a5d14ffa21747333136d0b5c62a66f2f5">CZNCSock</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a823b15d60b631e504125da49bedcf825"></a><!-- doxytag: member="Csock::SslIsEstablished" ref="a823b15d60b631e504125da49bedcf825" args="() const " -->
@@ -3937,6 +3939,8 @@ Protected Attributes</h2></td></tr>
 <p>This may get called multiple times, for example with a chain certificate which is fairly typical with certificates from godaddy, freessl, etc. Additionally, openssl does not do any host verification, they leave that up to the you. One easy way to deal with this is to wait for <a class="el" href="classCsock.html#a91e326e9416c4d6703ef06ecdc8f41ce" title="called once the SSL handshake is complete, this is triggered via SSL_CB_HANDSHAKE_DONE in SSL_set_inf...">SSLHandShakeFinished()</a> and examine the peer certificate </p>
 <dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classCsock.html#a91e326e9416c4d6703ef06ecdc8f41ce" title="called once the SSL handshake is complete, this is triggered via SSL_CB_HANDSHAKE_DONE in SSL_set_inf...">SSLHandShakeFinished</a> </dd></dl>
 
+<p>Reimplemented in <a class="el" href="classCZNCSock.html#a8af79eb2248469f40e088e7b8f7ae17b">CZNCSock</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="aea8710a3aaf2f82309ad9bb4dfa70c30"></a><!-- doxytag: member="Csock::Write" ref="aea8710a3aaf2f82309ad9bb4dfa70c30" args="(const char *data, size_t len)" -->
@@ -4051,7 +4055,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Nov 26 2014 22:43:31 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 2 2014 22:00:13 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

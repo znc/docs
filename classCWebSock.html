@@ -83,6 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-types">Protected Types</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a>  </div>
   <div class="headertitle">
@@ -107,7 +108,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classCWebSock__coll__graph.png" border="0" usemap="#CWebSock_coll__map" alt="Collaboration graph"/></div>
 <map name="CWebSock_coll__map" id="CWebSock_coll__map">
-<area shape="rect" id="node2" href="classCHTTPSock.html" title="CHTTPSock" alt="" coords="2361,452,2455,481"/><area shape="rect" id="node4" href="classCSocket.html" title="Base Csock implementation to be used by modules." alt="" coords="1933,161,2008,191"/><area shape="rect" id="node6" href="classCZNCSock.html" title="CZNCSock" alt="" coords="996,93,1087,123"/><area shape="rect" id="node46" href="classCClient.html" title="CClient" alt="" coords="1507,1153,1573,1183"/><area shape="rect" id="node74" href="classCIRCSock.html" title="CIRCSock" alt="" coords="4471,1631,4551,1660"/><area shape="rect" id="node8" href="classCsock.html" title="Basic socket class." alt="" coords="773,93,832,123"/><area shape="rect" id="node10" href="classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock" alt="" coords="596,95,716,124"/><area shape="rect" id="node26" href="classCSocketManager.html" title="Best class to use to interact with the sockets." alt="" coords="1905,348,2036,377"/><area shape="rect" id="node14" href="classCCron.html" title="this is the main cron job class" alt="" coords="28,11,89,40"/><area shape="rect" id="node131" href="classCTimer.html" title="CTimer" alt="" coords="3773,131,3840,160"/><area shape="rect" id="node18" href="classCSMonitorFD.html" title="Class to tie sockets to for monitoring by Csocket at either the Csock or TSockManager." alt="" coords="7,96,111,125"/><area shape="rect" id="node20" href="classCModule.html" title="The base class for your own ZNC modules." alt="" coords="3477,311,3555,340"/><area shape="rect" id="node22" href="classCSockManager.html" title="CSockManager" alt="" coords="2944,367,3061,396"/><area shape="rect" id="node24" href="classTSocketManager.html" title="TSocketManager\&lt; CZNCSock \&gt;" alt="" coords="2295,367,2521,396"/><area shape="rect" id="node28" title="STL class." alt="" coords="1456,591,1624,620"/><area shape="rect" id="node63" title="STL class." alt="" coords="1679,1364,1855,1393"/><area shape="rect" id="node68" title="STL class." alt="" coords="2083,879,2269,908"/><area shape="rect" id="node100" title="STL class." alt="" coords="1435,644,1645,673"/><area shape="rect" id="node36" href="classCString.html" title="String class that is used inside ZNC." alt="" coords="768,1101,837,1131"/><area shape="rect" id="node42" href="classCUser.html" title="CUser" alt="" coords="2377,1069,2439,1099"/><area shape="rect" id="node54" href="classCIRCNetwork.html" title="CIRCNetwork" alt="" coords="3092,1211,3193,1240"/><area shape="rect" id="node56" href="classCNick.html" title="CNick" alt="" coords="3487,1351,3545,1380"/><area shape="rect" id="node81" href="classCChan.html" title="CChan" alt="" coords="3775,1479,3839,1508"/><area shape="rect" id="node119" href="classCServer.html" title="CServer" alt="" coords="1005,953,1077,983"/><area shape="rect" id="node38" title="STL class." alt="" coords="613,1101,699,1131"/><area shape="rect" id="node40" title="STL class." alt="" coords="243,1101,427,1131"/><area shape="rect" id="node66" href="classCModules.html" title="CModules" alt="" coords="2784,1113,2867,1143"/><area shape="rect" id="node61" href="classCBuffer.html" title="CBuffer" alt="" coords="2791,1211,2860,1240"/><area shape="rect" id="node98" href="classMCString.html" title="A dictionary for strings." alt="" coords="1931,576,2011,605"/><area shape="rect" id="node110" href="classCQuery.html" title="CQuery" alt="" coords="2373,1263,2443,1292"/></map>
+<area shape="rect" id="node2" href="classCHTTPSock.html" title="CHTTPSock" alt="" coords="2361,489,2455,519"/><area shape="rect" id="node4" href="classCSocket.html" title="Base Csock implementation to be used by modules." alt="" coords="1933,175,2008,204"/><area shape="rect" id="node6" href="classCZNCSock.html" title="CZNCSock" alt="" coords="996,44,1087,73"/><area shape="rect" id="node46" href="classCClient.html" title="CClient" alt="" coords="1507,1019,1573,1048"/><area shape="rect" id="node74" href="classCIRCSock.html" title="CIRCSock" alt="" coords="4471,1631,4551,1660"/><area shape="rect" id="node8" href="classCsock.html" title="Basic socket class." alt="" coords="773,79,832,108"/><area shape="rect" id="node10" href="classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock" alt="" coords="596,91,716,120"/><area shape="rect" id="node26" href="classCSocketManager.html" title="Best class to use to interact with the sockets." alt="" coords="1905,387,2036,416"/><area shape="rect" id="node14" href="classCCron.html" title="this is the main cron job class" alt="" coords="28,11,89,40"/><area shape="rect" id="node132" href="classCTimer.html" title="CTimer" alt="" coords="3773,156,3840,185"/><area shape="rect" id="node18" href="classCSMonitorFD.html" title="Class to tie sockets to for monitoring by Csocket at either the Csock or TSockManager." alt="" coords="7,96,111,125"/><area shape="rect" id="node20" href="classCModule.html" title="The base class for your own ZNC modules." alt="" coords="3477,361,3555,391"/><area shape="rect" id="node22" href="classCSockManager.html" title="CSockManager" alt="" coords="2944,415,3061,444"/><area shape="rect" id="node24" href="classTSocketManager.html" title="TSocketManager\&lt; CZNCSock \&gt;" alt="" coords="2295,415,2521,444"/><area shape="rect" id="node28" title="STL class." alt="" coords="1456,557,1624,587"/><area shape="rect" id="node63" title="STL class." alt="" coords="1679,1104,1855,1133"/><area shape="rect" id="node68" title="STL class." alt="" coords="2083,661,2269,691"/><area shape="rect" id="node100" title="STL class." alt="" coords="1435,611,1645,640"/><area shape="rect" id="node36" href="classCString.html" title="String class that is used inside ZNC." alt="" coords="768,1323,837,1352"/><area shape="rect" id="node42" href="classCUser.html" title="CUser" alt="" coords="2377,816,2439,845"/><area shape="rect" id="node54" href="classCIRCNetwork.html" title="CIRCNetwork" alt="" coords="3092,1127,3193,1156"/><area shape="rect" id="node56" href="classCNick.html" title="CNick" alt="" coords="3487,1333,3545,1363"/><area shape="rect" id="node81" href="classCChan.html" title="CChan" alt="" coords="3775,1475,3839,1504"/><area shape="rect" id="node119" href="classCServer.html" title="CServer" alt="" coords="1005,1461,1077,1491"/><area shape="rect" id="node38" title="STL class." alt="" coords="613,1323,699,1352"/><area shape="rect" id="node40" title="STL class." alt="" coords="243,1323,427,1352"/><area shape="rect" id="node66" href="classCModules.html" title="CModules" alt="" coords="2784,819,2867,848"/><area shape="rect" id="node61" href="classCBuffer.html" title="CBuffer" alt="" coords="2791,1123,2860,1152"/><area shape="rect" id="node98" href="classMCString.html" title="A dictionary for strings." alt="" coords="1931,615,2011,644"/><area shape="rect" id="node110" href="classCQuery.html" title="CQuery" alt="" coords="2373,955,2443,984"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 
 <p><a href="classCWebSock-members.html">List of all members.</a></p>
@@ -258,9 +259,16 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a32e80e3b3e655ceb34127c2c0ef8f3b0">Listen</a> (uint16_t iPort, int iMaxConns=SOMAXCONN, const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sBindHost=&quot;&quot;, uint32_t iTimeout=0, bool bDetach=false)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Listens for connections.  <a href="#a32e80e3b3e655ceb34127c2c0ef8f3b0"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCModule.html">CModule</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSocket.html#a99c24906ec37c7bbabfdfd90c2611bf2">GetModule</a> () const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNCSock.html#a573ed9061b8c532a9749af8158ad1bb2">ConvertAddress</a> (const struct sockaddr_storage *pAddr, socklen_t iAddrLen, <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sIP, u_short *piPort) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNCSock.html#a1301e874a81e8f2b64ff2af0a0e018a6">ConvertAddress</a> (const struct sockaddr_storage *pAddr, socklen_t iAddrLen, <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sIP, u_short *piPort) const override</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#ab03fd24a2d7a397ef9bbe864df6dda31">ConvertAddress</a> (const struct sockaddr_storage *pAddr, socklen_t iAddrLen, <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sIP, uint16_t *piPort) const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve name info (numeric only) for a given sockaddr_storage  <a href="#ab03fd24a2d7a397ef9bbe864df6dda31"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNCSock.html#a8af79eb2248469f40e088e7b8f7ae17b">VerifyPeerCertificate</a> (int iPreVerify, X509_STORE_CTX *pStoreCTX) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">this is hooked in via SSL_set_verify, and be default it just returns 1 meaning success  <a href="#a8af79eb2248469f40e088e7b8f7ae17b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNCSock.html#a5d14ffa21747333136d0b5c62a66f2f5">SSLHandShakeFinished</a> () override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">called once the SSL handshake is complete, this is triggered via SSL_CB_HANDSHAKE_DONE in SSL_set_info_callback()  <a href="#a5d14ffa21747333136d0b5c62a66f2f5"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNCSock.html#a039ef960176025d06b43997a1156ea5f">SetHostToVerifySSL</a> (const <a class="el" href="classCString.html">CString</a> &amp;sHost)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNCSock.html#a3673ac5321422d5f0589c9db9149f3d2">GetSSLPeerFingerprint</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNCSock.html#a148e6216e3ef442d9ef604834d8c3c05">SetSSLTrustedPeerFingerprints</a> (const <a class="el" href="ZNCString_8h.html#a84b05218977775b974a8db49e81f02a4">SCString</a> &amp;ssFPs)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNCSock.html#ad45449663df4443887919b744b6560fc">SetEncoding</a> (const <a class="el" href="classCString.html">CString</a> &amp;)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a0ffefa30e1140bac8aec4e397b7d9895">Dereference</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">in the event you pass this class to <a class="el" href="classCsock.html#a6de0e591c1bc2a80bbfd7462f8ad14fa" title="use this to copy a sock from one to the other, override it if you have special needs in the event of ...">Copy()</a>, you MUST call this function or on the original <a class="el" href="classCsock.html" title="Basic socket class.">Csock</a> other wise bad side effects will happen (double deletes, weird sock closures, etc) if you call this function and have not handled the internal pointers, other bad things can happend (memory leaks, fd leaks, etc) the whole point of this function is to allow this class to go away without shutting down  <a href="#a0ffefa30e1140bac8aec4e397b7d9895"></a><br/></td></tr>
@@ -441,10 +449,6 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">called to configure the SNI client  <a href="#ab8a870f8df305f21a0307364fdb3c027"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">SSL_CTX *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#ae61306403bb7bbff4e2fd766d9854a4b">SetupServerCTX</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">creates a new SSL_CTX based on the setup of this sock  <a href="#ae61306403bb7bbff4e2fd766d9854a4b"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a91e326e9416c4d6703ef06ecdc8f41ce">SSLHandShakeFinished</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">called once the SSL handshake is complete, this is triggered via SSL_CB_HANDSHAKE_DONE in SSL_set_info_callback()  <a href="#a91e326e9416c4d6703ef06ecdc8f41ce"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a40aec412d77fb21e3213271fc4a4f01c">VerifyPeerCertificate</a> (int iPreVerify, X509_STORE_CTX *pStoreCTX)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">this is hooked in via SSL_set_verify, and be default it just returns 1 meaning success  <a href="#a40aec412d77fb21e3213271fc4a4f01c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#adac00464034930dff05bf104b958f0e8">GetTimeSinceLastDataTransaction</a> (time_t iNow=0) const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">return how long it has been (in seconds) since the last read or successful write  <a href="#adac00464034930dff05bf104b958f0e8"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a182c33dc4074eeb0f304a0b3d775ac78">GetLastCheckTimeout</a> () const </td></tr>
@@ -500,6 +504,10 @@ Static Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCWebSock.html#abd9fadf9072a9a05e39ff5e11ab03b89">FinishUserSessions</a> (const <a class="el" href="classCUser.html">CUser</a> &amp;User)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCHTTPSock.html#aeb21c37436df262b70ff1d1a66839dd1">ParseParams</a> (const <a class="el" href="classCString.html">CString</a> &amp;sParams, std::map&lt; <a class="el" href="classCString.html">CString</a>, <a class="el" href="ZNCString_8h.html#af7252b7c4a0d4ec44ddc136c6055ae51">VCString</a> &gt; &amp;msvsParams)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCHTTPSock.html#aa410b448fc998a220fdef6d616a879da">GetDate</a> (time_t tm=0)</td></tr>
+<tr><td colspan="2"><h2><a name="pro-types"></a>
+Protected Types</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="classCZNCSock.html#a58222e8d6adf6157d11e5b40f444e5b5a0bade2ff8f3b4bb0327f8ccfb4c71493">errnoBadSSLCert</a> =  12569
+ }</td></tr>
 <tr><td colspan="2"><h2><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCWebSock.html#a2d4ff046798e0694e82e28e2f28752e3">AddModLoop</a> (const <a class="el" href="classCString.html">CString</a> &amp;sLoopName, <a class="el" href="classCModule.html">CModule</a> &amp;Module, <a class="el" href="classCTemplate.html">CTemplate</a> *pTemplate=NULL)</td></tr>
@@ -559,6 +567,25 @@ Protected Attributes</h2></td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a02fc87b0c2dceedeaa8df5407b389f6aa7b49e7c8277b2b9f541a370d9c3e656d"></a><!-- doxytag: member="TMO_ACCEPT" ref="a02fc87b0c2dceedeaa8df5407b389f6aa7b49e7c8277b2b9f541a370d9c3e656d" args="" -->TMO_ACCEPT</em>&nbsp;</td><td>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a02fc87b0c2dceedeaa8df5407b389f6aaf53c83452a73e97d1b89e9e7743ddb13"></a><!-- doxytag: member="TMO_ALL" ref="a02fc87b0c2dceedeaa8df5407b389f6aaf53c83452a73e97d1b89e9e7743ddb13" args="" -->TMO_ALL</em>&nbsp;</td><td>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a58222e8d6adf6157d11e5b40f444e5b5"></a><!-- doxytag: member="CWebSock::@2" ref="a58222e8d6adf6157d11e5b40f444e5b5" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum<code> [protected, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="a58222e8d6adf6157d11e5b40f444e5b5a0bade2ff8f3b4bb0327f8ccfb4c71493"></a><!-- doxytag: member="errnoBadSSLCert" ref="a58222e8d6adf6157d11e5b40f444e5b5a0bade2ff8f3b4bb0327f8ccfb4c71493" args="" -->errnoBadSSLCert</em>&nbsp;</td><td>
 </td></tr>
 </table>
 </dd>
@@ -1466,12 +1493,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a573ed9061b8c532a9749af8158ad1bb2"></a><!-- doxytag: member="CWebSock::ConvertAddress" ref="a573ed9061b8c532a9749af8158ad1bb2" args="(const struct sockaddr_storage *pAddr, socklen_t iAddrLen, CS_STRING &amp;sIP, u_short *piPort) const " -->
+<a class="anchor" id="a1301e874a81e8f2b64ff2af0a0e018a6"></a><!-- doxytag: member="CWebSock::ConvertAddress" ref="a1301e874a81e8f2b64ff2af0a0e018a6" args="(const struct sockaddr_storage *pAddr, socklen_t iAddrLen, CS_STRING &amp;sIP, u_short *piPort) const override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual int <a class="el" href="classCZNCSock.html#a573ed9061b8c532a9749af8158ad1bb2">CZNCSock::ConvertAddress</a> </td>
+          <td class="memname">int <a class="el" href="classCZNCSock.html#a1301e874a81e8f2b64ff2af0a0e018a6">CZNCSock::ConvertAddress</a> </td>
           <td>(</td>
           <td class="paramtype">const struct sockaddr_storage *&#160;</td>
           <td class="paramname"><em>pAddr</em>, </td>
@@ -1497,7 +1524,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const<code> [virtual, inherited]</code></td>
+          <td></td><td> const<code> [override, inherited]</code></td>
         </tr>
       </table>
 </div>
@@ -3075,6 +3102,22 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a3673ac5321422d5f0589c9db9149f3d2"></a><!-- doxytag: member="CWebSock::GetSSLPeerFingerprint" ref="a3673ac5321422d5f0589c9db9149f3d2" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCString.html">CString</a> <a class="el" href="classCZNCSock.html#a3673ac5321422d5f0589c9db9149f3d2">CZNCSock::GetSSLPeerFingerprint</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ab519dfdc201e09bf8453ab259861f3d2"></a><!-- doxytag: member="CWebSock::GetSSLSession" ref="ab519dfdc201e09bf8453ab259861f3d2" args="() const " -->
 <div class="memitem">
 <div class="memproto">
@@ -4545,6 +4588,23 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a039ef960176025d06b43997a1156ea5f"></a><!-- doxytag: member="CWebSock::SetHostToVerifySSL" ref="a039ef960176025d06b43997a1156ea5f" args="(const CString &amp;sHost)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classCZNCSock.html#a039ef960176025d06b43997a1156ea5f">CZNCSock::SetHostToVerifySSL</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
+          <td class="paramname"><em>sHost</em></td><td>)</td>
+          <td><code> [inline, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a5b624942d40b44cbde3c1a24819d816f"></a><!-- doxytag: member="CWebSock::SetIPv6" ref="a5b624942d40b44cbde3c1a24819d816f" args="(bool b)" -->
 <div class="memitem">
 <div class="memproto">
@@ -4928,6 +4988,23 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a148e6216e3ef442d9ef604834d8c3c05"></a><!-- doxytag: member="CWebSock::SetSSLTrustedPeerFingerprints" ref="a148e6216e3ef442d9ef604834d8c3c05" args="(const SCString &amp;ssFPs)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classCZNCSock.html#a148e6216e3ef442d9ef604834d8c3c05">CZNCSock::SetSSLTrustedPeerFingerprints</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="ZNCString_8h.html#a84b05218977775b974a8db49e81f02a4">SCString</a> &amp;&#160;</td>
+          <td class="paramname"><em>ssFPs</em></td><td>)</td>
+          <td><code> [inline, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a8d9f4c33c736ec6153257c647cf8fa9d"></a><!-- doxytag: member="CWebSock::SetTimeout" ref="a8d9f4c33c736ec6153257c647cf8fa9d" args="(int iTimeout, uint32_t iTimeoutType=TMO_ALL)" -->
 <div class="memitem">
 <div class="memproto">
@@ -5225,15 +5302,15 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a91e326e9416c4d6703ef06ecdc8f41ce"></a><!-- doxytag: member="CWebSock::SSLHandShakeFinished" ref="a91e326e9416c4d6703ef06ecdc8f41ce" args="()" -->
+<a class="anchor" id="a5d14ffa21747333136d0b5c62a66f2f5"></a><!-- doxytag: member="CWebSock::SSLHandShakeFinished" ref="a5d14ffa21747333136d0b5c62a66f2f5" args="() override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCsock.html#a91e326e9416c4d6703ef06ecdc8f41ce">Csock::SSLHandShakeFinished</a> </td>
+          <td class="memname">void <a class="el" href="classCZNCSock.html#a5d14ffa21747333136d0b5c62a66f2f5">CZNCSock::SSLHandShakeFinished</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [inline, virtual, inherited]</code></td>
+          <td><code> [override, virtual, inherited]</code></td>
         </tr>
       </table>
 </div>
@@ -5249,6 +5326,8 @@ Protected Attributes</h2></td></tr>
  cerr &lt;&lt; "Name! " &lt;&lt; szName &lt;&lt; endl;
  X509_free( pCert );
  </pre> 
+<p>Reimplemented from <a class="el" href="classCsock.html#a91e326e9416c4d6703ef06ecdc8f41ce">Csock</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a823b15d60b631e504125da49bedcf825"></a><!-- doxytag: member="CWebSock::SslIsEstablished" ref="a823b15d60b631e504125da49bedcf825" args="() const " -->
@@ -5341,12 +5420,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a40aec412d77fb21e3213271fc4a4f01c"></a><!-- doxytag: member="CWebSock::VerifyPeerCertificate" ref="a40aec412d77fb21e3213271fc4a4f01c" args="(int iPreVerify, X509_STORE_CTX *pStoreCTX)" -->
+<a class="anchor" id="a8af79eb2248469f40e088e7b8f7ae17b"></a><!-- doxytag: member="CWebSock::VerifyPeerCertificate" ref="a8af79eb2248469f40e088e7b8f7ae17b" args="(int iPreVerify, X509_STORE_CTX *pStoreCTX) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual int <a class="el" href="classCsock.html#a40aec412d77fb21e3213271fc4a4f01c">Csock::VerifyPeerCertificate</a> </td>
+          <td class="memname">int <a class="el" href="classCZNCSock.html#a8af79eb2248469f40e088e7b8f7ae17b">CZNCSock::VerifyPeerCertificate</a> </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>iPreVerify</em>, </td>
@@ -5360,7 +5439,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [inline, virtual, inherited]</code></td>
+          <td></td><td><code> [override, virtual, inherited]</code></td>
         </tr>
       </table>
 </div>
@@ -5375,8 +5454,10 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>1 to continue, 0 to abort</dd></dl>
-<p>This may get called multiple times, for example with a chain certificate which is fairly typical with certificates from godaddy, freessl, etc. Additionally, openssl does not do any host verification, they leave that up to the you. One easy way to deal with this is to wait for <a class="el" href="classCsock.html#a91e326e9416c4d6703ef06ecdc8f41ce" title="called once the SSL handshake is complete, this is triggered via SSL_CB_HANDSHAKE_DONE in SSL_set_inf...">SSLHandShakeFinished()</a> and examine the peer certificate </p>
-<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classCsock.html#a91e326e9416c4d6703ef06ecdc8f41ce" title="called once the SSL handshake is complete, this is triggered via SSL_CB_HANDSHAKE_DONE in SSL_set_inf...">SSLHandShakeFinished</a> </dd></dl>
+<p>This may get called multiple times, for example with a chain certificate which is fairly typical with certificates from godaddy, freessl, etc. Additionally, openssl does not do any host verification, they leave that up to the you. One easy way to deal with this is to wait for <a class="el" href="classCZNCSock.html#a5d14ffa21747333136d0b5c62a66f2f5" title="called once the SSL handshake is complete, this is triggered via SSL_CB_HANDSHAKE_DONE in SSL_set_inf...">SSLHandShakeFinished()</a> and examine the peer certificate </p>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classCZNCSock.html#a5d14ffa21747333136d0b5c62a66f2f5" title="called once the SSL handshake is complete, this is triggered via SSL_CB_HANDSHAKE_DONE in SSL_set_inf...">SSLHandShakeFinished</a> </dd></dl>
+
+<p>Reimplemented from <a class="el" href="classCsock.html#a40aec412d77fb21e3213271fc4a4f01c">Csock</a>.</p>
 
 </div>
 </div>
@@ -5795,7 +5876,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Nov 26 2014 22:43:31 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 2 2014 22:00:13 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

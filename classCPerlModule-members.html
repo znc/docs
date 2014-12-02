@@ -164,6 +164,7 @@ This is the complete list of members for <a class="el" href="classCPerlModule.ht
   <tr class="memlist"><td><a class="el" href="classCPerlModule.html#a65fd039361e34df93205aaebd174edde">OnChanAction</a>(CNick &amp;Nick, CChan &amp;Channel, CString &amp;sMessage) override</td><td><a class="el" href="classCPerlModule.html">CPerlModule</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCPerlModule.html#a2bd5aee2c3e468538074cda30d2abd30">OnChanBufferEnding</a>(CChan &amp;Chan, CClient &amp;Client) override</td><td><a class="el" href="classCPerlModule.html">CPerlModule</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCPerlModule.html#a2eda24beb5dd2223840a764a50baef0f">OnChanBufferPlayLine</a>(CChan &amp;Chan, CClient &amp;Client, CString &amp;sLine) override</td><td><a class="el" href="classCPerlModule.html">CPerlModule</a></td><td><code> [virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCModule.html#add13109f49591071c187fa7ed209807f">OnChanBufferPlayLine2</a>(CChan &amp;Chan, CClient &amp;Client, CString &amp;sLine, const timeval &amp;tv)</td><td><a class="el" href="classCModule.html">CModule</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCPerlModule.html#a7c557b63c4efa961119b6cf197ff44dd">OnChanBufferStarting</a>(CChan &amp;Chan, CClient &amp;Client) override</td><td><a class="el" href="classCPerlModule.html">CPerlModule</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCPerlModule.html#ad17c16cb7c83a81debcf97b4a45ed42a">OnChanCTCP</a>(CNick &amp;Nick, CChan &amp;Channel, CString &amp;sMessage) override</td><td><a class="el" href="classCPerlModule.html">CPerlModule</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCPerlModule.html#a157418d7059030e7db6a2d009c6eb51e">OnChanMsg</a>(CNick &amp;Nick, CChan &amp;Channel, CString &amp;sMessage) override</td><td><a class="el" href="classCPerlModule.html">CPerlModule</a></td><td><code> [virtual]</code></td></tr>
@@ -212,6 +213,7 @@ This is the complete list of members for <a class="el" href="classCPerlModule.ht
   <tr class="memlist"><td><a class="el" href="classCPerlModule.html#a1f48285ec5942df1738a877a1391fb11">OnPreRehash</a>() override</td><td><a class="el" href="classCPerlModule.html">CPerlModule</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCPerlModule.html#abf750d565d4b282c3578d877fa13fc7e">OnPrivAction</a>(CNick &amp;Nick, CString &amp;sMessage) override</td><td><a class="el" href="classCPerlModule.html">CPerlModule</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCPerlModule.html#a20bbdd2c3fbc5adbf946dd6d8d3b0c6a">OnPrivBufferPlayLine</a>(CClient &amp;Client, CString &amp;sLine) override</td><td><a class="el" href="classCPerlModule.html">CPerlModule</a></td><td><code> [virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCModule.html#a4b43ad07e3c004439cca4f9933f6a9b8">OnPrivBufferPlayLine2</a>(CClient &amp;Client, CString &amp;sLine, const timeval &amp;tv)</td><td><a class="el" href="classCModule.html">CModule</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCPerlModule.html#a81aebb41213129f7e7fa86a396cfadea">OnPrivCTCP</a>(CNick &amp;Nick, CString &amp;sMessage) override</td><td><a class="el" href="classCPerlModule.html">CPerlModule</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCPerlModule.html#ae0db647ee749976d618039134116932f">OnPrivMsg</a>(CNick &amp;Nick, CString &amp;sMessage) override</td><td><a class="el" href="classCPerlModule.html">CPerlModule</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCPerlModule.html#ad4d174c892c09185f05593416e600215">OnPrivNotice</a>(CNick &amp;Nick, CString &amp;sMessage) override</td><td><a class="el" href="classCPerlModule.html">CPerlModule</a></td><td><code> [virtual]</code></td></tr>
@@ -264,8 +266,8 @@ This is the complete list of members for <a class="el" href="classCPerlModule.ht
   <tr class="memlist"><td><a class="el" href="classCModule.html#a46edcc71ac53f3368eea289fe197e9c6">SetUser</a>(CUser *pUser)</td><td><a class="el" href="classCModule.html">CModule</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCModule.html#a059e463c0d30f14bb49c58740d064f27">UnlinkSocket</a>(CSocket *pSocket)</td><td><a class="el" href="classCModule.html">CModule</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCModule.html#a4080d03ce3cfd8c38093d33ad565c410">UnlinkTimer</a>(CTimer *pTimer)</td><td><a class="el" href="classCModule.html">CModule</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="classCModule.html#afe4a1a37b1597db3a2f04ed7ac2ac7c9">Unload</a>()</td><td><a class="el" href="classCModule.html">CModule</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCModule.html#aad1b3611e4d3891b93fcb3aded5609f5a8f3ef8f7aa9f586ea2e375f063658f60">UNLOAD</a> enum value</td><td><a class="el" href="classCModule.html">CModule</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCModule.html#afe4a1a37b1597db3a2f04ed7ac2ac7c9">Unload</a>()</td><td><a class="el" href="classCModule.html">CModule</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCPerlModule.html#aed3eefa97e6ec795cb9b4282ab66ec28">WebRequiresAdmin</a>() override</td><td><a class="el" href="classCPerlModule.html">CPerlModule</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCPerlModule.html#a703ad3fa0556574eb636e61e3c718581">WebRequiresLogin</a>() override</td><td><a class="el" href="classCPerlModule.html">CPerlModule</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCModule.html#a5805daa01f486b156ec5a424ef3fe2bd">~CModule</a>()</td><td><a class="el" href="classCModule.html">CModule</a></td><td><code> [virtual]</code></td></tr>
@@ -287,7 +289,7 @@ This is the complete list of members for <a class="el" href="classCPerlModule.ht
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Nov 26 2014 22:43:31 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 2 2014 22:00:12 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

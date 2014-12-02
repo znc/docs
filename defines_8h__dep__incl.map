@@ -1,6 +1,7 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$Csocket_8h.html" title="Csocket.h" alt="" coords="101,83,187,112"/>
+<area shape="rect" id="node3" href="$Csocket_8h.html" title="Csocket.h" alt="" coords="163,83,248,112"/>
 <area shape="rect" id="node5" href="$Socket_8h.html" title="Socket.h" alt="" coords="105,160,183,189"/>
+<area shape="rect" id="node30" href="$SSLVerifyHost_8h.html" title="SSLVerifyHost.h" alt="" coords="207,160,329,189"/>
 <area shape="rect" id="node7" href="$Client_8h.html" title="Client.h" alt="" coords="19,315,88,344"/>
 <area shape="rect" id="node9" href="$znc_8h.html" title="znc.h" alt="" coords="84,469,140,499"/>
 <area shape="rect" id="node13" href="$ExecSock_8h.html" title="ExecSock.h" alt="" coords="56,237,149,267"/>

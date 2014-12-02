@@ -109,7 +109,7 @@ This is the complete list of members for <a class="el" href="classCIncomingConne
   <tr class="memlist"><td><a class="el" href="classCsock.html#a46eaa8d1a67946a6d2f6349f40d551e2">ConnectionFrom</a>(const CS_STRING &amp;sHost, uint16_t iPort)</td><td><a class="el" href="classCsock.html">Csock</a></td><td><code> [inline, virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#acc930b9f368c7226e9fd36f9f6b6ef91">ConnectionRefused</a>()</td><td><a class="el" href="classCsock.html">Csock</a></td><td><code> [inline, virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#a85c79bd1cfd6893e4a828085fcf197d6">ConnectSSL</a>()</td><td><a class="el" href="classCsock.html">Csock</a></td><td><code> [virtual]</code></td></tr>
-  <tr class="memlist"><td><a class="el" href="classCZNCSock.html#a573ed9061b8c532a9749af8158ad1bb2">ConvertAddress</a>(const struct sockaddr_storage *pAddr, socklen_t iAddrLen, CS_STRING &amp;sIP, u_short *piPort) const </td><td><a class="el" href="classCZNCSock.html">CZNCSock</a></td><td><code> [virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCZNCSock.html#a1301e874a81e8f2b64ff2af0a0e018a6">ConvertAddress</a>(const struct sockaddr_storage *pAddr, socklen_t iAddrLen, CS_STRING &amp;sIP, u_short *piPort) const override</td><td><a class="el" href="classCZNCSock.html">CZNCSock</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#ab03fd24a2d7a397ef9bbe864df6dda31">Csock::ConvertAddress</a>(const struct sockaddr_storage *pAddr, socklen_t iAddrLen, CS_STRING &amp;sIP, uint16_t *piPort) const </td><td><a class="el" href="classCsock.html">Csock</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#a6de0e591c1bc2a80bbfd7462f8ad14fa">Copy</a>(const Csock &amp;cCopy)</td><td><a class="el" href="classCsock.html">Csock</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#aec858d10480674577aac6270036eb713">CreateSocksFD</a>()</td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
@@ -151,6 +151,7 @@ This is the complete list of members for <a class="el" href="classCIncomingConne
   <tr class="memlist"><td><a class="el" href="classCsock.html#ae0bf394f0683437a754dd535a7d1df65">EFRead</a> enum name</td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#aa033a0324589c4247df589f049cae2a7">EFSelect</a> enum name</td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#af748608ba80f9bd54294292930db560e">EnableReadLine</a>()</td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCZNCSock.html#a58222e8d6adf6157d11e5b40f444e5b5a0bade2ff8f3b4bb0327f8ccfb4c71493">errnoBadSSLCert</a> enum value</td><td><a class="el" href="classCZNCSock.html">CZNCSock</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#aa7da8fe2945d8cfca7c53aec88fdad68">ESSLMethod</a> enum name</td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#a12ece5f34b7f197eb764e25b0b43b999">ETConn</a> enum name</td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#ae16b99983e6e37d4ca0325e7a871d1cf">GetAddrInfo</a>(const CS_STRING &amp;sHostname, CSSockAddr &amp;csSockAddr)</td><td><a class="el" href="classCsock.html">Csock</a></td><td><code> [virtual]</code></td></tr>
@@ -193,6 +194,7 @@ This is the complete list of members for <a class="el" href="classCIncomingConne
   <tr class="memlist"><td><a class="el" href="classCsock.html#a9f3b85490d28167617cf0e85782512b4">GetSockObj</a>(const CS_STRING &amp;sHostname, uint16_t iPort)</td><td><a class="el" href="classCsock.html">Csock</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#adfe38d92769d41132435094784524930">GetSSL</a>() const </td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#abffe3da5cb2bc43cfdc2235cbbad43c9">GetSSLMethod</a>() const </td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCZNCSock.html#a3673ac5321422d5f0589c9db9149f3d2">GetSSLPeerFingerprint</a>() const </td><td><a class="el" href="classCZNCSock.html">CZNCSock</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#ab519dfdc201e09bf8453ab259861f3d2">GetSSLSession</a>() const </td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#ae61679ad6a19840046fca442e4621fec">GetStartTime</a>() const </td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#a2b38dade8446ce1d226de52af72be36a">GetTimeout</a>() const </td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
@@ -253,6 +255,7 @@ This is the complete list of members for <a class="el" href="classCIncomingConne
   <tr class="memlist"><td><a class="el" href="classCsock.html#a5ec2d81846289cdd70407691d9345591">SetCTXObject</a>(SSL_CTX *sslCtx, bool bDeleteExisting=false)</td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCZNCSock.html#ad45449663df4443887919b744b6560fc">SetEncoding</a>(const CString &amp;)</td><td><a class="el" href="classCZNCSock.html">CZNCSock</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#a3b4ccc73db014a4b7d231eb833ba3cb2">SetHostName</a>(const CS_STRING &amp;sHostname)</td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCZNCSock.html#a039ef960176025d06b43997a1156ea5f">SetHostToVerifySSL</a>(const CString &amp;sHost)</td><td><a class="el" href="classCZNCSock.html">CZNCSock</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#a5b624942d40b44cbde3c1a24819d816f">SetIPv6</a>(bool b)</td><td><a class="el" href="classCsock.html">Csock</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#adc39deaebf3358602e01e70091d8991e">SetIsConnected</a>(bool b)</td><td><a class="el" href="classCsock.html">Csock</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#a06f840efef58b550473f4fe1e5f27efa">SetMaxBufferThreshold</a>(uint32_t iThreshold)</td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
@@ -270,6 +273,7 @@ This is the complete list of members for <a class="el" href="classCIncomingConne
   <tr class="memlist"><td><a class="el" href="classCsock.html#a71bd0fb35012cf8d006b8098b6eac15e">SetSSL</a>(bool b)</td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#a8a4f12f682ecbe70809daef29f23bd23">SetSSLMethod</a>(int iMethod)</td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#a6a57e3e3f986353b91ee7f2ab14f0ed5">SetSSLObject</a>(SSL *ssl, bool bDeleteExisting=false)</td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCZNCSock.html#a148e6216e3ef442d9ef604834d8c3c05">SetSSLTrustedPeerFingerprints</a>(const SCString &amp;ssFPs)</td><td><a class="el" href="classCZNCSock.html">CZNCSock</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#a8d9f4c33c736ec6153257c647cf8fa9d">SetTimeout</a>(int iTimeout, uint32_t iTimeoutType=TMO_ALL)</td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#acff43c3905e9753cf948f97c297c89b9">SetTimeoutType</a>(uint32_t iTimeoutType)</td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#a2a5253a340c9f42ece84e1bba36e0099">SetType</a>(int iType)</td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
@@ -284,7 +288,7 @@ This is the complete list of members for <a class="el" href="classCIncomingConne
   <tr class="memlist"><td><a class="el" href="classCsock.html#aa7da8fe2945d8cfca7c53aec88fdad68a5da28276d2d73fa3d9482d01ac53412d">SSL3</a> enum value</td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#aea9dc7b9ef30b78fe2abe28245643071">SSLClientSetup</a>()</td><td><a class="el" href="classCsock.html">Csock</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#ab16f04115dc73a586503fd96926bf8ae">SSLFinishSetup</a>(SSL *pSSL)</td><td><a class="el" href="classCsock.html">Csock</a></td><td><code> [inline, virtual]</code></td></tr>
-  <tr class="memlist"><td><a class="el" href="classCsock.html#a91e326e9416c4d6703ef06ecdc8f41ce">SSLHandShakeFinished</a>()</td><td><a class="el" href="classCsock.html">Csock</a></td><td><code> [inline, virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCZNCSock.html#a5d14ffa21747333136d0b5c62a66f2f5">SSLHandShakeFinished</a>() override</td><td><a class="el" href="classCZNCSock.html">CZNCSock</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#a823b15d60b631e504125da49bedcf825">SslIsEstablished</a>() const </td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#af4d988ee04ca005ea414eae536cc00e3">SSLServerSetup</a>()</td><td><a class="el" href="classCsock.html">Csock</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#a564bc3d66c7e2396afe204691673435c">StartTLS</a>()</td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
@@ -297,7 +301,7 @@ This is the complete list of members for <a class="el" href="classCIncomingConne
   <tr class="memlist"><td><a class="el" href="classCsock.html#a02fc87b0c2dceedeaa8df5407b389f6aa7ca5c1837fd4777f4c30736ba3d2b6b2">TMO_READ</a> enum value</td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#a02fc87b0c2dceedeaa8df5407b389f6aa91dd1f8946079c9d55a9fdceaf08140b">TMO_WRITE</a> enum value</td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#a7ce960e8ee0f890f668673c0e9cdceeb">UnPauseRead</a>()</td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="classCsock.html#a40aec412d77fb21e3213271fc4a4f01c">VerifyPeerCertificate</a>(int iPreVerify, X509_STORE_CTX *pStoreCTX)</td><td><a class="el" href="classCsock.html">Csock</a></td><td><code> [inline, virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCZNCSock.html#a8af79eb2248469f40e088e7b8f7ae17b">VerifyPeerCertificate</a>(int iPreVerify, X509_STORE_CTX *pStoreCTX) override</td><td><a class="el" href="classCZNCSock.html">CZNCSock</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#aea8710a3aaf2f82309ad9bb4dfa70c30">Write</a>(const char *data, size_t len)</td><td><a class="el" href="classCsock.html">Csock</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#a050b782a4f3767a5ed7a6b6eed1fda1c">Write</a>(const CS_STRING &amp;sData)</td><td><a class="el" href="classCsock.html">Csock</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCIncomingConnection.html#a5c883f89633e3971a1e21978aecd8dd2">~CIncomingConnection</a>()</td><td><a class="el" href="classCIncomingConnection.html">CIncomingConnection</a></td><td><code> [inline, virtual]</code></td></tr>
@@ -322,7 +326,7 @@ This is the complete list of members for <a class="el" href="classCIncomingConne
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Nov 26 2014 22:43:31 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 2 2014 22:00:12 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

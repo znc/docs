@@ -53,6 +53,7 @@ var searchData=
   ['addtaghandler',['AddTagHandler',['../classCTemplate.html#a35a6ab024db19c7b1a6b124cc30333af',1,'CTemplate']]],
   ['addtimer',['AddTimer',['../classCModule.html#a78e82821472be1bc20fb19c91134cca7',1,'CModule::AddTimer(CTimer *pTimer)'],['../classCModule.html#a05d1fa1c215db68dc63b1b76c8bfb698',1,'CModule::AddTimer(FPTimer_t pFBCallback, const CString &amp;sLabel, u_int uInterval, u_int uCycles=0, const CString &amp;sDescription=&quot;&quot;)']]],
   ['addtimestamp',['AddTimestamp',['../classCUser.html#abfebf033ce05c4c37b23f29305fbffed',1,'CUser::AddTimestamp(const CString &amp;sStr) const '],['../classCUser.html#a65b3b07bf03eecde46721595a828893a',1,'CUser::AddTimestamp(time_t tm, const CString &amp;sStr) const ']]],
+  ['addtrustedfingerprint',['AddTrustedFingerprint',['../classCIRCNetwork.html#a1252f6a0868cbdc59472b6b68362e66d',1,'CIRCNetwork']]],
   ['addtrustedproxy',['AddTrustedProxy',['../classCZNC.html#a62ffd51ce624e2dd8dac0a5b9c8fb7a0',1,'CZNC']]],
   ['addtype',['AddType',['../classCModInfo.html#aba22fca77e2dab7c959e097bb837eac7',1,'CModInfo']]],
   ['adduser',['AddUser',['../classCZNC.html#a46ab5aa0adae14f80967dd3d9c629e78',1,'CZNC']]],

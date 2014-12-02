@@ -159,6 +159,7 @@ var searchData=
   ['m_5fssslciphers',['m_sSSLCiphers',['../classCZNC.html#a713bc1c6831f78d839436943ee2a55d9',1,'CZNC']]],
   ['m_5fssslprotocols',['m_sSSLProtocols',['../classCZNC.html#a68980526cc0a63bc397c003206bae79f',1,'CZNC']]],
   ['m_5fsstatusprefix',['m_sStatusPrefix',['../classCUser.html#afe7977edbe977a22a468a65a11918ca2',1,'CUser::m_sStatusPrefix()'],['../classCZNC.html#a23003acd39148cc03a18abc14c5f05d2',1,'CZNC::m_sStatusPrefix()']]],
+  ['m_5fsstrustedfingerprints',['m_ssTrustedFingerprints',['../classCIRCNetwork.html#a546890c8b8a74c3eb6070bab952c6ecc',1,'CIRCNetwork']]],
   ['m_5fstext',['m_sText',['../classCBufLine.html#a3310db35cdf223943441e77d745b603d',1,'CBufLine']]],
   ['m_5fstimers',['m_sTimers',['../classCModule.html#a0f30eae029b7d126173ed8862f09ae5c',1,'CModule']]],
   ['m_5fstimestampformat',['m_sTimestampFormat',['../classCUser.html#a88575ebdf03ae15a97aa2df97f927adf',1,'CUser']]],

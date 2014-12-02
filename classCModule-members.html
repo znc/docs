@@ -162,6 +162,7 @@ This is the complete list of members for <a class="el" href="classCModule.html">
   <tr class="memlist"><td><a class="el" href="classCModule.html#a6a794208af0b48e9555a4db438c80873">OnChanAction</a>(CNick &amp;Nick, CChan &amp;Channel, CString &amp;sMessage)</td><td><a class="el" href="classCModule.html">CModule</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCModule.html#a49db570307d2ea0df3816059689864e1">OnChanBufferEnding</a>(CChan &amp;Chan, CClient &amp;Client)</td><td><a class="el" href="classCModule.html">CModule</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCModule.html#a6ac89c3fb0346904e87212e606d87134">OnChanBufferPlayLine</a>(CChan &amp;Chan, CClient &amp;Client, CString &amp;sLine)</td><td><a class="el" href="classCModule.html">CModule</a></td><td><code> [virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCModule.html#add13109f49591071c187fa7ed209807f">OnChanBufferPlayLine2</a>(CChan &amp;Chan, CClient &amp;Client, CString &amp;sLine, const timeval &amp;tv)</td><td><a class="el" href="classCModule.html">CModule</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCModule.html#a16989f4f4bb4d2162728a37a298220d5">OnChanBufferStarting</a>(CChan &amp;Chan, CClient &amp;Client)</td><td><a class="el" href="classCModule.html">CModule</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCModule.html#a822dcb30e583feb2f358b3e44605f6bf">OnChanCTCP</a>(CNick &amp;Nick, CChan &amp;Channel, CString &amp;sMessage)</td><td><a class="el" href="classCModule.html">CModule</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCModule.html#ab64d913d04691d2c493c452afb80a53e">OnChanMsg</a>(CNick &amp;Nick, CChan &amp;Channel, CString &amp;sMessage)</td><td><a class="el" href="classCModule.html">CModule</a></td><td><code> [virtual]</code></td></tr>
@@ -210,6 +211,7 @@ This is the complete list of members for <a class="el" href="classCModule.html">
   <tr class="memlist"><td><a class="el" href="classCModule.html#afaffa3fe145cb88e3a3801338f0fa201">OnPreRehash</a>()</td><td><a class="el" href="classCModule.html">CModule</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCModule.html#aae3ced4706516d7e85c010b000117020">OnPrivAction</a>(CNick &amp;Nick, CString &amp;sMessage)</td><td><a class="el" href="classCModule.html">CModule</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCModule.html#a50d61c6af10b303309d23a404108e5fc">OnPrivBufferPlayLine</a>(CClient &amp;Client, CString &amp;sLine)</td><td><a class="el" href="classCModule.html">CModule</a></td><td><code> [virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCModule.html#a4b43ad07e3c004439cca4f9933f6a9b8">OnPrivBufferPlayLine2</a>(CClient &amp;Client, CString &amp;sLine, const timeval &amp;tv)</td><td><a class="el" href="classCModule.html">CModule</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCModule.html#a6b8c4ec8d47188803dc69e505f9a7992">OnPrivCTCP</a>(CNick &amp;Nick, CString &amp;sMessage)</td><td><a class="el" href="classCModule.html">CModule</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCModule.html#aae506f668f1d616801a859b14cf0c5ec">OnPrivMsg</a>(CNick &amp;Nick, CString &amp;sMessage)</td><td><a class="el" href="classCModule.html">CModule</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCModule.html#a5073e184033d2665ca5e407c28b66330">OnPrivNotice</a>(CNick &amp;Nick, CString &amp;sMessage)</td><td><a class="el" href="classCModule.html">CModule</a></td><td><code> [virtual]</code></td></tr>
@@ -285,7 +287,7 @@ This is the complete list of members for <a class="el" href="classCModule.html">
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Nov 26 2014 22:43:31 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 2 2014 22:00:12 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
