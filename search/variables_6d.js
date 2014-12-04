@@ -35,6 +35,7 @@ var searchData=
   ['m_5fbmodeknown',['m_bModeKnown',['../classCChan.html#a81294037f4f3a8f79d311865b8e48fa8',1,'CChan']]],
   ['m_5fbmulticlients',['m_bMultiClients',['../classCUser.html#a4139082de201adcf445bd9e8337b83b3',1,'CUser']]],
   ['m_5fbnamesx',['m_bNamesx',['../classCClient.html#ab64f13eeabc94d15da06307cb6b5dd0d',1,'CClient::m_bNamesx()'],['../classCIRCSock.html#a665e62bc635ed3e90e7d615ff074aadb',1,'CIRCSock::m_bNamesx()']]],
+  ['m_5fbplaybackactive',['m_bPlaybackActive',['../classCClient.html#ab32323dc38313311b4d7388a9019bd3b',1,'CClient']]],
   ['m_5fbpost',['m_bPost',['../classCHTTPSock.html#ae9f21133d6118e0f36d7e12b6f15cf62',1,'CHTTPSock']]],
   ['m_5fbprependtimestamp',['m_bPrependTimestamp',['../classCUser.html#a589661139897e636e3620df14d4fb979',1,'CUser']]],
   ['m_5fbprotectwebsessions',['m_bProtectWebSessions',['../classCZNC.html#a0946e948111699c1d35b1caf66c73c0b',1,'CZNC']]],

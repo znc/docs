@@ -102,6 +102,7 @@ var searchData=
   ['setpaths',['SetPaths',['../classCWebSock.html#a3beebb31edb4fb4a2963e7e74f34eb36',1,'CWebSock']]],
   ['setpemlocation',['SetPemLocation',['../classCsock.html#ad600bfd1eb0f130283d18e71af795a92',1,'Csock::SetPemLocation()'],['../classCSConnection.html#a550c247722b9475b9667e0ad92479dd0',1,'CSConnection::SetPemLocation()'],['../classCSListener.html#ac5d4479845e91abba12d4c1a163581de',1,'CSListener::SetPemLocation()']]],
   ['setpempass',['SetPemPass',['../classCsock.html#afb4f2a1faad29d40ba76611b83c9605b',1,'Csock::SetPemPass()'],['../classCSConnection.html#a9a89d42e748c840e31d9bae37bb67565',1,'CSConnection::SetPemPass()'],['../classCSListener.html#a3ac08e7906501674a6063a1e277ca40d',1,'CSListener::SetPemPass()']]],
+  ['setplaybackactive',['SetPlaybackActive',['../classCClient.html#a8052e65d1e46a4687d264bf7b4a698f5',1,'CClient']]],
   ['setport',['SetPort',['../classCsock.html#ac2baac0cc8570993e537b3bcb3f7fdd2',1,'Csock::SetPort()'],['../classCSConnection.html#aedb9c54bf961475cef2e30feac6b29e2',1,'CSConnection::SetPort()'],['../classCSListener.html#afae86e364a5e977809066bbdfe72b41b',1,'CSListener::SetPort()']]],
   ['setprotectwebsessions',['SetProtectWebSessions',['../classCZNC.html#a241329b8a382193ef5edba3fc2c6dcef',1,'CZNC']]],
   ['setquitmsg',['SetQuitMsg',['../classCIRCNetwork.html#a0998482b8b3b327101ded389c9eb1cec',1,'CIRCNetwork::SetQuitMsg()'],['../classCUser.html#abd72abdb30d7f4dd7eaf90775eb40ff0',1,'CUser::SetQuitMsg()']]],

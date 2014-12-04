@@ -48,6 +48,7 @@ var searchData=
   ['isopen',['IsOpen',['../classCFile.html#afd772a296bdd5786abe95ee768505593',1,'CFile']]],
   ['ispermchar',['IsPermChar',['../classCIRCSock.html#a9bb4928b65d9aa3056a28c2e4aeffb45',1,'CIRCSock']]],
   ['ispermmode',['IsPermMode',['../classCIRCSock.html#a8821289c4a94be47cbf9f31179bea5ba',1,'CIRCSock']]],
+  ['isplaybackactive',['IsPlaybackActive',['../classCClient.html#af0fd520ee1bf467f72e58d63a742d323',1,'CClient']]],
   ['ispost',['IsPost',['../classCHTTPSock.html#aeded03626aa14b44d39902d292021915',1,'CHTTPSock']]],
   ['isreadpaused',['IsReadPaused',['../classCsock.html#a7f2bf004de57a5ebf6450941e4d7eceb',1,'Csock']]],
   ['isreg',['IsReg',['../classCFile.html#ae38d87a8d713135666353a544a95d1a2',1,'CFile::IsReg(const CString &amp;sLongName, bool bUseLstat=false)'],['../classCFile.html#adba9deabf6b67d76e297122ede9534af',1,'CFile::IsReg(bool bUseLstat=false) const ']]],

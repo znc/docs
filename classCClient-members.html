@@ -231,6 +231,7 @@ This is the complete list of members for <a class="el" href="classCClient.html">
   <tr class="memlist"><td><a class="el" href="classCClient.html#a3098078b005655df1b30c27107cd825d">IsCapEnabled</a>(const CString &amp;sCap) const </td><td><a class="el" href="classCClient.html">CClient</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#a11af52e0b49707c84438ec73533bb094">IsClosed</a>() const </td><td><a class="el" href="classCsock.html">Csock</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#a2365716c0ba19168718d3b2b9a3417ee">IsConnected</a>() const </td><td><a class="el" href="classCsock.html">Csock</a></td><td><code> [virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCClient.html#af0fd520ee1bf467f72e58d63a742d323">IsPlaybackActive</a>() const </td><td><a class="el" href="classCClient.html">CClient</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#a7f2bf004de57a5ebf6450941e4d7eceb">IsReadPaused</a>() const </td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCClient.html#a25e8c5f0e58ba2b8132d073576a295ef">IsValidIdentifier</a>(const CString &amp;sIdentifier)</td><td><a class="el" href="classCClient.html">CClient</a></td><td><code> [static]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#a32e80e3b3e655ceb34127c2c0ef8f3b0">Listen</a>(uint16_t iPort, int iMaxConns=SOMAXCONN, const CS_STRING &amp;sBindHost=&quot;&quot;, uint32_t iTimeout=0, bool bDetach=false)</td><td><a class="el" href="classCsock.html">Csock</a></td><td><code> [virtual]</code></td></tr>
@@ -243,6 +244,7 @@ This is the complete list of members for <a class="el" href="classCClient.html">
   <tr class="memlist"><td><a class="el" href="classCClient.html#a98e36e2a964f8aad1dba1d2bbd102339">m_bGotUser</a></td><td><a class="el" href="classCClient.html">CClient</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCClient.html#a4677879435714d40ed86fb4015574544">m_bInCap</a></td><td><a class="el" href="classCClient.html">CClient</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCClient.html#ab64f13eeabc94d15da06307cb6b5dd0d">m_bNamesx</a></td><td><a class="el" href="classCClient.html">CClient</a></td><td><code> [protected]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCClient.html#ab32323dc38313311b4d7388a9019bd3b">m_bPlaybackActive</a></td><td><a class="el" href="classCClient.html">CClient</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCClient.html#a9bb61c829304606106fd7dc2fd3de042">m_bSelfMessage</a></td><td><a class="el" href="classCClient.html">CClient</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCClient.html#a8afc9e0fc6830144ba363339375dfc29">m_bServerTime</a></td><td><a class="el" href="classCClient.html">CClient</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCClient.html#af01077729afee80f51b9491e129983bc">m_bUHNames</a></td><td><a class="el" href="classCClient.html">CClient</a></td><td><code> [protected]</code></td></tr>
@@ -317,6 +319,7 @@ This is the complete list of members for <a class="el" href="classCClient.html">
   <tr class="memlist"><td><a class="el" href="classCsock.html#a15b6cad8607be4ab31e7a46f0eca55e1">SetParentSockName</a>(const CS_STRING &amp;sParentName)</td><td><a class="el" href="classCsock.html">Csock</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#ad600bfd1eb0f130283d18e71af795a92">SetPemLocation</a>(const CS_STRING &amp;sPemFile)</td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#afb4f2a1faad29d40ba76611b83c9605b">SetPemPass</a>(const CS_STRING &amp;sPassword)</td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCClient.html#a8052e65d1e46a4687d264bf7b4a698f5">SetPlaybackActive</a>(bool bActive)</td><td><a class="el" href="classCClient.html">CClient</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#ac2baac0cc8570993e537b3bcb3f7fdd2">SetPort</a>(uint16_t iPort)</td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#ad5cea2c7a97045e3867bdc9c59f489c8">SetRate</a>(uint32_t iBytes, uint64_t iMilliseconds)</td><td><a class="el" href="classCsock.html">Csock</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#ad3ec3c47121398d0aa0978e844843e4a">SetRequireClientCertFlags</a>(uint32_t iRequireClientCertFlags)</td><td><a class="el" href="classCsock.html">Csock</a></td><td><code> [inline]</code></td></tr>
@@ -384,7 +387,7 @@ This is the complete list of members for <a class="el" href="classCClient.html">
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Dec 2 2014 22:15:11 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 4 2014 22:05:20 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
