@@ -204,7 +204,7 @@ var searchData=
   ['getrawparam',['GetRawParam',['../classCHTTPSock.html#a973ec6b5579ceb0be3b9b1e2a3c6e7e1',1,'CHTTPSock']]],
   ['getreallistener',['GetRealListener',['../classCListener.html#a7865bb4d1d85217a58efd8e000b09daf',1,'CListener']]],
   ['getrealname',['GetRealName',['../classCIRCNetwork.html#a7fec2470d271e61ed5e3d21a872c55b5',1,'CIRCNetwork::GetRealName()'],['../classCUser.html#ab94301a11f2974f19ed802864e75383c',1,'CUser::GetRealName()']]],
-  ['getremoteip',['GetRemoteIP',['../classCAuthBase.html#a424d4e232623b6be954cd10a5183a526',1,'CAuthBase::GetRemoteIP()'],['../classCsock.html#a78d123687411e81b5b85fb64c8468162',1,'Csock::GetRemoteIP()'],['../classCHTTPSock.html#a2b8fd121e94d3ba30c648cab0ffcd720',1,'CHTTPSock::GetRemoteIP()']]],
+  ['getremoteip',['GetRemoteIP',['../classCAuthBase.html#a424d4e232623b6be954cd10a5183a526',1,'CAuthBase::GetRemoteIP()'],['../classCsock.html#a78d123687411e81b5b85fb64c8468162',1,'Csock::GetRemoteIP()'],['../classCHTTPSock.html#af26e9b6c9d011fcefa9a0ecc146231e4',1,'CHTTPSock::GetRemoteIP()'],['../classCZNCSock.html#a9f6f020f9d9aea1caa880a7e3498860f',1,'CZNCSock::GetRemoteIP()']]],
   ['getremoteport',['GetRemotePort',['../classCsock.html#a8c1ac2cce4c95c901d750f0f398988b1',1,'Csock']]],
   ['getrequestcookie',['GetRequestCookie',['../classCHTTPSock.html#a6d1ea3ef1c0e0dad9040c5f1c1b26542',1,'CHTTPSock::GetRequestCookie()'],['../classCWebSock.html#a25aeaf960cd900649ffbd7e5729c48b2',1,'CWebSock::GetRequestCookie()']]],
   ['getrequireclientcertflags',['GetRequireClientCertFlags',['../classCsock.html#aec0192524b5b28167057a399f8e685c7',1,'Csock::GetRequireClientCertFlags()'],['../classCSListener.html#aaffb846097a1c734a808e7b246e1afdb',1,'CSListener::GetRequireClientCertFlags()']]],

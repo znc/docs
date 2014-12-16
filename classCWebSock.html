@@ -221,7 +221,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCHTTPSock.html#a4d389989bd6902284562f132ddfe49ae">PrintErrorPage</a> (unsigned int uStatusId, const <a class="el" href="classCString.html">CString</a> &amp;sStatusMsg, const <a class="el" href="classCString.html">CString</a> &amp;sMessage)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCHTTPSock.html#a97c1a62abb2e45c435433066bc003e6d">ParseURI</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCHTTPSock.html#a0585d0cde5a393c8fd892106c00f6c31">GetPage</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCHTTPSock.html#a2b8fd121e94d3ba30c648cab0ffcd720">GetRemoteIP</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCHTTPSock.html#af26e9b6c9d011fcefa9a0ecc146231e4">GetRemoteIP</a> () const override</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCHTTPSock.html#a6d1ea3ef1c0e0dad9040c5f1c1b26542">GetRequestCookie</a> (const <a class="el" href="classCString.html">CString</a> &amp;sKey) const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCHTTPSock.html#a9e22370636a2976663ecaffcfeaa3008">SetDocRoot</a> (const <a class="el" href="classCString.html">CString</a> &amp;s)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCHTTPSock.html#ad15bcec13e49e25ab2e8ff95fac7d546">SetLoggedIn</a> (bool b)</td></tr>
@@ -2789,21 +2789,21 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a2b8fd121e94d3ba30c648cab0ffcd720"></a><!-- doxytag: member="CWebSock::GetRemoteIP" ref="a2b8fd121e94d3ba30c648cab0ffcd720" args="() const " -->
+<a class="anchor" id="af26e9b6c9d011fcefa9a0ecc146231e4"></a><!-- doxytag: member="CWebSock::GetRemoteIP" ref="af26e9b6c9d011fcefa9a0ecc146231e4" args="() const override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classCString.html">CString</a> <a class="el" href="classCHTTPSock.html#a2b8fd121e94d3ba30c648cab0ffcd720">CHTTPSock::GetRemoteIP</a> </td>
+          <td class="memname"><a class="el" href="classCString.html">CString</a> <a class="el" href="classCHTTPSock.html#af26e9b6c9d011fcefa9a0ecc146231e4">CHTTPSock::GetRemoteIP</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const<code> [virtual, inherited]</code></td>
+          <td> const<code> [override, virtual, inherited]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="classCsock.html#a78d123687411e81b5b85fb64c8468162">Csock</a>.</p>
+<p>Reimplemented from <a class="el" href="classCZNCSock.html#a9f6f020f9d9aea1caa880a7e3498860f">CZNCSock</a>.</p>
 
 </div>
 </div>
@@ -5876,7 +5876,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 15 2014 16:16:12 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 16 2014 13:51:47 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

@@ -90,7 +90,7 @@ var searchData=
   ['setlinecount',['SetLineCount',['../classCBuffer.html#a4bd23b282dd890deb4d1ad3a39d06d1f',1,'CBuffer']]],
   ['setloader',['SetLoader',['../classCModInfo.html#a52cc3e1083698866f07c14050fe2ac3d',1,'CModInfo']]],
   ['setloggedin',['SetLoggedIn',['../classCHTTPSock.html#ad15bcec13e49e25ab2e8ff95fac7d546',1,'CHTTPSock']]],
-  ['setlogininfo',['SetLoginInfo',['../classCAuthBase.html#ad93b745cbd083ec651fbd7b68f2bef0d',1,'CAuthBase']]],
+  ['setlogininfo',['SetLoginInfo',['../classCAuthBase.html#ad218c21287e1de0dce2257a47ac94030',1,'CAuthBase']]],
   ['setmaxbuffersize',['SetMaxBufferSize',['../classCZNC.html#aaa6e9c186e76e941439a642ba19b6b04',1,'CZNC']]],
   ['setmaxbufferthreshold',['SetMaxBufferThreshold',['../classCsock.html#a06f840efef58b550473f4fe1e5f27efa',1,'Csock']]],
   ['setmaxconns',['SetMaxConns',['../classCSListener.html#ae16cfb0a44cb7e9667199be05a3be21b',1,'CSListener']]],

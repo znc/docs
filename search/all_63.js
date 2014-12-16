@@ -8,7 +8,7 @@ var searchData=
   ['casesensitivity',['CaseSensitivity',['../ZNCString_8h.html#aaa929f83398f109dfbff9789108b159b',1,'ZNCString.h']]],
   ['cast',['cast',['../structswig__type__info.html#ae535f16234db99893f07880cb94a848e',1,'swig_type_info']]],
   ['cast_5finitial',['cast_initial',['../structswig__module__info.html#a14e4f7b0c9e0ff10543475c269b83507',1,'swig_module_info']]],
-  ['cauthbase',['CAuthBase',['../classCAuthBase.html',1,'CAuthBase'],['../classCAuthBase.html#ac0c018357d3da8dbf19c8b01bb6a4f5a',1,'CAuthBase::CAuthBase()']]],
+  ['cauthbase',['CAuthBase',['../classCAuthBase.html',1,'CAuthBase'],['../classCAuthBase.html#a8c2d321675d0c4a7bec6a1593d5c486b',1,'CAuthBase::CAuthBase()']]],
   ['cblowfish',['CBlowfish',['../classCBlowfish.html',1,'CBlowfish'],['../classCBlowfish.html#a5e15b4a5e0ed4de7389d8ac092126be3',1,'CBlowfish::CBlowfish()']]],
   ['cbuffer',['CBuffer',['../classCBuffer.html',1,'CBuffer'],['../classCBuffer.html#afa8775924c4c300053d7cae919ac924b',1,'CBuffer::CBuffer()']]],
   ['cbufline',['CBufLine',['../classCBufLine.html',1,'CBufLine'],['../classCBufLine.html#a320b273b34d3dc59c643f6f4ed192c1c',1,'CBufLine::CBufLine()'],['../classCBufLine.html#a0d02346b629bb5014f2f40c321afd77f',1,'CBufLine::CBufLine(const CString &amp;sFormat, const CString &amp;sText=&quot;&quot;, const timeval *ts=0)']]],

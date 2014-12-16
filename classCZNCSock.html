@@ -191,6 +191,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNCSock.html#a3673ac5321422d5f0589c9db9149f3d2">GetSSLPeerFingerprint</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNCSock.html#a148e6216e3ef442d9ef604834d8c3c05">SetSSLTrustedPeerFingerprints</a> (const <a class="el" href="ZNCString_8h.html#a84b05218977775b974a8db49e81f02a4">SCString</a> &amp;ssFPs)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNCSock.html#ad45449663df4443887919b744b6560fc">SetEncoding</a> (const <a class="el" href="classCString.html">CString</a> &amp;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNCSock.html#a9f6f020f9d9aea1caa880a7e3498860f">GetRemoteIP</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCsock.html">Csock</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a9f3b85490d28167617cf0e85782512b4">GetSockObj</a> (const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sHostname, uint16_t iPort)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">override this for accept sockets  <a href="#a9f3b85490d28167617cf0e85782512b4"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a0ffefa30e1140bac8aec4e397b7d9895">Dereference</a> ()</td></tr>
@@ -228,7 +229,6 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="Csocket_8h.html#a78fb384df356e425a637e1b3de358c78">cs_ssize_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a714d883a38fd8ca785b4db54fba629be">Read</a> (char *data, size_t len)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Read from the socket Just pass in a pointer, big enough to hold len bytes.  <a href="#a714d883a38fd8ca785b4db54fba629be"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a40508bd28d1a96ccbfdce064d8c0686e">GetLocalIP</a> () const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a78d123687411e81b5b85fb64c8468162">GetRemoteIP</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a2365716c0ba19168718d3b2b9a3417ee">IsConnected</a> () const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Tells you if the socket is connected.  <a href="#a2365716c0ba19168718d3b2b9a3417ee"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#adc39deaebf3358602e01e70091d8991e">SetIsConnected</a> (bool b)</td></tr>
@@ -2147,21 +2147,23 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a78d123687411e81b5b85fb64c8468162"></a><!-- doxytag: member="CZNCSock::GetRemoteIP" ref="a78d123687411e81b5b85fb64c8468162" args="() const " -->
+<a class="anchor" id="a9f6f020f9d9aea1caa880a7e3498860f"></a><!-- doxytag: member="CZNCSock::GetRemoteIP" ref="a9f6f020f9d9aea1caa880a7e3498860f" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> <a class="el" href="classCsock.html#a78d123687411e81b5b85fb64c8468162">Csock::GetRemoteIP</a> </td>
+          <td class="memname">virtual <a class="el" href="classCString.html">CString</a> <a class="el" href="classCZNCSock.html#a9f6f020f9d9aea1caa880a7e3498860f">CZNCSock::GetRemoteIP</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const<code> [inherited]</code></td>
+          <td> const<code> [inline, virtual]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="classCHTTPSock.html#a2b8fd121e94d3ba30c648cab0ffcd720">CHTTPSock</a>.</p>
+<p>Reimplemented from <a class="el" href="classCsock.html#a78d123687411e81b5b85fb64c8468162">Csock</a>.</p>
+
+<p>Reimplemented in <a class="el" href="classCHTTPSock.html#af26e9b6c9d011fcefa9a0ecc146231e4">CHTTPSock</a>.</p>
 
 </div>
 </div>
@@ -4168,7 +4170,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 15 2014 16:16:12 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 16 2014 13:51:47 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
