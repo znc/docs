@@ -279,7 +279,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00220"></a><a class="code" href="classCSocket.html#a3c86946768409f8f05246be3d7f3da76">00220</a>         <a class="code" href="classCModule.html" title="The base class for your own ZNC modules.">CModule</a>*  <a class="code" href="classCSocket.html#a3c86946768409f8f05246be3d7f3da76" title="pointer to the module that this sock instance belongs to">m_pModule</a>; 
 <a name="l00221"></a>00221 };
 <a name="l00222"></a>00222 
-<a name="l00223"></a>00223 <span class="preprocessor">#endif </span><span class="comment">/* SOCKET_H */</span>
+<a name="l00227"></a><a class="code" href="classCIRCSocket.html">00227</a> <span class="keyword">class </span><a class="code" href="classCIRCSocket.html" title="Base IRC socket for client&lt;-&gt;ZNC, and ZNC&lt;-&gt;server.">CIRCSocket</a> : <span class="keyword">public</span> <a class="code" href="classCZNCSock.html">CZNCSock</a> {
+<a name="l00228"></a>00228 <span class="keyword">public</span>:
+<a name="l00229"></a>00229 <span class="preprocessor">#ifdef HAVE_ICU</span>
+<a name="l00230"></a>00230 <span class="preprocessor"></span>
+<a name="l00240"></a>00240         <span class="keywordtype">void</span> IcuExtToUCallback(
+<a name="l00241"></a>00241                 UConverterToUnicodeArgs* toArgs,
+<a name="l00242"></a>00242                 <span class="keyword">const</span> <span class="keywordtype">char</span>* codeUnits,
+<a name="l00243"></a>00243                 int32_t length,
+<a name="l00244"></a>00244                 UConverterCallbackReason reason,
+<a name="l00245"></a>00245                 UErrorCode* err) <span class="keyword">override</span>;
+<a name="l00246"></a>00246         <span class="keywordtype">void</span> IcuExtFromUCallback(
+<a name="l00247"></a>00247                 UConverterFromUnicodeArgs* fromArgs,
+<a name="l00248"></a>00248                 <span class="keyword">const</span> UChar* codeUnits,
+<a name="l00249"></a>00249                 int32_t length,
+<a name="l00250"></a>00250                 UChar32 codePoint,
+<a name="l00251"></a>00251                 UConverterCallbackReason reason,
+<a name="l00252"></a>00252                 UErrorCode* err) <span class="keyword">override</span>;
+<a name="l00253"></a>00253 <span class="preprocessor">#endif</span>
+<a name="l00254"></a>00254 <span class="preprocessor"></span>};
+<a name="l00255"></a>00255 
+<a name="l00256"></a>00256 <span class="preprocessor">#endif </span><span class="comment">/* SOCKET_H */</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -298,7 +318,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Dec 16 2014 13:51:45 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Dec 21 2014 19:04:47 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

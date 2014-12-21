@@ -22,6 +22,7 @@ var searchData=
   ['cincomingconnection',['CIncomingConnection',['../classCIncomingConnection.html',1,'']]],
   ['circnetwork',['CIRCNetwork',['../classCIRCNetwork.html',1,'']]],
   ['circsock',['CIRCSock',['../classCIRCSock.html',1,'']]],
+  ['circsocket',['CIRCSocket',['../classCIRCSocket.html',1,'']]],
   ['clistener',['CListener',['../classCListener.html',1,'']]],
   ['cmd5',['CMD5',['../classCMD5.html',1,'']]],
   ['cmodcommand',['CModCommand',['../classCModCommand.html',1,'']]],

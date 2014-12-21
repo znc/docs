@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>ZNC: CSocket Class Reference</title>
+<title>ZNC: CIRCSocket Class Reference</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -85,34 +85,34 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#pro-types">Protected Types</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a>  </div>
   <div class="headertitle">
-<div class="title">CSocket Class Reference</div>  </div>
+<div class="title">CIRCSocket Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="CSocket" --><!-- doxytag: inherits="CZNCSock" -->
-<p>Base <a class="el" href="classCsock.html" title="Basic socket class.">Csock</a> implementation to be used by modules.  
- <a href="classCSocket.html#details">More...</a></p>
+<!-- doxytag: class="CIRCSocket" --><!-- doxytag: inherits="CZNCSock" -->
+<p>Base IRC socket for client&lt;-&gt;ZNC, and ZNC&lt;-&gt;server.  
+ <a href="classCIRCSocket.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="Socket_8h_source.html">Socket.h</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for CSocket:</div>
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for CIRCSocket:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classCSocket__inherit__graph.png" border="0" usemap="#CSocket_inherit__map" alt="Inheritance graph"/></div>
-<map name="CSocket_inherit__map" id="CSocket_inherit__map">
-<area shape="rect" id="node9" href="classCHTTPSock.html" title="CHTTPSock" alt="" coords="5,315,99,344"/><area shape="rect" id="node13" href="classCPerlSocket.html" title="CPerlSocket" alt="" coords="123,315,221,344"/><area shape="rect" id="node15" href="classCPySocket.html" title="CPySocket" alt="" coords="245,315,336,344"/><area shape="rect" id="node2" href="classCZNCSock.html" title="CZNCSock" alt="" coords="127,160,217,189"/><area shape="rect" id="node4" href="classCsock.html" title="Basic socket class." alt="" coords="143,83,201,112"/><area shape="rect" id="node6" href="classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock" alt="" coords="112,5,232,35"/><area shape="rect" id="node11" href="classCWebSock.html" title="CWebSock" alt="" coords="8,392,96,421"/></map>
+<div class="center"><img src="classCIRCSocket__inherit__graph.png" border="0" usemap="#CIRCSocket_inherit__map" alt="Inheritance graph"/></div>
+<map name="CIRCSocket_inherit__map" id="CIRCSocket_inherit__map">
+<area shape="rect" id="node9" href="classCClient.html" title="CClient" alt="" coords="5,315,72,344"/><area shape="rect" id="node11" href="classCIRCSock.html" title="CIRCSock" alt="" coords="96,315,176,344"/><area shape="rect" id="node2" href="classCZNCSock.html" title="CZNCSock" alt="" coords="41,160,132,189"/><area shape="rect" id="node4" href="classCsock.html" title="Basic socket class." alt="" coords="57,83,116,112"/><area shape="rect" id="node6" href="classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock" alt="" coords="27,5,147,35"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for CSocket:</div>
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for CIRCSocket:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classCSocket__coll__graph.png" border="0" usemap="#CSocket_coll__map" alt="Collaboration graph"/></div>
-<map name="CSocket_coll__map" id="CSocket_coll__map">
-<area shape="rect" id="node2" href="classCZNCSock.html" title="CZNCSock" alt="" coords="1347,93,1437,123"/><area shape="rect" id="node46" href="classCIRCSocket.html" title="Base IRC socket for client&lt;&#45;&gt;ZNC, and ZNC&lt;&#45;&gt;server." alt="" coords="1584,93,1677,123"/><area shape="rect" id="node4" href="classCsock.html" title="Basic socket class." alt="" coords="1223,93,1281,123"/><area shape="rect" id="node6" href="classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock" alt="" coords="1005,95,1125,124"/><area shape="rect" id="node24" href="classCSocketManager.html" title="Best class to use to interact with the sockets." alt="" coords="2473,251,2604,280"/><area shape="rect" id="node10" href="classCCron.html" title="this is the main cron job class" alt="" coords="407,11,468,40"/><area shape="rect" id="node136" href="classCTimer.html" title="CTimer" alt="" coords="4392,156,4459,185"/><area shape="rect" id="node14" href="classCSMonitorFD.html" title="Class to tie sockets to for monitoring by Csocket at either the Csock or TSockManager." alt="" coords="385,96,489,125"/><area shape="rect" id="node18" href="classCModule.html" title="The base class for your own ZNC modules." alt="" coords="4019,313,4096,343"/><area shape="rect" id="node20" href="classCSockManager.html" title="CSockManager" alt="" coords="3511,364,3628,393"/><area shape="rect" id="node22" href="classTSocketManager.html" title="TSocketManager\&lt; CZNCSock \&gt;" alt="" coords="2863,356,3089,385"/><area shape="rect" id="node26" title="STL class." alt="" coords="2029,604,2197,633"/><area shape="rect" id="node63" title="STL class." alt="" coords="2247,1216,2423,1245"/><area shape="rect" id="node68" title="STL class." alt="" coords="2651,891,2837,920"/><area shape="rect" id="node104" title="STL class." alt="" coords="2008,1111,2219,1140"/><area shape="rect" id="node34" href="classCString.html" title="String class that is used inside ZNC." alt="" coords="1357,1272,1427,1301"/><area shape="rect" id="node40" href="classCUser.html" title="CUser" alt="" coords="2945,723,3007,752"/><area shape="rect" id="node44" href="classCClient.html" title="CClient" alt="" coords="2080,789,2147,819"/><area shape="rect" id="node54" href="classCIRCNetwork.html" title="CIRCNetwork" alt="" coords="3685,953,3787,983"/><area shape="rect" id="node56" href="classCNick.html" title="CNick" alt="" coords="4028,1109,4087,1139"/><area shape="rect" id="node74" href="classCIRCSock.html" title="CIRCSock" alt="" coords="5423,1225,5503,1255"/><area shape="rect" id="node81" href="classCChan.html" title="CChan" alt="" coords="4705,1296,4769,1325"/><area shape="rect" id="node123" href="classCServer.html" title="CServer" alt="" coords="1595,1241,1667,1271"/><area shape="rect" id="node36" title="STL class." alt="" coords="1209,1272,1295,1301"/><area shape="rect" id="node38" title="STL class." alt="" coords="973,1272,1157,1301"/><area shape="rect" id="node66" href="classCModules.html" title="CModules" alt="" coords="3355,780,3437,809"/><area shape="rect" id="node61" href="classCBuffer.html" title="CBuffer" alt="" coords="3361,1241,3431,1271"/><area shape="rect" id="node102" href="classMCString.html" title="A dictionary for strings." alt="" coords="2499,1116,2579,1145"/><area shape="rect" id="node114" href="classCQuery.html" title="CQuery" alt="" coords="2941,1075,3011,1104"/></map>
+<div class="center"><img src="classCIRCSocket__coll__graph.png" border="0" usemap="#CIRCSocket_coll__map" alt="Collaboration graph"/></div>
+<map name="CIRCSocket_coll__map" id="CIRCSocket_coll__map">
+<area shape="rect" id="node2" href="classCZNCSock.html" title="CZNCSock" alt="" coords="167,453,257,483"/><area shape="rect" id="node4" href="classCsock.html" title="Basic socket class." alt="" coords="183,373,241,403"/><area shape="rect" id="node6" href="classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock" alt="" coords="152,293,272,323"/><area shape="rect" id="node10" href="classCCron.html" title="this is the main cron job class" alt="" coords="60,101,121,131"/><area shape="rect" id="node14" href="classCSMonitorFD.html" title="Class to tie sockets to for monitoring by Csocket at either the Csock or TSockManager." alt="" coords="255,101,359,131"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 
-<p><a href="classCSocket-members.html">List of all members.</a></p>
+<p><a href="classCIRCSocket-members.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -182,21 +182,6 @@ Public Types</h2></td></tr>
  }</td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSocket.html#a6acf395cad024f11690ea045942a6701">CSocket</a> (<a class="el" href="classCModule.html">CModule</a> *pModule)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">ctor  <a href="#a6acf395cad024f11690ea045942a6701"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSocket.html#a5be583a3a28fd93de081519285e188be">CSocket</a> (<a class="el" href="classCModule.html">CModule</a> *pModule, const <a class="el" href="classCString.html">CString</a> &amp;sHostname, unsigned short uPort, int iTimeout=60)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">ctor  <a href="#a5be583a3a28fd93de081519285e188be"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSocket.html#aa63e9ce5486a35e3b17c1bbb165d30c1">~CSocket</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSocket.html#a006813cba95395cb701d3c57c2578749">ReachedMaxBuffer</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This defaults to closing the socket, feel free to override.  <a href="#a006813cba95395cb701d3c57c2578749"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSocket.html#a84cd201737bd8fc7e5fc8d1f59e1b3be">SockError</a> (int iErrno, const <a class="el" href="classCString.html">CString</a> &amp;sDescription)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSocket.html#ac91d8849bfa3a2e8272f9d3edab00eba">ConnectionFrom</a> (const <a class="el" href="classCString.html">CString</a> &amp;sHost, unsigned short uPort)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This limits the global connections from this IP to defeat DoS attacks, feel free to override. The ACL used is provided by the main interface.  <a href="#ac91d8849bfa3a2e8272f9d3edab00eba"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSocket.html#aeb45ba68fff1f1740cec0e52f636418a">Connect</a> (const <a class="el" href="classCString.html">CString</a> &amp;sHostname, unsigned short uPort, bool bSSL=false, unsigned int uTimeout=60)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Ease of use Connect, assigns to the manager and is subsequently tracked.  <a href="#aeb45ba68fff1f1740cec0e52f636418a"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSocket.html#a98f071f787be897681135271cce7d9d6">Listen</a> (unsigned short uPort, bool bSSL, unsigned int uTimeout=0)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Ease of use Listen, assigned to the manager and is subsequently tracked.  <a href="#a98f071f787be897681135271cce7d9d6"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCModule.html">CModule</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSocket.html#a99c24906ec37c7bbabfdfd90c2611bf2">GetModule</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNCSock.html#a1301e874a81e8f2b64ff2af0a0e018a6">ConvertAddress</a> (const struct sockaddr_storage *pAddr, socklen_t iAddrLen, <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sIP, u_short *piPort) const override</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#ab03fd24a2d7a397ef9bbe864df6dda31">ConvertAddress</a> (const struct sockaddr_storage *pAddr, socklen_t iAddrLen, <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sIP, uint16_t *piPort) const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve name info (numeric only) for a given sockaddr_storage  <a href="#ab03fd24a2d7a397ef9bbe864df6dda31"></a><br/></td></tr>
@@ -386,6 +371,8 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#adfee091e6a74b7ad8db05171465412c0">DisableReadLine</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a30d7c0b563bd61256cab129b6c567829">HasReadLine</a> () const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the value of m_bEnableReadLine, if ReadLine is enabled  <a href="#a30d7c0b563bd61256cab129b6c567829"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a5fa71d73d2eed4e5ddd59d7a11b72ea2">ReachedMaxBuffer</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This WARNING event is called when your buffer for readline exceeds the warning threshold and triggers this event.  <a href="#a5fa71d73d2eed4e5ddd59d7a11b72ea2"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a2092f1cfd768211741d4d3c4b092563b">SockError</a> (int iErrno, const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sDescription)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">A sock error occured event.  <a href="#a2092f1cfd768211741d4d3c4b092563b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a46eaa8d1a67946a6d2f6349f40d551e2">ConnectionFrom</a> (const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sHost, uint16_t iPort)</td></tr>
@@ -459,21 +446,13 @@ Protected Types</h2></td></tr>
  }</td></tr>
 <tr><td colspan="2"><h2><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCModule.html">CModule</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSocket.html#a3c86946768409f8f05246be3d7f3da76">m_pModule</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">pointer to the module that this sock instance belongs to  <a href="#a3c86946768409f8f05246be3d7f3da76"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classCCron.html">CCron</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSockCommon.html#a92eef1e1d3476ba9e3e766d5dcc37bfe">m_vcCrons</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classCSMonitorFD.html">CSMonitorFD</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSockCommon.html#ae108fc0c73aaefe520ab489d78c05174">m_vcMonitorFD</a></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>Base <a class="el" href="classCsock.html" title="Basic socket class.">Csock</a> implementation to be used by modules. </p>
-<p>By all means, this class should be used as a base for sockets originating from modules. It handles removing instances of itself from the module as it unloads, and simplifies use in general.</p>
-<ul>
-<li>EnableReadLine is default to true in this class</li>
-<li>MaxBuffer for readline is set to 10240, in the event this is reached the socket is closed (<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classCSocket.html#a006813cba95395cb701d3c57c2578749" title="This defaults to closing the socket, feel free to override.">ReachedMaxBuffer</a>) </dd></dl>
-</li>
-</ul>
+<div class="textblock"><p>Base IRC socket for client&lt;-&gt;ZNC, and ZNC&lt;-&gt;server. </p>
 </div><hr/><h2>Member Enumeration Documentation</h2>
-<a class="anchor" id="a02fc87b0c2dceedeaa8df5407b389f6a"></a><!-- doxytag: member="CSocket::@0" ref="a02fc87b0c2dceedeaa8df5407b389f6a" args="" -->
+<a class="anchor" id="a02fc87b0c2dceedeaa8df5407b389f6a"></a><!-- doxytag: member="CIRCSocket::@0" ref="a02fc87b0c2dceedeaa8df5407b389f6a" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -500,7 +479,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a58222e8d6adf6157d11e5b40f444e5b5"></a><!-- doxytag: member="CSocket::@2" ref="a58222e8d6adf6157d11e5b40f444e5b5" args="" -->
+<a class="anchor" id="a58222e8d6adf6157d11e5b40f444e5b5"></a><!-- doxytag: member="CIRCSocket::@2" ref="a58222e8d6adf6157d11e5b40f444e5b5" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -519,7 +498,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a8b185717b466c70d2934fce9775c54da"></a><!-- doxytag: member="CSocket::ECloseType" ref="a8b185717b466c70d2934fce9775c54da" args="" -->
+<a class="anchor" id="a8b185717b466c70d2934fce9775c54da"></a><!-- doxytag: member="CIRCSocket::ECloseType" ref="a8b185717b466c70d2934fce9775c54da" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -548,7 +527,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a1ddb2a5d92aefe7db7a88b3824d7c4da"></a><!-- doxytag: member="CSocket::ECONState" ref="a1ddb2a5d92aefe7db7a88b3824d7c4da" args="" -->
+<a class="anchor" id="a1ddb2a5d92aefe7db7a88b3824d7c4da"></a><!-- doxytag: member="CIRCSocket::ECONState" ref="a1ddb2a5d92aefe7db7a88b3824d7c4da" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -579,7 +558,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a5386b79c9e11eb2e3e175473378abf44"></a><!-- doxytag: member="CSocket::EDisableProtocol" ref="a5386b79c9e11eb2e3e175473378abf44" args="" -->
+<a class="anchor" id="a5386b79c9e11eb2e3e175473378abf44"></a><!-- doxytag: member="CIRCSocket::EDisableProtocol" ref="a5386b79c9e11eb2e3e175473378abf44" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -616,7 +595,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a94aab05249b29e4446077664dee91e5e"></a><!-- doxytag: member="CSocket::EDNSLType" ref="a94aab05249b29e4446077664dee91e5e" args="" -->
+<a class="anchor" id="a94aab05249b29e4446077664dee91e5e"></a><!-- doxytag: member="CIRCSocket::EDNSLType" ref="a94aab05249b29e4446077664dee91e5e" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -639,7 +618,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ae0bf394f0683437a754dd535a7d1df65"></a><!-- doxytag: member="CSocket::EFRead" ref="ae0bf394f0683437a754dd535a7d1df65" args="" -->
+<a class="anchor" id="ae0bf394f0683437a754dd535a7d1df65"></a><!-- doxytag: member="CIRCSocket::EFRead" ref="ae0bf394f0683437a754dd535a7d1df65" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -671,7 +650,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aa033a0324589c4247df589f049cae2a7"></a><!-- doxytag: member="CSocket::EFSelect" ref="aa033a0324589c4247df589f049cae2a7" args="" -->
+<a class="anchor" id="aa033a0324589c4247df589f049cae2a7"></a><!-- doxytag: member="CIRCSocket::EFSelect" ref="aa033a0324589c4247df589f049cae2a7" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -700,7 +679,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aa7da8fe2945d8cfca7c53aec88fdad68"></a><!-- doxytag: member="CSocket::ESSLMethod" ref="aa7da8fe2945d8cfca7c53aec88fdad68" args="" -->
+<a class="anchor" id="aa7da8fe2945d8cfca7c53aec88fdad68"></a><!-- doxytag: member="CIRCSocket::ESSLMethod" ref="aa7da8fe2945d8cfca7c53aec88fdad68" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -729,7 +708,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a12ece5f34b7f197eb764e25b0b43b999"></a><!-- doxytag: member="CSocket::ETConn" ref="a12ece5f34b7f197eb764e25b0b43b999" args="" -->
+<a class="anchor" id="a12ece5f34b7f197eb764e25b0b43b999"></a><!-- doxytag: member="CIRCSocket::ETConn" ref="a12ece5f34b7f197eb764e25b0b43b999" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -755,100 +734,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a6acf395cad024f11690ea045942a6701"></a><!-- doxytag: member="CSocket::CSocket" ref="a6acf395cad024f11690ea045942a6701" args="(CModule *pModule)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classCSocket.html#a6acf395cad024f11690ea045942a6701">CSocket::CSocket</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classCModule.html">CModule</a> *&#160;</td>
-          <td class="paramname"><em>pModule</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>ctor </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pModule</td><td>the module this sock instance is associated to </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a5be583a3a28fd93de081519285e188be"></a><!-- doxytag: member="CSocket::CSocket" ref="a5be583a3a28fd93de081519285e188be" args="(CModule *pModule, const CString &amp;sHostname, unsigned short uPort, int iTimeout=60)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classCSocket.html#a6acf395cad024f11690ea045942a6701">CSocket::CSocket</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classCModule.html">CModule</a> *&#160;</td>
-          <td class="paramname"><em>pModule</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
-          <td class="paramname"><em>sHostname</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned short&#160;</td>
-          <td class="paramname"><em>uPort</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>iTimeout</em> = <code>60</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>ctor </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pModule</td><td>the module this sock instance is associated to </td></tr>
-    <tr><td class="paramname">sHostname</td><td>the hostname being connected to </td></tr>
-    <tr><td class="paramname">uPort</td><td>the port being connected to </td></tr>
-    <tr><td class="paramname">iTimeout</td><td>the timeout period for this specific sock </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="aa63e9ce5486a35e3b17c1bbb165d30c1"></a><!-- doxytag: member="CSocket::~CSocket" ref="aa63e9ce5486a35e3b17c1bbb165d30c1" args="()" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="classCSocket.html#aa63e9ce5486a35e3b17c1bbb165d30c1">CSocket::~CSocket</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td><code> [virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="aa8821cc2be1289ddfac983f0913d6517"></a><!-- doxytag: member="CSocket::Accept" ref="aa8821cc2be1289ddfac983f0913d6517" args="(CS_STRING &amp;sHost, uint16_t &amp;iRPort)" -->
+<a class="anchor" id="aa8821cc2be1289ddfac983f0913d6517"></a><!-- doxytag: member="CIRCSocket::Accept" ref="aa8821cc2be1289ddfac983f0913d6517" args="(CS_STRING &amp;sHost, uint16_t &amp;iRPort)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -877,7 +764,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a83c2896ad30551f552fbae81f81c395a"></a><!-- doxytag: member="CSocket::AcceptSSL" ref="a83c2896ad30551f552fbae81f81c395a" args="()" -->
+<a class="anchor" id="a83c2896ad30551f552fbae81f81c395a"></a><!-- doxytag: member="CIRCSocket::AcceptSSL" ref="a83c2896ad30551f552fbae81f81c395a" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -895,7 +782,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a0c1dfdeb5988a5649a3cd6a3ff11203a"></a><!-- doxytag: member="CSocket::AddCron" ref="a0c1dfdeb5988a5649a3cd6a3ff11203a" args="(CCron *pcCron)" -->
+<a class="anchor" id="a0c1dfdeb5988a5649a3cd6a3ff11203a"></a><!-- doxytag: member="CIRCSocket::AddCron" ref="a0c1dfdeb5988a5649a3cd6a3ff11203a" args="(CCron *pcCron)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -914,7 +801,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ad93f78657c5e8712ee1f08a928332d34"></a><!-- doxytag: member="CSocket::AllowWrite" ref="ad93f78657c5e8712ee1f08a928332d34" args="(uint64_t &amp;iNOW) const " -->
+<a class="anchor" id="ad93f78657c5e8712ee1f08a928332d34"></a><!-- doxytag: member="CIRCSocket::AllowWrite" ref="ad93f78657c5e8712ee1f08a928332d34" args="(uint64_t &amp;iNOW) const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -933,7 +820,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a0f90529eb2f0bdf2f4e8d7899e931f07"></a><!-- doxytag: member="CSocket::AssignFDs" ref="a0f90529eb2f0bdf2f4e8d7899e931f07" args="(std::map&lt; cs_sock_t, short &gt; &amp;miiReadyFds, struct timeval *tvtimeout)" -->
+<a class="anchor" id="a0f90529eb2f0bdf2f4e8d7899e931f07"></a><!-- doxytag: member="CIRCSocket::AssignFDs" ref="a0f90529eb2f0bdf2f4e8d7899e931f07" args="(std::map&lt; cs_sock_t, short &gt; &amp;miiReadyFds, struct timeval *tvtimeout)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -960,7 +847,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a852f8794b44be3038fc00af483907de9"></a><!-- doxytag: member="CSocket::CallSockError" ref="a852f8794b44be3038fc00af483907de9" args="(int iErrno, const CS_STRING &amp;sDescription=&quot;&quot;)" -->
+<a class="anchor" id="a852f8794b44be3038fc00af483907de9"></a><!-- doxytag: member="CIRCSocket::CallSockError" ref="a852f8794b44be3038fc00af483907de9" args="(int iErrno, const CS_STRING &amp;sDescription=&quot;&quot;)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -996,7 +883,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a4c0a6d0367eb1531cdc11c05a65be076"></a><!-- doxytag: member="CSocket::CheckFDs" ref="a4c0a6d0367eb1531cdc11c05a65be076" args="(const std::map&lt; cs_sock_t, short &gt; &amp;miiReadyFds)" -->
+<a class="anchor" id="a4c0a6d0367eb1531cdc11c05a65be076"></a><!-- doxytag: member="CIRCSocket::CheckFDs" ref="a4c0a6d0367eb1531cdc11c05a65be076" args="(const std::map&lt; cs_sock_t, short &gt; &amp;miiReadyFds)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1013,7 +900,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a44a3d6622b5b845f4d3097cc69c84fb6"></a><!-- doxytag: member="CSocket::CheckTimeout" ref="a44a3d6622b5b845f4d3097cc69c84fb6" args="(time_t iNow)" -->
+<a class="anchor" id="a44a3d6622b5b845f4d3097cc69c84fb6"></a><!-- doxytag: member="CIRCSocket::CheckTimeout" ref="a44a3d6622b5b845f4d3097cc69c84fb6" args="(time_t iNow)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1032,7 +919,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a99c8b88340c7a3fc86b7864a20bdd562"></a><!-- doxytag: member="CSocket::CleanupCrons" ref="a99c8b88340c7a3fc86b7864a20bdd562" args="()" -->
+<a class="anchor" id="a99c8b88340c7a3fc86b7864a20bdd562"></a><!-- doxytag: member="CIRCSocket::CleanupCrons" ref="a99c8b88340c7a3fc86b7864a20bdd562" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1048,7 +935,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af27e285dc370946e91badb733542c0dd"></a><!-- doxytag: member="CSocket::CleanupFDMonitors" ref="af27e285dc370946e91badb733542c0dd" args="()" -->
+<a class="anchor" id="af27e285dc370946e91badb733542c0dd"></a><!-- doxytag: member="CIRCSocket::CleanupFDMonitors" ref="af27e285dc370946e91badb733542c0dd" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1064,7 +951,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ade75f55f69d6cfebf3eaccd320928e72"></a><!-- doxytag: member="CSocket::ClearWriteBuffer" ref="ade75f55f69d6cfebf3eaccd320928e72" args="()" -->
+<a class="anchor" id="ade75f55f69d6cfebf3eaccd320928e72"></a><!-- doxytag: member="CIRCSocket::ClearWriteBuffer" ref="ade75f55f69d6cfebf3eaccd320928e72" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1080,7 +967,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ace2cccec9d2ba551369b41b60324496f"></a><!-- doxytag: member="CSocket::Close" ref="ace2cccec9d2ba551369b41b60324496f" args="(ECloseType eCloseType=CLT_NOW)" -->
+<a class="anchor" id="ace2cccec9d2ba551369b41b60324496f"></a><!-- doxytag: member="CIRCSocket::Close" ref="ace2cccec9d2ba551369b41b60324496f" args="(ECloseType eCloseType=CLT_NOW)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1101,7 +988,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a28c55c86488c2c95c161984dbfe47509"></a><!-- doxytag: member="CSocket::CloseSocksFD" ref="a28c55c86488c2c95c161984dbfe47509" args="()" -->
+<a class="anchor" id="a28c55c86488c2c95c161984dbfe47509"></a><!-- doxytag: member="CIRCSocket::CloseSocksFD" ref="a28c55c86488c2c95c161984dbfe47509" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1119,48 +1006,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aeb45ba68fff1f1740cec0e52f636418a"></a><!-- doxytag: member="CSocket::Connect" ref="aeb45ba68fff1f1740cec0e52f636418a" args="(const CString &amp;sHostname, unsigned short uPort, bool bSSL=false, unsigned int uTimeout=60)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classCSocket.html#aeb45ba68fff1f1740cec0e52f636418a">CSocket::Connect</a> </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
-          <td class="paramname"><em>sHostname</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned short&#160;</td>
-          <td class="paramname"><em>uPort</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>bSSL</em> = <code>false</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>uTimeout</em> = <code>60</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Ease of use Connect, assigns to the manager and is subsequently tracked. </p>
-
-</div>
-</div>
-<a class="anchor" id="aca10fb9ed6fae8ab232df34964be7e47"></a><!-- doxytag: member="CSocket::Connect" ref="aca10fb9ed6fae8ab232df34964be7e47" args="()" -->
+<a class="anchor" id="aca10fb9ed6fae8ab232df34964be7e47"></a><!-- doxytag: member="CIRCSocket::Connect" ref="aca10fb9ed6fae8ab232df34964be7e47" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1179,7 +1025,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="adb18e57324c2abe83eea8bf8dc32cd33"></a><!-- doxytag: member="CSocket::Connected" ref="adb18e57324c2abe83eea8bf8dc32cd33" args="()" -->
+<a class="anchor" id="adb18e57324c2abe83eea8bf8dc32cd33"></a><!-- doxytag: member="CIRCSocket::Connected" ref="adb18e57324c2abe83eea8bf8dc32cd33" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1199,7 +1045,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aed53de4046def7f4efbed8f449ec5fcb"></a><!-- doxytag: member="CSocket::ConnectFD" ref="aed53de4046def7f4efbed8f449ec5fcb" args="(int iReadFD, int iWriteFD, const CS_STRING &amp;sName, bool bIsSSL=false, ETConn eDirection=INBOUND)" -->
+<a class="anchor" id="aed53de4046def7f4efbed8f449ec5fcb"></a><!-- doxytag: member="CIRCSocket::ConnectFD" ref="aed53de4046def7f4efbed8f449ec5fcb" args="(int iReadFD, int iWriteFD, const CS_STRING &amp;sName, bool bIsSSL=false, ETConn eDirection=INBOUND)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1248,7 +1094,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a258d1a2583c9e550e290850d4647e747"></a><!-- doxytag: member="CSocket::ConnectInetd" ref="a258d1a2583c9e550e290850d4647e747" args="(bool bIsSSL=false, const CS_STRING &amp;sHostname=&quot;&quot;)" -->
+<a class="anchor" id="a258d1a2583c9e550e290850d4647e747"></a><!-- doxytag: member="CIRCSocket::ConnectInetd" ref="a258d1a2583c9e550e290850d4647e747" args="(bool bIsSSL=false, const CS_STRING &amp;sHostname=&quot;&quot;)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1277,37 +1123,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac91d8849bfa3a2e8272f9d3edab00eba"></a><!-- doxytag: member="CSocket::ConnectionFrom" ref="ac91d8849bfa3a2e8272f9d3edab00eba" args="(const CString &amp;sHost, unsigned short uPort)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool <a class="el" href="classCSocket.html#ac91d8849bfa3a2e8272f9d3edab00eba">CSocket::ConnectionFrom</a> </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
-          <td class="paramname"><em>sHost</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned short&#160;</td>
-          <td class="paramname"><em>uPort</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>This limits the global connections from this IP to defeat DoS attacks, feel free to override. The ACL used is provided by the main interface. </p>
-<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classCZNC.html#afa4b1976a35f93ec4efd2c6e25a8e092">CZNC::AllowConnectionFrom</a> </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a46eaa8d1a67946a6d2f6349f40d551e2"></a><!-- doxytag: member="CSocket::ConnectionFrom" ref="a46eaa8d1a67946a6d2f6349f40d551e2" args="(const CS_STRING &amp;sHost, uint16_t iPort)" -->
+<a class="anchor" id="a46eaa8d1a67946a6d2f6349f40d551e2"></a><!-- doxytag: member="CIRCSocket::ConnectionFrom" ref="a46eaa8d1a67946a6d2f6349f40d551e2" args="(const CS_STRING &amp;sHost, uint16_t iPort)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1336,7 +1152,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="acc930b9f368c7226e9fd36f9f6b6ef91"></a><!-- doxytag: member="CSocket::ConnectionRefused" ref="acc930b9f368c7226e9fd36f9f6b6ef91" args="()" -->
+<a class="anchor" id="acc930b9f368c7226e9fd36f9f6b6ef91"></a><!-- doxytag: member="CIRCSocket::ConnectionRefused" ref="acc930b9f368c7226e9fd36f9f6b6ef91" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1356,7 +1172,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a85c79bd1cfd6893e4a828085fcf197d6"></a><!-- doxytag: member="CSocket::ConnectSSL" ref="a85c79bd1cfd6893e4a828085fcf197d6" args="()" -->
+<a class="anchor" id="a85c79bd1cfd6893e4a828085fcf197d6"></a><!-- doxytag: member="CIRCSocket::ConnectSSL" ref="a85c79bd1cfd6893e4a828085fcf197d6" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1376,7 +1192,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a1301e874a81e8f2b64ff2af0a0e018a6"></a><!-- doxytag: member="CSocket::ConvertAddress" ref="a1301e874a81e8f2b64ff2af0a0e018a6" args="(const struct sockaddr_storage *pAddr, socklen_t iAddrLen, CS_STRING &amp;sIP, u_short *piPort) const override" -->
+<a class="anchor" id="a1301e874a81e8f2b64ff2af0a0e018a6"></a><!-- doxytag: member="CIRCSocket::ConvertAddress" ref="a1301e874a81e8f2b64ff2af0a0e018a6" args="(const struct sockaddr_storage *pAddr, socklen_t iAddrLen, CS_STRING &amp;sIP, u_short *piPort) const override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1415,7 +1231,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab03fd24a2d7a397ef9bbe864df6dda31"></a><!-- doxytag: member="CSocket::ConvertAddress" ref="ab03fd24a2d7a397ef9bbe864df6dda31" args="(const struct sockaddr_storage *pAddr, socklen_t iAddrLen, CS_STRING &amp;sIP, uint16_t *piPort) const " -->
+<a class="anchor" id="ab03fd24a2d7a397ef9bbe864df6dda31"></a><!-- doxytag: member="CIRCSocket::ConvertAddress" ref="ab03fd24a2d7a397ef9bbe864df6dda31" args="(const struct sockaddr_storage *pAddr, socklen_t iAddrLen, CS_STRING &amp;sIP, uint16_t *piPort) const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1470,7 +1286,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a6de0e591c1bc2a80bbfd7462f8ad14fa"></a><!-- doxytag: member="CSocket::Copy" ref="a6de0e591c1bc2a80bbfd7462f8ad14fa" args="(const Csock &amp;cCopy)" -->
+<a class="anchor" id="a6de0e591c1bc2a80bbfd7462f8ad14fa"></a><!-- doxytag: member="CIRCSocket::Copy" ref="a6de0e591c1bc2a80bbfd7462f8ad14fa" args="(const Csock &amp;cCopy)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1489,7 +1305,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aec858d10480674577aac6270036eb713"></a><!-- doxytag: member="CSocket::CreateSocksFD" ref="aec858d10480674577aac6270036eb713" args="()" -->
+<a class="anchor" id="aec858d10480674577aac6270036eb713"></a><!-- doxytag: member="CIRCSocket::CreateSocksFD" ref="aec858d10480674577aac6270036eb713" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1507,7 +1323,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a8c88a085560956832660b9cbf94b7e63"></a><!-- doxytag: member="CSocket::Cron" ref="a8c88a085560956832660b9cbf94b7e63" args="()" -->
+<a class="anchor" id="a8c88a085560956832660b9cbf94b7e63"></a><!-- doxytag: member="CIRCSocket::Cron" ref="a8c88a085560956832660b9cbf94b7e63" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1525,7 +1341,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af74cc57cbc14a24544d2e203aef684c6"></a><!-- doxytag: member="CSocket::DelCron" ref="af74cc57cbc14a24544d2e203aef684c6" args="(const CS_STRING &amp;sName, bool bDeleteAll=true, bool bCaseSensitive=true)" -->
+<a class="anchor" id="af74cc57cbc14a24544d2e203aef684c6"></a><!-- doxytag: member="CIRCSocket::DelCron" ref="af74cc57cbc14a24544d2e203aef684c6" args="(const CS_STRING &amp;sName, bool bDeleteAll=true, bool bCaseSensitive=true)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1568,7 +1384,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a2fe7814ee93f196745b636039213add5"></a><!-- doxytag: member="CSocket::DelCron" ref="a2fe7814ee93f196745b636039213add5" args="(uint32_t iPos)" -->
+<a class="anchor" id="a2fe7814ee93f196745b636039213add5"></a><!-- doxytag: member="CIRCSocket::DelCron" ref="a2fe7814ee93f196745b636039213add5" args="(uint32_t iPos)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1587,7 +1403,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aeab4ac132ceeae7475be2302f4a3729c"></a><!-- doxytag: member="CSocket::DelCronByAddr" ref="aeab4ac132ceeae7475be2302f4a3729c" args="(CCron *pcCron)" -->
+<a class="anchor" id="aeab4ac132ceeae7475be2302f4a3729c"></a><!-- doxytag: member="CIRCSocket::DelCronByAddr" ref="aeab4ac132ceeae7475be2302f4a3729c" args="(CCron *pcCron)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1606,7 +1422,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a0ffefa30e1140bac8aec4e397b7d9895"></a><!-- doxytag: member="CSocket::Dereference" ref="a0ffefa30e1140bac8aec4e397b7d9895" args="()" -->
+<a class="anchor" id="a0ffefa30e1140bac8aec4e397b7d9895"></a><!-- doxytag: member="CIRCSocket::Dereference" ref="a0ffefa30e1140bac8aec4e397b7d9895" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1624,7 +1440,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="adfee091e6a74b7ad8db05171465412c0"></a><!-- doxytag: member="CSocket::DisableReadLine" ref="adfee091e6a74b7ad8db05171465412c0" args="()" -->
+<a class="anchor" id="adfee091e6a74b7ad8db05171465412c0"></a><!-- doxytag: member="CIRCSocket::DisableReadLine" ref="adfee091e6a74b7ad8db05171465412c0" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1640,7 +1456,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a7969b6b06ee2d2e9997b00c47c2a1898"></a><!-- doxytag: member="CSocket::DisableSSLCompression" ref="a7969b6b06ee2d2e9997b00c47c2a1898" args="()" -->
+<a class="anchor" id="a7969b6b06ee2d2e9997b00c47c2a1898"></a><!-- doxytag: member="CIRCSocket::DisableSSLCompression" ref="a7969b6b06ee2d2e9997b00c47c2a1898" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1658,7 +1474,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a0256789d876431c52f9e2e905440319f"></a><!-- doxytag: member="CSocket::DisableSSLProtocols" ref="a0256789d876431c52f9e2e905440319f" args="(u_int uDisableOpts)" -->
+<a class="anchor" id="a0256789d876431c52f9e2e905440319f"></a><!-- doxytag: member="CIRCSocket::DisableSSLProtocols" ref="a0256789d876431c52f9e2e905440319f" args="(u_int uDisableOpts)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1678,7 +1494,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aea4ef32ddae3f80d3d9296f52bd51431"></a><!-- doxytag: member="CSocket::Disconnected" ref="aea4ef32ddae3f80d3d9296f52bd51431" args="()" -->
+<a class="anchor" id="aea4ef32ddae3f80d3d9296f52bd51431"></a><!-- doxytag: member="CIRCSocket::Disconnected" ref="aea4ef32ddae3f80d3d9296f52bd51431" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1698,7 +1514,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a765aca4259f116588f591762286905f4"></a><!-- doxytag: member="CSocket::DNSLookup" ref="a765aca4259f116588f591762286905f4" args="(EDNSLType eDNSLType)" -->
+<a class="anchor" id="a765aca4259f116588f591762286905f4"></a><!-- doxytag: member="CIRCSocket::DNSLookup" ref="a765aca4259f116588f591762286905f4" args="(EDNSLType eDNSLType)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1719,7 +1535,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af748608ba80f9bd54294292930db560e"></a><!-- doxytag: member="CSocket::EnableReadLine" ref="af748608ba80f9bd54294292930db560e" args="()" -->
+<a class="anchor" id="af748608ba80f9bd54294292930db560e"></a><!-- doxytag: member="CIRCSocket::EnableReadLine" ref="af748608ba80f9bd54294292930db560e" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1739,7 +1555,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ae16b99983e6e37d4ca0325e7a871d1cf"></a><!-- doxytag: member="CSocket::GetAddrInfo" ref="ae16b99983e6e37d4ca0325e7a871d1cf" args="(const CS_STRING &amp;sHostname, CSSockAddr &amp;csSockAddr)" -->
+<a class="anchor" id="ae16b99983e6e37d4ca0325e7a871d1cf"></a><!-- doxytag: member="CIRCSocket::GetAddrInfo" ref="ae16b99983e6e37d4ca0325e7a871d1cf" args="(const CS_STRING &amp;sHostname, CSSockAddr &amp;csSockAddr)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1778,7 +1594,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a92f9a9a4d065e1d6090ba00992aaf415"></a><!-- doxytag: member="CSocket::GetAvgRead" ref="a92f9a9a4d065e1d6090ba00992aaf415" args="(uint64_t iSample=1000) const " -->
+<a class="anchor" id="a92f9a9a4d065e1d6090ba00992aaf415"></a><!-- doxytag: member="CIRCSocket::GetAvgRead" ref="a92f9a9a4d065e1d6090ba00992aaf415" args="(uint64_t iSample=1000) const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1797,7 +1613,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aa1f8c7afcd3523705055633f2a383a03"></a><!-- doxytag: member="CSocket::GetAvgWrite" ref="aa1f8c7afcd3523705055633f2a383a03" args="(uint64_t iSample=1000) const " -->
+<a class="anchor" id="aa1f8c7afcd3523705055633f2a383a03"></a><!-- doxytag: member="CIRCSocket::GetAvgWrite" ref="aa1f8c7afcd3523705055633f2a383a03" args="(uint64_t iSample=1000) const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1816,7 +1632,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a80c53d581bd8f6a29e435e8545570285"></a><!-- doxytag: member="CSocket::GetBindHost" ref="a80c53d581bd8f6a29e435e8545570285" args="() const " -->
+<a class="anchor" id="a80c53d581bd8f6a29e435e8545570285"></a><!-- doxytag: member="CIRCSocket::GetBindHost" ref="a80c53d581bd8f6a29e435e8545570285" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1832,7 +1648,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a163f5f467772b66eeba0ffd91a23a041"></a><!-- doxytag: member="CSocket::GetBytesRead" ref="a163f5f467772b66eeba0ffd91a23a041" args="() const " -->
+<a class="anchor" id="a163f5f467772b66eeba0ffd91a23a041"></a><!-- doxytag: member="CIRCSocket::GetBytesRead" ref="a163f5f467772b66eeba0ffd91a23a041" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1850,7 +1666,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a2a548094f359949b3fd3a5c6402e008b"></a><!-- doxytag: member="CSocket::GetBytesWritten" ref="a2a548094f359949b3fd3a5c6402e008b" args="() const " -->
+<a class="anchor" id="a2a548094f359949b3fd3a5c6402e008b"></a><!-- doxytag: member="CIRCSocket::GetBytesWritten" ref="a2a548094f359949b3fd3a5c6402e008b" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1868,7 +1684,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a9492afdd7b765fe5badffa5781381717"></a><!-- doxytag: member="CSocket::GetCipher" ref="a9492afdd7b765fe5badffa5781381717" args="() const " -->
+<a class="anchor" id="a9492afdd7b765fe5badffa5781381717"></a><!-- doxytag: member="CIRCSocket::GetCipher" ref="a9492afdd7b765fe5badffa5781381717" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1884,7 +1700,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ae1c4d966c376031c5a4422dd0c6fd80c"></a><!-- doxytag: member="CSocket::GetCloseType" ref="ae1c4d966c376031c5a4422dd0c6fd80c" args="() const " -->
+<a class="anchor" id="ae1c4d966c376031c5a4422dd0c6fd80c"></a><!-- doxytag: member="CIRCSocket::GetCloseType" ref="ae1c4d966c376031c5a4422dd0c6fd80c" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1903,7 +1719,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aa09f26f997f90406b7291547c559f4a6"></a><!-- doxytag: member="CSocket::GetConState" ref="aa09f26f997f90406b7291547c559f4a6" args="() const " -->
+<a class="anchor" id="aa09f26f997f90406b7291547c559f4a6"></a><!-- doxytag: member="CIRCSocket::GetConState" ref="aa09f26f997f90406b7291547c559f4a6" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1921,7 +1737,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a77b04d9e37e9e4e110d8463430d3a763"></a><!-- doxytag: member="CSocket::GetCrons" ref="a77b04d9e37e9e4e110d8463430d3a763" args="() const " -->
+<a class="anchor" id="a77b04d9e37e9e4e110d8463430d3a763"></a><!-- doxytag: member="CIRCSocket::GetCrons" ref="a77b04d9e37e9e4e110d8463430d3a763" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1939,7 +1755,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a8df0126ee4fccce1aa626fb929bb3ea2"></a><!-- doxytag: member="CSocket::GetHostName" ref="a8df0126ee4fccce1aa626fb929bb3ea2" args="() const " -->
+<a class="anchor" id="a8df0126ee4fccce1aa626fb929bb3ea2"></a><!-- doxytag: member="CIRCSocket::GetHostName" ref="a8df0126ee4fccce1aa626fb929bb3ea2" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1957,7 +1773,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a1a8fedcc5a3e9ddf4381d1ffd5fb2950"></a><!-- doxytag: member="CSocket::GetInternalReadBuffer" ref="a1a8fedcc5a3e9ddf4381d1ffd5fb2950" args="()" -->
+<a class="anchor" id="a1a8fedcc5a3e9ddf4381d1ffd5fb2950"></a><!-- doxytag: member="CIRCSocket::GetInternalReadBuffer" ref="a1a8fedcc5a3e9ddf4381d1ffd5fb2950" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1975,7 +1791,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a96ccad4113fb78c04081be167738dd54"></a><!-- doxytag: member="CSocket::GetInternalWriteBuffer" ref="a96ccad4113fb78c04081be167738dd54" args="()" -->
+<a class="anchor" id="a96ccad4113fb78c04081be167738dd54"></a><!-- doxytag: member="CIRCSocket::GetInternalWriteBuffer" ref="a96ccad4113fb78c04081be167738dd54" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1994,7 +1810,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab849ed10ecac7808b8242e5511aec2a4"></a><!-- doxytag: member="CSocket::GetIPv6" ref="ab849ed10ecac7808b8242e5511aec2a4" args="() const " -->
+<a class="anchor" id="ab849ed10ecac7808b8242e5511aec2a4"></a><!-- doxytag: member="CIRCSocket::GetIPv6" ref="ab849ed10ecac7808b8242e5511aec2a4" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2010,7 +1826,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a182c33dc4074eeb0f304a0b3d775ac78"></a><!-- doxytag: member="CSocket::GetLastCheckTimeout" ref="a182c33dc4074eeb0f304a0b3d775ac78" args="() const " -->
+<a class="anchor" id="a182c33dc4074eeb0f304a0b3d775ac78"></a><!-- doxytag: member="CIRCSocket::GetLastCheckTimeout" ref="a182c33dc4074eeb0f304a0b3d775ac78" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2026,7 +1842,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a40508bd28d1a96ccbfdce064d8c0686e"></a><!-- doxytag: member="CSocket::GetLocalIP" ref="a40508bd28d1a96ccbfdce064d8c0686e" args="() const " -->
+<a class="anchor" id="a40508bd28d1a96ccbfdce064d8c0686e"></a><!-- doxytag: member="CIRCSocket::GetLocalIP" ref="a40508bd28d1a96ccbfdce064d8c0686e" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2042,7 +1858,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a520e7d24e870eea2c1143695b5ce5c9d"></a><!-- doxytag: member="CSocket::GetLocalPort" ref="a520e7d24e870eea2c1143695b5ce5c9d" args="() const " -->
+<a class="anchor" id="a520e7d24e870eea2c1143695b5ce5c9d"></a><!-- doxytag: member="CIRCSocket::GetLocalPort" ref="a520e7d24e870eea2c1143695b5ce5c9d" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2060,7 +1876,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a6930d62a40a54a0db5f73dcfd9f5789c"></a><!-- doxytag: member="CSocket::GetMaxBufferThreshold" ref="a6930d62a40a54a0db5f73dcfd9f5789c" args="() const " -->
+<a class="anchor" id="a6930d62a40a54a0db5f73dcfd9f5789c"></a><!-- doxytag: member="CIRCSocket::GetMaxBufferThreshold" ref="a6930d62a40a54a0db5f73dcfd9f5789c" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2076,7 +1892,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a8661f34691c2e04ab1e861750650abff"></a><!-- doxytag: member="CSocket::GetMaxConns" ref="a8661f34691c2e04ab1e861750650abff" args="() const " -->
+<a class="anchor" id="a8661f34691c2e04ab1e861750650abff"></a><!-- doxytag: member="CIRCSocket::GetMaxConns" ref="a8661f34691c2e04ab1e861750650abff" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2094,23 +1910,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a99c24906ec37c7bbabfdfd90c2611bf2"></a><!-- doxytag: member="CSocket::GetModule" ref="a99c24906ec37c7bbabfdfd90c2611bf2" args="() const " -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classCModule.html">CModule</a>* <a class="el" href="classCSocket.html#a99c24906ec37c7bbabfdfd90c2611bf2">CSocket::GetModule</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a73e056b2b0c00d95db0b0b1a64210857"></a><!-- doxytag: member="CSocket::GetNextCheckTimeout" ref="a73e056b2b0c00d95db0b0b1a64210857" args="(time_t iNow=0) const " -->
+<a class="anchor" id="a73e056b2b0c00d95db0b0b1a64210857"></a><!-- doxytag: member="CIRCSocket::GetNextCheckTimeout" ref="a73e056b2b0c00d95db0b0b1a64210857" args="(time_t iNow=0) const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2129,7 +1929,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aed7e5f834710bf11347759f739393562"></a><!-- doxytag: member="CSocket::GetParentSockName" ref="aed7e5f834710bf11347759f739393562" args="() const " -->
+<a class="anchor" id="aed7e5f834710bf11347759f739393562"></a><!-- doxytag: member="CIRCSocket::GetParentSockName" ref="aed7e5f834710bf11347759f739393562" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2145,7 +1945,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ae8beef81ea513ee521a399c405de7aab"></a><!-- doxytag: member="CSocket::GetPeerFingerprint" ref="ae8beef81ea513ee521a399c405de7aab" args="(CS_STRING &amp;sFP) const " -->
+<a class="anchor" id="ae8beef81ea513ee521a399c405de7aab"></a><!-- doxytag: member="CIRCSocket::GetPeerFingerprint" ref="ae8beef81ea513ee521a399c405de7aab" args="(CS_STRING &amp;sFP) const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2164,7 +1964,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac367734097dbc24edbb12e4ea3742443"></a><!-- doxytag: member="CSocket::GetPeerPubKey" ref="ac367734097dbc24edbb12e4ea3742443" args="() const " -->
+<a class="anchor" id="ac367734097dbc24edbb12e4ea3742443"></a><!-- doxytag: member="CIRCSocket::GetPeerPubKey" ref="ac367734097dbc24edbb12e4ea3742443" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2182,7 +1982,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af10b64de89e3068c9b83a1491c2d898b"></a><!-- doxytag: member="CSocket::GetPemLocation" ref="af10b64de89e3068c9b83a1491c2d898b" args="() const " -->
+<a class="anchor" id="af10b64de89e3068c9b83a1491c2d898b"></a><!-- doxytag: member="CIRCSocket::GetPemLocation" ref="af10b64de89e3068c9b83a1491c2d898b" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2198,7 +1998,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a4f2383c7e96aa239c1dcae7b5febcddf"></a><!-- doxytag: member="CSocket::GetPemPass" ref="a4f2383c7e96aa239c1dcae7b5febcddf" args="() const " -->
+<a class="anchor" id="a4f2383c7e96aa239c1dcae7b5febcddf"></a><!-- doxytag: member="CIRCSocket::GetPemPass" ref="a4f2383c7e96aa239c1dcae7b5febcddf" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2214,7 +2014,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ae449e1837057bf83d374265d5c466deb"></a><!-- doxytag: member="CSocket::GetPending" ref="ae449e1837057bf83d374265d5c466deb" args="() const " -->
+<a class="anchor" id="ae449e1837057bf83d374265d5c466deb"></a><!-- doxytag: member="CIRCSocket::GetPending" ref="ae449e1837057bf83d374265d5c466deb" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2232,7 +2032,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a1ab5e51aa127202f398880b263b6aa00"></a><!-- doxytag: member="CSocket::GetPort" ref="a1ab5e51aa127202f398880b263b6aa00" args="() const " -->
+<a class="anchor" id="a1ab5e51aa127202f398880b263b6aa00"></a><!-- doxytag: member="CIRCSocket::GetPort" ref="a1ab5e51aa127202f398880b263b6aa00" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2250,7 +2050,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ad16442f2f2efa33b62a49f63542c003c"></a><!-- doxytag: member="CSocket::GetRateBytes" ref="ad16442f2f2efa33b62a49f63542c003c" args="() const " -->
+<a class="anchor" id="ad16442f2f2efa33b62a49f63542c003c"></a><!-- doxytag: member="CIRCSocket::GetRateBytes" ref="ad16442f2f2efa33b62a49f63542c003c" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2266,7 +2066,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af51066c44ae932bfb7ff5436a1332eef"></a><!-- doxytag: member="CSocket::GetRateTime" ref="af51066c44ae932bfb7ff5436a1332eef" args="() const " -->
+<a class="anchor" id="af51066c44ae932bfb7ff5436a1332eef"></a><!-- doxytag: member="CIRCSocket::GetRateTime" ref="af51066c44ae932bfb7ff5436a1332eef" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2282,7 +2082,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a9f6f020f9d9aea1caa880a7e3498860f"></a><!-- doxytag: member="CSocket::GetRemoteIP" ref="a9f6f020f9d9aea1caa880a7e3498860f" args="() const " -->
+<a class="anchor" id="a9f6f020f9d9aea1caa880a7e3498860f"></a><!-- doxytag: member="CIRCSocket::GetRemoteIP" ref="a9f6f020f9d9aea1caa880a7e3498860f" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2302,7 +2102,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a8c1ac2cce4c95c901d750f0f398988b1"></a><!-- doxytag: member="CSocket::GetRemotePort" ref="a8c1ac2cce4c95c901d750f0f398988b1" args="() const " -->
+<a class="anchor" id="a8c1ac2cce4c95c901d750f0f398988b1"></a><!-- doxytag: member="CIRCSocket::GetRemotePort" ref="a8c1ac2cce4c95c901d750f0f398988b1" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2320,7 +2120,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aec0192524b5b28167057a399f8e685c7"></a><!-- doxytag: member="CSocket::GetRequireClientCertFlags" ref="aec0192524b5b28167057a399f8e685c7" args="() const " -->
+<a class="anchor" id="aec0192524b5b28167057a399f8e685c7"></a><!-- doxytag: member="CIRCSocket::GetRequireClientCertFlags" ref="aec0192524b5b28167057a399f8e685c7" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2336,7 +2136,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ae1f84de0d38450c53dce99f8f4d649ab"></a><!-- doxytag: member="CSocket::GetRSock" ref="ae1f84de0d38450c53dce99f8f4d649ab" args="()" -->
+<a class="anchor" id="ae1f84de0d38450c53dce99f8f4d649ab"></a><!-- doxytag: member="CIRCSocket::GetRSock" ref="ae1f84de0d38450c53dce99f8f4d649ab" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2356,7 +2156,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab7e1d5bc3d514e73fe3a7e7d8f38091a"></a><!-- doxytag: member="CSocket::GetRSock" ref="ab7e1d5bc3d514e73fe3a7e7d8f38091a" args="() const " -->
+<a class="anchor" id="ab7e1d5bc3d514e73fe3a7e7d8f38091a"></a><!-- doxytag: member="CIRCSocket::GetRSock" ref="ab7e1d5bc3d514e73fe3a7e7d8f38091a" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2372,7 +2172,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac1002a688e16094328430f5d2ec8e793"></a><!-- doxytag: member="CSocket::GetSock" ref="ac1002a688e16094328430f5d2ec8e793" args="()" -->
+<a class="anchor" id="ac1002a688e16094328430f5d2ec8e793"></a><!-- doxytag: member="CIRCSocket::GetSock" ref="ac1002a688e16094328430f5d2ec8e793" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2388,7 +2188,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ad3b89b95816e682074af647efcda1d79"></a><!-- doxytag: member="CSocket::GetSock" ref="ad3b89b95816e682074af647efcda1d79" args="() const " -->
+<a class="anchor" id="ad3b89b95816e682074af647efcda1d79"></a><!-- doxytag: member="CIRCSocket::GetSock" ref="ad3b89b95816e682074af647efcda1d79" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2404,7 +2204,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a34976b96561b164c82a03570aa8ea733"></a><!-- doxytag: member="CSocket::GetSockName" ref="a34976b96561b164c82a03570aa8ea733" args="() const " -->
+<a class="anchor" id="a34976b96561b164c82a03570aa8ea733"></a><!-- doxytag: member="CIRCSocket::GetSockName" ref="a34976b96561b164c82a03570aa8ea733" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2422,7 +2222,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a9f3b85490d28167617cf0e85782512b4"></a><!-- doxytag: member="CSocket::GetSockObj" ref="a9f3b85490d28167617cf0e85782512b4" args="(const CS_STRING &amp;sHostname, uint16_t iPort)" -->
+<a class="anchor" id="a9f3b85490d28167617cf0e85782512b4"></a><!-- doxytag: member="CIRCSocket::GetSockObj" ref="a9f3b85490d28167617cf0e85782512b4" args="(const CS_STRING &amp;sHostname, uint16_t iPort)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2451,7 +2251,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="adfe38d92769d41132435094784524930"></a><!-- doxytag: member="CSocket::GetSSL" ref="adfe38d92769d41132435094784524930" args="() const " -->
+<a class="anchor" id="adfe38d92769d41132435094784524930"></a><!-- doxytag: member="CIRCSocket::GetSSL" ref="adfe38d92769d41132435094784524930" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2469,7 +2269,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="abffe3da5cb2bc43cfdc2235cbbad43c9"></a><!-- doxytag: member="CSocket::GetSSLMethod" ref="abffe3da5cb2bc43cfdc2235cbbad43c9" args="() const " -->
+<a class="anchor" id="abffe3da5cb2bc43cfdc2235cbbad43c9"></a><!-- doxytag: member="CIRCSocket::GetSSLMethod" ref="abffe3da5cb2bc43cfdc2235cbbad43c9" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2485,7 +2285,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a3673ac5321422d5f0589c9db9149f3d2"></a><!-- doxytag: member="CSocket::GetSSLPeerFingerprint" ref="a3673ac5321422d5f0589c9db9149f3d2" args="() const " -->
+<a class="anchor" id="a3673ac5321422d5f0589c9db9149f3d2"></a><!-- doxytag: member="CIRCSocket::GetSSLPeerFingerprint" ref="a3673ac5321422d5f0589c9db9149f3d2" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2501,7 +2301,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab519dfdc201e09bf8453ab259861f3d2"></a><!-- doxytag: member="CSocket::GetSSLSession" ref="ab519dfdc201e09bf8453ab259861f3d2" args="() const " -->
+<a class="anchor" id="ab519dfdc201e09bf8453ab259861f3d2"></a><!-- doxytag: member="CIRCSocket::GetSSLSession" ref="ab519dfdc201e09bf8453ab259861f3d2" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2517,7 +2317,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ae61679ad6a19840046fca442e4621fec"></a><!-- doxytag: member="CSocket::GetStartTime" ref="ae61679ad6a19840046fca442e4621fec" args="() const " -->
+<a class="anchor" id="ae61679ad6a19840046fca442e4621fec"></a><!-- doxytag: member="CIRCSocket::GetStartTime" ref="ae61679ad6a19840046fca442e4621fec" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2535,7 +2335,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a2b38dade8446ce1d226de52af72be36a"></a><!-- doxytag: member="CSocket::GetTimeout" ref="a2b38dade8446ce1d226de52af72be36a" args="() const " -->
+<a class="anchor" id="a2b38dade8446ce1d226de52af72be36a"></a><!-- doxytag: member="CIRCSocket::GetTimeout" ref="a2b38dade8446ce1d226de52af72be36a" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2551,7 +2351,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a174000e73d944e18a9ca2c225652e8d0"></a><!-- doxytag: member="CSocket::GetTimeoutType" ref="a174000e73d944e18a9ca2c225652e8d0" args="() const " -->
+<a class="anchor" id="a174000e73d944e18a9ca2c225652e8d0"></a><!-- doxytag: member="CIRCSocket::GetTimeoutType" ref="a174000e73d944e18a9ca2c225652e8d0" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2567,7 +2367,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="adac00464034930dff05bf104b958f0e8"></a><!-- doxytag: member="CSocket::GetTimeSinceLastDataTransaction" ref="adac00464034930dff05bf104b958f0e8" args="(time_t iNow=0) const " -->
+<a class="anchor" id="adac00464034930dff05bf104b958f0e8"></a><!-- doxytag: member="CIRCSocket::GetTimeSinceLastDataTransaction" ref="adac00464034930dff05bf104b958f0e8" args="(time_t iNow=0) const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2586,7 +2386,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab498eee2cf1f399d736760ccd73af00e"></a><!-- doxytag: member="CSocket::GetType" ref="ab498eee2cf1f399d736760ccd73af00e" args="() const " -->
+<a class="anchor" id="ab498eee2cf1f399d736760ccd73af00e"></a><!-- doxytag: member="CIRCSocket::GetType" ref="ab498eee2cf1f399d736760ccd73af00e" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2604,7 +2404,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a56f9ff0e03c457b40e146f34d39a6589"></a><!-- doxytag: member="CSocket::GetWSock" ref="a56f9ff0e03c457b40e146f34d39a6589" args="()" -->
+<a class="anchor" id="a56f9ff0e03c457b40e146f34d39a6589"></a><!-- doxytag: member="CIRCSocket::GetWSock" ref="a56f9ff0e03c457b40e146f34d39a6589" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2622,7 +2422,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab68bc795b1051b75af46c17a21d8ca12"></a><!-- doxytag: member="CSocket::GetWSock" ref="ab68bc795b1051b75af46c17a21d8ca12" args="() const " -->
+<a class="anchor" id="ab68bc795b1051b75af46c17a21d8ca12"></a><!-- doxytag: member="CIRCSocket::GetWSock" ref="ab68bc795b1051b75af46c17a21d8ca12" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2638,7 +2438,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aeb6a4d1ddf20fdb16287d23c26092836"></a><!-- doxytag: member="CSocket::GetX509" ref="aeb6a4d1ddf20fdb16287d23c26092836" args="() const " -->
+<a class="anchor" id="aeb6a4d1ddf20fdb16287d23c26092836"></a><!-- doxytag: member="CIRCSocket::GetX509" ref="aeb6a4d1ddf20fdb16287d23c26092836" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2657,7 +2457,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a30d7c0b563bd61256cab129b6c567829"></a><!-- doxytag: member="CSocket::HasReadLine" ref="a30d7c0b563bd61256cab129b6c567829" args="() const " -->
+<a class="anchor" id="a30d7c0b563bd61256cab129b6c567829"></a><!-- doxytag: member="CIRCSocket::HasReadLine" ref="a30d7c0b563bd61256cab129b6c567829" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2675,7 +2475,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a556d37415c5c017c3336eb5228d1beb1"></a><!-- doxytag: member="CSocket::HasWriteBuffer" ref="a556d37415c5c017c3336eb5228d1beb1" args="() const " -->
+<a class="anchor" id="a556d37415c5c017c3336eb5228d1beb1"></a><!-- doxytag: member="CIRCSocket::HasWriteBuffer" ref="a556d37415c5c017c3336eb5228d1beb1" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2693,7 +2493,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a11af52e0b49707c84438ec73533bb094"></a><!-- doxytag: member="CSocket::IsClosed" ref="a11af52e0b49707c84438ec73533bb094" args="() const " -->
+<a class="anchor" id="a11af52e0b49707c84438ec73533bb094"></a><!-- doxytag: member="CIRCSocket::IsClosed" ref="a11af52e0b49707c84438ec73533bb094" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2709,7 +2509,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a2365716c0ba19168718d3b2b9a3417ee"></a><!-- doxytag: member="CSocket::IsConnected" ref="a2365716c0ba19168718d3b2b9a3417ee" args="() const " -->
+<a class="anchor" id="a2365716c0ba19168718d3b2b9a3417ee"></a><!-- doxytag: member="CIRCSocket::IsConnected" ref="a2365716c0ba19168718d3b2b9a3417ee" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2727,7 +2527,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a7f2bf004de57a5ebf6450941e4d7eceb"></a><!-- doxytag: member="CSocket::IsReadPaused" ref="a7f2bf004de57a5ebf6450941e4d7eceb" args="() const " -->
+<a class="anchor" id="a7f2bf004de57a5ebf6450941e4d7eceb"></a><!-- doxytag: member="CIRCSocket::IsReadPaused" ref="a7f2bf004de57a5ebf6450941e4d7eceb" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2743,42 +2543,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a98f071f787be897681135271cce7d9d6"></a><!-- doxytag: member="CSocket::Listen" ref="a98f071f787be897681135271cce7d9d6" args="(unsigned short uPort, bool bSSL, unsigned int uTimeout=0)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classCSocket.html#a98f071f787be897681135271cce7d9d6">CSocket::Listen</a> </td>
-          <td>(</td>
-          <td class="paramtype">unsigned short&#160;</td>
-          <td class="paramname"><em>uPort</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>bSSL</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>uTimeout</em> = <code>0</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Ease of use Listen, assigned to the manager and is subsequently tracked. </p>
-
-</div>
-</div>
-<a class="anchor" id="a32e80e3b3e655ceb34127c2c0ef8f3b0"></a><!-- doxytag: member="CSocket::Listen" ref="a32e80e3b3e655ceb34127c2c0ef8f3b0" args="(uint16_t iPort, int iMaxConns=SOMAXCONN, const CS_STRING &amp;sBindHost=&quot;&quot;, uint32_t iTimeout=0, bool bDetach=false)" -->
+<a class="anchor" id="a32e80e3b3e655ceb34127c2c0ef8f3b0"></a><!-- doxytag: member="CIRCSocket::Listen" ref="a32e80e3b3e655ceb34127c2c0ef8f3b0" args="(uint16_t iPort, int iMaxConns=SOMAXCONN, const CS_STRING &amp;sBindHost=&quot;&quot;, uint32_t iTimeout=0, bool bDetach=false)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2835,7 +2600,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aa8ab288dec0530dac35001c20694a86e"></a><!-- doxytag: member="CSocket::Listening" ref="aa8ab288dec0530dac35001c20694a86e" args="(const CS_STRING &amp;sBindIP, uint16_t uPort)" -->
+<a class="anchor" id="aa8ab288dec0530dac35001c20694a86e"></a><!-- doxytag: member="CIRCSocket::Listening" ref="aa8ab288dec0530dac35001c20694a86e" args="(const CS_STRING &amp;sBindIP, uint16_t uPort)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2871,7 +2636,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a7a5acbe54d37f4a3f4c85a339451ee2e"></a><!-- doxytag: member="CSocket::MonitorFD" ref="a7a5acbe54d37f4a3f4c85a339451ee2e" args="(CSMonitorFD *pMonitorFD)" -->
+<a class="anchor" id="a7a5acbe54d37f4a3f4c85a339451ee2e"></a><!-- doxytag: member="CIRCSocket::MonitorFD" ref="a7a5acbe54d37f4a3f4c85a339451ee2e" args="(CSMonitorFD *pMonitorFD)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2890,7 +2655,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="abef02be96a92f5097556f1b7c082e76a"></a><!-- doxytag: member="CSocket::NonBlockingIO" ref="abef02be96a92f5097556f1b7c082e76a" args="()" -->
+<a class="anchor" id="abef02be96a92f5097556f1b7c082e76a"></a><!-- doxytag: member="CIRCSocket::NonBlockingIO" ref="abef02be96a92f5097556f1b7c082e76a" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2908,7 +2673,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ad3cc84da6a5107446054bc9fbc2d6ab0"></a><!-- doxytag: member="CSocket::operator&lt;&lt;" ref="ad3cc84da6a5107446054bc9fbc2d6ab0" args="(const CS_STRING &amp;s)" -->
+<a class="anchor" id="ad3cc84da6a5107446054bc9fbc2d6ab0"></a><!-- doxytag: member="CIRCSocket::operator&lt;&lt;" ref="ad3cc84da6a5107446054bc9fbc2d6ab0" args="(const CS_STRING &amp;s)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2925,7 +2690,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a602d418258d6954effeee0c3e9521db5"></a><!-- doxytag: member="CSocket::operator&lt;&lt;" ref="a602d418258d6954effeee0c3e9521db5" args="(std::ostream &amp;(*io)(std::ostream &amp;))" -->
+<a class="anchor" id="a602d418258d6954effeee0c3e9521db5"></a><!-- doxytag: member="CIRCSocket::operator&lt;&lt;" ref="a602d418258d6954effeee0c3e9521db5" args="(std::ostream &amp;(*io)(std::ostream &amp;))" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2942,7 +2707,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a76689889bbfcced103cb8de1b4551443"></a><!-- doxytag: member="CSocket::operator&lt;&lt;" ref="a76689889bbfcced103cb8de1b4551443" args="(int32_t i)" -->
+<a class="anchor" id="a76689889bbfcced103cb8de1b4551443"></a><!-- doxytag: member="CIRCSocket::operator&lt;&lt;" ref="a76689889bbfcced103cb8de1b4551443" args="(int32_t i)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2959,7 +2724,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a53150ef6305a2dbe5f955134656b5240"></a><!-- doxytag: member="CSocket::operator&lt;&lt;" ref="a53150ef6305a2dbe5f955134656b5240" args="(uint32_t i)" -->
+<a class="anchor" id="a53150ef6305a2dbe5f955134656b5240"></a><!-- doxytag: member="CIRCSocket::operator&lt;&lt;" ref="a53150ef6305a2dbe5f955134656b5240" args="(uint32_t i)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2976,7 +2741,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a5ddc06a58da275d003dcd6c427359338"></a><!-- doxytag: member="CSocket::operator&lt;&lt;" ref="a5ddc06a58da275d003dcd6c427359338" args="(int64_t i)" -->
+<a class="anchor" id="a5ddc06a58da275d003dcd6c427359338"></a><!-- doxytag: member="CIRCSocket::operator&lt;&lt;" ref="a5ddc06a58da275d003dcd6c427359338" args="(int64_t i)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2993,7 +2758,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a20de78db4c6e66d0b8a8ed241d6cfc30"></a><!-- doxytag: member="CSocket::operator&lt;&lt;" ref="a20de78db4c6e66d0b8a8ed241d6cfc30" args="(uint64_t i)" -->
+<a class="anchor" id="a20de78db4c6e66d0b8a8ed241d6cfc30"></a><!-- doxytag: member="CIRCSocket::operator&lt;&lt;" ref="a20de78db4c6e66d0b8a8ed241d6cfc30" args="(uint64_t i)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -3010,7 +2775,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a3001aae61022b83e817ca79a9a8272c5"></a><!-- doxytag: member="CSocket::operator&lt;&lt;" ref="a3001aae61022b83e817ca79a9a8272c5" args="(float i)" -->
+<a class="anchor" id="a3001aae61022b83e817ca79a9a8272c5"></a><!-- doxytag: member="CIRCSocket::operator&lt;&lt;" ref="a3001aae61022b83e817ca79a9a8272c5" args="(float i)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -3027,7 +2792,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a64d286ac73d24de8c5b06ff35c9ba185"></a><!-- doxytag: member="CSocket::operator&lt;&lt;" ref="a64d286ac73d24de8c5b06ff35c9ba185" args="(double i)" -->
+<a class="anchor" id="a64d286ac73d24de8c5b06ff35c9ba185"></a><!-- doxytag: member="CIRCSocket::operator&lt;&lt;" ref="a64d286ac73d24de8c5b06ff35c9ba185" args="(double i)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -3044,7 +2809,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a41d8b0fb0cc4884bdc90d5010cc7ab3b"></a><!-- doxytag: member="CSocket::PauseRead" ref="a41d8b0fb0cc4884bdc90d5010cc7ab3b" args="()" -->
+<a class="anchor" id="a41d8b0fb0cc4884bdc90d5010cc7ab3b"></a><!-- doxytag: member="CIRCSocket::PauseRead" ref="a41d8b0fb0cc4884bdc90d5010cc7ab3b" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -3062,7 +2827,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af5503bfd5516bd1bb281d2616d9321b0"></a><!-- doxytag: member="CSocket::PushBuff" ref="af5503bfd5516bd1bb281d2616d9321b0" args="(const char *data, size_t len, bool bStartAtZero=false)" -->
+<a class="anchor" id="af5503bfd5516bd1bb281d2616d9321b0"></a><!-- doxytag: member="CIRCSocket::PushBuff" ref="af5503bfd5516bd1bb281d2616d9321b0" args="(const char *data, size_t len, bool bStartAtZero=false)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -3097,27 +2862,28 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a006813cba95395cb701d3c57c2578749"></a><!-- doxytag: member="CSocket::ReachedMaxBuffer" ref="a006813cba95395cb701d3c57c2578749" args="()" -->
+<a class="anchor" id="a5fa71d73d2eed4e5ddd59d7a11b72ea2"></a><!-- doxytag: member="CIRCSocket::ReachedMaxBuffer" ref="a5fa71d73d2eed4e5ddd59d7a11b72ea2" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCSocket.html#a006813cba95395cb701d3c57c2578749">CSocket::ReachedMaxBuffer</a> </td>
+          <td class="memname">virtual void <a class="el" href="classCsock.html#a5fa71d73d2eed4e5ddd59d7a11b72ea2">Csock::ReachedMaxBuffer</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td><code> [virtual, inherited]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>This defaults to closing the socket, feel free to override. </p>
+<p>This WARNING event is called when your buffer for readline exceeds the warning threshold and triggers this event. </p>
+<p>Either Override it and do nothing, or <a class="el" href="classCsock.html#a06f840efef58b550473f4fe1e5f27efa" title="sets the max buffered threshold when EnableReadLine() is enabled">SetMaxBufferThreshold()</a> This event will only get called if m_bEnableReadLine is enabled </p>
 
-<p>Reimplemented from <a class="el" href="classCsock.html#a5fa71d73d2eed4e5ddd59d7a11b72ea2">Csock</a>.</p>
+<p>Reimplemented in <a class="el" href="classCSocket.html#a006813cba95395cb701d3c57c2578749">CSocket</a>, <a class="el" href="classCClient.html#abc2fb0f9308d7525a721d32147d19a80">CClient</a>, <a class="el" href="classCIncomingConnection.html#a37e651666d35a45a9e1e82edc22eed50">CIncomingConnection</a>, and <a class="el" href="classCIRCSock.html#a5fa3b42031d1a97f15bc50f5dcce4430">CIRCSock</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a714d883a38fd8ca785b4db54fba629be"></a><!-- doxytag: member="CSocket::Read" ref="a714d883a38fd8ca785b4db54fba629be" args="(char *data, size_t len)" -->
+<a class="anchor" id="a714d883a38fd8ca785b4db54fba629be"></a><!-- doxytag: member="CIRCSocket::Read" ref="a714d883a38fd8ca785b4db54fba629be" args="(char *data, size_t len)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -3154,7 +2920,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a0b807704b265df360de15a1cfcbb23e0"></a><!-- doxytag: member="CSocket::ReadData" ref="a0b807704b265df360de15a1cfcbb23e0" args="(const char *data, size_t len)" -->
+<a class="anchor" id="a0b807704b265df360de15a1cfcbb23e0"></a><!-- doxytag: member="CIRCSocket::ReadData" ref="a0b807704b265df360de15a1cfcbb23e0" args="(const char *data, size_t len)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -3185,7 +2951,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a81e28ab1c689ee3e8496d7d717a5a402"></a><!-- doxytag: member="CSocket::ReadLine" ref="a81e28ab1c689ee3e8496d7d717a5a402" args="(const CS_STRING &amp;sLine)" -->
+<a class="anchor" id="a81e28ab1c689ee3e8496d7d717a5a402"></a><!-- doxytag: member="CIRCSocket::ReadLine" ref="a81e28ab1c689ee3e8496d7d717a5a402" args="(const CS_STRING &amp;sLine)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -3205,7 +2971,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab7c9de4f24a9fa1ef9e3bb506e6ddd33"></a><!-- doxytag: member="CSocket::ReadPaused" ref="ab7c9de4f24a9fa1ef9e3bb506e6ddd33" args="()" -->
+<a class="anchor" id="ab7c9de4f24a9fa1ef9e3bb506e6ddd33"></a><!-- doxytag: member="CIRCSocket::ReadPaused" ref="ab7c9de4f24a9fa1ef9e3bb506e6ddd33" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -3223,7 +2989,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a8d07fe5d296508b0a324444baa16eec0"></a><!-- doxytag: member="CSocket::ResetBytesRead" ref="a8d07fe5d296508b0a324444baa16eec0" args="()" -->
+<a class="anchor" id="a8d07fe5d296508b0a324444baa16eec0"></a><!-- doxytag: member="CIRCSocket::ResetBytesRead" ref="a8d07fe5d296508b0a324444baa16eec0" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -3239,7 +3005,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac872aac9bcf7d2f8465d1f708478395c"></a><!-- doxytag: member="CSocket::ResetBytesWritten" ref="ac872aac9bcf7d2f8465d1f708478395c" args="()" -->
+<a class="anchor" id="ac872aac9bcf7d2f8465d1f708478395c"></a><!-- doxytag: member="CIRCSocket::ResetBytesWritten" ref="ac872aac9bcf7d2f8465d1f708478395c" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -3255,7 +3021,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a605cf090085d0d6df23531ec4b99360b"></a><!-- doxytag: member="CSocket::ResetStartTime" ref="a605cf090085d0d6df23531ec4b99360b" args="()" -->
+<a class="anchor" id="a605cf090085d0d6df23531ec4b99360b"></a><!-- doxytag: member="CIRCSocket::ResetStartTime" ref="a605cf090085d0d6df23531ec4b99360b" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -3273,7 +3039,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a51258305f0f1e2c84d76a0fd8a258b35"></a><!-- doxytag: member="CSocket::ResetTimer" ref="a51258305f0f1e2c84d76a0fd8a258b35" args="()" -->
+<a class="anchor" id="a51258305f0f1e2c84d76a0fd8a258b35"></a><!-- doxytag: member="CIRCSocket::ResetTimer" ref="a51258305f0f1e2c84d76a0fd8a258b35" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -3291,7 +3057,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a2130dd5564e9d1286ab172b8365191ae"></a><!-- doxytag: member="CSocket::SetAFRequire" ref="a2130dd5564e9d1286ab172b8365191ae" args="(CSSockAddr::EAFRequire iAFRequire)" -->
+<a class="anchor" id="a2130dd5564e9d1286ab172b8365191ae"></a><!-- doxytag: member="CIRCSocket::SetAFRequire" ref="a2130dd5564e9d1286ab172b8365191ae" args="(CSSockAddr::EAFRequire iAFRequire)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -3308,7 +3074,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a89cc6d5e85f09e9989e88eba43d86630"></a><!-- doxytag: member="CSocket::SetBindHost" ref="a89cc6d5e85f09e9989e88eba43d86630" args="(const CS_STRING &amp;sBindHost)" -->
+<a class="anchor" id="a89cc6d5e85f09e9989e88eba43d86630"></a><!-- doxytag: member="CIRCSocket::SetBindHost" ref="a89cc6d5e85f09e9989e88eba43d86630" args="(const CS_STRING &amp;sBindHost)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -3325,7 +3091,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="afc8a1e27ea57bf894a7d1bb0d78dd33d"></a><!-- doxytag: member="CSocket::SetCertVerifyCB" ref="afc8a1e27ea57bf894a7d1bb0d78dd33d" args="(FPCertVerifyCB pFP)" -->
+<a class="anchor" id="afc8a1e27ea57bf894a7d1bb0d78dd33d"></a><!-- doxytag: member="CIRCSocket::SetCertVerifyCB" ref="afc8a1e27ea57bf894a7d1bb0d78dd33d" args="(FPCertVerifyCB pFP)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -3344,7 +3110,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aa59f3b858f55d5cf2e2574140dd5bf4e"></a><!-- doxytag: member="CSocket::SetCipher" ref="aa59f3b858f55d5cf2e2574140dd5bf4e" args="(const CS_STRING &amp;sCipher)" -->
+<a class="anchor" id="aa59f3b858f55d5cf2e2574140dd5bf4e"></a><!-- doxytag: member="CIRCSocket::SetCipher" ref="aa59f3b858f55d5cf2e2574140dd5bf4e" args="(const CS_STRING &amp;sCipher)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -3363,7 +3129,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a5a772e6316c7d432899f71d42c6b974f"></a><!-- doxytag: member="CSocket::SetConState" ref="a5a772e6316c7d432899f71d42c6b974f" args="(ECONState eState)" -->
+<a class="anchor" id="a5a772e6316c7d432899f71d42c6b974f"></a><!-- doxytag: member="CIRCSocket::SetConState" ref="a5a772e6316c7d432899f71d42c6b974f" args="(ECONState eState)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -3382,7 +3148,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a5ec2d81846289cdd70407691d9345591"></a><!-- doxytag: member="CSocket::SetCTXObject" ref="a5ec2d81846289cdd70407691d9345591" args="(SSL_CTX *sslCtx, bool bDeleteExisting=false)" -->
+<a class="anchor" id="a5ec2d81846289cdd70407691d9345591"></a><!-- doxytag: member="CIRCSocket::SetCTXObject" ref="a5ec2d81846289cdd70407691d9345591" args="(SSL_CTX *sslCtx, bool bDeleteExisting=false)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -3409,7 +3175,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ad45449663df4443887919b744b6560fc"></a><!-- doxytag: member="CSocket::SetEncoding" ref="ad45449663df4443887919b744b6560fc" args="(const CString &amp;)" -->
+<a class="anchor" id="ad45449663df4443887919b744b6560fc"></a><!-- doxytag: member="CIRCSocket::SetEncoding" ref="ad45449663df4443887919b744b6560fc" args="(const CString &amp;)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -3426,7 +3192,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a3b4ccc73db014a4b7d231eb833ba3cb2"></a><!-- doxytag: member="CSocket::SetHostName" ref="a3b4ccc73db014a4b7d231eb833ba3cb2" args="(const CS_STRING &amp;sHostname)" -->
+<a class="anchor" id="a3b4ccc73db014a4b7d231eb833ba3cb2"></a><!-- doxytag: member="CIRCSocket::SetHostName" ref="a3b4ccc73db014a4b7d231eb833ba3cb2" args="(const CS_STRING &amp;sHostname)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -3443,7 +3209,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a039ef960176025d06b43997a1156ea5f"></a><!-- doxytag: member="CSocket::SetHostToVerifySSL" ref="a039ef960176025d06b43997a1156ea5f" args="(const CString &amp;sHost)" -->
+<a class="anchor" id="a039ef960176025d06b43997a1156ea5f"></a><!-- doxytag: member="CIRCSocket::SetHostToVerifySSL" ref="a039ef960176025d06b43997a1156ea5f" args="(const CString &amp;sHost)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -3460,7 +3226,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a5b624942d40b44cbde3c1a24819d816f"></a><!-- doxytag: member="CSocket::SetIPv6" ref="a5b624942d40b44cbde3c1a24819d816f" args="(bool b)" -->
+<a class="anchor" id="a5b624942d40b44cbde3c1a24819d816f"></a><!-- doxytag: member="CIRCSocket::SetIPv6" ref="a5b624942d40b44cbde3c1a24819d816f" args="(bool b)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -3477,7 +3243,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="adc39deaebf3358602e01e70091d8991e"></a><!-- doxytag: member="CSocket::SetIsConnected" ref="adc39deaebf3358602e01e70091d8991e" args="(bool b)" -->
+<a class="anchor" id="adc39deaebf3358602e01e70091d8991e"></a><!-- doxytag: member="CIRCSocket::SetIsConnected" ref="adc39deaebf3358602e01e70091d8991e" args="(bool b)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -3496,7 +3262,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a06f840efef58b550473f4fe1e5f27efa"></a><!-- doxytag: member="CSocket::SetMaxBufferThreshold" ref="a06f840efef58b550473f4fe1e5f27efa" args="(uint32_t iThreshold)" -->
+<a class="anchor" id="a06f840efef58b550473f4fe1e5f27efa"></a><!-- doxytag: member="CIRCSocket::SetMaxBufferThreshold" ref="a06f840efef58b550473f4fe1e5f27efa" args="(uint32_t iThreshold)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -3517,7 +3283,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a15b6cad8607be4ab31e7a46f0eca55e1"></a><!-- doxytag: member="CSocket::SetParentSockName" ref="a15b6cad8607be4ab31e7a46f0eca55e1" args="(const CS_STRING &amp;sParentName)" -->
+<a class="anchor" id="a15b6cad8607be4ab31e7a46f0eca55e1"></a><!-- doxytag: member="CIRCSocket::SetParentSockName" ref="a15b6cad8607be4ab31e7a46f0eca55e1" args="(const CS_STRING &amp;sParentName)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -3536,7 +3302,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ad600bfd1eb0f130283d18e71af795a92"></a><!-- doxytag: member="CSocket::SetPemLocation" ref="ad600bfd1eb0f130283d18e71af795a92" args="(const CS_STRING &amp;sPemFile)" -->
+<a class="anchor" id="ad600bfd1eb0f130283d18e71af795a92"></a><!-- doxytag: member="CIRCSocket::SetPemLocation" ref="ad600bfd1eb0f130283d18e71af795a92" args="(const CS_STRING &amp;sPemFile)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -3555,7 +3321,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="afb4f2a1faad29d40ba76611b83c9605b"></a><!-- doxytag: member="CSocket::SetPemPass" ref="afb4f2a1faad29d40ba76611b83c9605b" args="(const CS_STRING &amp;sPassword)" -->
+<a class="anchor" id="afb4f2a1faad29d40ba76611b83c9605b"></a><!-- doxytag: member="CIRCSocket::SetPemPass" ref="afb4f2a1faad29d40ba76611b83c9605b" args="(const CS_STRING &amp;sPassword)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -3572,7 +3338,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac2baac0cc8570993e537b3bcb3f7fdd2"></a><!-- doxytag: member="CSocket::SetPort" ref="ac2baac0cc8570993e537b3bcb3f7fdd2" args="(uint16_t iPort)" -->
+<a class="anchor" id="ac2baac0cc8570993e537b3bcb3f7fdd2"></a><!-- doxytag: member="CIRCSocket::SetPort" ref="ac2baac0cc8570993e537b3bcb3f7fdd2" args="(uint16_t iPort)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -3589,7 +3355,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ad5cea2c7a97045e3867bdc9c59f489c8"></a><!-- doxytag: member="CSocket::SetRate" ref="ad5cea2c7a97045e3867bdc9c59f489c8" args="(uint32_t iBytes, uint64_t iMilliseconds)" -->
+<a class="anchor" id="ad5cea2c7a97045e3867bdc9c59f489c8"></a><!-- doxytag: member="CIRCSocket::SetRate" ref="ad5cea2c7a97045e3867bdc9c59f489c8" args="(uint32_t iBytes, uint64_t iMilliseconds)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -3625,7 +3391,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ad3ec3c47121398d0aa0978e844843e4a"></a><!-- doxytag: member="CSocket::SetRequireClientCertFlags" ref="ad3ec3c47121398d0aa0978e844843e4a" args="(uint32_t iRequireClientCertFlags)" -->
+<a class="anchor" id="ad3ec3c47121398d0aa0978e844843e4a"></a><!-- doxytag: member="CIRCSocket::SetRequireClientCertFlags" ref="ad3ec3c47121398d0aa0978e844843e4a" args="(uint32_t iRequireClientCertFlags)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -3644,7 +3410,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af967d46f072fcc97766cab0586364d2e"></a><!-- doxytag: member="CSocket::SetRequiresClientCert" ref="af967d46f072fcc97766cab0586364d2e" args="(bool bRequiresCert)" -->
+<a class="anchor" id="af967d46f072fcc97766cab0586364d2e"></a><!-- doxytag: member="CIRCSocket::SetRequiresClientCert" ref="af967d46f072fcc97766cab0586364d2e" args="(bool bRequiresCert)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -3664,7 +3430,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a8c0b180de5d12104c0f7018eec13e57a"></a><!-- doxytag: member="CSocket::SetRSock" ref="a8c0b180de5d12104c0f7018eec13e57a" args="(cs_sock_t iSock)" -->
+<a class="anchor" id="a8c0b180de5d12104c0f7018eec13e57a"></a><!-- doxytag: member="CIRCSocket::SetRSock" ref="a8c0b180de5d12104c0f7018eec13e57a" args="(cs_sock_t iSock)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -3683,7 +3449,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a42d9b1f7d1db1037722bc9d6daa390ad"></a><!-- doxytag: member="CSocket::SetSkipConnect" ref="a42d9b1f7d1db1037722bc9d6daa390ad" args="(bool b)" -->
+<a class="anchor" id="a42d9b1f7d1db1037722bc9d6daa390ad"></a><!-- doxytag: member="CIRCSocket::SetSkipConnect" ref="a42d9b1f7d1db1037722bc9d6daa390ad" args="(bool b)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -3700,7 +3466,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aca21af633fa1fd1b115281f03bdddcd7"></a><!-- doxytag: member="CSocket::SetSock" ref="aca21af633fa1fd1b115281f03bdddcd7" args="(cs_sock_t iSock)" -->
+<a class="anchor" id="aca21af633fa1fd1b115281f03bdddcd7"></a><!-- doxytag: member="CIRCSocket::SetSock" ref="aca21af633fa1fd1b115281f03bdddcd7" args="(cs_sock_t iSock)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -3717,7 +3483,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a5ecd8bf6035cd7cbb4d444866aa68371"></a><!-- doxytag: member="CSocket::SetSockName" ref="a5ecd8bf6035cd7cbb4d444866aa68371" args="(const CS_STRING &amp;sName)" -->
+<a class="anchor" id="a5ecd8bf6035cd7cbb4d444866aa68371"></a><!-- doxytag: member="CIRCSocket::SetSockName" ref="a5ecd8bf6035cd7cbb4d444866aa68371" args="(const CS_STRING &amp;sName)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -3734,7 +3500,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a71bd0fb35012cf8d006b8098b6eac15e"></a><!-- doxytag: member="CSocket::SetSSL" ref="a71bd0fb35012cf8d006b8098b6eac15e" args="(bool b)" -->
+<a class="anchor" id="a71bd0fb35012cf8d006b8098b6eac15e"></a><!-- doxytag: member="CIRCSocket::SetSSL" ref="a71bd0fb35012cf8d006b8098b6eac15e" args="(bool b)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -3751,7 +3517,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a8a4f12f682ecbe70809daef29f23bd23"></a><!-- doxytag: member="CSocket::SetSSLMethod" ref="a8a4f12f682ecbe70809daef29f23bd23" args="(int iMethod)" -->
+<a class="anchor" id="a8a4f12f682ecbe70809daef29f23bd23"></a><!-- doxytag: member="CIRCSocket::SetSSLMethod" ref="a8a4f12f682ecbe70809daef29f23bd23" args="(int iMethod)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -3770,7 +3536,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a6a57e3e3f986353b91ee7f2ab14f0ed5"></a><!-- doxytag: member="CSocket::SetSSLObject" ref="a6a57e3e3f986353b91ee7f2ab14f0ed5" args="(SSL *ssl, bool bDeleteExisting=false)" -->
+<a class="anchor" id="a6a57e3e3f986353b91ee7f2ab14f0ed5"></a><!-- doxytag: member="CIRCSocket::SetSSLObject" ref="a6a57e3e3f986353b91ee7f2ab14f0ed5" args="(SSL *ssl, bool bDeleteExisting=false)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -3797,7 +3563,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a148e6216e3ef442d9ef604834d8c3c05"></a><!-- doxytag: member="CSocket::SetSSLTrustedPeerFingerprints" ref="a148e6216e3ef442d9ef604834d8c3c05" args="(const SCString &amp;ssFPs)" -->
+<a class="anchor" id="a148e6216e3ef442d9ef604834d8c3c05"></a><!-- doxytag: member="CIRCSocket::SetSSLTrustedPeerFingerprints" ref="a148e6216e3ef442d9ef604834d8c3c05" args="(const SCString &amp;ssFPs)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -3814,7 +3580,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a8d9f4c33c736ec6153257c647cf8fa9d"></a><!-- doxytag: member="CSocket::SetTimeout" ref="a8d9f4c33c736ec6153257c647cf8fa9d" args="(int iTimeout, uint32_t iTimeoutType=TMO_ALL)" -->
+<a class="anchor" id="a8d9f4c33c736ec6153257c647cf8fa9d"></a><!-- doxytag: member="CIRCSocket::SetTimeout" ref="a8d9f4c33c736ec6153257c647cf8fa9d" args="(int iTimeout, uint32_t iTimeoutType=TMO_ALL)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -3843,7 +3609,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="acff43c3905e9753cf948f97c297c89b9"></a><!-- doxytag: member="CSocket::SetTimeoutType" ref="acff43c3905e9753cf948f97c297c89b9" args="(uint32_t iTimeoutType)" -->
+<a class="anchor" id="acff43c3905e9753cf948f97c297c89b9"></a><!-- doxytag: member="CIRCSocket::SetTimeoutType" ref="acff43c3905e9753cf948f97c297c89b9" args="(uint32_t iTimeoutType)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -3860,7 +3626,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a2a5253a340c9f42ece84e1bba36e0099"></a><!-- doxytag: member="CSocket::SetType" ref="a2a5253a340c9f42ece84e1bba36e0099" args="(int iType)" -->
+<a class="anchor" id="a2a5253a340c9f42ece84e1bba36e0099"></a><!-- doxytag: member="CIRCSocket::SetType" ref="a2a5253a340c9f42ece84e1bba36e0099" args="(int iType)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -3877,7 +3643,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ae61306403bb7bbff4e2fd766d9854a4b"></a><!-- doxytag: member="CSocket::SetupServerCTX" ref="ae61306403bb7bbff4e2fd766d9854a4b" args="()" -->
+<a class="anchor" id="ae61306403bb7bbff4e2fd766d9854a4b"></a><!-- doxytag: member="CIRCSocket::SetupServerCTX" ref="ae61306403bb7bbff4e2fd766d9854a4b" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -3895,7 +3661,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a88be1c5135a3beef0b47c77f941a5ee6"></a><!-- doxytag: member="CSocket::SetupVHost" ref="a88be1c5135a3beef0b47c77f941a5ee6" args="()" -->
+<a class="anchor" id="a88be1c5135a3beef0b47c77f941a5ee6"></a><!-- doxytag: member="CIRCSocket::SetupVHost" ref="a88be1c5135a3beef0b47c77f941a5ee6" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -3913,7 +3679,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a66a0fe0e53850900f824ca60ced81e05"></a><!-- doxytag: member="CSocket::SetWSock" ref="a66a0fe0e53850900f824ca60ced81e05" args="(cs_sock_t iSock)" -->
+<a class="anchor" id="a66a0fe0e53850900f824ca60ced81e05"></a><!-- doxytag: member="CIRCSocket::SetWSock" ref="a66a0fe0e53850900f824ca60ced81e05" args="(cs_sock_t iSock)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -3932,7 +3698,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab8a870f8df305f21a0307364fdb3c027"></a><!-- doxytag: member="CSocket::SNIConfigureClient" ref="ab8a870f8df305f21a0307364fdb3c027" args="(CS_STRING &amp;sHostname)" -->
+<a class="anchor" id="ab8a870f8df305f21a0307364fdb3c027"></a><!-- doxytag: member="CIRCSocket::SNIConfigureClient" ref="ab8a870f8df305f21a0307364fdb3c027" args="(CS_STRING &amp;sHostname)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -3958,7 +3724,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a47ac65949b3713a2b32c5167225ffd99"></a><!-- doxytag: member="CSocket::SNIConfigureServer" ref="a47ac65949b3713a2b32c5167225ffd99" args="(const CS_STRING &amp;sHostname, CS_STRING &amp;sPemFile, CS_STRING &amp;sPemPass)" -->
+<a class="anchor" id="a47ac65949b3713a2b32c5167225ffd99"></a><!-- doxytag: member="CIRCSocket::SNIConfigureServer" ref="a47ac65949b3713a2b32c5167225ffd99" args="(const CS_STRING &amp;sHostname, CS_STRING &amp;sPemFile, CS_STRING &amp;sPemPass)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -4002,34 +3768,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a84cd201737bd8fc7e5fc8d1f59e1b3be"></a><!-- doxytag: member="CSocket::SockError" ref="a84cd201737bd8fc7e5fc8d1f59e1b3be" args="(int iErrno, const CString &amp;sDescription)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void <a class="el" href="classCSocket.html#a84cd201737bd8fc7e5fc8d1f59e1b3be">CSocket::SockError</a> </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>iErrno</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
-          <td class="paramname"><em>sDescription</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a2092f1cfd768211741d4d3c4b092563b"></a><!-- doxytag: member="CSocket::SockError" ref="a2092f1cfd768211741d4d3c4b092563b" args="(int iErrno, const CS_STRING &amp;sDescription)" -->
+<a class="anchor" id="a2092f1cfd768211741d4d3c4b092563b"></a><!-- doxytag: member="CIRCSocket::SockError" ref="a2092f1cfd768211741d4d3c4b092563b" args="(int iErrno, const CS_STRING &amp;sDescription)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -4058,7 +3797,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aea9dc7b9ef30b78fe2abe28245643071"></a><!-- doxytag: member="CSocket::SSLClientSetup" ref="aea9dc7b9ef30b78fe2abe28245643071" args="()" -->
+<a class="anchor" id="aea9dc7b9ef30b78fe2abe28245643071"></a><!-- doxytag: member="CIRCSocket::SSLClientSetup" ref="aea9dc7b9ef30b78fe2abe28245643071" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -4076,7 +3815,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab16f04115dc73a586503fd96926bf8ae"></a><!-- doxytag: member="CSocket::SSLFinishSetup" ref="ab16f04115dc73a586503fd96926bf8ae" args="(SSL *pSSL)" -->
+<a class="anchor" id="ab16f04115dc73a586503fd96926bf8ae"></a><!-- doxytag: member="CIRCSocket::SSLFinishSetup" ref="ab16f04115dc73a586503fd96926bf8ae" args="(SSL *pSSL)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -4095,7 +3834,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a5d14ffa21747333136d0b5c62a66f2f5"></a><!-- doxytag: member="CSocket::SSLHandShakeFinished" ref="a5d14ffa21747333136d0b5c62a66f2f5" args="() override" -->
+<a class="anchor" id="a5d14ffa21747333136d0b5c62a66f2f5"></a><!-- doxytag: member="CIRCSocket::SSLHandShakeFinished" ref="a5d14ffa21747333136d0b5c62a66f2f5" args="() override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -4123,7 +3862,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a823b15d60b631e504125da49bedcf825"></a><!-- doxytag: member="CSocket::SslIsEstablished" ref="a823b15d60b631e504125da49bedcf825" args="() const " -->
+<a class="anchor" id="a823b15d60b631e504125da49bedcf825"></a><!-- doxytag: member="CIRCSocket::SslIsEstablished" ref="a823b15d60b631e504125da49bedcf825" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -4141,7 +3880,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af4d988ee04ca005ea414eae536cc00e3"></a><!-- doxytag: member="CSocket::SSLServerSetup" ref="af4d988ee04ca005ea414eae536cc00e3" args="()" -->
+<a class="anchor" id="af4d988ee04ca005ea414eae536cc00e3"></a><!-- doxytag: member="CIRCSocket::SSLServerSetup" ref="af4d988ee04ca005ea414eae536cc00e3" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -4159,7 +3898,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a564bc3d66c7e2396afe204691673435c"></a><!-- doxytag: member="CSocket::StartTLS" ref="a564bc3d66c7e2396afe204691673435c" args="()" -->
+<a class="anchor" id="a564bc3d66c7e2396afe204691673435c"></a><!-- doxytag: member="CIRCSocket::StartTLS" ref="a564bc3d66c7e2396afe204691673435c" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -4177,7 +3916,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac32577c8dac5ec04fdbdf22ff813a874"></a><!-- doxytag: member="CSocket::Timeout" ref="ac32577c8dac5ec04fdbdf22ff813a874" args="()" -->
+<a class="anchor" id="ac32577c8dac5ec04fdbdf22ff813a874"></a><!-- doxytag: member="CIRCSocket::Timeout" ref="ac32577c8dac5ec04fdbdf22ff813a874" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -4197,7 +3936,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a7ce960e8ee0f890f668673c0e9cdceeb"></a><!-- doxytag: member="CSocket::UnPauseRead" ref="a7ce960e8ee0f890f668673c0e9cdceeb" args="()" -->
+<a class="anchor" id="a7ce960e8ee0f890f668673c0e9cdceeb"></a><!-- doxytag: member="CIRCSocket::UnPauseRead" ref="a7ce960e8ee0f890f668673c0e9cdceeb" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -4213,7 +3952,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a8af79eb2248469f40e088e7b8f7ae17b"></a><!-- doxytag: member="CSocket::VerifyPeerCertificate" ref="a8af79eb2248469f40e088e7b8f7ae17b" args="(int iPreVerify, X509_STORE_CTX *pStoreCTX) override" -->
+<a class="anchor" id="a8af79eb2248469f40e088e7b8f7ae17b"></a><!-- doxytag: member="CIRCSocket::VerifyPeerCertificate" ref="a8af79eb2248469f40e088e7b8f7ae17b" args="(int iPreVerify, X509_STORE_CTX *pStoreCTX) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -4254,7 +3993,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aea8710a3aaf2f82309ad9bb4dfa70c30"></a><!-- doxytag: member="CSocket::Write" ref="aea8710a3aaf2f82309ad9bb4dfa70c30" args="(const char *data, size_t len)" -->
+<a class="anchor" id="aea8710a3aaf2f82309ad9bb4dfa70c30"></a><!-- doxytag: member="CIRCSocket::Write" ref="aea8710a3aaf2f82309ad9bb4dfa70c30" args="(const char *data, size_t len)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -4291,7 +4030,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a050b782a4f3767a5ed7a6b6eed1fda1c"></a><!-- doxytag: member="CSocket::Write" ref="a050b782a4f3767a5ed7a6b6eed1fda1c" args="(const CS_STRING &amp;sData)" -->
+<a class="anchor" id="a050b782a4f3767a5ed7a6b6eed1fda1c"></a><!-- doxytag: member="CIRCSocket::Write" ref="a050b782a4f3767a5ed7a6b6eed1fda1c" args="(const CS_STRING &amp;sData)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -4319,22 +4058,7 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <hr/><h2>Member Data Documentation</h2>
-<a class="anchor" id="a3c86946768409f8f05246be3d7f3da76"></a><!-- doxytag: member="CSocket::m_pModule" ref="a3c86946768409f8f05246be3d7f3da76" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classCModule.html">CModule</a>* <a class="el" href="classCSocket.html#a3c86946768409f8f05246be3d7f3da76">CSocket::m_pModule</a><code> [protected]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>pointer to the module that this sock instance belongs to </p>
-
-</div>
-</div>
-<a class="anchor" id="a92eef1e1d3476ba9e3e766d5dcc37bfe"></a><!-- doxytag: member="CSocket::m_vcCrons" ref="a92eef1e1d3476ba9e3e766d5dcc37bfe" args="" -->
+<a class="anchor" id="a92eef1e1d3476ba9e3e766d5dcc37bfe"></a><!-- doxytag: member="CIRCSocket::m_vcCrons" ref="a92eef1e1d3476ba9e3e766d5dcc37bfe" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -4347,7 +4071,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ae108fc0c73aaefe520ab489d78c05174"></a><!-- doxytag: member="CSocket::m_vcMonitorFD" ref="ae108fc0c73aaefe520ab489d78c05174" args="" -->
+<a class="anchor" id="ae108fc0c73aaefe520ab489d78c05174"></a><!-- doxytag: member="CIRCSocket::m_vcMonitorFD" ref="ae108fc0c73aaefe520ab489d78c05174" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -4381,7 +4105,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 21 2014 19:04:48 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Dec 21 2014 19:04:47 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

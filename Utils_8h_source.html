@@ -167,165 +167,166 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00084"></a>00084         <span class="keyword">static</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a> <a class="code" href="classCUtils.html#a1971c679165ddcb004f9c05558774dcb">FormatTime</a>(time_t t, <span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sFormat, <span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sTZ);
 <a name="l00085"></a>00085         <span class="keyword">static</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a> <a class="code" href="classCUtils.html#a4a3a2068b26d7605ffd0f7c559a000ac">FormatServerTime</a>(<span class="keyword">const</span> timeval&amp; tv);
 <a name="l00086"></a>00086         <span class="keyword">static</span> <a class="code" href="ZNCString_8h.html#a84b05218977775b974a8db49e81f02a4">SCString</a> <a class="code" href="classCUtils.html#a7de4cb9ea789938dea83b66ade28bd96">GetTimezones</a>();
-<a name="l00087"></a>00087 
-<a name="l00088"></a>00088         <span class="keyword">static</span> <a class="code" href="classMCString.html" title="A dictionary for strings.">MCString</a> <a class="code" href="classCUtils.html#ab7374d12ececc457863cbeb5aff8f5ff">GetMessageTags</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sLine);
-<a name="l00089"></a>00089         <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classCUtils.html#a8227de4f84982154cdf8ab1435726e83">SetMessageTags</a>(<a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sLine, <span class="keyword">const</span> <a class="code" href="classMCString.html" title="A dictionary for strings.">MCString</a>&amp; mssTags);
-<a name="l00090"></a>00090 
-<a name="l00091"></a>00091 <span class="keyword">private</span>:
-<a name="l00092"></a>00092 <span class="keyword">protected</span>:
-<a name="l00093"></a>00093 };
-<a name="l00094"></a>00094 
-<a name="l00095"></a><a class="code" href="classCException.html">00095</a> <span class="keyword">class </span><a class="code" href="classCException.html">CException</a> {
-<a name="l00096"></a>00096 <span class="keyword">public</span>:
-<a name="l00097"></a><a class="code" href="classCException.html#a6f33628b840f8d255299da8736136a88">00097</a>         <span class="keyword">typedef</span> <span class="keyword">enum</span> {
-<a name="l00098"></a><a class="code" href="classCException.html#a6f33628b840f8d255299da8736136a88a1e29403a3b236afbaa36d74269bb0237">00098</a>                 <a class="code" href="classCException.html#a6f33628b840f8d255299da8736136a88a1e29403a3b236afbaa36d74269bb0237">EX_Shutdown</a>,
-<a name="l00099"></a><a class="code" href="classCException.html#a6f33628b840f8d255299da8736136a88a90be7afdb1865a72cb9321e6fc9b07e1">00099</a>                 <a class="code" href="classCException.html#a6f33628b840f8d255299da8736136a88a90be7afdb1865a72cb9321e6fc9b07e1">EX_Restart</a>
-<a name="l00100"></a>00100         } <a class="code" href="classCException.html#a6f33628b840f8d255299da8736136a88">EType</a>;
-<a name="l00101"></a>00101 
-<a name="l00102"></a><a class="code" href="classCException.html#afa8f87d4fb1dc5336cfdd349d5a03290">00102</a>         <a class="code" href="classCException.html#afa8f87d4fb1dc5336cfdd349d5a03290">CException</a>(<a class="code" href="classCException.html#a6f33628b840f8d255299da8736136a88">EType</a> e) {
-<a name="l00103"></a>00103                 <a class="code" href="classCException.html#a949a18a3af6670df010f81b73004d25e">m_eType</a> = e;
-<a name="l00104"></a>00104         }
-<a name="l00105"></a><a class="code" href="classCException.html#a4c790f65530375dd89c132fd659b79d0">00105</a>         <span class="keyword">virtual</span> <a class="code" href="classCException.html#a4c790f65530375dd89c132fd659b79d0">~CException</a>() {}
-<a name="l00106"></a>00106 
-<a name="l00107"></a><a class="code" href="classCException.html#a9a44ca42cb4905166083497031dccc9f">00107</a>         <a class="code" href="classCException.html#a6f33628b840f8d255299da8736136a88">EType</a> <a class="code" href="classCException.html#a9a44ca42cb4905166083497031dccc9f">GetType</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classCException.html#a949a18a3af6670df010f81b73004d25e">m_eType</a>; }
-<a name="l00108"></a>00108 <span class="keyword">private</span>:
-<a name="l00109"></a>00109 <span class="keyword">protected</span>:
-<a name="l00110"></a><a class="code" href="classCException.html#a949a18a3af6670df010f81b73004d25e">00110</a>         <a class="code" href="classCException.html#a6f33628b840f8d255299da8736136a88">EType</a>  <a class="code" href="classCException.html#a949a18a3af6670df010f81b73004d25e">m_eType</a>;
-<a name="l00111"></a>00111 };
-<a name="l00112"></a>00112 
+<a name="l00087"></a>00087         <span class="keyword">static</span> <a class="code" href="ZNCString_8h.html#a84b05218977775b974a8db49e81f02a4">SCString</a> <a class="code" href="classCUtils.html#a0136ab5edc8330a2d01b45b69aa2a7aa">GetEncodings</a>();
+<a name="l00088"></a>00088 
+<a name="l00089"></a>00089         <span class="keyword">static</span> <a class="code" href="classMCString.html" title="A dictionary for strings.">MCString</a> <a class="code" href="classCUtils.html#ab7374d12ececc457863cbeb5aff8f5ff">GetMessageTags</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sLine);
+<a name="l00090"></a>00090         <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classCUtils.html#a8227de4f84982154cdf8ab1435726e83">SetMessageTags</a>(<a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sLine, <span class="keyword">const</span> <a class="code" href="classMCString.html" title="A dictionary for strings.">MCString</a>&amp; mssTags);
+<a name="l00091"></a>00091 
+<a name="l00092"></a>00092 <span class="keyword">private</span>:
+<a name="l00093"></a>00093 <span class="keyword">protected</span>:
+<a name="l00094"></a>00094 };
+<a name="l00095"></a>00095 
+<a name="l00096"></a><a class="code" href="classCException.html">00096</a> <span class="keyword">class </span><a class="code" href="classCException.html">CException</a> {
+<a name="l00097"></a>00097 <span class="keyword">public</span>:
+<a name="l00098"></a><a class="code" href="classCException.html#a6f33628b840f8d255299da8736136a88">00098</a>         <span class="keyword">typedef</span> <span class="keyword">enum</span> {
+<a name="l00099"></a><a class="code" href="classCException.html#a6f33628b840f8d255299da8736136a88a1e29403a3b236afbaa36d74269bb0237">00099</a>                 <a class="code" href="classCException.html#a6f33628b840f8d255299da8736136a88a1e29403a3b236afbaa36d74269bb0237">EX_Shutdown</a>,
+<a name="l00100"></a><a class="code" href="classCException.html#a6f33628b840f8d255299da8736136a88a90be7afdb1865a72cb9321e6fc9b07e1">00100</a>                 <a class="code" href="classCException.html#a6f33628b840f8d255299da8736136a88a90be7afdb1865a72cb9321e6fc9b07e1">EX_Restart</a>
+<a name="l00101"></a>00101         } <a class="code" href="classCException.html#a6f33628b840f8d255299da8736136a88">EType</a>;
+<a name="l00102"></a>00102 
+<a name="l00103"></a><a class="code" href="classCException.html#afa8f87d4fb1dc5336cfdd349d5a03290">00103</a>         <a class="code" href="classCException.html#afa8f87d4fb1dc5336cfdd349d5a03290">CException</a>(<a class="code" href="classCException.html#a6f33628b840f8d255299da8736136a88">EType</a> e) {
+<a name="l00104"></a>00104                 <a class="code" href="classCException.html#a949a18a3af6670df010f81b73004d25e">m_eType</a> = e;
+<a name="l00105"></a>00105         }
+<a name="l00106"></a><a class="code" href="classCException.html#a4c790f65530375dd89c132fd659b79d0">00106</a>         <span class="keyword">virtual</span> <a class="code" href="classCException.html#a4c790f65530375dd89c132fd659b79d0">~CException</a>() {}
+<a name="l00107"></a>00107 
+<a name="l00108"></a><a class="code" href="classCException.html#a9a44ca42cb4905166083497031dccc9f">00108</a>         <a class="code" href="classCException.html#a6f33628b840f8d255299da8736136a88">EType</a> <a class="code" href="classCException.html#a9a44ca42cb4905166083497031dccc9f">GetType</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classCException.html#a949a18a3af6670df010f81b73004d25e">m_eType</a>; }
+<a name="l00109"></a>00109 <span class="keyword">private</span>:
+<a name="l00110"></a>00110 <span class="keyword">protected</span>:
+<a name="l00111"></a><a class="code" href="classCException.html#a949a18a3af6670df010f81b73004d25e">00111</a>         <a class="code" href="classCException.html#a6f33628b840f8d255299da8736136a88">EType</a>  <a class="code" href="classCException.html#a949a18a3af6670df010f81b73004d25e">m_eType</a>;
+<a name="l00112"></a>00112 };
 <a name="l00113"></a>00113 
-<a name="l00139"></a><a class="code" href="classCTable.html">00139</a> <span class="keyword">class </span><a class="code" href="classCTable.html" title="Generate a grid-like output from a given input.">CTable</a> : <span class="keyword">protected</span> std::vector&lt;std::vector&lt;CString&gt; &gt; {
-<a name="l00140"></a>00140 <span class="keyword">public</span>:
-<a name="l00141"></a><a class="code" href="classCTable.html#ad985a92cc568ed77bca58adf638abebf">00141</a>         <a class="code" href="classCTable.html#ad985a92cc568ed77bca58adf638abebf">CTable</a>() {}
-<a name="l00142"></a><a class="code" href="classCTable.html#a6c2b91ab372a4e9db389e059e5e8af80">00142</a>         <span class="keyword">virtual</span> <a class="code" href="classCTable.html#a6c2b91ab372a4e9db389e059e5e8af80">~CTable</a>() {}
-<a name="l00143"></a>00143 
-<a name="l00150"></a>00150         <span class="keywordtype">bool</span> <a class="code" href="classCTable.html#a06bfd743e00ab5295f15da545b05d3d4" title="Adds a new column to the table.">AddColumn</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sName);
-<a name="l00151"></a>00151 
-<a name="l00156"></a>00156         size_type <a class="code" href="classCTable.html#ac6817cb38f1e9ca815ceb16d69802192" title="Adds a new row to the table.">AddRow</a>();
-<a name="l00157"></a>00157 
-<a name="l00165"></a>00165         <span class="keywordtype">bool</span> <a class="code" href="classCTable.html#a7bcf5dacb9ebd5079a0826fee9afb9ca" title="Sets a given cell in the table to a value.">SetCell</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sColumn, <span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sValue, size_type uRowIdx = ~0);
-<a name="l00166"></a>00166 
-<a name="l00172"></a>00172         <span class="keywordtype">bool</span> <a class="code" href="classCTable.html#ab0ba1701f9307fd2b9954a611dcabd3e" title="Get a line of the table&#39;s output.">GetLine</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> uIdx, <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sLine) <span class="keyword">const</span>;
-<a name="l00173"></a>00173 
-<a name="l00180"></a>00180         CString::size_type <a class="code" href="classCTable.html#a244630c7b0e4edf6d5a33329085c3f49" title="Return the width of the given column.">GetColumnWidth</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> uIdx) <span class="keyword">const</span>;
-<a name="l00181"></a>00181 
-<a name="l00183"></a>00183         <span class="keywordtype">void</span> <a class="code" href="classCTable.html#ada2fd03e0f806e1c6b2df1ef9215c0d2" title="Completely clear the table.">Clear</a>();
-<a name="l00184"></a>00184 
-<a name="l00186"></a>00186         <span class="keyword">using</span> std::vector&lt;std::vector&lt;CString&gt; &gt;::size;
-<a name="l00187"></a>00187 
-<a name="l00189"></a>00189         <span class="keyword">using</span> std::vector&lt;std::vector&lt;CString&gt; &gt;::empty;
-<a name="l00190"></a>00190 <span class="keyword">private</span>:
-<a name="l00191"></a>00191         <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> GetColumnIndex(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sName) <span class="keyword">const</span>;
-<a name="l00192"></a>00192 
-<a name="l00193"></a>00193 <span class="keyword">protected</span>:
-<a name="l00194"></a><a class="code" href="classCTable.html#a6246689933c1b0fce1a1b4b5d8531a44">00194</a>         std::vector&lt;CString&gt;            <a class="code" href="classCTable.html#a6246689933c1b0fce1a1b4b5d8531a44">m_vsHeaders</a>;
-<a name="l00195"></a><a class="code" href="classCTable.html#a34205fd106fa4a4b7a190540f005cbf4">00195</a>         std::map&lt;CString, CString::size_type&gt; <a class="code" href="classCTable.html#a34205fd106fa4a4b7a190540f005cbf4">m_msuWidths</a>;  <span class="comment">// Used to cache the width of a column</span>
-<a name="l00196"></a>00196 };
-<a name="l00197"></a>00197 
+<a name="l00114"></a>00114 
+<a name="l00140"></a><a class="code" href="classCTable.html">00140</a> <span class="keyword">class </span><a class="code" href="classCTable.html" title="Generate a grid-like output from a given input.">CTable</a> : <span class="keyword">protected</span> std::vector&lt;std::vector&lt;CString&gt; &gt; {
+<a name="l00141"></a>00141 <span class="keyword">public</span>:
+<a name="l00142"></a><a class="code" href="classCTable.html#ad985a92cc568ed77bca58adf638abebf">00142</a>         <a class="code" href="classCTable.html#ad985a92cc568ed77bca58adf638abebf">CTable</a>() {}
+<a name="l00143"></a><a class="code" href="classCTable.html#a6c2b91ab372a4e9db389e059e5e8af80">00143</a>         <span class="keyword">virtual</span> <a class="code" href="classCTable.html#a6c2b91ab372a4e9db389e059e5e8af80">~CTable</a>() {}
+<a name="l00144"></a>00144 
+<a name="l00151"></a>00151         <span class="keywordtype">bool</span> <a class="code" href="classCTable.html#a06bfd743e00ab5295f15da545b05d3d4" title="Adds a new column to the table.">AddColumn</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sName);
+<a name="l00152"></a>00152 
+<a name="l00157"></a>00157         size_type <a class="code" href="classCTable.html#ac6817cb38f1e9ca815ceb16d69802192" title="Adds a new row to the table.">AddRow</a>();
+<a name="l00158"></a>00158 
+<a name="l00166"></a>00166         <span class="keywordtype">bool</span> <a class="code" href="classCTable.html#a7bcf5dacb9ebd5079a0826fee9afb9ca" title="Sets a given cell in the table to a value.">SetCell</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sColumn, <span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sValue, size_type uRowIdx = ~0);
+<a name="l00167"></a>00167 
+<a name="l00173"></a>00173         <span class="keywordtype">bool</span> <a class="code" href="classCTable.html#ab0ba1701f9307fd2b9954a611dcabd3e" title="Get a line of the table&#39;s output.">GetLine</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> uIdx, <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sLine) <span class="keyword">const</span>;
+<a name="l00174"></a>00174 
+<a name="l00181"></a>00181         CString::size_type <a class="code" href="classCTable.html#a244630c7b0e4edf6d5a33329085c3f49" title="Return the width of the given column.">GetColumnWidth</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> uIdx) <span class="keyword">const</span>;
+<a name="l00182"></a>00182 
+<a name="l00184"></a>00184         <span class="keywordtype">void</span> <a class="code" href="classCTable.html#ada2fd03e0f806e1c6b2df1ef9215c0d2" title="Completely clear the table.">Clear</a>();
+<a name="l00185"></a>00185 
+<a name="l00187"></a>00187         <span class="keyword">using</span> std::vector&lt;std::vector&lt;CString&gt; &gt;::size;
+<a name="l00188"></a>00188 
+<a name="l00190"></a>00190         <span class="keyword">using</span> std::vector&lt;std::vector&lt;CString&gt; &gt;::empty;
+<a name="l00191"></a>00191 <span class="keyword">private</span>:
+<a name="l00192"></a>00192         <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> GetColumnIndex(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sName) <span class="keyword">const</span>;
+<a name="l00193"></a>00193 
+<a name="l00194"></a>00194 <span class="keyword">protected</span>:
+<a name="l00195"></a><a class="code" href="classCTable.html#a6246689933c1b0fce1a1b4b5d8531a44">00195</a>         std::vector&lt;CString&gt;            <a class="code" href="classCTable.html#a6246689933c1b0fce1a1b4b5d8531a44">m_vsHeaders</a>;
+<a name="l00196"></a><a class="code" href="classCTable.html#a34205fd106fa4a4b7a190540f005cbf4">00196</a>         std::map&lt;CString, CString::size_type&gt; <a class="code" href="classCTable.html#a34205fd106fa4a4b7a190540f005cbf4">m_msuWidths</a>;  <span class="comment">// Used to cache the width of a column</span>
+<a name="l00197"></a>00197 };
 <a name="l00198"></a>00198 
-<a name="l00199"></a>00199 <span class="preprocessor">#ifdef HAVE_LIBSSL</span>
-<a name="l00200"></a>00200 <span class="preprocessor"></span><span class="preprocessor">#include &lt;openssl/aes.h&gt;</span>
-<a name="l00201"></a>00201 <span class="preprocessor">#include &lt;openssl/blowfish.h&gt;</span>
-<a name="l00202"></a>00202 <span class="preprocessor">#include &lt;openssl/md5.h&gt;</span>
-<a name="l00204"></a><a class="code" href="classCBlowfish.html">00204</a> <span class="keyword">class </span><a class="code" href="classCBlowfish.html" title="does Blowfish w/64 bit feedback, no padding">CBlowfish</a> {
-<a name="l00205"></a>00205 <span class="keyword">public</span>:
-<a name="l00211"></a>00211         <a class="code" href="classCBlowfish.html#a5e15b4a5e0ed4de7389d8ac092126be3">CBlowfish</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a> &amp; sPassword, <span class="keywordtype">int</span> iEncrypt, <span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a> &amp; sIvec = <span class="stringliteral">&quot;&quot;</span>);
-<a name="l00212"></a>00212         <a class="code" href="classCBlowfish.html#a193f911035088fb02f4a56ef1cf94aee">~CBlowfish</a>();
-<a name="l00213"></a>00213 
-<a name="l00215"></a>00215         <span class="keyword">static</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *<a class="code" href="classCBlowfish.html#a3920dbbfea688328c00a83a1ba0828e6" title="output must be freed">MD5</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *input, u_int ilen);
-<a name="l00216"></a>00216 
-<a name="l00218"></a>00218         <span class="keyword">static</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a> <a class="code" href="classCBlowfish.html#a3920dbbfea688328c00a83a1ba0828e6" title="output must be freed">MD5</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a> &amp; sInput, <span class="keywordtype">bool</span> bHexEncode = <span class="keyword">false</span>);
-<a name="l00219"></a>00219 
-<a name="l00221"></a>00221         <span class="keywordtype">void</span> <a class="code" href="classCBlowfish.html#aff253ecee59efd527b9b167cdd8b3c04" title="output must be the same size as input">Crypt</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *input, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *output, u_int ibytes);
-<a name="l00222"></a>00222 
-<a name="l00224"></a>00224         <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> * <a class="code" href="classCBlowfish.html#aff253ecee59efd527b9b167cdd8b3c04" title="output must be the same size as input">Crypt</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *input, u_int ibytes);
-<a name="l00225"></a>00225         <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a> <a class="code" href="classCBlowfish.html#aff253ecee59efd527b9b167cdd8b3c04" title="output must be the same size as input">Crypt</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a> &amp; sData);
-<a name="l00226"></a>00226 
-<a name="l00227"></a>00227 <span class="keyword">private</span>:
-<a name="l00228"></a>00228         <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>  *m_ivec;
-<a name="l00229"></a>00229         BF_KEY          m_bkey;
-<a name="l00230"></a>00230         <span class="keywordtype">int</span>             m_iEncrypt, m_num;
-<a name="l00231"></a>00231 };
-<a name="l00232"></a>00232 
-<a name="l00233"></a>00233 <span class="preprocessor">#endif </span><span class="comment">/* HAVE_LIBSSL */</span>
-<a name="l00234"></a>00234 
-<a name="l00240"></a>00240 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> V = <span class="keywordtype">bool</span>&gt;
-<a name="l00241"></a><a class="code" href="classTCacheMap.html">00241</a> <span class="keyword">class </span><a class="code" href="classTCacheMap.html" title="Insert an object with a time-to-live and check later if it still exists.">TCacheMap</a> {
-<a name="l00242"></a>00242 <span class="keyword">public</span>:
-<a name="l00243"></a><a class="code" href="classTCacheMap.html#aec86844fc2c73f3b78c77247ed9bc8a7">00243</a>         <a class="code" href="classTCacheMap.html#aec86844fc2c73f3b78c77247ed9bc8a7">TCacheMap</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> uTTL = 5000) {
-<a name="l00244"></a>00244                 <a class="code" href="classTCacheMap.html#a2d8a4c593429354d3a442ba77173ed80" title="Default time-to-live duration.">m_uTTL</a> = uTTL;
-<a name="l00245"></a>00245         }
-<a name="l00246"></a>00246 
-<a name="l00247"></a><a class="code" href="classTCacheMap.html#aba675adcd75baecfde1a17272116ba6d">00247</a>         <span class="keyword">virtual</span> <a class="code" href="classTCacheMap.html#aba675adcd75baecfde1a17272116ba6d">~TCacheMap</a>() {}
-<a name="l00248"></a>00248 
-<a name="l00253"></a><a class="code" href="classTCacheMap.html#a6d5fccb8e4b75aacf76f38d67ad8a86c">00253</a>         <span class="keywordtype">void</span> <a class="code" href="classTCacheMap.html#a6d5fccb8e4b75aacf76f38d67ad8a86c" title="This function adds an item to the cache using the default time-to-live value.">AddItem</a>(<span class="keyword">const</span> K&amp; Item) {
-<a name="l00254"></a>00254                 <a class="code" href="classTCacheMap.html#a6d5fccb8e4b75aacf76f38d67ad8a86c" title="This function adds an item to the cache using the default time-to-live value.">AddItem</a>(Item, <a class="code" href="classTCacheMap.html#a2d8a4c593429354d3a442ba77173ed80" title="Default time-to-live duration.">m_uTTL</a>);
-<a name="l00255"></a>00255         }
-<a name="l00256"></a>00256 
-<a name="l00262"></a><a class="code" href="classTCacheMap.html#a05caef09f2b92e8b176d66389050cd08">00262</a>         <span class="keywordtype">void</span> <a class="code" href="classTCacheMap.html#a05caef09f2b92e8b176d66389050cd08" title="This function adds an item to the cache using a custom time-to-live value.">AddItem</a>(<span class="keyword">const</span> K&amp; Item, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> uTTL) {
-<a name="l00263"></a>00263                 <a class="code" href="classTCacheMap.html#a6d5fccb8e4b75aacf76f38d67ad8a86c" title="This function adds an item to the cache using the default time-to-live value.">AddItem</a>(Item, V(), uTTL);
-<a name="l00264"></a>00264         }
-<a name="l00265"></a>00265 
-<a name="l00271"></a><a class="code" href="classTCacheMap.html#aba9653280014e5e6b9a04374c61620e6">00271</a>         <span class="keywordtype">void</span> <a class="code" href="classTCacheMap.html#aba9653280014e5e6b9a04374c61620e6" title="This function adds an item to the cache using the default time-to-live value.">AddItem</a>(<span class="keyword">const</span> K&amp; Item, <span class="keyword">const</span> V&amp; Val) {
-<a name="l00272"></a>00272                 <a class="code" href="classTCacheMap.html#a6d5fccb8e4b75aacf76f38d67ad8a86c" title="This function adds an item to the cache using the default time-to-live value.">AddItem</a>(Item, Val, <a class="code" href="classTCacheMap.html#a2d8a4c593429354d3a442ba77173ed80" title="Default time-to-live duration.">m_uTTL</a>);
-<a name="l00273"></a>00273         }
-<a name="l00274"></a>00274 
-<a name="l00281"></a><a class="code" href="classTCacheMap.html#ab6b68331b3c3a23f839534adfb1ac813">00281</a>         <span class="keywordtype">void</span> <a class="code" href="classTCacheMap.html#ab6b68331b3c3a23f839534adfb1ac813" title="This function adds an item to the cache using a custom time-to-live value.">AddItem</a>(<span class="keyword">const</span> K&amp; Item, <span class="keyword">const</span> V&amp; Val, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> uTTL) {
-<a name="l00282"></a>00282                 <span class="keywordflow">if</span> (!uTTL) {             <span class="comment">// If time-to-live is zero we don&#39;t want to waste our time adding it</span>
-<a name="l00283"></a>00283                         <a class="code" href="classTCacheMap.html#a4e80ed1aede8eeb8d9f6092950358c04" title="Removes a specific item from the cache.">RemItem</a>(Item);   <span class="comment">// Remove the item incase it already exists</span>
-<a name="l00284"></a>00284                         <span class="keywordflow">return</span>;
-<a name="l00285"></a>00285                 }
-<a name="l00286"></a>00286 
-<a name="l00287"></a>00287                 <a class="code" href="classTCacheMap.html#a9d5a76f1b92e3d3a8d873e5e66823e39" title="Map of cached items.">m_mItems</a>[Item] = <a class="code" href="classTCacheMap.html#ad030261fdb9f2ec14b4afcffbce47b31">value</a>(<a class="code" href="classCUtils.html#adb5be4d422077b8aeb182a25e23112dc">CUtils::GetMillTime</a>() + uTTL, Val);
-<a name="l00288"></a>00288         }
-<a name="l00289"></a>00289 
-<a name="l00295"></a><a class="code" href="classTCacheMap.html#a1e71e07184c9db482dcb7a99ae5bc119">00295</a>         <span class="keywordtype">bool</span> <a class="code" href="classTCacheMap.html#a1e71e07184c9db482dcb7a99ae5bc119" title="Performs a Cleanup() and then checks to see if your item exists.">HasItem</a>(<span class="keyword">const</span> K&amp; Item) {
-<a name="l00296"></a>00296                 <a class="code" href="classTCacheMap.html#a310531274916c803f033df8fc47a8abc" title="Cycles through the queue removing all of the stale entries.">Cleanup</a>();
-<a name="l00297"></a>00297                 <span class="keywordflow">return</span> (<a class="code" href="classTCacheMap.html#a9d5a76f1b92e3d3a8d873e5e66823e39" title="Map of cached items.">m_mItems</a>.find(Item) != <a class="code" href="classTCacheMap.html#a9d5a76f1b92e3d3a8d873e5e66823e39" title="Map of cached items.">m_mItems</a>.end());
-<a name="l00298"></a>00298         }
-<a name="l00299"></a>00299 
-<a name="l00305"></a><a class="code" href="classTCacheMap.html#af5ad62704308d4b69ae91588c0269a07">00305</a>         V* <a class="code" href="classTCacheMap.html#af5ad62704308d4b69ae91588c0269a07" title="Performs a Cleanup() and returns a pointer to the object, or NULL.">GetItem</a>(<span class="keyword">const</span> K&amp; Item) {
-<a name="l00306"></a>00306                 <a class="code" href="classTCacheMap.html#a310531274916c803f033df8fc47a8abc" title="Cycles through the queue removing all of the stale entries.">Cleanup</a>();
-<a name="l00307"></a>00307                 <a class="code" href="classTCacheMap.html#ac29fbd1d01dec1b68e626e1c1bed4f8c">iterator</a> it = <a class="code" href="classTCacheMap.html#a9d5a76f1b92e3d3a8d873e5e66823e39" title="Map of cached items.">m_mItems</a>.find(Item);
-<a name="l00308"></a>00308                 <span class="keywordflow">if</span> (it == <a class="code" href="classTCacheMap.html#a9d5a76f1b92e3d3a8d873e5e66823e39" title="Map of cached items.">m_mItems</a>.end())
-<a name="l00309"></a>00309                         <span class="keywordflow">return</span> NULL;
-<a name="l00310"></a>00310                 <span class="keywordflow">return</span> &amp;it-&gt;second.second;
-<a name="l00311"></a>00311         }
-<a name="l00312"></a>00312 
-<a name="l00318"></a><a class="code" href="classTCacheMap.html#a4e80ed1aede8eeb8d9f6092950358c04">00318</a>         <span class="keywordtype">bool</span> <a class="code" href="classTCacheMap.html#a4e80ed1aede8eeb8d9f6092950358c04" title="Removes a specific item from the cache.">RemItem</a>(<span class="keyword">const</span> K&amp; Item) {
-<a name="l00319"></a>00319                 <span class="keywordflow">return</span> (<a class="code" href="classTCacheMap.html#a9d5a76f1b92e3d3a8d873e5e66823e39" title="Map of cached items.">m_mItems</a>.erase(Item) != 0);
-<a name="l00320"></a>00320         }
-<a name="l00321"></a>00321 
-<a name="l00325"></a><a class="code" href="classTCacheMap.html#a310531274916c803f033df8fc47a8abc">00325</a>         <span class="keywordtype">void</span> <a class="code" href="classTCacheMap.html#a310531274916c803f033df8fc47a8abc" title="Cycles through the queue removing all of the stale entries.">Cleanup</a>() {
-<a name="l00326"></a>00326                 <a class="code" href="classTCacheMap.html#ac29fbd1d01dec1b68e626e1c1bed4f8c">iterator</a> it = <a class="code" href="classTCacheMap.html#a9d5a76f1b92e3d3a8d873e5e66823e39" title="Map of cached items.">m_mItems</a>.begin();
-<a name="l00327"></a>00327 
-<a name="l00328"></a>00328                 <span class="keywordflow">while</span> (it != <a class="code" href="classTCacheMap.html#a9d5a76f1b92e3d3a8d873e5e66823e39" title="Map of cached items.">m_mItems</a>.end()) {
-<a name="l00329"></a>00329                         <span class="keywordflow">if</span> (<a class="code" href="classCUtils.html#adb5be4d422077b8aeb182a25e23112dc">CUtils::GetMillTime</a>() &gt; (it-&gt;second.first)) {
-<a name="l00330"></a>00330                                 <a class="code" href="classTCacheMap.html#a9d5a76f1b92e3d3a8d873e5e66823e39" title="Map of cached items.">m_mItems</a>.erase(it++);
-<a name="l00331"></a>00331                         } <span class="keywordflow">else</span> {
-<a name="l00332"></a>00332                                 ++it;
-<a name="l00333"></a>00333                         }
-<a name="l00334"></a>00334                 }
-<a name="l00335"></a>00335         }
-<a name="l00336"></a>00336 
-<a name="l00340"></a><a class="code" href="classTCacheMap.html#ab73bfc280a8b52c7664118c123eb317e">00340</a>         <span class="keywordtype">void</span> <a class="code" href="classTCacheMap.html#ab73bfc280a8b52c7664118c123eb317e" title="Clear all entries.">Clear</a>() {
-<a name="l00341"></a>00341                 <a class="code" href="classTCacheMap.html#a9d5a76f1b92e3d3a8d873e5e66823e39" title="Map of cached items.">m_mItems</a>.clear();
-<a name="l00342"></a>00342         }
-<a name="l00343"></a>00343 
-<a name="l00344"></a>00344         <span class="comment">// Setters</span>
-<a name="l00345"></a><a class="code" href="classTCacheMap.html#abe04718bbc0379ab673d5ab2b99c00f2">00345</a>         <span class="keywordtype">void</span> <a class="code" href="classTCacheMap.html#abe04718bbc0379ab673d5ab2b99c00f2">SetTTL</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> u) { <a class="code" href="classTCacheMap.html#a2d8a4c593429354d3a442ba77173ed80" title="Default time-to-live duration.">m_uTTL</a> = u; }
-<a name="l00346"></a>00346         <span class="comment">// !Setters</span>
-<a name="l00347"></a>00347         <span class="comment">// Getters</span>
-<a name="l00348"></a><a class="code" href="classTCacheMap.html#a2d7a76002e7f16e0e9eed0c5738f58fb">00348</a>         <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classTCacheMap.html#a2d7a76002e7f16e0e9eed0c5738f58fb">GetTTL</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classTCacheMap.html#a2d8a4c593429354d3a442ba77173ed80" title="Default time-to-live duration.">m_uTTL</a>; }
-<a name="l00349"></a>00349         <span class="comment">// !Getters</span>
-<a name="l00350"></a>00350 <span class="keyword">protected</span>:
-<a name="l00351"></a><a class="code" href="classTCacheMap.html#ad030261fdb9f2ec14b4afcffbce47b31">00351</a>         <span class="keyword">typedef</span> std::pair&lt;unsigned long long, V&gt; <a class="code" href="classTCacheMap.html#ad030261fdb9f2ec14b4afcffbce47b31">value</a>;
-<a name="l00352"></a><a class="code" href="classTCacheMap.html#ac29fbd1d01dec1b68e626e1c1bed4f8c">00352</a>         <span class="keyword">typedef</span> <span class="keyword">typename</span> std::map&lt;K, value&gt;::iterator <a class="code" href="classTCacheMap.html#ac29fbd1d01dec1b68e626e1c1bed4f8c">iterator</a>;
-<a name="l00353"></a><a class="code" href="classTCacheMap.html#a9d5a76f1b92e3d3a8d873e5e66823e39">00353</a>         std::map&lt;K, value&gt;   <a class="code" href="classTCacheMap.html#a9d5a76f1b92e3d3a8d873e5e66823e39" title="Map of cached items.">m_mItems</a>;   
-<a name="l00354"></a><a class="code" href="classTCacheMap.html#a2d8a4c593429354d3a442ba77173ed80">00354</a>         <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>         <a class="code" href="classTCacheMap.html#a2d8a4c593429354d3a442ba77173ed80" title="Default time-to-live duration.">m_uTTL</a>;     
-<a name="l00355"></a>00355 };
-<a name="l00356"></a>00356 
-<a name="l00357"></a>00357 <span class="preprocessor">#endif // !_UTILS_H</span>
+<a name="l00199"></a>00199 
+<a name="l00200"></a>00200 <span class="preprocessor">#ifdef HAVE_LIBSSL</span>
+<a name="l00201"></a>00201 <span class="preprocessor"></span><span class="preprocessor">#include &lt;openssl/aes.h&gt;</span>
+<a name="l00202"></a>00202 <span class="preprocessor">#include &lt;openssl/blowfish.h&gt;</span>
+<a name="l00203"></a>00203 <span class="preprocessor">#include &lt;openssl/md5.h&gt;</span>
+<a name="l00205"></a><a class="code" href="classCBlowfish.html">00205</a> <span class="keyword">class </span><a class="code" href="classCBlowfish.html" title="does Blowfish w/64 bit feedback, no padding">CBlowfish</a> {
+<a name="l00206"></a>00206 <span class="keyword">public</span>:
+<a name="l00212"></a>00212         <a class="code" href="classCBlowfish.html#a5e15b4a5e0ed4de7389d8ac092126be3">CBlowfish</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a> &amp; sPassword, <span class="keywordtype">int</span> iEncrypt, <span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a> &amp; sIvec = <span class="stringliteral">&quot;&quot;</span>);
+<a name="l00213"></a>00213         <a class="code" href="classCBlowfish.html#a193f911035088fb02f4a56ef1cf94aee">~CBlowfish</a>();
+<a name="l00214"></a>00214 
+<a name="l00216"></a>00216         <span class="keyword">static</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *<a class="code" href="classCBlowfish.html#a3920dbbfea688328c00a83a1ba0828e6" title="output must be freed">MD5</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *input, u_int ilen);
+<a name="l00217"></a>00217 
+<a name="l00219"></a>00219         <span class="keyword">static</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a> <a class="code" href="classCBlowfish.html#a3920dbbfea688328c00a83a1ba0828e6" title="output must be freed">MD5</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a> &amp; sInput, <span class="keywordtype">bool</span> bHexEncode = <span class="keyword">false</span>);
+<a name="l00220"></a>00220 
+<a name="l00222"></a>00222         <span class="keywordtype">void</span> <a class="code" href="classCBlowfish.html#aff253ecee59efd527b9b167cdd8b3c04" title="output must be the same size as input">Crypt</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *input, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *output, u_int ibytes);
+<a name="l00223"></a>00223 
+<a name="l00225"></a>00225         <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> * <a class="code" href="classCBlowfish.html#aff253ecee59efd527b9b167cdd8b3c04" title="output must be the same size as input">Crypt</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *input, u_int ibytes);
+<a name="l00226"></a>00226         <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a> <a class="code" href="classCBlowfish.html#aff253ecee59efd527b9b167cdd8b3c04" title="output must be the same size as input">Crypt</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a> &amp; sData);
+<a name="l00227"></a>00227 
+<a name="l00228"></a>00228 <span class="keyword">private</span>:
+<a name="l00229"></a>00229         <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>  *m_ivec;
+<a name="l00230"></a>00230         BF_KEY          m_bkey;
+<a name="l00231"></a>00231         <span class="keywordtype">int</span>             m_iEncrypt, m_num;
+<a name="l00232"></a>00232 };
+<a name="l00233"></a>00233 
+<a name="l00234"></a>00234 <span class="preprocessor">#endif </span><span class="comment">/* HAVE_LIBSSL */</span>
+<a name="l00235"></a>00235 
+<a name="l00241"></a>00241 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> V = <span class="keywordtype">bool</span>&gt;
+<a name="l00242"></a><a class="code" href="classTCacheMap.html">00242</a> <span class="keyword">class </span><a class="code" href="classTCacheMap.html" title="Insert an object with a time-to-live and check later if it still exists.">TCacheMap</a> {
+<a name="l00243"></a>00243 <span class="keyword">public</span>:
+<a name="l00244"></a><a class="code" href="classTCacheMap.html#aec86844fc2c73f3b78c77247ed9bc8a7">00244</a>         <a class="code" href="classTCacheMap.html#aec86844fc2c73f3b78c77247ed9bc8a7">TCacheMap</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> uTTL = 5000) {
+<a name="l00245"></a>00245                 <a class="code" href="classTCacheMap.html#a2d8a4c593429354d3a442ba77173ed80" title="Default time-to-live duration.">m_uTTL</a> = uTTL;
+<a name="l00246"></a>00246         }
+<a name="l00247"></a>00247 
+<a name="l00248"></a><a class="code" href="classTCacheMap.html#aba675adcd75baecfde1a17272116ba6d">00248</a>         <span class="keyword">virtual</span> <a class="code" href="classTCacheMap.html#aba675adcd75baecfde1a17272116ba6d">~TCacheMap</a>() {}
+<a name="l00249"></a>00249 
+<a name="l00254"></a><a class="code" href="classTCacheMap.html#a6d5fccb8e4b75aacf76f38d67ad8a86c">00254</a>         <span class="keywordtype">void</span> <a class="code" href="classTCacheMap.html#a6d5fccb8e4b75aacf76f38d67ad8a86c" title="This function adds an item to the cache using the default time-to-live value.">AddItem</a>(<span class="keyword">const</span> K&amp; Item) {
+<a name="l00255"></a>00255                 <a class="code" href="classTCacheMap.html#a6d5fccb8e4b75aacf76f38d67ad8a86c" title="This function adds an item to the cache using the default time-to-live value.">AddItem</a>(Item, <a class="code" href="classTCacheMap.html#a2d8a4c593429354d3a442ba77173ed80" title="Default time-to-live duration.">m_uTTL</a>);
+<a name="l00256"></a>00256         }
+<a name="l00257"></a>00257 
+<a name="l00263"></a><a class="code" href="classTCacheMap.html#a05caef09f2b92e8b176d66389050cd08">00263</a>         <span class="keywordtype">void</span> <a class="code" href="classTCacheMap.html#a05caef09f2b92e8b176d66389050cd08" title="This function adds an item to the cache using a custom time-to-live value.">AddItem</a>(<span class="keyword">const</span> K&amp; Item, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> uTTL) {
+<a name="l00264"></a>00264                 <a class="code" href="classTCacheMap.html#a6d5fccb8e4b75aacf76f38d67ad8a86c" title="This function adds an item to the cache using the default time-to-live value.">AddItem</a>(Item, V(), uTTL);
+<a name="l00265"></a>00265         }
+<a name="l00266"></a>00266 
+<a name="l00272"></a><a class="code" href="classTCacheMap.html#aba9653280014e5e6b9a04374c61620e6">00272</a>         <span class="keywordtype">void</span> <a class="code" href="classTCacheMap.html#aba9653280014e5e6b9a04374c61620e6" title="This function adds an item to the cache using the default time-to-live value.">AddItem</a>(<span class="keyword">const</span> K&amp; Item, <span class="keyword">const</span> V&amp; Val) {
+<a name="l00273"></a>00273                 <a class="code" href="classTCacheMap.html#a6d5fccb8e4b75aacf76f38d67ad8a86c" title="This function adds an item to the cache using the default time-to-live value.">AddItem</a>(Item, Val, <a class="code" href="classTCacheMap.html#a2d8a4c593429354d3a442ba77173ed80" title="Default time-to-live duration.">m_uTTL</a>);
+<a name="l00274"></a>00274         }
+<a name="l00275"></a>00275 
+<a name="l00282"></a><a class="code" href="classTCacheMap.html#ab6b68331b3c3a23f839534adfb1ac813">00282</a>         <span class="keywordtype">void</span> <a class="code" href="classTCacheMap.html#ab6b68331b3c3a23f839534adfb1ac813" title="This function adds an item to the cache using a custom time-to-live value.">AddItem</a>(<span class="keyword">const</span> K&amp; Item, <span class="keyword">const</span> V&amp; Val, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> uTTL) {
+<a name="l00283"></a>00283                 <span class="keywordflow">if</span> (!uTTL) {             <span class="comment">// If time-to-live is zero we don&#39;t want to waste our time adding it</span>
+<a name="l00284"></a>00284                         <a class="code" href="classTCacheMap.html#a4e80ed1aede8eeb8d9f6092950358c04" title="Removes a specific item from the cache.">RemItem</a>(Item);   <span class="comment">// Remove the item incase it already exists</span>
+<a name="l00285"></a>00285                         <span class="keywordflow">return</span>;
+<a name="l00286"></a>00286                 }
+<a name="l00287"></a>00287 
+<a name="l00288"></a>00288                 <a class="code" href="classTCacheMap.html#a9d5a76f1b92e3d3a8d873e5e66823e39" title="Map of cached items.">m_mItems</a>[Item] = <a class="code" href="classTCacheMap.html#ad030261fdb9f2ec14b4afcffbce47b31">value</a>(<a class="code" href="classCUtils.html#adb5be4d422077b8aeb182a25e23112dc">CUtils::GetMillTime</a>() + uTTL, Val);
+<a name="l00289"></a>00289         }
+<a name="l00290"></a>00290 
+<a name="l00296"></a><a class="code" href="classTCacheMap.html#a1e71e07184c9db482dcb7a99ae5bc119">00296</a>         <span class="keywordtype">bool</span> <a class="code" href="classTCacheMap.html#a1e71e07184c9db482dcb7a99ae5bc119" title="Performs a Cleanup() and then checks to see if your item exists.">HasItem</a>(<span class="keyword">const</span> K&amp; Item) {
+<a name="l00297"></a>00297                 <a class="code" href="classTCacheMap.html#a310531274916c803f033df8fc47a8abc" title="Cycles through the queue removing all of the stale entries.">Cleanup</a>();
+<a name="l00298"></a>00298                 <span class="keywordflow">return</span> (<a class="code" href="classTCacheMap.html#a9d5a76f1b92e3d3a8d873e5e66823e39" title="Map of cached items.">m_mItems</a>.find(Item) != <a class="code" href="classTCacheMap.html#a9d5a76f1b92e3d3a8d873e5e66823e39" title="Map of cached items.">m_mItems</a>.end());
+<a name="l00299"></a>00299         }
+<a name="l00300"></a>00300 
+<a name="l00306"></a><a class="code" href="classTCacheMap.html#af5ad62704308d4b69ae91588c0269a07">00306</a>         V* <a class="code" href="classTCacheMap.html#af5ad62704308d4b69ae91588c0269a07" title="Performs a Cleanup() and returns a pointer to the object, or NULL.">GetItem</a>(<span class="keyword">const</span> K&amp; Item) {
+<a name="l00307"></a>00307                 <a class="code" href="classTCacheMap.html#a310531274916c803f033df8fc47a8abc" title="Cycles through the queue removing all of the stale entries.">Cleanup</a>();
+<a name="l00308"></a>00308                 <a class="code" href="classTCacheMap.html#ac29fbd1d01dec1b68e626e1c1bed4f8c">iterator</a> it = <a class="code" href="classTCacheMap.html#a9d5a76f1b92e3d3a8d873e5e66823e39" title="Map of cached items.">m_mItems</a>.find(Item);
+<a name="l00309"></a>00309                 <span class="keywordflow">if</span> (it == <a class="code" href="classTCacheMap.html#a9d5a76f1b92e3d3a8d873e5e66823e39" title="Map of cached items.">m_mItems</a>.end())
+<a name="l00310"></a>00310                         <span class="keywordflow">return</span> NULL;
+<a name="l00311"></a>00311                 <span class="keywordflow">return</span> &amp;it-&gt;second.second;
+<a name="l00312"></a>00312         }
+<a name="l00313"></a>00313 
+<a name="l00319"></a><a class="code" href="classTCacheMap.html#a4e80ed1aede8eeb8d9f6092950358c04">00319</a>         <span class="keywordtype">bool</span> <a class="code" href="classTCacheMap.html#a4e80ed1aede8eeb8d9f6092950358c04" title="Removes a specific item from the cache.">RemItem</a>(<span class="keyword">const</span> K&amp; Item) {
+<a name="l00320"></a>00320                 <span class="keywordflow">return</span> (<a class="code" href="classTCacheMap.html#a9d5a76f1b92e3d3a8d873e5e66823e39" title="Map of cached items.">m_mItems</a>.erase(Item) != 0);
+<a name="l00321"></a>00321         }
+<a name="l00322"></a>00322 
+<a name="l00326"></a><a class="code" href="classTCacheMap.html#a310531274916c803f033df8fc47a8abc">00326</a>         <span class="keywordtype">void</span> <a class="code" href="classTCacheMap.html#a310531274916c803f033df8fc47a8abc" title="Cycles through the queue removing all of the stale entries.">Cleanup</a>() {
+<a name="l00327"></a>00327                 <a class="code" href="classTCacheMap.html#ac29fbd1d01dec1b68e626e1c1bed4f8c">iterator</a> it = <a class="code" href="classTCacheMap.html#a9d5a76f1b92e3d3a8d873e5e66823e39" title="Map of cached items.">m_mItems</a>.begin();
+<a name="l00328"></a>00328 
+<a name="l00329"></a>00329                 <span class="keywordflow">while</span> (it != <a class="code" href="classTCacheMap.html#a9d5a76f1b92e3d3a8d873e5e66823e39" title="Map of cached items.">m_mItems</a>.end()) {
+<a name="l00330"></a>00330                         <span class="keywordflow">if</span> (<a class="code" href="classCUtils.html#adb5be4d422077b8aeb182a25e23112dc">CUtils::GetMillTime</a>() &gt; (it-&gt;second.first)) {
+<a name="l00331"></a>00331                                 <a class="code" href="classTCacheMap.html#a9d5a76f1b92e3d3a8d873e5e66823e39" title="Map of cached items.">m_mItems</a>.erase(it++);
+<a name="l00332"></a>00332                         } <span class="keywordflow">else</span> {
+<a name="l00333"></a>00333                                 ++it;
+<a name="l00334"></a>00334                         }
+<a name="l00335"></a>00335                 }
+<a name="l00336"></a>00336         }
+<a name="l00337"></a>00337 
+<a name="l00341"></a><a class="code" href="classTCacheMap.html#ab73bfc280a8b52c7664118c123eb317e">00341</a>         <span class="keywordtype">void</span> <a class="code" href="classTCacheMap.html#ab73bfc280a8b52c7664118c123eb317e" title="Clear all entries.">Clear</a>() {
+<a name="l00342"></a>00342                 <a class="code" href="classTCacheMap.html#a9d5a76f1b92e3d3a8d873e5e66823e39" title="Map of cached items.">m_mItems</a>.clear();
+<a name="l00343"></a>00343         }
+<a name="l00344"></a>00344 
+<a name="l00345"></a>00345         <span class="comment">// Setters</span>
+<a name="l00346"></a><a class="code" href="classTCacheMap.html#abe04718bbc0379ab673d5ab2b99c00f2">00346</a>         <span class="keywordtype">void</span> <a class="code" href="classTCacheMap.html#abe04718bbc0379ab673d5ab2b99c00f2">SetTTL</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> u) { <a class="code" href="classTCacheMap.html#a2d8a4c593429354d3a442ba77173ed80" title="Default time-to-live duration.">m_uTTL</a> = u; }
+<a name="l00347"></a>00347         <span class="comment">// !Setters</span>
+<a name="l00348"></a>00348         <span class="comment">// Getters</span>
+<a name="l00349"></a><a class="code" href="classTCacheMap.html#a2d7a76002e7f16e0e9eed0c5738f58fb">00349</a>         <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classTCacheMap.html#a2d7a76002e7f16e0e9eed0c5738f58fb">GetTTL</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classTCacheMap.html#a2d8a4c593429354d3a442ba77173ed80" title="Default time-to-live duration.">m_uTTL</a>; }
+<a name="l00350"></a>00350         <span class="comment">// !Getters</span>
+<a name="l00351"></a>00351 <span class="keyword">protected</span>:
+<a name="l00352"></a><a class="code" href="classTCacheMap.html#ad030261fdb9f2ec14b4afcffbce47b31">00352</a>         <span class="keyword">typedef</span> std::pair&lt;unsigned long long, V&gt; <a class="code" href="classTCacheMap.html#ad030261fdb9f2ec14b4afcffbce47b31">value</a>;
+<a name="l00353"></a><a class="code" href="classTCacheMap.html#ac29fbd1d01dec1b68e626e1c1bed4f8c">00353</a>         <span class="keyword">typedef</span> <span class="keyword">typename</span> std::map&lt;K, value&gt;::iterator <a class="code" href="classTCacheMap.html#ac29fbd1d01dec1b68e626e1c1bed4f8c">iterator</a>;
+<a name="l00354"></a><a class="code" href="classTCacheMap.html#a9d5a76f1b92e3d3a8d873e5e66823e39">00354</a>         std::map&lt;K, value&gt;   <a class="code" href="classTCacheMap.html#a9d5a76f1b92e3d3a8d873e5e66823e39" title="Map of cached items.">m_mItems</a>;   
+<a name="l00355"></a><a class="code" href="classTCacheMap.html#a2d8a4c593429354d3a442ba77173ed80">00355</a>         <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>         <a class="code" href="classTCacheMap.html#a2d8a4c593429354d3a442ba77173ed80" title="Default time-to-live duration.">m_uTTL</a>;     
+<a name="l00356"></a>00356 };
+<a name="l00357"></a>00357 
+<a name="l00358"></a>00358 <span class="preprocessor">#endif // !_UTILS_H</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -344,7 +345,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 15 2014 16:16:10 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Dec 21 2014 19:04:47 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

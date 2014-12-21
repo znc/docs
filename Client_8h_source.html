@@ -165,9 +165,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00082"></a><a class="code" href="classCClientAuth.html#a91598006a0f42c2b03fce70256655d3d">00082</a>         <a class="code" href="classCClient.html">CClient</a>* <a class="code" href="classCClientAuth.html#a91598006a0f42c2b03fce70256655d3d">m_pClient</a>;
 <a name="l00083"></a>00083 };
 <a name="l00084"></a>00084 
-<a name="l00085"></a><a class="code" href="classCClient.html">00085</a> <span class="keyword">class </span><a class="code" href="classCClient.html">CClient</a> : <span class="keyword">public</span> <a class="code" href="classCZNCSock.html">CZNCSock</a> {
+<a name="l00085"></a><a class="code" href="classCClient.html">00085</a> <span class="keyword">class </span><a class="code" href="classCClient.html">CClient</a> : <span class="keyword">public</span> <a class="code" href="classCIRCSocket.html" title="Base IRC socket for client&lt;-&gt;ZNC, and ZNC&lt;-&gt;server.">CIRCSocket</a> {
 <a name="l00086"></a>00086 <span class="keyword">public</span>:
-<a name="l00087"></a><a class="code" href="classCClient.html#a51f196439c3218b2dce8f7c6610dad14">00087</a>         <a class="code" href="classCClient.html#a51f196439c3218b2dce8f7c6610dad14">CClient</a>() : <a class="code" href="classCZNCSock.html">CZNCSock</a>() {
+<a name="l00087"></a><a class="code" href="classCClient.html#a51f196439c3218b2dce8f7c6610dad14">00087</a>         <a class="code" href="classCClient.html#a51f196439c3218b2dce8f7c6610dad14">CClient</a>() : <a class="code" href="classCIRCSocket.html" title="Base IRC socket for client&lt;-&gt;ZNC, and ZNC&lt;-&gt;server.">CIRCSocket</a>() {
 <a name="l00088"></a>00088                 <a class="code" href="classCClient.html#aa0b3a299915fec31fcef9a4e5f19f5cd">m_pUser</a> = NULL;
 <a name="l00089"></a>00089                 <a class="code" href="classCClient.html#a1146f9ac0d39c8d432ec0c2ec8725202">m_pNetwork</a> = NULL;
 <a name="l00090"></a>00090                 <a class="code" href="classCClient.html#a6586825382dd1a43746c454a9f41e43f">m_bGotPass</a> = <span class="keyword">false</span>;
@@ -296,7 +296,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Dec 16 2014 13:51:44 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Dec 21 2014 19:04:46 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

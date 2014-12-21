@@ -809,325 +809,340 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01134"></a>01134 
 <a name="l01135"></a>01135 <span class="preprocessor">#ifdef HAVE_ICU</span>
 <a name="l01136"></a>01136 <span class="preprocessor"></span>        <span class="keywordtype">void</span> SetEncoding( <span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sEncoding );
-<a name="l01137"></a>01137 <span class="preprocessor">#endif </span><span class="comment">/* HAVE_ICU */</span>
-<a name="l01138"></a>01138 
-<a name="l01139"></a>01139 <span class="keyword">private</span>:
-<a name="l01141"></a>01141         <a class="code" href="classCsock.html" title="Basic socket class.">Csock</a>( <span class="keyword">const</span> <a class="code" href="classCsock.html" title="Basic socket class.">Csock</a> &amp; cCopy ) : <a class="code" href="classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock">CSockCommon</a>() {}
-<a name="l01143"></a>01143         <span class="keywordtype">void</span> ShrinkSendBuff();
-<a name="l01144"></a>01144         <span class="keywordtype">void</span> IncBuffPos( <span class="keywordtype">size_t</span> uBytes );
-<a name="l01146"></a>01146 
-<a name="l01147"></a>01147         <span class="comment">// NOTE! if you add any new members, be sure to add them to Copy()</span>
-<a name="l01148"></a>01148         uint16_t        m_uPort;
-<a name="l01149"></a>01149         <a class="code" href="Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a>       m_iReadSock, m_iWriteSock;
-<a name="l01150"></a>01150         <span class="keywordtype">int</span>             m_iTimeout, m_iConnType, m_iMethod, m_iTcount, m_iMaxConns;
-<a name="l01151"></a>01151         <span class="keywordtype">bool</span>            m_bUseSSL, m_bIsConnected;
-<a name="l01152"></a>01152         <span class="keywordtype">bool</span>            m_bsslEstablished, m_bEnableReadLine, m_bPauseRead;
-<a name="l01153"></a>01153         <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a>       m_shostname, m_sbuffer, m_sSockName, m_sPemFile, m_sCipherType, m_sParentName;
-<a name="l01154"></a>01154         <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a>       m_sSend, m_sPemPass;
-<a name="l01155"></a>01155         ECloseType      m_eCloseType;
-<a name="l01156"></a>01156 
-<a name="l01157"></a>01157         <span class="comment">// initialized lazily</span>
-<a name="l01158"></a>01158         <span class="keyword">mutable</span> uint16_t        m_iRemotePort, m_iLocalPort;
-<a name="l01159"></a>01159         <span class="keyword">mutable</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a>       m_sLocalIP, m_sRemoteIP;
-<a name="l01160"></a>01160 
-<a name="l01161"></a>01161         uint64_t        m_iMaxMilliSeconds, m_iLastSendTime, m_iBytesRead, m_iBytesWritten, m_iStartTime;
-<a name="l01162"></a>01162         uint32_t        m_iMaxBytes, m_iMaxStoredBufferLength, m_iTimeoutType;
-<a name="l01163"></a>01163         <span class="keywordtype">size_t</span>          m_iLastSend, m_uSendBufferPos;
-<a name="l01164"></a>01164 
-<a name="l01165"></a>01165         <a class="code" href="classCSSockAddr.html" title="sockaddr wrapper.">CSSockAddr</a>      m_address, m_bindhost;
-<a name="l01166"></a>01166         <span class="keywordtype">bool</span>            m_bIsIPv6, m_bSkipConnect;
-<a name="l01167"></a>01167         time_t          m_iLastCheckTimeoutTime;
-<a name="l01168"></a>01168 
-<a name="l01169"></a>01169 <span class="preprocessor">#ifdef HAVE_LIBSSL</span>
-<a name="l01170"></a>01170 <span class="preprocessor"></span>        <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a>       m_sSSLBuffer;
-<a name="l01171"></a>01171         SSL     *               m_ssl;
-<a name="l01172"></a>01172         SSL_CTX *       m_ssl_ctx;
-<a name="l01173"></a>01173         uint32_t        m_iRequireClientCertFlags;
-<a name="l01174"></a>01174         u_int           m_uDisableProtocols;
-<a name="l01175"></a>01175         <span class="keywordtype">bool</span>            m_bNoSSLCompression;
-<a name="l01176"></a>01176 
-<a name="l01177"></a>01177         <a class="code" href="Csocket_8h.html#aa5463d49fb8abd380d534f606e69f6d4">FPCertVerifyCB</a>          m_pCerVerifyCB;
-<a name="l01178"></a>01178 
-<a name="l01179"></a>01179         <span class="keywordtype">void</span> FREE_SSL();
-<a name="l01180"></a>01180         <span class="keywordtype">void</span> FREE_CTX();
-<a name="l01181"></a>01181         <span class="keywordtype">bool</span> ConfigureCTXOptions( SSL_CTX * pCTX );
-<a name="l01182"></a>01182 
-<a name="l01183"></a>01183 <span class="preprocessor">#endif </span><span class="comment">/* HAVE_LIBSSL */</span>
-<a name="l01184"></a>01184 
-<a name="l01186"></a>01186         <a class="code" href="Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a> CreateSocket( <span class="keywordtype">bool</span> bListen = <span class="keyword">false</span> );
-<a name="l01187"></a>01187         <span class="keywordtype">void</span> Init( <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; sHostname, uint16_t uPort, <span class="keywordtype">int</span> iTimeout = 60 );
-<a name="l01188"></a>01188 
-<a name="l01189"></a>01189         <span class="comment">// Connection State Info</span>
-<a name="l01190"></a>01190         ECONState               m_eConState;
-<a name="l01191"></a>01191         <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a>               m_sBindHost;
-<a name="l01192"></a>01192         uint32_t                m_iCurBindCount, m_iDNSTryCount;
-<a name="l01193"></a>01193 <span class="preprocessor">#ifdef HAVE_C_ARES</span>
-<a name="l01194"></a>01194 <span class="preprocessor"></span>        <span class="keywordtype">void</span> FreeAres();
-<a name="l01195"></a>01195         ares_channel    m_pARESChannel;
-<a name="l01196"></a>01196         <a class="code" href="classCSSockAddr.html" title="sockaddr wrapper.">CSSockAddr</a>      *       m_pCurrAddr;
-<a name="l01197"></a>01197         <span class="keywordtype">int</span>                             m_iARESStatus;
-<a name="l01198"></a>01198 <span class="preprocessor">#endif </span><span class="comment">/* HAVE_C_ARES */</span>
-<a name="l01199"></a>01199 
-<a name="l01200"></a>01200 <span class="preprocessor">#ifdef HAVE_ICU</span>
-<a name="l01201"></a>01201 <span class="preprocessor"></span>        icu::LocalUConverterPointer m_cnvInt, m_cnvIntStrict, m_cnvExt;
-<a name="l01202"></a>01202         <span class="keywordtype">bool</span> m_cnvTryUTF8;
-<a name="l01203"></a>01203 <span class="preprocessor">#endif</span>
-<a name="l01204"></a>01204 <span class="preprocessor"></span>};
-<a name="l01205"></a>01205 
-<a name="l01210"></a><a class="code" href="classCSConnection.html">01210</a> <span class="keyword">class </span><a class="code" href="Csocket_8h.html#a912dbe0f0d3074e2d17b36975950c0de">CS_EXPORT</a> <a class="code" href="classCSConnection.html" title="options for creating a connection">CSConnection</a>
-<a name="l01211"></a>01211 {
-<a name="l01212"></a>01212 <span class="keyword">public</span>:
-<a name="l01218"></a><a class="code" href="classCSConnection.html#a0a827d3ff246854bf12aa0438516cb41">01218</a>         <a class="code" href="classCSConnection.html" title="options for creating a connection">CSConnection</a>( <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; sHostname, uint16_t iPort, <span class="keywordtype">int</span> iTimeout = 60 )
-<a name="l01219"></a>01219         {
-<a name="l01220"></a>01220                 m_sHostname = sHostname;
-<a name="l01221"></a>01221                 m_iPort = iPort;
-<a name="l01222"></a>01222                 m_iTimeout = iTimeout;
-<a name="l01223"></a>01223                 m_bIsSSL = <span class="keyword">false</span>;
-<a name="l01224"></a>01224 <span class="preprocessor">#ifdef HAVE_LIBSSL</span>
-<a name="l01225"></a>01225 <span class="preprocessor"></span>                m_sCipher = <span class="stringliteral">&quot;HIGH&quot;</span>;
-<a name="l01226"></a>01226 <span class="preprocessor">#endif </span><span class="comment">/* HAVE_LIBSSL */</span>
-<a name="l01227"></a>01227                 m_iAFrequire = <a class="code" href="classCSSockAddr.html#a654fe72219cf1937bef2b7ec2949a23ba311799fb539b26d56eacc1b74ba2ebb9">CSSockAddr::RAF_ANY</a>;
-<a name="l01228"></a>01228         }
-<a name="l01229"></a><a class="code" href="classCSConnection.html#ab393d80056ab3c7b4742c1bb62e31784">01229</a>         <span class="keyword">virtual</span> <a class="code" href="classCSConnection.html#ab393d80056ab3c7b4742c1bb62e31784">~CSConnection</a>() {}
-<a name="l01230"></a>01230 
-<a name="l01231"></a><a class="code" href="classCSConnection.html#aaeb7ed8d27cf87b1fc8f9203eb656967">01231</a>         <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; <a class="code" href="classCSConnection.html#aaeb7ed8d27cf87b1fc8f9203eb656967">GetHostname</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span>( m_sHostname ); }
-<a name="l01232"></a><a class="code" href="classCSConnection.html#accd03dd93a76f0327189a7f4c857e91b">01232</a>         <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; <a class="code" href="classCSConnection.html#accd03dd93a76f0327189a7f4c857e91b">GetSockName</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span>( m_sSockName ); }
-<a name="l01233"></a><a class="code" href="classCSConnection.html#a6d423b0df2d39d0ff5d55bad820b83c9">01233</a>         <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; <a class="code" href="classCSConnection.html#a6d423b0df2d39d0ff5d55bad820b83c9">GetBindHost</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span>( m_sBindHost ); }
-<a name="l01234"></a><a class="code" href="classCSConnection.html#ab96f866efb62076158aa27a84e075bc0">01234</a>         uint16_t <a class="code" href="classCSConnection.html#ab96f866efb62076158aa27a84e075bc0">GetPort</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span>( m_iPort ); }
-<a name="l01235"></a><a class="code" href="classCSConnection.html#a2f92f6ee1dd4620691fd46e409db26dd">01235</a>         <span class="keywordtype">int</span> <a class="code" href="classCSConnection.html#a2f92f6ee1dd4620691fd46e409db26dd">GetTimeout</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span>( m_iTimeout ); }
-<a name="l01236"></a><a class="code" href="classCSConnection.html#ac4964a0add41edda97656d4901355e83">01236</a>         <span class="keywordtype">bool</span> <a class="code" href="classCSConnection.html#ac4964a0add41edda97656d4901355e83">GetIsSSL</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span>( m_bIsSSL ); }
-<a name="l01237"></a><a class="code" href="classCSConnection.html#a9e6692c199aeff3f7854efe9c0754091">01237</a>         <a class="code" href="classCSSockAddr.html#a654fe72219cf1937bef2b7ec2949a23b">CSSockAddr::EAFRequire</a> <a class="code" href="classCSConnection.html#a9e6692c199aeff3f7854efe9c0754091">GetAFRequire</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span>( m_iAFrequire ); }
-<a name="l01238"></a>01238 
+<a name="l01137"></a>01137         <span class="keyword">virtual</span> <span class="keywordtype">void</span> IcuExtToUCallback(
+<a name="l01138"></a>01138                 UConverterToUnicodeArgs* toArgs,
+<a name="l01139"></a>01139                 <span class="keyword">const</span> <span class="keywordtype">char</span>* codeUnits,
+<a name="l01140"></a>01140                 int32_t length,
+<a name="l01141"></a>01141                 UConverterCallbackReason reason,
+<a name="l01142"></a>01142                 UErrorCode* err );
+<a name="l01143"></a>01143         <span class="keyword">virtual</span> <span class="keywordtype">void</span> IcuExtFromUCallback(
+<a name="l01144"></a>01144                 UConverterFromUnicodeArgs* fromArgs,
+<a name="l01145"></a>01145                 <span class="keyword">const</span> UChar* codeUnits,
+<a name="l01146"></a>01146                 int32_t length,
+<a name="l01147"></a>01147                 UChar32 codePoint,
+<a name="l01148"></a>01148                 UConverterCallbackReason reason,
+<a name="l01149"></a>01149                 UErrorCode* err );
+<a name="l01150"></a>01150 <span class="preprocessor">#endif </span><span class="comment">/* HAVE_ICU */</span>
+<a name="l01151"></a>01151 
+<a name="l01152"></a>01152 <span class="keyword">private</span>:
+<a name="l01154"></a>01154         <a class="code" href="classCsock.html" title="Basic socket class.">Csock</a>( <span class="keyword">const</span> <a class="code" href="classCsock.html" title="Basic socket class.">Csock</a> &amp; cCopy ) : <a class="code" href="classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock">CSockCommon</a>() {}
+<a name="l01156"></a>01156         <span class="keywordtype">void</span> ShrinkSendBuff();
+<a name="l01157"></a>01157         <span class="keywordtype">void</span> IncBuffPos( <span class="keywordtype">size_t</span> uBytes );
+<a name="l01159"></a>01159 
+<a name="l01160"></a>01160         <span class="comment">// NOTE! if you add any new members, be sure to add them to Copy()</span>
+<a name="l01161"></a>01161         uint16_t        m_uPort;
+<a name="l01162"></a>01162         <a class="code" href="Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a>       m_iReadSock, m_iWriteSock;
+<a name="l01163"></a>01163         <span class="keywordtype">int</span>             m_iTimeout, m_iConnType, m_iMethod, m_iTcount, m_iMaxConns;
+<a name="l01164"></a>01164         <span class="keywordtype">bool</span>            m_bUseSSL, m_bIsConnected;
+<a name="l01165"></a>01165         <span class="keywordtype">bool</span>            m_bsslEstablished, m_bEnableReadLine, m_bPauseRead;
+<a name="l01166"></a>01166         <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a>       m_shostname, m_sbuffer, m_sSockName, m_sPemFile, m_sCipherType, m_sParentName;
+<a name="l01167"></a>01167         <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a>       m_sSend, m_sPemPass;
+<a name="l01168"></a>01168         ECloseType      m_eCloseType;
+<a name="l01169"></a>01169 
+<a name="l01170"></a>01170         <span class="comment">// initialized lazily</span>
+<a name="l01171"></a>01171         <span class="keyword">mutable</span> uint16_t        m_iRemotePort, m_iLocalPort;
+<a name="l01172"></a>01172         <span class="keyword">mutable</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a>       m_sLocalIP, m_sRemoteIP;
+<a name="l01173"></a>01173 
+<a name="l01174"></a>01174         uint64_t        m_iMaxMilliSeconds, m_iLastSendTime, m_iBytesRead, m_iBytesWritten, m_iStartTime;
+<a name="l01175"></a>01175         uint32_t        m_iMaxBytes, m_iMaxStoredBufferLength, m_iTimeoutType;
+<a name="l01176"></a>01176         <span class="keywordtype">size_t</span>          m_iLastSend, m_uSendBufferPos;
+<a name="l01177"></a>01177 
+<a name="l01178"></a>01178         <a class="code" href="classCSSockAddr.html" title="sockaddr wrapper.">CSSockAddr</a>      m_address, m_bindhost;
+<a name="l01179"></a>01179         <span class="keywordtype">bool</span>            m_bIsIPv6, m_bSkipConnect;
+<a name="l01180"></a>01180         time_t          m_iLastCheckTimeoutTime;
+<a name="l01181"></a>01181 
+<a name="l01182"></a>01182 <span class="preprocessor">#ifdef HAVE_LIBSSL</span>
+<a name="l01183"></a>01183 <span class="preprocessor"></span>        <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a>       m_sSSLBuffer;
+<a name="l01184"></a>01184         SSL     *               m_ssl;
+<a name="l01185"></a>01185         SSL_CTX *       m_ssl_ctx;
+<a name="l01186"></a>01186         uint32_t        m_iRequireClientCertFlags;
+<a name="l01187"></a>01187         u_int           m_uDisableProtocols;
+<a name="l01188"></a>01188         <span class="keywordtype">bool</span>            m_bNoSSLCompression;
+<a name="l01189"></a>01189 
+<a name="l01190"></a>01190         <a class="code" href="Csocket_8h.html#aa5463d49fb8abd380d534f606e69f6d4">FPCertVerifyCB</a>          m_pCerVerifyCB;
+<a name="l01191"></a>01191 
+<a name="l01192"></a>01192         <span class="keywordtype">void</span> FREE_SSL();
+<a name="l01193"></a>01193         <span class="keywordtype">void</span> FREE_CTX();
+<a name="l01194"></a>01194         <span class="keywordtype">bool</span> ConfigureCTXOptions( SSL_CTX * pCTX );
+<a name="l01195"></a>01195 
+<a name="l01196"></a>01196 <span class="preprocessor">#endif </span><span class="comment">/* HAVE_LIBSSL */</span>
+<a name="l01197"></a>01197 
+<a name="l01199"></a>01199         <a class="code" href="Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a> CreateSocket( <span class="keywordtype">bool</span> bListen = <span class="keyword">false</span> );
+<a name="l01200"></a>01200         <span class="keywordtype">void</span> Init( <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; sHostname, uint16_t uPort, <span class="keywordtype">int</span> iTimeout = 60 );
+<a name="l01201"></a>01201 
+<a name="l01202"></a>01202         <span class="comment">// Connection State Info</span>
+<a name="l01203"></a>01203         ECONState               m_eConState;
+<a name="l01204"></a>01204         <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a>               m_sBindHost;
+<a name="l01205"></a>01205         uint32_t                m_iCurBindCount, m_iDNSTryCount;
+<a name="l01206"></a>01206 <span class="preprocessor">#ifdef HAVE_C_ARES</span>
+<a name="l01207"></a>01207 <span class="preprocessor"></span>        <span class="keywordtype">void</span> FreeAres();
+<a name="l01208"></a>01208         ares_channel    m_pARESChannel;
+<a name="l01209"></a>01209         <a class="code" href="classCSSockAddr.html" title="sockaddr wrapper.">CSSockAddr</a>      *       m_pCurrAddr;
+<a name="l01210"></a>01210         <span class="keywordtype">int</span>                             m_iARESStatus;
+<a name="l01211"></a>01211 <span class="preprocessor">#endif </span><span class="comment">/* HAVE_C_ARES */</span>
+<a name="l01212"></a>01212 
+<a name="l01213"></a>01213 <span class="preprocessor">#ifdef HAVE_ICU</span>
+<a name="l01214"></a>01214 <span class="preprocessor"></span>        icu::LocalUConverterPointer m_cnvInt, m_cnvIntStrict, m_cnvExt;
+<a name="l01215"></a>01215         <span class="keywordtype">bool</span> m_cnvTryUTF8;
+<a name="l01216"></a>01216         <span class="keywordtype">bool</span> m_cnvSendUTF8;
+<a name="l01217"></a>01217         <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> m_sEncoding;
+<a name="l01218"></a>01218 <span class="preprocessor">#endif</span>
+<a name="l01219"></a>01219 <span class="preprocessor"></span>};
+<a name="l01220"></a>01220 
+<a name="l01225"></a><a class="code" href="classCSConnection.html">01225</a> <span class="keyword">class </span><a class="code" href="Csocket_8h.html#a912dbe0f0d3074e2d17b36975950c0de">CS_EXPORT</a> <a class="code" href="classCSConnection.html" title="options for creating a connection">CSConnection</a>
+<a name="l01226"></a>01226 {
+<a name="l01227"></a>01227 <span class="keyword">public</span>:
+<a name="l01233"></a><a class="code" href="classCSConnection.html#a0a827d3ff246854bf12aa0438516cb41">01233</a>         <a class="code" href="classCSConnection.html" title="options for creating a connection">CSConnection</a>( <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; sHostname, uint16_t iPort, <span class="keywordtype">int</span> iTimeout = 60 )
+<a name="l01234"></a>01234         {
+<a name="l01235"></a>01235                 m_sHostname = sHostname;
+<a name="l01236"></a>01236                 m_iPort = iPort;
+<a name="l01237"></a>01237                 m_iTimeout = iTimeout;
+<a name="l01238"></a>01238                 m_bIsSSL = <span class="keyword">false</span>;
 <a name="l01239"></a>01239 <span class="preprocessor">#ifdef HAVE_LIBSSL</span>
-<a name="l01240"></a><a class="code" href="classCSConnection.html#a94b73247086270876017dfba6c1d7d8e">01240</a> <span class="preprocessor"></span>        <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; <a class="code" href="classCSConnection.html#a94b73247086270876017dfba6c1d7d8e">GetCipher</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span>( m_sCipher ); }
-<a name="l01241"></a><a class="code" href="classCSConnection.html#a48c11084a62617b40754e9f6804fd144">01241</a>         <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; <a class="code" href="classCSConnection.html#a48c11084a62617b40754e9f6804fd144">GetPemLocation</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span>( m_sPemLocation ); }
-<a name="l01242"></a><a class="code" href="classCSConnection.html#afb2be15380370a1a1812aeb346a500b8">01242</a>         <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; <a class="code" href="classCSConnection.html#afb2be15380370a1a1812aeb346a500b8">GetPemPass</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span>( m_sPemPass ); }
-<a name="l01243"></a>01243 <span class="preprocessor">#endif </span><span class="comment">/* HAVE_LIBSSL */</span>
-<a name="l01244"></a>01244 
-<a name="l01246"></a><a class="code" href="classCSConnection.html#a0eba5a53292c9db9941ac5e996a432c0">01246</a>         <span class="keywordtype">void</span> <a class="code" href="classCSConnection.html#a0eba5a53292c9db9941ac5e996a432c0" title="sets the hostname to connect to">SetHostname</a>( <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; s ) { m_sHostname = s; }
-<a name="l01248"></a><a class="code" href="classCSConnection.html#abc96c66cd6f18f5cbbb21eb429958551">01248</a>         <span class="keywordtype">void</span> <a class="code" href="classCSConnection.html#abc96c66cd6f18f5cbbb21eb429958551" title="sets the name of the socket, used for reference, ie in FindSockByName()">SetSockName</a>( <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; s ) { m_sSockName = s; }
-<a name="l01250"></a><a class="code" href="classCSConnection.html#a06d3107829e900b00b06069b5eb3d676">01250</a>         <span class="keywordtype">void</span> <a class="code" href="classCSConnection.html#a06d3107829e900b00b06069b5eb3d676" title="sets the hostname to bind to (vhost support)">SetBindHost</a>( <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; s ) { m_sBindHost = s; }
-<a name="l01252"></a><a class="code" href="classCSConnection.html#aedb9c54bf961475cef2e30feac6b29e2">01252</a>         <span class="keywordtype">void</span> <a class="code" href="classCSConnection.html#aedb9c54bf961475cef2e30feac6b29e2" title="sets the port to connect to">SetPort</a>( uint16_t i ) { m_iPort = i; }
-<a name="l01254"></a><a class="code" href="classCSConnection.html#ae514d04ce08b24901381f89f75dffaab">01254</a>         <span class="keywordtype">void</span> <a class="code" href="classCSConnection.html#ae514d04ce08b24901381f89f75dffaab" title="sets the connection timeout">SetTimeout</a>( <span class="keywordtype">int</span> i ) { m_iTimeout = i; }
-<a name="l01256"></a><a class="code" href="classCSConnection.html#a1fa3c736224cc1eeb0800a53bc438e47">01256</a>         <span class="keywordtype">void</span> <a class="code" href="classCSConnection.html#a1fa3c736224cc1eeb0800a53bc438e47" title="set to true to enable SSL">SetIsSSL</a>( <span class="keywordtype">bool</span> b ) { m_bIsSSL = b; }
-<a name="l01258"></a><a class="code" href="classCSConnection.html#af661c59643c863360b40979ee4ba492f">01258</a>         <span class="keywordtype">void</span> <a class="code" href="classCSConnection.html#af661c59643c863360b40979ee4ba492f" title="sets the AF family type required">SetAFRequire</a>( <a class="code" href="classCSSockAddr.html#a654fe72219cf1937bef2b7ec2949a23b">CSSockAddr::EAFRequire</a> iAFRequire ) { m_iAFrequire = iAFRequire; }
+<a name="l01240"></a>01240 <span class="preprocessor"></span>                m_sCipher = <span class="stringliteral">&quot;HIGH&quot;</span>;
+<a name="l01241"></a>01241 <span class="preprocessor">#endif </span><span class="comment">/* HAVE_LIBSSL */</span>
+<a name="l01242"></a>01242                 m_iAFrequire = <a class="code" href="classCSSockAddr.html#a654fe72219cf1937bef2b7ec2949a23ba311799fb539b26d56eacc1b74ba2ebb9">CSSockAddr::RAF_ANY</a>;
+<a name="l01243"></a>01243         }
+<a name="l01244"></a><a class="code" href="classCSConnection.html#ab393d80056ab3c7b4742c1bb62e31784">01244</a>         <span class="keyword">virtual</span> <a class="code" href="classCSConnection.html#ab393d80056ab3c7b4742c1bb62e31784">~CSConnection</a>() {}
+<a name="l01245"></a>01245 
+<a name="l01246"></a><a class="code" href="classCSConnection.html#aaeb7ed8d27cf87b1fc8f9203eb656967">01246</a>         <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; <a class="code" href="classCSConnection.html#aaeb7ed8d27cf87b1fc8f9203eb656967">GetHostname</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span>( m_sHostname ); }
+<a name="l01247"></a><a class="code" href="classCSConnection.html#accd03dd93a76f0327189a7f4c857e91b">01247</a>         <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; <a class="code" href="classCSConnection.html#accd03dd93a76f0327189a7f4c857e91b">GetSockName</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span>( m_sSockName ); }
+<a name="l01248"></a><a class="code" href="classCSConnection.html#a6d423b0df2d39d0ff5d55bad820b83c9">01248</a>         <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; <a class="code" href="classCSConnection.html#a6d423b0df2d39d0ff5d55bad820b83c9">GetBindHost</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span>( m_sBindHost ); }
+<a name="l01249"></a><a class="code" href="classCSConnection.html#ab96f866efb62076158aa27a84e075bc0">01249</a>         uint16_t <a class="code" href="classCSConnection.html#ab96f866efb62076158aa27a84e075bc0">GetPort</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span>( m_iPort ); }
+<a name="l01250"></a><a class="code" href="classCSConnection.html#a2f92f6ee1dd4620691fd46e409db26dd">01250</a>         <span class="keywordtype">int</span> <a class="code" href="classCSConnection.html#a2f92f6ee1dd4620691fd46e409db26dd">GetTimeout</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span>( m_iTimeout ); }
+<a name="l01251"></a><a class="code" href="classCSConnection.html#ac4964a0add41edda97656d4901355e83">01251</a>         <span class="keywordtype">bool</span> <a class="code" href="classCSConnection.html#ac4964a0add41edda97656d4901355e83">GetIsSSL</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span>( m_bIsSSL ); }
+<a name="l01252"></a><a class="code" href="classCSConnection.html#a9e6692c199aeff3f7854efe9c0754091">01252</a>         <a class="code" href="classCSSockAddr.html#a654fe72219cf1937bef2b7ec2949a23b">CSSockAddr::EAFRequire</a> <a class="code" href="classCSConnection.html#a9e6692c199aeff3f7854efe9c0754091">GetAFRequire</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span>( m_iAFrequire ); }
+<a name="l01253"></a>01253 
+<a name="l01254"></a>01254 <span class="preprocessor">#ifdef HAVE_LIBSSL</span>
+<a name="l01255"></a><a class="code" href="classCSConnection.html#a94b73247086270876017dfba6c1d7d8e">01255</a> <span class="preprocessor"></span>        <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; <a class="code" href="classCSConnection.html#a94b73247086270876017dfba6c1d7d8e">GetCipher</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span>( m_sCipher ); }
+<a name="l01256"></a><a class="code" href="classCSConnection.html#a48c11084a62617b40754e9f6804fd144">01256</a>         <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; <a class="code" href="classCSConnection.html#a48c11084a62617b40754e9f6804fd144">GetPemLocation</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span>( m_sPemLocation ); }
+<a name="l01257"></a><a class="code" href="classCSConnection.html#afb2be15380370a1a1812aeb346a500b8">01257</a>         <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; <a class="code" href="classCSConnection.html#afb2be15380370a1a1812aeb346a500b8">GetPemPass</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span>( m_sPemPass ); }
+<a name="l01258"></a>01258 <span class="preprocessor">#endif </span><span class="comment">/* HAVE_LIBSSL */</span>
 <a name="l01259"></a>01259 
-<a name="l01260"></a>01260 <span class="preprocessor">#ifdef HAVE_LIBSSL</span>
-<a name="l01261"></a>01261 <span class="preprocessor"></span>
-<a name="l01262"></a><a class="code" href="classCSConnection.html#aed834abc8298d89bfe9aefc7384b62e9">01262</a>         <span class="keywordtype">void</span> <a class="code" href="classCSConnection.html#aed834abc8298d89bfe9aefc7384b62e9" title="set the cipher strength to use, default is HIGH">SetCipher</a>( <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; s ) { m_sCipher = s; }
-<a name="l01264"></a><a class="code" href="classCSConnection.html#a550c247722b9475b9667e0ad92479dd0">01264</a>         <span class="keywordtype">void</span> <a class="code" href="classCSConnection.html#a550c247722b9475b9667e0ad92479dd0" title="set the location of the pemfile">SetPemLocation</a>( <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; s ) { m_sPemLocation = s; }
-<a name="l01266"></a><a class="code" href="classCSConnection.html#a9a89d42e748c840e31d9bae37bb67565">01266</a>         <span class="keywordtype">void</span> <a class="code" href="classCSConnection.html#a9a89d42e748c840e31d9bae37bb67565" title="set the pemfile pass">SetPemPass</a>( <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; s ) { m_sPemPass = s; }
-<a name="l01267"></a>01267 <span class="preprocessor">#endif </span><span class="comment">/* HAVE_LIBSSL */</span>
-<a name="l01268"></a>01268 
-<a name="l01269"></a>01269 <span class="keyword">protected</span>:
-<a name="l01270"></a><a class="code" href="classCSConnection.html#a389f49c0a5045b40062140ec9395a2fc">01270</a>         <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a>       m_sHostname, <a class="code" href="classCSConnection.html#a389f49c0a5045b40062140ec9395a2fc">m_sSockName</a>, m_sBindHost;
-<a name="l01271"></a><a class="code" href="classCSConnection.html#a1ec5bce7072a2d44bac68cfe0b4805ba">01271</a>         uint16_t        <a class="code" href="classCSConnection.html#a1ec5bce7072a2d44bac68cfe0b4805ba">m_iPort</a>;
-<a name="l01272"></a><a class="code" href="classCSConnection.html#abc765a99ce278bce8c6a2acc3450141d">01272</a>         <span class="keywordtype">int</span>                     <a class="code" href="classCSConnection.html#abc765a99ce278bce8c6a2acc3450141d">m_iTimeout</a>;
-<a name="l01273"></a><a class="code" href="classCSConnection.html#a60f78eff0eb5318d143df37ac4db1a44">01273</a>         <span class="keywordtype">bool</span>            <a class="code" href="classCSConnection.html#a60f78eff0eb5318d143df37ac4db1a44">m_bIsSSL</a>;
-<a name="l01274"></a><a class="code" href="classCSConnection.html#af3bac41daaae65550eb1140c579976a2">01274</a>         <a class="code" href="classCSSockAddr.html#a654fe72219cf1937bef2b7ec2949a23b">CSSockAddr::EAFRequire</a>  <a class="code" href="classCSConnection.html#af3bac41daaae65550eb1140c579976a2">m_iAFrequire</a>;
+<a name="l01261"></a><a class="code" href="classCSConnection.html#a0eba5a53292c9db9941ac5e996a432c0">01261</a>         <span class="keywordtype">void</span> <a class="code" href="classCSConnection.html#a0eba5a53292c9db9941ac5e996a432c0" title="sets the hostname to connect to">SetHostname</a>( <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; s ) { m_sHostname = s; }
+<a name="l01263"></a><a class="code" href="classCSConnection.html#abc96c66cd6f18f5cbbb21eb429958551">01263</a>         <span class="keywordtype">void</span> <a class="code" href="classCSConnection.html#abc96c66cd6f18f5cbbb21eb429958551" title="sets the name of the socket, used for reference, ie in FindSockByName()">SetSockName</a>( <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; s ) { m_sSockName = s; }
+<a name="l01265"></a><a class="code" href="classCSConnection.html#a06d3107829e900b00b06069b5eb3d676">01265</a>         <span class="keywordtype">void</span> <a class="code" href="classCSConnection.html#a06d3107829e900b00b06069b5eb3d676" title="sets the hostname to bind to (vhost support)">SetBindHost</a>( <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; s ) { m_sBindHost = s; }
+<a name="l01267"></a><a class="code" href="classCSConnection.html#aedb9c54bf961475cef2e30feac6b29e2">01267</a>         <span class="keywordtype">void</span> <a class="code" href="classCSConnection.html#aedb9c54bf961475cef2e30feac6b29e2" title="sets the port to connect to">SetPort</a>( uint16_t i ) { m_iPort = i; }
+<a name="l01269"></a><a class="code" href="classCSConnection.html#ae514d04ce08b24901381f89f75dffaab">01269</a>         <span class="keywordtype">void</span> <a class="code" href="classCSConnection.html#ae514d04ce08b24901381f89f75dffaab" title="sets the connection timeout">SetTimeout</a>( <span class="keywordtype">int</span> i ) { m_iTimeout = i; }
+<a name="l01271"></a><a class="code" href="classCSConnection.html#a1fa3c736224cc1eeb0800a53bc438e47">01271</a>         <span class="keywordtype">void</span> <a class="code" href="classCSConnection.html#a1fa3c736224cc1eeb0800a53bc438e47" title="set to true to enable SSL">SetIsSSL</a>( <span class="keywordtype">bool</span> b ) { m_bIsSSL = b; }
+<a name="l01273"></a><a class="code" href="classCSConnection.html#af661c59643c863360b40979ee4ba492f">01273</a>         <span class="keywordtype">void</span> <a class="code" href="classCSConnection.html#af661c59643c863360b40979ee4ba492f" title="sets the AF family type required">SetAFRequire</a>( <a class="code" href="classCSSockAddr.html#a654fe72219cf1937bef2b7ec2949a23b">CSSockAddr::EAFRequire</a> iAFRequire ) { m_iAFrequire = iAFRequire; }
+<a name="l01274"></a>01274 
 <a name="l01275"></a>01275 <span class="preprocessor">#ifdef HAVE_LIBSSL</span>
-<a name="l01276"></a><a class="code" href="classCSConnection.html#ad89a92c62a4c58177d44673112444bfa">01276</a> <span class="preprocessor"></span>        <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a>       m_sPemLocation, <a class="code" href="classCSConnection.html#ad89a92c62a4c58177d44673112444bfa">m_sPemPass</a>, m_sCipher;
-<a name="l01277"></a>01277 <span class="preprocessor">#endif </span><span class="comment">/* HAVE_LIBSSL */</span>
-<a name="l01278"></a>01278 };
-<a name="l01279"></a>01279 
-<a name="l01280"></a><a class="code" href="classCSSSLConnection.html">01280</a> <span class="keyword">class </span><a class="code" href="Csocket_8h.html#a912dbe0f0d3074e2d17b36975950c0de">CS_EXPORT</a> <a class="code" href="classCSSSLConnection.html">CSSSLConnection</a> : <span class="keyword">public</span> <a class="code" href="classCSConnection.html" title="options for creating a connection">CSConnection</a>
-<a name="l01281"></a>01281 {
-<a name="l01282"></a>01282 <span class="keyword">public</span>:
-<a name="l01283"></a><a class="code" href="classCSSSLConnection.html#a68f0f1b4710a2fe61f55520d283199f5">01283</a>         <a class="code" href="classCSSSLConnection.html">CSSSLConnection</a>( <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; sHostname, uint16_t iPort, <span class="keywordtype">int</span> iTimeout = 60 ) :
-<a name="l01284"></a>01284                 <a class="code" href="classCSConnection.html" title="options for creating a connection">CSConnection</a>( sHostname, iPort, iTimeout )
-<a name="l01285"></a>01285         {
-<a name="l01286"></a>01286                 SetIsSSL( <span class="keyword">true</span> );
-<a name="l01287"></a>01287         }
-<a name="l01288"></a>01288 };
-<a name="l01289"></a>01289 
-<a name="l01290"></a>01290 
-<a name="l01295"></a><a class="code" href="classCSListener.html">01295</a> <span class="keyword">class </span><a class="code" href="Csocket_8h.html#a912dbe0f0d3074e2d17b36975950c0de">CS_EXPORT</a> <a class="code" href="classCSListener.html" title="options container to create a listener">CSListener</a>
+<a name="l01276"></a>01276 <span class="preprocessor"></span>
+<a name="l01277"></a><a class="code" href="classCSConnection.html#aed834abc8298d89bfe9aefc7384b62e9">01277</a>         <span class="keywordtype">void</span> <a class="code" href="classCSConnection.html#aed834abc8298d89bfe9aefc7384b62e9" title="set the cipher strength to use, default is HIGH">SetCipher</a>( <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; s ) { m_sCipher = s; }
+<a name="l01279"></a><a class="code" href="classCSConnection.html#a550c247722b9475b9667e0ad92479dd0">01279</a>         <span class="keywordtype">void</span> <a class="code" href="classCSConnection.html#a550c247722b9475b9667e0ad92479dd0" title="set the location of the pemfile">SetPemLocation</a>( <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; s ) { m_sPemLocation = s; }
+<a name="l01281"></a><a class="code" href="classCSConnection.html#a9a89d42e748c840e31d9bae37bb67565">01281</a>         <span class="keywordtype">void</span> <a class="code" href="classCSConnection.html#a9a89d42e748c840e31d9bae37bb67565" title="set the pemfile pass">SetPemPass</a>( <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; s ) { m_sPemPass = s; }
+<a name="l01282"></a>01282 <span class="preprocessor">#endif </span><span class="comment">/* HAVE_LIBSSL */</span>
+<a name="l01283"></a>01283 
+<a name="l01284"></a>01284 <span class="keyword">protected</span>:
+<a name="l01285"></a><a class="code" href="classCSConnection.html#a389f49c0a5045b40062140ec9395a2fc">01285</a>         <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a>       m_sHostname, <a class="code" href="classCSConnection.html#a389f49c0a5045b40062140ec9395a2fc">m_sSockName</a>, m_sBindHost;
+<a name="l01286"></a><a class="code" href="classCSConnection.html#a1ec5bce7072a2d44bac68cfe0b4805ba">01286</a>         uint16_t        <a class="code" href="classCSConnection.html#a1ec5bce7072a2d44bac68cfe0b4805ba">m_iPort</a>;
+<a name="l01287"></a><a class="code" href="classCSConnection.html#abc765a99ce278bce8c6a2acc3450141d">01287</a>         <span class="keywordtype">int</span>                     <a class="code" href="classCSConnection.html#abc765a99ce278bce8c6a2acc3450141d">m_iTimeout</a>;
+<a name="l01288"></a><a class="code" href="classCSConnection.html#a60f78eff0eb5318d143df37ac4db1a44">01288</a>         <span class="keywordtype">bool</span>            <a class="code" href="classCSConnection.html#a60f78eff0eb5318d143df37ac4db1a44">m_bIsSSL</a>;
+<a name="l01289"></a><a class="code" href="classCSConnection.html#af3bac41daaae65550eb1140c579976a2">01289</a>         <a class="code" href="classCSSockAddr.html#a654fe72219cf1937bef2b7ec2949a23b">CSSockAddr::EAFRequire</a>  <a class="code" href="classCSConnection.html#af3bac41daaae65550eb1140c579976a2">m_iAFrequire</a>;
+<a name="l01290"></a>01290 <span class="preprocessor">#ifdef HAVE_LIBSSL</span>
+<a name="l01291"></a><a class="code" href="classCSConnection.html#ad89a92c62a4c58177d44673112444bfa">01291</a> <span class="preprocessor"></span>        <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a>       m_sPemLocation, <a class="code" href="classCSConnection.html#ad89a92c62a4c58177d44673112444bfa">m_sPemPass</a>, m_sCipher;
+<a name="l01292"></a>01292 <span class="preprocessor">#endif </span><span class="comment">/* HAVE_LIBSSL */</span>
+<a name="l01293"></a>01293 };
+<a name="l01294"></a>01294 
+<a name="l01295"></a><a class="code" href="classCSSSLConnection.html">01295</a> <span class="keyword">class </span><a class="code" href="Csocket_8h.html#a912dbe0f0d3074e2d17b36975950c0de">CS_EXPORT</a> <a class="code" href="classCSSSLConnection.html">CSSSLConnection</a> : <span class="keyword">public</span> <a class="code" href="classCSConnection.html" title="options for creating a connection">CSConnection</a>
 <a name="l01296"></a>01296 {
 <a name="l01297"></a>01297 <span class="keyword">public</span>:
-<a name="l01303"></a><a class="code" href="classCSListener.html#ac81da6c83c9a6f75676be39f4f619998">01303</a>         <a class="code" href="classCSListener.html" title="options container to create a listener">CSListener</a>( uint16_t iPort, <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; sBindHost = <span class="stringliteral">&quot;&quot;</span>, <span class="keywordtype">bool</span> bDetach = <span class="keyword">false</span> )
-<a name="l01304"></a>01304         {
-<a name="l01305"></a>01305                 m_iPort = iPort;
-<a name="l01306"></a>01306                 m_sBindHost = sBindHost;
-<a name="l01307"></a>01307                 m_bIsSSL = <span class="keyword">false</span>;
-<a name="l01308"></a>01308                 m_iMaxConns = SOMAXCONN;
-<a name="l01309"></a>01309                 m_iTimeout = 0;
-<a name="l01310"></a>01310                 m_iAFrequire = <a class="code" href="classCSSockAddr.html#a654fe72219cf1937bef2b7ec2949a23ba311799fb539b26d56eacc1b74ba2ebb9">CSSockAddr::RAF_ANY</a>;
-<a name="l01311"></a>01311                 m_bDetach = bDetach;
-<a name="l01312"></a>01312 <span class="preprocessor">#ifdef HAVE_LIBSSL</span>
-<a name="l01313"></a>01313 <span class="preprocessor"></span>                m_sCipher = <span class="stringliteral">&quot;HIGH&quot;</span>;
-<a name="l01314"></a>01314                 m_iRequireCertFlags = 0;
-<a name="l01315"></a>01315 <span class="preprocessor">#endif </span><span class="comment">/* HAVE_LIBSSL */</span>
-<a name="l01316"></a>01316         }
-<a name="l01317"></a><a class="code" href="classCSListener.html#a63bd34c9aac6e4f936a21dff54e19c03">01317</a>         <span class="keyword">virtual</span> <a class="code" href="classCSListener.html#a63bd34c9aac6e4f936a21dff54e19c03">~CSListener</a>() {}
-<a name="l01318"></a>01318 
-<a name="l01319"></a><a class="code" href="classCSListener.html#ab3e02d981b16085376e5bc1f850b2c69">01319</a>         <span class="keywordtype">void</span> <a class="code" href="classCSListener.html#ab3e02d981b16085376e5bc1f850b2c69">SetDetach</a>( <span class="keywordtype">bool</span> b ) { m_bDetach = b; }
-<a name="l01320"></a><a class="code" href="classCSListener.html#a505f7f22d13585680add6432434ed4cf">01320</a>         <span class="keywordtype">bool</span> <a class="code" href="classCSListener.html#a505f7f22d13585680add6432434ed4cf">GetDetach</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span>( m_bDetach ); }
-<a name="l01321"></a><a class="code" href="classCSListener.html#ac3da5fbe069d335837fb6ce6d1c16379">01321</a>         uint16_t <a class="code" href="classCSListener.html#ac3da5fbe069d335837fb6ce6d1c16379">GetPort</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span>( m_iPort ); }
-<a name="l01322"></a><a class="code" href="classCSListener.html#a29b6551371de3f8236c735454ae6fb2f">01322</a>         <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; <a class="code" href="classCSListener.html#a29b6551371de3f8236c735454ae6fb2f">GetSockName</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span>( m_sSockName ); }
-<a name="l01323"></a><a class="code" href="classCSListener.html#a5a16e3ed0ba43cb3555de74b6732cb24">01323</a>         <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; <a class="code" href="classCSListener.html#a5a16e3ed0ba43cb3555de74b6732cb24">GetBindHost</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span>( m_sBindHost ); }
-<a name="l01324"></a><a class="code" href="classCSListener.html#adea9f2623c03262b02f5303e3d7bc424">01324</a>         <span class="keywordtype">bool</span> <a class="code" href="classCSListener.html#adea9f2623c03262b02f5303e3d7bc424">GetIsSSL</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span>( m_bIsSSL ); }
-<a name="l01325"></a><a class="code" href="classCSListener.html#aefb3a16070cc63bed365ba825cbb56aa">01325</a>         <span class="keywordtype">int</span> <a class="code" href="classCSListener.html#aefb3a16070cc63bed365ba825cbb56aa">GetMaxConns</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span>( m_iMaxConns ); }
-<a name="l01326"></a><a class="code" href="classCSListener.html#aea693136b86187149b2e5627a5262600">01326</a>         uint32_t <a class="code" href="classCSListener.html#aea693136b86187149b2e5627a5262600">GetTimeout</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span>( m_iTimeout ); }
-<a name="l01327"></a><a class="code" href="classCSListener.html#a70d29f3ba072289966e19fea6e600d04">01327</a>         <a class="code" href="classCSSockAddr.html#a654fe72219cf1937bef2b7ec2949a23b">CSSockAddr::EAFRequire</a> <a class="code" href="classCSListener.html#a70d29f3ba072289966e19fea6e600d04">GetAFRequire</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span>( m_iAFrequire ); }
-<a name="l01328"></a>01328 <span class="preprocessor">#ifdef HAVE_LIBSSL</span>
-<a name="l01329"></a><a class="code" href="classCSListener.html#a520fc1af5a57807763c549972d10a924">01329</a> <span class="preprocessor"></span>        <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; <a class="code" href="classCSListener.html#a520fc1af5a57807763c549972d10a924">GetCipher</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span>( m_sCipher ); }
-<a name="l01330"></a><a class="code" href="classCSListener.html#aab2f54279cc773d44ca05830a560ba1e">01330</a>         <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; <a class="code" href="classCSListener.html#aab2f54279cc773d44ca05830a560ba1e">GetPemLocation</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span>( m_sPemLocation ); }
-<a name="l01331"></a><a class="code" href="classCSListener.html#a80e4dd235423adba22f1bb9b7d0314d3">01331</a>         <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; <a class="code" href="classCSListener.html#a80e4dd235423adba22f1bb9b7d0314d3">GetPemPass</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span>( m_sPemPass ); }
-<a name="l01332"></a><a class="code" href="classCSListener.html#aaffb846097a1c734a808e7b246e1afdb">01332</a>         uint32_t <a class="code" href="classCSListener.html#aaffb846097a1c734a808e7b246e1afdb">GetRequireClientCertFlags</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span>( m_iRequireCertFlags ); }
-<a name="l01333"></a>01333 <span class="preprocessor">#endif </span><span class="comment">/* HAVE_LIBSSL */</span>
-<a name="l01334"></a>01334 
-<a name="l01336"></a><a class="code" href="classCSListener.html#afae86e364a5e977809066bbdfe72b41b">01336</a>         <span class="keywordtype">void</span> <a class="code" href="classCSListener.html#afae86e364a5e977809066bbdfe72b41b" title="sets the port to listen on. Set to 0 to listen on a random port">SetPort</a>( uint16_t iPort ) { m_iPort = iPort; }
-<a name="l01338"></a><a class="code" href="classCSListener.html#a4b0d90b04bc82e0fdc02aa90b09f5616">01338</a>         <span class="keywordtype">void</span> <a class="code" href="classCSListener.html#a4b0d90b04bc82e0fdc02aa90b09f5616" title="sets the sock name for later reference (ie FindSockByName)">SetSockName</a>( <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; sSockName ) { m_sSockName = sSockName; }
-<a name="l01340"></a><a class="code" href="classCSListener.html#a674ea3cbdd7861c212d7be3ff402ed65">01340</a>         <span class="keywordtype">void</span> <a class="code" href="classCSListener.html#a674ea3cbdd7861c212d7be3ff402ed65" title="sets the host to bind to">SetBindHost</a>( <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; sBindHost ) { m_sBindHost = sBindHost; }
-<a name="l01342"></a><a class="code" href="classCSListener.html#ac9caabd842a11b1b5d0f35e7c2f7d8a8">01342</a>         <span class="keywordtype">void</span> <a class="code" href="classCSListener.html#ac9caabd842a11b1b5d0f35e7c2f7d8a8" title="set to true to enable SSL">SetIsSSL</a>( <span class="keywordtype">bool</span> b ) { m_bIsSSL = b; }
-<a name="l01344"></a><a class="code" href="classCSListener.html#ae16cfb0a44cb7e9667199be05a3be21b">01344</a>         <span class="keywordtype">void</span> <a class="code" href="classCSListener.html#ae16cfb0a44cb7e9667199be05a3be21b" title="set max connections as called by accept()">SetMaxConns</a>( <span class="keywordtype">int</span> i ) { m_iMaxConns = i; }
-<a name="l01346"></a><a class="code" href="classCSListener.html#a4bbf5197ef59e071e8f2ce463718717c">01346</a>         <span class="keywordtype">void</span> <a class="code" href="classCSListener.html#a4bbf5197ef59e071e8f2ce463718717c" title="sets the listen timeout. The listener class will close after timeout has been reached if not 0...">SetTimeout</a>( uint32_t i ) { m_iTimeout = i; }
-<a name="l01348"></a><a class="code" href="classCSListener.html#a054f637aded4cb97fdfa38789c835ae7">01348</a>         <span class="keywordtype">void</span> <a class="code" href="classCSListener.html#a054f637aded4cb97fdfa38789c835ae7" title="sets the AF family type required">SetAFRequire</a>( <a class="code" href="classCSSockAddr.html#a654fe72219cf1937bef2b7ec2949a23b">CSSockAddr::EAFRequire</a> iAFRequire ) { m_iAFrequire = iAFRequire; }
+<a name="l01298"></a><a class="code" href="classCSSSLConnection.html#a68f0f1b4710a2fe61f55520d283199f5">01298</a>         <a class="code" href="classCSSSLConnection.html">CSSSLConnection</a>( <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; sHostname, uint16_t iPort, <span class="keywordtype">int</span> iTimeout = 60 ) :
+<a name="l01299"></a>01299                 <a class="code" href="classCSConnection.html" title="options for creating a connection">CSConnection</a>( sHostname, iPort, iTimeout )
+<a name="l01300"></a>01300         {
+<a name="l01301"></a>01301                 SetIsSSL( <span class="keyword">true</span> );
+<a name="l01302"></a>01302         }
+<a name="l01303"></a>01303 };
+<a name="l01304"></a>01304 
+<a name="l01305"></a>01305 
+<a name="l01310"></a><a class="code" href="classCSListener.html">01310</a> <span class="keyword">class </span><a class="code" href="Csocket_8h.html#a912dbe0f0d3074e2d17b36975950c0de">CS_EXPORT</a> <a class="code" href="classCSListener.html" title="options container to create a listener">CSListener</a>
+<a name="l01311"></a>01311 {
+<a name="l01312"></a>01312 <span class="keyword">public</span>:
+<a name="l01318"></a><a class="code" href="classCSListener.html#ac81da6c83c9a6f75676be39f4f619998">01318</a>         <a class="code" href="classCSListener.html" title="options container to create a listener">CSListener</a>( uint16_t iPort, <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; sBindHost = <span class="stringliteral">&quot;&quot;</span>, <span class="keywordtype">bool</span> bDetach = <span class="keyword">false</span> )
+<a name="l01319"></a>01319         {
+<a name="l01320"></a>01320                 m_iPort = iPort;
+<a name="l01321"></a>01321                 m_sBindHost = sBindHost;
+<a name="l01322"></a>01322                 m_bIsSSL = <span class="keyword">false</span>;
+<a name="l01323"></a>01323                 m_iMaxConns = SOMAXCONN;
+<a name="l01324"></a>01324                 m_iTimeout = 0;
+<a name="l01325"></a>01325                 m_iAFrequire = <a class="code" href="classCSSockAddr.html#a654fe72219cf1937bef2b7ec2949a23ba311799fb539b26d56eacc1b74ba2ebb9">CSSockAddr::RAF_ANY</a>;
+<a name="l01326"></a>01326                 m_bDetach = bDetach;
+<a name="l01327"></a>01327 <span class="preprocessor">#ifdef HAVE_LIBSSL</span>
+<a name="l01328"></a>01328 <span class="preprocessor"></span>                m_sCipher = <span class="stringliteral">&quot;HIGH&quot;</span>;
+<a name="l01329"></a>01329                 m_iRequireCertFlags = 0;
+<a name="l01330"></a>01330 <span class="preprocessor">#endif </span><span class="comment">/* HAVE_LIBSSL */</span>
+<a name="l01331"></a>01331         }
+<a name="l01332"></a><a class="code" href="classCSListener.html#a63bd34c9aac6e4f936a21dff54e19c03">01332</a>         <span class="keyword">virtual</span> <a class="code" href="classCSListener.html#a63bd34c9aac6e4f936a21dff54e19c03">~CSListener</a>() {}
+<a name="l01333"></a>01333 
+<a name="l01334"></a><a class="code" href="classCSListener.html#ab3e02d981b16085376e5bc1f850b2c69">01334</a>         <span class="keywordtype">void</span> <a class="code" href="classCSListener.html#ab3e02d981b16085376e5bc1f850b2c69">SetDetach</a>( <span class="keywordtype">bool</span> b ) { m_bDetach = b; }
+<a name="l01335"></a><a class="code" href="classCSListener.html#a505f7f22d13585680add6432434ed4cf">01335</a>         <span class="keywordtype">bool</span> <a class="code" href="classCSListener.html#a505f7f22d13585680add6432434ed4cf">GetDetach</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span>( m_bDetach ); }
+<a name="l01336"></a><a class="code" href="classCSListener.html#ac3da5fbe069d335837fb6ce6d1c16379">01336</a>         uint16_t <a class="code" href="classCSListener.html#ac3da5fbe069d335837fb6ce6d1c16379">GetPort</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span>( m_iPort ); }
+<a name="l01337"></a><a class="code" href="classCSListener.html#a29b6551371de3f8236c735454ae6fb2f">01337</a>         <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; <a class="code" href="classCSListener.html#a29b6551371de3f8236c735454ae6fb2f">GetSockName</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span>( m_sSockName ); }
+<a name="l01338"></a><a class="code" href="classCSListener.html#a5a16e3ed0ba43cb3555de74b6732cb24">01338</a>         <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; <a class="code" href="classCSListener.html#a5a16e3ed0ba43cb3555de74b6732cb24">GetBindHost</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span>( m_sBindHost ); }
+<a name="l01339"></a><a class="code" href="classCSListener.html#adea9f2623c03262b02f5303e3d7bc424">01339</a>         <span class="keywordtype">bool</span> <a class="code" href="classCSListener.html#adea9f2623c03262b02f5303e3d7bc424">GetIsSSL</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span>( m_bIsSSL ); }
+<a name="l01340"></a><a class="code" href="classCSListener.html#aefb3a16070cc63bed365ba825cbb56aa">01340</a>         <span class="keywordtype">int</span> <a class="code" href="classCSListener.html#aefb3a16070cc63bed365ba825cbb56aa">GetMaxConns</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span>( m_iMaxConns ); }
+<a name="l01341"></a><a class="code" href="classCSListener.html#aea693136b86187149b2e5627a5262600">01341</a>         uint32_t <a class="code" href="classCSListener.html#aea693136b86187149b2e5627a5262600">GetTimeout</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span>( m_iTimeout ); }
+<a name="l01342"></a><a class="code" href="classCSListener.html#a70d29f3ba072289966e19fea6e600d04">01342</a>         <a class="code" href="classCSSockAddr.html#a654fe72219cf1937bef2b7ec2949a23b">CSSockAddr::EAFRequire</a> <a class="code" href="classCSListener.html#a70d29f3ba072289966e19fea6e600d04">GetAFRequire</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span>( m_iAFrequire ); }
+<a name="l01343"></a>01343 <span class="preprocessor">#ifdef HAVE_LIBSSL</span>
+<a name="l01344"></a><a class="code" href="classCSListener.html#a520fc1af5a57807763c549972d10a924">01344</a> <span class="preprocessor"></span>        <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; <a class="code" href="classCSListener.html#a520fc1af5a57807763c549972d10a924">GetCipher</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span>( m_sCipher ); }
+<a name="l01345"></a><a class="code" href="classCSListener.html#aab2f54279cc773d44ca05830a560ba1e">01345</a>         <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; <a class="code" href="classCSListener.html#aab2f54279cc773d44ca05830a560ba1e">GetPemLocation</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span>( m_sPemLocation ); }
+<a name="l01346"></a><a class="code" href="classCSListener.html#a80e4dd235423adba22f1bb9b7d0314d3">01346</a>         <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; <a class="code" href="classCSListener.html#a80e4dd235423adba22f1bb9b7d0314d3">GetPemPass</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span>( m_sPemPass ); }
+<a name="l01347"></a><a class="code" href="classCSListener.html#aaffb846097a1c734a808e7b246e1afdb">01347</a>         uint32_t <a class="code" href="classCSListener.html#aaffb846097a1c734a808e7b246e1afdb">GetRequireClientCertFlags</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span>( m_iRequireCertFlags ); }
+<a name="l01348"></a>01348 <span class="preprocessor">#endif </span><span class="comment">/* HAVE_LIBSSL */</span>
 <a name="l01349"></a>01349 
-<a name="l01350"></a>01350 <span class="preprocessor">#ifdef HAVE_LIBSSL</span>
-<a name="l01351"></a>01351 <span class="preprocessor"></span>
-<a name="l01352"></a><a class="code" href="classCSListener.html#aaf0ff723d2b771126d2336a3227ea86b">01352</a>         <span class="keywordtype">void</span> <a class="code" href="classCSListener.html#aaf0ff723d2b771126d2336a3227ea86b" title="set the cipher strength to use, default is HIGH">SetCipher</a>( <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; s ) { m_sCipher = s; }
-<a name="l01354"></a><a class="code" href="classCSListener.html#ac5d4479845e91abba12d4c1a163581de">01354</a>         <span class="keywordtype">void</span> <a class="code" href="classCSListener.html#ac5d4479845e91abba12d4c1a163581de" title="set the location of the pemfile">SetPemLocation</a>( <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; s ) { m_sPemLocation = s; }
-<a name="l01356"></a><a class="code" href="classCSListener.html#a3ac08e7906501674a6063a1e277ca40d">01356</a>         <span class="keywordtype">void</span> <a class="code" href="classCSListener.html#a3ac08e7906501674a6063a1e277ca40d" title="set the pemfile pass">SetPemPass</a>( <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; s ) { m_sPemPass = s; }
-<a name="l01358"></a><a class="code" href="classCSListener.html#a09abd4e832845be87047e6714aad1725">01358</a>         <span class="keywordtype">void</span> <a class="code" href="classCSListener.html#a09abd4e832845be87047e6714aad1725" title="set to true if require a client certificate (deprecated">SetRequiresClientCert</a>( <span class="keywordtype">bool</span> b ) { m_iRequireCertFlags = ( b ? SSL_VERIFY_PEER|SSL_VERIFY_FAIL_IF_NO_PEER_CERT : 0 ); }
-<a name="l01360"></a><a class="code" href="classCSListener.html#aecdbbf2bb3a146ae5564d8f4391cb8f2">01360</a>         <span class="keywordtype">void</span> <a class="code" href="classCSListener.html#aecdbbf2bb3a146ae5564d8f4391cb8f2" title="bitwise flags, 0 means don&#39;t require cert, SSL_VERIFY_PEER verifies peers, SSL_VERIFY_FAIL_IF_NO_PEER...">SetRequireClientCertFlags</a>( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> iRequireCertFlags ) { m_iRequireCertFlags = iRequireCertFlags; }
-<a name="l01361"></a>01361 <span class="preprocessor">#endif </span><span class="comment">/* HAVE_LIBSSL */</span>
-<a name="l01362"></a>01362 <span class="keyword">private</span>:
-<a name="l01363"></a>01363         uint16_t        m_iPort;
-<a name="l01364"></a>01364         <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a>       m_sSockName, m_sBindHost;
-<a name="l01365"></a>01365         <span class="keywordtype">bool</span>            m_bIsSSL;
-<a name="l01366"></a>01366         <span class="keywordtype">bool</span>            m_bDetach;
-<a name="l01367"></a>01367         <span class="keywordtype">int</span>                     m_iMaxConns;
-<a name="l01368"></a>01368         uint32_t        m_iTimeout;
-<a name="l01369"></a>01369         <a class="code" href="classCSSockAddr.html#a654fe72219cf1937bef2b7ec2949a23b">CSSockAddr::EAFRequire</a>  m_iAFrequire;
-<a name="l01370"></a>01370 
-<a name="l01371"></a>01371 <span class="preprocessor">#ifdef HAVE_LIBSSL</span>
-<a name="l01372"></a>01372 <span class="preprocessor"></span>        <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a>       m_sPemLocation, m_sPemPass, m_sCipher;
-<a name="l01373"></a>01373         uint32_t                m_iRequireCertFlags;
-<a name="l01374"></a>01374 <span class="preprocessor">#endif </span><span class="comment">/* HAVE_LIBSSL */</span>
-<a name="l01375"></a>01375 };
-<a name="l01376"></a>01376 
-<a name="l01377"></a>01377 <span class="preprocessor">#ifdef HAVE_LIBSSL</span>
-<a name="l01378"></a><a class="code" href="classCSSSListener.html">01378</a> <span class="preprocessor"></span><span class="keyword">class </span><a class="code" href="classCSSSListener.html">CSSSListener</a> : <span class="keyword">public</span> <a class="code" href="classCSListener.html" title="options container to create a listener">CSListener</a>
-<a name="l01379"></a>01379 {
-<a name="l01380"></a>01380 <span class="keyword">public</span>:
-<a name="l01381"></a><a class="code" href="classCSSSListener.html#a38ebac95e16bb19c05eb92f6bdb88a2c">01381</a>         <a class="code" href="classCSSSListener.html">CSSSListener</a>( uint16_t iPort, <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; sBindHost = <span class="stringliteral">&quot;&quot;</span> ) :
-<a name="l01382"></a>01382                 <a class="code" href="classCSListener.html" title="options container to create a listener">CSListener</a>( iPort, sBindHost )
-<a name="l01383"></a>01383         {
-<a name="l01384"></a>01384                 SetIsSSL( <span class="keyword">true</span> );
-<a name="l01385"></a>01385         }
-<a name="l01386"></a>01386 };
-<a name="l01387"></a>01387 <span class="preprocessor">#endif </span><span class="comment">/* HAVE_LIBSSL */</span>
-<a name="l01388"></a>01388 
-<a name="l01410"></a><a class="code" href="classCSocketManager.html">01410</a> <span class="keyword">class </span><a class="code" href="Csocket_8h.html#a912dbe0f0d3074e2d17b36975950c0de">CS_EXPORT</a> <a class="code" href="classCSocketManager.html" title="Best class to use to interact with the sockets.">CSocketManager</a> : <span class="keyword">public</span> std::vector&lt;Csock *&gt;, <span class="keyword">public</span> <a class="code" href="classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock">CSockCommon</a>
-<a name="l01411"></a>01411 {
-<a name="l01412"></a>01412 <span class="keyword">public</span>:
-<a name="l01413"></a>01413         <a class="code" href="classCSocketManager.html" title="Best class to use to interact with the sockets.">CSocketManager</a>();
-<a name="l01414"></a>01414         <span class="keyword">virtual</span> ~<a class="code" href="classCSocketManager.html" title="Best class to use to interact with the sockets.">CSocketManager</a>();
-<a name="l01415"></a>01415         <span class="keyword">virtual</span> <span class="keywordtype">void</span> clear();
-<a name="l01416"></a>01416         <span class="keyword">virtual</span> <span class="keywordtype">void</span> Cleanup();
-<a name="l01417"></a>01417 
-<a name="l01418"></a>01418         <span class="keyword">virtual</span> <a class="code" href="classCsock.html" title="Basic socket class.">Csock</a> * GetSockObj( <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; sHostname, uint16_t uPort, <span class="keywordtype">int</span> iTimeout = 60 );
-<a name="l01419"></a>01419 
-<a name="l01420"></a><a class="code" href="classCSocketManager.html#af9564d9c13bf73ba8c05876a64342f4f">01420</a>         <span class="keyword">enum</span> <a class="code" href="classCSocketManager.html#af9564d9c13bf73ba8c05876a64342f4f">EMessages</a>
-<a name="l01421"></a>01421         {
-<a name="l01422"></a><a class="code" href="classCSocketManager.html#af9564d9c13bf73ba8c05876a64342f4fa76415033320dd9965093758d47fa2827">01422</a>             SUCCESS                     = 0,    
-<a name="l01423"></a><a class="code" href="classCSocketManager.html#af9564d9c13bf73ba8c05876a64342f4fa8c81a0c1798800dc3abe79972e48edfc">01423</a>             SELECT_ERROR        = -1,   
-<a name="l01424"></a><a class="code" href="classCSocketManager.html#af9564d9c13bf73ba8c05876a64342f4fa09e2a141ba44b6c32eeb745d64aca792">01424</a>             SELECT_TIMEOUT      = -2,   
-<a name="l01425"></a><a class="code" href="classCSocketManager.html#af9564d9c13bf73ba8c05876a64342f4fae96c30c395dab35e9fe5d15b95654a32">01425</a>             SELECT_TRYAGAIN     = -3    
-<a name="l01426"></a>01426         };
-<a name="l01427"></a>01427 
-<a name="l01433"></a>01433         <span class="keywordtype">void</span> Connect( <span class="keyword">const</span> <a class="code" href="classCSConnection.html" title="options for creating a connection">CSConnection</a> &amp; cCon, <a class="code" href="classCsock.html" title="Basic socket class.">Csock</a> * pcSock = NULL );
+<a name="l01351"></a><a class="code" href="classCSListener.html#afae86e364a5e977809066bbdfe72b41b">01351</a>         <span class="keywordtype">void</span> <a class="code" href="classCSListener.html#afae86e364a5e977809066bbdfe72b41b" title="sets the port to listen on. Set to 0 to listen on a random port">SetPort</a>( uint16_t iPort ) { m_iPort = iPort; }
+<a name="l01353"></a><a class="code" href="classCSListener.html#a4b0d90b04bc82e0fdc02aa90b09f5616">01353</a>         <span class="keywordtype">void</span> <a class="code" href="classCSListener.html#a4b0d90b04bc82e0fdc02aa90b09f5616" title="sets the sock name for later reference (ie FindSockByName)">SetSockName</a>( <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; sSockName ) { m_sSockName = sSockName; }
+<a name="l01355"></a><a class="code" href="classCSListener.html#a674ea3cbdd7861c212d7be3ff402ed65">01355</a>         <span class="keywordtype">void</span> <a class="code" href="classCSListener.html#a674ea3cbdd7861c212d7be3ff402ed65" title="sets the host to bind to">SetBindHost</a>( <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; sBindHost ) { m_sBindHost = sBindHost; }
+<a name="l01357"></a><a class="code" href="classCSListener.html#ac9caabd842a11b1b5d0f35e7c2f7d8a8">01357</a>         <span class="keywordtype">void</span> <a class="code" href="classCSListener.html#ac9caabd842a11b1b5d0f35e7c2f7d8a8" title="set to true to enable SSL">SetIsSSL</a>( <span class="keywordtype">bool</span> b ) { m_bIsSSL = b; }
+<a name="l01359"></a><a class="code" href="classCSListener.html#ae16cfb0a44cb7e9667199be05a3be21b">01359</a>         <span class="keywordtype">void</span> <a class="code" href="classCSListener.html#ae16cfb0a44cb7e9667199be05a3be21b" title="set max connections as called by accept()">SetMaxConns</a>( <span class="keywordtype">int</span> i ) { m_iMaxConns = i; }
+<a name="l01361"></a><a class="code" href="classCSListener.html#a4bbf5197ef59e071e8f2ce463718717c">01361</a>         <span class="keywordtype">void</span> <a class="code" href="classCSListener.html#a4bbf5197ef59e071e8f2ce463718717c" title="sets the listen timeout. The listener class will close after timeout has been reached if not 0...">SetTimeout</a>( uint32_t i ) { m_iTimeout = i; }
+<a name="l01363"></a><a class="code" href="classCSListener.html#a054f637aded4cb97fdfa38789c835ae7">01363</a>         <span class="keywordtype">void</span> <a class="code" href="classCSListener.html#a054f637aded4cb97fdfa38789c835ae7" title="sets the AF family type required">SetAFRequire</a>( <a class="code" href="classCSSockAddr.html#a654fe72219cf1937bef2b7ec2949a23b">CSSockAddr::EAFRequire</a> iAFRequire ) { m_iAFrequire = iAFRequire; }
+<a name="l01364"></a>01364 
+<a name="l01365"></a>01365 <span class="preprocessor">#ifdef HAVE_LIBSSL</span>
+<a name="l01366"></a>01366 <span class="preprocessor"></span>
+<a name="l01367"></a><a class="code" href="classCSListener.html#aaf0ff723d2b771126d2336a3227ea86b">01367</a>         <span class="keywordtype">void</span> <a class="code" href="classCSListener.html#aaf0ff723d2b771126d2336a3227ea86b" title="set the cipher strength to use, default is HIGH">SetCipher</a>( <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; s ) { m_sCipher = s; }
+<a name="l01369"></a><a class="code" href="classCSListener.html#ac5d4479845e91abba12d4c1a163581de">01369</a>         <span class="keywordtype">void</span> <a class="code" href="classCSListener.html#ac5d4479845e91abba12d4c1a163581de" title="set the location of the pemfile">SetPemLocation</a>( <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; s ) { m_sPemLocation = s; }
+<a name="l01371"></a><a class="code" href="classCSListener.html#a3ac08e7906501674a6063a1e277ca40d">01371</a>         <span class="keywordtype">void</span> <a class="code" href="classCSListener.html#a3ac08e7906501674a6063a1e277ca40d" title="set the pemfile pass">SetPemPass</a>( <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; s ) { m_sPemPass = s; }
+<a name="l01373"></a><a class="code" href="classCSListener.html#a09abd4e832845be87047e6714aad1725">01373</a>         <span class="keywordtype">void</span> <a class="code" href="classCSListener.html#a09abd4e832845be87047e6714aad1725" title="set to true if require a client certificate (deprecated">SetRequiresClientCert</a>( <span class="keywordtype">bool</span> b ) { m_iRequireCertFlags = ( b ? SSL_VERIFY_PEER|SSL_VERIFY_FAIL_IF_NO_PEER_CERT : 0 ); }
+<a name="l01375"></a><a class="code" href="classCSListener.html#aecdbbf2bb3a146ae5564d8f4391cb8f2">01375</a>         <span class="keywordtype">void</span> <a class="code" href="classCSListener.html#aecdbbf2bb3a146ae5564d8f4391cb8f2" title="bitwise flags, 0 means don&#39;t require cert, SSL_VERIFY_PEER verifies peers, SSL_VERIFY_FAIL_IF_NO_PEER...">SetRequireClientCertFlags</a>( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> iRequireCertFlags ) { m_iRequireCertFlags = iRequireCertFlags; }
+<a name="l01376"></a>01376 <span class="preprocessor">#endif </span><span class="comment">/* HAVE_LIBSSL */</span>
+<a name="l01377"></a>01377 <span class="keyword">private</span>:
+<a name="l01378"></a>01378         uint16_t        m_iPort;
+<a name="l01379"></a>01379         <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a>       m_sSockName, m_sBindHost;
+<a name="l01380"></a>01380         <span class="keywordtype">bool</span>            m_bIsSSL;
+<a name="l01381"></a>01381         <span class="keywordtype">bool</span>            m_bDetach;
+<a name="l01382"></a>01382         <span class="keywordtype">int</span>                     m_iMaxConns;
+<a name="l01383"></a>01383         uint32_t        m_iTimeout;
+<a name="l01384"></a>01384         <a class="code" href="classCSSockAddr.html#a654fe72219cf1937bef2b7ec2949a23b">CSSockAddr::EAFRequire</a>  m_iAFrequire;
+<a name="l01385"></a>01385 
+<a name="l01386"></a>01386 <span class="preprocessor">#ifdef HAVE_LIBSSL</span>
+<a name="l01387"></a>01387 <span class="preprocessor"></span>        <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a>       m_sPemLocation, m_sPemPass, m_sCipher;
+<a name="l01388"></a>01388         uint32_t                m_iRequireCertFlags;
+<a name="l01389"></a>01389 <span class="preprocessor">#endif </span><span class="comment">/* HAVE_LIBSSL */</span>
+<a name="l01390"></a>01390 };
+<a name="l01391"></a>01391 
+<a name="l01392"></a>01392 <span class="preprocessor">#ifdef HAVE_LIBSSL</span>
+<a name="l01393"></a><a class="code" href="classCSSSListener.html">01393</a> <span class="preprocessor"></span><span class="keyword">class </span><a class="code" href="classCSSSListener.html">CSSSListener</a> : <span class="keyword">public</span> <a class="code" href="classCSListener.html" title="options container to create a listener">CSListener</a>
+<a name="l01394"></a>01394 {
+<a name="l01395"></a>01395 <span class="keyword">public</span>:
+<a name="l01396"></a><a class="code" href="classCSSSListener.html#a38ebac95e16bb19c05eb92f6bdb88a2c">01396</a>         <a class="code" href="classCSSSListener.html">CSSSListener</a>( uint16_t iPort, <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; sBindHost = <span class="stringliteral">&quot;&quot;</span> ) :
+<a name="l01397"></a>01397                 <a class="code" href="classCSListener.html" title="options container to create a listener">CSListener</a>( iPort, sBindHost )
+<a name="l01398"></a>01398         {
+<a name="l01399"></a>01399                 SetIsSSL( <span class="keyword">true</span> );
+<a name="l01400"></a>01400         }
+<a name="l01401"></a>01401 };
+<a name="l01402"></a>01402 <span class="preprocessor">#endif </span><span class="comment">/* HAVE_LIBSSL */</span>
+<a name="l01403"></a>01403 
+<a name="l01425"></a><a class="code" href="classCSocketManager.html">01425</a> <span class="keyword">class </span><a class="code" href="Csocket_8h.html#a912dbe0f0d3074e2d17b36975950c0de">CS_EXPORT</a> <a class="code" href="classCSocketManager.html" title="Best class to use to interact with the sockets.">CSocketManager</a> : <span class="keyword">public</span> std::vector&lt;Csock *&gt;, <span class="keyword">public</span> <a class="code" href="classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock">CSockCommon</a>
+<a name="l01426"></a>01426 {
+<a name="l01427"></a>01427 <span class="keyword">public</span>:
+<a name="l01428"></a>01428         <a class="code" href="classCSocketManager.html" title="Best class to use to interact with the sockets.">CSocketManager</a>();
+<a name="l01429"></a>01429         <span class="keyword">virtual</span> ~<a class="code" href="classCSocketManager.html" title="Best class to use to interact with the sockets.">CSocketManager</a>();
+<a name="l01430"></a>01430         <span class="keyword">virtual</span> <span class="keywordtype">void</span> clear();
+<a name="l01431"></a>01431         <span class="keyword">virtual</span> <span class="keywordtype">void</span> Cleanup();
+<a name="l01432"></a>01432 
+<a name="l01433"></a>01433         <span class="keyword">virtual</span> <a class="code" href="classCsock.html" title="Basic socket class.">Csock</a> * GetSockObj( <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; sHostname, uint16_t uPort, <span class="keywordtype">int</span> iTimeout = 60 );
 <a name="l01434"></a>01434 
-<a name="l01444"></a>01444         <span class="keyword">virtual</span> <span class="keywordtype">bool</span> Listen( <span class="keyword">const</span> <a class="code" href="classCSListener.html" title="options container to create a listener">CSListener</a> &amp; cListen, <a class="code" href="classCsock.html" title="Basic socket class.">Csock</a> * pcSock = NULL, uint16_t * piRandPort = NULL );
-<a name="l01445"></a>01445 
-<a name="l01446"></a>01446 
-<a name="l01448"></a>01448         <span class="keywordtype">bool</span> HasFDs() <span class="keyword">const</span>;
+<a name="l01435"></a><a class="code" href="classCSocketManager.html#af9564d9c13bf73ba8c05876a64342f4f">01435</a>         <span class="keyword">enum</span> <a class="code" href="classCSocketManager.html#af9564d9c13bf73ba8c05876a64342f4f">EMessages</a>
+<a name="l01436"></a>01436         {
+<a name="l01437"></a><a class="code" href="classCSocketManager.html#af9564d9c13bf73ba8c05876a64342f4fa76415033320dd9965093758d47fa2827">01437</a>             SUCCESS                     = 0,    
+<a name="l01438"></a><a class="code" href="classCSocketManager.html#af9564d9c13bf73ba8c05876a64342f4fa8c81a0c1798800dc3abe79972e48edfc">01438</a>             SELECT_ERROR        = -1,   
+<a name="l01439"></a><a class="code" href="classCSocketManager.html#af9564d9c13bf73ba8c05876a64342f4fa09e2a141ba44b6c32eeb745d64aca792">01439</a>             SELECT_TIMEOUT      = -2,   
+<a name="l01440"></a><a class="code" href="classCSocketManager.html#af9564d9c13bf73ba8c05876a64342f4fae96c30c395dab35e9fe5d15b95654a32">01440</a>             SELECT_TRYAGAIN     = -3    
+<a name="l01441"></a>01441         };
+<a name="l01442"></a>01442 
+<a name="l01448"></a>01448         <span class="keywordtype">void</span> Connect( <span class="keyword">const</span> <a class="code" href="classCSConnection.html" title="options for creating a connection">CSConnection</a> &amp; cCon, <a class="code" href="classCsock.html" title="Basic socket class.">Csock</a> * pcSock = NULL );
 <a name="l01449"></a>01449 
-<a name="l01455"></a>01455         <span class="keyword">virtual</span> <span class="keywordtype">void</span> Loop();
-<a name="l01456"></a>01456 
-<a name="l01472"></a>01472         <span class="keywordtype">void</span> DynamicSelectLoop( uint64_t iLowerBounds, uint64_t iUpperBounds, time_t iMaxResolution = 3600 );
-<a name="l01473"></a>01473 
-<a name="l01478"></a>01478         <span class="keyword">virtual</span> <span class="keywordtype">void</span> AddSock( <a class="code" href="classCsock.html" title="Basic socket class.">Csock</a> * pcSock, <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; sSockName );
-<a name="l01479"></a>01479 
-<a name="l01481"></a>01481         <span class="keyword">virtual</span> <a class="code" href="classCsock.html" title="Basic socket class.">Csock</a> * FindSockByRemotePort( uint16_t iPort );
-<a name="l01482"></a>01482 
-<a name="l01484"></a>01484         <span class="keyword">virtual</span> <a class="code" href="classCsock.html" title="Basic socket class.">Csock</a> * FindSockByLocalPort( uint16_t iPort );
-<a name="l01485"></a>01485 
-<a name="l01487"></a>01487         <span class="keyword">virtual</span> <a class="code" href="classCsock.html" title="Basic socket class.">Csock</a> * FindSockByName( <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; sName );
+<a name="l01459"></a>01459         <span class="keyword">virtual</span> <span class="keywordtype">bool</span> Listen( <span class="keyword">const</span> <a class="code" href="classCSListener.html" title="options container to create a listener">CSListener</a> &amp; cListen, <a class="code" href="classCsock.html" title="Basic socket class.">Csock</a> * pcSock = NULL, uint16_t * piRandPort = NULL );
+<a name="l01460"></a>01460 
+<a name="l01461"></a>01461 
+<a name="l01463"></a>01463         <span class="keywordtype">bool</span> HasFDs() <span class="keyword">const</span>;
+<a name="l01464"></a>01464 
+<a name="l01470"></a>01470         <span class="keyword">virtual</span> <span class="keywordtype">void</span> Loop();
+<a name="l01471"></a>01471 
+<a name="l01487"></a>01487         <span class="keywordtype">void</span> DynamicSelectLoop( uint64_t iLowerBounds, uint64_t iUpperBounds, time_t iMaxResolution = 3600 );
 <a name="l01488"></a>01488 
-<a name="l01490"></a>01490         <span class="keyword">virtual</span> <a class="code" href="classCsock.html" title="Basic socket class.">Csock</a> * FindSockByFD( <a class="code" href="Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a> iFD );
-<a name="l01491"></a>01491 
-<a name="l01492"></a>01492         <span class="keyword">virtual</span> std::vector&lt;Csock *&gt; FindSocksByName( <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; sName );
-<a name="l01493"></a>01493 
-<a name="l01495"></a>01495         <span class="keyword">virtual</span> std::vector&lt;Csock *&gt; FindSocksByRemoteHost( <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; sHostname );
-<a name="l01496"></a>01496 
-<a name="l01498"></a><a class="code" href="classCSocketManager.html#a6f9847ab23fa9444d960b3bf21819adf">01498</a>         <span class="keywordtype">int</span> <a class="code" href="classCSocketManager.html#a6f9847ab23fa9444d960b3bf21819adf" title="return the last known error as set by this class">GetErrno</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span>( m_errno ); }
-<a name="l01499"></a>01499 
-<a name="l01501"></a><a class="code" href="classCSocketManager.html#aa6f1e9a6d8885227e14354f78432dbb4">01501</a>         uint64_t <a class="code" href="classCSocketManager.html#aa6f1e9a6d8885227e14354f78432dbb4" title="Get the Select Timeout in MICROSECONDS ( 1000 == 1 millisecond )">GetSelectTimeout</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span>( m_iSelectWait ); }
-<a name="l01504"></a><a class="code" href="classCSocketManager.html#aa4cf0e5844d640d1308af68b62273944">01504</a>         <span class="keywordtype">void</span>  <a class="code" href="classCSocketManager.html#aa4cf0e5844d640d1308af68b62273944" title="Set the Select Timeout in MICROSECONDS ( 1000 == 1 millisecond ) Setting this to 0 will cause no time...">SetSelectTimeout</a>( uint64_t iTimeout ) { m_iSelectWait = iTimeout; }
-<a name="l01505"></a>01505 
-<a name="l01510"></a>01510         <span class="keyword">virtual</span> <span class="keywordtype">void</span> DelSockByAddr( <a class="code" href="classCsock.html" title="Basic socket class.">Csock</a> * pcSock );
+<a name="l01493"></a>01493         <span class="keyword">virtual</span> <span class="keywordtype">void</span> AddSock( <a class="code" href="classCsock.html" title="Basic socket class.">Csock</a> * pcSock, <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; sSockName );
+<a name="l01494"></a>01494 
+<a name="l01496"></a>01496         <span class="keyword">virtual</span> <a class="code" href="classCsock.html" title="Basic socket class.">Csock</a> * FindSockByRemotePort( uint16_t iPort );
+<a name="l01497"></a>01497 
+<a name="l01499"></a>01499         <span class="keyword">virtual</span> <a class="code" href="classCsock.html" title="Basic socket class.">Csock</a> * FindSockByLocalPort( uint16_t iPort );
+<a name="l01500"></a>01500 
+<a name="l01502"></a>01502         <span class="keyword">virtual</span> <a class="code" href="classCsock.html" title="Basic socket class.">Csock</a> * FindSockByName( <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; sName );
+<a name="l01503"></a>01503 
+<a name="l01505"></a>01505         <span class="keyword">virtual</span> <a class="code" href="classCsock.html" title="Basic socket class.">Csock</a> * FindSockByFD( <a class="code" href="Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a> iFD );
+<a name="l01506"></a>01506 
+<a name="l01507"></a>01507         <span class="keyword">virtual</span> std::vector&lt;Csock *&gt; FindSocksByName( <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; sName );
+<a name="l01508"></a>01508 
+<a name="l01510"></a>01510         <span class="keyword">virtual</span> std::vector&lt;Csock *&gt; FindSocksByRemoteHost( <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; sHostname );
 <a name="l01511"></a>01511 
-<a name="l01517"></a>01517         <span class="keyword">virtual</span> <span class="keywordtype">void</span> DelSock( <span class="keywordtype">size_t</span> iPos );
-<a name="l01518"></a>01518 
-<a name="l01525"></a>01525         <span class="keyword">virtual</span> <span class="keywordtype">bool</span> SwapSockByIdx( <a class="code" href="classCsock.html" title="Basic socket class.">Csock</a> * pNewSock, <span class="keywordtype">size_t</span> iOrginalSockIdx );
+<a name="l01513"></a><a class="code" href="classCSocketManager.html#a6f9847ab23fa9444d960b3bf21819adf">01513</a>         <span class="keywordtype">int</span> <a class="code" href="classCSocketManager.html#a6f9847ab23fa9444d960b3bf21819adf" title="return the last known error as set by this class">GetErrno</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span>( m_errno ); }
+<a name="l01514"></a>01514 
+<a name="l01516"></a><a class="code" href="classCSocketManager.html#aa6f1e9a6d8885227e14354f78432dbb4">01516</a>         uint64_t <a class="code" href="classCSocketManager.html#aa6f1e9a6d8885227e14354f78432dbb4" title="Get the Select Timeout in MICROSECONDS ( 1000 == 1 millisecond )">GetSelectTimeout</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span>( m_iSelectWait ); }
+<a name="l01519"></a><a class="code" href="classCSocketManager.html#aa4cf0e5844d640d1308af68b62273944">01519</a>         <span class="keywordtype">void</span>  <a class="code" href="classCSocketManager.html#aa4cf0e5844d640d1308af68b62273944" title="Set the Select Timeout in MICROSECONDS ( 1000 == 1 millisecond ) Setting this to 0 will cause no time...">SetSelectTimeout</a>( uint64_t iTimeout ) { m_iSelectWait = iTimeout; }
+<a name="l01520"></a>01520 
+<a name="l01525"></a>01525         <span class="keyword">virtual</span> <span class="keywordtype">void</span> DelSockByAddr( <a class="code" href="classCsock.html" title="Basic socket class.">Csock</a> * pcSock );
 <a name="l01526"></a>01526 
-<a name="l01533"></a>01533         <span class="keyword">virtual</span> <span class="keywordtype">bool</span> SwapSockByAddr( <a class="code" href="classCsock.html" title="Basic socket class.">Csock</a> * pNewSock, <a class="code" href="classCsock.html" title="Basic socket class.">Csock</a> * pOrigSock );
-<a name="l01534"></a>01534 
-<a name="l01536"></a>01536         uint64_t GetBytesRead() <span class="keyword">const</span>;
-<a name="l01537"></a>01537 
-<a name="l01539"></a>01539         uint64_t GetBytesWritten() <span class="keyword">const</span>;
-<a name="l01540"></a>01540 
-<a name="l01542"></a><a class="code" href="classCSocketManager.html#a34b615125f84c6fc0d082e56f4817498">01542</a>         <span class="keyword">enum</span> <a class="code" href="classCSocketManager.html#a34b615125f84c6fc0d082e56f4817498" title="this is a strict wrapper around C-api select(). Added in the event you need to do special work here...">ECheckType</a>
-<a name="l01543"></a>01543         {
-<a name="l01544"></a><a class="code" href="classCSocketManager.html#a34b615125f84c6fc0d082e56f4817498ad7444958c0d50b900877cd6674a1aa5a">01544</a>             ECT_Read = 1,
-<a name="l01545"></a><a class="code" href="classCSocketManager.html#a34b615125f84c6fc0d082e56f4817498a9645e59f7870186edb5b9f227c0b4892">01545</a>             ECT_Write = 2
-<a name="l01546"></a>01546         };
-<a name="l01547"></a>01547 
-<a name="l01548"></a>01548         <span class="keywordtype">void</span> FDSetCheck( <a class="code" href="Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a> iFd, std::map&lt; cs_sock_t, short &gt; &amp; miiReadyFds, ECheckType eType );
-<a name="l01549"></a>01549         <span class="keywordtype">bool</span> FDHasCheck( <a class="code" href="Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a> iFd, std::map&lt; cs_sock_t, short &gt; &amp; miiReadyFds, ECheckType eType );
-<a name="l01550"></a>01550 
-<a name="l01551"></a>01551 <span class="keyword">protected</span>:
+<a name="l01532"></a>01532         <span class="keyword">virtual</span> <span class="keywordtype">void</span> DelSock( <span class="keywordtype">size_t</span> iPos );
+<a name="l01533"></a>01533 
+<a name="l01540"></a>01540         <span class="keyword">virtual</span> <span class="keywordtype">bool</span> SwapSockByIdx( <a class="code" href="classCsock.html" title="Basic socket class.">Csock</a> * pNewSock, <span class="keywordtype">size_t</span> iOrginalSockIdx );
+<a name="l01541"></a>01541 
+<a name="l01548"></a>01548         <span class="keyword">virtual</span> <span class="keywordtype">bool</span> SwapSockByAddr( <a class="code" href="classCsock.html" title="Basic socket class.">Csock</a> * pNewSock, <a class="code" href="classCsock.html" title="Basic socket class.">Csock</a> * pOrigSock );
+<a name="l01549"></a>01549 
+<a name="l01551"></a>01551         uint64_t GetBytesRead() <span class="keyword">const</span>;
 <a name="l01552"></a>01552 
-<a name="l01553"></a>01553         <span class="keyword">virtual</span> <span class="keywordtype">int</span> Select( std::map&lt; cs_sock_t, short &gt; &amp; miiReadyFds, <span class="keyword">struct</span> timeval *tvtimeout );
-<a name="l01554"></a>01554 
-<a name="l01555"></a>01555 <span class="keyword">private</span>:
-<a name="l01562"></a>01562         <span class="keywordtype">void</span> Select( std::map&lt;Csock *, EMessages&gt; &amp; mpeSocks );
-<a name="l01563"></a>01563 
-<a name="l01564"></a>01564         timeval GetDynamicSleepTime( <span class="keyword">const</span> timeval&amp; tNow, <span class="keyword">const</span> timeval&amp; tMaxResolution ) <span class="keyword">const</span>;
+<a name="l01554"></a>01554         uint64_t GetBytesWritten() <span class="keyword">const</span>;
+<a name="l01555"></a>01555 
+<a name="l01557"></a><a class="code" href="classCSocketManager.html#a34b615125f84c6fc0d082e56f4817498">01557</a>         <span class="keyword">enum</span> <a class="code" href="classCSocketManager.html#a34b615125f84c6fc0d082e56f4817498" title="this is a strict wrapper around C-api select(). Added in the event you need to do special work here...">ECheckType</a>
+<a name="l01558"></a>01558         {
+<a name="l01559"></a><a class="code" href="classCSocketManager.html#a34b615125f84c6fc0d082e56f4817498ad7444958c0d50b900877cd6674a1aa5a">01559</a>             ECT_Read = 1,
+<a name="l01560"></a><a class="code" href="classCSocketManager.html#a34b615125f84c6fc0d082e56f4817498a9645e59f7870186edb5b9f227c0b4892">01560</a>             ECT_Write = 2
+<a name="l01561"></a>01561         };
+<a name="l01562"></a>01562 
+<a name="l01563"></a>01563         <span class="keywordtype">void</span> FDSetCheck( <a class="code" href="Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a> iFd, std::map&lt; cs_sock_t, short &gt; &amp; miiReadyFds, ECheckType eType );
+<a name="l01564"></a>01564         <span class="keywordtype">bool</span> FDHasCheck( <a class="code" href="Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a> iFd, std::map&lt; cs_sock_t, short &gt; &amp; miiReadyFds, ECheckType eType );
 <a name="l01565"></a>01565 
-<a name="l01567"></a>01567         <span class="keyword">virtual</span> <span class="keywordtype">void</span> SelectSock( std::map&lt;Csock *, EMessages&gt; &amp; mpeSocks, EMessages eErrno, <a class="code" href="classCsock.html" title="Basic socket class.">Csock</a> * pcSock );
-<a name="l01568"></a>01568 
-<a name="l01570"></a>01570         <span class="comment">// Connection State Functions</span>
-<a name="l01571"></a>01571 
-<a name="l01573"></a>01573         <span class="comment">// members</span>
-<a name="l01574"></a>01574         EMessages               m_errno;
-<a name="l01575"></a>01575         uint64_t                m_iCallTimeouts;
-<a name="l01576"></a>01576         uint64_t                m_iBytesRead;
-<a name="l01577"></a>01577         uint64_t                m_iBytesWritten;
-<a name="l01578"></a>01578         uint64_t                m_iSelectWait;
-<a name="l01579"></a>01579 };
+<a name="l01566"></a>01566 <span class="keyword">protected</span>:
+<a name="l01567"></a>01567 
+<a name="l01568"></a>01568         <span class="keyword">virtual</span> <span class="keywordtype">int</span> Select( std::map&lt; cs_sock_t, short &gt; &amp; miiReadyFds, <span class="keyword">struct</span> timeval *tvtimeout );
+<a name="l01569"></a>01569 
+<a name="l01570"></a>01570 <span class="keyword">private</span>:
+<a name="l01577"></a>01577         <span class="keywordtype">void</span> Select( std::map&lt;Csock *, EMessages&gt; &amp; mpeSocks );
+<a name="l01578"></a>01578 
+<a name="l01579"></a>01579         timeval GetDynamicSleepTime( <span class="keyword">const</span> timeval&amp; tNow, <span class="keyword">const</span> timeval&amp; tMaxResolution ) <span class="keyword">const</span>;
 <a name="l01580"></a>01580 
-<a name="l01581"></a>01581 
-<a name="l01588"></a>01588 <span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;
-<a name="l01589"></a><a class="code" href="classTSocketManager.html">01589</a> <span class="keyword">class </span><a class="code" href="classTSocketManager.html" title="Ease of use templated socket manager.">TSocketManager</a> : <span class="keyword">public</span> <a class="code" href="classCSocketManager.html" title="Best class to use to interact with the sockets.">CSocketManager</a>
-<a name="l01590"></a>01590 {
-<a name="l01591"></a>01591 <span class="keyword">public</span>:
-<a name="l01592"></a><a class="code" href="classTSocketManager.html#a3e36d395a959b8988328f54e7a4da656">01592</a>         <a class="code" href="classTSocketManager.html#a3e36d395a959b8988328f54e7a4da656">TSocketManager</a>() : <a class="code" href="classCSocketManager.html" title="Best class to use to interact with the sockets.">CSocketManager</a>() {}
-<a name="l01593"></a><a class="code" href="classTSocketManager.html#abb018bbb5fa43e7d3c67f421deda928a">01593</a>         <span class="keyword">virtual</span> <a class="code" href="classTSocketManager.html#abb018bbb5fa43e7d3c67f421deda928a">~TSocketManager</a>() {}
-<a name="l01594"></a><a class="code" href="classTSocketManager.html#aa764343c60b9bbbc71541f7bd0b0e873">01594</a>         <span class="keyword">virtual</span> T * GetSockObj( <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; sHostname, uint16_t uPort, <span class="keywordtype">int</span> iTimeout = 60 )
-<a name="l01595"></a>01595         {
-<a name="l01596"></a>01596                 <span class="keywordflow">return</span>( <span class="keyword">new</span> T( sHostname, uPort, iTimeout ) );
-<a name="l01597"></a>01597         }
-<a name="l01598"></a>01598 };
-<a name="l01599"></a>01599 
-<a name="l01600"></a>01600 <span class="preprocessor">#ifndef _NO_CSOCKET_NS</span>
-<a name="l01601"></a>01601 <span class="preprocessor"></span>}
-<a name="l01602"></a>01602 <span class="preprocessor">#endif </span><span class="comment">/* _NO_CSOCKET_NS */</span>
-<a name="l01603"></a>01603 
-<a name="l01604"></a>01604 <span class="preprocessor">#endif </span><span class="comment">/* _HAS_CSOCKET_ */</span>
-<a name="l01605"></a>01605 
+<a name="l01582"></a>01582         <span class="keyword">virtual</span> <span class="keywordtype">void</span> SelectSock( std::map&lt;Csock *, EMessages&gt; &amp; mpeSocks, EMessages eErrno, <a class="code" href="classCsock.html" title="Basic socket class.">Csock</a> * pcSock );
+<a name="l01583"></a>01583 
+<a name="l01585"></a>01585         <span class="comment">// Connection State Functions</span>
+<a name="l01586"></a>01586 
+<a name="l01588"></a>01588         <span class="comment">// members</span>
+<a name="l01589"></a>01589         EMessages               m_errno;
+<a name="l01590"></a>01590         uint64_t                m_iCallTimeouts;
+<a name="l01591"></a>01591         uint64_t                m_iBytesRead;
+<a name="l01592"></a>01592         uint64_t                m_iBytesWritten;
+<a name="l01593"></a>01593         uint64_t                m_iSelectWait;
+<a name="l01594"></a>01594 };
+<a name="l01595"></a>01595 
+<a name="l01596"></a>01596 
+<a name="l01603"></a>01603 <span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;
+<a name="l01604"></a><a class="code" href="classTSocketManager.html">01604</a> <span class="keyword">class </span><a class="code" href="classTSocketManager.html" title="Ease of use templated socket manager.">TSocketManager</a> : <span class="keyword">public</span> <a class="code" href="classCSocketManager.html" title="Best class to use to interact with the sockets.">CSocketManager</a>
+<a name="l01605"></a>01605 {
+<a name="l01606"></a>01606 <span class="keyword">public</span>:
+<a name="l01607"></a><a class="code" href="classTSocketManager.html#a3e36d395a959b8988328f54e7a4da656">01607</a>         <a class="code" href="classTSocketManager.html#a3e36d395a959b8988328f54e7a4da656">TSocketManager</a>() : <a class="code" href="classCSocketManager.html" title="Best class to use to interact with the sockets.">CSocketManager</a>() {}
+<a name="l01608"></a><a class="code" href="classTSocketManager.html#abb018bbb5fa43e7d3c67f421deda928a">01608</a>         <span class="keyword">virtual</span> <a class="code" href="classTSocketManager.html#abb018bbb5fa43e7d3c67f421deda928a">~TSocketManager</a>() {}
+<a name="l01609"></a><a class="code" href="classTSocketManager.html#aa764343c60b9bbbc71541f7bd0b0e873">01609</a>         <span class="keyword">virtual</span> T * GetSockObj( <span class="keyword">const</span> <a class="code" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; sHostname, uint16_t uPort, <span class="keywordtype">int</span> iTimeout = 60 )
+<a name="l01610"></a>01610         {
+<a name="l01611"></a>01611                 <span class="keywordflow">return</span>( <span class="keyword">new</span> T( sHostname, uPort, iTimeout ) );
+<a name="l01612"></a>01612         }
+<a name="l01613"></a>01613 };
+<a name="l01614"></a>01614 
+<a name="l01615"></a>01615 <span class="preprocessor">#ifndef _NO_CSOCKET_NS</span>
+<a name="l01616"></a>01616 <span class="preprocessor"></span>}
+<a name="l01617"></a>01617 <span class="preprocessor">#endif </span><span class="comment">/* _NO_CSOCKET_NS */</span>
+<a name="l01618"></a>01618 
+<a name="l01619"></a>01619 <span class="preprocessor">#endif </span><span class="comment">/* _HAS_CSOCKET_ */</span>
+<a name="l01620"></a>01620 
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -1146,7 +1161,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 15 2014 16:16:09 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Dec 21 2014 19:04:47 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

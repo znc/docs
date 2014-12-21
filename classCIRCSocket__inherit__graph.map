@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node9" href="$classCClient.html" title="CClient" alt="" coords="5,315,72,344"/>
+<area shape="rect" id="node11" href="$classCIRCSock.html" title="CIRCSock" alt="" coords="96,315,176,344"/>
+<area shape="rect" id="node2" href="$classCZNCSock.html" title="CZNCSock" alt="" coords="41,160,132,189"/>
+<area shape="rect" id="node4" href="$classCsock.html" title="Basic socket class." alt="" coords="57,83,116,112"/>
+<area shape="rect" id="node6" href="$classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock" alt="" coords="27,5,147,35"/>
+</map>
