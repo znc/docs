@@ -84,15 +84,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 This is the complete list of members for <a class="el" href="classCTable.html">CTable</a>, including all inherited members.<table>
-  <tr class="memlist"><td><a class="el" href="classCTable.html#a06bfd743e00ab5295f15da545b05d3d4">AddColumn</a>(const CString &amp;sName)</td><td><a class="el" href="classCTable.html">CTable</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCTable.html#af9d954f48baab71b4f1cde43394685ad">AddColumn</a>(const CString &amp;sName, bool bWrappable=true)</td><td><a class="el" href="classCTable.html">CTable</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCTable.html#ac6817cb38f1e9ca815ceb16d69802192">AddRow</a>()</td><td><a class="el" href="classCTable.html">CTable</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCTable.html#ada2fd03e0f806e1c6b2df1ef9215c0d2">Clear</a>()</td><td><a class="el" href="classCTable.html">CTable</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="classCTable.html#ad985a92cc568ed77bca58adf638abebf">CTable</a>()</td><td><a class="el" href="classCTable.html">CTable</a></td><td><code> [inline]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCTable.html#a15b23ddb9d30acac76b4d10715e5cb55">CTable</a>(size_type uPreferredWidth=110)</td><td><a class="el" href="classCTable.html">CTable</a></td><td><code> [inline, explicit]</code></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>elements</b> (defined in <b>std::vector&lt; T &gt;</b>)</td><td><a class="el" href="classstd_1_1vector.html">std::vector&lt; T &gt;</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCTable.html#a244630c7b0e4edf6d5a33329085c3f49">GetColumnWidth</a>(unsigned int uIdx) const </td><td><a class="el" href="classCTable.html">CTable</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCTable.html#ab0ba1701f9307fd2b9954a611dcabd3e">GetLine</a>(unsigned int uIdx, CString &amp;sLine) const </td><td><a class="el" href="classCTable.html">CTable</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="classCTable.html#a34205fd106fa4a4b7a190540f005cbf4">m_msuWidths</a></td><td><a class="el" href="classCTable.html">CTable</a></td><td><code> [protected]</code></td></tr>
-  <tr class="memlist"><td><a class="el" href="classCTable.html#a6246689933c1b0fce1a1b4b5d8531a44">m_vsHeaders</a></td><td><a class="el" href="classCTable.html">CTable</a></td><td><code> [protected]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCTable.html#ae7ea09bb12f9d2daf0ede6b791714ce0">m_uPreferredWidth</a></td><td><a class="el" href="classCTable.html">CTable</a></td><td><code> [protected]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCTable.html#a5325572eac3c057cb9cf899d382c8c22">m_vbWrappable</a></td><td><a class="el" href="classCTable.html">CTable</a></td><td><code> [protected]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCTable.html#a96ccfa2b96ebc7a669a63f44af6020d8">m_vsHeaders</a></td><td><a class="el" href="classCTable.html">CTable</a></td><td><code> [protected]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCTable.html#ab4ef7514684d2326066caff490447cdc">m_vsOutput</a></td><td><a class="el" href="classCTable.html">CTable</a></td><td><code> [mutable, protected]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCTable.html#a91511f53fc14b791f39855bf163e1be3">m_vuMaxWidths</a></td><td><a class="el" href="classCTable.html">CTable</a></td><td><code> [protected]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCTable.html#a6d0cfad84874c25c6e883c95c3897f5b">m_vuMinWidths</a></td><td><a class="el" href="classCTable.html">CTable</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCTable.html#a7bcf5dacb9ebd5079a0826fee9afb9ca">SetCell</a>(const CString &amp;sColumn, const CString &amp;sValue, size_type uRowIdx=~0)</td><td><a class="el" href="classCTable.html">CTable</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCTable.html#a6c2b91ab372a4e9db389e059e5e8af80">~CTable</a>()</td><td><a class="el" href="classCTable.html">CTable</a></td><td><code> [inline, virtual]</code></td></tr>
 </table></div><!-- contents -->
@@ -113,7 +117,7 @@ This is the complete list of members for <a class="el" href="classCTable.html">C
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 15 2014 16:16:11 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Dec 22 2014 15:30:15 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
