@@ -1,7 +1,10 @@
 <map id="G" name="G">
-<area shape="rect" id="node2" href="$classCZNCSock.html" title="CZNCSock" alt="" coords="167,453,257,483"/>
-<area shape="rect" id="node4" href="$classCsock.html" title="Basic socket class." alt="" coords="183,373,241,403"/>
-<area shape="rect" id="node6" href="$classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock" alt="" coords="152,293,272,323"/>
+<area shape="rect" id="node2" href="$classCZNCSock.html" title="CZNCSock" alt="" coords="367,469,457,499"/>
+<area shape="rect" id="node4" href="$classCsock.html" title="Basic socket class." alt="" coords="331,373,389,403"/>
+<area shape="rect" id="node6" href="$classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock" alt="" coords="247,293,367,323"/>
 <area shape="rect" id="node10" href="$classCCron.html" title="this is the main cron job class" alt="" coords="60,101,121,131"/>
 <area shape="rect" id="node14" href="$classCSMonitorFD.html" title="Class to tie sockets to for monitoring by Csocket at either the Csock or TSockManager." alt="" coords="255,101,359,131"/>
+<area shape="rect" id="node18" href="$classCString.html" title="String class that is used inside ZNC." alt="" coords="419,373,488,403"/>
+<area shape="rect" id="node20" title="STL class." alt="" coords="439,293,524,323"/>
+<area shape="rect" id="node22" title="STL class." alt="" coords="437,197,621,227"/>
 </map>
