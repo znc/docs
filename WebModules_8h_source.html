@@ -204,9 +204,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00121"></a>00121         <a class="code" href="classCWebSock.html#a424772b6340da757ee28060ab66ec6b7">CWebSock</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sURIPrefix);
 <a name="l00122"></a>00122         <span class="keyword">virtual</span> <a class="code" href="classCWebSock.html#a55922f5d008627d51faf09e268064c05">~CWebSock</a>();
 <a name="l00123"></a>00123 
-<a name="l00124"></a>00124         <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classCWebSock.html#aa3651acac17caef25398a3d16c9b5b1c">ForceLogin</a>();
-<a name="l00125"></a>00125         <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classCWebSock.html#a0da4f7a7b33fe6efb6752603ca0c997d">OnLogin</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sUser, <span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sPass);
-<a name="l00126"></a>00126         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCWebSock.html#aab01d7b55320df8316f0101694328e1e">OnPageRequest</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sURI);
+<a name="l00124"></a>00124         <span class="keywordtype">bool</span> <a class="code" href="classCWebSock.html#a095fa3a2d58e9ccd1083a53a1529cd65">ForceLogin</a>() <span class="keyword">override</span>;
+<a name="l00125"></a>00125         <span class="keywordtype">bool</span> <a class="code" href="classCWebSock.html#a7cb58b7b5a2eec6472343bc81ab6b424">OnLogin</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sUser, <span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sPass, <span class="keywordtype">bool</span> bBasic) <span class="keyword">override</span>;
+<a name="l00126"></a>00126         <span class="keywordtype">void</span> <a class="code" href="classCWebSock.html#af1a25ef019bbba6f748bd7e1eea3a668">OnPageRequest</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sURI) <span class="keyword">override</span>;
 <a name="l00127"></a>00127 
 <a name="l00128"></a>00128         <a class="code" href="classCWebSock.html#a8b46819ec286f193efb0f8efcc8ace5a">EPageReqResult</a> <a class="code" href="classCWebSock.html#a2729c29d5592567190ee883088163bf2">PrintTemplate</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sPageName, <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sPageRet, <a class="code" href="classCModule.html" title="The base class for your own ZNC modules.">CModule</a>* pModule = NULL);
 <a name="l00129"></a>00129         <a class="code" href="classCWebSock.html#a8b46819ec286f193efb0f8efcc8ace5a">EPageReqResult</a> <a class="code" href="classCWebSock.html#ad2568bfbe7ecf5938b8d6777305c3c22">PrintStaticFile</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sPath, <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sPageRet, <a class="code" href="classCModule.html" title="The base class for your own ZNC modules.">CModule</a>* pModule = NULL);
@@ -269,7 +269,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 15 2014 16:16:10 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 30 2014 21:42:52 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

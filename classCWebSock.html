@@ -188,9 +188,9 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCWebSock.html#a424772b6340da757ee28060ab66ec6b7">CWebSock</a> (const <a class="el" href="classCString.html">CString</a> &amp;sURIPrefix)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCWebSock.html#a55922f5d008627d51faf09e268064c05">~CWebSock</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCWebSock.html#aa3651acac17caef25398a3d16c9b5b1c">ForceLogin</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCWebSock.html#a0da4f7a7b33fe6efb6752603ca0c997d">OnLogin</a> (const <a class="el" href="classCString.html">CString</a> &amp;sUser, const <a class="el" href="classCString.html">CString</a> &amp;sPass)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCWebSock.html#aab01d7b55320df8316f0101694328e1e">OnPageRequest</a> (const <a class="el" href="classCString.html">CString</a> &amp;sURI)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCWebSock.html#a095fa3a2d58e9ccd1083a53a1529cd65">ForceLogin</a> () override</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCWebSock.html#a7cb58b7b5a2eec6472343bc81ab6b424">OnLogin</a> (const <a class="el" href="classCString.html">CString</a> &amp;sUser, const <a class="el" href="classCString.html">CString</a> &amp;sPass, bool bBasic) override</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCWebSock.html#af1a25ef019bbba6f748bd7e1eea3a668">OnPageRequest</a> (const <a class="el" href="classCString.html">CString</a> &amp;sURI) override</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCWebSock.html#a8b46819ec286f193efb0f8efcc8ace5a">EPageReqResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCWebSock.html#a2729c29d5592567190ee883088163bf2">PrintTemplate</a> (const <a class="el" href="classCString.html">CString</a> &amp;sPageName, <a class="el" href="classCString.html">CString</a> &amp;sPageRet, <a class="el" href="classCModule.html">CModule</a> *pModule=NULL)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCWebSock.html#a8b46819ec286f193efb0f8efcc8ace5a">EPageReqResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCWebSock.html#ad2568bfbe7ecf5938b8d6777305c3c22">PrintStaticFile</a> (const <a class="el" href="classCString.html">CString</a> &amp;sPath, <a class="el" href="classCString.html">CString</a> &amp;sPageRet, <a class="el" href="classCModule.html">CModule</a> *pModule=NULL)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCWebSock.html#a803d3cf514d70220e7542e010dc7ac4d">FindTmpl</a> (<a class="el" href="classCModule.html">CModule</a> *pModule, const <a class="el" href="classCString.html">CString</a> &amp;sName)</td></tr>
@@ -1900,15 +1900,15 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aa3651acac17caef25398a3d16c9b5b1c"></a><!-- doxytag: member="CWebSock::ForceLogin" ref="aa3651acac17caef25398a3d16c9b5b1c" args="()" -->
+<a class="anchor" id="a095fa3a2d58e9ccd1083a53a1529cd65"></a><!-- doxytag: member="CWebSock::ForceLogin" ref="a095fa3a2d58e9ccd1083a53a1529cd65" args="() override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool <a class="el" href="classCWebSock.html#aa3651acac17caef25398a3d16c9b5b1c">CWebSock::ForceLogin</a> </td>
+          <td class="memname">bool <a class="el" href="classCWebSock.html#a095fa3a2d58e9ccd1083a53a1529cd65">CWebSock::ForceLogin</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -3634,12 +3634,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a0da4f7a7b33fe6efb6752603ca0c997d"></a><!-- doxytag: member="CWebSock::OnLogin" ref="a0da4f7a7b33fe6efb6752603ca0c997d" args="(const CString &amp;sUser, const CString &amp;sPass)" -->
+<a class="anchor" id="a7cb58b7b5a2eec6472343bc81ab6b424"></a><!-- doxytag: member="CWebSock::OnLogin" ref="a7cb58b7b5a2eec6472343bc81ab6b424" args="(const CString &amp;sUser, const CString &amp;sPass, bool bBasic) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool <a class="el" href="classCWebSock.html#a0da4f7a7b33fe6efb6752603ca0c997d">CWebSock::OnLogin</a> </td>
+          <td class="memname">bool <a class="el" href="classCWebSock.html#a7cb58b7b5a2eec6472343bc81ab6b424">CWebSock::OnLogin</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>sUser</em>, </td>
@@ -3648,31 +3648,37 @@ Protected Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
-          <td class="paramname"><em>sPass</em>&#160;</td>
+          <td class="paramname"><em>sPass</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bBasic</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
+          <td></td><td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="classCHTTPSock.html#a0063e6f383638f9ba229fd24211ce077">CHTTPSock</a>.</p>
+<p>Reimplemented from <a class="el" href="classCHTTPSock.html#a6892a798fb7d6febbc6620add86eba80">CHTTPSock</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aab01d7b55320df8316f0101694328e1e"></a><!-- doxytag: member="CWebSock::OnPageRequest" ref="aab01d7b55320df8316f0101694328e1e" args="(const CString &amp;sURI)" -->
+<a class="anchor" id="af1a25ef019bbba6f748bd7e1eea3a668"></a><!-- doxytag: member="CWebSock::OnPageRequest" ref="af1a25ef019bbba6f748bd7e1eea3a668" args="(const CString &amp;sURI) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCWebSock.html#aab01d7b55320df8316f0101694328e1e">CWebSock::OnPageRequest</a> </td>
+          <td class="memname">void <a class="el" href="classCWebSock.html#af1a25ef019bbba6f748bd7e1eea3a668">CWebSock::OnPageRequest</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>sURI</em></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -5876,7 +5882,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 25 2014 16:49:23 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 30 2014 21:42:53 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

@@ -166,7 +166,7 @@ This is the complete list of members for <a class="el" href="classCWebSock.html"
   <tr class="memlist"><td><a class="el" href="classCsock.html#a12ece5f34b7f197eb764e25b0b43b999">ETConn</a> enum name</td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCWebSock.html#a803d3cf514d70220e7542e010dc7ac4d">FindTmpl</a>(CModule *pModule, const CString &amp;sName)</td><td><a class="el" href="classCWebSock.html">CWebSock</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCWebSock.html#abd9fadf9072a9a05e39ff5e11ab03b89">FinishUserSessions</a>(const CUser &amp;User)</td><td><a class="el" href="classCWebSock.html">CWebSock</a></td><td><code> [static]</code></td></tr>
-  <tr class="memlist"><td><a class="el" href="classCWebSock.html#aa3651acac17caef25398a3d16c9b5b1c">ForceLogin</a>()</td><td><a class="el" href="classCWebSock.html">CWebSock</a></td><td><code> [virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCWebSock.html#a095fa3a2d58e9ccd1083a53a1529cd65">ForceLogin</a>() override</td><td><a class="el" href="classCWebSock.html">CWebSock</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#ae16b99983e6e37d4ca0325e7a871d1cf">GetAddrInfo</a>(const CS_STRING &amp;sHostname, CSSockAddr &amp;csSockAddr)</td><td><a class="el" href="classCsock.html">Csock</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCWebSock.html#a4389ee004e4b881b2c3d1f3be467da63">GetAvailSkins</a>(VCString &amp;vRet) const </td><td><a class="el" href="classCWebSock.html">CWebSock</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#a92f9a9a4d065e1d6090ba00992aaf415">GetAvgRead</a>(uint64_t iSample=1000) const </td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
@@ -282,8 +282,8 @@ This is the complete list of members for <a class="el" href="classCWebSock.html"
   <tr class="memlist"><td><a class="el" href="classCSockCommon.html#ae108fc0c73aaefe520ab489d78c05174">m_vcMonitorFD</a></td><td><a class="el" href="classCSockCommon.html">CSockCommon</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCSockCommon.html#a7a5acbe54d37f4a3f4c85a339451ee2e">MonitorFD</a>(CSMonitorFD *pMonitorFD)</td><td><a class="el" href="classCSockCommon.html">CSockCommon</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#abef02be96a92f5097556f1b7c082e76a">NonBlockingIO</a>()</td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="classCWebSock.html#a0da4f7a7b33fe6efb6752603ca0c997d">OnLogin</a>(const CString &amp;sUser, const CString &amp;sPass)</td><td><a class="el" href="classCWebSock.html">CWebSock</a></td><td><code> [virtual]</code></td></tr>
-  <tr class="memlist"><td><a class="el" href="classCWebSock.html#aab01d7b55320df8316f0101694328e1e">OnPageRequest</a>(const CString &amp;sURI)</td><td><a class="el" href="classCWebSock.html">CWebSock</a></td><td><code> [virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCWebSock.html#a7cb58b7b5a2eec6472343bc81ab6b424">OnLogin</a>(const CString &amp;sUser, const CString &amp;sPass, bool bBasic) override</td><td><a class="el" href="classCWebSock.html">CWebSock</a></td><td><code> [virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCWebSock.html#af1a25ef019bbba6f748bd7e1eea3a668">OnPageRequest</a>(const CString &amp;sURI) override</td><td><a class="el" href="classCWebSock.html">CWebSock</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#ad3cc84da6a5107446054bc9fbc2d6ab0">operator&lt;&lt;</a>(const CS_STRING &amp;s)</td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#a602d418258d6954effeee0c3e9521db5">operator&lt;&lt;</a>(std::ostream &amp;(*io)(std::ostream &amp;))</td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#a76689889bbfcced103cb8de1b4551443">operator&lt;&lt;</a>(int32_t i)</td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
@@ -418,7 +418,7 @@ This is the complete list of members for <a class="el" href="classCWebSock.html"
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 25 2014 16:49:23 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 30 2014 21:42:53 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

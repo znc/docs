@@ -191,7 +191,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Connected event.  <a href="#a4b5c7c36802a5e8e89fa771f9547d0ec"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCsock.html">Csock</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCHTTPSock.html#a027fffe91e66a64241db5dda8fcb9c54">GetSockObj</a> (const <a class="el" href="classCString.html">CString</a> &amp;sHost, unsigned short uPort)=0</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCHTTPSock.html#a8061644d6450bec2d272ac2a9771c874">ForceLogin</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCHTTPSock.html#a0063e6f383638f9ba229fd24211ce077">OnLogin</a> (const <a class="el" href="classCString.html">CString</a> &amp;sUser, const <a class="el" href="classCString.html">CString</a> &amp;sPass)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCHTTPSock.html#a6892a798fb7d6febbc6620add86eba80">OnLogin</a> (const <a class="el" href="classCString.html">CString</a> &amp;sUser, const <a class="el" href="classCString.html">CString</a> &amp;sPass, bool bBasic)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCHTTPSock.html#a8848aa43f63f5b27b5df3a86032e43d7">OnPageRequest</a> (const <a class="el" href="classCString.html">CString</a> &amp;sURI)=0</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCHTTPSock.html#aa03f07492f84a788105962fb27d92494">PrintFile</a> (const <a class="el" href="classCString.html">CString</a> &amp;sFileName, <a class="el" href="classCString.html">CString</a> sContentType=&quot;&quot;)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCHTTPSock.html#a66ff2afd3f655fd198ce317200e4ec31">CheckPost</a> ()</td></tr>
@@ -1848,7 +1848,7 @@ Protected Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="classCWebSock.html#aa3651acac17caef25398a3d16c9b5b1c">CWebSock</a>.</p>
+<p>Reimplemented in <a class="el" href="classCWebSock.html#a095fa3a2d58e9ccd1083a53a1529cd65">CWebSock</a>.</p>
 
 </div>
 </div>
@@ -3442,12 +3442,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a0063e6f383638f9ba229fd24211ce077"></a><!-- doxytag: member="CHTTPSock::OnLogin" ref="a0063e6f383638f9ba229fd24211ce077" args="(const CString &amp;sUser, const CString &amp;sPass)" -->
+<a class="anchor" id="a6892a798fb7d6febbc6620add86eba80"></a><!-- doxytag: member="CHTTPSock::OnLogin" ref="a6892a798fb7d6febbc6620add86eba80" args="(const CString &amp;sUser, const CString &amp;sPass, bool bBasic)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool <a class="el" href="classCHTTPSock.html#a0063e6f383638f9ba229fd24211ce077">CHTTPSock::OnLogin</a> </td>
+          <td class="memname">virtual bool <a class="el" href="classCHTTPSock.html#a6892a798fb7d6febbc6620add86eba80">CHTTPSock::OnLogin</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>sUser</em>, </td>
@@ -3456,7 +3456,13 @@ Protected Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
-          <td class="paramname"><em>sPass</em>&#160;</td>
+          <td class="paramname"><em>sPass</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bBasic</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -3467,7 +3473,7 @@ Protected Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="classCWebSock.html#a0da4f7a7b33fe6efb6752603ca0c997d">CWebSock</a>.</p>
+<p>Reimplemented in <a class="el" href="classCWebSock.html#a7cb58b7b5a2eec6472343bc81ab6b424">CWebSock</a>.</p>
 
 </div>
 </div>
@@ -3486,7 +3492,7 @@ Protected Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Implemented in <a class="el" href="classCWebSock.html#aab01d7b55320df8316f0101694328e1e">CWebSock</a>.</p>
+<p>Implemented in <a class="el" href="classCWebSock.html#af1a25ef019bbba6f748bd7e1eea3a668">CWebSock</a>.</p>
 
 </div>
 </div>
@@ -5558,7 +5564,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 25 2014 16:49:22 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 30 2014 21:42:52 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
