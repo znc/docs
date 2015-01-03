@@ -48,6 +48,7 @@ var searchData=
   ['finish',['Finish',['../classCGetAddrInfo.html#aa966eeec4d0b1643e8cdbae65ab9076d',1,'CGetAddrInfo']]],
   ['finishusersessions',['FinishUserSessions',['../classCWebSessionMap.html#a71ab1a2c317d49283475559b8b3833e0',1,'CWebSessionMap::FinishUserSessions()'],['../classCWebSock.html#abd9fadf9072a9a05e39ff5e11ab03b89',1,'CWebSock::FinishUserSessions()']]],
   ['firstline',['FirstLine',['../classCString.html#a5a010f8cc2c01a65907b4ab9ed0ae471',1,'CString']]],
+  ['followsslcipherserverpreference',['FollowSSLCipherServerPreference',['../classCsock.html#a7351461473e488d632bad0a054e9a0f4',1,'Csock']]],
   ['forcelogin',['ForceLogin',['../classCHTTPSock.html#a8061644d6450bec2d272ac2a9771c874',1,'CHTTPSock::ForceLogin()'],['../classCWebSock.html#a095fa3a2d58e9ccd1083a53a1529cd65',1,'CWebSock::ForceLogin()']]],
   ['formatservertime',['FormatServerTime',['../classCUtils.html#a4a3a2068b26d7605ffd0f7c559a000ac',1,'CUtils']]],
   ['formattime',['FormatTime',['../classCUtils.html#a1971c679165ddcb004f9c05558774dcb',1,'CUtils']]],

@@ -373,6 +373,8 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">bitwise setter,  <a href="#a0256789d876431c52f9e2e905440319f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a7969b6b06ee2d2e9997b00c47c2a1898">DisableSSLCompression</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">allow disabling compression  <a href="#a7969b6b06ee2d2e9997b00c47c2a1898"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a7351461473e488d632bad0a054e9a0f4">FollowSSLCipherServerPreference</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">select the ciphers in server-preferred order  <a href="#a7351461473e488d632bad0a054e9a0f4"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#aa59f3b858f55d5cf2e2574140dd5bf4e">SetCipher</a> (const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sCipher)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the cipher type ( openssl cipher [to see ciphers available] )  <a href="#aa59f3b858f55d5cf2e2574140dd5bf4e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a9492afdd7b765fe5badffa5781381717">GetCipher</a> () const </td></tr>
@@ -1693,6 +1695,24 @@ Friends</h2></td></tr>
 <p>set the value of m_bEnableReadLine to true, we don't want to store a buffer for ReadLine, unless we want it </p>
 
 <p>Referenced by <a class="el" href="classCClient.html#a51f196439c3218b2dce8f7c6610dad14">CClient::CClient()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7351461473e488d632bad0a054e9a0f4"></a><!-- doxytag: member="CIRCSock::FollowSSLCipherServerPreference" ref="a7351461473e488d632bad0a054e9a0f4" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classCsock.html#a7351461473e488d632bad0a054e9a0f4">Csock::FollowSSLCipherServerPreference</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [inline, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>select the ciphers in server-preferred order </p>
 
 </div>
 </div>
@@ -5448,7 +5468,7 @@ Friends</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 25 2014 16:49:23 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 3 2015 10:00:21 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
