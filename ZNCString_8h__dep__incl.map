@@ -4,7 +4,7 @@
 <area shape="rect" id="node7" href="$IRCNetwork_8h.html" title="IRCNetwork.h" alt="" coords="404,701,508,731"/>
 <area shape="rect" id="node9" href="$Query_8h.html" title="Query.h" alt="" coords="147,392,216,421"/>
 <area shape="rect" id="node14" href="$Config_8h.html" title="Config.h" alt="" coords="1117,83,1192,112"/>
-<area shape="rect" id="node16" href="$defines_8h.html" title="defines.h" alt="" coords="608,160,688,189"/>
+<area shape="rect" id="node16" href="$include_2znc_2defines_8h.html" title="defines.h" alt="" coords="608,160,688,189"/>
 <area shape="rect" id="node44" href="$SSLVerifyHost_8h.html" title="SSLVerifyHost.h" alt="" coords="631,315,753,344"/>
 <area shape="rect" id="node46" href="$FileUtils_8h.html" title="FileUtils.h" alt="" coords="848,160,931,189"/>
 <area shape="rect" id="node50" href="$Nick_8h.html" title="Nick.h" alt="" coords="308,315,369,344"/>
@@ -13,7 +13,7 @@
 <area shape="rect" id="node63" href="$Utils_8h.html" title="Utils.h" alt="" coords="777,315,839,344"/>
 <area shape="rect" id="node69" href="$ZNCDebug_8h.html" title="ZNCDebug.h" alt="" coords="565,83,669,112"/>
 <area shape="rect" id="node11" href="$User_8h.html" title="User.h" alt="" coords="240,392,301,421"/>
-<area shape="rect" id="node18" href="$Csocket_8h.html" title="Csocket.h" alt="" coords="605,237,691,267"/>
+<area shape="rect" id="node18" href="$build_2include_2znc_2Csocket_8h.html" title="Csocket.h" alt="" coords="605,237,691,267"/>
 <area shape="rect" id="node20" href="$Socket_8h.html" title="Socket.h" alt="" coords="529,315,607,344"/>
 <area shape="rect" id="node22" href="$Client_8h.html" title="Client.h" alt="" coords="701,392,771,421"/>
 <area shape="rect" id="node24" href="$znc_8h.html" title="znc.h" alt="" coords="547,624,603,653"/>

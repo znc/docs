@@ -7,7 +7,7 @@
 <area shape="rect" id="node14" href="$Client_8h.html" title="Client.h" alt="" coords="1703,469,1772,499"/>
 <area shape="rect" id="node16" href="$znc_8h.html" title="znc.h" alt="" coords="1535,701,1591,731"/>
 <area shape="rect" id="node19" href="$Config_8h.html" title="Config.h" alt="" coords="525,160,600,189"/>
-<area shape="rect" id="node21" href="$defines_8h.html" title="defines.h" alt="" coords="1205,237,1285,267"/>
+<area shape="rect" id="node21" href="$include_2znc_2defines_8h.html" title="defines.h" alt="" coords="1205,237,1285,267"/>
 <area shape="rect" id="node25" href="$Socket_8h.html" title="Socket.h" alt="" coords="1353,392,1431,421"/>
 <area shape="rect" id="node28" href="$ExecSock_8h.html" title="ExecSock.h" alt="" coords="793,469,887,499"/>
 <area shape="rect" id="node30" href="$HTTPSock_8h.html" title="HTTPSock.h" alt="" coords="1071,469,1167,499"/>
@@ -26,7 +26,7 @@
 <area shape="rect" id="node82" href="$Utils_8h.html" title="Utils.h" alt="" coords="776,160,837,189"/>
 <area shape="rect" id="node90" href="$ZNCDebug_8h.html" title="ZNCDebug.h" alt="" coords="1171,160,1275,189"/>
 <area shape="rect" id="node93" href="$ZNCString_8h.html" title="ZNCString.h" alt="" coords="787,83,888,112"/>
-<area shape="rect" id="node23" href="$Csocket_8h.html" title="Csocket.h" alt="" coords="1225,315,1311,344"/>
+<area shape="rect" id="node23" href="$build_2include_2znc_2Csocket_8h.html" title="Csocket.h" alt="" coords="1225,315,1311,344"/>
 <area shape="rect" id="node45" href="$SSLVerifyHost_8h.html" title="SSLVerifyHost.h" alt="" coords="1207,392,1329,421"/>
 <area shape="rect" id="node37" href="$modperl_2module_8h.html" title="module.h" alt="" coords="1020,701,1103,731"/>
 </map>

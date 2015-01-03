@@ -4,7 +4,7 @@ var searchData=
   ['empty',['empty',['../classCConfig.html#a5c101487b193fa2e10c75689041b4644',1,'CConfig']]],
   ['enable',['Enable',['../classCChan.html#add0d10be0340775b5e9670e972c2f377',1,'CChan']]],
   ['enableconnectqueue',['EnableConnectQueue',['../classCZNC.html#aa22f774fb9b846c6e95180a94920e6cb',1,'CZNC']]],
-  ['enablereadline',['EnableReadLine',['../classCsock.html#af748608ba80f9bd54294292930db560e',1,'Csock']]],
+  ['enablereadline',['EnableReadLine',['../classCsock.html#af748608ba80f9bd54294292930db560e',1,'Csock::EnableReadLine()'],['../classCsock.html#af748608ba80f9bd54294292930db560e',1,'Csock::EnableReadLine()']]],
   ['encode',['Encode',['../classMCString.html#a5680eb273f87fe151fed317f5ca0f503',1,'MCString']]],
   ['encrypt',['Encrypt',['../classCString.html#a793e477cb76806dcf824ae81b9ee4fac',1,'CString']]],
   ['encrypt_5fn',['Encrypt_n',['../classCString.html#adfd1753e7276cbce3af1a311bfd80dd0',1,'CString']]],

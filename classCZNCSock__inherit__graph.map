@@ -1,15 +1,15 @@
 <map id="G" name="G">
-<area shape="rect" id="node7" href="$classCExecSock.html" title="CExecSock" alt="" coords="5,237,96,267"/>
-<area shape="rect" id="node9" href="$classCIncomingConnection.html" title="CIncomingConnection" alt="" coords="120,237,280,267"/>
-<area shape="rect" id="node11" href="$classCIRCSocket.html" title="Base IRC socket for client&lt;&#45;&gt;ZNC, and ZNC&lt;&#45;&gt;server." alt="" coords="304,237,397,267"/>
-<area shape="rect" id="node17" href="$classCRealListener.html" title="CRealListener" alt="" coords="421,237,528,267"/>
-<area shape="rect" id="node19" href="$classCSocket.html" title="Base Csock implementation to be used by modules." alt="" coords="552,237,627,267"/>
+<area shape="rect" id="node8" href="$classCExecSock.html" title="CExecSock" alt="" coords="5,237,96,267"/>
+<area shape="rect" id="node10" href="$classCIncomingConnection.html" title="CIncomingConnection" alt="" coords="120,237,280,267"/>
+<area shape="rect" id="node12" href="$classCIRCSocket.html" title="Base IRC socket for client&lt;&#45;&gt;ZNC, and ZNC&lt;&#45;&gt;server." alt="" coords="304,237,397,267"/>
+<area shape="rect" id="node18" href="$classCRealListener.html" title="CRealListener" alt="" coords="421,237,528,267"/>
+<area shape="rect" id="node20" href="$classCSocket.html" title="Base Csock implementation to be used by modules." alt="" coords="552,237,627,267"/>
 <area shape="rect" id="node2" href="$classCsock.html" title="Basic socket class." alt="" coords="321,83,380,112"/>
 <area shape="rect" id="node4" href="$classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock" alt="" coords="291,5,411,35"/>
-<area shape="rect" id="node13" href="$classCClient.html" title="CClient" alt="" coords="224,315,291,344"/>
-<area shape="rect" id="node15" href="$classCIRCSock.html" title="CIRCSock" alt="" coords="315,315,395,344"/>
-<area shape="rect" id="node21" href="$classCHTTPSock.html" title="CHTTPSock" alt="" coords="423,315,516,344"/>
-<area shape="rect" id="node25" href="$classCPerlSocket.html" title="CPerlSocket" alt="" coords="540,315,639,344"/>
-<area shape="rect" id="node27" href="$classCPySocket.html" title="CPySocket" alt="" coords="663,315,753,344"/>
-<area shape="rect" id="node23" href="$classCWebSock.html" title="CWebSock" alt="" coords="425,392,513,421"/>
+<area shape="rect" id="node14" href="$classCClient.html" title="CClient" alt="" coords="224,315,291,344"/>
+<area shape="rect" id="node16" href="$classCIRCSock.html" title="CIRCSock" alt="" coords="315,315,395,344"/>
+<area shape="rect" id="node22" href="$classCHTTPSock.html" title="CHTTPSock" alt="" coords="423,315,516,344"/>
+<area shape="rect" id="node26" href="$classCPerlSocket.html" title="CPerlSocket" alt="" coords="540,315,639,344"/>
+<area shape="rect" id="node28" href="$classCPySocket.html" title="CPySocket" alt="" coords="663,315,753,344"/>
+<area shape="rect" id="node24" href="$classCWebSock.html" title="CWebSock" alt="" coords="425,392,513,421"/>
 </map>

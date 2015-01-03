@@ -6,5 +6,5 @@ var searchData=
   ['cast_5finitial',['cast_initial',['../structswig__module__info.html#a14e4f7b0c9e0ff10543475c269b83507',1,'swig_module_info']]],
   ['clientdata',['clientdata',['../structswig__type__info.html#a2e1f9087e639dd7c8c131fbc6e399194',1,'swig_type_info::clientdata()'],['../structswig__module__info.html#a39999692b76f191b66a5ce746681dc84',1,'swig_module_info::clientdata()']]],
   ['converter',['converter',['../structswig__cast__info.html#aa630fddfbb1bf9c97a03f9479ba32f76',1,'swig_cast_info']]],
-  ['cs_5fblocksize',['CS_BLOCKSIZE',['../Csocket_8h.html#ab74f57cb6a8c20475287974443ad1367',1,'Csocket.h']]]
+  ['cs_5fblocksize',['CS_BLOCKSIZE',['../build_2include_2znc_2Csocket_8h.html#ab74f57cb6a8c20475287974443ad1367',1,'CS_BLOCKSIZE():&#160;Csocket.h'],['../third__party_2Csocket_2Csocket_8h.html#ab74f57cb6a8c20475287974443ad1367',1,'CS_BLOCKSIZE():&#160;Csocket.h']]]
 ];

@@ -19,5 +19,6 @@ var searchData=
   ['buffer',['buffer',['../structmd5__context.html#ad668d3cb5e0affbbd214a69da28c6d55',1,'md5_context']]],
   ['buffer_2eh',['Buffer.h',['../Buffer_8h.html',1,'']]],
   ['bytesread',['BytesRead',['../classCUser.html#a1b369756c27a425c0774e657da4398bb',1,'CUser::BytesRead()'],['../classCZNC.html#a237d14a883e4b338f98793bdfd7ffecc',1,'CZNC::BytesRead()']]],
-  ['byteswritten',['BytesWritten',['../classCUser.html#a586590690bc02b1a6eb1597b09ae67d3',1,'CUser::BytesWritten()'],['../classCZNC.html#a5fd8b425e8bb4f26c51a6c2e096311a4',1,'CZNC::BytesWritten()']]]
+  ['byteswritten',['BytesWritten',['../classCUser.html#a586590690bc02b1a6eb1597b09ae67d3',1,'CUser::BytesWritten()'],['../classCZNC.html#a5fd8b425e8bb4f26c51a6c2e096311a4',1,'CZNC::BytesWritten()']]],
+  ['csocket_2eh',['Csocket.h',['../build_2include_2znc_2Csocket_8h.html',1,'']]]
 ];

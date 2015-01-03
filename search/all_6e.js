@@ -12,7 +12,7 @@ var searchData=
   ['nickequals',['NickEquals',['../classCNick.html#af8d11940b96b5bcaa376c26a61c75a69',1,'CNick']]],
   ['no_5ftraffic_5ftimeout',['NO_TRAFFIC_TIMEOUT',['../classCIRCNetwork.html#a9fed91ead68a69eb6c7e40d290fffe6bab30cf0fd44745403f459d4ee5ae0b527',1,'CIRCNetwork']]],
   ['noarg',['NoArg',['../classCIRCSock.html#a8e68d9e0596157b56783e5e9603f7b69ad8393389d80a63f9b18ba1e05628edf1',1,'CIRCSock']]],
-  ['nonblockingio',['NonBlockingIO',['../classCsock.html#abef02be96a92f5097556f1b7c082e76a',1,'Csock']]],
+  ['nonblockingio',['NonBlockingIO',['../classCsock.html#abef02be96a92f5097556f1b7c082e76a',1,'Csock::NonBlockingIO()'],['../classCsock.html#abef02be96a92f5097556f1b7c082e76a',1,'Csock::NonBlockingIO()']]],
   ['nothing',['NOTHING',['../main_8h.html#aad4a7ebff687dc5228cc3fd4d25067f2',1,'main.h']]],
   ['num',['NUM',['../classPString.html#a3d15380aec9d92c71dd759f5fa4d9661a68728939bbdc5c2f7b769045fb63fb5e',1,'PString']]],
   ['num2ptr',['NUM2PTR',['../swigperlrun_8h.html#a91fac0c4d634b8ee2267bfae3a048839',1,'swigperlrun.h']]]

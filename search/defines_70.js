@@ -10,7 +10,7 @@ var searchData=
   ['perl_5frevision',['PERL_REVISION',['../swigperlrun_8h.html#a22ab29e6d2c6ffe2eea8fe1c8c6e4b18',1,'swigperlrun.h']]],
   ['perl_5fsubversion',['PERL_SUBVERSION',['../swigperlrun_8h.html#ae8b60c29554997b18b7bdc755db91b89',1,'swigperlrun.h']]],
   ['perl_5fversion',['PERL_VERSION',['../swigperlrun_8h.html#aa95c1d577c535c7ba968ae48a0acf233',1,'swigperlrun.h']]],
-  ['perror',['PERROR',['../Csocket_8h.html#ad94effca1b2e8da32cc64bb4a6717c61',1,'PERROR():&#160;Csocket.h'],['../defines_8h.html#ad94effca1b2e8da32cc64bb4a6717c61',1,'PERROR():&#160;defines.h']]],
+  ['perror',['PERROR',['../build_2include_2znc_2Csocket_8h.html#ad94effca1b2e8da32cc64bb4a6717c61',1,'PERROR():&#160;Csocket.h'],['../include_2znc_2defines_8h.html#ad94effca1b2e8da32cc64bb4a6717c61',1,'PERROR():&#160;defines.h'],['../third__party_2Csocket_2Csocket_8h.html#ad94effca1b2e8da32cc64bb4a6717c61',1,'PERROR():&#160;Csocket.h']]],
   ['pl_5ferrgv',['PL_errgv',['../swigperlrun_8h.html#a26e6eb08b919cd9a59c174d7f6b288ea',1,'swigperlrun.h']]],
   ['pl_5fmarkstack_5fptr',['PL_markstack_ptr',['../swigperlrun_8h.html#aafd0ef0b47173514b52d26bf2d2d9301',1,'swigperlrun.h']]],
   ['pl_5fna',['PL_na',['../swigperlrun_8h.html#a6997c7fab13769ab5b7039d485dfa3ae',1,'swigperlrun.h']]],

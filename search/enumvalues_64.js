@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['dns_5fdest',['DNS_DEST',['../classCsock.html#a94aab05249b29e4446077664dee91e5ea61e4aa93fa8c8d34d7393f13767f3817',1,'Csock']]],
-  ['dns_5fvhost',['DNS_VHOST',['../classCsock.html#a94aab05249b29e4446077664dee91e5ea7ad7bffbc3827e2b09ded86d9d95e0c5',1,'Csock']]]
+  ['dns_5fdest',['DNS_DEST',['../classCsock.html#a94aab05249b29e4446077664dee91e5ea8de4f0bb43c95953ef5d47a54391c08d',1,'Csock']]],
+  ['dns_5fvhost',['DNS_VHOST',['../classCsock.html#a94aab05249b29e4446077664dee91e5ea21f9bc029ad10ffbb5930842ec9381b7',1,'Csock']]]
 ];

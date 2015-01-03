@@ -90,7 +90,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>this is the main cron job class  
  <a href="classCCron.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="Csocket_8h_source.html">Csocket.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="build_2include_2znc_2Csocket_8h_source.html">Csocket.h</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for CCron:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -127,8 +127,36 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCron.html#ae2891f2f31daa245df01a8e16e2550b6">GetCyclesLeft</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCron.html#affd2692d29c623ab825c1c8cb07f563a">isValid</a> () const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if cron is active  <a href="#affd2692d29c623ab825c1c8cb07f563a"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCron.html#a304a49dedd9c9cf38cae17688b910dc6">GetName</a> () const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCron.html#a113e984ddf71c294628fa16fa51c53af">SetName</a> (const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sName)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCron.html#a304a49dedd9c9cf38cae17688b910dc6">GetName</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCron.html#a113e984ddf71c294628fa16fa51c53af">SetName</a> (const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sName)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">timeval&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCron.html#a4d31be5aa13690b98128a4e413e52c68">GetNextRun</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the timestamp of the next estimated run time. Note that it may not run at this EXACT time, but it will run at least at this time or after  <a href="#a4d31be5aa13690b98128a4e413e52c68"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCron.html#ae55653bbe37861680eb83641b35fc60d">RunJob</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">this is the method you should override  <a href="#ae55653bbe37861680eb83641b35fc60d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCron.html#aff4621095cee31642f99271d252b3176">CCron</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCron.html#a149881d078d8e2c7469dc1b19f3b48e6">~CCron</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCron.html#a3eed49e9ab5e1f03bc56d6e307dd52f8">run</a> (timeval &amp;tNow)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This is used by the Job Manager, and not you directly.  <a href="#a3eed49e9ab5e1f03bc56d6e307dd52f8"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCron.html#ac10efd222d184d781a06605b8b1454e7">StartMaxCycles</a> (double dTimeSequence, uint32_t iMaxCycles)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCron.html#a566dafa71bdd78ea3f600fc176178dcc">StartMaxCycles</a> (const timeval &amp;tTimeSequence, uint32_t iMaxCycles)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCron.html#a212dfe7e35c65f3c40d4da753088ccc8">Start</a> (double dTimeSequence)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">starts and runs infinity amount of times  <a href="#a212dfe7e35c65f3c40d4da753088ccc8"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCron.html#abaa282705c567ee2d7ac90feb6fbb613">Start</a> (const timeval &amp;TimeSequence)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCron.html#ab4506a41a334772b646354c9588fdf5c">Stop</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">call this to turn off your cron, it will be removed  <a href="#ab4506a41a334772b646354c9588fdf5c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCron.html#a322f80440f9dcb22f649c7b37be1af80">Pause</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">pauses excution of your code in RunJob  <a href="#a322f80440f9dcb22f649c7b37be1af80"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCron.html#af26d9e4cdafea51c7aeceda5742b09f8">UnPause</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">removes the pause on RunJon  <a href="#af26d9e4cdafea51c7aeceda5742b09f8"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCron.html#a5d146f6713c1b9e163bac0e3c84a5e74">Reset</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">reset the timer  <a href="#a5d146f6713c1b9e163bac0e3c84a5e74"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">timeval&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCron.html#ab7b2c2c23eb08c20d14b3819e5cefeee">GetInterval</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCron.html#a794e07610c7104c78dd533f238e6bf7d">GetMaxCycles</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCron.html#ae2891f2f31daa245df01a8e16e2550b6">GetCyclesLeft</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCron.html#affd2692d29c623ab825c1c8cb07f563a">isValid</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if cron is active  <a href="#affd2692d29c623ab825c1c8cb07f563a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCron.html#a304a49dedd9c9cf38cae17688b910dc6">GetName</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCron.html#a113e984ddf71c294628fa16fa51c53af">SetName</a> (const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sName)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">timeval&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCron.html#a4d31be5aa13690b98128a4e413e52c68">GetNextRun</a> () const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the timestamp of the next estimated run time. Note that it may not run at this EXACT time, but it will run at least at this time or after  <a href="#a4d31be5aa13690b98128a4e413e52c68"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCron.html#ae55653bbe37861680eb83641b35fc60d">RunJob</a> ()</td></tr>
@@ -143,6 +171,38 @@ Protected Attributes</h2></td></tr>
 <p>You should derive from this class, and override <a class="el" href="classCCron.html#ae55653bbe37861680eb83641b35fc60d" title="this is the method you should override">RunJob()</a> with your code </p>
 <dl class="author"><dt><b>Author:</b></dt><dd>Jim Hull &lt;<a href="mailto:csocket@jimloco.com">csocket@jimloco.com</a>&gt; </dd></dl>
 </div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="aff4621095cee31642f99271d252b3176"></a><!-- doxytag: member="CCron::CCron" ref="aff4621095cee31642f99271d252b3176" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCCron.html#aff4621095cee31642f99271d252b3176">CCron::CCron</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a149881d078d8e2c7469dc1b19f3b48e6"></a><!-- doxytag: member="CCron::~CCron" ref="a149881d078d8e2c7469dc1b19f3b48e6" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classCCron.html#a149881d078d8e2c7469dc1b19f3b48e6">CCron::~CCron</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="aff4621095cee31642f99271d252b3176"></a><!-- doxytag: member="CCron::CCron" ref="aff4621095cee31642f99271d252b3176" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -192,6 +252,38 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ae2891f2f31daa245df01a8e16e2550b6"></a><!-- doxytag: member="CCron::GetCyclesLeft" ref="ae2891f2f31daa245df01a8e16e2550b6" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t <a class="el" href="classCCron.html#ae2891f2f31daa245df01a8e16e2550b6">CCron::GetCyclesLeft</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab7b2c2c23eb08c20d14b3819e5cefeee"></a><!-- doxytag: member="CCron::GetInterval" ref="ab7b2c2c23eb08c20d14b3819e5cefeee" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">timeval <a class="el" href="classCCron.html#ab7b2c2c23eb08c20d14b3819e5cefeee">CCron::GetInterval</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ab7b2c2c23eb08c20d14b3819e5cefeee"></a><!-- doxytag: member="CCron::GetInterval" ref="ab7b2c2c23eb08c20d14b3819e5cefeee" args="() const " -->
 <div class="memitem">
 <div class="memproto">
@@ -224,12 +316,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a304a49dedd9c9cf38cae17688b910dc6"></a><!-- doxytag: member="CCron::GetName" ref="a304a49dedd9c9cf38cae17688b910dc6" args="() const " -->
+<a class="anchor" id="a794e07610c7104c78dd533f238e6bf7d"></a><!-- doxytag: member="CCron::GetMaxCycles" ref="a794e07610c7104c78dd533f238e6bf7d" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a>&amp; <a class="el" href="classCCron.html#a304a49dedd9c9cf38cae17688b910dc6">CCron::GetName</a> </td>
+          <td class="memname">uint32_t <a class="el" href="classCCron.html#a794e07610c7104c78dd533f238e6bf7d">CCron::GetMaxCycles</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -237,6 +329,56 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a304a49dedd9c9cf38cae17688b910dc6"></a><!-- doxytag: member="CCron::GetName" ref="a304a49dedd9c9cf38cae17688b910dc6" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a>&amp; <a class="el" href="classCCron.html#a304a49dedd9c9cf38cae17688b910dc6">CCron::GetName</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a304a49dedd9c9cf38cae17688b910dc6"></a><!-- doxytag: member="CCron::GetName" ref="a304a49dedd9c9cf38cae17688b910dc6" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a>&amp; <a class="el" href="classCCron.html#a304a49dedd9c9cf38cae17688b910dc6">CCron::GetName</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4d31be5aa13690b98128a4e413e52c68"></a><!-- doxytag: member="CCron::GetNextRun" ref="a4d31be5aa13690b98128a4e413e52c68" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">timeval <a class="el" href="classCCron.html#a4d31be5aa13690b98128a4e413e52c68">CCron::GetNextRun</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>returns the timestamp of the next estimated run time. Note that it may not run at this EXACT time, but it will run at least at this time or after </p>
 
 </div>
 </div>
@@ -276,6 +418,42 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="affd2692d29c623ab825c1c8cb07f563a"></a><!-- doxytag: member="CCron::isValid" ref="affd2692d29c623ab825c1c8cb07f563a" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classCCron.html#affd2692d29c623ab825c1c8cb07f563a">CCron::isValid</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>returns true if cron is active </p>
+
+</div>
+</div>
+<a class="anchor" id="a322f80440f9dcb22f649c7b37be1af80"></a><!-- doxytag: member="CCron::Pause" ref="a322f80440f9dcb22f649c7b37be1af80" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classCCron.html#a322f80440f9dcb22f649c7b37be1af80">CCron::Pause</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>pauses excution of your code in RunJob </p>
+
+</div>
+</div>
 <a class="anchor" id="a322f80440f9dcb22f649c7b37be1af80"></a><!-- doxytag: member="CCron::Pause" ref="a322f80440f9dcb22f649c7b37be1af80" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -309,6 +487,43 @@ Protected Attributes</h2></td></tr>
 <div class="memdoc">
 
 <p>reset the timer </p>
+
+</div>
+</div>
+<a class="anchor" id="a5d146f6713c1b9e163bac0e3c84a5e74"></a><!-- doxytag: member="CCron::Reset" ref="a5d146f6713c1b9e163bac0e3c84a5e74" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classCCron.html#a5d146f6713c1b9e163bac0e3c84a5e74">CCron::Reset</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>reset the timer </p>
+
+</div>
+</div>
+<a class="anchor" id="a3eed49e9ab5e1f03bc56d6e307dd52f8"></a><!-- doxytag: member="CCron::run" ref="a3eed49e9ab5e1f03bc56d6e307dd52f8" args="(timeval &amp;tNow)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classCCron.html#a3eed49e9ab5e1f03bc56d6e307dd52f8">CCron::run</a> </td>
+          <td>(</td>
+          <td class="paramtype">timeval &amp;&#160;</td>
+          <td class="paramname"><em>tNow</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>This is used by the Job Manager, and not you directly. </p>
 
 </div>
 </div>
@@ -351,6 +566,26 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ae55653bbe37861680eb83641b35fc60d"></a><!-- doxytag: member="CCron::RunJob" ref="ae55653bbe37861680eb83641b35fc60d" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="classCCron.html#ae55653bbe37861680eb83641b35fc60d">CCron::RunJob</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>this is the method you should override </p>
+
+<p>Reimplemented in <a class="el" href="classCFPTimer.html#ae56b7d6c5744cf65880e6c978ff8207b">CFPTimer</a>, <a class="el" href="classCPyTimer.html#acc6c198453bc8cce8e071149836619ec">CPyTimer</a>, and <a class="el" href="classCPerlTimer.html#a669ea57e8f5d44e5f6145d300c39afb3">CPerlTimer</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a113e984ddf71c294628fa16fa51c53af"></a><!-- doxytag: member="CCron::SetName" ref="a113e984ddf71c294628fa16fa51c53af" args="(const CS_STRING &amp;sName)" -->
 <div class="memitem">
 <div class="memproto">
@@ -358,13 +593,49 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">void <a class="el" href="classCCron.html#a113e984ddf71c294628fa16fa51c53af">CCron::SetName</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td>
           <td class="paramname"><em>sName</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a113e984ddf71c294628fa16fa51c53af"></a><!-- doxytag: member="CCron::SetName" ref="a113e984ddf71c294628fa16fa51c53af" args="(const CS_STRING &amp;sName)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classCCron.html#a113e984ddf71c294628fa16fa51c53af">CCron::SetName</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td>
+          <td class="paramname"><em>sName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a212dfe7e35c65f3c40d4da753088ccc8"></a><!-- doxytag: member="CCron::Start" ref="a212dfe7e35c65f3c40d4da753088ccc8" args="(double dTimeSequence)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classCCron.html#a212dfe7e35c65f3c40d4da753088ccc8">CCron::Start</a> </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>dTimeSequence</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>starts and runs infinity amount of times </p>
 
 </div>
 </div>
@@ -401,6 +672,57 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abaa282705c567ee2d7ac90feb6fbb613"></a><!-- doxytag: member="CCron::Start" ref="abaa282705c567ee2d7ac90feb6fbb613" args="(const timeval &amp;TimeSequence)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classCCron.html#a212dfe7e35c65f3c40d4da753088ccc8">CCron::Start</a> </td>
+          <td>(</td>
+          <td class="paramtype">const timeval &amp;&#160;</td>
+          <td class="paramname"><em>TimeSequence</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac10efd222d184d781a06605b8b1454e7"></a><!-- doxytag: member="CCron::StartMaxCycles" ref="ac10efd222d184d781a06605b8b1454e7" args="(double dTimeSequence, uint32_t iMaxCycles)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classCCron.html#ac10efd222d184d781a06605b8b1454e7">CCron::StartMaxCycles</a> </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>dTimeSequence</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>iMaxCycles</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">TimeSequence</td><td>how often to run in seconds </td></tr>
+    <tr><td class="paramname">iMaxCycles</td><td>how many times to run, 0 makes it run forever </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -465,6 +787,33 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a566dafa71bdd78ea3f600fc176178dcc"></a><!-- doxytag: member="CCron::StartMaxCycles" ref="a566dafa71bdd78ea3f600fc176178dcc" args="(const timeval &amp;tTimeSequence, uint32_t iMaxCycles)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classCCron.html#ac10efd222d184d781a06605b8b1454e7">CCron::StartMaxCycles</a> </td>
+          <td>(</td>
+          <td class="paramtype">const timeval &amp;&#160;</td>
+          <td class="paramname"><em>tTimeSequence</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>iMaxCycles</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ab4506a41a334772b646354c9588fdf5c"></a><!-- doxytag: member="CCron::Stop" ref="ab4506a41a334772b646354c9588fdf5c" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -480,6 +829,42 @@ Protected Attributes</h2></td></tr>
 <div class="memdoc">
 
 <p>call this to turn off your cron, it will be removed </p>
+
+</div>
+</div>
+<a class="anchor" id="ab4506a41a334772b646354c9588fdf5c"></a><!-- doxytag: member="CCron::Stop" ref="ab4506a41a334772b646354c9588fdf5c" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classCCron.html#ab4506a41a334772b646354c9588fdf5c">CCron::Stop</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>call this to turn off your cron, it will be removed </p>
+
+</div>
+</div>
+<a class="anchor" id="af26d9e4cdafea51c7aeceda5742b09f8"></a><!-- doxytag: member="CCron::UnPause" ref="af26d9e4cdafea51c7aeceda5742b09f8" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classCCron.html#af26d9e4cdafea51c7aeceda5742b09f8">CCron::UnPause</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>removes the pause on RunJon </p>
 
 </div>
 </div>
@@ -517,8 +902,9 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="Csocket_8h_source.html">Csocket.h</a></li>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="build_2include_2znc_2Csocket_8h_source.html">build/include/znc/Csocket.h</a></li>
+<li><a class="el" href="third__party_2Csocket_2Csocket_8h_source.html">third_party/Csocket/Csocket.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- window showing the filter options -->
@@ -538,7 +924,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 15 2014 16:16:10 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 3 2015 15:55:18 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

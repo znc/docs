@@ -10,6 +10,7 @@ var searchData=
   ['cconfig',['CConfig',['../classCConfig.html',1,'']]],
   ['cconfigentry',['CConfigEntry',['../structCConfigEntry.html',1,'']]],
   ['ccron',['CCron',['../classCCron.html',1,'']]],
+  ['ccurlsock',['CCurlSock',['../classCCurlSock.html',1,'']]],
   ['cdebug',['CDebug',['../classCDebug.html',1,'']]],
   ['cdebugstream',['CDebugStream',['../classCDebugStream.html',1,'']]],
   ['cdir',['CDir',['../classCDir.html',1,'']]],

@@ -85,8 +85,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">CSSSListener Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="CSSSListener" --><!-- doxytag: inherits="CSListener" -->
-<p><code>#include &lt;<a class="el" href="Csocket_8h_source.html">Csocket.h</a>&gt;</code></p>
+<!-- doxytag: class="CSSSListener" --><!-- doxytag: inherits="CSListener,CSListener" -->
+<p><code>#include &lt;<a class="el" href="build_2include_2znc_2Csocket_8h_source.html">Csocket.h</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for CSSSListener:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -110,42 +110,80 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSSSListener.html#a38ebac95e16bb19c05eb92f6bdb88a2c">CSSSListener</a> (uint16_t iPort, const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sBindHost=&quot;&quot;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSSSListener.html#a38ebac95e16bb19c05eb92f6bdb88a2c">CSSSListener</a> (uint16_t iPort, const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sBindHost=&quot;&quot;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSSSListener.html#a38ebac95e16bb19c05eb92f6bdb88a2c">CSSSListener</a> (uint16_t iPort, const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sBindHost=&quot;&quot;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#ab3e02d981b16085376e5bc1f850b2c69">SetDetach</a> (bool b)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#ab3e02d981b16085376e5bc1f850b2c69">SetDetach</a> (bool b)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#a505f7f22d13585680add6432434ed4cf">GetDetach</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#a505f7f22d13585680add6432434ed4cf">GetDetach</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#ac3da5fbe069d335837fb6ce6d1c16379">GetPort</a> () const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#a29b6551371de3f8236c735454ae6fb2f">GetSockName</a> () const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#a5a16e3ed0ba43cb3555de74b6732cb24">GetBindHost</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#ac3da5fbe069d335837fb6ce6d1c16379">GetPort</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#a29b6551371de3f8236c735454ae6fb2f">GetSockName</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#a29b6551371de3f8236c735454ae6fb2f">GetSockName</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#a5a16e3ed0ba43cb3555de74b6732cb24">GetBindHost</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#a5a16e3ed0ba43cb3555de74b6732cb24">GetBindHost</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#adea9f2623c03262b02f5303e3d7bc424">GetIsSSL</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#adea9f2623c03262b02f5303e3d7bc424">GetIsSSL</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#aefb3a16070cc63bed365ba825cbb56aa">GetMaxConns</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#aefb3a16070cc63bed365ba825cbb56aa">GetMaxConns</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#aea693136b86187149b2e5627a5262600">GetTimeout</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#aea693136b86187149b2e5627a5262600">GetTimeout</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCSSockAddr.html#a654fe72219cf1937bef2b7ec2949a23b">CSSockAddr::EAFRequire</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#a70d29f3ba072289966e19fea6e600d04">GetAFRequire</a> () const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#a520fc1af5a57807763c549972d10a924">GetCipher</a> () const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#aab2f54279cc773d44ca05830a560ba1e">GetPemLocation</a> () const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#a80e4dd235423adba22f1bb9b7d0314d3">GetPemPass</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCSSockAddr.html#a654fe72219cf1937bef2b7ec2949a23b">CSSockAddr::EAFRequire</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#a70d29f3ba072289966e19fea6e600d04">GetAFRequire</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#a520fc1af5a57807763c549972d10a924">GetCipher</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#a520fc1af5a57807763c549972d10a924">GetCipher</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#aab2f54279cc773d44ca05830a560ba1e">GetPemLocation</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#aab2f54279cc773d44ca05830a560ba1e">GetPemLocation</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#a80e4dd235423adba22f1bb9b7d0314d3">GetPemPass</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#a80e4dd235423adba22f1bb9b7d0314d3">GetPemPass</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#aaffb846097a1c734a808e7b246e1afdb">GetRequireClientCertFlags</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#aaffb846097a1c734a808e7b246e1afdb">GetRequireClientCertFlags</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#afae86e364a5e977809066bbdfe72b41b">SetPort</a> (uint16_t iPort)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the port to listen on. Set to 0 to listen on a random port  <a href="#afae86e364a5e977809066bbdfe72b41b"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#a4b0d90b04bc82e0fdc02aa90b09f5616">SetSockName</a> (const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sSockName)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#afae86e364a5e977809066bbdfe72b41b">SetPort</a> (uint16_t iPort)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the port to listen on. Set to 0 to listen on a random port  <a href="#afae86e364a5e977809066bbdfe72b41b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#a4b0d90b04bc82e0fdc02aa90b09f5616">SetSockName</a> (const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sSockName)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the sock name for later reference (ie FindSockByName)  <a href="#a4b0d90b04bc82e0fdc02aa90b09f5616"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#a674ea3cbdd7861c212d7be3ff402ed65">SetBindHost</a> (const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sBindHost)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#a4b0d90b04bc82e0fdc02aa90b09f5616">SetSockName</a> (const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sSockName)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the sock name for later reference (ie FindSockByName)  <a href="#a4b0d90b04bc82e0fdc02aa90b09f5616"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#a674ea3cbdd7861c212d7be3ff402ed65">SetBindHost</a> (const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sBindHost)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the host to bind to  <a href="#a674ea3cbdd7861c212d7be3ff402ed65"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#a674ea3cbdd7861c212d7be3ff402ed65">SetBindHost</a> (const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sBindHost)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the host to bind to  <a href="#a674ea3cbdd7861c212d7be3ff402ed65"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#ac9caabd842a11b1b5d0f35e7c2f7d8a8">SetIsSSL</a> (bool b)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">set to true to enable SSL  <a href="#ac9caabd842a11b1b5d0f35e7c2f7d8a8"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#ac9caabd842a11b1b5d0f35e7c2f7d8a8">SetIsSSL</a> (bool b)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">set to true to enable SSL  <a href="#ac9caabd842a11b1b5d0f35e7c2f7d8a8"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#ae16cfb0a44cb7e9667199be05a3be21b">SetMaxConns</a> (int i)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">set max connections as called by accept()  <a href="#ae16cfb0a44cb7e9667199be05a3be21b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#ae16cfb0a44cb7e9667199be05a3be21b">SetMaxConns</a> (int i)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">set max connections as called by accept()  <a href="#ae16cfb0a44cb7e9667199be05a3be21b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#a4bbf5197ef59e071e8f2ce463718717c">SetTimeout</a> (uint32_t i)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the listen timeout. The listener class will close after timeout has been reached if not 0  <a href="#a4bbf5197ef59e071e8f2ce463718717c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#a4bbf5197ef59e071e8f2ce463718717c">SetTimeout</a> (uint32_t i)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the listen timeout. The listener class will close after timeout has been reached if not 0  <a href="#a4bbf5197ef59e071e8f2ce463718717c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#a054f637aded4cb97fdfa38789c835ae7">SetAFRequire</a> (<a class="el" href="classCSSockAddr.html#a654fe72219cf1937bef2b7ec2949a23b">CSSockAddr::EAFRequire</a> iAFRequire)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the AF family type required  <a href="#a054f637aded4cb97fdfa38789c835ae7"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#aaf0ff723d2b771126d2336a3227ea86b">SetCipher</a> (const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;s)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#a054f637aded4cb97fdfa38789c835ae7">SetAFRequire</a> (<a class="el" href="classCSSockAddr.html#a654fe72219cf1937bef2b7ec2949a23b">CSSockAddr::EAFRequire</a> iAFRequire)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the AF family type required  <a href="#a054f637aded4cb97fdfa38789c835ae7"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#aaf0ff723d2b771126d2336a3227ea86b">SetCipher</a> (const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;s)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">set the cipher strength to use, default is HIGH  <a href="#aaf0ff723d2b771126d2336a3227ea86b"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#ac5d4479845e91abba12d4c1a163581de">SetPemLocation</a> (const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;s)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#aaf0ff723d2b771126d2336a3227ea86b">SetCipher</a> (const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;s)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">set the cipher strength to use, default is HIGH  <a href="#aaf0ff723d2b771126d2336a3227ea86b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#ac5d4479845e91abba12d4c1a163581de">SetPemLocation</a> (const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;s)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">set the location of the pemfile  <a href="#ac5d4479845e91abba12d4c1a163581de"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#a3ac08e7906501674a6063a1e277ca40d">SetPemPass</a> (const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;s)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#ac5d4479845e91abba12d4c1a163581de">SetPemLocation</a> (const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;s)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">set the location of the pemfile  <a href="#ac5d4479845e91abba12d4c1a163581de"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#a3ac08e7906501674a6063a1e277ca40d">SetPemPass</a> (const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;s)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">set the pemfile pass  <a href="#a3ac08e7906501674a6063a1e277ca40d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#a3ac08e7906501674a6063a1e277ca40d">SetPemPass</a> (const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;s)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">set the pemfile pass  <a href="#a3ac08e7906501674a6063a1e277ca40d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#a09abd4e832845be87047e6714aad1725">SetRequiresClientCert</a> (bool b)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">set to true if require a client certificate (deprecated  <a href="#a09abd4e832845be87047e6714aad1725"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#a09abd4e832845be87047e6714aad1725">SetRequiresClientCert</a> (bool b)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">set to true if require a client certificate (deprecated  <a href="#a09abd4e832845be87047e6714aad1725"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#aecdbbf2bb3a146ae5564d8f4391cb8f2">SetRequireClientCertFlags</a> (unsigned int iRequireCertFlags)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">bitwise flags, 0 means don't require cert, SSL_VERIFY_PEER verifies peers, SSL_VERIFY_FAIL_IF_NO_PEER_CERT will cause the connection to fail if no cert  <a href="#aecdbbf2bb3a146ae5564d8f4391cb8f2"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSListener.html#aecdbbf2bb3a146ae5564d8f4391cb8f2">SetRequireClientCertFlags</a> (unsigned int iRequireCertFlags)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">bitwise flags, 0 means don't require cert, SSL_VERIFY_PEER verifies peers, SSL_VERIFY_FAIL_IF_NO_PEER_CERT will cause the connection to fail if no cert  <a href="#aecdbbf2bb3a146ae5564d8f4391cb8f2"></a><br/></td></tr>
 </table>
@@ -163,7 +201,34 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td>
+          <td class="paramname"><em>sBindHost</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a38ebac95e16bb19c05eb92f6bdb88a2c"></a><!-- doxytag: member="CSSSListener::CSSSListener" ref="a38ebac95e16bb19c05eb92f6bdb88a2c" args="(uint16_t iPort, const CS_STRING &amp;sBindHost=&quot;&quot;)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCSSSListener.html#a38ebac95e16bb19c05eb92f6bdb88a2c">CSSSListener::CSSSListener</a> </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>iPort</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td>
           <td class="paramname"><em>sBindHost</em> = <code>&quot;&quot;</code>&#160;</td>
         </tr>
         <tr>
@@ -194,12 +259,44 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a70d29f3ba072289966e19fea6e600d04"></a><!-- doxytag: member="CSSSListener::GetAFRequire" ref="a70d29f3ba072289966e19fea6e600d04" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCSSockAddr.html#a654fe72219cf1937bef2b7ec2949a23b">CSSockAddr::EAFRequire</a> <a class="el" href="classCSListener.html#a70d29f3ba072289966e19fea6e600d04">CSListener::GetAFRequire</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inline, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a5a16e3ed0ba43cb3555de74b6732cb24"></a><!-- doxytag: member="CSSSListener::GetBindHost" ref="a5a16e3ed0ba43cb3555de74b6732cb24" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a>&amp; <a class="el" href="classCSListener.html#a5a16e3ed0ba43cb3555de74b6732cb24">CSListener::GetBindHost</a> </td>
+          <td class="memname">const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a>&amp; <a class="el" href="classCSListener.html#a5a16e3ed0ba43cb3555de74b6732cb24">CSListener::GetBindHost</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inline, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5a16e3ed0ba43cb3555de74b6732cb24"></a><!-- doxytag: member="CSSSListener::GetBindHost" ref="a5a16e3ed0ba43cb3555de74b6732cb24" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a>&amp; <a class="el" href="classCSListener.html#a5a16e3ed0ba43cb3555de74b6732cb24">CSListener::GetBindHost</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const<code> [inline, inherited]</code></td>
@@ -215,7 +312,39 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a>&amp; <a class="el" href="classCSListener.html#a520fc1af5a57807763c549972d10a924">CSListener::GetCipher</a> </td>
+          <td class="memname">const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a>&amp; <a class="el" href="classCSListener.html#a520fc1af5a57807763c549972d10a924">CSListener::GetCipher</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inline, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a520fc1af5a57807763c549972d10a924"></a><!-- doxytag: member="CSSSListener::GetCipher" ref="a520fc1af5a57807763c549972d10a924" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a>&amp; <a class="el" href="classCSListener.html#a520fc1af5a57807763c549972d10a924">CSListener::GetCipher</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inline, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a505f7f22d13585680add6432434ed4cf"></a><!-- doxytag: member="CSSSListener::GetDetach" ref="a505f7f22d13585680add6432434ed4cf" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classCSListener.html#a505f7f22d13585680add6432434ed4cf">CSListener::GetDetach</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const<code> [inline, inherited]</code></td>
@@ -258,6 +387,38 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="adea9f2623c03262b02f5303e3d7bc424"></a><!-- doxytag: member="CSSSListener::GetIsSSL" ref="adea9f2623c03262b02f5303e3d7bc424" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classCSListener.html#adea9f2623c03262b02f5303e3d7bc424">CSListener::GetIsSSL</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inline, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aefb3a16070cc63bed365ba825cbb56aa"></a><!-- doxytag: member="CSSSListener::GetMaxConns" ref="aefb3a16070cc63bed365ba825cbb56aa" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="classCSListener.html#aefb3a16070cc63bed365ba825cbb56aa">CSListener::GetMaxConns</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inline, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="aefb3a16070cc63bed365ba825cbb56aa"></a><!-- doxytag: member="CSSSListener::GetMaxConns" ref="aefb3a16070cc63bed365ba825cbb56aa" args="() const " -->
 <div class="memitem">
 <div class="memproto">
@@ -279,7 +440,23 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a>&amp; <a class="el" href="classCSListener.html#aab2f54279cc773d44ca05830a560ba1e">CSListener::GetPemLocation</a> </td>
+          <td class="memname">const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a>&amp; <a class="el" href="classCSListener.html#aab2f54279cc773d44ca05830a560ba1e">CSListener::GetPemLocation</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inline, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aab2f54279cc773d44ca05830a560ba1e"></a><!-- doxytag: member="CSSSListener::GetPemLocation" ref="aab2f54279cc773d44ca05830a560ba1e" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a>&amp; <a class="el" href="classCSListener.html#aab2f54279cc773d44ca05830a560ba1e">CSListener::GetPemLocation</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const<code> [inline, inherited]</code></td>
@@ -295,7 +472,39 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a>&amp; <a class="el" href="classCSListener.html#a80e4dd235423adba22f1bb9b7d0314d3">CSListener::GetPemPass</a> </td>
+          <td class="memname">const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a>&amp; <a class="el" href="classCSListener.html#a80e4dd235423adba22f1bb9b7d0314d3">CSListener::GetPemPass</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inline, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a80e4dd235423adba22f1bb9b7d0314d3"></a><!-- doxytag: member="CSSSListener::GetPemPass" ref="a80e4dd235423adba22f1bb9b7d0314d3" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a>&amp; <a class="el" href="classCSListener.html#a80e4dd235423adba22f1bb9b7d0314d3">CSListener::GetPemPass</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inline, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac3da5fbe069d335837fb6ce6d1c16379"></a><!-- doxytag: member="CSSSListener::GetPort" ref="ac3da5fbe069d335837fb6ce6d1c16379" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t <a class="el" href="classCSListener.html#ac3da5fbe069d335837fb6ce6d1c16379">CSListener::GetPort</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const<code> [inline, inherited]</code></td>
@@ -338,12 +547,60 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aaffb846097a1c734a808e7b246e1afdb"></a><!-- doxytag: member="CSSSListener::GetRequireClientCertFlags" ref="aaffb846097a1c734a808e7b246e1afdb" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t <a class="el" href="classCSListener.html#aaffb846097a1c734a808e7b246e1afdb">CSListener::GetRequireClientCertFlags</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inline, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a29b6551371de3f8236c735454ae6fb2f"></a><!-- doxytag: member="CSSSListener::GetSockName" ref="a29b6551371de3f8236c735454ae6fb2f" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a>&amp; <a class="el" href="classCSListener.html#a29b6551371de3f8236c735454ae6fb2f">CSListener::GetSockName</a> </td>
+          <td class="memname">const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a>&amp; <a class="el" href="classCSListener.html#a29b6551371de3f8236c735454ae6fb2f">CSListener::GetSockName</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inline, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a29b6551371de3f8236c735454ae6fb2f"></a><!-- doxytag: member="CSSSListener::GetSockName" ref="a29b6551371de3f8236c735454ae6fb2f" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a>&amp; <a class="el" href="classCSListener.html#a29b6551371de3f8236c735454ae6fb2f">CSListener::GetSockName</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inline, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aea693136b86187149b2e5627a5262600"></a><!-- doxytag: member="CSSSListener::GetTimeout" ref="aea693136b86187149b2e5627a5262600" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t <a class="el" href="classCSListener.html#aea693136b86187149b2e5627a5262600">CSListener::GetTimeout</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const<code> [inline, inherited]</code></td>
@@ -391,6 +648,25 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a054f637aded4cb97fdfa38789c835ae7"></a><!-- doxytag: member="CSSSListener::SetAFRequire" ref="a054f637aded4cb97fdfa38789c835ae7" args="(CSSockAddr::EAFRequire iAFRequire)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classCSListener.html#a054f637aded4cb97fdfa38789c835ae7">CSListener::SetAFRequire</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCSSockAddr.html#a654fe72219cf1937bef2b7ec2949a23b">CSSockAddr::EAFRequire</a>&#160;</td>
+          <td class="paramname"><em>iAFRequire</em></td><td>)</td>
+          <td><code> [inline, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>sets the AF family type required </p>
+
+</div>
+</div>
 <a class="anchor" id="a674ea3cbdd7861c212d7be3ff402ed65"></a><!-- doxytag: member="CSSSListener::SetBindHost" ref="a674ea3cbdd7861c212d7be3ff402ed65" args="(const CS_STRING &amp;sBindHost)" -->
 <div class="memitem">
 <div class="memproto">
@@ -398,7 +674,26 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void <a class="el" href="classCSListener.html#a674ea3cbdd7861c212d7be3ff402ed65">CSListener::SetBindHost</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td>
+          <td class="paramname"><em>sBindHost</em></td><td>)</td>
+          <td><code> [inline, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>sets the host to bind to </p>
+
+</div>
+</div>
+<a class="anchor" id="a674ea3cbdd7861c212d7be3ff402ed65"></a><!-- doxytag: member="CSSSListener::SetBindHost" ref="a674ea3cbdd7861c212d7be3ff402ed65" args="(const CS_STRING &amp;sBindHost)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classCSListener.html#a674ea3cbdd7861c212d7be3ff402ed65">CSListener::SetBindHost</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td>
           <td class="paramname"><em>sBindHost</em></td><td>)</td>
           <td><code> [inline, inherited]</code></td>
         </tr>
@@ -417,7 +712,26 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void <a class="el" href="classCSListener.html#aaf0ff723d2b771126d2336a3227ea86b">CSListener::SetCipher</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td><code> [inline, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>set the cipher strength to use, default is HIGH </p>
+
+</div>
+</div>
+<a class="anchor" id="aaf0ff723d2b771126d2336a3227ea86b"></a><!-- doxytag: member="CSSSListener::SetCipher" ref="aaf0ff723d2b771126d2336a3227ea86b" args="(const CS_STRING &amp;s)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classCSListener.html#aaf0ff723d2b771126d2336a3227ea86b">CSListener::SetCipher</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td>
           <td class="paramname"><em>s</em></td><td>)</td>
           <td><code> [inline, inherited]</code></td>
         </tr>
@@ -443,6 +757,42 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab3e02d981b16085376e5bc1f850b2c69"></a><!-- doxytag: member="CSSSListener::SetDetach" ref="ab3e02d981b16085376e5bc1f850b2c69" args="(bool b)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classCSListener.html#ab3e02d981b16085376e5bc1f850b2c69">CSListener::SetDetach</a> </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>b</em></td><td>)</td>
+          <td><code> [inline, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac9caabd842a11b1b5d0f35e7c2f7d8a8"></a><!-- doxytag: member="CSSSListener::SetIsSSL" ref="ac9caabd842a11b1b5d0f35e7c2f7d8a8" args="(bool b)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classCSListener.html#ac9caabd842a11b1b5d0f35e7c2f7d8a8">CSListener::SetIsSSL</a> </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>b</em></td><td>)</td>
+          <td><code> [inline, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>set to true to enable SSL </p>
 
 </div>
 </div>
@@ -488,6 +838,25 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ae16cfb0a44cb7e9667199be05a3be21b"></a><!-- doxytag: member="CSSSListener::SetMaxConns" ref="ae16cfb0a44cb7e9667199be05a3be21b" args="(int i)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classCSListener.html#ae16cfb0a44cb7e9667199be05a3be21b">CSListener::SetMaxConns</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td><code> [inline, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>set max connections as called by accept() </p>
+
+</div>
+</div>
 <a class="anchor" id="ac5d4479845e91abba12d4c1a163581de"></a><!-- doxytag: member="CSSSListener::SetPemLocation" ref="ac5d4479845e91abba12d4c1a163581de" args="(const CS_STRING &amp;s)" -->
 <div class="memitem">
 <div class="memproto">
@@ -495,7 +864,26 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void <a class="el" href="classCSListener.html#ac5d4479845e91abba12d4c1a163581de">CSListener::SetPemLocation</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td><code> [inline, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>set the location of the pemfile </p>
+
+</div>
+</div>
+<a class="anchor" id="ac5d4479845e91abba12d4c1a163581de"></a><!-- doxytag: member="CSSSListener::SetPemLocation" ref="ac5d4479845e91abba12d4c1a163581de" args="(const CS_STRING &amp;s)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classCSListener.html#ac5d4479845e91abba12d4c1a163581de">CSListener::SetPemLocation</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td>
           <td class="paramname"><em>s</em></td><td>)</td>
           <td><code> [inline, inherited]</code></td>
         </tr>
@@ -514,7 +902,26 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void <a class="el" href="classCSListener.html#a3ac08e7906501674a6063a1e277ca40d">CSListener::SetPemPass</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td><code> [inline, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>set the pemfile pass </p>
+
+</div>
+</div>
+<a class="anchor" id="a3ac08e7906501674a6063a1e277ca40d"></a><!-- doxytag: member="CSSSListener::SetPemPass" ref="a3ac08e7906501674a6063a1e277ca40d" args="(const CS_STRING &amp;s)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classCSListener.html#a3ac08e7906501674a6063a1e277ca40d">CSListener::SetPemPass</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td>
           <td class="paramname"><em>s</em></td><td>)</td>
           <td><code> [inline, inherited]</code></td>
         </tr>
@@ -542,6 +949,44 @@ Public Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>sets the port to listen on. Set to 0 to listen on a random port </p>
+
+</div>
+</div>
+<a class="anchor" id="afae86e364a5e977809066bbdfe72b41b"></a><!-- doxytag: member="CSSSListener::SetPort" ref="afae86e364a5e977809066bbdfe72b41b" args="(uint16_t iPort)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classCSListener.html#afae86e364a5e977809066bbdfe72b41b">CSListener::SetPort</a> </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>iPort</em></td><td>)</td>
+          <td><code> [inline, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>sets the port to listen on. Set to 0 to listen on a random port </p>
+
+</div>
+</div>
+<a class="anchor" id="aecdbbf2bb3a146ae5564d8f4391cb8f2"></a><!-- doxytag: member="CSSSListener::SetRequireClientCertFlags" ref="aecdbbf2bb3a146ae5564d8f4391cb8f2" args="(unsigned int iRequireCertFlags)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classCSListener.html#aecdbbf2bb3a146ae5564d8f4391cb8f2">CSListener::SetRequireClientCertFlags</a> </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>iRequireCertFlags</em></td><td>)</td>
+          <td><code> [inline, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>bitwise flags, 0 means don't require cert, SSL_VERIFY_PEER verifies peers, SSL_VERIFY_FAIL_IF_NO_PEER_CERT will cause the connection to fail if no cert </p>
 
 </div>
 </div>
@@ -584,6 +1029,26 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a09abd4e832845be87047e6714aad1725"></a><!-- doxytag: member="CSSSListener::SetRequiresClientCert" ref="a09abd4e832845be87047e6714aad1725" args="(bool b)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classCSListener.html#a09abd4e832845be87047e6714aad1725">CSListener::SetRequiresClientCert</a> </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>b</em></td><td>)</td>
+          <td><code> [inline, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>set to true if require a client certificate (deprecated </p>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classCSListener.html#aecdbbf2bb3a146ae5564d8f4391cb8f2" title="bitwise flags, 0 means don&#39;t require cert, SSL_VERIFY_PEER verifies peers, SSL_VERIFY_FAIL_IF_NO_PEER...">SetRequireClientCertFlags</a>) </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a4b0d90b04bc82e0fdc02aa90b09f5616"></a><!-- doxytag: member="CSSSListener::SetSockName" ref="a4b0d90b04bc82e0fdc02aa90b09f5616" args="(const CS_STRING &amp;sSockName)" -->
 <div class="memitem">
 <div class="memproto">
@@ -591,7 +1056,26 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void <a class="el" href="classCSListener.html#a4b0d90b04bc82e0fdc02aa90b09f5616">CSListener::SetSockName</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td>
+          <td class="paramname"><em>sSockName</em></td><td>)</td>
+          <td><code> [inline, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>sets the sock name for later reference (ie FindSockByName) </p>
+
+</div>
+</div>
+<a class="anchor" id="a4b0d90b04bc82e0fdc02aa90b09f5616"></a><!-- doxytag: member="CSSSListener::SetSockName" ref="a4b0d90b04bc82e0fdc02aa90b09f5616" args="(const CS_STRING &amp;sSockName)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classCSListener.html#a4b0d90b04bc82e0fdc02aa90b09f5616">CSListener::SetSockName</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td>
           <td class="paramname"><em>sSockName</em></td><td>)</td>
           <td><code> [inline, inherited]</code></td>
         </tr>
@@ -626,8 +1110,28 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="Csocket_8h_source.html">Csocket.h</a></li>
+<a class="anchor" id="a4bbf5197ef59e071e8f2ce463718717c"></a><!-- doxytag: member="CSSSListener::SetTimeout" ref="a4bbf5197ef59e071e8f2ce463718717c" args="(uint32_t i)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classCSListener.html#a4bbf5197ef59e071e8f2ce463718717c">CSListener::SetTimeout</a> </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td><code> [inline, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>sets the listen timeout. The listener class will close after timeout has been reached if not 0 </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="build_2include_2znc_2Csocket_8h_source.html">build/include/znc/Csocket.h</a></li>
+<li><a class="el" href="third__party_2Csocket_2Csocket_8h_source.html">third_party/Csocket/Csocket.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- window showing the filter options -->
@@ -647,7 +1151,7 @@ Public Member Functions</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 15 2014 16:16:11 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 3 2015 15:55:20 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

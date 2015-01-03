@@ -15,10 +15,10 @@ var searchData=
   ['md5_5ffinish',['md5_finish',['../classCMD5.html#a527c4e9897e5db7d0411e27d7812923a',1,'CMD5']]],
   ['md5_5fstarts',['md5_starts',['../classCMD5.html#aff33336b38777388fea282220c38d86b',1,'CMD5']]],
   ['md5_5fupdate',['md5_update',['../classCMD5.html#a662a7fdc0fe47a3fd38b2b9071914ccb',1,'CMD5']]],
-  ['millitime',['millitime',['../Csocket_8h.html#a200af062a9d9cf2c6dabb38b207a00b9',1,'Csocket.h']]],
+  ['millitime',['millitime',['../build_2include_2znc_2Csocket_8h.html#a200af062a9d9cf2c6dabb38b207a00b9',1,'millitime():&#160;Csocket.h'],['../third__party_2Csocket_2Csocket_8h.html#a200af062a9d9cf2c6dabb38b207a00b9',1,'millitime():&#160;Csocket.h']]],
   ['modechange',['ModeChange',['../classCChan.html#a5c2b2fc85a561445939540aad7e2b197',1,'CChan']]],
   ['moduletypetostring',['ModuleTypeToString',['../classCModInfo.html#a791e3525a64244528c0b7ef2d800da06',1,'CModInfo']]],
-  ['monitorfd',['MonitorFD',['../classCSockCommon.html#a7a5acbe54d37f4a3f4c85a339451ee2e',1,'CSockCommon']]],
+  ['monitorfd',['MonitorFD',['../classCSockCommon.html#a7a5acbe54d37f4a3f4c85a339451ee2e',1,'CSockCommon::MonitorFD(CSMonitorFD *pMonitorFD)'],['../classCSockCommon.html#a7a5acbe54d37f4a3f4c85a339451ee2e',1,'CSockCommon::MonitorFD(CSMonitorFD *pMonitorFD)']]],
   ['move',['Move',['../classCFile.html#a3e79191bd6051aee03b038150a23ab6b',1,'CFile::Move(const CString &amp;sNewFileName, bool bOverwrite=false)'],['../classCFile.html#a1539989d0d16c147b91b09462f00e738',1,'CFile::Move(const CString &amp;sOldFileName, const CString &amp;sNewFileName, bool bOverwrite=false)']]],
   ['moveregistry',['MoveRegistry',['../classCModule.html#a0f268b75ec025ff3ccc8e9b526134fef',1,'CModule']]],
   ['multiclients',['MultiClients',['../classCUser.html#a668a2fc9df60fe7c401dc56579ba2310',1,'CUser']]]

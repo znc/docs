@@ -89,13 +89,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>this function is a wrapper around getaddrinfo (for ipv6)  
  <a href="classCGetAddrInfo.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="Csocket_8h_source.html">Csocket.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="build_2include_2znc_2Csocket_8h_source.html">Csocket.h</a>&gt;</code></p>
 
 <p><a href="classCGetAddrInfo-members.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGetAddrInfo.html#a88796e7dbb9c7fb21f652351ac920ecb">CGetAddrInfo</a> (const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sHostname, <a class="el" href="classCsock.html">Csock</a> *pSock, <a class="el" href="classCSSockAddr.html">CSSockAddr</a> &amp;csSockAddr)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGetAddrInfo.html#a88796e7dbb9c7fb21f652351ac920ecb">CGetAddrInfo</a> (const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sHostname, <a class="el" href="classCsock.html">Csock</a> *pSock, <a class="el" href="classCSSockAddr.html">CSSockAddr</a> &amp;csSockAddr)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">ctor  <a href="#a88796e7dbb9c7fb21f652351ac920ecb"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGetAddrInfo.html#af12fbc77cedbf0d538e13c5107755249">~CGetAddrInfo</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGetAddrInfo.html#aac031f503d2e201468a9984a370483a1">Init</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">simply sets up m_cHints for use in process  <a href="#aac031f503d2e201468a9984a370483a1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGetAddrInfo.html#a315c0fc484347988f22fd4ed42499db6">Process</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">the simplest part of the function, only calls getaddrinfo and uses only m_sHostname, m_pAddrRes, and m_cHints.  <a href="#a315c0fc484347988f22fd4ed42499db6"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGetAddrInfo.html#aa966eeec4d0b1643e8cdbae65ab9076d">Finish</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">finalizes and sets up csSockAddr (and pSock if not NULL), only needs to be called if Process returns 0, but can be called anyways if flow demands it  <a href="#aa966eeec4d0b1643e8cdbae65ab9076d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGetAddrInfo.html#a88796e7dbb9c7fb21f652351ac920ecb">CGetAddrInfo</a> (const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sHostname, <a class="el" href="classCsock.html">Csock</a> *pSock, <a class="el" href="classCSSockAddr.html">CSSockAddr</a> &amp;csSockAddr)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">ctor  <a href="#a88796e7dbb9c7fb21f652351ac920ecb"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGetAddrInfo.html#af12fbc77cedbf0d538e13c5107755249">~CGetAddrInfo</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGetAddrInfo.html#aac031f503d2e201468a9984a370483a1">Init</a> ()</td></tr>
@@ -121,7 +130,66 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classCGetAddrInfo.html#a88796e7dbb9c7fb21f652351ac920ecb">CGetAddrInfo::CGetAddrInfo</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td>
+          <td class="paramname"><em>sHostname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classCsock.html">Csock</a> *&#160;</td>
+          <td class="paramname"><em>pSock</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classCSSockAddr.html">CSSockAddr</a> &amp;&#160;</td>
+          <td class="paramname"><em>csSockAddr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>ctor </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sHostname</td><td>the host to resolve </td></tr>
+    <tr><td class="paramname">pSock</td><td>the sock being setup, this option can be NULL, if it is null csSockAddr is only setup </td></tr>
+    <tr><td class="paramname">csSockAddr</td><td>the struct that sockaddr data is being copied to </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="af12fbc77cedbf0d538e13c5107755249"></a><!-- doxytag: member="CGetAddrInfo::~CGetAddrInfo" ref="af12fbc77cedbf0d538e13c5107755249" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCGetAddrInfo.html#af12fbc77cedbf0d538e13c5107755249">CGetAddrInfo::~CGetAddrInfo</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a88796e7dbb9c7fb21f652351ac920ecb"></a><!-- doxytag: member="CGetAddrInfo::CGetAddrInfo" ref="a88796e7dbb9c7fb21f652351ac920ecb" args="(const CS_STRING &amp;sHostname, Csock *pSock, CSSockAddr &amp;csSockAddr)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCGetAddrInfo.html#a88796e7dbb9c7fb21f652351ac920ecb">CGetAddrInfo::CGetAddrInfo</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td>
           <td class="paramname"><em>sHostname</em>, </td>
         </tr>
         <tr>
@@ -192,6 +260,42 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aa966eeec4d0b1643e8cdbae65ab9076d"></a><!-- doxytag: member="CGetAddrInfo::Finish" ref="aa966eeec4d0b1643e8cdbae65ab9076d" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="classCGetAddrInfo.html#aa966eeec4d0b1643e8cdbae65ab9076d">CGetAddrInfo::Finish</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>finalizes and sets up csSockAddr (and pSock if not NULL), only needs to be called if Process returns 0, but can be called anyways if flow demands it </p>
+
+</div>
+</div>
+<a class="anchor" id="aac031f503d2e201468a9984a370483a1"></a><!-- doxytag: member="CGetAddrInfo::Init" ref="aac031f503d2e201468a9984a370483a1" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classCGetAddrInfo.html#aac031f503d2e201468a9984a370483a1">CGetAddrInfo::Init</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>simply sets up m_cHints for use in process </p>
+
+</div>
+</div>
 <a class="anchor" id="aac031f503d2e201468a9984a370483a1"></a><!-- doxytag: member="CGetAddrInfo::Init" ref="aac031f503d2e201468a9984a370483a1" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -228,8 +332,27 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="Csocket_8h_source.html">Csocket.h</a></li>
+<a class="anchor" id="a315c0fc484347988f22fd4ed42499db6"></a><!-- doxytag: member="CGetAddrInfo::Process" ref="a315c0fc484347988f22fd4ed42499db6" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="classCGetAddrInfo.html#a315c0fc484347988f22fd4ed42499db6">CGetAddrInfo::Process</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>the simplest part of the function, only calls getaddrinfo and uses only m_sHostname, m_pAddrRes, and m_cHints. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="build_2include_2znc_2Csocket_8h_source.html">build/include/znc/Csocket.h</a></li>
+<li><a class="el" href="third__party_2Csocket_2Csocket_8h_source.html">third_party/Csocket/Csocket.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- window showing the filter options -->
@@ -249,7 +372,7 @@ Public Member Functions</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 15 2014 16:16:10 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 3 2015 15:55:18 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
