@@ -227,25 +227,26 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 <b>Value:</b><div class="fragment"><pre class="fragment"><span class="keywordflow">do</span> {                                                              \
-                assert(macUSER != NULL);                                  \
                 bool bGlobalExited = <span class="keyword">false</span>;                                \
                 _GLOBALMODULECALL(macFUNC, macUSER, macNETWORK, macCLIENT, &amp;bGlobalExited); \
                 if (bGlobalExited) {                                       \
                         *macEXITER = <span class="keyword">true</span>;                \
                         break;                                             \
                 }                                                         \
-                CModules&amp; UMods = macUSER-&gt;GetModules();                  \
-                CIRCNetwork* pOldUNetwork = UMods.GetNetwork();           \
-                CClient* pOldUClient = UMods.GetClient();                 \
-                UMods.SetNetwork(macNETWORK);                             \
-                UMods.SetClient(macCLIENT);                               \
-                if (UMods.macFUNC) {                                      \
-                        UMods.SetNetwork(pOldUNetwork);                   \
-                        UMods.SetClient(pOldUClient);                     \
-                        *macEXITER = <span class="keyword">true</span>;                \
-                }                                                         \
-                UMods.SetNetwork(pOldUNetwork);                           \
-                UMods.SetClient(pOldUClient);                             \
+                if (macUSER != <span class="keyword">nullptr</span>) { \
+                        CModules&amp; UMods = macUSER-&gt;GetModules();                  \
+                        CIRCNetwork* pOldUNetwork = UMods.GetNetwork();           \
+                        CClient* pOldUClient = UMods.GetClient();                 \
+                        UMods.SetNetwork(macNETWORK);                             \
+                        UMods.SetClient(macCLIENT);                               \
+                        if (UMods.macFUNC) {                                      \
+                                UMods.SetNetwork(pOldUNetwork);                   \
+                                UMods.SetClient(pOldUClient);                     \
+                                *macEXITER = <span class="keyword">true</span>;                \
+                        }                                                         \
+                        UMods.SetNetwork(pOldUNetwork);                           \
+                        UMods.SetClient(pOldUClient);                             \
+                } \
         } <span class="keywordflow">while</span> (<span class="keyword">false</span>)
 </pre></div>
 </div>
@@ -377,7 +378,6 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 <b>Value:</b><div class="fragment"><pre class="fragment"><span class="keywordflow">do</span> {                                                                   \
-                assert(macUSER != NULL);                                       \
                 bool bUserExited = <span class="keyword">false</span>;                                   \
                 _USERMODULECALL(macFUNC, macUSER, macNETWORK, macCLIENT, &amp;bUserExited); \
                 if (bUserExited) {                                         \
@@ -482,7 +482,7 @@ Variables</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 15 2014 16:16:10 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jan 11 2015 17:21:03 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
