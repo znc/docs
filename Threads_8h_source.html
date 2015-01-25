@@ -350,24 +350,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00307"></a>00307         <span class="comment">// condition variable for reporting finished cancellation</span>
 <a name="l00308"></a>00308         CConditionVariable m_cancellationCond;
 <a name="l00309"></a>00309 
-<a name="l00310"></a>00310         <span class="comment">// when this is true, all threads should exit</span>
-<a name="l00311"></a>00311         <span class="keywordtype">bool</span> m_done;
+<a name="l00310"></a>00310         <span class="comment">// condition variable for waiting running threads == 0</span>
+<a name="l00311"></a>00311         CConditionVariable m_exit_cond;
 <a name="l00312"></a>00312 
-<a name="l00313"></a>00313         <span class="comment">// total number of running threads</span>
-<a name="l00314"></a>00314         <span class="keywordtype">size_t</span> m_num_threads;
+<a name="l00313"></a>00313         <span class="comment">// when this is true, all threads should exit</span>
+<a name="l00314"></a>00314         <span class="keywordtype">bool</span> m_done;
 <a name="l00315"></a>00315 
-<a name="l00316"></a>00316         <span class="comment">// number of idle threads waiting on the condition variable</span>
-<a name="l00317"></a>00317         <span class="keywordtype">size_t</span> m_num_idle;
+<a name="l00316"></a>00316         <span class="comment">// total number of running threads</span>
+<a name="l00317"></a>00317         <span class="keywordtype">size_t</span> m_num_threads;
 <a name="l00318"></a>00318 
-<a name="l00319"></a>00319         <span class="comment">// pipe for waking up the main thread</span>
-<a name="l00320"></a>00320         <span class="keywordtype">int</span> m_iJobPipe[2];
+<a name="l00319"></a>00319         <span class="comment">// number of idle threads waiting on the condition variable</span>
+<a name="l00320"></a>00320         <span class="keywordtype">size_t</span> m_num_idle;
 <a name="l00321"></a>00321 
-<a name="l00322"></a>00322         <span class="comment">// list of pending jobs</span>
-<a name="l00323"></a>00323         std::list&lt;CJob *&gt; m_jobs;
-<a name="l00324"></a>00324 };
-<a name="l00325"></a>00325 
-<a name="l00326"></a>00326 <span class="preprocessor">#endif // HAVE_PTHREAD</span>
-<a name="l00327"></a>00327 <span class="preprocessor"></span><span class="preprocessor">#endif // !_THREADS_H</span>
+<a name="l00322"></a>00322         <span class="comment">// pipe for waking up the main thread</span>
+<a name="l00323"></a>00323         <span class="keywordtype">int</span> m_iJobPipe[2];
+<a name="l00324"></a>00324 
+<a name="l00325"></a>00325         <span class="comment">// list of pending jobs</span>
+<a name="l00326"></a>00326         std::list&lt;CJob *&gt; m_jobs;
+<a name="l00327"></a>00327 };
+<a name="l00328"></a>00328 
+<a name="l00329"></a>00329 <span class="preprocessor">#endif // HAVE_PTHREAD</span>
+<a name="l00330"></a>00330 <span class="preprocessor"></span><span class="preprocessor">#endif // !_THREADS_H</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -386,7 +389,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 31 2014 20:31:09 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jan 25 2015 13:13:10 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
