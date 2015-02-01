@@ -153,6 +153,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a183fecfbb5f4bfb46439faa1b0f943ac">SetAnonIPLimit</a> (unsigned int i)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a46512d96505a52a869f5eac5387d6f8c">SetServerThrottle</a> (unsigned int i)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a241329b8a382193ef5edba3fc2c6dcef">SetProtectWebSessions</a> (bool b)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#acc31768cc4e0db8cf165eb242630ac28">SetHideVersion</a> (bool b)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a68fa22ca0e610d6b74352398c37737e8">SetConnectDelay</a> (unsigned int i)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="classCZNC.html#a872d81d61388f9acb7f8e6e966b4fd8f">ConfigState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a6c1f455a26eb3a5d06c93bbf9308420a">GetConfigState</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCSockManager.html">CSockManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a381caa7205b21e33ffc70f2bb0499cd1">GetManager</a> ()</td></tr>
@@ -178,6 +179,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#aee1def5c6961c0177290b3a223d001c2">GetServerThrottle</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a0f5077bfeebc05494c58cc199db3ff47">GetConnectDelay</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#ae805b2e17a557307584e6d3c79e561ab">GetProtectWebSessions</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a95489a5bdde0ff6002ecde62721ef0da">GetHideVersion</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a5d90576373bd699ec5aae7a501aa0d7a">GetSSLCiphers</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCsock.html#a5386b79c9e11eb2e3e175473378abf44">Csock::EDisableProtocol</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a56d1656c4b9fb895762a284a4cf8ad00">GetDisabledSSLProtocols</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCUser.html">CUser</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#ac53d84f70f1a4d75272b1e979fcaf1b4">FindUser</a> (const <a class="el" href="classCString.html">CString</a> &amp;sUsername)</td></tr>
@@ -247,6 +249,7 @@ Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a0cdab8cadfd599304fad46542f9efa84">m_uiConnectPaused</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTCacheMap.html">TCacheMap</a>&lt; <a class="el" href="classCString.html">CString</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a47ddfe2e31ac432261dbd9f9271eb3c7">m_sConnectThrottle</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a0946e948111699c1d35b1caf66c73c0b">m_bProtectWebSessions</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a64fcfaaa34838baccd23c631993cd7ca">m_bHideVersion</a></td></tr>
 </table>
 <hr/><h2>Member Typedef Documentation</h2>
 <a class="anchor" id="a61a17d25718d53b4afc4200511cbe093"></a><!-- doxytag: member="CZNC::TrafficStatsMap" ref="a61a17d25718d53b4afc4200511cbe093" args="" -->
@@ -1212,6 +1215,24 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a95489a5bdde0ff6002ecde62721ef0da"></a><!-- doxytag: member="CZNC::GetHideVersion" ref="a95489a5bdde0ff6002ecde62721ef0da" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classCZNC.html#a95489a5bdde0ff6002ecde62721ef0da">CZNC::GetHideVersion</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="classCZNC.html#a64fcfaaa34838baccd23c631993cd7ca">m_bHideVersion</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ad3ac4e4c4c0312991abccd6fa9628639"></a><!-- doxytag: member="CZNC::GetHomePath" ref="ad3ac4e4c4c0312991abccd6fa9628639" args="() const " -->
 <div class="memitem">
 <div class="memproto">
@@ -1895,6 +1916,25 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="acc31768cc4e0db8cf165eb242630ac28"></a><!-- doxytag: member="CZNC::SetHideVersion" ref="acc31768cc4e0db8cf165eb242630ac28" args="(bool b)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classCZNC.html#acc31768cc4e0db8cf165eb242630ac28">CZNC::SetHideVersion</a> </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>b</em></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="classCZNC.html#a64fcfaaa34838baccd23c631993cd7ca">m_bHideVersion</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="aaa6e9c186e76e941439a642ba19b6b04"></a><!-- doxytag: member="CZNC::SetMaxBufferSize" ref="aaa6e9c186e76e941439a642ba19b6b04" args="(unsigned int i)" -->
 <div class="memitem">
 <div class="memproto">
@@ -2136,6 +2176,21 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <hr/><h2>Member Data Documentation</h2>
+<a class="anchor" id="a64fcfaaa34838baccd23c631993cd7ca"></a><!-- doxytag: member="CZNC::m_bHideVersion" ref="a64fcfaaa34838baccd23c631993cd7ca" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classCZNC.html#a64fcfaaa34838baccd23c631993cd7ca">CZNC::m_bHideVersion</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Referenced by <a class="el" href="classCZNC.html#a95489a5bdde0ff6002ecde62721ef0da">GetHideVersion()</a>, and <a class="el" href="classCZNC.html#acc31768cc4e0db8cf165eb242630ac28">SetHideVersion()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a0946e948111699c1d35b1caf66c73c0b"></a><!-- doxytag: member="CZNC::m_bProtectWebSessions" ref="a0946e948111699c1d35b1caf66c73c0b" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -2604,7 +2659,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 3 2015 15:55:20 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Feb 1 2015 09:30:27 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
