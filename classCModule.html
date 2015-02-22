@@ -254,6 +254,8 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This module hook is called when a user wants to change a channel topic.  <a href="#a60a8d8af6d435c28757408cdd497ec49"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#a82c3bc3b2a3fb9efca0e74e5b866c965">OnUserTopicRequest</a> (<a class="el" href="classCString.html">CString</a> &amp;sChannel)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This hook is called when a user requests a channel's topic.  <a href="#a82c3bc3b2a3fb9efca0e74e5b866c965"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#a05ea7dcb8c626f5267b5240cc81453fa">OnUserQuit</a> (<a class="el" href="classCString.html">CString</a> &amp;sMessage)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This module hook is called when a user requests to quit from network.  <a href="#a05ea7dcb8c626f5267b5240cc81453fa"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#af0d3be37a28c2a7fc3fe9e5e1545a7a1">OnCTCPReply</a> (<a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCString.html">CString</a> &amp;sMessage)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when we receive a CTCP reply <em>from IRC</em>.  <a href="#af0d3be37a28c2a7fc3fe9e5e1545a7a1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#a6b8c4ec8d47188803dc69e505f9a7992">OnPrivCTCP</a> (<a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCString.html">CString</a> &amp;sMessage)</td></tr>
@@ -4624,6 +4626,34 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a05ea7dcb8c626f5267b5240cc81453fa"></a><!-- doxytag: member="CModule::OnUserQuit" ref="a05ea7dcb8c626f5267b5240cc81453fa" args="(CString &amp;sMessage)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCModule.html#a05ea7dcb8c626f5267b5240cc81453fa">CModule::OnUserQuit</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
+          <td class="paramname"><em>sMessage</em></td><td>)</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>This module hook is called when a user requests to quit from network. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sMessage</td><td>The quit message the client sent. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>See <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2" title="This enum is just used for return from module hooks.">CModule::EModRet</a>. </dd></dl>
+
+<p>Reimplemented in <a class="el" href="classCPyModule.html#a1f4ebb6294097ba3063c70e8cf90818e">CPyModule</a>, and <a class="el" href="classCPerlModule.html#a004880a70e06b0f0c252f58b22d5f30e">CPerlModule</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="adaf1b0874330d69acc99e621bcaa3bfc"></a><!-- doxytag: member="CModule::OnUserRaw" ref="adaf1b0874330d69acc99e621bcaa3bfc" args="(CString &amp;sLine)" -->
 <div class="memitem">
 <div class="memproto">
@@ -5637,7 +5667,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 3 2015 15:55:19 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Feb 22 2015 18:12:20 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
