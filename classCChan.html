@@ -176,6 +176,8 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCChan.html#a4fb8b14dfc15d1d3030173796e47959e">SetDefaultModes</a> (const <a class="el" href="classCString.html">CString</a> &amp;s)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCChan.html#a123c2f6590218f5fcce9008e8ed0bcf4">SetAutoClearChanBuffer</a> (bool b)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCChan.html#a0b3d8d9638e0c653ee8c260732214f21">InheritAutoClearChanBuffer</a> (bool b)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCChan.html#ad51ed41abc9ab6a994831a14592dbf1b">SetStripControls</a> (bool b)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCChan.html#a2fc0e2002cdd1c8888225481f8784406">InheritStripControls</a> (bool b)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCChan.html#ad24bff3bbe283a352023d2cbf5078961">SetDetached</a> (bool b=true)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCChan.html#a4979665fa7fa00cbc32b3db3cc3a7f1c">SetInConfig</a> (bool b)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCChan.html#aa9867f6ccab2578584473447ed9aeb3a">SetCreationDate</a> (unsigned long u)</td></tr>
@@ -201,12 +203,14 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCChan.html#abbc509c7a8a7cd384b8cb33fa5b224f7">GetNickCount</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCChan.html#a9778b5f611568aa8ea62a7634248cf34">AutoClearChanBuffer</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCChan.html#a1691f224b22720437f2c4f64caca26d2">IsDetached</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCChan.html#afc8d1b5f275d86fb76dd29c7c74b30ad">StripControls</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCChan.html#a606624bca637c7c21d138f0fabb32397">InConfig</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCChan.html#a6701d89616f1f5190533e917bf1cb71f">GetCreationDate</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCChan.html#a5767963600828808dea7f5bba4331d37">IsDisabled</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCChan.html#a2341c95bb4ec31a25f52d381d0f4d94d">GetJoinTries</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCChan.html#a61a127b32899c9f36544151eb42d67d4">HasBufferCountSet</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCChan.html#abdf3f7c26c38540a66b1569dd1c276a4">HasAutoClearChanBufferSet</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCChan.html#a9a924d12a0f8fd5242d2f86aae742166">HasStripControlsSet</a> () const </td></tr>
 <tr><td colspan="2"><h2><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCChan.html#ae0cacbcf14720e68444a69d2cb61130e">m_bDetached</a></td></tr>
@@ -216,6 +220,8 @@ Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCChan.html#add4c6c2e3ef6b7ef675ee0c0eb1f4fee">m_bDisabled</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCChan.html#aef037ef5ed75feb23dd3bf9a92718222">m_bHasBufferCountSet</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCChan.html#a2e7f6819e9ce225be18230ca107afee1">m_bHasAutoClearChanBufferSet</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCChan.html#a982b3d89997d45c0aac7eea7008c3f87">m_bStripControls</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCChan.html#a64e1b7d0361e85ccc508f0f563b0f2b8">m_bHasStripControlsSet</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCChan.html#aeb67d8c0564535c4d2a56a4ae30e9102">m_sName</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCChan.html#a16b7db863a1c7fffe5d4dd016c7651e9">m_sKey</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCChan.html#ad1d2fbd672a8c63ebb990a3d94ace958">m_sTopic</a></td></tr>
@@ -1107,6 +1113,24 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a9a924d12a0f8fd5242d2f86aae742166"></a><!-- doxytag: member="CChan::HasStripControlsSet" ref="a9a924d12a0f8fd5242d2f86aae742166" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classCChan.html#a9a924d12a0f8fd5242d2f86aae742166">CChan::HasStripControlsSet</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="classCChan.html#a64e1b7d0361e85ccc508f0f563b0f2b8">m_bHasStripControlsSet</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a403fe4c05f84a7390170fd2400635e36"></a><!-- doxytag: member="CChan::IncJoinTries" ref="a403fe4c05f84a7390170fd2400635e36" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -1186,6 +1210,23 @@ Protected Attributes</h2></td></tr>
 <div class="memdoc">
 
 <p>References <a class="el" href="classCChan.html#aef037ef5ed75feb23dd3bf9a92718222">m_bHasBufferCountSet</a>, <a class="el" href="classCChan.html#a2c9e974b0a35fe072fa939b3dbd1840a">m_Buffer</a>, and <a class="el" href="classCBuffer.html#a4bd23b282dd890deb4d1ad3a39d06d1f">CBuffer::SetLineCount()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2fc0e2002cdd1c8888225481f8784406"></a><!-- doxytag: member="CChan::InheritStripControls" ref="a2fc0e2002cdd1c8888225481f8784406" args="(bool b)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classCChan.html#a2fc0e2002cdd1c8888225481f8784406">CChan::InheritStripControls</a> </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>b</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
 
 </div>
 </div>
@@ -1663,6 +1704,23 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ad51ed41abc9ab6a994831a14592dbf1b"></a><!-- doxytag: member="CChan::SetStripControls" ref="ad51ed41abc9ab6a994831a14592dbf1b" args="(bool b)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classCChan.html#ad51ed41abc9ab6a994831a14592dbf1b">CChan::SetStripControls</a> </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>b</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a004d950fdfce824aceed959dc6c20a60"></a><!-- doxytag: member="CChan::SetTopic" ref="a004d950fdfce824aceed959dc6c20a60" args="(const CString &amp;s)" -->
 <div class="memitem">
 <div class="memproto">
@@ -1717,6 +1775,24 @@ Protected Attributes</h2></td></tr>
 <div class="memdoc">
 
 <p>References <a class="el" href="classCChan.html#a4820965dac0eb4c9e7742193086b084b">m_sTopicOwner</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afc8d1b5f275d86fb76dd29c7c74b30ad"></a><!-- doxytag: member="CChan::StripControls" ref="afc8d1b5f275d86fb76dd29c7c74b30ad" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classCChan.html#afc8d1b5f275d86fb76dd29c7c74b30ad">CChan::StripControls</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="classCChan.html#a982b3d89997d45c0aac7eea7008c3f87">m_bStripControls</a>.</p>
 
 </div>
 </div>
@@ -1812,6 +1888,21 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a64e1b7d0361e85ccc508f0f563b0f2b8"></a><!-- doxytag: member="CChan::m_bHasStripControlsSet" ref="a64e1b7d0361e85ccc508f0f563b0f2b8" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classCChan.html#a64e1b7d0361e85ccc508f0f563b0f2b8">CChan::m_bHasStripControlsSet</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Referenced by <a class="el" href="classCChan.html#a9a924d12a0f8fd5242d2f86aae742166">HasStripControlsSet()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a346c4812186035e5c54083383c3c4f06"></a><!-- doxytag: member="CChan::m_bInConfig" ref="a346c4812186035e5c54083383c3c4f06" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -1854,6 +1945,21 @@ Protected Attributes</h2></td></tr>
 <div class="memdoc">
 
 <p>Referenced by <a class="el" href="classCChan.html#a31bc39d64ff6b4d04d7bc15544dbec84">IsModeKnown()</a>, and <a class="el" href="classCChan.html#a9af828f1b570d93a93b393f63ed92669">SetModeKnown()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a982b3d89997d45c0aac7eea7008c3f87"></a><!-- doxytag: member="CChan::m_bStripControls" ref="a982b3d89997d45c0aac7eea7008c3f87" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classCChan.html#a982b3d89997d45c0aac7eea7008c3f87">CChan::m_bStripControls</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Referenced by <a class="el" href="classCChan.html#afc8d1b5f275d86fb76dd29c7c74b30ad">StripControls()</a>.</p>
 
 </div>
 </div>
@@ -2071,7 +2177,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 3 2015 15:55:18 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 23 2015 21:30:48 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

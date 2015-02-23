@@ -8,6 +8,7 @@ var searchData=
   ['incrowindex',['IncRowIndex',['../classCTemplateLoopContext.html#a520a6d2338be39290e2c002e9efe4659',1,'CTemplateLoopContext']]],
   ['inheritautoclearchanbuffer',['InheritAutoClearChanBuffer',['../classCChan.html#a0b3d8d9638e0c653ee8c260732214f21',1,'CChan']]],
   ['inheritbuffercount',['InheritBufferCount',['../classCChan.html#a6b5453adf11257d9ab472b6d10a53353',1,'CChan']]],
+  ['inheritstripcontrols',['InheritStripControls',['../classCChan.html#a2fc0e2002cdd1c8888225481f8784406',1,'CChan']]],
   ['init',['Init',['../classCGetAddrInfo.html#aac031f503d2e201468a9984a370483a1',1,'CGetAddrInfo::Init()'],['../classCHTTPSock.html#ac71e8c62e1904c15b86af3caa30dac0f',1,'CHTTPSock::Init()'],['../classCTemplate.html#a61f7ee7dfe6a2eb10a6c3ba8ae9e4bfa',1,'CTemplate::Init()'],['../classCGetAddrInfo.html#aac031f503d2e201468a9984a370483a1',1,'CGetAddrInfo::Init()']]],
   ['initcsocket',['InitCsocket',['../build_2include_2znc_2Csocket_8h.html#a12335fcf9898675d0bf60dd902e8ce7d',1,'InitCsocket():&#160;Csocket.h'],['../third__party_2Csocket_2Csocket_8h.html#a12335fcf9898675d0bf60dd902e8ce7d',1,'InitCsocket():&#160;Csocket.h']]],
   ['initdirs',['InitDirs',['../classCZNC.html#a90bee7c258282eac8d78f6c97ad5addc',1,'CZNC']]],

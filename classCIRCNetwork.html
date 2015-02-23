@@ -168,6 +168,8 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a051dc22061ca06859850eb9156c05a70">DelTrustedFingerprint</a> (const <a class="el" href="classCString.html">CString</a> &amp;sFP)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#ad31d62aef178a8666c32217c05e97b23">SetIRCConnectEnabled</a> (bool b)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#afb46811ebc83af9b686336458c118b49">GetIRCConnectEnabled</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#aa293e9d004522d0ddd304260b2a809a2">SetStripControls</a> (bool b)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a98c11a06eec71c0a353dd3020964e1c4">StripControls</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCIRCSock.html">CIRCSock</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a27a6ffbc39efcc218e98a13cbc802a3c">GetIRCSock</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classCIRCSock.html">CIRCSock</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a1df6375856c4de7ab438d2c2ecc43047">GetIRCSock</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a35cb83bec8d77aedd3ac48e3c1b57c1e">GetIRCServer</a> () const </td></tr>
@@ -238,6 +240,7 @@ Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classCQuery.html">CQuery</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#aca8bfeea27b99c6e0809e7c2de523a45">m_vQueries</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a70d4ecfcbb5b35986a45fe7373358ef5">m_sChanPrefixes</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#aba9aba7e4192a00e84ab1d1ad0ea23d5">m_bIRCConnectEnabled</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a72ae246fc3f4a3f57c029b9ac27e9845">m_bStripControls</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#aa7d7c9c9124050fc12a5c01370e0bca0">m_sIRCServer</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classCServer.html">CServer</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a9739ab622c0fb97073a6ea10c14f8058">m_vServers</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#aa1281c5c6b0c68315706ddc1e11c53cd">m_uServerIdx</a></td></tr>
@@ -2171,6 +2174,23 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aa293e9d004522d0ddd304260b2a809a2"></a><!-- doxytag: member="CIRCNetwork::SetStripControls" ref="aa293e9d004522d0ddd304260b2a809a2" args="(bool b)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classCIRCNetwork.html#aa293e9d004522d0ddd304260b2a809a2">CIRCNetwork::SetStripControls</a> </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>b</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a8cbad7c3410053ac1256bae3fcc80a2b"></a><!-- doxytag: member="CIRCNetwork::SetUser" ref="a8cbad7c3410053ac1256bae3fcc80a2b" args="(CUser *pUser)" -->
 <div class="memitem">
 <div class="memproto">
@@ -2185,6 +2205,24 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a98c11a06eec71c0a353dd3020964e1c4"></a><!-- doxytag: member="CIRCNetwork::StripControls" ref="a98c11a06eec71c0a353dd3020964e1c4" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classCIRCNetwork.html#a98c11a06eec71c0a353dd3020964e1c4">CIRCNetwork::StripControls</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="classCIRCNetwork.html#a72ae246fc3f4a3f57c029b9ac27e9845">m_bStripControls</a>.</p>
 
 </div>
 </div>
@@ -2366,6 +2404,21 @@ Protected Attributes</h2></td></tr>
 <div class="memdoc">
 
 <p>Referenced by <a class="el" href="classCIRCNetwork.html#afb46811ebc83af9b686336458c118b49">GetIRCConnectEnabled()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a72ae246fc3f4a3f57c029b9ac27e9845"></a><!-- doxytag: member="CIRCNetwork::m_bStripControls" ref="a72ae246fc3f4a3f57c029b9ac27e9845" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classCIRCNetwork.html#a72ae246fc3f4a3f57c029b9ac27e9845">CIRCNetwork::m_bStripControls</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Referenced by <a class="el" href="classCIRCNetwork.html#a98c11a06eec71c0a353dd3020964e1c4">StripControls()</a>.</p>
 
 </div>
 </div>
@@ -2782,7 +2835,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 3 2015 15:55:19 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 23 2015 21:30:49 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

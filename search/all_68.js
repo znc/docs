@@ -33,6 +33,7 @@ var searchData=
   ['hasservers',['HasServers',['../classCIRCNetwork.html#a9c0f16b35306bf8efc22f9d89c806016',1,'CIRCNetwork']]],
   ['hasservertime',['HasServerTime',['../classCClient.html#ac310500d908b99efdbf4db08233aced4',1,'CClient']]],
   ['hasspacefornewnetwork',['HasSpaceForNewNetwork',['../classCUser.html#a3e7d948bfa47e5701e326571e22408ae',1,'CUser']]],
+  ['hasstripcontrolsset',['HasStripControlsSet',['../classCChan.html#a9a924d12a0f8fd5242d2f86aae742166',1,'CChan']]],
   ['hasuhnames',['HasUHNames',['../classCClient.html#a48ee2d9821da1fd2ff595fed9234e1de',1,'CClient::HasUHNames()'],['../classCIRCSock.html#a0a2a10401a93deada603eb6c284d65a3',1,'CIRCSock::HasUHNames()']]],
   ['haswritebuffer',['HasWriteBuffer',['../classCsock.html#a556d37415c5c017c3336eb5228d1beb1',1,'Csock::HasWriteBuffer() const '],['../classCsock.html#a556d37415c5c017c3336eb5228d1beb1',1,'Csock::HasWriteBuffer() const ']]],
   ['have_5fcxx11',['HAVE_CXX11',['../zncconfig_8h.html#adad73cb262d6d08e869992f5ba0e0f58',1,'zncconfig.h']]],
