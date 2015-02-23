@@ -166,8 +166,8 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCString.html#a2bbac3280dc943bf6a68ee023d707a06">Equals</a> (const <a class="el" href="classCString.html">CString</a> &amp;s, <a class="el" href="ZNCString_8h.html#aaa929f83398f109dfbff9789108b159b">CaseSensitivity</a> cs=<a class="el" href="classCString.html#a5733db47a1cbad5ebe79bca80afdd3f1">CaseInsensitive</a>) const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if this string is equal to some other string.  <a href="#a2bbac3280dc943bf6a68ee023d707a06"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCString.html#a24a659b4abcb3b406fa9529d0df4f398">Equals</a> (const <a class="el" href="classCString.html">CString</a> &amp;s, bool bCaseSensitive, CString::size_type uLen=CString::npos) const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCString.html#a57499abb3bac751ef978fe1c6e50941a">WildCmp</a> (const <a class="el" href="classCString.html">CString</a> &amp;sWild) const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Do a wild compare on this string.  <a href="#a57499abb3bac751ef978fe1c6e50941a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCString.html#a8674edda2e245e07e05eea41675e11e2">WildCmp</a> (const <a class="el" href="classCString.html">CString</a> &amp;sWild, <a class="el" href="ZNCString_8h.html#aaa929f83398f109dfbff9789108b159b">CaseSensitivity</a> cs=<a class="el" href="classCString.html#a4ab48ee7748580ed1aa9e2643c31210c">CaseSensitive</a>) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Do a wild compare on this string.  <a href="#a8674edda2e245e07e05eea41675e11e2"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCString.html#ae2e7cf5ab3a7113d895dca8d583819ab">MakeUpper</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn all characters in this string into their upper-case equivalent.  <a href="#ae2e7cf5ab3a7113d895dca8d583819ab"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCString.html#a17a0dc9c19538e9d6b7bd31aa8884c7e">MakeLower</a> ()</td></tr>
@@ -274,8 +274,8 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove controls characters from this string.  <a href="#a506c033130128142d90b40631f0fca80"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCString.html#a93f23344832271fb48ac098bd2d3a627">WildCmp</a> (const <a class="el" href="classCString.html">CString</a> &amp;sWild, const <a class="el" href="classCString.html">CString</a> &amp;sString)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Do a wildcard comparision between two strings.  <a href="#a93f23344832271fb48ac098bd2d3a627"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCString.html#adb5704f54077344132a2627b47487799">WildCmp</a> (const <a class="el" href="classCString.html">CString</a> &amp;sWild, const <a class="el" href="classCString.html">CString</a> &amp;sString, <a class="el" href="ZNCString_8h.html#aaa929f83398f109dfbff9789108b159b">CaseSensitivity</a> cs=<a class="el" href="classCString.html#a4ab48ee7748580ed1aa9e2643c31210c">CaseSensitive</a>)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Do a wildcard comparison between two strings.  <a href="#adb5704f54077344132a2627b47487799"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classCString.html#a8f63759db4ef372abb9cfa4751648e1f">EEscape</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCString.html#a5c9a44a82a6131e218644e3669b87534">ToEscape</a> (const <a class="el" href="classCString.html">CString</a> &amp;sEsc)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCString.html#a4ab2972a48d0bc1084fed5a1f5fe792c">Replace</a> (<a class="el" href="classCString.html">CString</a> &amp;sStr, const <a class="el" href="classCString.html">CString</a> &amp;sReplace, const <a class="el" href="classCString.html">CString</a> &amp;sWith, const <a class="el" href="classCString.html">CString</a> &amp;sLeft=&quot;&quot;, const <a class="el" href="classCString.html">CString</a> &amp;sRight=&quot;&quot;, bool bRemoveDelims=false)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Replace all occurrences in a string.  <a href="#a4ab2972a48d0bc1084fed5a1f5fe792c"></a><br/></td></tr>
@@ -738,7 +738,7 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>true unless this code is buggy. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd><p class="startdd">WTF @ uWrap. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd><p class="startdd">WTF @ uWrap. </p>
 <p class="enddd">This only returns false if some formula we use was wrong?! </p>
 </dd></dl>
 
@@ -761,7 +761,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Base64-encode the current string. </p>
 <p>This string is overwritten with the result of the encode. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>return value and param are as with <a class="el" href="classCString.html#a82d0cd4949b4478c607e5d25664aed6e" title="Base64-encode the current string.">Base64Encode()</a> from above. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo:</a></b></dt><dd>return value and param are as with <a class="el" href="classCString.html#a82d0cd4949b4478c607e5d25664aed6e" title="Base64-encode the current string.">Base64Encode()</a> from above. </dd></dl>
 
 </div>
 </div>
@@ -781,7 +781,7 @@ Protected Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Base64-encode the current string. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd>uWrap is as broken as <a class="el" href="classCString.html#a82d0cd4949b4478c607e5d25664aed6e" title="Base64-encode the current string.">Base64Encode()</a>'s uWrap.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000006">Todo:</a></b></dt><dd>uWrap is as broken as <a class="el" href="classCString.html#a82d0cd4949b4478c607e5d25664aed6e" title="Base64-encode the current string.">Base64Encode()</a>'s uWrap.</dd></dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The encoded string. </dd></dl>
 
 </div>
@@ -2900,12 +2900,12 @@ template&lt;typename Iterator &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a93f23344832271fb48ac098bd2d3a627"></a><!-- doxytag: member="PString::WildCmp" ref="a93f23344832271fb48ac098bd2d3a627" args="(const CString &amp;sWild, const CString &amp;sString)" -->
+<a class="anchor" id="adb5704f54077344132a2627b47487799"></a><!-- doxytag: member="PString::WildCmp" ref="adb5704f54077344132a2627b47487799" args="(const CString &amp;sWild, const CString &amp;sString, CaseSensitivity cs=CaseSensitive)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">static bool <a class="el" href="classCString.html#a93f23344832271fb48ac098bd2d3a627">CString::WildCmp</a> </td>
+          <td class="memname">static bool <a class="el" href="classCString.html#adb5704f54077344132a2627b47487799">CString::WildCmp</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>sWild</em>, </td>
@@ -2914,7 +2914,13 @@ template&lt;typename Iterator &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
-          <td class="paramname"><em>sString</em>&#160;</td>
+          <td class="paramname"><em>sString</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ZNCString_8h.html#aaa929f83398f109dfbff9789108b159b">CaseSensitivity</a>&#160;</td>
+          <td class="paramname"><em>cs</em> = <code><a class="el" href="classCString.html#a4ab48ee7748580ed1aa9e2643c31210c">CaseSensitive</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2925,31 +2931,43 @@ template&lt;typename Iterator &gt; </div>
 </div>
 <div class="memdoc">
 
-<p>Do a wildcard comparision between two strings. </p>
+<p>Do a wildcard comparison between two strings. </p>
 <p>For example, the following returns true: <code>WildCmp("*!?bar@foo", "I_am!~bar@foo");</code> </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">sWild</td><td>The wildcards used for the comparison. </td></tr>
     <tr><td class="paramname">sString</td><td>The string that is used for comparing. </td></tr>
+    <tr><td class="paramname">cs</td><td>CaseSensitive (default) if you want the comparison to be case sensitive, CaseInsensitive otherwise. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>Make cs CaseInsensitive by default. </dd></dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>true if the wildcard matches. </dd></dl>
 
 <p>Referenced by <a class="el" href="classCDir.html#ae54b36850105c776527e918d6f25b9a3">CDir::FillByWildcard()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a57499abb3bac751ef978fe1c6e50941a"></a><!-- doxytag: member="PString::WildCmp" ref="a57499abb3bac751ef978fe1c6e50941a" args="(const CString &amp;sWild) const " -->
+<a class="anchor" id="a8674edda2e245e07e05eea41675e11e2"></a><!-- doxytag: member="PString::WildCmp" ref="a8674edda2e245e07e05eea41675e11e2" args="(const CString &amp;sWild, CaseSensitivity cs=CaseSensitive) const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classCString.html#a93f23344832271fb48ac098bd2d3a627">CString::WildCmp</a> </td>
+          <td class="memname">bool <a class="el" href="classCString.html#adb5704f54077344132a2627b47487799">CString::WildCmp</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
-          <td class="paramname"><em>sWild</em></td><td>)</td>
-          <td> const<code> [inherited]</code></td>
+          <td class="paramname"><em>sWild</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ZNCString_8h.html#aaa929f83398f109dfbff9789108b159b">CaseSensitivity</a>&#160;</td>
+          <td class="paramname"><em>cs</em> = <code><a class="el" href="classCString.html#a4ab48ee7748580ed1aa9e2643c31210c">CaseSensitive</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const<code> [inherited]</code></td>
         </tr>
       </table>
 </div>
@@ -2959,9 +2977,11 @@ template&lt;typename Iterator &gt; </div>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">sWild</td><td>The wildcards used to for the comparison. </td></tr>
+    <tr><td class="paramname">cs</td><td>CaseSensitive (default) if you want the comparison to be case sensitive, CaseInsensitive otherwise. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>Make cs CaseInsensitive by default. </dd></dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The result of <code>this-&gt;WildCmp(sWild, *this);</code>. </dd></dl>
 
 </div>
@@ -3014,7 +3034,7 @@ template&lt;typename Iterator &gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Dec 23 2014 01:08:05 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 23 2015 08:11:58 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
