@@ -357,6 +357,8 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSocket.html#a5be583a3a28fd93de081519285e188be">CSocket</a> (<a class="el" href="classCModule.html">CModule</a> *pModule, const <a class="el" href="classCString.html">CString</a> &amp;sHostname, unsigned short uPort, int iTimeout=60)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">ctor  <a href="#a5be583a3a28fd93de081519285e188be"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSocket.html#aa63e9ce5486a35e3b17c1bbb165d30c1">~CSocket</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSocket.html#a9aa24bcd472f5111486c6f196fe4bc79">CSocket</a> (const <a class="el" href="classCSocket.html">CSocket</a> &amp;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCSocket.html">CSocket</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSocket.html#ab814954053033017a59c15def1aaf41c">operator=</a> (const <a class="el" href="classCSocket.html">CSocket</a> &amp;)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSocket.html#a006813cba95395cb701d3c57c2578749">ReachedMaxBuffer</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This defaults to closing the socket, feel free to override.  <a href="#a006813cba95395cb701d3c57c2578749"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSocket.html#a84cd201737bd8fc7e5fc8d1f59e1b3be">SockError</a> (int iErrno, const <a class="el" href="classCString.html">CString</a> &amp;sDescription)</td></tr>
@@ -1713,6 +1715,23 @@ Protected Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9aa24bcd472f5111486c6f196fe4bc79"></a><!-- doxytag: member="CSocket::CSocket" ref="a9aa24bcd472f5111486c6f196fe4bc79" args="(const CSocket &amp;)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCSocket.html#a6acf395cad024f11690ea045942a6701">CSocket::CSocket</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCSocket.html">CSocket</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div>
@@ -4494,8 +4513,6 @@ Protected Attributes</h2></td></tr>
 
 <p>returns a reference to the sock </p>
 
-<p>Referenced by <a class="el" href="classCExecSock.html#aafd98b69a6096f4e5fae7727dce57e15">CExecSock::~CExecSock()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="ae1f84de0d38450c53dce99f8f4d649ab"></a><!-- doxytag: member="CSocket::GetRSock" ref="ae1f84de0d38450c53dce99f8f4d649ab" args="()" -->
@@ -4513,6 +4530,8 @@ Protected Attributes</h2></td></tr>
 <div class="memdoc">
 
 <p>returns a reference to the sock </p>
+
+<p>Referenced by <a class="el" href="classCExecSock.html#aafd98b69a6096f4e5fae7727dce57e15">CExecSock::~CExecSock()</a>.</p>
 
 </div>
 </div>
@@ -5782,6 +5801,23 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ab814954053033017a59c15def1aaf41c"></a><!-- doxytag: member="CSocket::operator=" ref="ab814954053033017a59c15def1aaf41c" args="(const CSocket &amp;)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCSocket.html">CSocket</a>&amp; CSocket::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCSocket.html">CSocket</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a41d8b0fb0cc4884bdc90d5010cc7ab3b"></a><!-- doxytag: member="CSocket::PauseRead" ref="a41d8b0fb0cc4884bdc90d5010cc7ab3b" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -6649,6 +6685,8 @@ Protected Attributes</h2></td></tr>
 
 <p>sets the max buffered threshold when <a class="el" href="classCsock.html#af748608ba80f9bd54294292930db560e" title="set the value of m_bEnableReadLine to true, we don&#39;t want to store a buffer for ReadLine, unless we want it">EnableReadLine()</a> is enabled </p>
 
+<p>Referenced by <a class="el" href="classCClient.html#a51f196439c3218b2dce8f7c6610dad14">CClient::CClient()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a06f840efef58b550473f4fe1e5f27efa"></a><!-- doxytag: member="CSocket::SetMaxBufferThreshold" ref="a06f840efef58b550473f4fe1e5f27efa" args="(uint32_t iThreshold)" -->
@@ -6667,8 +6705,6 @@ Protected Attributes</h2></td></tr>
 <div class="memdoc">
 
 <p>sets the max buffered threshold when <a class="el" href="classCsock.html#af748608ba80f9bd54294292930db560e" title="set the value of m_bEnableReadLine to true, we don&#39;t want to store a buffer for ReadLine, unless we want it">EnableReadLine()</a> is enabled </p>
-
-<p>Referenced by <a class="el" href="classCClient.html#a51f196439c3218b2dce8f7c6610dad14">CClient::CClient()</a>.</p>
 
 </div>
 </div>
@@ -8191,7 +8227,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 3 2015 15:55:20 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 25 2015 05:21:57 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

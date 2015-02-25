@@ -93,6 +93,7 @@ This is the complete list of members for <a class="el" href="classCChan.html">CC
   <tr class="memlist"><td><a class="el" href="classCChan.html#ad55baecfe54e10239bc3759b798ab6e9">AttachUser</a>(CClient *pClient=NULL)</td><td><a class="el" href="classCChan.html">CChan</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCChan.html#a9778b5f611568aa8ea62a7634248cf34">AutoClearChanBuffer</a>() const </td><td><a class="el" href="classCChan.html">CChan</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCChan.html#a17d3c94ff767f09c05980afe7c1a77cb">CChan</a>(const CString &amp;sName, CIRCNetwork *pNetwork, bool bInConfig, CConfig *pConfig=NULL)</td><td><a class="el" href="classCChan.html">CChan</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCChan.html#a1219c1b45b44433a7391f5f50981518b">CChan</a>(const CChan &amp;)</td><td><a class="el" href="classCChan.html">CChan</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCChan.html#a4bfc9fd069000cf2b3e808152ef0c414">ChangeNick</a>(const CString &amp;sOldNick, const CString &amp;sNewNick)</td><td><a class="el" href="classCChan.html">CChan</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCChan.html#a1ad5495c2eca092630dce84c18430049">ClearBuffer</a>()</td><td><a class="el" href="classCChan.html">CChan</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCChan.html#a0e80b369a2ab8285e48965cf13ed4d6b">ClearNicks</a>()</td><td><a class="el" href="classCChan.html">CChan</a></td><td></td></tr>
@@ -179,6 +180,7 @@ This is the complete list of members for <a class="el" href="classCChan.html">CC
   <tr class="memlist"><td><a class="el" href="classCChan.html#a5c2b2fc85a561445939540aad7e2b197">ModeChange</a>(const CString &amp;sModes, const CNick *OpNick=NULL)</td><td><a class="el" href="classCChan.html">CChan</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCChan.html#a593a0f92fe242d9e253be94455b122b4">OnWho</a>(const CString &amp;sNick, const CString &amp;sIdent, const CString &amp;sHost)</td><td><a class="el" href="classCChan.html">CChan</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCChan.html#a8e48d2ab8131ea73f085d4dfb0591f16a50aaa3a62c2fe6aa4b7a184376cb0e4e">Op</a> enum value</td><td><a class="el" href="classCChan.html">CChan</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCChan.html#a668de6fcaccb0836a94b01db3ed4a313">operator=</a>(const CChan &amp;)</td><td><a class="el" href="classCChan.html">CChan</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCChan.html#a8e48d2ab8131ea73f085d4dfb0591f16a27db85d4916c3d5ec2c8cb7649832136">Owner</a> enum value</td><td><a class="el" href="classCChan.html">CChan</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCChan.html#a538231f012c55391848464f871611266">RemMode</a>(unsigned char uMode)</td><td><a class="el" href="classCChan.html">CChan</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCChan.html#a07071dbb940124421b3ac369251191ef">RemNick</a>(const CString &amp;sNick)</td><td><a class="el" href="classCChan.html">CChan</a></td><td></td></tr>
@@ -223,7 +225,7 @@ This is the complete list of members for <a class="el" href="classCChan.html">CC
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Feb 23 2015 21:30:48 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 25 2015 05:21:55 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

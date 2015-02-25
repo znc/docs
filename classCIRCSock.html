@@ -359,6 +359,8 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#a955cfe501b24f7672d737385fce9f0b2">CIRCSock</a> (<a class="el" href="classCIRCNetwork.html">CIRCNetwork</a> *pNetwork)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#ada022fa461a124755eb9946feb207a6c">~CIRCSock</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#a22cbf881b7f5881ebbcbfd2735e4d8e9">CIRCSock</a> (const <a class="el" href="classCIRCSock.html">CIRCSock</a> &amp;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCIRCSock.html">CIRCSock</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#aee13d7f9079e4298a4ea084e912264d8">operator=</a> (const <a class="el" href="classCIRCSock.html">CIRCSock</a> &amp;)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#aa15efa9fa179c3aaa755ba3841eb9029">OnCTCPReply</a> (<a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCString.html">CString</a> &amp;sMessage)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#a9f5e82181a9041540f8e05cf9e19fc02">OnPrivCTCP</a> (<a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCString.html">CString</a> &amp;sMessage)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#a05c9315f502f07461ae5c60182703bdc">OnChanCTCP</a> (<a class="el" href="classCNick.html">CNick</a> &amp;Nick, const <a class="el" href="classCString.html">CString</a> &amp;sChan, <a class="el" href="classCString.html">CString</a> &amp;sMessage)</td></tr>
@@ -1737,6 +1739,23 @@ Friends</h2></td></tr>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a22cbf881b7f5881ebbcbfd2735e4d8e9"></a><!-- doxytag: member="CIRCSock::CIRCSock" ref="a22cbf881b7f5881ebbcbfd2735e4d8e9" args="(const CIRCSock &amp;)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCIRCSock.html#a955cfe501b24f7672d737385fce9f0b2">CIRCSock::CIRCSock</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCIRCSock.html">CIRCSock</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div>
@@ -6397,6 +6416,23 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aee13d7f9079e4298a4ea084e912264d8"></a><!-- doxytag: member="CIRCSock::operator=" ref="aee13d7f9079e4298a4ea084e912264d8" args="(const CIRCSock &amp;)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCIRCSock.html">CIRCSock</a>&amp; CIRCSock::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCIRCSock.html">CIRCSock</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a7e70763948d2c945f84201d40d8086c0"></a><!-- doxytag: member="CIRCSock::PauseCap" ref="a7e70763948d2c945f84201d40d8086c0" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -8198,8 +8234,6 @@ Friends</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Referenced by <a class="el" href="classCExecSock.html#aafd98b69a6096f4e5fae7727dce57e15">CExecSock::~CExecSock()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a66a0fe0e53850900f824ca60ced81e05"></a><!-- doxytag: member="CIRCSock::SetWSock" ref="a66a0fe0e53850900f824ca60ced81e05" args="(cs_sock_t iSock)" -->
@@ -8216,6 +8250,8 @@ Friends</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Referenced by <a class="el" href="classCExecSock.html#aafd98b69a6096f4e5fae7727dce57e15">CExecSock::~CExecSock()</a>.</p>
 
 </div>
 </div>
@@ -9259,7 +9295,7 @@ Friends</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 3 2015 15:55:19 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 25 2015 05:21:56 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
