@@ -15,7 +15,7 @@ var searchData=
   ['bool',['BOOL',['../classPString.html#a3d15380aec9d92c71dd759f5fa4d9661a96044e136b135ccfe737aa0b4e23349f',1,'PString']]],
   ['bounceallclients',['BounceAllClients',['../classCIRCNetwork.html#a042c3c87829e1ea910fa7fd54dbb8d1f',1,'CIRCNetwork::BounceAllClients()'],['../classCUser.html#a2d5a480c5ef887658312b2ffb018f6bb',1,'CUser::BounceAllClients()']]],
   ['bouncedoff',['BouncedOff',['../classCClient.html#a3ad2211f11e9b3a5071e420dc50705b3',1,'CClient']]],
-  ['broadcast',['Broadcast',['../classCZNC.html#a494e631f488088c077200a708c80bc98',1,'CZNC']]],
+  ['broadcast',['Broadcast',['../classCZNC.html#a1253e89d434b486ced8d47bdb57fb4ab',1,'CZNC']]],
   ['buffer',['buffer',['../structmd5__context.html#ad668d3cb5e0affbbd214a69da28c6d55',1,'md5_context']]],
   ['buffer_2eh',['Buffer.h',['../Buffer_8h.html',1,'']]],
   ['bytesread',['BytesRead',['../classCUser.html#a1b369756c27a425c0774e657da4398bb',1,'CUser::BytesRead()'],['../classCZNC.html#a237d14a883e4b338f98793bdfd7ffecc',1,'CZNC::BytesRead()']]],

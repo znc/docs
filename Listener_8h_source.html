@@ -121,7 +121,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00038"></a>00038                 <a class="code" href="classCListener.html#ac64c9693713396bc58f20a1c66f356f7">m_bSSL</a> = bSSL;
 <a name="l00039"></a>00039                 <a class="code" href="classCListener.html#a2bd2af795b65951e39814c594c588265">m_eAddr</a> = eAddr;
 <a name="l00040"></a>00040                 <a class="code" href="classCListener.html#a023713ba5b06eb9ee75de37eeedf9ee2">m_sURIPrefix</a> = sURIPrefix;
-<a name="l00041"></a>00041                 <a class="code" href="classCListener.html#a242d94f002202ccb3cd8fb72376b94e9">m_pListener</a> = NULL;
+<a name="l00041"></a>00041                 <a class="code" href="classCListener.html#a242d94f002202ccb3cd8fb72376b94e9">m_pListener</a> = <span class="keyword">nullptr</span>;
 <a name="l00042"></a>00042                 <a class="code" href="classCListener.html#a1a6f5bae1ca8ae9eeadbf3970934a000">m_eAcceptType</a> = eAccept;
 <a name="l00043"></a>00043         }
 <a name="l00044"></a>00044 
@@ -163,9 +163,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00080"></a><a class="code" href="classCRealListener.html#ab67e65cafefee32b07aa95ca9883b25b">00080</a>         <a class="code" href="classCRealListener.html#ab67e65cafefee32b07aa95ca9883b25b">CRealListener</a>(<a class="code" href="classCListener.html">CListener</a>&amp; listener) : <a class="code" href="classCZNCSock.html">CZNCSock</a>(), m_Listener(listener) {}
 <a name="l00081"></a>00081         <span class="keyword">virtual</span> <a class="code" href="classCRealListener.html#a5b98d7c0fab2f299a1837ecea3b74b67">~CRealListener</a>();
 <a name="l00082"></a>00082 
-<a name="l00083"></a>00083         <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classCRealListener.html#ac163a816b8986a94adbb36cb0d2e3bc7">ConnectionFrom</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sHost, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> uPort);
-<a name="l00084"></a>00084         <span class="keyword">virtual</span> <a class="code" href="classCsock.html" title="Basic socket class.">Csock</a>* <a class="code" href="classCRealListener.html#a3afa39b6f2f0a0fd0e79a1156f15a85d">GetSockObj</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sHost, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> uPort);
-<a name="l00085"></a>00085         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCRealListener.html#a1e6f0b8b477eeededf914720f612db78">SockError</a>(<span class="keywordtype">int</span> iErrno, <span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sDescription);
+<a name="l00083"></a>00083         <span class="keywordtype">bool</span> <a class="code" href="classCRealListener.html#a03adebccc54bf911d0dcd92722298b2a">ConnectionFrom</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sHost, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> uPort) <span class="keyword">override</span>;
+<a name="l00084"></a>00084         <a class="code" href="classCsock.html" title="Basic socket class.">Csock</a>* <a class="code" href="classCRealListener.html#ac3b2ebdabcf7fd24bd99f1c9e5d57396">GetSockObj</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sHost, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> uPort) <span class="keyword">override</span>;
+<a name="l00085"></a>00085         <span class="keywordtype">void</span> <a class="code" href="classCRealListener.html#ac460e1868ec8b2f0d8a94c7298d95554">SockError</a>(<span class="keywordtype">int</span> iErrno, <span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sDescription) <span class="keyword">override</span>;
 <a name="l00086"></a>00086 
 <a name="l00087"></a>00087 <span class="keyword">private</span>:
 <a name="l00088"></a>00088         <a class="code" href="classCListener.html">CListener</a>&amp; m_Listener;
@@ -175,8 +175,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00092"></a>00092 <span class="keyword">public</span>:
 <a name="l00093"></a>00093         <a class="code" href="classCIncomingConnection.html#a7abb1b2d428ec5a60e4156bc8efa21b9">CIncomingConnection</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sHostname, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> uPort, <a class="code" href="classCListener.html#a0cbd4274127b0bdd712ac8526a4d80ee">CListener::EAcceptType</a> eAcceptType, <span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sURIPrefix);
 <a name="l00094"></a><a class="code" href="classCIncomingConnection.html#a5c883f89633e3971a1e21978aecd8dd2">00094</a>         <span class="keyword">virtual</span> <a class="code" href="classCIncomingConnection.html#a5c883f89633e3971a1e21978aecd8dd2">~CIncomingConnection</a>() {}
-<a name="l00095"></a>00095         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCIncomingConnection.html#af041213691c0f6e32652cd9fa35444a3">ReadLine</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sData);
-<a name="l00096"></a>00096         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCIncomingConnection.html#a37e651666d35a45a9e1e82edc22eed50" title="This WARNING event is called when your buffer for readline exceeds the warning threshold and triggers...">ReachedMaxBuffer</a>();
+<a name="l00095"></a>00095         <span class="keywordtype">void</span> <a class="code" href="classCIncomingConnection.html#abac3f542d4c5c9506e2a4106492e5e9b">ReadLine</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sData) <span class="keyword">override</span>;
+<a name="l00096"></a>00096         <span class="keywordtype">void</span> <a class="code" href="classCIncomingConnection.html#ad691041eb2beb6b49236de60a20cd8bd" title="This WARNING event is called when your buffer for readline exceeds the warning threshold and triggers...">ReachedMaxBuffer</a>() <span class="keyword">override</span>;
 <a name="l00097"></a>00097 
 <a name="l00098"></a>00098 <span class="keyword">private</span>:
 <a name="l00099"></a>00099         <a class="code" href="classCListener.html#a0cbd4274127b0bdd712ac8526a4d80ee">CListener::EAcceptType</a> m_eAcceptType;
@@ -202,7 +202,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 25 2015 05:21:55 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 26 2015 06:09:16 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

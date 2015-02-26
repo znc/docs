@@ -382,20 +382,20 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#ac1225b37e969e3cd455aa8691c93ada8">PutModule</a> (const <a class="el" href="classCString.html">CString</a> &amp;sModule, const <a class="el" href="classCString.html">CString</a> &amp;sLine)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#ab0f17c6d5c59a5646142215811904468">PutModNotice</a> (const <a class="el" href="classCString.html">CString</a> &amp;sModule, const <a class="el" href="classCString.html">CString</a> &amp;sLine)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a3098078b005655df1b30c27107cd825d">IsCapEnabled</a> (const <a class="el" href="classCString.html">CString</a> &amp;sCap) const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#add920a2c00e5c1184667b310c1b05bc6">ReadLine</a> (const <a class="el" href="classCString.html">CString</a> &amp;sData)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a56d61ff7f77ebbd0d89433c812202c40">ReadLine</a> (const <a class="el" href="classCString.html">CString</a> &amp;sData) override</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#ac822872ee0c32117eccdee1398240a6b">SendMotd</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a6e669ae3c33d7d0102d5b6c5804a5151">HelpUser</a> (const <a class="el" href="classCString.html">CString</a> &amp;sFilter=&quot;&quot;)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a070b00519b2415c2420f4b90679b1bc7">AuthUser</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#af8a127634d58083035eb834a4c85b238">Connected</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Connected event.  <a href="#af8a127634d58083035eb834a4c85b238"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#af08c3caca437453b513ec9aa45bf0841">Timeout</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Sock Timed out event.  <a href="#af08c3caca437453b513ec9aa45bf0841"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a45a253d43ced7a020b7f3814d7f0d597">Disconnected</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnected event.  <a href="#a45a253d43ced7a020b7f3814d7f0d597"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#af6734b37352aa8dc76af148b3c0691f5">ConnectionRefused</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Connection Refused Event.  <a href="#af6734b37352aa8dc76af148b3c0691f5"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#abc2fb0f9308d7525a721d32147d19a80">ReachedMaxBuffer</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This WARNING event is called when your buffer for readline exceeds the warning threshold and triggers this event.  <a href="#abc2fb0f9308d7525a721d32147d19a80"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#aa8f20c24426aa55e8c96b8caa9600352">Connected</a> () override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Connected event.  <a href="#aa8f20c24426aa55e8c96b8caa9600352"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a98cd5fa145d4d798df1047ec8bbae9ae">Timeout</a> () override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Sock Timed out event.  <a href="#a98cd5fa145d4d798df1047ec8bbae9ae"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#aa4e7bcf81ee42a4ac80b49bcda360e91">Disconnected</a> () override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnected event.  <a href="#aa4e7bcf81ee42a4ac80b49bcda360e91"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#ad85bb3e89622122e5e007e712fd02ba8">ConnectionRefused</a> () override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Connection Refused Event.  <a href="#ad85bb3e89622122e5e007e712fd02ba8"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a8deb79f74c4a09aa1e6cde2ce07bac58">ReachedMaxBuffer</a> () override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This WARNING event is called when your buffer for readline exceeds the warning threshold and triggers this event.  <a href="#a8deb79f74c4a09aa1e6cde2ce07bac58"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#aa1d9f0d1711ed9c26af9cd556aee7873">SetNick</a> (const <a class="el" href="classCString.html">CString</a> &amp;s)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a9a5463f3d36d63b3e192f0909bb42915">SetAway</a> (bool bAway)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCUser.html">CUser</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#ad1543836f72c4fa603db70127c80d9fc">GetUser</a> () const </td></tr>
@@ -2352,15 +2352,15 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af8a127634d58083035eb834a4c85b238"></a><!-- doxytag: member="CClient::Connected" ref="af8a127634d58083035eb834a4c85b238" args="()" -->
+<a class="anchor" id="aa8f20c24426aa55e8c96b8caa9600352"></a><!-- doxytag: member="CClient::Connected" ref="aa8f20c24426aa55e8c96b8caa9600352" args="() override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCClient.html#af8a127634d58083035eb834a4c85b238">CClient::Connected</a> </td>
+          <td class="memname">void <a class="el" href="classCClient.html#aa8f20c24426aa55e8c96b8caa9600352">CClient::Connected</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -2584,15 +2584,15 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af6734b37352aa8dc76af148b3c0691f5"></a><!-- doxytag: member="CClient::ConnectionRefused" ref="af6734b37352aa8dc76af148b3c0691f5" args="()" -->
+<a class="anchor" id="ad85bb3e89622122e5e007e712fd02ba8"></a><!-- doxytag: member="CClient::ConnectionRefused" ref="ad85bb3e89622122e5e007e712fd02ba8" args="() override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCClient.html#af6734b37352aa8dc76af148b3c0691f5">CClient::ConnectionRefused</a> </td>
+          <td class="memname">void <a class="el" href="classCClient.html#ad85bb3e89622122e5e007e712fd02ba8">CClient::ConnectionRefused</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -3154,15 +3154,15 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a45a253d43ced7a020b7f3814d7f0d597"></a><!-- doxytag: member="CClient::Disconnected" ref="a45a253d43ced7a020b7f3814d7f0d597" args="()" -->
+<a class="anchor" id="aa4e7bcf81ee42a4ac80b49bcda360e91"></a><!-- doxytag: member="CClient::Disconnected" ref="aa4e7bcf81ee42a4ac80b49bcda360e91" args="() override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCClient.html#a45a253d43ced7a020b7f3814d7f0d597">CClient::Disconnected</a> </td>
+          <td class="memname">void <a class="el" href="classCClient.html#aa4e7bcf81ee42a4ac80b49bcda360e91">CClient::Disconnected</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -6368,15 +6368,15 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="abc2fb0f9308d7525a721d32147d19a80"></a><!-- doxytag: member="CClient::ReachedMaxBuffer" ref="abc2fb0f9308d7525a721d32147d19a80" args="()" -->
+<a class="anchor" id="a8deb79f74c4a09aa1e6cde2ce07bac58"></a><!-- doxytag: member="CClient::ReachedMaxBuffer" ref="a8deb79f74c4a09aa1e6cde2ce07bac58" args="() override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCClient.html#abc2fb0f9308d7525a721d32147d19a80">CClient::ReachedMaxBuffer</a> </td>
+          <td class="memname">void <a class="el" href="classCClient.html#a8deb79f74c4a09aa1e6cde2ce07bac58">CClient::ReachedMaxBuffer</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -6490,7 +6490,7 @@ Friends</h2></td></tr>
 
 <p>Ready to read data event. </p>
 
-<p>Reimplemented in <a class="el" href="classCPySocket.html#a36bdc6492bd58528defb8d15f8ad70ab">CPySocket</a>, <a class="el" href="classCPerlSocket.html#ad2bbbfb2bbfd8503cdf6f38b97ab2156">CPerlSocket</a>, and <a class="el" href="classCHTTPSock.html#a8ea23d2b09f415d71c6dd92431b6d947">CHTTPSock</a>.</p>
+<p>Reimplemented in <a class="el" href="classCPySocket.html#a670f1d9267785c06a6406454497fd7f4">CPySocket</a>, <a class="el" href="classCPerlSocket.html#aa1aa59de090b6593566068add581f994">CPerlSocket</a>, and <a class="el" href="classCHTTPSock.html#a2cf7b04dceecfa3814e49a0ed4964fb4">CHTTPSock</a>.</p>
 
 </div>
 </div>
@@ -6521,20 +6521,20 @@ Friends</h2></td></tr>
 
 <p>Ready to read data event. </p>
 
-<p>Reimplemented in <a class="el" href="classCPySocket.html#a36bdc6492bd58528defb8d15f8ad70ab">CPySocket</a>, <a class="el" href="classCPerlSocket.html#ad2bbbfb2bbfd8503cdf6f38b97ab2156">CPerlSocket</a>, and <a class="el" href="classCHTTPSock.html#a8ea23d2b09f415d71c6dd92431b6d947">CHTTPSock</a>.</p>
+<p>Reimplemented in <a class="el" href="classCPySocket.html#a670f1d9267785c06a6406454497fd7f4">CPySocket</a>, <a class="el" href="classCPerlSocket.html#aa1aa59de090b6593566068add581f994">CPerlSocket</a>, and <a class="el" href="classCHTTPSock.html#a2cf7b04dceecfa3814e49a0ed4964fb4">CHTTPSock</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="add920a2c00e5c1184667b310c1b05bc6"></a><!-- doxytag: member="CClient::ReadLine" ref="add920a2c00e5c1184667b310c1b05bc6" args="(const CString &amp;sData)" -->
+<a class="anchor" id="a56d61ff7f77ebbd0d89433c812202c40"></a><!-- doxytag: member="CClient::ReadLine" ref="a56d61ff7f77ebbd0d89433c812202c40" args="(const CString &amp;sData) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCClient.html#add920a2c00e5c1184667b310c1b05bc6">CClient::ReadLine</a> </td>
+          <td class="memname">void <a class="el" href="classCClient.html#a56d61ff7f77ebbd0d89433c812202c40">CClient::ReadLine</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>sData</em></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td><code> [override]</code></td>
         </tr>
       </table>
 </div>
@@ -8523,15 +8523,15 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af08c3caca437453b513ec9aa45bf0841"></a><!-- doxytag: member="CClient::Timeout" ref="af08c3caca437453b513ec9aa45bf0841" args="()" -->
+<a class="anchor" id="a98cd5fa145d4d798df1047ec8bbae9ae"></a><!-- doxytag: member="CClient::Timeout" ref="a98cd5fa145d4d798df1047ec8bbae9ae" args="() override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCClient.html#af08c3caca437453b513ec9aa45bf0841">CClient::Timeout</a> </td>
+          <td class="memname">void <a class="el" href="classCClient.html#a98cd5fa145d4d798df1047ec8bbae9ae">CClient::Timeout</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -9130,7 +9130,7 @@ Friends</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 25 2015 05:21:55 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 26 2015 06:09:17 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

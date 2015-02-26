@@ -12,7 +12,7 @@ var searchData=
   ['begintimers',['BeginTimers',['../classCModule.html#abc7ddb634bcc5cdebfc14aae67da06e8',1,'CModule']]],
   ['bounceallclients',['BounceAllClients',['../classCIRCNetwork.html#a042c3c87829e1ea910fa7fd54dbb8d1f',1,'CIRCNetwork::BounceAllClients()'],['../classCUser.html#a2d5a480c5ef887658312b2ffb018f6bb',1,'CUser::BounceAllClients()']]],
   ['bouncedoff',['BouncedOff',['../classCClient.html#a3ad2211f11e9b3a5071e420dc50705b3',1,'CClient']]],
-  ['broadcast',['Broadcast',['../classCZNC.html#a494e631f488088c077200a708c80bc98',1,'CZNC']]],
+  ['broadcast',['Broadcast',['../classCZNC.html#a1253e89d434b486ced8d47bdb57fb4ab',1,'CZNC']]],
   ['bytesread',['BytesRead',['../classCUser.html#a1b369756c27a425c0774e657da4398bb',1,'CUser::BytesRead()'],['../classCZNC.html#a237d14a883e4b338f98793bdfd7ffecc',1,'CZNC::BytesRead()']]],
   ['byteswritten',['BytesWritten',['../classCUser.html#a586590690bc02b1a6eb1597b09ae67d3',1,'CUser::BytesWritten()'],['../classCZNC.html#a5fd8b425e8bb4f26c51a6c2e096311a4',1,'CZNC::BytesWritten()']]]
 ];

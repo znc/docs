@@ -225,7 +225,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00166"></a>00166 <span class="keyword">public</span>:
 <a name="l00167"></a><a class="code" href="classCFPTimer.html#a0fda91c6b88cb49b6b26aadfecfa1688">00167</a>         <a class="code" href="classCFPTimer.html#a0fda91c6b88cb49b6b26aadfecfa1688">CFPTimer</a>(<a class="code" href="classCModule.html" title="The base class for your own ZNC modules.">CModule</a>* pModule, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> uInterval, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> uCycles, <span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sLabel, <span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sDescription)
 <a name="l00168"></a>00168                 : <a class="code" href="classCTimer.html">CTimer</a>(pModule, uInterval, uCycles, sLabel, sDescription) {
-<a name="l00169"></a>00169                 m_pFBCallback = NULL;
+<a name="l00169"></a>00169                 m_pFBCallback = <span class="keyword">nullptr</span>;
 <a name="l00170"></a>00170         }
 <a name="l00171"></a>00171 
 <a name="l00172"></a><a class="code" href="classCFPTimer.html#a93df1eac244bf1804fd626ef66fb931a">00172</a>         <span class="keyword">virtual</span> <a class="code" href="classCFPTimer.html#a93df1eac244bf1804fd626ef66fb931a">~CFPTimer</a>() {}
@@ -233,7 +233,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00174"></a><a class="code" href="classCFPTimer.html#abf524e68dc55d3886fae98a64d7c4682">00174</a>         <span class="keywordtype">void</span> <a class="code" href="classCFPTimer.html#abf524e68dc55d3886fae98a64d7c4682">SetFPCallback</a>(<a class="code" href="Modules_8h.html#ac37bb819056da7480b0bc7a717b45233">FPTimer_t</a> p) { m_pFBCallback = p; }
 <a name="l00175"></a>00175 
 <a name="l00176"></a>00176 <span class="keyword">protected</span>:
-<a name="l00177"></a><a class="code" href="classCFPTimer.html#ae56b7d6c5744cf65880e6c978ff8207b">00177</a>         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCFPTimer.html#ae56b7d6c5744cf65880e6c978ff8207b" title="this is the method you should override">RunJob</a>() {
+<a name="l00177"></a><a class="code" href="classCFPTimer.html#ad8641d84593df19bb3b880cac94a9a81">00177</a>         <span class="keywordtype">void</span> <a class="code" href="classCFPTimer.html#ad8641d84593df19bb3b880cac94a9a81" title="this is the method you should override">RunJob</a>()<span class="keyword"> override </span>{
 <a name="l00178"></a>00178                 <span class="keywordflow">if</span> (m_pFBCallback) {
 <a name="l00179"></a>00179                         m_pFBCallback(<a class="code" href="classCTimer.html#a18387825edc54cb5944875ba74e503fe">m_pModule</a>, <span class="keyword">this</span>);
 <a name="l00180"></a>00180                 }
@@ -280,13 +280,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00221"></a>00221         } <a class="code" href="classCModInfo.html#a616fabebbbf49bf06cfff90b8f32c57f">EModuleType</a>;
 <a name="l00222"></a>00222 
 <a name="l00223"></a><a class="code" href="classCModInfo.html#aef3c193c9312894e3871a2229072b44b">00223</a>         <a class="code" href="classCModInfo.html#aef3c193c9312894e3871a2229072b44b">CModInfo</a>() {
-<a name="l00224"></a>00224                 <a class="code" href="classCModInfo.html#add5b0a530d726a257187c05c34107cfe">m_fLoader</a> = NULL;
+<a name="l00224"></a>00224                 <a class="code" href="classCModInfo.html#add5b0a530d726a257187c05c34107cfe">m_fLoader</a> = <span class="keyword">nullptr</span>;
 <a name="l00225"></a>00225                 <a class="code" href="classCModInfo.html#a493840b63c7420c5a26ce4c62dc5eb11">m_bHasArgs</a> = <span class="keyword">false</span>;
 <a name="l00226"></a>00226         }
 <a name="l00227"></a><a class="code" href="classCModInfo.html#adae4a5752c4ccc41bea4456ef58e48c8">00227</a>         <a class="code" href="classCModInfo.html#adae4a5752c4ccc41bea4456ef58e48c8">CModInfo</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sName, <span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sPath, <a class="code" href="classCModInfo.html#a616fabebbbf49bf06cfff90b8f32c57f">EModuleType</a> eType) {
 <a name="l00228"></a>00228                 <a class="code" href="classCModInfo.html#a6586bae4c2f1da60fe164369a6c0db8b">m_sName</a> = sName;
 <a name="l00229"></a>00229                 <a class="code" href="classCModInfo.html#ae95738c05b5cb667ffc323351413d717">m_sPath</a> = sPath;
-<a name="l00230"></a>00230                 <a class="code" href="classCModInfo.html#add5b0a530d726a257187c05c34107cfe">m_fLoader</a> = NULL;
+<a name="l00230"></a>00230                 <a class="code" href="classCModInfo.html#add5b0a530d726a257187c05c34107cfe">m_fLoader</a> = <span class="keyword">nullptr</span>;
 <a name="l00231"></a>00231                 <a class="code" href="classCModInfo.html#a493840b63c7420c5a26ce4c62dc5eb11">m_bHasArgs</a> = <span class="keyword">false</span>;
 <a name="l00232"></a>00232         }
 <a name="l00233"></a><a class="code" href="classCModInfo.html#a879f634e05d0fb857e0737713701c7f3">00233</a>         <a class="code" href="classCModInfo.html#a879f634e05d0fb857e0737713701c7f3">~CModInfo</a>() {}
@@ -809,7 +809,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 25 2015 05:21:55 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 26 2015 06:09:16 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

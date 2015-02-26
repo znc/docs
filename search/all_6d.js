@@ -265,7 +265,7 @@ var searchData=
   ['modcommondefs',['MODCOMMONDEFS',['../Modules_8h.html#a59871c32e2941b0cde4f8bf205106e80',1,'Modules.h']]],
   ['modconstructor',['MODCONSTRUCTOR',['../Modules_8h.html#a4cb82bfe0e2c41d222152aaec5300156',1,'Modules.h']]],
   ['moddirlist',['ModDirList',['../classCModules.html#a1bbf4b997cb4b6f1dcabf5551930f67f',1,'CModules']]],
-  ['modechange',['ModeChange',['../classCChan.html#a5c2b2fc85a561445939540aad7e2b197',1,'CChan']]],
+  ['modechange',['ModeChange',['../classCChan.html#a9bb8b326dcadb07e99786cd75d3bebd2',1,'CChan']]],
   ['modhandle',['ModHandle',['../Modules_8h.html#a2f2b7746e7590ac0383278e975f13855',1,'Modules.h']]],
   ['modloader',['ModLoader',['../classCModInfo.html#a8da78708b248224013b2656a05ef1b42',1,'CModInfo']]],
   ['module_2eh',['module.h',['../modpython_2module_8h.html',1,'']]],

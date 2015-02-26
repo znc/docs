@@ -370,18 +370,18 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#a0aae9b8eea0bfd2f59262b5757747437">OnPrivNotice</a> (<a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCString.html">CString</a> &amp;sMessage)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#a778a4df1af30bf168c8592e58813adfd">OnChanNotice</a> (<a class="el" href="classCNick.html">CNick</a> &amp;Nick, const <a class="el" href="classCString.html">CString</a> &amp;sChan, <a class="el" href="classCString.html">CString</a> &amp;sMessage)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#a5f5dc82c59778a9175043125ce14b36e">OnServerCapAvailable</a> (const <a class="el" href="classCString.html">CString</a> &amp;sCap)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#ab4efcd165d9122fde712222a41334208">ReadLine</a> (const <a class="el" href="classCString.html">CString</a> &amp;sData)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#aeff4c1a575f5f79c65569a7fbd7c8abd">Connected</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Connected event.  <a href="#aeff4c1a575f5f79c65569a7fbd7c8abd"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#ab633f090638cf7bc010cef9a17031671">Disconnected</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnected event.  <a href="#ab633f090638cf7bc010cef9a17031671"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#a8da20f2aed2cb795868add5abb74a3cc">ConnectionRefused</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Connection Refused Event.  <a href="#a8da20f2aed2cb795868add5abb74a3cc"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#a89673a2248ea06c5f0fb91dd1b1d3cbb">SockError</a> (int iErrno, const <a class="el" href="classCString.html">CString</a> &amp;sDescription)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#a9ad0428beb9047f9dfaedddcbf7226e6">Timeout</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Sock Timed out event.  <a href="#a9ad0428beb9047f9dfaedddcbf7226e6"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#a5fa3b42031d1a97f15bc50f5dcce4430">ReachedMaxBuffer</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This WARNING event is called when your buffer for readline exceeds the warning threshold and triggers this event.  <a href="#a5fa3b42031d1a97f15bc50f5dcce4430"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#a8ebfbd660d1965c9cbb7c76aaeac7c06">ReadLine</a> (const <a class="el" href="classCString.html">CString</a> &amp;sData) override</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#a6ca774849ec163d6bbbc166e77d92b71">Connected</a> () override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Connected event.  <a href="#a6ca774849ec163d6bbbc166e77d92b71"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#acc0364838e622f6a7bec1b515cb49a37">Disconnected</a> () override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnected event.  <a href="#acc0364838e622f6a7bec1b515cb49a37"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#ae7e5672132ad6c9ee27aa125a3b7b61d">ConnectionRefused</a> () override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Connection Refused Event.  <a href="#ae7e5672132ad6c9ee27aa125a3b7b61d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#a8f5bf9ae466d6cbbd17bcd794f6dbf66">SockError</a> (int iErrno, const <a class="el" href="classCString.html">CString</a> &amp;sDescription) override</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#a5ef79baf8be21c2c4c4fa74501d03f1e">Timeout</a> () override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Sock Timed out event.  <a href="#a5ef79baf8be21c2c4c4fa74501d03f1e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#a0631d434ac9de3c330371624242910dd">ReachedMaxBuffer</a> () override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This WARNING event is called when your buffer for readline exceeds the warning threshold and triggers this event.  <a href="#a0631d434ac9de3c330371624242910dd"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#afba5876713b8cad27a6a2603041f62b7">PutIRC</a> (const <a class="el" href="classCString.html">CString</a> &amp;sLine)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#a5defb75dbdf797eaa8744547bd079ff5">PutIRCQuick</a> (const <a class="el" href="classCString.html">CString</a> &amp;sLine)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Should be used for PONG only.  <a href="#a5defb75dbdf797eaa8744547bd079ff5"></a><br/></td></tr>
@@ -2342,15 +2342,15 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aeff4c1a575f5f79c65569a7fbd7c8abd"></a><!-- doxytag: member="CIRCSock::Connected" ref="aeff4c1a575f5f79c65569a7fbd7c8abd" args="()" -->
+<a class="anchor" id="a6ca774849ec163d6bbbc166e77d92b71"></a><!-- doxytag: member="CIRCSock::Connected" ref="a6ca774849ec163d6bbbc166e77d92b71" args="() override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCIRCSock.html#aeff4c1a575f5f79c65569a7fbd7c8abd">CIRCSock::Connected</a> </td>
+          <td class="memname">void <a class="el" href="classCIRCSock.html#a6ca774849ec163d6bbbc166e77d92b71">CIRCSock::Connected</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -2574,15 +2574,15 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a8da20f2aed2cb795868add5abb74a3cc"></a><!-- doxytag: member="CIRCSock::ConnectionRefused" ref="a8da20f2aed2cb795868add5abb74a3cc" args="()" -->
+<a class="anchor" id="ae7e5672132ad6c9ee27aa125a3b7b61d"></a><!-- doxytag: member="CIRCSock::ConnectionRefused" ref="ae7e5672132ad6c9ee27aa125a3b7b61d" args="() override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCIRCSock.html#a8da20f2aed2cb795868add5abb74a3cc">CIRCSock::ConnectionRefused</a> </td>
+          <td class="memname">void <a class="el" href="classCIRCSock.html#ae7e5672132ad6c9ee27aa125a3b7b61d">CIRCSock::ConnectionRefused</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -3144,15 +3144,15 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab633f090638cf7bc010cef9a17031671"></a><!-- doxytag: member="CIRCSock::Disconnected" ref="ab633f090638cf7bc010cef9a17031671" args="()" -->
+<a class="anchor" id="acc0364838e622f6a7bec1b515cb49a37"></a><!-- doxytag: member="CIRCSock::Disconnected" ref="acc0364838e622f6a7bec1b515cb49a37" args="() override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCIRCSock.html#ab633f090638cf7bc010cef9a17031671">CIRCSock::Disconnected</a> </td>
+          <td class="memname">void <a class="el" href="classCIRCSock.html#acc0364838e622f6a7bec1b515cb49a37">CIRCSock::Disconnected</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -6611,15 +6611,15 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a5fa3b42031d1a97f15bc50f5dcce4430"></a><!-- doxytag: member="CIRCSock::ReachedMaxBuffer" ref="a5fa3b42031d1a97f15bc50f5dcce4430" args="()" -->
+<a class="anchor" id="a0631d434ac9de3c330371624242910dd"></a><!-- doxytag: member="CIRCSock::ReachedMaxBuffer" ref="a0631d434ac9de3c330371624242910dd" args="() override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCIRCSock.html#a5fa3b42031d1a97f15bc50f5dcce4430">CIRCSock::ReachedMaxBuffer</a> </td>
+          <td class="memname">void <a class="el" href="classCIRCSock.html#a0631d434ac9de3c330371624242910dd">CIRCSock::ReachedMaxBuffer</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -6733,7 +6733,7 @@ Friends</h2></td></tr>
 
 <p>Ready to read data event. </p>
 
-<p>Reimplemented in <a class="el" href="classCPySocket.html#a36bdc6492bd58528defb8d15f8ad70ab">CPySocket</a>, <a class="el" href="classCPerlSocket.html#ad2bbbfb2bbfd8503cdf6f38b97ab2156">CPerlSocket</a>, and <a class="el" href="classCHTTPSock.html#a8ea23d2b09f415d71c6dd92431b6d947">CHTTPSock</a>.</p>
+<p>Reimplemented in <a class="el" href="classCPySocket.html#a670f1d9267785c06a6406454497fd7f4">CPySocket</a>, <a class="el" href="classCPerlSocket.html#aa1aa59de090b6593566068add581f994">CPerlSocket</a>, and <a class="el" href="classCHTTPSock.html#a2cf7b04dceecfa3814e49a0ed4964fb4">CHTTPSock</a>.</p>
 
 </div>
 </div>
@@ -6764,20 +6764,20 @@ Friends</h2></td></tr>
 
 <p>Ready to read data event. </p>
 
-<p>Reimplemented in <a class="el" href="classCPySocket.html#a36bdc6492bd58528defb8d15f8ad70ab">CPySocket</a>, <a class="el" href="classCPerlSocket.html#ad2bbbfb2bbfd8503cdf6f38b97ab2156">CPerlSocket</a>, and <a class="el" href="classCHTTPSock.html#a8ea23d2b09f415d71c6dd92431b6d947">CHTTPSock</a>.</p>
+<p>Reimplemented in <a class="el" href="classCPySocket.html#a670f1d9267785c06a6406454497fd7f4">CPySocket</a>, <a class="el" href="classCPerlSocket.html#aa1aa59de090b6593566068add581f994">CPerlSocket</a>, and <a class="el" href="classCHTTPSock.html#a2cf7b04dceecfa3814e49a0ed4964fb4">CHTTPSock</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ab4efcd165d9122fde712222a41334208"></a><!-- doxytag: member="CIRCSock::ReadLine" ref="ab4efcd165d9122fde712222a41334208" args="(const CString &amp;sData)" -->
+<a class="anchor" id="a8ebfbd660d1965c9cbb7c76aaeac7c06"></a><!-- doxytag: member="CIRCSock::ReadLine" ref="a8ebfbd660d1965c9cbb7c76aaeac7c06" args="(const CString &amp;sData) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCIRCSock.html#ab4efcd165d9122fde712222a41334208">CIRCSock::ReadLine</a> </td>
+          <td class="memname">void <a class="el" href="classCIRCSock.html#a8ebfbd660d1965c9cbb7c76aaeac7c06">CIRCSock::ReadLine</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>sData</em></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td><code> [override]</code></td>
         </tr>
       </table>
 </div>
@@ -8395,12 +8395,12 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a89673a2248ea06c5f0fb91dd1b1d3cbb"></a><!-- doxytag: member="CIRCSock::SockError" ref="a89673a2248ea06c5f0fb91dd1b1d3cbb" args="(int iErrno, const CString &amp;sDescription)" -->
+<a class="anchor" id="a8f5bf9ae466d6cbbd17bcd794f6dbf66"></a><!-- doxytag: member="CIRCSock::SockError" ref="a8f5bf9ae466d6cbbd17bcd794f6dbf66" args="(int iErrno, const CString &amp;sDescription) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCIRCSock.html#a89673a2248ea06c5f0fb91dd1b1d3cbb">CIRCSock::SockError</a> </td>
+          <td class="memname">void <a class="el" href="classCIRCSock.html#a8f5bf9ae466d6cbbd17bcd794f6dbf66">CIRCSock::SockError</a> </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>iErrno</em>, </td>
@@ -8414,7 +8414,7 @@ Friends</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
+          <td></td><td><code> [override]</code></td>
         </tr>
       </table>
 </div>
@@ -8661,15 +8661,15 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a9ad0428beb9047f9dfaedddcbf7226e6"></a><!-- doxytag: member="CIRCSock::Timeout" ref="a9ad0428beb9047f9dfaedddcbf7226e6" args="()" -->
+<a class="anchor" id="a5ef79baf8be21c2c4c4fa74501d03f1e"></a><!-- doxytag: member="CIRCSock::Timeout" ref="a5ef79baf8be21c2c4c4fa74501d03f1e" args="() override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCIRCSock.html#a9ad0428beb9047f9dfaedddcbf7226e6">CIRCSock::Timeout</a> </td>
+          <td class="memname">void <a class="el" href="classCIRCSock.html#a5ef79baf8be21c2c4c4fa74501d03f1e">CIRCSock::Timeout</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -9295,7 +9295,7 @@ Friends</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 25 2015 05:21:56 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 26 2015 06:09:17 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

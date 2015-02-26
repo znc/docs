@@ -135,9 +135,9 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#ac224d498d7ce11a73fa398679a2f6bd5">SetName</a> (const <a class="el" href="classCString.html">CString</a> &amp;sName)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCModules.html">CModules</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a3bd545af4f02769c9e15d93dca28feee">GetModules</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classCModules.html">CModules</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#aef89d4cb90269ce8ab69e01cb8f8d2bb">GetModules</a> () const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a752cbcd06326a06b0bca2c63d59e28f0">PutUser</a> (const <a class="el" href="classCString.html">CString</a> &amp;sLine, <a class="el" href="classCClient.html">CClient</a> *pClient=NULL, <a class="el" href="classCClient.html">CClient</a> *pSkipClient=NULL)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a3034e9ae734c8cb3f6074394157c8f35">PutStatus</a> (const <a class="el" href="classCString.html">CString</a> &amp;sLine, <a class="el" href="classCClient.html">CClient</a> *pClient=NULL, <a class="el" href="classCClient.html">CClient</a> *pSkipClient=NULL)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a7f0d4e2801239a5b61919fdee2de2fb0">PutModule</a> (const <a class="el" href="classCString.html">CString</a> &amp;sModule, const <a class="el" href="classCString.html">CString</a> &amp;sLine, <a class="el" href="classCClient.html">CClient</a> *pClient=NULL, <a class="el" href="classCClient.html">CClient</a> *pSkipClient=NULL)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a87a2c491b70d210563ed8b3e8cedacb4">PutUser</a> (const <a class="el" href="classCString.html">CString</a> &amp;sLine, <a class="el" href="classCClient.html">CClient</a> *pClient=nullptr, <a class="el" href="classCClient.html">CClient</a> *pSkipClient=nullptr)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a3e15b751b1502894f7b9b2fff3a2d7b5">PutStatus</a> (const <a class="el" href="classCString.html">CString</a> &amp;sLine, <a class="el" href="classCClient.html">CClient</a> *pClient=nullptr, <a class="el" href="classCClient.html">CClient</a> *pSkipClient=nullptr)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a865dd8e631106331e937e6b2d00426b7">PutModule</a> (const <a class="el" href="classCString.html">CString</a> &amp;sModule, const <a class="el" href="classCString.html">CString</a> &amp;sLine, <a class="el" href="classCClient.html">CClient</a> *pClient=nullptr, <a class="el" href="classCClient.html">CClient</a> *pSkipClient=nullptr)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="classCChan.html">CChan</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a5d93aa677e42d228641d5cec647b353e">GetChans</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCChan.html">CChan</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a578b03ef1ae44f29dc53f7c9597f06a0">FindChan</a> (<a class="el" href="classCString.html">CString</a> sName) const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classCChan.html">CChan</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a107b507491a0013449bb04dddf955359">FindChans</a> (const <a class="el" href="classCString.html">CString</a> &amp;sWild) const </td></tr>
@@ -447,7 +447,7 @@ Protected Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="classCBuffer.html#a9200d50be7bcae8f60e10b3f22902285">CBuffer::AddLine()</a>, and <a class="el" href="classCIRCNetwork.html#a51c7df78ef57d45908173475eb980632">m_MotdBuffer</a>.</p>
+<p>References <a class="el" href="classCBuffer.html#ad0885ab8078ea108c65ac8c8deabf90c">CBuffer::AddLine()</a>, and <a class="el" href="classCIRCNetwork.html#a51c7df78ef57d45908173475eb980632">m_MotdBuffer</a>.</p>
 
 </div>
 </div>
@@ -476,7 +476,7 @@ Protected Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="classCBuffer.html#a9200d50be7bcae8f60e10b3f22902285">CBuffer::AddLine()</a>, and <a class="el" href="classCIRCNetwork.html#a835da32349d9fde2ba7a2f6e4426ffc5">m_NoticeBuffer</a>.</p>
+<p>References <a class="el" href="classCBuffer.html#ad0885ab8078ea108c65ac8c8deabf90c">CBuffer::AddLine()</a>, and <a class="el" href="classCIRCNetwork.html#a835da32349d9fde2ba7a2f6e4426ffc5">m_NoticeBuffer</a>.</p>
 
 </div>
 </div>
@@ -522,7 +522,7 @@ Protected Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="classCBuffer.html#a9200d50be7bcae8f60e10b3f22902285">CBuffer::AddLine()</a>, and <a class="el" href="classCIRCNetwork.html#a410597f307e5d183f3b20a2d3dd3a9b6">m_RawBuffer</a>.</p>
+<p>References <a class="el" href="classCBuffer.html#ad0885ab8078ea108c65ac8c8deabf90c">CBuffer::AddLine()</a>, and <a class="el" href="classCIRCNetwork.html#a410597f307e5d183f3b20a2d3dd3a9b6">m_RawBuffer</a>.</p>
 
 </div>
 </div>
@@ -1789,12 +1789,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a7f0d4e2801239a5b61919fdee2de2fb0"></a><!-- doxytag: member="CIRCNetwork::PutModule" ref="a7f0d4e2801239a5b61919fdee2de2fb0" args="(const CString &amp;sModule, const CString &amp;sLine, CClient *pClient=NULL, CClient *pSkipClient=NULL)" -->
+<a class="anchor" id="a865dd8e631106331e937e6b2d00426b7"></a><!-- doxytag: member="CIRCNetwork::PutModule" ref="a865dd8e631106331e937e6b2d00426b7" args="(const CString &amp;sModule, const CString &amp;sLine, CClient *pClient=nullptr, CClient *pSkipClient=nullptr)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classCIRCNetwork.html#a7f0d4e2801239a5b61919fdee2de2fb0">CIRCNetwork::PutModule</a> </td>
+          <td class="memname">bool <a class="el" href="classCIRCNetwork.html#a865dd8e631106331e937e6b2d00426b7">CIRCNetwork::PutModule</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>sModule</em>, </td>
@@ -1809,13 +1809,13 @@ Protected Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classCClient.html">CClient</a> *&#160;</td>
-          <td class="paramname"><em>pClient</em> = <code>NULL</code>, </td>
+          <td class="paramname"><em>pClient</em> = <code>nullptr</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classCClient.html">CClient</a> *&#160;</td>
-          <td class="paramname"><em>pSkipClient</em> = <code>NULL</code>&#160;</td>
+          <td class="paramname"><em>pSkipClient</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1828,12 +1828,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a3034e9ae734c8cb3f6074394157c8f35"></a><!-- doxytag: member="CIRCNetwork::PutStatus" ref="a3034e9ae734c8cb3f6074394157c8f35" args="(const CString &amp;sLine, CClient *pClient=NULL, CClient *pSkipClient=NULL)" -->
+<a class="anchor" id="a3e15b751b1502894f7b9b2fff3a2d7b5"></a><!-- doxytag: member="CIRCNetwork::PutStatus" ref="a3e15b751b1502894f7b9b2fff3a2d7b5" args="(const CString &amp;sLine, CClient *pClient=nullptr, CClient *pSkipClient=nullptr)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classCIRCNetwork.html#a3034e9ae734c8cb3f6074394157c8f35">CIRCNetwork::PutStatus</a> </td>
+          <td class="memname">bool <a class="el" href="classCIRCNetwork.html#a3e15b751b1502894f7b9b2fff3a2d7b5">CIRCNetwork::PutStatus</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>sLine</em>, </td>
@@ -1842,13 +1842,13 @@ Protected Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classCClient.html">CClient</a> *&#160;</td>
-          <td class="paramname"><em>pClient</em> = <code>NULL</code>, </td>
+          <td class="paramname"><em>pClient</em> = <code>nullptr</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classCClient.html">CClient</a> *&#160;</td>
-          <td class="paramname"><em>pSkipClient</em> = <code>NULL</code>&#160;</td>
+          <td class="paramname"><em>pSkipClient</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1861,12 +1861,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a752cbcd06326a06b0bca2c63d59e28f0"></a><!-- doxytag: member="CIRCNetwork::PutUser" ref="a752cbcd06326a06b0bca2c63d59e28f0" args="(const CString &amp;sLine, CClient *pClient=NULL, CClient *pSkipClient=NULL)" -->
+<a class="anchor" id="a87a2c491b70d210563ed8b3e8cedacb4"></a><!-- doxytag: member="CIRCNetwork::PutUser" ref="a87a2c491b70d210563ed8b3e8cedacb4" args="(const CString &amp;sLine, CClient *pClient=nullptr, CClient *pSkipClient=nullptr)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classCIRCNetwork.html#a752cbcd06326a06b0bca2c63d59e28f0">CIRCNetwork::PutUser</a> </td>
+          <td class="memname">bool <a class="el" href="classCIRCNetwork.html#a87a2c491b70d210563ed8b3e8cedacb4">CIRCNetwork::PutUser</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>sLine</em>, </td>
@@ -1875,13 +1875,13 @@ Protected Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classCClient.html">CClient</a> *&#160;</td>
-          <td class="paramname"><em>pClient</em> = <code>NULL</code>, </td>
+          <td class="paramname"><em>pClient</em> = <code>nullptr</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classCClient.html">CClient</a> *&#160;</td>
-          <td class="paramname"><em>pSkipClient</em> = <code>NULL</code>&#160;</td>
+          <td class="paramname"><em>pSkipClient</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2871,7 +2871,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 25 2015 05:21:56 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 26 2015 06:09:17 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

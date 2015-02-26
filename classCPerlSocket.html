@@ -352,25 +352,25 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlSocket.html#ad35d6f55909595f8e60629c0b4aaaa00">CPerlSocket</a> (<a class="el" href="classCPerlModule.html">CPerlModule</a> *pModule, SV *perlObj)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">SV *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlSocket.html#acee73fccfc1695490d3c5f2975ae4150">GetPerlObj</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlSocket.html#a79c843d10f0e666a60635334bd0c9106">~CPerlSocket</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlSocket.html#a01c311794c9f7e4c1509254710653c84">Connected</a> () override</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Connected event.  <a href="#a01c311794c9f7e4c1509254710653c84"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlSocket.html#a07ccc67f368845b69d365fd75051c86f">Disconnected</a> () override</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnected event.  <a href="#a07ccc67f368845b69d365fd75051c86f"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlSocket.html#ac9ed859a69d966c580f2cef442718edd">Timeout</a> () override</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Sock Timed out event.  <a href="#ac9ed859a69d966c580f2cef442718edd"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlSocket.html#aea9f33fc9197026dbfe26887202e9549">ConnectionRefused</a> () override</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Connection Refused Event.  <a href="#aea9f33fc9197026dbfe26887202e9549"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlSocket.html#ad2bbbfb2bbfd8503cdf6f38b97ab2156">ReadData</a> (const char *data, size_t len) override</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Ready to read data event.  <a href="#ad2bbbfb2bbfd8503cdf6f38b97ab2156"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlSocket.html#a35816fc28e74e007505536c1d451dd85">ReadLine</a> (const <a class="el" href="classCString.html">CString</a> &amp;sLine) override</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCsock.html">Csock</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlSocket.html#af0d4c4ce0760a151a297b797ce1c6101">GetSockObj</a> (const <a class="el" href="classCString.html">CString</a> &amp;sHost, unsigned short uPort) override</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSocket.html#a006813cba95395cb701d3c57c2578749">ReachedMaxBuffer</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This defaults to closing the socket, feel free to override.  <a href="#a006813cba95395cb701d3c57c2578749"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSocket.html#a84cd201737bd8fc7e5fc8d1f59e1b3be">SockError</a> (int iErrno, const <a class="el" href="classCString.html">CString</a> &amp;sDescription)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlSocket.html#aea976d51d04f101e6cb0d6bde95c1dea">Connected</a> () override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Connected event.  <a href="#aea976d51d04f101e6cb0d6bde95c1dea"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlSocket.html#affa2a3f787becc35957a32fb5d5d68d7">Disconnected</a> () override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnected event.  <a href="#affa2a3f787becc35957a32fb5d5d68d7"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlSocket.html#a7084e4944c2441837df0f328e970ab26">Timeout</a> () override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Sock Timed out event.  <a href="#a7084e4944c2441837df0f328e970ab26"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlSocket.html#ae89b8d3809c9cf2ebcb816f4aa7c5d79">ConnectionRefused</a> () override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Connection Refused Event.  <a href="#ae89b8d3809c9cf2ebcb816f4aa7c5d79"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlSocket.html#aa1aa59de090b6593566068add581f994">ReadData</a> (const char *data, size_t len) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Ready to read data event.  <a href="#aa1aa59de090b6593566068add581f994"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlSocket.html#a5dcca791970945c4e114716ea64fa8f4">ReadLine</a> (const <a class="el" href="classCString.html">CString</a> &amp;sLine) override</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCsock.html">Csock</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlSocket.html#aefbdd9477055c2083a779a8ed2218834">GetSockObj</a> (const <a class="el" href="classCString.html">CString</a> &amp;sHost, unsigned short uPort) override</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSocket.html#ab19d803d09062d727235ab49422f96b4">ReachedMaxBuffer</a> () override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This defaults to closing the socket, feel free to override.  <a href="#ab19d803d09062d727235ab49422f96b4"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSocket.html#adc26f9ac788363a79c3eeec2e92dbf46">SockError</a> (int iErrno, const <a class="el" href="classCString.html">CString</a> &amp;sDescription) override</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a2092f1cfd768211741d4d3c4b092563b">SockError</a> (int iErrno, const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sDescription)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">A sock error occured event.  <a href="#a2092f1cfd768211741d4d3c4b092563b"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSocket.html#ac91d8849bfa3a2e8272f9d3edab00eba">ConnectionFrom</a> (const <a class="el" href="classCString.html">CString</a> &amp;sHost, unsigned short uPort)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This limits the global connections from this IP to defeat DoS attacks, feel free to override. The ACL used is provided by the main interface.  <a href="#ac91d8849bfa3a2e8272f9d3edab00eba"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSocket.html#a438f469a3d719b67b9e3cc34ff09a7b2">ConnectionFrom</a> (const <a class="el" href="classCString.html">CString</a> &amp;sHost, unsigned short uPort) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This limits the global connections from this IP to defeat DoS attacks, feel free to override. The ACL used is provided by the main interface.  <a href="#a438f469a3d719b67b9e3cc34ff09a7b2"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a46eaa8d1a67946a6d2f6349f40d551e2">ConnectionFrom</a> (const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sHost, uint16_t iPort)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Incoming Connection Event return false and the connection will fail default returns true.  <a href="#a46eaa8d1a67946a6d2f6349f40d551e2"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSocket.html#aeb45ba68fff1f1740cec0e52f636418a">Connect</a> (const <a class="el" href="classCString.html">CString</a> &amp;sHostname, unsigned short uPort, bool bSSL=false, unsigned int uTimeout=60)</td></tr>
@@ -2248,12 +2248,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a01c311794c9f7e4c1509254710653c84"></a><!-- doxytag: member="CPerlSocket::Connected" ref="a01c311794c9f7e4c1509254710653c84" args="() override" -->
+<a class="anchor" id="aea976d51d04f101e6cb0d6bde95c1dea"></a><!-- doxytag: member="CPerlSocket::Connected" ref="aea976d51d04f101e6cb0d6bde95c1dea" args="() override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCPerlSocket.html#a01c311794c9f7e4c1509254710653c84">CPerlSocket::Connected</a> </td>
+          <td class="memname">void <a class="el" href="classCPerlSocket.html#aea976d51d04f101e6cb0d6bde95c1dea">CPerlSocket::Connected</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td><code> [override, virtual]</code></td>
@@ -2422,12 +2422,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac91d8849bfa3a2e8272f9d3edab00eba"></a><!-- doxytag: member="CPerlSocket::ConnectionFrom" ref="ac91d8849bfa3a2e8272f9d3edab00eba" args="(const CString &amp;sHost, unsigned short uPort)" -->
+<a class="anchor" id="a438f469a3d719b67b9e3cc34ff09a7b2"></a><!-- doxytag: member="CPerlSocket::ConnectionFrom" ref="a438f469a3d719b67b9e3cc34ff09a7b2" args="(const CString &amp;sHost, unsigned short uPort) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool <a class="el" href="classCSocket.html#ac91d8849bfa3a2e8272f9d3edab00eba">CSocket::ConnectionFrom</a> </td>
+          <td class="memname">bool <a class="el" href="classCSocket.html#a438f469a3d719b67b9e3cc34ff09a7b2">CSocket::ConnectionFrom</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>sHost</em>, </td>
@@ -2441,7 +2441,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [virtual, inherited]</code></td>
+          <td></td><td><code> [override, inherited]</code></td>
         </tr>
       </table>
 </div>
@@ -2481,12 +2481,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aea9f33fc9197026dbfe26887202e9549"></a><!-- doxytag: member="CPerlSocket::ConnectionRefused" ref="aea9f33fc9197026dbfe26887202e9549" args="() override" -->
+<a class="anchor" id="ae89b8d3809c9cf2ebcb816f4aa7c5d79"></a><!-- doxytag: member="CPerlSocket::ConnectionRefused" ref="ae89b8d3809c9cf2ebcb816f4aa7c5d79" args="() override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCPerlSocket.html#aea9f33fc9197026dbfe26887202e9549">CPerlSocket::ConnectionRefused</a> </td>
+          <td class="memname">void <a class="el" href="classCPerlSocket.html#ae89b8d3809c9cf2ebcb816f4aa7c5d79">CPerlSocket::ConnectionRefused</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td><code> [override, virtual]</code></td>
@@ -3051,12 +3051,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a07ccc67f368845b69d365fd75051c86f"></a><!-- doxytag: member="CPerlSocket::Disconnected" ref="a07ccc67f368845b69d365fd75051c86f" args="() override" -->
+<a class="anchor" id="affa2a3f787becc35957a32fb5d5d68d7"></a><!-- doxytag: member="CPerlSocket::Disconnected" ref="affa2a3f787becc35957a32fb5d5d68d7" args="() override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCPerlSocket.html#a07ccc67f368845b69d365fd75051c86f">CPerlSocket::Disconnected</a> </td>
+          <td class="memname">void <a class="el" href="classCPerlSocket.html#affa2a3f787becc35957a32fb5d5d68d7">CPerlSocket::Disconnected</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td><code> [override, virtual]</code></td>
@@ -4531,12 +4531,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af0d4c4ce0760a151a297b797ce1c6101"></a><!-- doxytag: member="CPerlSocket::GetSockObj" ref="af0d4c4ce0760a151a297b797ce1c6101" args="(const CString &amp;sHost, unsigned short uPort) override" -->
+<a class="anchor" id="aefbdd9477055c2083a779a8ed2218834"></a><!-- doxytag: member="CPerlSocket::GetSockObj" ref="aefbdd9477055c2083a779a8ed2218834" args="(const CString &amp;sHost, unsigned short uPort) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classCsock.html">Csock</a>* <a class="el" href="classCPerlSocket.html#af0d4c4ce0760a151a297b797ce1c6101">CPerlSocket::GetSockObj</a> </td>
+          <td class="memname"><a class="el" href="classCsock.html">Csock</a>* <a class="el" href="classCPerlSocket.html#aefbdd9477055c2083a779a8ed2218834">CPerlSocket::GetSockObj</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>sHost</em>, </td>
@@ -4550,7 +4550,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [override, virtual]</code></td>
+          <td></td><td><code> [override]</code></td>
         </tr>
       </table>
 </div>
@@ -5769,15 +5769,15 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a006813cba95395cb701d3c57c2578749"></a><!-- doxytag: member="CPerlSocket::ReachedMaxBuffer" ref="a006813cba95395cb701d3c57c2578749" args="()" -->
+<a class="anchor" id="ab19d803d09062d727235ab49422f96b4"></a><!-- doxytag: member="CPerlSocket::ReachedMaxBuffer" ref="ab19d803d09062d727235ab49422f96b4" args="() override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCSocket.html#a006813cba95395cb701d3c57c2578749">CSocket::ReachedMaxBuffer</a> </td>
+          <td class="memname">void <a class="el" href="classCSocket.html#ab19d803d09062d727235ab49422f96b4">CSocket::ReachedMaxBuffer</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [virtual, inherited]</code></td>
+          <td><code> [override, virtual, inherited]</code></td>
         </tr>
       </table>
 </div>
@@ -5863,12 +5863,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ad2bbbfb2bbfd8503cdf6f38b97ab2156"></a><!-- doxytag: member="CPerlSocket::ReadData" ref="ad2bbbfb2bbfd8503cdf6f38b97ab2156" args="(const char *data, size_t len) override" -->
+<a class="anchor" id="aa1aa59de090b6593566068add581f994"></a><!-- doxytag: member="CPerlSocket::ReadData" ref="aa1aa59de090b6593566068add581f994" args="(const char *data, size_t len) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCPerlSocket.html#ad2bbbfb2bbfd8503cdf6f38b97ab2156">CPerlSocket::ReadData</a> </td>
+          <td class="memname">void <a class="el" href="classCPerlSocket.html#aa1aa59de090b6593566068add581f994">CPerlSocket::ReadData</a> </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>data</em>, </td>
@@ -5894,16 +5894,16 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a35816fc28e74e007505536c1d451dd85"></a><!-- doxytag: member="CPerlSocket::ReadLine" ref="a35816fc28e74e007505536c1d451dd85" args="(const CString &amp;sLine) override" -->
+<a class="anchor" id="a5dcca791970945c4e114716ea64fa8f4"></a><!-- doxytag: member="CPerlSocket::ReadLine" ref="a5dcca791970945c4e114716ea64fa8f4" args="(const CString &amp;sLine) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCPerlSocket.html#a35816fc28e74e007505536c1d451dd85">CPerlSocket::ReadLine</a> </td>
+          <td class="memname">void <a class="el" href="classCPerlSocket.html#a5dcca791970945c4e114716ea64fa8f4">CPerlSocket::ReadLine</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>sLine</em></td><td>)</td>
-          <td><code> [override, virtual]</code></td>
+          <td><code> [override]</code></td>
         </tr>
       </table>
 </div>
@@ -7468,12 +7468,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a84cd201737bd8fc7e5fc8d1f59e1b3be"></a><!-- doxytag: member="CPerlSocket::SockError" ref="a84cd201737bd8fc7e5fc8d1f59e1b3be" args="(int iErrno, const CString &amp;sDescription)" -->
+<a class="anchor" id="adc26f9ac788363a79c3eeec2e92dbf46"></a><!-- doxytag: member="CPerlSocket::SockError" ref="adc26f9ac788363a79c3eeec2e92dbf46" args="(int iErrno, const CString &amp;sDescription) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCSocket.html#a84cd201737bd8fc7e5fc8d1f59e1b3be">CSocket::SockError</a> </td>
+          <td class="memname">void <a class="el" href="classCSocket.html#adc26f9ac788363a79c3eeec2e92dbf46">CSocket::SockError</a> </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>iErrno</em>, </td>
@@ -7487,7 +7487,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [virtual, inherited]</code></td>
+          <td></td><td><code> [override, inherited]</code></td>
         </tr>
       </table>
 </div>
@@ -7734,12 +7734,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac9ed859a69d966c580f2cef442718edd"></a><!-- doxytag: member="CPerlSocket::Timeout" ref="ac9ed859a69d966c580f2cef442718edd" args="() override" -->
+<a class="anchor" id="a7084e4944c2441837df0f328e970ab26"></a><!-- doxytag: member="CPerlSocket::Timeout" ref="a7084e4944c2441837df0f328e970ab26" args="() override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCPerlSocket.html#ac9ed859a69d966c580f2cef442718edd">CPerlSocket::Timeout</a> </td>
+          <td class="memname">void <a class="el" href="classCPerlSocket.html#a7084e4944c2441837df0f328e970ab26">CPerlSocket::Timeout</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td><code> [override, virtual]</code></td>
@@ -8018,7 +8018,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 3 2015 15:55:19 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 26 2015 06:09:18 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

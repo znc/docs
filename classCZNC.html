@@ -141,7 +141,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#af92e8dc9eead11ff730cef3150a6b992">ClearTrustedProxies</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a62ffd51ce624e2dd8dac0a5b9c8fb7a0">AddTrustedProxy</a> (const <a class="el" href="classCString.html">CString</a> &amp;sHost)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a75e308bc458044ca099c694ec6c6e3a0">RemTrustedProxy</a> (const <a class="el" href="classCString.html">CString</a> &amp;sHost)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a494e631f488088c077200a708c80bc98">Broadcast</a> (const <a class="el" href="classCString.html">CString</a> &amp;sMessage, bool bAdminOnly=false, <a class="el" href="classCUser.html">CUser</a> *pSkipUser=NULL, <a class="el" href="classCClient.html">CClient</a> *pSkipClient=NULL)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a1253e89d434b486ced8d47bdb57fb4ab">Broadcast</a> (const <a class="el" href="classCString.html">CString</a> &amp;sMessage, bool bAdminOnly=false, <a class="el" href="classCUser.html">CUser</a> *pSkipUser=nullptr, <a class="el" href="classCClient.html">CClient</a> *pSkipClient=nullptr)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#aaa5a0c5c2d62570fa85cf5910b7c9573">AddBytesRead</a> (unsigned long long u)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#ad1954109f26e8bb3cb4ab72f0444cf03">AddBytesWritten</a> (unsigned long long u)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a237d14a883e4b338f98793bdfd7ffecc">BytesRead</a> () const </td></tr>
@@ -638,12 +638,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a494e631f488088c077200a708c80bc98"></a><!-- doxytag: member="CZNC::Broadcast" ref="a494e631f488088c077200a708c80bc98" args="(const CString &amp;sMessage, bool bAdminOnly=false, CUser *pSkipUser=NULL, CClient *pSkipClient=NULL)" -->
+<a class="anchor" id="a1253e89d434b486ced8d47bdb57fb4ab"></a><!-- doxytag: member="CZNC::Broadcast" ref="a1253e89d434b486ced8d47bdb57fb4ab" args="(const CString &amp;sMessage, bool bAdminOnly=false, CUser *pSkipUser=nullptr, CClient *pSkipClient=nullptr)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classCZNC.html#a494e631f488088c077200a708c80bc98">CZNC::Broadcast</a> </td>
+          <td class="memname">void <a class="el" href="classCZNC.html#a1253e89d434b486ced8d47bdb57fb4ab">CZNC::Broadcast</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>sMessage</em>, </td>
@@ -658,13 +658,13 @@ Protected Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classCUser.html">CUser</a> *&#160;</td>
-          <td class="paramname"><em>pSkipUser</em> = <code>NULL</code>, </td>
+          <td class="paramname"><em>pSkipUser</em> = <code>nullptr</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classCClient.html">CClient</a> *&#160;</td>
-          <td class="paramname"><em>pSkipClient</em> = <code>NULL</code>&#160;</td>
+          <td class="paramname"><em>pSkipClient</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2695,7 +2695,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 25 2015 05:21:57 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 26 2015 06:09:19 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

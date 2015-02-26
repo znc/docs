@@ -122,7 +122,7 @@ This is the complete list of members for <a class="el" href="classCRealListener.
   <tr class="memlist"><td><a class="el" href="classCsock.html#aed53de4046def7f4efbed8f449ec5fcb">ConnectFD</a>(int iReadFD, int iWriteFD, const CS_STRING &amp;sName, bool bIsSSL=false, ETConn eDirection=INBOUND)</td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#a258d1a2583c9e550e290850d4647e747">ConnectInetd</a>(bool bIsSSL=false, const CS_STRING &amp;sHostname=&quot;&quot;)</td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#a258d1a2583c9e550e290850d4647e747">ConnectInetd</a>(bool bIsSSL=false, const CS_STRING &amp;sHostname=&quot;&quot;)</td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="classCRealListener.html#ac163a816b8986a94adbb36cb0d2e3bc7">ConnectionFrom</a>(const CString &amp;sHost, unsigned short uPort)</td><td><a class="el" href="classCRealListener.html">CRealListener</a></td><td><code> [virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCRealListener.html#a03adebccc54bf911d0dcd92722298b2a">ConnectionFrom</a>(const CString &amp;sHost, unsigned short uPort) override</td><td><a class="el" href="classCRealListener.html">CRealListener</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#a46eaa8d1a67946a6d2f6349f40d551e2">CZNCSock::ConnectionFrom</a>(const CS_STRING &amp;sHost, uint16_t iPort)</td><td><a class="el" href="classCsock.html">Csock</a></td><td><code> [inline, virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#acc930b9f368c7226e9fd36f9f6b6ef91">ConnectionRefused</a>()</td><td><a class="el" href="classCsock.html">Csock</a></td><td><code> [inline, virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#acc930b9f368c7226e9fd36f9f6b6ef91">ConnectionRefused</a>()</td><td><a class="el" href="classCsock.html">Csock</a></td><td><code> [inline, virtual]</code></td></tr>
@@ -273,7 +273,7 @@ This is the complete list of members for <a class="el" href="classCRealListener.
   <tr class="memlist"><td><a class="el" href="classCsock.html#ad3b89b95816e682074af647efcda1d79">GetSock</a>() const </td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#a34976b96561b164c82a03570aa8ea733">GetSockName</a>() const </td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#a34976b96561b164c82a03570aa8ea733">GetSockName</a>() const </td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="classCRealListener.html#a3afa39b6f2f0a0fd0e79a1156f15a85d">GetSockObj</a>(const CString &amp;sHost, unsigned short uPort)</td><td><a class="el" href="classCRealListener.html">CRealListener</a></td><td><code> [virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCRealListener.html#ac3b2ebdabcf7fd24bd99f1c9e5d57396">GetSockObj</a>(const CString &amp;sHost, unsigned short uPort) override</td><td><a class="el" href="classCRealListener.html">CRealListener</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#a9f3b85490d28167617cf0e85782512b4">CZNCSock::GetSockObj</a>(const CS_STRING &amp;sHostname, uint16_t iPort)</td><td><a class="el" href="classCsock.html">Csock</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#adfe38d92769d41132435094784524930">GetSSL</a>() const </td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#adfe38d92769d41132435094784524930">GetSSL</a>() const </td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
@@ -435,7 +435,7 @@ This is the complete list of members for <a class="el" href="classCRealListener.
   <tr class="memlist"><td><a class="el" href="classCsock.html#ab8a870f8df305f21a0307364fdb3c027">SNIConfigureClient</a>(CS_STRING &amp;sHostname)</td><td><a class="el" href="classCsock.html">Csock</a></td><td><code> [inline, virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#a47ac65949b3713a2b32c5167225ffd99">SNIConfigureServer</a>(const CS_STRING &amp;sHostname, CS_STRING &amp;sPemFile, CS_STRING &amp;sPemPass)</td><td><a class="el" href="classCsock.html">Csock</a></td><td><code> [inline, virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#a47ac65949b3713a2b32c5167225ffd99">SNIConfigureServer</a>(const CS_STRING &amp;sHostname, CS_STRING &amp;sPemFile, CS_STRING &amp;sPemPass)</td><td><a class="el" href="classCsock.html">Csock</a></td><td><code> [inline, virtual]</code></td></tr>
-  <tr class="memlist"><td><a class="el" href="classCRealListener.html#a1e6f0b8b477eeededf914720f612db78">SockError</a>(int iErrno, const CString &amp;sDescription)</td><td><a class="el" href="classCRealListener.html">CRealListener</a></td><td><code> [virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCRealListener.html#ac460e1868ec8b2f0d8a94c7298d95554">SockError</a>(int iErrno, const CString &amp;sDescription) override</td><td><a class="el" href="classCRealListener.html">CRealListener</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#a2092f1cfd768211741d4d3c4b092563b">CZNCSock::SockError</a>(int iErrno, const CS_STRING &amp;sDescription)</td><td><a class="el" href="classCsock.html">Csock</a></td><td><code> [inline, virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#aa7da8fe2945d8cfca7c53aec88fdad68a4c9f54d66ade33a94594dab8dd44f8dc">SSL2</a> enum value</td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#aa7da8fe2945d8cfca7c53aec88fdad68a339719c2f3c6fc385ffc7c121aa4c8c7">SSL23</a> enum value</td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
@@ -491,7 +491,7 @@ This is the complete list of members for <a class="el" href="classCRealListener.
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 3 2015 15:55:20 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 26 2015 06:09:18 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

@@ -115,9 +115,9 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClientAuth.html#a71ba955e4d1ffddc9b55c69abcbacac8">~CClientAuth</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClientAuth.html#a584914b8d301b1c30026756749c0efe5">CClientAuth</a> (const <a class="el" href="classCClientAuth.html">CClientAuth</a> &amp;)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCClientAuth.html">CClientAuth</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClientAuth.html#a6d715992d5a6865e19c0fd34017cf237">operator=</a> (const <a class="el" href="classCClientAuth.html">CClientAuth</a> &amp;)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClientAuth.html#a8ba777640972a7f81998a25b8f5800ea">Invalidate</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClientAuth.html#a260deaf1f6f02071c901068bea2b4671">AcceptedLogin</a> (<a class="el" href="classCUser.html">CUser</a> &amp;User)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClientAuth.html#a2aca57858125864aa9f12ff9114fca43">RefusedLogin</a> (const <a class="el" href="classCString.html">CString</a> &amp;sReason)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClientAuth.html#a13f9e93a376dbcd18d1d3307b97963c9">Invalidate</a> () override</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClientAuth.html#af08c3c2ee50d6dc2ab173cda59fb6c79">AcceptedLogin</a> (<a class="el" href="classCUser.html">CUser</a> &amp;User) override</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClientAuth.html#af38982cfdc5408f1caf85ab1aca91de4">RefusedLogin</a> (const <a class="el" href="classCString.html">CString</a> &amp;sReason) override</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCAuthBase.html#ad218c21287e1de0dce2257a47ac94030">SetLoginInfo</a> (const <a class="el" href="classCString.html">CString</a> &amp;sUsername, const <a class="el" href="classCString.html">CString</a> &amp;sPassword, <a class="el" href="classCZNCSock.html">CZNCSock</a> *pSock)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCAuthBase.html#a0b6a4aed1f17057b2bc5c10120ac0e21">AcceptLogin</a> (<a class="el" href="classCUser.html">CUser</a> &amp;User)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCAuthBase.html#ad2ff0071505e11eb171a157860b1156a">RefuseLogin</a> (const <a class="el" href="classCString.html">CString</a> &amp;sReason)</td></tr>
@@ -197,16 +197,16 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a260deaf1f6f02071c901068bea2b4671"></a><!-- doxytag: member="CClientAuth::AcceptedLogin" ref="a260deaf1f6f02071c901068bea2b4671" args="(CUser &amp;User)" -->
+<a class="anchor" id="af08c3c2ee50d6dc2ab173cda59fb6c79"></a><!-- doxytag: member="CClientAuth::AcceptedLogin" ref="af08c3c2ee50d6dc2ab173cda59fb6c79" args="(CUser &amp;User) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classCClientAuth.html#a260deaf1f6f02071c901068bea2b4671">CClientAuth::AcceptedLogin</a> </td>
+          <td class="memname">void <a class="el" href="classCClientAuth.html#af08c3c2ee50d6dc2ab173cda59fb6c79">CClientAuth::AcceptedLogin</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classCUser.html">CUser</a> &amp;&#160;</td>
           <td class="paramname"><em>User</em></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -297,15 +297,15 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a8ba777640972a7f81998a25b8f5800ea"></a><!-- doxytag: member="CClientAuth::Invalidate" ref="a8ba777640972a7f81998a25b8f5800ea" args="()" -->
+<a class="anchor" id="a13f9e93a376dbcd18d1d3307b97963c9"></a><!-- doxytag: member="CClientAuth::Invalidate" ref="a13f9e93a376dbcd18d1d3307b97963c9" args="() override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classCClientAuth.html#a8ba777640972a7f81998a25b8f5800ea">CClientAuth::Invalidate</a> </td>
+          <td class="memname">void <a class="el" href="classCClientAuth.html#a13f9e93a376dbcd18d1d3307b97963c9">CClientAuth::Invalidate</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [inline, virtual]</code></td>
+          <td><code> [inline, override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -334,16 +334,16 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a2aca57858125864aa9f12ff9114fca43"></a><!-- doxytag: member="CClientAuth::RefusedLogin" ref="a2aca57858125864aa9f12ff9114fca43" args="(const CString &amp;sReason)" -->
+<a class="anchor" id="af38982cfdc5408f1caf85ab1aca91de4"></a><!-- doxytag: member="CClientAuth::RefusedLogin" ref="af38982cfdc5408f1caf85ab1aca91de4" args="(const CString &amp;sReason) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classCClientAuth.html#a2aca57858125864aa9f12ff9114fca43">CClientAuth::RefusedLogin</a> </td>
+          <td class="memname">void <a class="el" href="classCClientAuth.html#af38982cfdc5408f1caf85ab1aca91de4">CClientAuth::RefusedLogin</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>sReason</em></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -417,7 +417,7 @@ Protected Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Referenced by <a class="el" href="classCClientAuth.html#a8ba777640972a7f81998a25b8f5800ea">Invalidate()</a>.</p>
+<p>Referenced by <a class="el" href="classCClientAuth.html#a13f9e93a376dbcd18d1d3307b97963c9">Invalidate()</a>.</p>
 
 </div>
 </div>
@@ -442,7 +442,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 25 2015 05:21:55 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 26 2015 06:09:17 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

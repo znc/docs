@@ -354,11 +354,11 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCHTTPSock.html#a565dc45e1d6c49501421d40c77d77b79">CHTTPSock</a> (<a class="el" href="classCModule.html">CModule</a> *pMod, const <a class="el" href="classCString.html">CString</a> &amp;sURIPrefix)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCHTTPSock.html#a565a5e72db12150bd0870c992d13b27b">CHTTPSock</a> (<a class="el" href="classCModule.html">CModule</a> *pMod, const <a class="el" href="classCString.html">CString</a> &amp;sURIPrefix, const <a class="el" href="classCString.html">CString</a> &amp;sHostname, unsigned short uPort, int iTimeout=60)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCHTTPSock.html#a68dcd9d2c25a1d6b36cea101586bf127">~CHTTPSock</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCHTTPSock.html#a8ea23d2b09f415d71c6dd92431b6d947">ReadData</a> (const char *data, size_t len)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Ready to read data event.  <a href="#a8ea23d2b09f415d71c6dd92431b6d947"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCHTTPSock.html#afed70d5398f4ca160badb0f6171f768c">ReadLine</a> (const <a class="el" href="classCString.html">CString</a> &amp;sData)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCHTTPSock.html#a4b5c7c36802a5e8e89fa771f9547d0ec">Connected</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Connected event.  <a href="#a4b5c7c36802a5e8e89fa771f9547d0ec"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCHTTPSock.html#a2cf7b04dceecfa3814e49a0ed4964fb4">ReadData</a> (const char *data, size_t len) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Ready to read data event.  <a href="#a2cf7b04dceecfa3814e49a0ed4964fb4"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCHTTPSock.html#aaf3b91f5ecc9b801989d8ba9d328b428">ReadLine</a> (const <a class="el" href="classCString.html">CString</a> &amp;sData) override</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCHTTPSock.html#a6a29e266309a77ea7297ab2bb8a95d91">Connected</a> () override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Connected event.  <a href="#a6a29e266309a77ea7297ab2bb8a95d91"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCsock.html">Csock</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCHTTPSock.html#a027fffe91e66a64241db5dda8fcb9c54">GetSockObj</a> (const <a class="el" href="classCString.html">CString</a> &amp;sHost, unsigned short uPort)=0</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCHTTPSock.html#a8061644d6450bec2d272ac2a9771c874">ForceLogin</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCHTTPSock.html#a6892a798fb7d6febbc6620add86eba80">OnLogin</a> (const <a class="el" href="classCString.html">CString</a> &amp;sUser, const <a class="el" href="classCString.html">CString</a> &amp;sPass, bool bBasic)</td></tr>
@@ -395,13 +395,13 @@ Public Member Functions</h2></td></tr>
 <a class="el" href="ZNCString_8h.html#af7252b7c4a0d4ec44ddc136c6055ae51">VCString</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCHTTPSock.html#a8983bd7c5b6dfd322c751a44a8237c6e">GetParams</a> (bool bPost=true) const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCHTTPSock.html#a0b05976c671be9301bebe0edcd3dbd03">GetParamValues</a> (const <a class="el" href="classCString.html">CString</a> &amp;sName, <a class="el" href="ZNCString_8h.html#af7252b7c4a0d4ec44ddc136c6055ae51">VCString</a> &amp;vsRet, bool bPost=true, const <a class="el" href="classCString.html">CString</a> &amp;sFilter=&quot;\r\n&quot;) const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCHTTPSock.html#a7cf1465587af72d2260c238d98f0a651">GetParamValues</a> (const <a class="el" href="classCString.html">CString</a> &amp;sName, std::set&lt; <a class="el" href="classCString.html">CString</a> &gt; &amp;ssRet, bool bPost=true, const <a class="el" href="classCString.html">CString</a> &amp;sFilter=&quot;\r\n&quot;) const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSocket.html#a006813cba95395cb701d3c57c2578749">ReachedMaxBuffer</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This defaults to closing the socket, feel free to override.  <a href="#a006813cba95395cb701d3c57c2578749"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSocket.html#a84cd201737bd8fc7e5fc8d1f59e1b3be">SockError</a> (int iErrno, const <a class="el" href="classCString.html">CString</a> &amp;sDescription)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSocket.html#ab19d803d09062d727235ab49422f96b4">ReachedMaxBuffer</a> () override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This defaults to closing the socket, feel free to override.  <a href="#ab19d803d09062d727235ab49422f96b4"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSocket.html#adc26f9ac788363a79c3eeec2e92dbf46">SockError</a> (int iErrno, const <a class="el" href="classCString.html">CString</a> &amp;sDescription) override</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a2092f1cfd768211741d4d3c4b092563b">SockError</a> (int iErrno, const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sDescription)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">A sock error occured event.  <a href="#a2092f1cfd768211741d4d3c4b092563b"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSocket.html#ac91d8849bfa3a2e8272f9d3edab00eba">ConnectionFrom</a> (const <a class="el" href="classCString.html">CString</a> &amp;sHost, unsigned short uPort)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This limits the global connections from this IP to defeat DoS attacks, feel free to override. The ACL used is provided by the main interface.  <a href="#ac91d8849bfa3a2e8272f9d3edab00eba"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSocket.html#a438f469a3d719b67b9e3cc34ff09a7b2">ConnectionFrom</a> (const <a class="el" href="classCString.html">CString</a> &amp;sHost, unsigned short uPort) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This limits the global connections from this IP to defeat DoS attacks, feel free to override. The ACL used is provided by the main interface.  <a href="#a438f469a3d719b67b9e3cc34ff09a7b2"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a46eaa8d1a67946a6d2f6349f40d551e2">ConnectionFrom</a> (const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sHost, uint16_t iPort)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Incoming Connection Event return false and the connection will fail default returns true.  <a href="#a46eaa8d1a67946a6d2f6349f40d551e2"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSocket.html#aeb45ba68fff1f1740cec0e52f636418a">Connect</a> (const <a class="el" href="classCString.html">CString</a> &amp;sHostname, unsigned short uPort, bool bSSL=false, unsigned int uTimeout=60)</td></tr>
@@ -2408,15 +2408,15 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a4b5c7c36802a5e8e89fa771f9547d0ec"></a><!-- doxytag: member="CHTTPSock::Connected" ref="a4b5c7c36802a5e8e89fa771f9547d0ec" args="()" -->
+<a class="anchor" id="a6a29e266309a77ea7297ab2bb8a95d91"></a><!-- doxytag: member="CHTTPSock::Connected" ref="a6a29e266309a77ea7297ab2bb8a95d91" args="() override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCHTTPSock.html#a4b5c7c36802a5e8e89fa771f9547d0ec">CHTTPSock::Connected</a> </td>
+          <td class="memname">void <a class="el" href="classCHTTPSock.html#a6a29e266309a77ea7297ab2bb8a95d91">CHTTPSock::Connected</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -2582,12 +2582,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac91d8849bfa3a2e8272f9d3edab00eba"></a><!-- doxytag: member="CHTTPSock::ConnectionFrom" ref="ac91d8849bfa3a2e8272f9d3edab00eba" args="(const CString &amp;sHost, unsigned short uPort)" -->
+<a class="anchor" id="a438f469a3d719b67b9e3cc34ff09a7b2"></a><!-- doxytag: member="CHTTPSock::ConnectionFrom" ref="a438f469a3d719b67b9e3cc34ff09a7b2" args="(const CString &amp;sHost, unsigned short uPort) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool <a class="el" href="classCSocket.html#ac91d8849bfa3a2e8272f9d3edab00eba">CSocket::ConnectionFrom</a> </td>
+          <td class="memname">bool <a class="el" href="classCSocket.html#a438f469a3d719b67b9e3cc34ff09a7b2">CSocket::ConnectionFrom</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>sHost</em>, </td>
@@ -2601,7 +2601,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [virtual, inherited]</code></td>
+          <td></td><td><code> [override, inherited]</code></td>
         </tr>
       </table>
 </div>
@@ -2657,7 +2657,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Connection Refused Event. </p>
 
-<p>Reimplemented in <a class="el" href="classCPySocket.html#a4e363a251df417b4af82cdaa1f9242a3">CPySocket</a>, <a class="el" href="classCClient.html#af6734b37352aa8dc76af148b3c0691f5">CClient</a>, <a class="el" href="classCPerlSocket.html#aea9f33fc9197026dbfe26887202e9549">CPerlSocket</a>, and <a class="el" href="classCIRCSock.html#a8da20f2aed2cb795868add5abb74a3cc">CIRCSock</a>.</p>
+<p>Reimplemented in <a class="el" href="classCPySocket.html#a7941fca5cf3ca0942c647049331046e9">CPySocket</a>, <a class="el" href="classCClient.html#ad85bb3e89622122e5e007e712fd02ba8">CClient</a>, <a class="el" href="classCPerlSocket.html#ae89b8d3809c9cf2ebcb816f4aa7c5d79">CPerlSocket</a>, and <a class="el" href="classCIRCSock.html#ae7e5672132ad6c9ee27aa125a3b7b61d">CIRCSock</a>.</p>
 
 </div>
 </div>
@@ -2677,7 +2677,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Connection Refused Event. </p>
 
-<p>Reimplemented in <a class="el" href="classCPySocket.html#a4e363a251df417b4af82cdaa1f9242a3">CPySocket</a>, <a class="el" href="classCClient.html#af6734b37352aa8dc76af148b3c0691f5">CClient</a>, <a class="el" href="classCPerlSocket.html#aea9f33fc9197026dbfe26887202e9549">CPerlSocket</a>, and <a class="el" href="classCIRCSock.html#a8da20f2aed2cb795868add5abb74a3cc">CIRCSock</a>.</p>
+<p>Reimplemented in <a class="el" href="classCPySocket.html#a7941fca5cf3ca0942c647049331046e9">CPySocket</a>, <a class="el" href="classCClient.html#ad85bb3e89622122e5e007e712fd02ba8">CClient</a>, <a class="el" href="classCPerlSocket.html#ae89b8d3809c9cf2ebcb816f4aa7c5d79">CPerlSocket</a>, and <a class="el" href="classCIRCSock.html#ae7e5672132ad6c9ee27aa125a3b7b61d">CIRCSock</a>.</p>
 
 </div>
 </div>
@@ -3247,7 +3247,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Disconnected event. </p>
 
-<p>Reimplemented in <a class="el" href="classCPySocket.html#ae3a1765d9522ad5d15a9ba91b0f8a250">CPySocket</a>, <a class="el" href="classCClient.html#a45a253d43ced7a020b7f3814d7f0d597">CClient</a>, <a class="el" href="classCPerlSocket.html#a07ccc67f368845b69d365fd75051c86f">CPerlSocket</a>, and <a class="el" href="classCIRCSock.html#ab633f090638cf7bc010cef9a17031671">CIRCSock</a>.</p>
+<p>Reimplemented in <a class="el" href="classCPySocket.html#ac1f76afb570dbbe6b07a14a8d43c5dd7">CPySocket</a>, <a class="el" href="classCClient.html#aa4e7bcf81ee42a4ac80b49bcda360e91">CClient</a>, <a class="el" href="classCPerlSocket.html#affa2a3f787becc35957a32fb5d5d68d7">CPerlSocket</a>, and <a class="el" href="classCIRCSock.html#acc0364838e622f6a7bec1b515cb49a37">CIRCSock</a>.</p>
 
 </div>
 </div>
@@ -3267,7 +3267,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Disconnected event. </p>
 
-<p>Reimplemented in <a class="el" href="classCPySocket.html#ae3a1765d9522ad5d15a9ba91b0f8a250">CPySocket</a>, <a class="el" href="classCClient.html#a45a253d43ced7a020b7f3814d7f0d597">CClient</a>, <a class="el" href="classCPerlSocket.html#a07ccc67f368845b69d365fd75051c86f">CPerlSocket</a>, and <a class="el" href="classCIRCSock.html#ab633f090638cf7bc010cef9a17031671">CIRCSock</a>.</p>
+<p>Reimplemented in <a class="el" href="classCPySocket.html#ac1f76afb570dbbe6b07a14a8d43c5dd7">CPySocket</a>, <a class="el" href="classCClient.html#aa4e7bcf81ee42a4ac80b49bcda360e91">CClient</a>, <a class="el" href="classCPerlSocket.html#affa2a3f787becc35957a32fb5d5d68d7">CPerlSocket</a>, and <a class="el" href="classCIRCSock.html#acc0364838e622f6a7bec1b515cb49a37">CIRCSock</a>.</p>
 
 </div>
 </div>
@@ -5041,7 +5041,7 @@ Protected Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Implemented in <a class="el" href="classCWebSock.html#ae5a23673a2642548d98525dd804541bc">CWebSock</a>.</p>
+<p>Implemented in <a class="el" href="classCWebSock.html#a855fe9493458ed1cb8da33120171f79a">CWebSock</a>.</p>
 
 </div>
 </div>
@@ -6594,15 +6594,15 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a006813cba95395cb701d3c57c2578749"></a><!-- doxytag: member="CHTTPSock::ReachedMaxBuffer" ref="a006813cba95395cb701d3c57c2578749" args="()" -->
+<a class="anchor" id="ab19d803d09062d727235ab49422f96b4"></a><!-- doxytag: member="CHTTPSock::ReachedMaxBuffer" ref="ab19d803d09062d727235ab49422f96b4" args="() override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCSocket.html#a006813cba95395cb701d3c57c2578749">CSocket::ReachedMaxBuffer</a> </td>
+          <td class="memname">void <a class="el" href="classCSocket.html#ab19d803d09062d727235ab49422f96b4">CSocket::ReachedMaxBuffer</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [virtual, inherited]</code></td>
+          <td><code> [override, virtual, inherited]</code></td>
         </tr>
       </table>
 </div>
@@ -6688,12 +6688,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a8ea23d2b09f415d71c6dd92431b6d947"></a><!-- doxytag: member="CHTTPSock::ReadData" ref="a8ea23d2b09f415d71c6dd92431b6d947" args="(const char *data, size_t len)" -->
+<a class="anchor" id="a2cf7b04dceecfa3814e49a0ed4964fb4"></a><!-- doxytag: member="CHTTPSock::ReadData" ref="a2cf7b04dceecfa3814e49a0ed4964fb4" args="(const char *data, size_t len) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCHTTPSock.html#a8ea23d2b09f415d71c6dd92431b6d947">CHTTPSock::ReadData</a> </td>
+          <td class="memname">void <a class="el" href="classCHTTPSock.html#a2cf7b04dceecfa3814e49a0ed4964fb4">CHTTPSock::ReadData</a> </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>data</em>, </td>
@@ -6707,7 +6707,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
+          <td></td><td><code> [override, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -6719,16 +6719,16 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="afed70d5398f4ca160badb0f6171f768c"></a><!-- doxytag: member="CHTTPSock::ReadLine" ref="afed70d5398f4ca160badb0f6171f768c" args="(const CString &amp;sData)" -->
+<a class="anchor" id="aaf3b91f5ecc9b801989d8ba9d328b428"></a><!-- doxytag: member="CHTTPSock::ReadLine" ref="aaf3b91f5ecc9b801989d8ba9d328b428" args="(const CString &amp;sData) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCHTTPSock.html#afed70d5398f4ca160badb0f6171f768c">CHTTPSock::ReadLine</a> </td>
+          <td class="memname">void <a class="el" href="classCHTTPSock.html#aaf3b91f5ecc9b801989d8ba9d328b428">CHTTPSock::ReadLine</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>sData</em></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td><code> [override]</code></td>
         </tr>
       </table>
 </div>
@@ -8408,12 +8408,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a84cd201737bd8fc7e5fc8d1f59e1b3be"></a><!-- doxytag: member="CHTTPSock::SockError" ref="a84cd201737bd8fc7e5fc8d1f59e1b3be" args="(int iErrno, const CString &amp;sDescription)" -->
+<a class="anchor" id="adc26f9ac788363a79c3eeec2e92dbf46"></a><!-- doxytag: member="CHTTPSock::SockError" ref="adc26f9ac788363a79c3eeec2e92dbf46" args="(int iErrno, const CString &amp;sDescription) override" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classCSocket.html#a84cd201737bd8fc7e5fc8d1f59e1b3be">CSocket::SockError</a> </td>
+          <td class="memname">void <a class="el" href="classCSocket.html#adc26f9ac788363a79c3eeec2e92dbf46">CSocket::SockError</a> </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>iErrno</em>, </td>
@@ -8427,7 +8427,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [virtual, inherited]</code></td>
+          <td></td><td><code> [override, inherited]</code></td>
         </tr>
       </table>
 </div>
@@ -8690,7 +8690,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Sock Timed out event. </p>
 
-<p>Reimplemented in <a class="el" href="classCPySocket.html#a42b0c747f4ad635b989b02bb40932cbd">CPySocket</a>, <a class="el" href="classCClient.html#af08c3caca437453b513ec9aa45bf0841">CClient</a>, <a class="el" href="classCPerlSocket.html#ac9ed859a69d966c580f2cef442718edd">CPerlSocket</a>, and <a class="el" href="classCIRCSock.html#a9ad0428beb9047f9dfaedddcbf7226e6">CIRCSock</a>.</p>
+<p>Reimplemented in <a class="el" href="classCPySocket.html#a0aa92cb9f947214e07eb4b21d2744d43">CPySocket</a>, <a class="el" href="classCClient.html#a98cd5fa145d4d798df1047ec8bbae9ae">CClient</a>, <a class="el" href="classCPerlSocket.html#a7084e4944c2441837df0f328e970ab26">CPerlSocket</a>, and <a class="el" href="classCIRCSock.html#a5ef79baf8be21c2c4c4fa74501d03f1e">CIRCSock</a>.</p>
 
 </div>
 </div>
@@ -8710,7 +8710,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Sock Timed out event. </p>
 
-<p>Reimplemented in <a class="el" href="classCPySocket.html#a42b0c747f4ad635b989b02bb40932cbd">CPySocket</a>, <a class="el" href="classCClient.html#af08c3caca437453b513ec9aa45bf0841">CClient</a>, <a class="el" href="classCPerlSocket.html#ac9ed859a69d966c580f2cef442718edd">CPerlSocket</a>, and <a class="el" href="classCIRCSock.html#a9ad0428beb9047f9dfaedddcbf7226e6">CIRCSock</a>.</p>
+<p>Reimplemented in <a class="el" href="classCPySocket.html#a0aa92cb9f947214e07eb4b21d2744d43">CPySocket</a>, <a class="el" href="classCClient.html#a98cd5fa145d4d798df1047ec8bbae9ae">CClient</a>, <a class="el" href="classCPerlSocket.html#a7084e4944c2441837df0f328e970ab26">CPerlSocket</a>, and <a class="el" href="classCIRCSock.html#a5ef79baf8be21c2c4c4fa74501d03f1e">CIRCSock</a>.</p>
 
 </div>
 </div>
@@ -9266,7 +9266,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 3 2015 15:55:18 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 26 2015 06:09:17 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

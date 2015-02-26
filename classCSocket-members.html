@@ -122,7 +122,7 @@ This is the complete list of members for <a class="el" href="classCSocket.html">
   <tr class="memlist"><td><a class="el" href="classCsock.html#aed53de4046def7f4efbed8f449ec5fcb">ConnectFD</a>(int iReadFD, int iWriteFD, const CS_STRING &amp;sName, bool bIsSSL=false, ETConn eDirection=INBOUND)</td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#a258d1a2583c9e550e290850d4647e747">ConnectInetd</a>(bool bIsSSL=false, const CS_STRING &amp;sHostname=&quot;&quot;)</td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#a258d1a2583c9e550e290850d4647e747">ConnectInetd</a>(bool bIsSSL=false, const CS_STRING &amp;sHostname=&quot;&quot;)</td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="classCSocket.html#ac91d8849bfa3a2e8272f9d3edab00eba">ConnectionFrom</a>(const CString &amp;sHost, unsigned short uPort)</td><td><a class="el" href="classCSocket.html">CSocket</a></td><td><code> [virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCSocket.html#a438f469a3d719b67b9e3cc34ff09a7b2">ConnectionFrom</a>(const CString &amp;sHost, unsigned short uPort) override</td><td><a class="el" href="classCSocket.html">CSocket</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#a46eaa8d1a67946a6d2f6349f40d551e2">CZNCSock::ConnectionFrom</a>(const CS_STRING &amp;sHost, uint16_t iPort)</td><td><a class="el" href="classCsock.html">Csock</a></td><td><code> [inline, virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#acc930b9f368c7226e9fd36f9f6b6ef91">ConnectionRefused</a>()</td><td><a class="el" href="classCsock.html">Csock</a></td><td><code> [inline, virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#acc930b9f368c7226e9fd36f9f6b6ef91">ConnectionRefused</a>()</td><td><a class="el" href="classCsock.html">Csock</a></td><td><code> [inline, virtual]</code></td></tr>
@@ -346,7 +346,7 @@ This is the complete list of members for <a class="el" href="classCSocket.html">
   <tr class="memlist"><td><a class="el" href="classCsock.html#a41d8b0fb0cc4884bdc90d5010cc7ab3b">PauseRead</a>()</td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#af5503bfd5516bd1bb281d2616d9321b0">PushBuff</a>(const char *data, size_t len, bool bStartAtZero=false)</td><td><a class="el" href="classCsock.html">Csock</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#af5503bfd5516bd1bb281d2616d9321b0">PushBuff</a>(const char *data, size_t len, bool bStartAtZero=false)</td><td><a class="el" href="classCsock.html">Csock</a></td><td><code> [virtual]</code></td></tr>
-  <tr class="memlist"><td><a class="el" href="classCSocket.html#a006813cba95395cb701d3c57c2578749">ReachedMaxBuffer</a>()</td><td><a class="el" href="classCSocket.html">CSocket</a></td><td><code> [virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCSocket.html#ab19d803d09062d727235ab49422f96b4">ReachedMaxBuffer</a>() override</td><td><a class="el" href="classCSocket.html">CSocket</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#a714d883a38fd8ca785b4db54fba629be">Read</a>(char *data, size_t len)</td><td><a class="el" href="classCsock.html">Csock</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#a714d883a38fd8ca785b4db54fba629be">Read</a>(char *data, size_t len)</td><td><a class="el" href="classCsock.html">Csock</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#ae0bf394f0683437a754dd535a7d1df65ad864f9f4a5b748c01bd304c34ff72371">READ_CONNREFUSED</a> enum value</td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
@@ -439,7 +439,7 @@ This is the complete list of members for <a class="el" href="classCSocket.html">
   <tr class="memlist"><td><a class="el" href="classCsock.html#ab8a870f8df305f21a0307364fdb3c027">SNIConfigureClient</a>(CS_STRING &amp;sHostname)</td><td><a class="el" href="classCsock.html">Csock</a></td><td><code> [inline, virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#a47ac65949b3713a2b32c5167225ffd99">SNIConfigureServer</a>(const CS_STRING &amp;sHostname, CS_STRING &amp;sPemFile, CS_STRING &amp;sPemPass)</td><td><a class="el" href="classCsock.html">Csock</a></td><td><code> [inline, virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#a47ac65949b3713a2b32c5167225ffd99">SNIConfigureServer</a>(const CS_STRING &amp;sHostname, CS_STRING &amp;sPemFile, CS_STRING &amp;sPemPass)</td><td><a class="el" href="classCsock.html">Csock</a></td><td><code> [inline, virtual]</code></td></tr>
-  <tr class="memlist"><td><a class="el" href="classCSocket.html#a84cd201737bd8fc7e5fc8d1f59e1b3be">SockError</a>(int iErrno, const CString &amp;sDescription)</td><td><a class="el" href="classCSocket.html">CSocket</a></td><td><code> [virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCSocket.html#adc26f9ac788363a79c3eeec2e92dbf46">SockError</a>(int iErrno, const CString &amp;sDescription) override</td><td><a class="el" href="classCSocket.html">CSocket</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#a2092f1cfd768211741d4d3c4b092563b">CZNCSock::SockError</a>(int iErrno, const CS_STRING &amp;sDescription)</td><td><a class="el" href="classCsock.html">Csock</a></td><td><code> [inline, virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#aa7da8fe2945d8cfca7c53aec88fdad68a4c9f54d66ade33a94594dab8dd44f8dc">SSL2</a> enum value</td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCsock.html#aa7da8fe2945d8cfca7c53aec88fdad68a339719c2f3c6fc385ffc7c121aa4c8c7">SSL23</a> enum value</td><td><a class="el" href="classCsock.html">Csock</a></td><td></td></tr>
@@ -495,7 +495,7 @@ This is the complete list of members for <a class="el" href="classCSocket.html">
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 25 2015 05:21:57 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 26 2015 06:09:18 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
