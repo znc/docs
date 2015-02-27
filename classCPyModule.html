@@ -1003,7 +1003,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<dl class="return"><dt><b>Returns:</b></dt><dd>The <a class="el" href="classCModCommand.html" title="A helper class for handling commands in modules.">CModCommand</a> instance or NULL if none was found. </dd></dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>The <a class="el" href="classCModCommand.html" title="A helper class for handling commands in modules.">CModCommand</a> instance or nullptr if none was found. </dd></dl>
 
 </div>
 </div>
@@ -1272,7 +1272,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<dl class="return"><dt><b>Returns:</b></dt><dd>NULL except when we are in a client-specific module hook in which case this is the client for which the hook is called. </dd></dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>nullptr except when we are in a client-specific module hook in which case this is the client for which the hook is called. </dd></dl>
 
 <p>References <a class="el" href="classCModule.html#ae08509a39de3a5e4a3b594472bdb312e">CModule::m_pNetwork</a>.</p>
 
@@ -1412,7 +1412,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<dl class="return"><dt><b>Returns:</b></dt><dd>For user modules this returns the user for which this module was loaded. For global modules this returns NULL, except when we are in a user-specific module hook in which case this is the user pointer. </dd></dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>For user modules this returns the user for which this module was loaded. For global modules this returns nullptr, except when we are in a user-specific module hook in which case this is the user pointer. </dd></dl>
 
 <p>References <a class="el" href="classCModule.html#a2475149198c693e870dba72c5fbdb654">CModule::m_pUser</a>.</p>
 
@@ -2214,7 +2214,7 @@ Protected Attributes</h2></td></tr>
 <p>This module hook is called when a user mode on a channel changes. </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">pOpNick</td><td>The nick who sent the mode change, or NULL if set by server. </td></tr>
+    <tr><td class="paramname">pOpNick</td><td>The nick who sent the mode change, or nullptr if set by server. </td></tr>
     <tr><td class="paramname">Nick</td><td>The nick whose channel mode changes. </td></tr>
     <tr><td class="paramname">Channel</td><td>The channel on which the user mode is changed. </td></tr>
     <tr><td class="paramname">uMode</td><td>The mode character that is changed, e.g. '@' for op. </td></tr>
@@ -3362,7 +3362,7 @@ Protected Attributes</h2></td></tr>
 <p>Called on an individual channel mode change. </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">pOpNick</td><td>The nick who changes the channel mode, or NULL if set by server. </td></tr>
+    <tr><td class="paramname">pOpNick</td><td>The nick who changes the channel mode, or nullptr if set by server. </td></tr>
     <tr><td class="paramname">Channel</td><td>The channel whose mode is changed. </td></tr>
     <tr><td class="paramname">uMode</td><td>The mode character that is changed. </td></tr>
     <tr><td class="paramname">sArg</td><td>The argument to the mode character, if any. </td></tr>
@@ -4105,7 +4105,7 @@ Protected Attributes</h2></td></tr>
 <p>This is called before the more detailed mode hooks like e.g. <a class="el" href="classCModule.html#a86b1fb88ee1f5cb89d81c281e05e6bf1">OnOp()</a> and <a class="el" href="classCModule.html#a1dc47cfa75074831a0c76982ac5d4af5">OnMode()</a>. </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">pOpNick</td><td>The nick who changes the channel mode, or NULL if set by server. </td></tr>
+    <tr><td class="paramname">pOpNick</td><td>The nick who changes the channel mode, or nullptr if set by server. </td></tr>
     <tr><td class="paramname">Channel</td><td>The channel whose mode is changed. </td></tr>
     <tr><td class="paramname">sModes</td><td>The raw mode change, e.g. "+s-io". </td></tr>
     <tr><td class="paramname">sArgs</td><td>All arguments to the mode change from sModes. </td></tr>
@@ -5735,7 +5735,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 26 2015 06:09:18 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 27 2015 17:20:20 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

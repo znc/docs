@@ -291,7 +291,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00309"></a>00309                 <span class="keywordflow">return</span> (<a class="code" href="classTCacheMap.html#a9d5a76f1b92e3d3a8d873e5e66823e39" title="Map of cached items.">m_mItems</a>.find(Item) != <a class="code" href="classTCacheMap.html#a9d5a76f1b92e3d3a8d873e5e66823e39" title="Map of cached items.">m_mItems</a>.end());
 <a name="l00310"></a>00310         }
 <a name="l00311"></a>00311 
-<a name="l00317"></a><a class="code" href="classTCacheMap.html#af5ad62704308d4b69ae91588c0269a07">00317</a>         V* <a class="code" href="classTCacheMap.html#af5ad62704308d4b69ae91588c0269a07" title="Performs a Cleanup() and returns a pointer to the object, or NULL.">GetItem</a>(<span class="keyword">const</span> K&amp; Item) {
+<a name="l00317"></a><a class="code" href="classTCacheMap.html#af5ad62704308d4b69ae91588c0269a07">00317</a>         V* <a class="code" href="classTCacheMap.html#af5ad62704308d4b69ae91588c0269a07" title="Performs a Cleanup() and returns a pointer to the object, or nullptr.">GetItem</a>(<span class="keyword">const</span> K&amp; Item) {
 <a name="l00318"></a>00318                 <a class="code" href="classTCacheMap.html#a310531274916c803f033df8fc47a8abc" title="Cycles through the queue removing all of the stale entries.">Cleanup</a>();
 <a name="l00319"></a>00319                 <a class="code" href="classTCacheMap.html#ac29fbd1d01dec1b68e626e1c1bed4f8c">iterator</a> it = <a class="code" href="classTCacheMap.html#a9d5a76f1b92e3d3a8d873e5e66823e39" title="Map of cached items.">m_mItems</a>.find(Item);
 <a name="l00320"></a>00320                 <span class="keywordflow">if</span> (it == <a class="code" href="classTCacheMap.html#a9d5a76f1b92e3d3a8d873e5e66823e39" title="Map of cached items.">m_mItems</a>.end())
@@ -351,7 +351,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 26 2015 06:09:17 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 27 2015 17:20:18 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

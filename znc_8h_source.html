@@ -249,7 +249,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00173"></a>00173         <span class="comment">// !MOTD</span>
 <a name="l00174"></a>00174 
 <a name="l00175"></a><a class="code" href="classCZNC.html#a23d3badfae003b1b119ee7ed79eac7c2">00175</a>         <span class="keywordtype">void</span> <a class="code" href="classCZNC.html#a23d3badfae003b1b119ee7ed79eac7c2">AddServerThrottle</a>(<a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a> sName) { <a class="code" href="classCZNC.html#a47ddfe2e31ac432261dbd9f9271eb3c7">m_sConnectThrottle</a>.<a class="code" href="classTCacheMap.html#a6d5fccb8e4b75aacf76f38d67ad8a86c" title="This function adds an item to the cache using the default time-to-live value.">AddItem</a>(sName, <span class="keyword">true</span>); }
-<a name="l00176"></a><a class="code" href="classCZNC.html#ac363db659da14e79ff7f07cd627e6a2f">00176</a>         <span class="keywordtype">bool</span> <a class="code" href="classCZNC.html#ac363db659da14e79ff7f07cd627e6a2f">GetServerThrottle</a>(<a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a> sName) { <span class="keywordtype">bool</span> *b = <a class="code" href="classCZNC.html#a47ddfe2e31ac432261dbd9f9271eb3c7">m_sConnectThrottle</a>.<a class="code" href="classTCacheMap.html#af5ad62704308d4b69ae91588c0269a07" title="Performs a Cleanup() and returns a pointer to the object, or NULL.">GetItem</a>(sName); <span class="keywordflow">return</span> (b &amp;&amp; *b); }
+<a name="l00176"></a><a class="code" href="classCZNC.html#ac363db659da14e79ff7f07cd627e6a2f">00176</a>         <span class="keywordtype">bool</span> <a class="code" href="classCZNC.html#ac363db659da14e79ff7f07cd627e6a2f">GetServerThrottle</a>(<a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a> sName) { <span class="keywordtype">bool</span> *b = <a class="code" href="classCZNC.html#a47ddfe2e31ac432261dbd9f9271eb3c7">m_sConnectThrottle</a>.<a class="code" href="classTCacheMap.html#af5ad62704308d4b69ae91588c0269a07" title="Performs a Cleanup() and returns a pointer to the object, or nullptr.">GetItem</a>(sName); <span class="keywordflow">return</span> (b &amp;&amp; *b); }
 <a name="l00177"></a>00177 
 <a name="l00178"></a>00178         <span class="keywordtype">void</span> <a class="code" href="classCZNC.html#a2755a8c3d9eb6062838a6825f89a21e5">AddNetworkToQueue</a>(<a class="code" href="classCIRCNetwork.html">CIRCNetwork</a> *pNetwork);
 <a name="l00179"></a><a class="code" href="classCZNC.html#a8563f1feacb931f1572ea37675e39805">00179</a>         std::list&lt;CIRCNetwork*&gt;&amp; <a class="code" href="classCZNC.html#a8563f1feacb931f1572ea37675e39805">GetConnectionQueue</a>() { <span class="keywordflow">return</span> <a class="code" href="classCZNC.html#ac838356ddf8ad5b022ea9537a271cdac">m_lpConnectQueue</a>; }
@@ -332,7 +332,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 26 2015 06:09:17 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 27 2015 17:20:18 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

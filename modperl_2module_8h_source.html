@@ -114,7 +114,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00031"></a>00031 <span class="keyword">public</span>:
 <a name="l00032"></a><a class="code" href="classCPerlModule.html#ae761cc022a76a578037111407df44eff">00032</a>         <a class="code" href="classCPerlModule.html#ae761cc022a76a578037111407df44eff">CPerlModule</a>(<a class="code" href="classCUser.html">CUser</a>* pUser, <a class="code" href="classCIRCNetwork.html">CIRCNetwork</a>* pNetwork, <span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sModName, <span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sDataPath,
 <a name="l00033"></a>00033                         SV* perlObj)
-<a name="l00034"></a>00034                         : <a class="code" href="classCModule.html" title="The base class for your own ZNC modules.">CModule</a>(NULL, pUser, pNetwork, sModName, sDataPath) {
+<a name="l00034"></a>00034                         : <a class="code" href="classCModule.html" title="The base class for your own ZNC modules.">CModule</a>(nullptr, pUser, pNetwork, sModName, sDataPath) {
 <a name="l00035"></a>00035                 m_perlObj = newSVsv(perlObj);
 <a name="l00036"></a>00036         }
 <a name="l00037"></a><a class="code" href="classCPerlModule.html#a8d1e5131568a0384584557f005ce907a">00037</a>         SV* <a class="code" href="classCPerlModule.html#a8d1e5131568a0384584557f005ce907a">GetPerlObj</a>() {
@@ -302,7 +302,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 26 2015 06:09:16 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 27 2015 17:20:18 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

@@ -119,7 +119,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTCacheMap.html#a1e71e07184c9db482dcb7a99ae5bc119">HasItem</a> (const K &amp;Item)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs a <a class="el" href="classTCacheMap.html#a310531274916c803f033df8fc47a8abc" title="Cycles through the queue removing all of the stale entries.">Cleanup()</a> and then checks to see if your item exists.  <a href="#a1e71e07184c9db482dcb7a99ae5bc119"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">V *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTCacheMap.html#af5ad62704308d4b69ae91588c0269a07">GetItem</a> (const K &amp;Item)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs a <a class="el" href="classTCacheMap.html#a310531274916c803f033df8fc47a8abc" title="Cycles through the queue removing all of the stale entries.">Cleanup()</a> and returns a pointer to the object, or NULL.  <a href="#af5ad62704308d4b69ae91588c0269a07"></a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs a <a class="el" href="classTCacheMap.html#a310531274916c803f033df8fc47a8abc" title="Cycles through the queue removing all of the stale entries.">Cleanup()</a> and returns a pointer to the object, or nullptr.  <a href="#af5ad62704308d4b69ae91588c0269a07"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTCacheMap.html#a4e80ed1aede8eeb8d9f6092950358c04">RemItem</a> (const K &amp;Item)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a specific item from the cache.  <a href="#a4e80ed1aede8eeb8d9f6092950358c04"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTCacheMap.html#a310531274916c803f033df8fc47a8abc">Cleanup</a> ()</td></tr>
@@ -426,14 +426,14 @@ template&lt;typename K, typename V = bool&gt; </div>
 </div>
 <div class="memdoc">
 
-<p>Performs a <a class="el" href="classTCacheMap.html#a310531274916c803f033df8fc47a8abc" title="Cycles through the queue removing all of the stale entries.">Cleanup()</a> and returns a pointer to the object, or NULL. </p>
+<p>Performs a <a class="el" href="classTCacheMap.html#a310531274916c803f033df8fc47a8abc" title="Cycles through the queue removing all of the stale entries.">Cleanup()</a> and returns a pointer to the object, or nullptr. </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">Item</td><td>The item to check for </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd>Pointer to the item or NULL if there is no suitable one </dd></dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Pointer to the item or nullptr if there is no suitable one </dd></dl>
 
 <p>Referenced by <a class="el" href="classCZNC.html#ac363db659da14e79ff7f07cd627e6a2f">CZNC::GetServerThrottle()</a>.</p>
 
@@ -599,7 +599,7 @@ template&lt;typename K, typename V = bool&gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 15 2014 16:16:12 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 27 2015 17:20:21 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

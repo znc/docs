@@ -114,8 +114,8 @@ Defines</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#a5aac363427d47787047fc80a32d53b65">_GLOBALMODULECALL</a>(macFUNC, macUSER, macNETWORK, macCLIENT, macEXITER)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#a4c48266fbf29c8af034b3ed39fe6c4f2">_USERMODULECALL</a>(macFUNC, macUSER, macNETWORK, macCLIENT, macEXITER)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#a30ead2b69471df3ce714ea98006c795d">NETWORKMODULECALL</a>(macFUNC, macUSER, macNETWORK, macCLIENT, macEXITER)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#aa1eed8df10da6ac6a7b96f264a80d9a4">GLOBALMODULECALL</a>(macFUNC, macEXITER)&#160;&#160;&#160;<a class="el" href="main_8h.html#a5aac363427d47787047fc80a32d53b65">_GLOBALMODULECALL</a>(macFUNC, NULL, NULL, NULL, macEXITER)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#a576e7b9cb0e217c86f72696581f6e844">USERMODULECALL</a>(macFUNC, macUSER, macCLIENT, macEXITER)&#160;&#160;&#160;<a class="el" href="main_8h.html#a4c48266fbf29c8af034b3ed39fe6c4f2">_USERMODULECALL</a>(macFUNC, macUSER, NULL, macCLIENT, macEXITER)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#aa1eed8df10da6ac6a7b96f264a80d9a4">GLOBALMODULECALL</a>(macFUNC, macEXITER)&#160;&#160;&#160;<a class="el" href="main_8h.html#a5aac363427d47787047fc80a32d53b65">_GLOBALMODULECALL</a>(macFUNC, nullptr, nullptr, nullptr, macEXITER)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#a576e7b9cb0e217c86f72696581f6e844">USERMODULECALL</a>(macFUNC, macUSER, macCLIENT, macEXITER)&#160;&#160;&#160;<a class="el" href="main_8h.html#a4c48266fbf29c8af034b3ed39fe6c4f2">_USERMODULECALL</a>(macFUNC, macUSER, nullptr, macCLIENT, macEXITER)</td></tr>
 <tr><td colspan="2"><h2><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#a1ae3a3d61573719e1dbecf04822b71a7">ZNC_NO_NEED_TO_DO_ANYTHING_ON_MODULE_CALL_EXITER</a></td></tr>
@@ -327,7 +327,7 @@ Variables</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="main_8h.html#a5aac363427d47787047fc80a32d53b65">_GLOBALMODULECALL</a>(macFUNC, NULL, NULL, NULL, macEXITER)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="main_8h.html#a5aac363427d47787047fc80a32d53b65">_GLOBALMODULECALL</a>(macFUNC, nullptr, nullptr, nullptr, macEXITER)</td>
         </tr>
       </table>
 </div>
@@ -384,7 +384,7 @@ Variables</h2></td></tr>
                         *macEXITER = <span class="keyword">true</span>;                 \
                         break;                                                \
                 }                                                            \
-                if (macNETWORK != NULL) {                                      \
+                if (macNETWORK != <span class="keyword">nullptr</span>) {                                      \
                         CModules&amp; NMods = macNETWORK-&gt;GetModules();            \
                         CClient* pOldNClient = NMods.GetClient();              \
                         NMods.SetClient(macCLIENT);                            \
@@ -442,7 +442,7 @@ Variables</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="main_8h.html#a4c48266fbf29c8af034b3ed39fe6c4f2">_USERMODULECALL</a>(macFUNC, macUSER, NULL, macCLIENT, macEXITER)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="main_8h.html#a4c48266fbf29c8af034b3ed39fe6c4f2">_USERMODULECALL</a>(macFUNC, macUSER, nullptr, macCLIENT, macEXITER)</td>
         </tr>
       </table>
 </div>
@@ -482,7 +482,7 @@ Variables</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 11 2015 17:21:03 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 27 2015 17:20:18 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

@@ -137,7 +137,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00054"></a>00054 
 <a name="l00055"></a><a class="code" href="classPString.html#acd1c6f4b91b7aa661edac99f01478bf7">00055</a>                 SV* <a class="code" href="classPString.html#acd1c6f4b91b7aa661edac99f01478bf7">GetSV</a>(<span class="keywordtype">bool</span> bMakeMortal = <span class="keyword">true</span>)<span class="keyword"> const</span>
 <a name="l00056"></a>00056 <span class="keyword">                </span>{
-<a name="l00057"></a>00057                         SV* pSV = NULL;
+<a name="l00057"></a>00057                         SV* pSV = <span class="keyword">nullptr</span>;
 <a name="l00058"></a>00058                         <span class="keywordflow">switch</span> (<a class="code" href="classPString.html#a33e3ba957a6563a9509ff150e0dd5a69">GetType</a>()) {
 <a name="l00059"></a>00059                                 <span class="keywordflow">case</span> <a class="code" href="classPString.html#a3d15380aec9d92c71dd759f5fa4d9661a68728939bbdc5c2f7b769045fb63fb5e">NUM</a>:
 <a name="l00060"></a>00060                                         pSV = newSVnv(<a class="code" href="classCString.html#aa0cd097af11c938d6356d4482485c3b4">ToDouble</a>());
@@ -185,7 +185,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 31 2014 20:31:09 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 27 2015 17:20:18 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
