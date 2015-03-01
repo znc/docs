@@ -106,37 +106,35 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00023"></a>00023 
 <a name="l00025"></a><a class="code" href="classCExecSock.html">00025</a> <span class="keyword">class </span><a class="code" href="classCExecSock.html">CExecSock</a> : <span class="keyword">public</span> <a class="code" href="classCZNCSock.html">CZNCSock</a> {
 <a name="l00026"></a>00026 <span class="keyword">public</span>:
-<a name="l00027"></a><a class="code" href="classCExecSock.html#a91a0fc90d382f110f2fbdb65ba2d933f">00027</a>         <a class="code" href="classCExecSock.html#a91a0fc90d382f110f2fbdb65ba2d933f">CExecSock</a>() : <a class="code" href="classCZNCSock.html">CZNCSock</a>(0) {
-<a name="l00028"></a>00028                 m_iPid = -1;
-<a name="l00029"></a>00029         }
-<a name="l00030"></a>00030 
-<a name="l00031"></a><a class="code" href="classCExecSock.html#a0ee409ec0f4c111bc49ab1e681b1acfa">00031</a>         <span class="keywordtype">int</span> <a class="code" href="classCExecSock.html#a0ee409ec0f4c111bc49ab1e681b1acfa">Execute</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a> &amp; sExec) {
-<a name="l00032"></a>00032                 <span class="keywordtype">int</span> iReadFD, iWriteFD;
-<a name="l00033"></a>00033                 m_iPid = <a class="code" href="classCExecSock.html#a3a3cdba9a08e1ae3040c3f4b432035cb">popen2</a>(iReadFD, iWriteFD, sExec);
-<a name="l00034"></a>00034                 <span class="keywordflow">if</span> (m_iPid != -1) {
-<a name="l00035"></a>00035                         <a class="code" href="classCsock.html#aed53de4046def7f4efbed8f449ec5fcb" title="Tie this guy to an existing real file descriptor.">ConnectFD</a>(iReadFD, iWriteFD, <span class="stringliteral">&quot;0.0.0.0:0&quot;</span>);
-<a name="l00036"></a>00036                 }
-<a name="l00037"></a>00037                 <span class="keywordflow">return</span>(m_iPid);
-<a name="l00038"></a>00038         }
-<a name="l00039"></a><a class="code" href="classCExecSock.html#a6f53928f3c1396b60f8bafe4b2a0f1f7">00039</a>         <span class="keywordtype">void</span> <a class="code" href="classCExecSock.html#a6f53928f3c1396b60f8bafe4b2a0f1f7">Kill</a>(<span class="keywordtype">int</span> iSignal)
-<a name="l00040"></a>00040         {
-<a name="l00041"></a>00041                 kill(m_iPid, iSignal);
-<a name="l00042"></a>00042                 <a class="code" href="classCsock.html#ace2cccec9d2ba551369b41b60324496f" title="just mark us as closed, the parent can pick it up">Close</a>();
-<a name="l00043"></a>00043         }
-<a name="l00044"></a><a class="code" href="classCExecSock.html#aafd98b69a6096f4e5fae7727dce57e15">00044</a>         <span class="keyword">virtual</span> <a class="code" href="classCExecSock.html#aafd98b69a6096f4e5fae7727dce57e15">~CExecSock</a>() {
-<a name="l00045"></a>00045                 <a class="code" href="classCExecSock.html#acc361ec4e12962a94bda5cf9bc9b63fc">close2</a>(m_iPid, <a class="code" href="classCsock.html#ae1f84de0d38450c53dce99f8f4d649ab" title="returns a reference to the sock">GetRSock</a>(), <a class="code" href="classCsock.html#a56f9ff0e03c457b40e146f34d39a6589">GetWSock</a>());
-<a name="l00046"></a>00046                 <a class="code" href="classCsock.html#a8c0b180de5d12104c0f7018eec13e57a">SetRSock</a>(-1);
-<a name="l00047"></a>00047                 <a class="code" href="classCsock.html#a66a0fe0e53850900f824ca60ced81e05">SetWSock</a>(-1);
-<a name="l00048"></a>00048         }
-<a name="l00049"></a>00049 
-<a name="l00050"></a>00050         <span class="keywordtype">int</span> <a class="code" href="classCExecSock.html#a3a3cdba9a08e1ae3040c3f4b432035cb">popen2</a>(<span class="keywordtype">int</span> &amp; iReadFD, <span class="keywordtype">int</span> &amp; iWriteFD, <span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a> &amp; sCommand);
-<a name="l00051"></a>00051         <span class="keywordtype">void</span> <a class="code" href="classCExecSock.html#acc361ec4e12962a94bda5cf9bc9b63fc">close2</a>(<span class="keywordtype">int</span> iPid, <span class="keywordtype">int</span> iReadFD, <span class="keywordtype">int</span> iWriteFD);
-<a name="l00052"></a>00052 
-<a name="l00053"></a>00053 <span class="keyword">private</span>:
-<a name="l00054"></a>00054         <span class="keywordtype">int</span>  m_iPid;
-<a name="l00055"></a>00055 };
-<a name="l00056"></a>00056 
-<a name="l00057"></a>00057 <span class="preprocessor">#endif // !EXEC_SOCK_H</span>
+<a name="l00027"></a><a class="code" href="classCExecSock.html#a91a0fc90d382f110f2fbdb65ba2d933f">00027</a>         <a class="code" href="classCExecSock.html#a91a0fc90d382f110f2fbdb65ba2d933f">CExecSock</a>() : <a class="code" href="classCZNCSock.html">CZNCSock</a>(0), m_iPid(-1) {}
+<a name="l00028"></a>00028 
+<a name="l00029"></a><a class="code" href="classCExecSock.html#a0ee409ec0f4c111bc49ab1e681b1acfa">00029</a>         <span class="keywordtype">int</span> <a class="code" href="classCExecSock.html#a0ee409ec0f4c111bc49ab1e681b1acfa">Execute</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a> &amp; sExec) {
+<a name="l00030"></a>00030                 <span class="keywordtype">int</span> iReadFD, iWriteFD;
+<a name="l00031"></a>00031                 m_iPid = <a class="code" href="classCExecSock.html#a3a3cdba9a08e1ae3040c3f4b432035cb">popen2</a>(iReadFD, iWriteFD, sExec);
+<a name="l00032"></a>00032                 <span class="keywordflow">if</span> (m_iPid != -1) {
+<a name="l00033"></a>00033                         <a class="code" href="classCsock.html#aed53de4046def7f4efbed8f449ec5fcb" title="Tie this guy to an existing real file descriptor.">ConnectFD</a>(iReadFD, iWriteFD, <span class="stringliteral">&quot;0.0.0.0:0&quot;</span>);
+<a name="l00034"></a>00034                 }
+<a name="l00035"></a>00035                 <span class="keywordflow">return</span>(m_iPid);
+<a name="l00036"></a>00036         }
+<a name="l00037"></a><a class="code" href="classCExecSock.html#a6f53928f3c1396b60f8bafe4b2a0f1f7">00037</a>         <span class="keywordtype">void</span> <a class="code" href="classCExecSock.html#a6f53928f3c1396b60f8bafe4b2a0f1f7">Kill</a>(<span class="keywordtype">int</span> iSignal)
+<a name="l00038"></a>00038         {
+<a name="l00039"></a>00039                 kill(m_iPid, iSignal);
+<a name="l00040"></a>00040                 <a class="code" href="classCsock.html#ace2cccec9d2ba551369b41b60324496f" title="just mark us as closed, the parent can pick it up">Close</a>();
+<a name="l00041"></a>00041         }
+<a name="l00042"></a><a class="code" href="classCExecSock.html#aafd98b69a6096f4e5fae7727dce57e15">00042</a>         <span class="keyword">virtual</span> <a class="code" href="classCExecSock.html#aafd98b69a6096f4e5fae7727dce57e15">~CExecSock</a>() {
+<a name="l00043"></a>00043                 <a class="code" href="classCExecSock.html#acc361ec4e12962a94bda5cf9bc9b63fc">close2</a>(m_iPid, <a class="code" href="classCsock.html#ae1f84de0d38450c53dce99f8f4d649ab" title="returns a reference to the sock">GetRSock</a>(), <a class="code" href="classCsock.html#a56f9ff0e03c457b40e146f34d39a6589">GetWSock</a>());
+<a name="l00044"></a>00044                 <a class="code" href="classCsock.html#a8c0b180de5d12104c0f7018eec13e57a">SetRSock</a>(-1);
+<a name="l00045"></a>00045                 <a class="code" href="classCsock.html#a66a0fe0e53850900f824ca60ced81e05">SetWSock</a>(-1);
+<a name="l00046"></a>00046         }
+<a name="l00047"></a>00047 
+<a name="l00048"></a>00048         <span class="keywordtype">int</span> <a class="code" href="classCExecSock.html#a3a3cdba9a08e1ae3040c3f4b432035cb">popen2</a>(<span class="keywordtype">int</span> &amp; iReadFD, <span class="keywordtype">int</span> &amp; iWriteFD, <span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a> &amp; sCommand);
+<a name="l00049"></a>00049         <span class="keywordtype">void</span> <a class="code" href="classCExecSock.html#acc361ec4e12962a94bda5cf9bc9b63fc">close2</a>(<span class="keywordtype">int</span> iPid, <span class="keywordtype">int</span> iReadFD, <span class="keywordtype">int</span> iWriteFD);
+<a name="l00050"></a>00050 
+<a name="l00051"></a>00051 <span class="keyword">private</span>:
+<a name="l00052"></a>00052         <span class="keywordtype">int</span>  m_iPid;
+<a name="l00053"></a>00053 };
+<a name="l00054"></a>00054 
+<a name="l00055"></a>00055 <span class="preprocessor">#endif // !EXEC_SOCK_H</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -155,7 +153,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 31 2014 20:31:09 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Mar 1 2015 04:38:35 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

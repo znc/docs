@@ -115,14 +115,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00032"></a><a class="code" href="classCListener.html#a0cbd4274127b0bdd712ac8526a4d80eea6a965f1ece5292fd999245216f38c798">00032</a>                 <a class="code" href="classCListener.html#a0cbd4274127b0bdd712ac8526a4d80eea6a965f1ece5292fd999245216f38c798">ACCEPT_ALL</a>
 <a name="l00033"></a>00033         } <a class="code" href="classCListener.html#a0cbd4274127b0bdd712ac8526a4d80ee">EAcceptType</a>;
 <a name="l00034"></a>00034 
-<a name="l00035"></a><a class="code" href="classCListener.html#ace70960cb65bb0c6d0055ed994bb75f1">00035</a>         <a class="code" href="classCListener.html#ace70960cb65bb0c6d0055ed994bb75f1">CListener</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> uPort, <span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sBindHost, <span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sURIPrefix, <span class="keywordtype">bool</span> bSSL, <a class="code" href="Socket_8h.html#a0f0c0c7491ad9c25858ebadd095092e9">EAddrType</a> eAddr, <a class="code" href="classCListener.html#a0cbd4274127b0bdd712ac8526a4d80ee">EAcceptType</a> eAccept) {
-<a name="l00036"></a>00036                 <a class="code" href="classCListener.html#a04a8b2f6b2dfbcc7438e58050259d9bc">m_uPort</a> = uPort;
-<a name="l00037"></a>00037                 <a class="code" href="classCListener.html#a80411ec4e69b10de0971dcd4db17f059">m_sBindHost</a> = sBindHost;
-<a name="l00038"></a>00038                 <a class="code" href="classCListener.html#ac64c9693713396bc58f20a1c66f356f7">m_bSSL</a> = bSSL;
-<a name="l00039"></a>00039                 <a class="code" href="classCListener.html#a2bd2af795b65951e39814c594c588265">m_eAddr</a> = eAddr;
-<a name="l00040"></a>00040                 <a class="code" href="classCListener.html#a023713ba5b06eb9ee75de37eeedf9ee2">m_sURIPrefix</a> = sURIPrefix;
-<a name="l00041"></a>00041                 <a class="code" href="classCListener.html#a242d94f002202ccb3cd8fb72376b94e9">m_pListener</a> = <span class="keyword">nullptr</span>;
-<a name="l00042"></a>00042                 <a class="code" href="classCListener.html#a1a6f5bae1ca8ae9eeadbf3970934a000">m_eAcceptType</a> = eAccept;
+<a name="l00035"></a><a class="code" href="classCListener.html#ace70960cb65bb0c6d0055ed994bb75f1">00035</a>         <a class="code" href="classCListener.html#ace70960cb65bb0c6d0055ed994bb75f1">CListener</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> uPort, <span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sBindHost, <span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sURIPrefix, <span class="keywordtype">bool</span> bSSL, <a class="code" href="Socket_8h.html#a0f0c0c7491ad9c25858ebadd095092e9">EAddrType</a> eAddr, <a class="code" href="classCListener.html#a0cbd4274127b0bdd712ac8526a4d80ee">EAcceptType</a> eAccept)
+<a name="l00036"></a>00036                         : <a class="code" href="classCListener.html#ac64c9693713396bc58f20a1c66f356f7">m_bSSL</a>(bSSL),
+<a name="l00037"></a>00037                           <a class="code" href="classCListener.html#a2bd2af795b65951e39814c594c588265">m_eAddr</a>(eAddr),
+<a name="l00038"></a>00038                           <a class="code" href="classCListener.html#a04a8b2f6b2dfbcc7438e58050259d9bc">m_uPort</a>(uPort),
+<a name="l00039"></a>00039                           <a class="code" href="classCListener.html#a80411ec4e69b10de0971dcd4db17f059">m_sBindHost</a>(sBindHost),
+<a name="l00040"></a>00040                           <a class="code" href="classCListener.html#a023713ba5b06eb9ee75de37eeedf9ee2">m_sURIPrefix</a>(sURIPrefix),
+<a name="l00041"></a>00041                           <a class="code" href="classCListener.html#a242d94f002202ccb3cd8fb72376b94e9">m_pListener</a>(nullptr),
+<a name="l00042"></a>00042                           <a class="code" href="classCListener.html#a1a6f5bae1ca8ae9eeadbf3970934a000">m_eAcceptType</a>(eAccept) {
 <a name="l00043"></a>00043         }
 <a name="l00044"></a>00044 
 <a name="l00045"></a>00045         <a class="code" href="classCListener.html#a3b683a4704ee1582bf8a9832a19377a2">~CListener</a>();
@@ -202,7 +202,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 26 2015 06:09:16 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Mar 1 2015 04:38:35 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

@@ -134,148 +134,137 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00051"></a>00051 
 <a name="l00052"></a><a class="code" href="classCTemplateOptions.html">00052</a> <span class="keyword">class </span><a class="code" href="classCTemplateOptions.html">CTemplateOptions</a> {
 <a name="l00053"></a>00053 <span class="keyword">public</span>:
-<a name="l00054"></a><a class="code" href="classCTemplateOptions.html#a745e29f83aee741e2e42e2366ef129a7">00054</a>         <a class="code" href="classCTemplateOptions.html#a745e29f83aee741e2e42e2366ef129a7">CTemplateOptions</a>() {
-<a name="l00055"></a>00055                 m_eEscapeFrom = <a class="code" href="classCString.html#a8f63759db4ef372abb9cfa4751648e1faf8934edb03e6594d1a760a8ad17b4a27">CString::EASCII</a>;
-<a name="l00056"></a>00056                 m_eEscapeTo = <a class="code" href="classCString.html#a8f63759db4ef372abb9cfa4751648e1faf8934edb03e6594d1a760a8ad17b4a27">CString::EASCII</a>;
-<a name="l00057"></a>00057         }
+<a name="l00054"></a><a class="code" href="classCTemplateOptions.html#a745e29f83aee741e2e42e2366ef129a7">00054</a>         <a class="code" href="classCTemplateOptions.html#a745e29f83aee741e2e42e2366ef129a7">CTemplateOptions</a>() : m_eEscapeFrom(<a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>::EASCII), m_eEscapeTo(<a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>::EASCII) {
+<a name="l00055"></a>00055         }
+<a name="l00056"></a>00056 
+<a name="l00057"></a><a class="code" href="classCTemplateOptions.html#af1cb5b85b4d6cba9bfd06e1896e5b8be">00057</a>         <span class="keyword">virtual</span> <a class="code" href="classCTemplateOptions.html#af1cb5b85b4d6cba9bfd06e1896e5b8be">~CTemplateOptions</a>() {}
 <a name="l00058"></a>00058 
-<a name="l00059"></a><a class="code" href="classCTemplateOptions.html#af1cb5b85b4d6cba9bfd06e1896e5b8be">00059</a>         <span class="keyword">virtual</span> <a class="code" href="classCTemplateOptions.html#af1cb5b85b4d6cba9bfd06e1896e5b8be">~CTemplateOptions</a>() {}
+<a name="l00059"></a>00059         <span class="keywordtype">void</span> <a class="code" href="classCTemplateOptions.html#a89370598255f8507f004e998d97d628d">Parse</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sLine);
 <a name="l00060"></a>00060 
-<a name="l00061"></a>00061         <span class="keywordtype">void</span> <a class="code" href="classCTemplateOptions.html#a89370598255f8507f004e998d97d628d">Parse</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sLine);
-<a name="l00062"></a>00062 
-<a name="l00063"></a>00063         <span class="comment">// Getters</span>
-<a name="l00064"></a><a class="code" href="classCTemplateOptions.html#a6c3ba780ffe960ef58188956c4749147">00064</a>         <a class="code" href="classCString.html#a8f63759db4ef372abb9cfa4751648e1f">CString::EEscape</a> <a class="code" href="classCTemplateOptions.html#a6c3ba780ffe960ef58188956c4749147">GetEscapeFrom</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_eEscapeFrom; }
-<a name="l00065"></a><a class="code" href="classCTemplateOptions.html#a84ef9573ac579447f2bc4b0f9c364920">00065</a>         <a class="code" href="classCString.html#a8f63759db4ef372abb9cfa4751648e1f">CString::EEscape</a> <a class="code" href="classCTemplateOptions.html#a84ef9573ac579447f2bc4b0f9c364920">GetEscapeTo</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_eEscapeTo; }
-<a name="l00066"></a>00066         <span class="comment">// !Getters</span>
-<a name="l00067"></a>00067 <span class="keyword">private</span>:
-<a name="l00068"></a>00068         <a class="code" href="classCString.html#a8f63759db4ef372abb9cfa4751648e1f">CString::EEscape</a>   m_eEscapeFrom;
-<a name="l00069"></a>00069         <a class="code" href="classCString.html#a8f63759db4ef372abb9cfa4751648e1f">CString::EEscape</a>   m_eEscapeTo;
-<a name="l00070"></a>00070 };
-<a name="l00071"></a>00071 
-<a name="l00072"></a>00072 
-<a name="l00073"></a><a class="code" href="classCTemplateLoopContext.html">00073</a> <span class="keyword">class </span><a class="code" href="classCTemplateLoopContext.html">CTemplateLoopContext</a> {
-<a name="l00074"></a>00074 <span class="keyword">public</span>:
-<a name="l00075"></a><a class="code" href="classCTemplateLoopContext.html#a7a9778439bcf6804fee112e9000c6738">00075</a>         <a class="code" href="classCTemplateLoopContext.html#a7a9778439bcf6804fee112e9000c6738">CTemplateLoopContext</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> uFilePos, <span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sLoopName, <span class="keywordtype">bool</span> bReverse, std::vector&lt;CTemplate*&gt;* pRows) {
-<a name="l00076"></a>00076                 m_uFilePosition = uFilePos;
-<a name="l00077"></a>00077                 m_sName = sLoopName;
-<a name="l00078"></a>00078                 m_uRowIndex = 0;
-<a name="l00079"></a>00079                 m_bReverse = bReverse;
-<a name="l00080"></a>00080                 m_pvRows = pRows;
-<a name="l00081"></a>00081                 m_bHasData = <span class="keyword">false</span>;
-<a name="l00082"></a>00082         }
-<a name="l00083"></a>00083 
-<a name="l00084"></a><a class="code" href="classCTemplateLoopContext.html#a9c60a1e2872411f9accd67ac24414f89">00084</a>         <span class="keyword">virtual</span> <a class="code" href="classCTemplateLoopContext.html#a9c60a1e2872411f9accd67ac24414f89">~CTemplateLoopContext</a>() {}
-<a name="l00085"></a>00085 
-<a name="l00086"></a>00086         <a class="code" href="classCTemplateLoopContext.html#a7a9778439bcf6804fee112e9000c6738">CTemplateLoopContext</a>(<span class="keyword">const</span> <a class="code" href="classCTemplateLoopContext.html">CTemplateLoopContext</a>&amp;) = <span class="keywordflow">default</span>;
-<a name="l00087"></a>00087         <a class="code" href="classCTemplateLoopContext.html">CTemplateLoopContext</a>&amp; <a class="code" href="classCTemplateLoopContext.html#a5e89985972947f073e5f261daaae8691">operator=</a>(<span class="keyword">const</span> <a class="code" href="classCTemplateLoopContext.html">CTemplateLoopContext</a>&amp;) = <span class="keywordflow">default</span>;
-<a name="l00088"></a>00088 
-<a name="l00089"></a>00089         <span class="comment">// Setters</span>
-<a name="l00090"></a><a class="code" href="classCTemplateLoopContext.html#aed6d4ae316b872f3597214af083ffd19">00090</a>         <span class="keywordtype">void</span> <a class="code" href="classCTemplateLoopContext.html#aed6d4ae316b872f3597214af083ffd19">SetHasData</a>(<span class="keywordtype">bool</span> b = <span class="keyword">true</span>) { m_bHasData = b; }
-<a name="l00091"></a><a class="code" href="classCTemplateLoopContext.html#ab9732847aeba86b3f21255d8c790191a">00091</a>         <span class="keywordtype">void</span> <a class="code" href="classCTemplateLoopContext.html#ab9732847aeba86b3f21255d8c790191a">SetName</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; s) { m_sName = s; }
-<a name="l00092"></a><a class="code" href="classCTemplateLoopContext.html#ade6ef5d78d7d14ca5defb1ef0bdc75fb">00092</a>         <span class="keywordtype">void</span> <a class="code" href="classCTemplateLoopContext.html#ade6ef5d78d7d14ca5defb1ef0bdc75fb">SetRowIndex</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> u) { m_uRowIndex = u; }
-<a name="l00093"></a><a class="code" href="classCTemplateLoopContext.html#a520a6d2338be39290e2c002e9efe4659">00093</a>         <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classCTemplateLoopContext.html#a520a6d2338be39290e2c002e9efe4659">IncRowIndex</a>() { <span class="keywordflow">return</span> ++m_uRowIndex; }
-<a name="l00094"></a><a class="code" href="classCTemplateLoopContext.html#a26d48bfd44148f9ae992c70b156ef2d3">00094</a>         <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classCTemplateLoopContext.html#a26d48bfd44148f9ae992c70b156ef2d3">DecRowIndex</a>() { <span class="keywordflow">if</span> (m_uRowIndex == 0) { <span class="keywordflow">return</span> 0; } <span class="keywordflow">return</span> --m_uRowIndex; }
-<a name="l00095"></a><a class="code" href="classCTemplateLoopContext.html#acd4e48d8877c7d61896f9348bbaf2ca9">00095</a>         <span class="keywordtype">void</span> <a class="code" href="classCTemplateLoopContext.html#acd4e48d8877c7d61896f9348bbaf2ca9">SetFilePosition</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> u) { m_uFilePosition = u; }
-<a name="l00096"></a>00096         <span class="comment">// !Setters</span>
-<a name="l00097"></a>00097 
-<a name="l00098"></a>00098         <span class="comment">// Getters</span>
-<a name="l00099"></a><a class="code" href="classCTemplateLoopContext.html#aebed149b8cb71ffbaed87bd2be1a5f1b">00099</a>         <span class="keywordtype">bool</span> <a class="code" href="classCTemplateLoopContext.html#aebed149b8cb71ffbaed87bd2be1a5f1b">HasData</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_bHasData; }
-<a name="l00100"></a><a class="code" href="classCTemplateLoopContext.html#a2feafb2c026e95d2fc92fe7a9b7ffd9b">00100</a>         <span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; <a class="code" href="classCTemplateLoopContext.html#a2feafb2c026e95d2fc92fe7a9b7ffd9b">GetName</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_sName; }
-<a name="l00101"></a><a class="code" href="classCTemplateLoopContext.html#a354668cfa339cf3d649fd4eb88c47c7e">00101</a>         <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code" href="classCTemplateLoopContext.html#a354668cfa339cf3d649fd4eb88c47c7e">GetFilePosition</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_uFilePosition; }
-<a name="l00102"></a><a class="code" href="classCTemplateLoopContext.html#a564b0407d170cff13c8667d0a491050d">00102</a>         <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classCTemplateLoopContext.html#a564b0407d170cff13c8667d0a491050d">GetRowIndex</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_uRowIndex; }
-<a name="l00103"></a><a class="code" href="classCTemplateLoopContext.html#a2d218a744411918442997bdf1cd88d76">00103</a>         <span class="keywordtype">size_t</span> <a class="code" href="classCTemplateLoopContext.html#a2d218a744411918442997bdf1cd88d76">GetRowCount</a>() { <span class="keywordflow">return</span> m_pvRows-&gt;size(); }
-<a name="l00104"></a><a class="code" href="classCTemplateLoopContext.html#aa19f01de31e73f78399e13e7c0aef8cb">00104</a>         std::vector&lt;CTemplate*&gt;* <a class="code" href="classCTemplateLoopContext.html#aa19f01de31e73f78399e13e7c0aef8cb">GetRows</a>() { <span class="keywordflow">return</span> m_pvRows; }
-<a name="l00105"></a><a class="code" href="classCTemplateLoopContext.html#a977cbb618ab9bc80b968adb163981b67">00105</a>         <a class="code" href="classCTemplate.html">CTemplate</a>* <a class="code" href="classCTemplateLoopContext.html#a977cbb618ab9bc80b968adb163981b67">GetNextRow</a>() { <span class="keywordflow">return</span> <a class="code" href="classCTemplateLoopContext.html#ac1aedada5101928e72e759895de07e65">GetRow</a>(<a class="code" href="classCTemplateLoopContext.html#a520a6d2338be39290e2c002e9efe4659">IncRowIndex</a>()); }
-<a name="l00106"></a><a class="code" href="classCTemplateLoopContext.html#aa4d53163e1a160cbf4e26d2a63d7c56f">00106</a>         <a class="code" href="classCTemplate.html">CTemplate</a>* <a class="code" href="classCTemplateLoopContext.html#aa4d53163e1a160cbf4e26d2a63d7c56f">GetCurRow</a>() { <span class="keywordflow">return</span> <a class="code" href="classCTemplateLoopContext.html#ac1aedada5101928e72e759895de07e65">GetRow</a>(m_uRowIndex); }
-<a name="l00107"></a>00107 
-<a name="l00108"></a>00108         <a class="code" href="classCTemplate.html">CTemplate</a>* <a class="code" href="classCTemplateLoopContext.html#ac1aedada5101928e72e759895de07e65">GetRow</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> uIndex);
-<a name="l00109"></a>00109         <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a> <a class="code" href="classCTemplateLoopContext.html#af759a07a3f543ce03340b78520f35cf6">GetValue</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sName, <span class="keywordtype">bool</span> bFromIf = <span class="keyword">false</span>);
-<a name="l00110"></a>00110         <span class="comment">// !Getters</span>
-<a name="l00111"></a>00111 <span class="keyword">private</span>:
-<a name="l00112"></a>00112         <span class="keywordtype">bool</span>                  m_bReverse;       
-<a name="l00113"></a>00113         <span class="keywordtype">bool</span>                  m_bHasData;       
-<a name="l00114"></a>00114         <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>               m_sName;          
-<a name="l00115"></a>00115         <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>          m_uRowIndex;      
-<a name="l00116"></a>00116         <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>         m_uFilePosition;  
-<a name="l00117"></a>00117         std::vector&lt;CTemplate*&gt;*   m_pvRows;         
-<a name="l00118"></a>00118 };
-<a name="l00119"></a>00119 
-<a name="l00120"></a>00120 
-<a name="l00121"></a><a class="code" href="classCTemplate.html">00121</a> <span class="keyword">class </span><a class="code" href="classCTemplate.html">CTemplate</a> : <span class="keyword">public</span> <a class="code" href="classMCString.html" title="A dictionary for strings.">MCString</a> {
-<a name="l00122"></a>00122 <span class="keyword">public</span>:
-<a name="l00123"></a><a class="code" href="classCTemplate.html#abd7c53e8d71f3f840edb64b7d68948b0">00123</a>         <a class="code" href="classCTemplate.html#abd7c53e8d71f3f840edb64b7d68948b0">CTemplate</a>() : <a class="code" href="classMCString.html" title="A dictionary for strings.">MCString</a>(), m_spOptions(new <a class="code" href="classCTemplateOptions.html">CTemplateOptions</a>) {
-<a name="l00124"></a>00124                 <a class="code" href="classCTemplate.html#a61f7ee7dfe6a2eb10a6c3ba8ae9e4bfa">Init</a>();
-<a name="l00125"></a>00125         }
+<a name="l00061"></a>00061         <span class="comment">// Getters</span>
+<a name="l00062"></a><a class="code" href="classCTemplateOptions.html#a6c3ba780ffe960ef58188956c4749147">00062</a>         <a class="code" href="classCString.html#a8f63759db4ef372abb9cfa4751648e1f">CString::EEscape</a> <a class="code" href="classCTemplateOptions.html#a6c3ba780ffe960ef58188956c4749147">GetEscapeFrom</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_eEscapeFrom; }
+<a name="l00063"></a><a class="code" href="classCTemplateOptions.html#a84ef9573ac579447f2bc4b0f9c364920">00063</a>         <a class="code" href="classCString.html#a8f63759db4ef372abb9cfa4751648e1f">CString::EEscape</a> <a class="code" href="classCTemplateOptions.html#a84ef9573ac579447f2bc4b0f9c364920">GetEscapeTo</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_eEscapeTo; }
+<a name="l00064"></a>00064         <span class="comment">// !Getters</span>
+<a name="l00065"></a>00065 <span class="keyword">private</span>:
+<a name="l00066"></a>00066         <a class="code" href="classCString.html#a8f63759db4ef372abb9cfa4751648e1f">CString::EEscape</a>   m_eEscapeFrom;
+<a name="l00067"></a>00067         <a class="code" href="classCString.html#a8f63759db4ef372abb9cfa4751648e1f">CString::EEscape</a>   m_eEscapeTo;
+<a name="l00068"></a>00068 };
+<a name="l00069"></a>00069 
+<a name="l00070"></a>00070 
+<a name="l00071"></a><a class="code" href="classCTemplateLoopContext.html">00071</a> <span class="keyword">class </span><a class="code" href="classCTemplateLoopContext.html">CTemplateLoopContext</a> {
+<a name="l00072"></a>00072 <span class="keyword">public</span>:
+<a name="l00073"></a><a class="code" href="classCTemplateLoopContext.html#a7a9778439bcf6804fee112e9000c6738">00073</a>         <a class="code" href="classCTemplateLoopContext.html#a7a9778439bcf6804fee112e9000c6738">CTemplateLoopContext</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> uFilePos, <span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sLoopName, <span class="keywordtype">bool</span> bReverse, std::vector&lt;CTemplate*&gt;* pRows)
+<a name="l00074"></a>00074                         : m_bReverse(bReverse), m_bHasData(false), m_sName(sLoopName), m_uRowIndex(0), m_uFilePosition(uFilePos), m_pvRows(pRows) {
+<a name="l00075"></a>00075         }
+<a name="l00076"></a>00076 
+<a name="l00077"></a><a class="code" href="classCTemplateLoopContext.html#a9c60a1e2872411f9accd67ac24414f89">00077</a>         <span class="keyword">virtual</span> <a class="code" href="classCTemplateLoopContext.html#a9c60a1e2872411f9accd67ac24414f89">~CTemplateLoopContext</a>() {}
+<a name="l00078"></a>00078 
+<a name="l00079"></a>00079         <a class="code" href="classCTemplateLoopContext.html#a7a9778439bcf6804fee112e9000c6738">CTemplateLoopContext</a>(<span class="keyword">const</span> <a class="code" href="classCTemplateLoopContext.html">CTemplateLoopContext</a>&amp;) = <span class="keywordflow">default</span>;
+<a name="l00080"></a>00080         <a class="code" href="classCTemplateLoopContext.html">CTemplateLoopContext</a>&amp; <a class="code" href="classCTemplateLoopContext.html#a5e89985972947f073e5f261daaae8691">operator=</a>(<span class="keyword">const</span> <a class="code" href="classCTemplateLoopContext.html">CTemplateLoopContext</a>&amp;) = <span class="keywordflow">default</span>;
+<a name="l00081"></a>00081 
+<a name="l00082"></a>00082         <span class="comment">// Setters</span>
+<a name="l00083"></a><a class="code" href="classCTemplateLoopContext.html#aed6d4ae316b872f3597214af083ffd19">00083</a>         <span class="keywordtype">void</span> <a class="code" href="classCTemplateLoopContext.html#aed6d4ae316b872f3597214af083ffd19">SetHasData</a>(<span class="keywordtype">bool</span> b = <span class="keyword">true</span>) { m_bHasData = b; }
+<a name="l00084"></a><a class="code" href="classCTemplateLoopContext.html#ab9732847aeba86b3f21255d8c790191a">00084</a>         <span class="keywordtype">void</span> <a class="code" href="classCTemplateLoopContext.html#ab9732847aeba86b3f21255d8c790191a">SetName</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; s) { m_sName = s; }
+<a name="l00085"></a><a class="code" href="classCTemplateLoopContext.html#ade6ef5d78d7d14ca5defb1ef0bdc75fb">00085</a>         <span class="keywordtype">void</span> <a class="code" href="classCTemplateLoopContext.html#ade6ef5d78d7d14ca5defb1ef0bdc75fb">SetRowIndex</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> u) { m_uRowIndex = u; }
+<a name="l00086"></a><a class="code" href="classCTemplateLoopContext.html#a520a6d2338be39290e2c002e9efe4659">00086</a>         <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classCTemplateLoopContext.html#a520a6d2338be39290e2c002e9efe4659">IncRowIndex</a>() { <span class="keywordflow">return</span> ++m_uRowIndex; }
+<a name="l00087"></a><a class="code" href="classCTemplateLoopContext.html#a26d48bfd44148f9ae992c70b156ef2d3">00087</a>         <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classCTemplateLoopContext.html#a26d48bfd44148f9ae992c70b156ef2d3">DecRowIndex</a>() { <span class="keywordflow">if</span> (m_uRowIndex == 0) { <span class="keywordflow">return</span> 0; } <span class="keywordflow">return</span> --m_uRowIndex; }
+<a name="l00088"></a><a class="code" href="classCTemplateLoopContext.html#acd4e48d8877c7d61896f9348bbaf2ca9">00088</a>         <span class="keywordtype">void</span> <a class="code" href="classCTemplateLoopContext.html#acd4e48d8877c7d61896f9348bbaf2ca9">SetFilePosition</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> u) { m_uFilePosition = u; }
+<a name="l00089"></a>00089         <span class="comment">// !Setters</span>
+<a name="l00090"></a>00090 
+<a name="l00091"></a>00091         <span class="comment">// Getters</span>
+<a name="l00092"></a><a class="code" href="classCTemplateLoopContext.html#aebed149b8cb71ffbaed87bd2be1a5f1b">00092</a>         <span class="keywordtype">bool</span> <a class="code" href="classCTemplateLoopContext.html#aebed149b8cb71ffbaed87bd2be1a5f1b">HasData</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_bHasData; }
+<a name="l00093"></a><a class="code" href="classCTemplateLoopContext.html#a2feafb2c026e95d2fc92fe7a9b7ffd9b">00093</a>         <span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; <a class="code" href="classCTemplateLoopContext.html#a2feafb2c026e95d2fc92fe7a9b7ffd9b">GetName</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_sName; }
+<a name="l00094"></a><a class="code" href="classCTemplateLoopContext.html#a354668cfa339cf3d649fd4eb88c47c7e">00094</a>         <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code" href="classCTemplateLoopContext.html#a354668cfa339cf3d649fd4eb88c47c7e">GetFilePosition</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_uFilePosition; }
+<a name="l00095"></a><a class="code" href="classCTemplateLoopContext.html#a564b0407d170cff13c8667d0a491050d">00095</a>         <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classCTemplateLoopContext.html#a564b0407d170cff13c8667d0a491050d">GetRowIndex</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_uRowIndex; }
+<a name="l00096"></a><a class="code" href="classCTemplateLoopContext.html#a2d218a744411918442997bdf1cd88d76">00096</a>         <span class="keywordtype">size_t</span> <a class="code" href="classCTemplateLoopContext.html#a2d218a744411918442997bdf1cd88d76">GetRowCount</a>() { <span class="keywordflow">return</span> m_pvRows-&gt;size(); }
+<a name="l00097"></a><a class="code" href="classCTemplateLoopContext.html#aa19f01de31e73f78399e13e7c0aef8cb">00097</a>         std::vector&lt;CTemplate*&gt;* <a class="code" href="classCTemplateLoopContext.html#aa19f01de31e73f78399e13e7c0aef8cb">GetRows</a>() { <span class="keywordflow">return</span> m_pvRows; }
+<a name="l00098"></a><a class="code" href="classCTemplateLoopContext.html#a977cbb618ab9bc80b968adb163981b67">00098</a>         <a class="code" href="classCTemplate.html">CTemplate</a>* <a class="code" href="classCTemplateLoopContext.html#a977cbb618ab9bc80b968adb163981b67">GetNextRow</a>() { <span class="keywordflow">return</span> <a class="code" href="classCTemplateLoopContext.html#ac1aedada5101928e72e759895de07e65">GetRow</a>(<a class="code" href="classCTemplateLoopContext.html#a520a6d2338be39290e2c002e9efe4659">IncRowIndex</a>()); }
+<a name="l00099"></a><a class="code" href="classCTemplateLoopContext.html#aa4d53163e1a160cbf4e26d2a63d7c56f">00099</a>         <a class="code" href="classCTemplate.html">CTemplate</a>* <a class="code" href="classCTemplateLoopContext.html#aa4d53163e1a160cbf4e26d2a63d7c56f">GetCurRow</a>() { <span class="keywordflow">return</span> <a class="code" href="classCTemplateLoopContext.html#ac1aedada5101928e72e759895de07e65">GetRow</a>(m_uRowIndex); }
+<a name="l00100"></a>00100 
+<a name="l00101"></a>00101         <a class="code" href="classCTemplate.html">CTemplate</a>* <a class="code" href="classCTemplateLoopContext.html#ac1aedada5101928e72e759895de07e65">GetRow</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> uIndex);
+<a name="l00102"></a>00102         <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a> <a class="code" href="classCTemplateLoopContext.html#af759a07a3f543ce03340b78520f35cf6">GetValue</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sName, <span class="keywordtype">bool</span> bFromIf = <span class="keyword">false</span>);
+<a name="l00103"></a>00103         <span class="comment">// !Getters</span>
+<a name="l00104"></a>00104 <span class="keyword">private</span>:
+<a name="l00105"></a>00105         <span class="keywordtype">bool</span>                  m_bReverse;       
+<a name="l00106"></a>00106         <span class="keywordtype">bool</span>                  m_bHasData;       
+<a name="l00107"></a>00107         <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>               m_sName;          
+<a name="l00108"></a>00108         <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>          m_uRowIndex;      
+<a name="l00109"></a>00109         <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>         m_uFilePosition;  
+<a name="l00110"></a>00110         std::vector&lt;CTemplate*&gt;*   m_pvRows;         
+<a name="l00111"></a>00111 };
+<a name="l00112"></a>00112 
+<a name="l00113"></a>00113 
+<a name="l00114"></a><a class="code" href="classCTemplate.html">00114</a> <span class="keyword">class </span><a class="code" href="classCTemplate.html">CTemplate</a> : <span class="keyword">public</span> <a class="code" href="classMCString.html" title="A dictionary for strings.">MCString</a> {
+<a name="l00115"></a>00115 <span class="keyword">public</span>:
+<a name="l00116"></a><a class="code" href="classCTemplate.html#abd7c53e8d71f3f840edb64b7d68948b0">00116</a>         <a class="code" href="classCTemplate.html#abd7c53e8d71f3f840edb64b7d68948b0">CTemplate</a>() : <a class="code" href="classCTemplate.html">CTemplate</a>(<span class="stringliteral">&quot;&quot;</span>) {
+<a name="l00117"></a>00117         }
+<a name="l00118"></a>00118 
+<a name="l00119"></a><a class="code" href="classCTemplate.html#adbc15e113468e753805dac342acc0745">00119</a>         <a class="code" href="classCTemplate.html#adbc15e113468e753805dac342acc0745">CTemplate</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sFileName) : <a class="code" href="classMCString.html" title="A dictionary for strings.">MCString</a>(), m_pParent(nullptr), m_sFileName(sFileName), m_lsbPaths(), m_mvLoops(), m_vLoopContexts(), m_spOptions(new <a class="code" href="classCTemplateOptions.html">CTemplateOptions</a>), m_vspTagHandlers() {
+<a name="l00120"></a>00120         }
+<a name="l00121"></a>00121 
+<a name="l00122"></a><a class="code" href="classCTemplate.html#ab182c3e00729c91a9823eccecf590ca8">00122</a>         <a class="code" href="classCTemplate.html#ab182c3e00729c91a9823eccecf590ca8">CTemplate</a>(<span class="keyword">const</span> std::shared_ptr&lt;CTemplateOptions&gt;&amp; Options, <a class="code" href="classCTemplate.html">CTemplate</a>* pParent = <span class="keyword">nullptr</span>) : <a class="code" href="classMCString.html" title="A dictionary for strings.">MCString</a>(), m_pParent(pParent), m_sFileName(<span class="stringliteral">&quot;&quot;</span>), m_lsbPaths(), m_mvLoops(), m_vLoopContexts(), m_spOptions(Options), m_vspTagHandlers() {
+<a name="l00123"></a>00123         }
+<a name="l00124"></a>00124 
+<a name="l00125"></a>00125         <span class="keyword">virtual</span> <a class="code" href="classCTemplate.html#adf55261a315e6f0ae57290026621106a">~CTemplate</a>();
 <a name="l00126"></a>00126 
-<a name="l00127"></a><a class="code" href="classCTemplate.html#adbc15e113468e753805dac342acc0745">00127</a>         <a class="code" href="classCTemplate.html#adbc15e113468e753805dac342acc0745">CTemplate</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sFileName) : <a class="code" href="classMCString.html" title="A dictionary for strings.">MCString</a>(), m_sFileName(sFileName), m_spOptions(new <a class="code" href="classCTemplateOptions.html">CTemplateOptions</a>) {
-<a name="l00128"></a>00128                 <a class="code" href="classCTemplate.html#a61f7ee7dfe6a2eb10a6c3ba8ae9e4bfa">Init</a>();
-<a name="l00129"></a>00129         }
-<a name="l00130"></a>00130 
-<a name="l00131"></a><a class="code" href="classCTemplate.html#ab182c3e00729c91a9823eccecf590ca8">00131</a>         <a class="code" href="classCTemplate.html#ab182c3e00729c91a9823eccecf590ca8">CTemplate</a>(<span class="keyword">const</span> std::shared_ptr&lt;CTemplateOptions&gt;&amp; Options, <a class="code" href="classCTemplate.html">CTemplate</a>* pParent = <span class="keyword">nullptr</span>) : <a class="code" href="classMCString.html" title="A dictionary for strings.">MCString</a>(), m_spOptions(Options) {
-<a name="l00132"></a>00132                 <a class="code" href="classCTemplate.html#a61f7ee7dfe6a2eb10a6c3ba8ae9e4bfa">Init</a>();
-<a name="l00133"></a>00133                 m_pParent = pParent;
-<a name="l00134"></a>00134         }
-<a name="l00135"></a>00135 
-<a name="l00136"></a>00136         <span class="keyword">virtual</span> <a class="code" href="classCTemplate.html#adf55261a315e6f0ae57290026621106a">~CTemplate</a>();
-<a name="l00137"></a>00137 
-<a name="l00138"></a>00138         <a class="code" href="classCTemplate.html#abd7c53e8d71f3f840edb64b7d68948b0">CTemplate</a>(<span class="keyword">const</span> <a class="code" href="classCTemplate.html">CTemplate</a>&amp; other) = <span class="keywordflow">default</span>;
-<a name="l00139"></a>00139         <a class="code" href="classCTemplate.html">CTemplate</a>&amp; <a class="code" href="classCTemplate.html#a82c9afc72d4c56858a99118c6ca7d160">operator=</a>(<span class="keyword">const</span> <a class="code" href="classCTemplate.html">CTemplate</a>&amp; other) = <span class="keywordflow">default</span>;
-<a name="l00140"></a>00140 
-<a name="l00142"></a><a class="code" href="classCTemplate.html#a35a6ab024db19c7b1a6b124cc30333af">00142</a>         <span class="keywordtype">void</span> <a class="code" href="classCTemplate.html#a35a6ab024db19c7b1a6b124cc30333af" title="Class for implementing custom tags in subclasses.">AddTagHandler</a>(std::shared_ptr&lt;CTemplateTagHandler&gt; spTagHandler) {
-<a name="l00143"></a>00143                 m_vspTagHandlers.push_back(spTagHandler);
-<a name="l00144"></a>00144         }
-<a name="l00145"></a>00145 
-<a name="l00146"></a><a class="code" href="classCTemplate.html#a54f2f7d4febc2d934b1fb0846acfedb5">00146</a>         std::vector&lt;std::shared_ptr&lt;CTemplateTagHandler&gt; &gt;&amp; <a class="code" href="classCTemplate.html#a54f2f7d4febc2d934b1fb0846acfedb5">GetTagHandlers</a>() {
-<a name="l00147"></a>00147                 <span class="keywordflow">if</span> (m_pParent) {
-<a name="l00148"></a>00148                         <span class="keywordflow">return</span> m_pParent-&gt;<a class="code" href="classCTemplate.html#a54f2f7d4febc2d934b1fb0846acfedb5">GetTagHandlers</a>();
-<a name="l00149"></a>00149                 }
+<a name="l00127"></a>00127         <a class="code" href="classCTemplate.html#abd7c53e8d71f3f840edb64b7d68948b0">CTemplate</a>(<span class="keyword">const</span> <a class="code" href="classCTemplate.html">CTemplate</a>&amp; other) = <span class="keywordflow">default</span>;
+<a name="l00128"></a>00128         <a class="code" href="classCTemplate.html">CTemplate</a>&amp; <a class="code" href="classCTemplate.html#a82c9afc72d4c56858a99118c6ca7d160">operator=</a>(<span class="keyword">const</span> <a class="code" href="classCTemplate.html">CTemplate</a>&amp; other) = <span class="keywordflow">default</span>;
+<a name="l00129"></a>00129 
+<a name="l00131"></a><a class="code" href="classCTemplate.html#a35a6ab024db19c7b1a6b124cc30333af">00131</a>         <span class="keywordtype">void</span> <a class="code" href="classCTemplate.html#a35a6ab024db19c7b1a6b124cc30333af" title="Class for implementing custom tags in subclasses.">AddTagHandler</a>(std::shared_ptr&lt;CTemplateTagHandler&gt; spTagHandler) {
+<a name="l00132"></a>00132                 m_vspTagHandlers.push_back(spTagHandler);
+<a name="l00133"></a>00133         }
+<a name="l00134"></a>00134 
+<a name="l00135"></a><a class="code" href="classCTemplate.html#a54f2f7d4febc2d934b1fb0846acfedb5">00135</a>         std::vector&lt;std::shared_ptr&lt;CTemplateTagHandler&gt; &gt;&amp; <a class="code" href="classCTemplate.html#a54f2f7d4febc2d934b1fb0846acfedb5">GetTagHandlers</a>() {
+<a name="l00136"></a>00136                 <span class="keywordflow">if</span> (m_pParent) {
+<a name="l00137"></a>00137                         <span class="keywordflow">return</span> m_pParent-&gt;<a class="code" href="classCTemplate.html#a54f2f7d4febc2d934b1fb0846acfedb5">GetTagHandlers</a>();
+<a name="l00138"></a>00138                 }
+<a name="l00139"></a>00139 
+<a name="l00140"></a>00140                 <span class="keywordflow">return</span> m_vspTagHandlers;
+<a name="l00141"></a>00141         }
+<a name="l00142"></a>00142 
+<a name="l00143"></a>00143         <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a> <a class="code" href="classCTemplate.html#aa65f4e7a28eb4c2ff746af2e774be2e3">ResolveLiteral</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sString);
+<a name="l00144"></a>00144 
+<a name="l00145"></a>00145         <span class="keywordtype">void</span> <a class="code" href="classCTemplate.html#a61f7ee7dfe6a2eb10a6c3ba8ae9e4bfa">Init</a>();
+<a name="l00146"></a>00146 
+<a name="l00147"></a>00147         <a class="code" href="classCTemplate.html">CTemplate</a>* <a class="code" href="classCTemplate.html#ad419cff450a6cbd71a8016054353ecdf">GetParent</a>(<span class="keywordtype">bool</span> bRoot);
+<a name="l00148"></a>00148         <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a> <a class="code" href="classCTemplate.html#a57baca518123a0da49cefc24f234ce21">ExpandFile</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sFilename, <span class="keywordtype">bool</span> bFromInc = <span class="keyword">false</span>);
+<a name="l00149"></a>00149         <span class="keywordtype">bool</span> <a class="code" href="classCTemplate.html#ad253dd167d43a0f6df38e78428ab2700">SetFile</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sFileName);
 <a name="l00150"></a>00150 
-<a name="l00151"></a>00151                 <span class="keywordflow">return</span> m_vspTagHandlers;
-<a name="l00152"></a>00152         }
-<a name="l00153"></a>00153 
-<a name="l00154"></a>00154         <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a> <a class="code" href="classCTemplate.html#aa65f4e7a28eb4c2ff746af2e774be2e3">ResolveLiteral</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sString);
-<a name="l00155"></a>00155 
-<a name="l00156"></a>00156         <span class="keywordtype">void</span> <a class="code" href="classCTemplate.html#a61f7ee7dfe6a2eb10a6c3ba8ae9e4bfa">Init</a>();
-<a name="l00157"></a>00157 
-<a name="l00158"></a>00158         <a class="code" href="classCTemplate.html">CTemplate</a>* <a class="code" href="classCTemplate.html#ad419cff450a6cbd71a8016054353ecdf">GetParent</a>(<span class="keywordtype">bool</span> bRoot);
-<a name="l00159"></a>00159         <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a> <a class="code" href="classCTemplate.html#a57baca518123a0da49cefc24f234ce21">ExpandFile</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sFilename, <span class="keywordtype">bool</span> bFromInc = <span class="keyword">false</span>);
-<a name="l00160"></a>00160         <span class="keywordtype">bool</span> <a class="code" href="classCTemplate.html#ad253dd167d43a0f6df38e78428ab2700">SetFile</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sFileName);
-<a name="l00161"></a>00161 
-<a name="l00162"></a>00162         <span class="keywordtype">void</span> <a class="code" href="classCTemplate.html#a7fff144d50d7dd85be3dcaa157a9e9cf">SetPath</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sPath);  <span class="comment">// Sets the dir:dir:dir type path to look at for templates, as of right now no ../../.. protection</span>
-<a name="l00163"></a>00163         <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a> <a class="code" href="classCTemplate.html#a5c28b1c72b6a0e9c272ce59c929f9143">MakePath</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sPath) <span class="keyword">const</span>;
-<a name="l00164"></a>00164         <span class="keywordtype">void</span> <a class="code" href="classCTemplate.html#aa039852b3dc77e86e767ffaa783720bd">PrependPath</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sPath, <span class="keywordtype">bool</span> bIncludesOnly = <span class="keyword">false</span>);
-<a name="l00165"></a>00165         <span class="keywordtype">void</span> <a class="code" href="classCTemplate.html#add77742c27b41209716bd46b8f3d8f7a">AppendPath</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sPath, <span class="keywordtype">bool</span> bIncludesOnly = <span class="keyword">false</span>);
-<a name="l00166"></a>00166         <span class="keywordtype">void</span> <a class="code" href="classCTemplate.html#aeafe8cf72599d16c2b87faefea48b0e9">RemovePath</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sPath);
-<a name="l00167"></a>00167         <span class="keywordtype">void</span> <a class="code" href="classCTemplate.html#a3f48f80bf9f0885c01ac36ae7ad18218">ClearPaths</a>();
-<a name="l00168"></a>00168         <span class="keywordtype">bool</span> <a class="code" href="classCTemplate.html#a810b9e5f80db85d7013688e2f323dc96">PrintString</a>(<a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sRet);
-<a name="l00169"></a>00169         <span class="keywordtype">bool</span> <a class="code" href="classCTemplate.html#a61403ee10909ce74b52fefa88cc4e639">Print</a>(std::ostream&amp; oOut);
-<a name="l00170"></a>00170         <span class="keywordtype">bool</span> <a class="code" href="classCTemplate.html#a61403ee10909ce74b52fefa88cc4e639">Print</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sFileName, std::ostream&amp; oOut);
-<a name="l00171"></a>00171         <span class="keywordtype">bool</span> <a class="code" href="classCTemplate.html#afada5e466c6e0aac83320ffdb1dabfa9">ValidIf</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sArgs);
-<a name="l00172"></a>00172         <span class="keywordtype">bool</span> <a class="code" href="classCTemplate.html#ab14c5e2120ec433d72137a1a56e9e460">ValidExpr</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sExpr);
-<a name="l00173"></a>00173         <span class="keywordtype">bool</span> <a class="code" href="classCTemplate.html#ac1bd3e2d29d53726294c898e69d74794">IsTrue</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sName);
-<a name="l00174"></a>00174         <span class="keywordtype">bool</span> <a class="code" href="classCTemplate.html#acf9cb2380c0b6d34234543227189a5dd">HasLoop</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sName);
-<a name="l00175"></a>00175         <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a> <a class="code" href="classCTemplate.html#aea3aa5598fecc8d7635dcdeb98710b20">GetValue</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sName, <span class="keywordtype">bool</span> bFromIf = <span class="keyword">false</span>);
-<a name="l00176"></a>00176         <a class="code" href="classCTemplate.html">CTemplate</a>&amp; <a class="code" href="classCTemplate.html#ab52ef0b224ea95e2b3db01b13526881d">AddRow</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sName);
-<a name="l00177"></a>00177         <a class="code" href="classCTemplate.html">CTemplate</a>* <a class="code" href="classCTemplate.html#a38f4f8a083fc9ba49c1547a43188769c">GetRow</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sName, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> uIndex);
-<a name="l00178"></a>00178         std::vector&lt;CTemplate*&gt;* <a class="code" href="classCTemplate.html#a49521e5498c5a9a28b0295b3ebedf779">GetLoop</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sName);
-<a name="l00179"></a>00179         <span class="keywordtype">void</span> <a class="code" href="classCTemplate.html#a54cfdd85439b89022bbb86c3e869eb28">DelCurLoopContext</a>();
-<a name="l00180"></a>00180         <a class="code" href="classCTemplateLoopContext.html">CTemplateLoopContext</a>* <a class="code" href="classCTemplate.html#a485a932c3ba4aea4aeb7ccd8df73e3a9">GetCurLoopContext</a>();
-<a name="l00181"></a>00181         <a class="code" href="classCTemplate.html">CTemplate</a>* <a class="code" href="classCTemplate.html#ab3295f2abe688d0dc4c8a7f0c8cf849f">GetCurTemplate</a>();
-<a name="l00182"></a>00182 
-<a name="l00183"></a>00183         <span class="comment">// Getters</span>
-<a name="l00184"></a><a class="code" href="classCTemplate.html#abc2a3f5fe0b5aa4c55af930dfa171e8a">00184</a>         <span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; <a class="code" href="classCTemplate.html#abc2a3f5fe0b5aa4c55af930dfa171e8a">GetFileName</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_sFileName; }
-<a name="l00185"></a>00185         <span class="comment">// !Getters</span>
-<a name="l00186"></a>00186 <span class="keyword">private</span>:
-<a name="l00187"></a>00187         <a class="code" href="classCTemplate.html">CTemplate</a>*                               m_pParent;
-<a name="l00188"></a>00188         <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>                                  m_sFileName;
-<a name="l00189"></a>00189         std::list&lt;std::pair&lt;CString, bool&gt; &gt;               m_lsbPaths;
-<a name="l00190"></a>00190         std::map&lt;CString, std::vector&lt;CTemplate*&gt; &gt;        m_mvLoops;
-<a name="l00191"></a>00191         std::vector&lt;CTemplateLoopContext*&gt;            m_vLoopContexts;
-<a name="l00192"></a>00192         std::shared_ptr&lt;CTemplateOptions&gt;              m_spOptions;
-<a name="l00193"></a>00193         std::vector&lt;std::shared_ptr&lt;CTemplateTagHandler&gt; &gt;  m_vspTagHandlers;
-<a name="l00194"></a>00194 };
-<a name="l00195"></a>00195 
-<a name="l00196"></a>00196 <span class="preprocessor">#endif // !_TEMPLATE_H</span>
+<a name="l00151"></a>00151         <span class="keywordtype">void</span> <a class="code" href="classCTemplate.html#a7fff144d50d7dd85be3dcaa157a9e9cf">SetPath</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sPath);  <span class="comment">// Sets the dir:dir:dir type path to look at for templates, as of right now no ../../.. protection</span>
+<a name="l00152"></a>00152         <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a> <a class="code" href="classCTemplate.html#a5c28b1c72b6a0e9c272ce59c929f9143">MakePath</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sPath) <span class="keyword">const</span>;
+<a name="l00153"></a>00153         <span class="keywordtype">void</span> <a class="code" href="classCTemplate.html#aa039852b3dc77e86e767ffaa783720bd">PrependPath</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sPath, <span class="keywordtype">bool</span> bIncludesOnly = <span class="keyword">false</span>);
+<a name="l00154"></a>00154         <span class="keywordtype">void</span> <a class="code" href="classCTemplate.html#add77742c27b41209716bd46b8f3d8f7a">AppendPath</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sPath, <span class="keywordtype">bool</span> bIncludesOnly = <span class="keyword">false</span>);
+<a name="l00155"></a>00155         <span class="keywordtype">void</span> <a class="code" href="classCTemplate.html#aeafe8cf72599d16c2b87faefea48b0e9">RemovePath</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sPath);
+<a name="l00156"></a>00156         <span class="keywordtype">void</span> <a class="code" href="classCTemplate.html#a3f48f80bf9f0885c01ac36ae7ad18218">ClearPaths</a>();
+<a name="l00157"></a>00157         <span class="keywordtype">bool</span> <a class="code" href="classCTemplate.html#a810b9e5f80db85d7013688e2f323dc96">PrintString</a>(<a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sRet);
+<a name="l00158"></a>00158         <span class="keywordtype">bool</span> <a class="code" href="classCTemplate.html#a61403ee10909ce74b52fefa88cc4e639">Print</a>(std::ostream&amp; oOut);
+<a name="l00159"></a>00159         <span class="keywordtype">bool</span> <a class="code" href="classCTemplate.html#a61403ee10909ce74b52fefa88cc4e639">Print</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sFileName, std::ostream&amp; oOut);
+<a name="l00160"></a>00160         <span class="keywordtype">bool</span> <a class="code" href="classCTemplate.html#afada5e466c6e0aac83320ffdb1dabfa9">ValidIf</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sArgs);
+<a name="l00161"></a>00161         <span class="keywordtype">bool</span> <a class="code" href="classCTemplate.html#ab14c5e2120ec433d72137a1a56e9e460">ValidExpr</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sExpr);
+<a name="l00162"></a>00162         <span class="keywordtype">bool</span> <a class="code" href="classCTemplate.html#ac1bd3e2d29d53726294c898e69d74794">IsTrue</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sName);
+<a name="l00163"></a>00163         <span class="keywordtype">bool</span> <a class="code" href="classCTemplate.html#acf9cb2380c0b6d34234543227189a5dd">HasLoop</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sName);
+<a name="l00164"></a>00164         <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a> <a class="code" href="classCTemplate.html#aea3aa5598fecc8d7635dcdeb98710b20">GetValue</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sName, <span class="keywordtype">bool</span> bFromIf = <span class="keyword">false</span>);
+<a name="l00165"></a>00165         <a class="code" href="classCTemplate.html">CTemplate</a>&amp; <a class="code" href="classCTemplate.html#ab52ef0b224ea95e2b3db01b13526881d">AddRow</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sName);
+<a name="l00166"></a>00166         <a class="code" href="classCTemplate.html">CTemplate</a>* <a class="code" href="classCTemplate.html#a38f4f8a083fc9ba49c1547a43188769c">GetRow</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sName, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> uIndex);
+<a name="l00167"></a>00167         std::vector&lt;CTemplate*&gt;* <a class="code" href="classCTemplate.html#a49521e5498c5a9a28b0295b3ebedf779">GetLoop</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sName);
+<a name="l00168"></a>00168         <span class="keywordtype">void</span> <a class="code" href="classCTemplate.html#a54cfdd85439b89022bbb86c3e869eb28">DelCurLoopContext</a>();
+<a name="l00169"></a>00169         <a class="code" href="classCTemplateLoopContext.html">CTemplateLoopContext</a>* <a class="code" href="classCTemplate.html#a485a932c3ba4aea4aeb7ccd8df73e3a9">GetCurLoopContext</a>();
+<a name="l00170"></a>00170         <a class="code" href="classCTemplate.html">CTemplate</a>* <a class="code" href="classCTemplate.html#ab3295f2abe688d0dc4c8a7f0c8cf849f">GetCurTemplate</a>();
+<a name="l00171"></a>00171 
+<a name="l00172"></a>00172         <span class="comment">// Getters</span>
+<a name="l00173"></a><a class="code" href="classCTemplate.html#abc2a3f5fe0b5aa4c55af930dfa171e8a">00173</a>         <span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; <a class="code" href="classCTemplate.html#abc2a3f5fe0b5aa4c55af930dfa171e8a">GetFileName</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_sFileName; }
+<a name="l00174"></a>00174         <span class="comment">// !Getters</span>
+<a name="l00175"></a>00175 <span class="keyword">private</span>:
+<a name="l00176"></a>00176         <a class="code" href="classCTemplate.html">CTemplate</a>*                               m_pParent;
+<a name="l00177"></a>00177         <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>                                  m_sFileName;
+<a name="l00178"></a>00178         std::list&lt;std::pair&lt;CString, bool&gt; &gt;               m_lsbPaths;
+<a name="l00179"></a>00179         std::map&lt;CString, std::vector&lt;CTemplate*&gt; &gt;        m_mvLoops;
+<a name="l00180"></a>00180         std::vector&lt;CTemplateLoopContext*&gt;            m_vLoopContexts;
+<a name="l00181"></a>00181         std::shared_ptr&lt;CTemplateOptions&gt;              m_spOptions;
+<a name="l00182"></a>00182         std::vector&lt;std::shared_ptr&lt;CTemplateTagHandler&gt; &gt;  m_vspTagHandlers;
+<a name="l00183"></a>00183 };
+<a name="l00184"></a>00184 
+<a name="l00185"></a>00185 <span class="preprocessor">#endif // !_TEMPLATE_H</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -294,7 +283,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 26 2015 06:09:17 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Mar 1 2015 04:38:35 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
