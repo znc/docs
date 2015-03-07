@@ -97,7 +97,7 @@ Classes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModulesIter.html">CModulesIter</a></td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCPyModule.html">CPyModule</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modpython_2module_8h.html#a5af2e9a340decc155317e6efdd2bfdbe">CreatePyModule</a> (<a class="el" href="classCUser.html">CUser</a> *pUser, <a class="el" href="classCIRCNetwork.html">CIRCNetwork</a> *pNetwork, const <a class="el" href="classCString.html">CString</a> &amp;sModName, const <a class="el" href="classCString.html">CString</a> &amp;sDataPath, PyObject *pyObj, CModPython *pModPython)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCPyModule.html">CPyModule</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modpython_2module_8h.html#aecee99c6f675c8cc25301259394b81da">CreatePyModule</a> (<a class="el" href="classCUser.html">CUser</a> *pUser, <a class="el" href="classCIRCNetwork.html">CIRCNetwork</a> *pNetwork, const <a class="el" href="classCString.html">CString</a> &amp;sModName, const <a class="el" href="classCString.html">CString</a> &amp;sDataPath, <a class="el" href="classCModInfo.html#a616fabebbbf49bf06cfff90b8f32c57f">CModInfo::EModuleType</a> eType, PyObject *pyObj, CModPython *pModPython)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCPyTimer.html">CPyTimer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modpython_2module_8h.html#a766304264b0fde268e2200d7e1f006c1">CreatePyTimer</a> (<a class="el" href="classCPyModule.html">CPyModule</a> *pModule, unsigned int uInterval, unsigned int uCycles, const <a class="el" href="classCString.html">CString</a> &amp;sLabel, const <a class="el" href="classCString.html">CString</a> &amp;sDescription, PyObject *pyObj)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCPySocket.html">CPySocket</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modpython_2module_8h.html#ac09dc177b61b32e23e89578c40a88143">CreatePySocket</a> (<a class="el" href="classCPyModule.html">CPyModule</a> *pModule, PyObject *pyObj)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modpython_2module_8h.html#a59296936c509a373f2e36127f9a2dbf8">HaveIPv6_</a> ()</td></tr>
@@ -110,12 +110,12 @@ Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modpython_2module_8h.html#a0230ccc4605aff2b1cd2a471f01cd055">GetVersionExtra</a> ()</td></tr>
 </table>
 <hr/><h2>Function Documentation</h2>
-<a class="anchor" id="a5af2e9a340decc155317e6efdd2bfdbe"></a><!-- doxytag: member="modpython/module.h::CreatePyModule" ref="a5af2e9a340decc155317e6efdd2bfdbe" args="(CUser *pUser, CIRCNetwork *pNetwork, const CString &amp;sModName, const CString &amp;sDataPath, PyObject *pyObj, CModPython *pModPython)" -->
+<a class="anchor" id="aecee99c6f675c8cc25301259394b81da"></a><!-- doxytag: member="modpython/module.h::CreatePyModule" ref="aecee99c6f675c8cc25301259394b81da" args="(CUser *pUser, CIRCNetwork *pNetwork, const CString &amp;sModName, const CString &amp;sDataPath, CModInfo::EModuleType eType, PyObject *pyObj, CModPython *pModPython)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCPyModule.html">CPyModule</a>* <a class="el" href="modpython_2module_8h.html#a5af2e9a340decc155317e6efdd2bfdbe">CreatePyModule</a> </td>
+          <td class="memname"><a class="el" href="classCPyModule.html">CPyModule</a>* <a class="el" href="modpython_2module_8h.html#aecee99c6f675c8cc25301259394b81da">CreatePyModule</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classCUser.html">CUser</a> *&#160;</td>
           <td class="paramname"><em>pUser</em>, </td>
@@ -137,6 +137,12 @@ Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>sDataPath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classCModInfo.html#a616fabebbbf49bf06cfff90b8f32c57f">CModInfo::EModuleType</a>&#160;</td>
+          <td class="paramname"><em>eType</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -393,7 +399,7 @@ Functions</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 15 2014 16:16:10 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Mar 7 2015 22:17:40 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

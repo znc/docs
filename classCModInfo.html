@@ -108,7 +108,7 @@ Public Types</h2></td></tr>
 <a class="el" href="classCModInfo.html#a616fabebbbf49bf06cfff90b8f32c57fa5ccfe2f4d1a368cbedc84ac3936a9708">UserModule</a>, 
 <a class="el" href="classCModInfo.html#a616fabebbbf49bf06cfff90b8f32c57fa06d28b56fbc77d9595270f01e0838c76">NetworkModule</a>
  }</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classCModule.html">CModule</a> *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModInfo.html#a8da78708b248224013b2656a05ef1b42">ModLoader</a> )(<a class="el" href="Modules_8h.html#a2f2b7746e7590ac0383278e975f13855">ModHandle</a> p, <a class="el" href="classCUser.html">CUser</a> *pUser, <a class="el" href="classCIRCNetwork.html">CIRCNetwork</a> *pNetwork, const <a class="el" href="classCString.html">CString</a> &amp;sModName, const <a class="el" href="classCString.html">CString</a> &amp;sModPath)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classCModule.html">CModule</a> *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModInfo.html#a9f4ec517ae108076ee853b9221c45477">ModLoader</a> )(<a class="el" href="Modules_8h.html#a2f2b7746e7590ac0383278e975f13855">ModHandle</a> p, <a class="el" href="classCUser.html">CUser</a> *pUser, <a class="el" href="classCIRCNetwork.html">CIRCNetwork</a> *pNetwork, const <a class="el" href="classCString.html">CString</a> &amp;sModName, const <a class="el" href="classCString.html">CString</a> &amp;sModPath, <a class="el" href="classCModInfo.html#a616fabebbbf49bf06cfff90b8f32c57f">EModuleType</a> eType)</td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModInfo.html#aef3c193c9312894e3871a2229072b44b">CModInfo</a> ()</td></tr>
@@ -123,7 +123,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModInfo.html#ad77b3eaa4fdf9e13b01d5dd5aaa4f536">GetWikiPage</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModInfo.html#a468d4cd956c2b47e0f5d1ddfe76173a0">GetArgsHelpText</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModInfo.html#a9f4dfb2e2841b1083afdae999d8b7e81">GetHasArgs</a> () const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCModInfo.html#a8da78708b248224013b2656a05ef1b42">ModLoader</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModInfo.html#a96472f7224fa2715ad6a38ca22aa0171">GetLoader</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCModInfo.html#a9f4ec517ae108076ee853b9221c45477">ModLoader</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModInfo.html#a96472f7224fa2715ad6a38ca22aa0171">GetLoader</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCModInfo.html#a616fabebbbf49bf06cfff90b8f32c57f">EModuleType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModInfo.html#a7456b625a16e717adc34b8e72b9c6aba">GetDefaultType</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModInfo.html#a31bfc0eb06b2486c5da17acfb662df8d">SetName</a> (const <a class="el" href="classCString.html">CString</a> &amp;s)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModInfo.html#a93853f919494a05cb116ff054b533897">SetPath</a> (const <a class="el" href="classCString.html">CString</a> &amp;s)</td></tr>
@@ -131,7 +131,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModInfo.html#ab5b722f3cd83398f2824f676120904af">SetWikiPage</a> (const <a class="el" href="classCString.html">CString</a> &amp;s)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModInfo.html#a4284e6b3d0df5a9c8d3ff292c22b0e1e">SetArgsHelpText</a> (const <a class="el" href="classCString.html">CString</a> &amp;s)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModInfo.html#a3e651fdb526f74ec86411d7945ec2139">SetHasArgs</a> (bool b=false)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModInfo.html#a52cc3e1083698866f07c14050fe2ac3d">SetLoader</a> (<a class="el" href="classCModInfo.html#a8da78708b248224013b2656a05ef1b42">ModLoader</a> fLoader)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModInfo.html#a52cc3e1083698866f07c14050fe2ac3d">SetLoader</a> (<a class="el" href="classCModInfo.html#a9f4ec517ae108076ee853b9221c45477">ModLoader</a> fLoader)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModInfo.html#ae0e4b7ae2b65c51c43bd5a2653007327">SetDefaultType</a> (<a class="el" href="classCModInfo.html#a616fabebbbf49bf06cfff90b8f32c57f">EModuleType</a> eType)</td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -146,15 +146,15 @@ Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModInfo.html#a3ff2aeb6030c252a12adf0013a8dd7ce">m_sWikiPage</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModInfo.html#adb6bc0296603ef5ee39a66ae61934697">m_sArgsHelpText</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModInfo.html#a493840b63c7420c5a26ce4c62dc5eb11">m_bHasArgs</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCModInfo.html#a8da78708b248224013b2656a05ef1b42">ModLoader</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModInfo.html#add5b0a530d726a257187c05c34107cfe">m_fLoader</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCModInfo.html#a9f4ec517ae108076ee853b9221c45477">ModLoader</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModInfo.html#add5b0a530d726a257187c05c34107cfe">m_fLoader</a></td></tr>
 </table>
 <hr/><h2>Member Typedef Documentation</h2>
-<a class="anchor" id="a8da78708b248224013b2656a05ef1b42"></a><!-- doxytag: member="CModInfo::ModLoader" ref="a8da78708b248224013b2656a05ef1b42" args=")(ModHandle p, CUser *pUser, CIRCNetwork *pNetwork, const CString &amp;sModName, const CString &amp;sModPath)" -->
+<a class="anchor" id="a9f4ec517ae108076ee853b9221c45477"></a><!-- doxytag: member="CModInfo::ModLoader" ref="a9f4ec517ae108076ee853b9221c45477" args=")(ModHandle p, CUser *pUser, CIRCNetwork *pNetwork, const CString &amp;sModName, const CString &amp;sModPath, EModuleType eType)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="classCModule.html">CModule</a>*(* <a class="el" href="classCModInfo.html#a8da78708b248224013b2656a05ef1b42">CModInfo::ModLoader</a>)(<a class="el" href="Modules_8h.html#a2f2b7746e7590ac0383278e975f13855">ModHandle</a> p, <a class="el" href="classCUser.html">CUser</a> *pUser, <a class="el" href="classCIRCNetwork.html">CIRCNetwork</a> *pNetwork, const <a class="el" href="classCString.html">CString</a> &amp;sModName, const <a class="el" href="classCString.html">CString</a> &amp;sModPath)</td>
+          <td class="memname">typedef <a class="el" href="classCModule.html">CModule</a>*(* <a class="el" href="classCModInfo.html#a9f4ec517ae108076ee853b9221c45477">CModInfo::ModLoader</a>)(<a class="el" href="Modules_8h.html#a2f2b7746e7590ac0383278e975f13855">ModHandle</a> p, <a class="el" href="classCUser.html">CUser</a> *pUser, <a class="el" href="classCIRCNetwork.html">CIRCNetwork</a> *pNetwork, const <a class="el" href="classCString.html">CString</a> &amp;sModName, const <a class="el" href="classCString.html">CString</a> &amp;sModPath, <a class="el" href="classCModInfo.html#a616fabebbbf49bf06cfff90b8f32c57f">EModuleType</a> eType)</td>
         </tr>
       </table>
 </div>
@@ -201,8 +201,6 @@ Protected Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="classCModInfo.html#a493840b63c7420c5a26ce4c62dc5eb11">m_bHasArgs</a>, and <a class="el" href="classCModInfo.html#add5b0a530d726a257187c05c34107cfe">m_fLoader</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="adae4a5752c4ccc41bea4456ef58e48c8"></a><!-- doxytag: member="CModInfo::CModInfo" ref="adae4a5752c4ccc41bea4456ef58e48c8" args="(const CString &amp;sName, const CString &amp;sPath, EModuleType eType)" -->
@@ -235,8 +233,6 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-
-<p>References <a class="el" href="classCModInfo.html#a493840b63c7420c5a26ce4c62dc5eb11">m_bHasArgs</a>, <a class="el" href="classCModInfo.html#add5b0a530d726a257187c05c34107cfe">m_fLoader</a>, <a class="el" href="classCModInfo.html#a6586bae4c2f1da60fe164369a6c0db8b">m_sName</a>, and <a class="el" href="classCModInfo.html#ae95738c05b5cb667ffc323351413d717">m_sPath</a>.</p>
 
 </div>
 </div>
@@ -353,7 +349,7 @@ Protected Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCModInfo.html#a8da78708b248224013b2656a05ef1b42">ModLoader</a> <a class="el" href="classCModInfo.html#a96472f7224fa2715ad6a38ca22aa0171">CModInfo::GetLoader</a> </td>
+          <td class="memname"><a class="el" href="classCModInfo.html#a9f4ec517ae108076ee853b9221c45477">ModLoader</a> <a class="el" href="classCModInfo.html#a96472f7224fa2715ad6a38ca22aa0171">CModInfo::GetLoader</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const<code> [inline]</code></td>
@@ -543,7 +539,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">void <a class="el" href="classCModInfo.html#a52cc3e1083698866f07c14050fe2ac3d">CModInfo::SetLoader</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classCModInfo.html#a8da78708b248224013b2656a05ef1b42">ModLoader</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classCModInfo.html#a9f4ec517ae108076ee853b9221c45477">ModLoader</a>&#160;</td>
           <td class="paramname"><em>fLoader</em></td><td>)</td>
           <td><code> [inline]</code></td>
         </tr>
@@ -643,7 +639,7 @@ Protected Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Referenced by <a class="el" href="classCModInfo.html#aef3c193c9312894e3871a2229072b44b">CModInfo()</a>, <a class="el" href="classCModInfo.html#a9f4dfb2e2841b1083afdae999d8b7e81">GetHasArgs()</a>, and <a class="el" href="classCModInfo.html#a3e651fdb526f74ec86411d7945ec2139">SetHasArgs()</a>.</p>
+<p>Referenced by <a class="el" href="classCModInfo.html#a9f4dfb2e2841b1083afdae999d8b7e81">GetHasArgs()</a>, and <a class="el" href="classCModInfo.html#a3e651fdb526f74ec86411d7945ec2139">SetHasArgs()</a>.</p>
 
 </div>
 </div>
@@ -667,13 +663,13 @@ Protected Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCModInfo.html#a8da78708b248224013b2656a05ef1b42">ModLoader</a> <a class="el" href="classCModInfo.html#add5b0a530d726a257187c05c34107cfe">CModInfo::m_fLoader</a><code> [protected]</code></td>
+          <td class="memname"><a class="el" href="classCModInfo.html#a9f4ec517ae108076ee853b9221c45477">ModLoader</a> <a class="el" href="classCModInfo.html#add5b0a530d726a257187c05c34107cfe">CModInfo::m_fLoader</a><code> [protected]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Referenced by <a class="el" href="classCModInfo.html#aef3c193c9312894e3871a2229072b44b">CModInfo()</a>, <a class="el" href="classCModInfo.html#a96472f7224fa2715ad6a38ca22aa0171">GetLoader()</a>, and <a class="el" href="classCModInfo.html#a52cc3e1083698866f07c14050fe2ac3d">SetLoader()</a>.</p>
+<p>Referenced by <a class="el" href="classCModInfo.html#a96472f7224fa2715ad6a38ca22aa0171">GetLoader()</a>, and <a class="el" href="classCModInfo.html#a52cc3e1083698866f07c14050fe2ac3d">SetLoader()</a>.</p>
 
 </div>
 </div>
@@ -733,7 +729,7 @@ Protected Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Referenced by <a class="el" href="classCModInfo.html#adae4a5752c4ccc41bea4456ef58e48c8">CModInfo()</a>, <a class="el" href="classCModInfo.html#a476bdb8f2b492bbdd615716cbfc6b1fd">GetName()</a>, and <a class="el" href="classCModInfo.html#a31bfc0eb06b2486c5da17acfb662df8d">SetName()</a>.</p>
+<p>Referenced by <a class="el" href="classCModInfo.html#a476bdb8f2b492bbdd615716cbfc6b1fd">GetName()</a>, and <a class="el" href="classCModInfo.html#a31bfc0eb06b2486c5da17acfb662df8d">SetName()</a>.</p>
 
 </div>
 </div>
@@ -748,7 +744,7 @@ Protected Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Referenced by <a class="el" href="classCModInfo.html#adae4a5752c4ccc41bea4456ef58e48c8">CModInfo()</a>, <a class="el" href="classCModInfo.html#a7525d2de60c7182d195c257c933b670b">GetPath()</a>, and <a class="el" href="classCModInfo.html#a93853f919494a05cb116ff054b533897">SetPath()</a>.</p>
+<p>Referenced by <a class="el" href="classCModInfo.html#a7525d2de60c7182d195c257c933b670b">GetPath()</a>, and <a class="el" href="classCModInfo.html#a93853f919494a05cb116ff054b533897">SetPath()</a>.</p>
 
 </div>
 </div>
@@ -788,7 +784,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 3 2015 15:55:19 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Mar 7 2015 22:17:42 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

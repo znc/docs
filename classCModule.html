@@ -126,7 +126,7 @@ Public Types</h2></td></tr>
  }</td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#a3d7691ccde221ebc3221a3db9977b365">CModule</a> (<a class="el" href="Modules_8h.html#a2f2b7746e7590ac0383278e975f13855">ModHandle</a> pDLL, <a class="el" href="classCUser.html">CUser</a> *pUser, <a class="el" href="classCIRCNetwork.html">CIRCNetwork</a> *pNetwork, const <a class="el" href="classCString.html">CString</a> &amp;sModName, const <a class="el" href="classCString.html">CString</a> &amp;sDataDir)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#a7c793d7083aded8b0573b07565df20cc">CModule</a> (<a class="el" href="Modules_8h.html#a2f2b7746e7590ac0383278e975f13855">ModHandle</a> pDLL, <a class="el" href="classCUser.html">CUser</a> *pUser, <a class="el" href="classCIRCNetwork.html">CIRCNetwork</a> *pNetwork, const <a class="el" href="classCString.html">CString</a> &amp;sModName, const <a class="el" href="classCString.html">CString</a> &amp;sDataDir, <a class="el" href="classCModInfo.html#a616fabebbbf49bf06cfff90b8f32c57f">CModInfo::EModuleType</a> eType=<a class="el" href="classCModInfo.html#a616fabebbbf49bf06cfff90b8f32c57fa06d28b56fbc77d9595270f01e0838c76">CModInfo::NetworkModule</a>)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#a5805daa01f486b156ec5a424ef3fe2bd">~CModule</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#ac817ca19ecaacbc68cedac26593078d8">CModule</a> (const <a class="el" href="classCModule.html">CModule</a> &amp;)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCModule.html">CModule</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#a72fa29e25f81bd9fb7d7399e55b4556c">operator=</a> (const <a class="el" href="classCModule.html">CModule</a> &amp;)</td></tr>
@@ -476,12 +476,12 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a3d7691ccde221ebc3221a3db9977b365"></a><!-- doxytag: member="CModule::CModule" ref="a3d7691ccde221ebc3221a3db9977b365" args="(ModHandle pDLL, CUser *pUser, CIRCNetwork *pNetwork, const CString &amp;sModName, const CString &amp;sDataDir)" -->
+<a class="anchor" id="a7c793d7083aded8b0573b07565df20cc"></a><!-- doxytag: member="CModule::CModule" ref="a7c793d7083aded8b0573b07565df20cc" args="(ModHandle pDLL, CUser *pUser, CIRCNetwork *pNetwork, const CString &amp;sModName, const CString &amp;sDataDir, CModInfo::EModuleType eType=CModInfo::NetworkModule)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCModule.html#a3d7691ccde221ebc3221a3db9977b365">CModule::CModule</a> </td>
+          <td class="memname"><a class="el" href="classCModule.html#a7c793d7083aded8b0573b07565df20cc">CModule::CModule</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="Modules_8h.html#a2f2b7746e7590ac0383278e975f13855">ModHandle</a>&#160;</td>
           <td class="paramname"><em>pDLL</em>, </td>
@@ -508,7 +508,13 @@ Protected Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
-          <td class="paramname"><em>sDataDir</em>&#160;</td>
+          <td class="paramname"><em>sDataDir</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classCModInfo.html#a616fabebbbf49bf06cfff90b8f32c57f">CModInfo::EModuleType</a>&#160;</td>
+          <td class="paramname"><em>eType</em> = <code><a class="el" href="classCModInfo.html#a616fabebbbf49bf06cfff90b8f32c57fa06d28b56fbc77d9595270f01e0838c76">CModInfo::NetworkModule</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -542,7 +548,7 @@ Protected Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCModule.html#a3d7691ccde221ebc3221a3db9977b365">CModule::CModule</a> </td>
+          <td class="memname"><a class="el" href="classCModule.html#a7c793d7083aded8b0573b07565df20cc">CModule::CModule</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCModule.html">CModule</a> &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -5703,7 +5709,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 27 2015 17:20:19 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Mar 7 2015 22:17:42 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

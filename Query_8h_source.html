@@ -114,27 +114,30 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00031"></a>00031         <a class="code" href="classCQuery.html#a7b5e2ca71ef08a6fca1637991139243e">CQuery</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sName, <a class="code" href="classCIRCNetwork.html">CIRCNetwork</a>* pNetwork);
 <a name="l00032"></a>00032         <a class="code" href="classCQuery.html#a15a30f4ed2c4ed93cf19281259eeefce">~CQuery</a>();
 <a name="l00033"></a>00033 
-<a name="l00034"></a>00034         <span class="comment">// Buffer</span>
-<a name="l00035"></a><a class="code" href="classCQuery.html#a349f61f8e6c8f3304a05a2a8094b2b64">00035</a>         <span class="keyword">const</span> <a class="code" href="classCBuffer.html">CBuffer</a>&amp; <a class="code" href="classCQuery.html#a349f61f8e6c8f3304a05a2a8094b2b64">GetBuffer</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_Buffer; }
-<a name="l00036"></a><a class="code" href="classCQuery.html#a7f268e01eb4f5c1e154b181955c540b5">00036</a>         <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classCQuery.html#a7f268e01eb4f5c1e154b181955c540b5">GetBufferCount</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_Buffer.<a class="code" href="classCBuffer.html#aef1a2dce9e516fd9d4bae2fa9626dfb9">GetLineCount</a>(); }
-<a name="l00037"></a><a class="code" href="classCQuery.html#a1009846eb49b30ca49c07e8b60b19564">00037</a>         <span class="keywordtype">bool</span> <a class="code" href="classCQuery.html#a1009846eb49b30ca49c07e8b60b19564">SetBufferCount</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> u, <span class="keywordtype">bool</span> bForce = <span class="keyword">false</span>) { <span class="keywordflow">return</span> m_Buffer.<a class="code" href="classCBuffer.html#a4bd23b282dd890deb4d1ad3a39d06d1f">SetLineCount</a>(u, bForce); }
-<a name="l00038"></a><a class="code" href="classCQuery.html#a0fbcb85199c34f837aa0b4ce7ece75f7">00038</a>         <span class="keywordtype">size_t</span> <a class="code" href="classCQuery.html#a0fbcb85199c34f837aa0b4ce7ece75f7">AddBuffer</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sFormat, <span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sText = <span class="stringliteral">&quot;&quot;</span>, <span class="keyword">const</span> timeval* ts = <span class="keyword">nullptr</span>) { <span class="keywordflow">return</span> m_Buffer.<a class="code" href="classCBuffer.html#ad0885ab8078ea108c65ac8c8deabf90c">AddLine</a>(sFormat, sText, ts); }
-<a name="l00039"></a><a class="code" href="classCQuery.html#a6010d9531a3721c8cb2533136aba331b">00039</a>         <span class="keywordtype">void</span> <a class="code" href="classCQuery.html#a6010d9531a3721c8cb2533136aba331b">ClearBuffer</a>() { m_Buffer.<a class="code" href="classCBuffer.html#aeb76b075c8088d786660215a1c245aa2">Clear</a>(); }
-<a name="l00040"></a>00040         <span class="keywordtype">void</span> <a class="code" href="classCQuery.html#a4d56fb83642e60492c3418bb798b6381">SendBuffer</a>(<a class="code" href="classCClient.html">CClient</a>* pClient);
-<a name="l00041"></a>00041         <span class="keywordtype">void</span> <a class="code" href="classCQuery.html#a4d56fb83642e60492c3418bb798b6381">SendBuffer</a>(<a class="code" href="classCClient.html">CClient</a>* pClient, <span class="keyword">const</span> <a class="code" href="classCBuffer.html">CBuffer</a>&amp; Buffer);
-<a name="l00042"></a>00042         <span class="comment">// !Buffer</span>
-<a name="l00043"></a>00043 
-<a name="l00044"></a>00044         <span class="comment">// Getters</span>
-<a name="l00045"></a><a class="code" href="classCQuery.html#af90af85d2dfcadcf0ee9992c4bdf5d16">00045</a>         <span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; <a class="code" href="classCQuery.html#af90af85d2dfcadcf0ee9992c4bdf5d16">GetName</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_sName; }
-<a name="l00046"></a>00046         <span class="comment">// !Getters</span>
-<a name="l00047"></a>00047 
-<a name="l00048"></a>00048 <span class="keyword">private</span>:
-<a name="l00049"></a>00049         <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>                      m_sName;
-<a name="l00050"></a>00050         <a class="code" href="classCIRCNetwork.html">CIRCNetwork</a>*                 m_pNetwork;
-<a name="l00051"></a>00051         <a class="code" href="classCBuffer.html">CBuffer</a>                      m_Buffer;
-<a name="l00052"></a>00052 };
-<a name="l00053"></a>00053 
-<a name="l00054"></a>00054 <span class="preprocessor">#endif // !ZNC_QUERY_H</span>
+<a name="l00034"></a>00034         <a class="code" href="classCQuery.html#a7b5e2ca71ef08a6fca1637991139243e">CQuery</a>(<span class="keyword">const</span> <a class="code" href="classCQuery.html">CQuery</a>&amp;) = <span class="keyword">delete</span>;
+<a name="l00035"></a>00035         <a class="code" href="classCQuery.html">CQuery</a>&amp; <a class="code" href="classCQuery.html#a705ba7f8b1f7060a37a66c91b5376518">operator=</a>(<span class="keyword">const</span> <a class="code" href="classCQuery.html">CQuery</a>&amp;) = <span class="keyword">delete</span>;
+<a name="l00036"></a>00036 
+<a name="l00037"></a>00037         <span class="comment">// Buffer</span>
+<a name="l00038"></a><a class="code" href="classCQuery.html#a349f61f8e6c8f3304a05a2a8094b2b64">00038</a>         <span class="keyword">const</span> <a class="code" href="classCBuffer.html">CBuffer</a>&amp; <a class="code" href="classCQuery.html#a349f61f8e6c8f3304a05a2a8094b2b64">GetBuffer</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_Buffer; }
+<a name="l00039"></a><a class="code" href="classCQuery.html#a7f268e01eb4f5c1e154b181955c540b5">00039</a>         <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classCQuery.html#a7f268e01eb4f5c1e154b181955c540b5">GetBufferCount</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_Buffer.<a class="code" href="classCBuffer.html#aef1a2dce9e516fd9d4bae2fa9626dfb9">GetLineCount</a>(); }
+<a name="l00040"></a><a class="code" href="classCQuery.html#a1009846eb49b30ca49c07e8b60b19564">00040</a>         <span class="keywordtype">bool</span> <a class="code" href="classCQuery.html#a1009846eb49b30ca49c07e8b60b19564">SetBufferCount</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> u, <span class="keywordtype">bool</span> bForce = <span class="keyword">false</span>) { <span class="keywordflow">return</span> m_Buffer.<a class="code" href="classCBuffer.html#a4bd23b282dd890deb4d1ad3a39d06d1f">SetLineCount</a>(u, bForce); }
+<a name="l00041"></a><a class="code" href="classCQuery.html#a0fbcb85199c34f837aa0b4ce7ece75f7">00041</a>         <span class="keywordtype">size_t</span> <a class="code" href="classCQuery.html#a0fbcb85199c34f837aa0b4ce7ece75f7">AddBuffer</a>(<span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sFormat, <span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sText = <span class="stringliteral">&quot;&quot;</span>, <span class="keyword">const</span> timeval* ts = <span class="keyword">nullptr</span>) { <span class="keywordflow">return</span> m_Buffer.<a class="code" href="classCBuffer.html#ad0885ab8078ea108c65ac8c8deabf90c">AddLine</a>(sFormat, sText, ts); }
+<a name="l00042"></a><a class="code" href="classCQuery.html#a6010d9531a3721c8cb2533136aba331b">00042</a>         <span class="keywordtype">void</span> <a class="code" href="classCQuery.html#a6010d9531a3721c8cb2533136aba331b">ClearBuffer</a>() { m_Buffer.<a class="code" href="classCBuffer.html#aeb76b075c8088d786660215a1c245aa2">Clear</a>(); }
+<a name="l00043"></a>00043         <span class="keywordtype">void</span> <a class="code" href="classCQuery.html#a4d56fb83642e60492c3418bb798b6381">SendBuffer</a>(<a class="code" href="classCClient.html">CClient</a>* pClient);
+<a name="l00044"></a>00044         <span class="keywordtype">void</span> <a class="code" href="classCQuery.html#a4d56fb83642e60492c3418bb798b6381">SendBuffer</a>(<a class="code" href="classCClient.html">CClient</a>* pClient, <span class="keyword">const</span> <a class="code" href="classCBuffer.html">CBuffer</a>&amp; Buffer);
+<a name="l00045"></a>00045         <span class="comment">// !Buffer</span>
+<a name="l00046"></a>00046 
+<a name="l00047"></a>00047         <span class="comment">// Getters</span>
+<a name="l00048"></a><a class="code" href="classCQuery.html#af90af85d2dfcadcf0ee9992c4bdf5d16">00048</a>         <span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; <a class="code" href="classCQuery.html#af90af85d2dfcadcf0ee9992c4bdf5d16">GetName</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_sName; }
+<a name="l00049"></a>00049         <span class="comment">// !Getters</span>
+<a name="l00050"></a>00050 
+<a name="l00051"></a>00051 <span class="keyword">private</span>:
+<a name="l00052"></a>00052         <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>                      m_sName;
+<a name="l00053"></a>00053         <a class="code" href="classCIRCNetwork.html">CIRCNetwork</a>*                 m_pNetwork;
+<a name="l00054"></a>00054         <a class="code" href="classCBuffer.html">CBuffer</a>                      m_Buffer;
+<a name="l00055"></a>00055 };
+<a name="l00056"></a>00056 
+<a name="l00057"></a>00057 <span class="preprocessor">#endif // !ZNC_QUERY_H</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -153,7 +156,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 7 2015 15:47:06 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Mar 7 2015 22:17:40 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

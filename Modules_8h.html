@@ -142,14 +142,14 @@ Defines</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">At the end of your source file, you must call this macro in global context.  <a href="#a4c40fcb15b7d280cf45b5b0b4269951b"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Modules_8h.html#a2f2b7746e7590ac0383278e975f13855">ModHandle</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Modules_8h.html#ac37bb819056da7480b0bc7a717b45233">FPTimer_t</a> )(<a class="el" href="classCModule.html">CModule</a> *, <a class="el" href="classCFPTimer.html">CFPTimer</a> *)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Modules_8h.html#a2f2b7746e7590ac0383278e975f13855">ModHandle</a></td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class M &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Modules_8h.html#a5d7c3884ce014df7cd13a5a90347ecf1">TModInfo</a> (<a class="el" href="classCModInfo.html">CModInfo</a> &amp;Info)</td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class M &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classCModule.html">CModule</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Modules_8h.html#af904302dd2a4dba2790f07894c670df7">TModLoad</a> (<a class="el" href="Modules_8h.html#a2f2b7746e7590ac0383278e975f13855">ModHandle</a> p, <a class="el" href="classCUser.html">CUser</a> *pUser, <a class="el" href="classCIRCNetwork.html">CIRCNetwork</a> *pNetwork, const <a class="el" href="classCString.html">CString</a> &amp;sModName, const <a class="el" href="classCString.html">CString</a> &amp;sModPath)</td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classCModule.html">CModule</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Modules_8h.html#a8b5d0454edfcc804812ba915d0102551">TModLoad</a> (<a class="el" href="Modules_8h.html#a2f2b7746e7590ac0383278e975f13855">ModHandle</a> p, <a class="el" href="classCUser.html">CUser</a> *pUser, <a class="el" href="classCIRCNetwork.html">CIRCNetwork</a> *pNetwork, const <a class="el" href="classCString.html">CString</a> &amp;sModName, const <a class="el" href="classCString.html">CString</a> &amp;sModPath, <a class="el" href="classCModInfo.html#a616fabebbbf49bf06cfff90b8f32c57f">CModInfo::EModuleType</a> eType)</td></tr>
 </table>
 <hr/><h2>Define Documentation</h2>
 <a class="anchor" id="a9765c8c2336ca3064c2bbc3cd6fb5fe8"></a><!-- doxytag: member="Modules.h::GLOBALMODULEDEFS" ref="a9765c8c2336ca3064c2bbc3cd6fb5fe8" args="(CLASS, DESCRIPTION)" -->
@@ -242,8 +242,8 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 <b>Value:</b><div class="fragment"><pre class="fragment">CLASS(<a class="code" href="Modules_8h.html#a2f2b7746e7590ac0383278e975f13855">ModHandle</a> pDLL, <a class="code" href="classCUser.html">CUser</a>* pUser, <a class="code" href="classCIRCNetwork.html">CIRCNetwork</a>* pNetwork, <span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sModName, \
-                        <span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sModPath) \
-                        : <a class="code" href="classCModule.html" title="The base class for your own ZNC modules.">CModule</a>(pDLL, pUser, pNetwork, sModName, sModPath)
+                        <span class="keyword">const</span> <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; sModPath, <a class="code" href="classCModInfo.html#a616fabebbbf49bf06cfff90b8f32c57f">CModInfo::EModuleType</a> eType) \
+                        : <a class="code" href="classCModule.html" title="The base class for your own ZNC modules.">CModule</a>(pDLL, pUser, pNetwork, sModName, sModPath, eType)
 </pre></div>
 <p>Instead of writing a constructor, you should call this macro. </p>
 <p>It accepts all the necessary arguments and passes them on to <a class="el" href="classCModule.html" title="The base class for your own ZNC modules.">CModule</a>'s constructor. You should assume that there are no arguments to the constructor.</p>
@@ -417,14 +417,14 @@ template&lt;class M &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="af904302dd2a4dba2790f07894c670df7"></a><!-- doxytag: member="Modules.h::TModLoad" ref="af904302dd2a4dba2790f07894c670df7" args="(ModHandle p, CUser *pUser, CIRCNetwork *pNetwork, const CString &amp;sModName, const CString &amp;sModPath)" -->
+<a class="anchor" id="a8b5d0454edfcc804812ba915d0102551"></a><!-- doxytag: member="Modules.h::TModLoad" ref="a8b5d0454edfcc804812ba915d0102551" args="(ModHandle p, CUser *pUser, CIRCNetwork *pNetwork, const CString &amp;sModName, const CString &amp;sModPath, CModInfo::EModuleType eType)" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class M &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCModule.html">CModule</a>* <a class="el" href="Modules_8h.html#af904302dd2a4dba2790f07894c670df7">TModLoad</a> </td>
+          <td class="memname"><a class="el" href="classCModule.html">CModule</a>* <a class="el" href="Modules_8h.html#a8b5d0454edfcc804812ba915d0102551">TModLoad</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="Modules_8h.html#a2f2b7746e7590ac0383278e975f13855">ModHandle</a>&#160;</td>
           <td class="paramname"><em>p</em>, </td>
@@ -451,7 +451,13 @@ template&lt;class M &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
-          <td class="paramname"><em>sModPath</em>&#160;</td>
+          <td class="paramname"><em>sModPath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classCModInfo.html#a616fabebbbf49bf06cfff90b8f32c57f">CModInfo::EModuleType</a>&#160;</td>
+          <td class="paramname"><em>eType</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -482,7 +488,7 @@ template&lt;class M &gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 8 2015 08:56:13 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Mar 7 2015 22:17:40 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

@@ -123,7 +123,7 @@ Public Types</h2></td></tr>
  }</td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#ae761cc022a76a578037111407df44eff">CPerlModule</a> (<a class="el" href="classCUser.html">CUser</a> *pUser, <a class="el" href="classCIRCNetwork.html">CIRCNetwork</a> *pNetwork, const <a class="el" href="classCString.html">CString</a> &amp;sModName, const <a class="el" href="classCString.html">CString</a> &amp;sDataPath, SV *perlObj)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a7a7bd4a92290eb570cf6b6f104df6da5">CPerlModule</a> (<a class="el" href="classCUser.html">CUser</a> *pUser, <a class="el" href="classCIRCNetwork.html">CIRCNetwork</a> *pNetwork, const <a class="el" href="classCString.html">CString</a> &amp;sModName, const <a class="el" href="classCString.html">CString</a> &amp;sDataPath, <a class="el" href="classCModInfo.html#a616fabebbbf49bf06cfff90b8f32c57f">CModInfo::EModuleType</a> eType, SV *perlObj)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">SV *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a8d1e5131568a0384584557f005ce907a">GetPerlObj</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPerlModule.html#a03c0b5f5de487bf2a71e4151ce536c8e">OnBoot</a> () override</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This module hook is called during ZNC startup.  <a href="#a03c0b5f5de487bf2a71e4151ce536c8e"></a><br/></td></tr>
@@ -466,12 +466,12 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ae761cc022a76a578037111407df44eff"></a><!-- doxytag: member="CPerlModule::CPerlModule" ref="ae761cc022a76a578037111407df44eff" args="(CUser *pUser, CIRCNetwork *pNetwork, const CString &amp;sModName, const CString &amp;sDataPath, SV *perlObj)" -->
+<a class="anchor" id="a7a7bd4a92290eb570cf6b6f104df6da5"></a><!-- doxytag: member="CPerlModule::CPerlModule" ref="a7a7bd4a92290eb570cf6b6f104df6da5" args="(CUser *pUser, CIRCNetwork *pNetwork, const CString &amp;sModName, const CString &amp;sDataPath, CModInfo::EModuleType eType, SV *perlObj)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCPerlModule.html#ae761cc022a76a578037111407df44eff">CPerlModule::CPerlModule</a> </td>
+          <td class="memname"><a class="el" href="classCPerlModule.html#a7a7bd4a92290eb570cf6b6f104df6da5">CPerlModule::CPerlModule</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classCUser.html">CUser</a> *&#160;</td>
           <td class="paramname"><em>pUser</em>, </td>
@@ -493,6 +493,12 @@ Protected Attributes</h2></td></tr>
           <td></td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>sDataPath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classCModInfo.html#a616fabebbbf49bf06cfff90b8f32c57f">CModInfo::EModuleType</a>&#160;</td>
+          <td class="paramname"><em>eType</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -5659,7 +5665,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 27 2015 17:20:19 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Mar 7 2015 22:17:42 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
