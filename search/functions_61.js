@@ -50,7 +50,7 @@ var searchData=
   ['addtrustedfingerprint',['AddTrustedFingerprint',['../classCIRCNetwork.html#a1252f6a0868cbdc59472b6b68362e66d',1,'CIRCNetwork']]],
   ['addtrustedproxy',['AddTrustedProxy',['../classCZNC.html#a62ffd51ce624e2dd8dac0a5b9c8fb7a0',1,'CZNC']]],
   ['addtype',['AddType',['../classCModInfo.html#aba22fca77e2dab7c959e097bb837eac7',1,'CModInfo']]],
-  ['adduser',['AddUser',['../classCZNC.html#a46ab5aa0adae14f80967dd3d9c629e78',1,'CZNC']]],
+  ['adduser',['AddUser',['../classCZNC.html#a6bbe547ac110e45a15e1fcbb8e6e0721',1,'CZNC']]],
   ['allowconnectionfrom',['AllowConnectionFrom',['../classCZNC.html#afa4b1976a35f93ec4efd2c6e25a8e092',1,'CZNC']]],
   ['allowwrite',['AllowWrite',['../classCsock.html#ad93f78657c5e8712ee1f08a928332d34',1,'Csock::AllowWrite(uint64_t &amp;iNOW) const '],['../classCsock.html#ad93f78657c5e8712ee1f08a928332d34',1,'Csock::AllowWrite(uint64_t &amp;iNOW) const ']]],
   ['appendpath',['AppendPath',['../classCTemplate.html#add77742c27b41209716bd46b8f3d8f7a',1,'CTemplate']]],

@@ -190,7 +190,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#aeb9494dc8f084bb869960556d7b5b80a">UpdateModule</a> (const <a class="el" href="classCString.html">CString</a> &amp;sModule)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Reload a module everywhere.  <a href="#aeb9494dc8f084bb869960556d7b5b80a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#ab21f47bfec515155e3e685fb8d855284">DeleteUser</a> (const <a class="el" href="classCString.html">CString</a> &amp;sUsername)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a46ab5aa0adae14f80967dd3d9c629e78">AddUser</a> (<a class="el" href="classCUser.html">CUser</a> *pUser, <a class="el" href="classCString.html">CString</a> &amp;sErrorRet)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a6bbe547ac110e45a15e1fcbb8e6e0721">AddUser</a> (<a class="el" href="classCUser.html">CUser</a> *pUser, <a class="el" href="classCString.html">CString</a> &amp;sErrorRet, bool bStartup=false)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const std::map&lt; <a class="el" href="classCString.html">CString</a>, <a class="el" href="classCUser.html">CUser</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#aa27953d60feb3e279264a15810cad0a4">GetUserMap</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCListener.html">CListener</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#ab542d6909ec3b6cbc74b30de84412d6a">FindListener</a> (u_short uPort, const <a class="el" href="classCString.html">CString</a> &amp;BindHost, <a class="el" href="Socket_8h.html#a0f0c0c7491ad9c25858ebadd095092e9">EAddrType</a> eAddr)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a44818020e26dc6115e39fbcfcff944af">AddListener</a> (<a class="el" href="classCListener.html">CListener</a> *)</td></tr>
@@ -560,12 +560,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a46ab5aa0adae14f80967dd3d9c629e78"></a><!-- doxytag: member="CZNC::AddUser" ref="a46ab5aa0adae14f80967dd3d9c629e78" args="(CUser *pUser, CString &amp;sErrorRet)" -->
+<a class="anchor" id="a6bbe547ac110e45a15e1fcbb8e6e0721"></a><!-- doxytag: member="CZNC::AddUser" ref="a6bbe547ac110e45a15e1fcbb8e6e0721" args="(CUser *pUser, CString &amp;sErrorRet, bool bStartup=false)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classCZNC.html#a46ab5aa0adae14f80967dd3d9c629e78">CZNC::AddUser</a> </td>
+          <td class="memname">bool <a class="el" href="classCZNC.html#a6bbe547ac110e45a15e1fcbb8e6e0721">CZNC::AddUser</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classCUser.html">CUser</a> *&#160;</td>
           <td class="paramname"><em>pUser</em>, </td>
@@ -574,7 +574,13 @@ Protected Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
-          <td class="paramname"><em>sErrorRet</em>&#160;</td>
+          <td class="paramname"><em>sErrorRet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bStartup</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2695,7 +2701,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 26 2015 06:09:19 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 3 2015 20:55:27 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
