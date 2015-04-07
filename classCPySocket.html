@@ -651,6 +651,8 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#abffe3da5cb2bc43cfdc2235cbbad43c9">GetSSLMethod</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a6a57e3e3f986353b91ee7f2ab14f0ed5">SetSSLObject</a> (SSL *ssl, bool bDeleteExisting=false)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a6a57e3e3f986353b91ee7f2ab14f0ed5">SetSSLObject</a> (SSL *ssl, bool bDeleteExisting=false)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">SSL *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a9b9f79fa73fe728542b34f592aad24ac">GetSSLObject</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">SSL *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a9b9f79fa73fe728542b34f592aad24ac">GetSSLObject</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a5ec2d81846289cdd70407691d9345591">SetCTXObject</a> (SSL_CTX *sslCtx, bool bDeleteExisting=false)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a5ec2d81846289cdd70407691d9345591">SetCTXObject</a> (SSL_CTX *sslCtx, bool bDeleteExisting=false)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">SSL_SESSION *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#ab519dfdc201e09bf8453ab259861f3d2">GetSSLSession</a> () const </td></tr>
@@ -4396,8 +4398,6 @@ Protected Attributes</h2></td></tr>
 
 <p>returns a reference to the sock </p>
 
-<p>Referenced by <a class="el" href="classCExecSock.html#aafd98b69a6096f4e5fae7727dce57e15">CExecSock::~CExecSock()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="ae1f84de0d38450c53dce99f8f4d649ab"></a><!-- doxytag: member="CPySocket::GetRSock" ref="ae1f84de0d38450c53dce99f8f4d649ab" args="()" -->
@@ -4415,6 +4415,8 @@ Protected Attributes</h2></td></tr>
 <div class="memdoc">
 
 <p>returns a reference to the sock </p>
+
+<p>Referenced by <a class="el" href="classCExecSock.html#aafd98b69a6096f4e5fae7727dce57e15">CExecSock::~CExecSock()</a>.</p>
 
 </div>
 </div>
@@ -4664,6 +4666,38 @@ Protected Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">int <a class="el" href="classCsock.html#abffe3da5cb2bc43cfdc2235cbbad43c9">Csock::GetSSLMethod</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9b9f79fa73fe728542b34f592aad24ac"></a><!-- doxytag: member="CPySocket::GetSSLObject" ref="a9b9f79fa73fe728542b34f592aad24ac" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SSL* <a class="el" href="classCsock.html#a9b9f79fa73fe728542b34f592aad24ac">Csock::GetSSLObject</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9b9f79fa73fe728542b34f592aad24ac"></a><!-- doxytag: member="CPySocket::GetSSLObject" ref="a9b9f79fa73fe728542b34f592aad24ac" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SSL* <a class="el" href="classCsock.html#a9b9f79fa73fe728542b34f592aad24ac">Csock::GetSSLObject</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const<code> [inherited]</code></td>
@@ -6515,8 +6549,6 @@ Protected Attributes</h2></td></tr>
 
 <p>sets the max buffered threshold when <a class="el" href="classCsock.html#af748608ba80f9bd54294292930db560e" title="set the value of m_bEnableReadLine to true, we don&#39;t want to store a buffer for ReadLine, unless we want it">EnableReadLine()</a> is enabled </p>
 
-<p>Referenced by <a class="el" href="classCClient.html#a51f196439c3218b2dce8f7c6610dad14">CClient::CClient()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a06f840efef58b550473f4fe1e5f27efa"></a><!-- doxytag: member="CPySocket::SetMaxBufferThreshold" ref="a06f840efef58b550473f4fe1e5f27efa" args="(uint32_t iThreshold)" -->
@@ -6536,6 +6568,8 @@ Protected Attributes</h2></td></tr>
 
 <p>sets the max buffered threshold when <a class="el" href="classCsock.html#af748608ba80f9bd54294292930db560e" title="set the value of m_bEnableReadLine to true, we don&#39;t want to store a buffer for ReadLine, unless we want it">EnableReadLine()</a> is enabled </p>
 
+<p>Referenced by <a class="el" href="classCClient.html#a51f196439c3218b2dce8f7c6610dad14">CClient::CClient()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a15b6cad8607be4ab31e7a46f0eca55e1"></a><!-- doxytag: member="CPySocket::SetParentSockName" ref="a15b6cad8607be4ab31e7a46f0eca55e1" args="(const CS_STRING &amp;sParentName)" -->
@@ -6829,6 +6863,23 @@ Protected Attributes</h2></td></tr>
 
 <p>legacy, deprecated </p>
 <dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classCsock.html#ad3ec3c47121398d0aa0978e844843e4a" title="bitwise flags, 0 means don&#39;t require cert, SSL_VERIFY_PEER verifies peers, SSL_VERIFY_FAIL_IF_NO_PEER...">SetRequireClientCertFlags</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8c0b180de5d12104c0f7018eec13e57a"></a><!-- doxytag: member="CPySocket::SetRSock" ref="a8c0b180de5d12104c0f7018eec13e57a" args="(cs_sock_t iSock)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classCsock.html#a8c0b180de5d12104c0f7018eec13e57a">Csock::SetRSock</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="build_2include_2znc_2Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a>&#160;</td>
+          <td class="paramname"><em>iSock</em></td><td>)</td>
+          <td><code> [inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
 
 </div>
 </div>
@@ -6848,23 +6899,6 @@ Protected Attributes</h2></td></tr>
 <div class="memdoc">
 
 <p>Referenced by <a class="el" href="classCExecSock.html#aafd98b69a6096f4e5fae7727dce57e15">CExecSock::~CExecSock()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a8c0b180de5d12104c0f7018eec13e57a"></a><!-- doxytag: member="CPySocket::SetRSock" ref="a8c0b180de5d12104c0f7018eec13e57a" args="(cs_sock_t iSock)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classCsock.html#a8c0b180de5d12104c0f7018eec13e57a">Csock::SetRSock</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="build_2include_2znc_2Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a>&#160;</td>
-          <td class="paramname"><em>iSock</em></td><td>)</td>
-          <td><code> [inherited]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
 
 </div>
 </div>
@@ -7326,6 +7360,8 @@ Protected Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Referenced by <a class="el" href="classCExecSock.html#aafd98b69a6096f4e5fae7727dce57e15">CExecSock::~CExecSock()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a66a0fe0e53850900f824ca60ced81e05"></a><!-- doxytag: member="CPySocket::SetWSock" ref="a66a0fe0e53850900f824ca60ced81e05" args="(cs_sock_t iSock)" -->
@@ -7342,8 +7378,6 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-
-<p>Referenced by <a class="el" href="classCExecSock.html#aafd98b69a6096f4e5fae7727dce57e15">CExecSock::~CExecSock()</a>.</p>
 
 </div>
 </div>
@@ -8037,7 +8071,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 26 2015 06:09:18 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 7 2015 19:28:53 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

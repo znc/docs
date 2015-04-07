@@ -683,6 +683,8 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#abffe3da5cb2bc43cfdc2235cbbad43c9">GetSSLMethod</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a6a57e3e3f986353b91ee7f2ab14f0ed5">SetSSLObject</a> (SSL *ssl, bool bDeleteExisting=false)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a6a57e3e3f986353b91ee7f2ab14f0ed5">SetSSLObject</a> (SSL *ssl, bool bDeleteExisting=false)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">SSL *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a9b9f79fa73fe728542b34f592aad24ac">GetSSLObject</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">SSL *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a9b9f79fa73fe728542b34f592aad24ac">GetSSLObject</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a5ec2d81846289cdd70407691d9345591">SetCTXObject</a> (SSL_CTX *sslCtx, bool bDeleteExisting=false)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a5ec2d81846289cdd70407691d9345591">SetCTXObject</a> (SSL_CTX *sslCtx, bool bDeleteExisting=false)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">SSL_SESSION *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#ab519dfdc201e09bf8453ab259861f3d2">GetSSLSession</a> () const </td></tr>
@@ -4861,6 +4863,38 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a9b9f79fa73fe728542b34f592aad24ac"></a><!-- doxytag: member="CClient::GetSSLObject" ref="a9b9f79fa73fe728542b34f592aad24ac" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SSL* <a class="el" href="classCsock.html#a9b9f79fa73fe728542b34f592aad24ac">Csock::GetSSLObject</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9b9f79fa73fe728542b34f592aad24ac"></a><!-- doxytag: member="CClient::GetSSLObject" ref="a9b9f79fa73fe728542b34f592aad24ac" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SSL* <a class="el" href="classCsock.html#a9b9f79fa73fe728542b34f592aad24ac">Csock::GetSSLObject</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a3673ac5321422d5f0589c9db9149f3d2"></a><!-- doxytag: member="CClient::GetSSLPeerFingerprint" ref="a3673ac5321422d5f0589c9db9149f3d2" args="() const " -->
 <div class="memitem">
 <div class="memproto">
@@ -7195,6 +7229,8 @@ Friends</h2></td></tr>
 
 <p>sets the max buffered threshold when <a class="el" href="classCsock.html#af748608ba80f9bd54294292930db560e" title="set the value of m_bEnableReadLine to true, we don&#39;t want to store a buffer for ReadLine, unless we want it">EnableReadLine()</a> is enabled </p>
 
+<p>Referenced by <a class="el" href="classCClient.html#a51f196439c3218b2dce8f7c6610dad14">CClient()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a06f840efef58b550473f4fe1e5f27efa"></a><!-- doxytag: member="CClient::SetMaxBufferThreshold" ref="a06f840efef58b550473f4fe1e5f27efa" args="(uint32_t iThreshold)" -->
@@ -7213,8 +7249,6 @@ Friends</h2></td></tr>
 <div class="memdoc">
 
 <p>sets the max buffered threshold when <a class="el" href="classCsock.html#af748608ba80f9bd54294292930db560e" title="set the value of m_bEnableReadLine to true, we don&#39;t want to store a buffer for ReadLine, unless we want it">EnableReadLine()</a> is enabled </p>
-
-<p>Referenced by <a class="el" href="classCClient.html#a51f196439c3218b2dce8f7c6610dad14">CClient()</a>.</p>
 
 </div>
 </div>
@@ -8075,8 +8109,6 @@ Friends</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Referenced by <a class="el" href="classCExecSock.html#aafd98b69a6096f4e5fae7727dce57e15">CExecSock::~CExecSock()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a66a0fe0e53850900f824ca60ced81e05"></a><!-- doxytag: member="CClient::SetWSock" ref="a66a0fe0e53850900f824ca60ced81e05" args="(cs_sock_t iSock)" -->
@@ -8093,6 +8125,8 @@ Friends</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Referenced by <a class="el" href="classCExecSock.html#aafd98b69a6096f4e5fae7727dce57e15">CExecSock::~CExecSock()</a>.</p>
 
 </div>
 </div>
@@ -9120,7 +9154,7 @@ Friends</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 1 2015 21:07:43 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 7 2015 19:28:52 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

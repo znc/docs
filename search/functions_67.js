@@ -239,6 +239,7 @@ var searchData=
   ['getssl',['GetSSL',['../classCsock.html#adfe38d92769d41132435094784524930',1,'Csock::GetSSL() const '],['../classCsock.html#adfe38d92769d41132435094784524930',1,'Csock::GetSSL() const ']]],
   ['getsslciphers',['GetSSLCiphers',['../classCZNC.html#a5d90576373bd699ec5aae7a501aa0d7a',1,'CZNC']]],
   ['getsslmethod',['GetSSLMethod',['../classCsock.html#abffe3da5cb2bc43cfdc2235cbbad43c9',1,'Csock::GetSSLMethod() const '],['../classCsock.html#abffe3da5cb2bc43cfdc2235cbbad43c9',1,'Csock::GetSSLMethod() const ']]],
+  ['getsslobject',['GetSSLObject',['../classCsock.html#a9b9f79fa73fe728542b34f592aad24ac',1,'Csock::GetSSLObject() const '],['../classCsock.html#a9b9f79fa73fe728542b34f592aad24ac',1,'Csock::GetSSLObject() const ']]],
   ['getsslpeerfingerprint',['GetSSLPeerFingerprint',['../classCZNCSock.html#a3673ac5321422d5f0589c9db9149f3d2',1,'CZNCSock']]],
   ['getsslsession',['GetSSLSession',['../classCsock.html#ab519dfdc201e09bf8453ab259861f3d2',1,'Csock::GetSSLSession() const '],['../classCsock.html#ab519dfdc201e09bf8453ab259861f3d2',1,'Csock::GetSSLSession() const ']]],
   ['getstarttime',['GetStartTime',['../classCsock.html#ae61679ad6a19840046fca442e4621fec',1,'Csock::GetStartTime() const '],['../classCsock.html#ae61679ad6a19840046fca442e4621fec',1,'Csock::GetStartTime() const ']]],
