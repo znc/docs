@@ -107,35 +107,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classCTable__coll__graph.png" border="0" usemap="#CTable_coll__map" alt="Collaboration graph"/></div>
 <map name="CTable_coll__map" id="CTable_coll__map">
-<area shape="rect" id="node2" title="STL class." alt="" coords="564,8,828,37"/><area shape="rect" id="node10" href="classCString.html" title="String class that is used inside ZNC." alt="" coords="379,125,448,155"/><area shape="rect" id="node12" title="STL class." alt="" coords="241,125,327,155"/><area shape="rect" id="node14" title="STL class." alt="" coords="5,125,189,155"/></map>
+<area shape="rect" id="node2" title="STL class." alt="" coords="5,261,269,291"/><area shape="rect" id="node8" href="classCString.html" title="String class that is used inside ZNC." alt="" coords="341,165,411,195"/><area shape="rect" id="node10" title="STL class." alt="" coords="333,85,419,115"/><area shape="rect" id="node12" title="STL class." alt="" coords="284,5,468,35"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 
 <p><a href="classCTable-members.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCTable.html#a15b23ddb9d30acac76b4d10715e5cb55">CTable</a> (size_type uPreferredWidth=110)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a15b23ddb9d30acac76b4d10715e5cb55"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCTable.html#ad985a92cc568ed77bca58adf638abebf">CTable</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#ad985a92cc568ed77bca58adf638abebf"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCTable.html#a6c2b91ab372a4e9db389e059e5e8af80">~CTable</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCTable.html#af9d954f48baab71b4f1cde43394685ad">AddColumn</a> (const <a class="el" href="classCString.html">CString</a> &amp;sName, bool bWrappable=true)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new column to the table.  <a href="#af9d954f48baab71b4f1cde43394685ad"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCTable.html#a06bfd743e00ab5295f15da545b05d3d4">AddColumn</a> (const <a class="el" href="classCString.html">CString</a> &amp;sName)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new column to the table.  <a href="#a06bfd743e00ab5295f15da545b05d3d4"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCTable.html#ac6817cb38f1e9ca815ceb16d69802192">AddRow</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new row to the table.  <a href="#ac6817cb38f1e9ca815ceb16d69802192"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCTable.html#a7bcf5dacb9ebd5079a0826fee9afb9ca">SetCell</a> (const <a class="el" href="classCString.html">CString</a> &amp;sColumn, const <a class="el" href="classCString.html">CString</a> &amp;sValue, size_type uRowIdx=~0)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a given cell in the table to a value.  <a href="#a7bcf5dacb9ebd5079a0826fee9afb9ca"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCTable.html#ab0ba1701f9307fd2b9954a611dcabd3e">GetLine</a> (unsigned int uIdx, <a class="el" href="classCString.html">CString</a> &amp;sLine) const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a line of the table's output.  <a href="#ab0ba1701f9307fd2b9954a611dcabd3e"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">CString::size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCTable.html#a244630c7b0e4edf6d5a33329085c3f49">GetColumnWidth</a> (unsigned int uIdx) const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the width of the given column.  <a href="#a244630c7b0e4edf6d5a33329085c3f49"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCTable.html#ada2fd03e0f806e1c6b2df1ef9215c0d2">Clear</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Completely clear the table.  <a href="#ada2fd03e0f806e1c6b2df1ef9215c0d2"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="ZNCString_8h.html#af7252b7c4a0d4ec44ddc136c6055ae51">VCString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCTable.html#a96ccfa2b96ebc7a669a63f44af6020d8">m_vsHeaders</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">std::vector&lt; CString::size_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCTable.html#a91511f53fc14b791f39855bf163e1be3">m_vuMaxWidths</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">std::vector&lt; CString::size_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCTable.html#a6d0cfad84874c25c6e883c95c3897f5b">m_vuMinWidths</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">std::vector&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCTable.html#a5325572eac3c057cb9cf899d382c8c22">m_vbWrappable</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCTable.html#ae7ea09bb12f9d2daf0ede6b791714ce0">m_uPreferredWidth</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="ZNCString_8h.html#af7252b7c4a0d4ec44ddc136c6055ae51">VCString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCTable.html#ab4ef7514684d2326066caff490447cdc">m_vsOutput</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><b>elements</b></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">STL member.  <a href="#a2396209900e8f592db1f0b2467f7d899"></a><br/></td></tr>
@@ -143,8 +137,8 @@ Protected Attributes</h2></td></tr>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Generate a grid-like output from a given input. </p>
 <div class="fragment"><pre class="fragment">  <a class="code" href="classCTable.html" title="Generate a grid-like output from a given input.">CTable</a> table;
-  table.<a class="code" href="classCTable.html#af9d954f48baab71b4f1cde43394685ad" title="Adds a new column to the table.">AddColumn</a>(<span class="stringliteral">&quot;a&quot;</span>);
-  table.<a class="code" href="classCTable.html#af9d954f48baab71b4f1cde43394685ad" title="Adds a new column to the table.">AddColumn</a>(<span class="stringliteral">&quot;b&quot;</span>);
+  table.<a class="code" href="classCTable.html#a06bfd743e00ab5295f15da545b05d3d4" title="Adds a new column to the table.">AddColumn</a>(<span class="stringliteral">&quot;a&quot;</span>);
+  table.<a class="code" href="classCTable.html#a06bfd743e00ab5295f15da545b05d3d4" title="Adds a new column to the table.">AddColumn</a>(<span class="stringliteral">&quot;b&quot;</span>);
   table.<a class="code" href="classCTable.html#ac6817cb38f1e9ca815ceb16d69802192" title="Adds a new row to the table.">AddRow</a>();
   table.<a class="code" href="classCTable.html#a7bcf5dacb9ebd5079a0826fee9afb9ca" title="Sets a given cell in the table to a value.">SetCell</a>(<span class="stringliteral">&quot;a&quot;</span>, <span class="stringliteral">&quot;hello&quot;</span>);
   table.<a class="code" href="classCTable.html#a7bcf5dacb9ebd5079a0826fee9afb9ca" title="Sets a given cell in the table to a value.">SetCell</a>(<span class="stringliteral">&quot;b&quot;</span>, <span class="stringliteral">&quot;world&quot;</span>);
@@ -161,16 +155,15 @@ Protected Attributes</h2></td></tr>
 +-------+-------+
 | hello | world |
 +-------+-------+</pre></div> </div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a15b23ddb9d30acac76b4d10715e5cb55"></a><!-- doxytag: member="CTable::CTable" ref="a15b23ddb9d30acac76b4d10715e5cb55" args="(size_type uPreferredWidth=110)" -->
+<a class="anchor" id="ad985a92cc568ed77bca58adf638abebf"></a><!-- doxytag: member="CTable::CTable" ref="ad985a92cc568ed77bca58adf638abebf" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCTable.html#a15b23ddb9d30acac76b4d10715e5cb55">CTable::CTable</a> </td>
+          <td class="memname"><a class="el" href="classCTable.html#ad985a92cc568ed77bca58adf638abebf">CTable::CTable</a> </td>
           <td>(</td>
-          <td class="paramtype">size_type&#160;</td>
-          <td class="paramname"><em>uPreferredWidth</em> = <code>110</code></td><td>)</td>
-          <td><code> [inline, explicit]</code></td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [inline]</code></td>
         </tr>
       </table>
 </div>
@@ -203,26 +196,16 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="af9d954f48baab71b4f1cde43394685ad"></a><!-- doxytag: member="CTable::AddColumn" ref="af9d954f48baab71b4f1cde43394685ad" args="(const CString &amp;sName, bool bWrappable=true)" -->
+<a class="anchor" id="a06bfd743e00ab5295f15da545b05d3d4"></a><!-- doxytag: member="CTable::AddColumn" ref="a06bfd743e00ab5295f15da545b05d3d4" args="(const CString &amp;sName)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classCTable.html#af9d954f48baab71b4f1cde43394685ad">CTable::AddColumn</a> </td>
+          <td class="memname">bool <a class="el" href="classCTable.html#a06bfd743e00ab5295f15da545b05d3d4">CTable::AddColumn</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
-          <td class="paramname"><em>sName</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>sName</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>bWrappable</em> = <code>true</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div>
@@ -233,7 +216,6 @@ Protected Attributes</h2></td></tr>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">sName</td><td>The name of the column. </td></tr>
-    <tr><td class="paramname">bWrappable</td><td>True if long lines can be wrapped in the same cell. </td></tr>
   </table>
   </dd>
 </dl>
@@ -276,33 +258,6 @@ Protected Attributes</h2></td></tr>
 <div class="memdoc">
 
 <p>Completely clear the table. </p>
-
-</div>
-</div>
-<a class="anchor" id="a244630c7b0e4edf6d5a33329085c3f49"></a><!-- doxytag: member="CTable::GetColumnWidth" ref="a244630c7b0e4edf6d5a33329085c3f49" args="(unsigned int uIdx) const " -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">CString::size_type <a class="el" href="classCTable.html#a244630c7b0e4edf6d5a33329085c3f49">CTable::GetColumnWidth</a> </td>
-          <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>uIdx</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Return the width of the given column. </p>
-<p>Please note that adding and filling new rows might change the result of this function! </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">uIdx</td><td>The index of the column you are interested in. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd>The width of the column. </dd></dl>
 
 </div>
 </div>
@@ -405,32 +360,6 @@ template&lt;typename T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ae7ea09bb12f9d2daf0ede6b791714ce0"></a><!-- doxytag: member="CTable::m_uPreferredWidth" ref="ae7ea09bb12f9d2daf0ede6b791714ce0" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_type <a class="el" href="classCTable.html#ae7ea09bb12f9d2daf0ede6b791714ce0">CTable::m_uPreferredWidth</a><code> [protected]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a5325572eac3c057cb9cf899d382c8c22"></a><!-- doxytag: member="CTable::m_vbWrappable" ref="a5325572eac3c057cb9cf899d382c8c22" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;bool&gt; <a class="el" href="classCTable.html#a5325572eac3c057cb9cf899d382c8c22">CTable::m_vbWrappable</a><code> [protected]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="a96ccfa2b96ebc7a669a63f44af6020d8"></a><!-- doxytag: member="CTable::m_vsHeaders" ref="a96ccfa2b96ebc7a669a63f44af6020d8" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -450,32 +379,6 @@ template&lt;typename T&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="ZNCString_8h.html#af7252b7c4a0d4ec44ddc136c6055ae51">VCString</a> <a class="el" href="classCTable.html#ab4ef7514684d2326066caff490447cdc">CTable::m_vsOutput</a><code> [mutable, protected]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a91511f53fc14b791f39855bf163e1be3"></a><!-- doxytag: member="CTable::m_vuMaxWidths" ref="a91511f53fc14b791f39855bf163e1be3" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;CString::size_type&gt; <a class="el" href="classCTable.html#a91511f53fc14b791f39855bf163e1be3">CTable::m_vuMaxWidths</a><code> [protected]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a6d0cfad84874c25c6e883c95c3897f5b"></a><!-- doxytag: member="CTable::m_vuMinWidths" ref="a6d0cfad84874c25c6e883c95c3897f5b" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;CString::size_type&gt; <a class="el" href="classCTable.html#a6d0cfad84874c25c6e883c95c3897f5b">CTable::m_vuMinWidths</a><code> [protected]</code></td>
         </tr>
       </table>
 </div>
@@ -504,7 +407,7 @@ template&lt;typename T&gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 22 2014 15:30:15 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 9 2015 20:41:32 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

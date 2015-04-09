@@ -202,10 +202,8 @@ var searchData=
   ['m_5funumctcp',['m_uNumCTCP',['../classCIRCSock.html#a6122b0392c7d2e650a8ae286ccb73301',1,'CIRCSock']]],
   ['m_5fuport',['m_uPort',['../classCListener.html#a04a8b2f6b2dfbcc7438e58050259d9bc',1,'CListener::m_uPort()'],['../classCServer.html#ad282f9e8885d332fc672976d8bba466a',1,'CServer::m_uPort()']]],
   ['m_5fupostlen',['m_uPostLen',['../classCHTTPSock.html#ac665c108f3614abbbf6e6ed67aba83c2',1,'CHTTPSock']]],
-  ['m_5fupreferredwidth',['m_uPreferredWidth',['../classCTable.html#ae7ea09bb12f9d2daf0ede6b791714ce0',1,'CTable']]],
   ['m_5fuserveridx',['m_uServerIdx',['../classCIRCNetwork.html#aa1281c5c6b0c68315706ddc1e11c53cd',1,'CIRCNetwork']]],
   ['m_5futtl',['m_uTTL',['../classTCacheMap.html#a2d8a4c593429354d3a442ba77173ed80',1,'TCacheMap']]],
-  ['m_5fvbwrappable',['m_vbWrappable',['../classCTable.html#a5325572eac3c057cb9cf899d382c8c22',1,'CTable']]],
   ['m_5fvccrons',['m_vcCrons',['../classCSockCommon.html#adc32300d8e557b3e40b5b535338b2415',1,'CSockCommon']]],
   ['m_5fvchans',['m_vChans',['../classCIRCNetwork.html#a8d338488fdd35cd5a37b9e258f41e67b',1,'CIRCNetwork']]],
   ['m_5fvclients',['m_vClients',['../classCIRCNetwork.html#afc0f3f3f0cf7dddf07796a81b55832b0',1,'CIRCNetwork::m_vClients()'],['../classCUser.html#a3c4c1f6aa917bbbad3d29d216d308583',1,'CUser::m_vClients()']]],
@@ -219,7 +217,5 @@ var searchData=
   ['m_5fvsmotd',['m_vsMotd',['../classCZNC.html#a77c73e215ae312fc683b58a282bd1c6e',1,'CZNC']]],
   ['m_5fvsoutput',['m_vsOutput',['../classCTable.html#ab4ef7514684d2326066caff490447cdc',1,'CTable']]],
   ['m_5fvssendqueue',['m_vsSendQueue',['../classCIRCSock.html#a63608a81ad8ea61fe48c0f16115ef4c8',1,'CIRCSock']]],
-  ['m_5fvstrustedproxies',['m_vsTrustedProxies',['../classCZNC.html#a7e1f2715045e46ffb341e85f80062a18',1,'CZNC']]],
-  ['m_5fvumaxwidths',['m_vuMaxWidths',['../classCTable.html#a91511f53fc14b791f39855bf163e1be3',1,'CTable']]],
-  ['m_5fvuminwidths',['m_vuMinWidths',['../classCTable.html#a6d0cfad84874c25c6e883c95c3897f5b',1,'CTable']]]
+  ['m_5fvstrustedproxies',['m_vsTrustedProxies',['../classCZNC.html#a7e1f2715045e46ffb341e85f80062a18',1,'CZNC']]]
 ];

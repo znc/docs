@@ -39,7 +39,6 @@ var searchData=
   ['getclientencoding',['GetClientEncoding',['../classCUser.html#a650be9d8368f53321fa844df02e9bfbc',1,'CUser']]],
   ['getclients',['GetClients',['../classCClient.html#a2e39bf0168dee93075140fb2fc3015c2',1,'CClient::GetClients()'],['../classCIRCNetwork.html#ab6bb2773e570953262b61aec47136229',1,'CIRCNetwork::GetClients()']]],
   ['getclosetype',['GetCloseType',['../classCsock.html#ae1c4d966c376031c5a4422dd0c6fd80c',1,'Csock::GetCloseType() const '],['../classCsock.html#ae1c4d966c376031c5a4422dd0c6fd80c',1,'Csock::GetCloseType() const ']]],
-  ['getcolumnwidth',['GetColumnWidth',['../classCTable.html#a244630c7b0e4edf6d5a33329085c3f49',1,'CTable']]],
   ['getcommand',['GetCommand',['../classCModCommand.html#accfec670153307b7392729372624eab6',1,'CModCommand']]],
   ['getcommonchans',['GetCommonChans',['../classCNick.html#a7b88c7fa8ff16fd8e8eba34dc58eb59b',1,'CNick']]],
   ['getcompileoptionsstring',['GetCompileOptionsString',['../classCZNC.html#a449f570b54ef2db316afd90675564c7a',1,'CZNC']]],
