@@ -87,7 +87,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <!-- doxytag: class="CTable" --><!-- doxytag: inherits="std::vector" -->
-<p>Generate a grid-like output from a given input.  
+<p>Previously this generated a grid-like output from a given input.  
  <a href="classCTable.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="Utils_8h_source.html">Utils.h</a>&gt;</code></p>
@@ -135,8 +135,8 @@ Protected Attributes</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">STL member.  <a href="#a2396209900e8f592db1f0b2467f7d899"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>Generate a grid-like output from a given input. </p>
-<div class="fragment"><pre class="fragment">  <a class="code" href="classCTable.html" title="Generate a grid-like output from a given input.">CTable</a> table;
+<div class="textblock"><p>Previously this generated a grid-like output from a given input. </p>
+<div class="fragment"><pre class="fragment">  <a class="code" href="classCTable.html" title="Previously this generated a grid-like output from a given input.">CTable</a> table;
   table.<a class="code" href="classCTable.html#a06bfd743e00ab5295f15da545b05d3d4" title="Adds a new column to the table.">AddColumn</a>(<span class="stringliteral">&quot;a&quot;</span>);
   table.<a class="code" href="classCTable.html#a06bfd743e00ab5295f15da545b05d3d4" title="Adds a new column to the table.">AddColumn</a>(<span class="stringliteral">&quot;b&quot;</span>);
   table.<a class="code" href="classCTable.html#ac6817cb38f1e9ca815ceb16d69802192" title="Adds a new row to the table.">AddRow</a>();
@@ -148,13 +148,8 @@ Protected Attributes</h2></td></tr>
   <span class="keywordflow">while</span> (table.<a class="code" href="classCTable.html#ab0ba1701f9307fd2b9954a611dcabd3e" title="Get a line of the table&#39;s output.">GetLine</a>(idx++, tmp)) {
       <span class="comment">// Output tmp somehow</span>
   }
-</pre></div><p>The above code would generate the following output: </p>
-<div class="fragment"><pre class="fragment">
-+-------+-------+
-| a     | b     |
-+-------+-------+
-| hello | world |
-+-------+-------+</pre></div> </div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
+</pre></div><p>But tables look awful in IRC. So now it puts every cell on separate line. </p>
+</div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ad985a92cc568ed77bca58adf638abebf"></a><!-- doxytag: member="CTable::CTable" ref="ad985a92cc568ed77bca58adf638abebf" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -407,7 +402,7 @@ template&lt;typename T&gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 9 2015 20:41:32 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Apr 19 2015 22:12:25 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
