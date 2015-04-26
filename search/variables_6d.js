@@ -16,6 +16,7 @@ var searchData=
   ['m_5fbdetached',['m_bDetached',['../classCChan.html#ae0cacbcf14720e68444a69d2cb61130e',1,'CChan']]],
   ['m_5fbdisabled',['m_bDisabled',['../classCChan.html#add4c6c2e3ef6b7ef675ee0c0eb1f4fee',1,'CChan']]],
   ['m_5fbdone',['m_bDone',['../classCHTTPSock.html#a4a53039e53142afe7835fd0f0e8d273f',1,'CHTTPSock']]],
+  ['m_5fbechomessage',['m_bEchoMessage',['../classCClient.html#a112ec23b06fbe15a5758eac95a3815b6',1,'CClient']]],
   ['m_5fbenabled',['m_bEnabled',['../classCSMonitorFD.html#a05bf53533f4226018fb9d9094577b13f',1,'CSMonitorFD']]],
   ['m_5fbfloodprotection',['m_bFloodProtection',['../classCIRCSock.html#a6fd7a7dd713c3902fce85acceb0b4359',1,'CIRCSock']]],
   ['m_5fbgotheader',['m_bGotHeader',['../classCHTTPSock.html#accbfde6c17500c682ff4b2373fbe0edf',1,'CHTTPSock']]],

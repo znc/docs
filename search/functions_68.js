@@ -11,6 +11,7 @@ var searchData=
   ['hasbatch',['HasBatch',['../classCClient.html#a7203f3eecefc2f9a7fc787591d9303e2',1,'CClient']]],
   ['hasbuffercountset',['HasBufferCountSet',['../classCChan.html#a61a127b32899c9f36544151eb42d67d4',1,'CChan']]],
   ['hasdata',['HasData',['../classCTemplateLoopContext.html#aebed149b8cb71ffbaed87bd2be1a5f1b',1,'CTemplateLoopContext']]],
+  ['hasechomessage',['HasEchoMessage',['../classCClient.html#a373d49a2361e2228765a2cc70f769338',1,'CClient']]],
   ['hasfds',['HasFDs',['../classCSocketManager.html#a808c4aecd65f24b156b095f2209f4570',1,'CSocketManager::HasFDs() const '],['../classCSocketManager.html#a808c4aecd65f24b156b095f2209f4570',1,'CSocketManager::HasFDs() const ']]],
   ['hasitem',['HasItem',['../classTCacheMap.html#a1e71e07184c9db482dcb7a99ae5bc119',1,'TCacheMap']]],
   ['hasloop',['HasLoop',['../classCTemplate.html#acf9cb2380c0b6d34234543227189a5dd',1,'CTemplate']]],

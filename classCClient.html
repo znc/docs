@@ -366,6 +366,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#aa6d2ffa5742cdf22f946d96190c54e7c">IsAway</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#ac310500d908b99efdbf4db08233aced4">HasServerTime</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a7203f3eecefc2f9a7fc787591d9303e2">HasBatch</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a373d49a2361e2228765a2cc70f769338">HasEchoMessage</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a6a503b2b1723d5a175d4fa7c3ef5bf2d">HasSelfMessage</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a18f6ed2268a3443e2f1e448241a2f712">UserCommand</a> (<a class="el" href="classCString.html">CString</a> &amp;sLine)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#aa561e6329945d6362bd5a9f19065672e">UserPortCommand</a> (<a class="el" href="classCString.html">CString</a> &amp;sLine)</td></tr>
@@ -911,6 +912,7 @@ Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a2712e5bf9b58c9763b67d1afeb50b90f">m_bAway</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a8afc9e0fc6830144ba363339375dfc29">m_bServerTime</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a2c5d770392a8933365723db5171ffc33">m_bBatch</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a112ec23b06fbe15a5758eac95a3815b6">m_bEchoMessage</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a9bb61c829304606106fd7dc2fd3de042">m_bSelfMessage</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#ab32323dc38313311b4d7388a9019bd3b">m_bPlaybackActive</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCUser.html">CUser</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#aa0b3a299915fec31fcef9a4e5f19f5cd">m_pUser</a></td></tr>
@@ -5257,6 +5259,24 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a373d49a2361e2228765a2cc70f769338"></a><!-- doxytag: member="CClient::HasEchoMessage" ref="a373d49a2361e2228765a2cc70f769338" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classCClient.html#a373d49a2361e2228765a2cc70f769338">CClient::HasEchoMessage</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="classCClient.html#a112ec23b06fbe15a5758eac95a3815b6">m_bEchoMessage</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ace6094779c4996b22120498f96721d8b"></a><!-- doxytag: member="CClient::HasNamesx" ref="ace6094779c4996b22120498f96721d8b" args="() const " -->
 <div class="memitem">
 <div class="memproto">
@@ -7229,8 +7249,6 @@ Friends</h2></td></tr>
 
 <p>sets the max buffered threshold when <a class="el" href="classCsock.html#af748608ba80f9bd54294292930db560e" title="set the value of m_bEnableReadLine to true, we don&#39;t want to store a buffer for ReadLine, unless we want it">EnableReadLine()</a> is enabled </p>
 
-<p>Referenced by <a class="el" href="classCClient.html#a51f196439c3218b2dce8f7c6610dad14">CClient()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a06f840efef58b550473f4fe1e5f27efa"></a><!-- doxytag: member="CClient::SetMaxBufferThreshold" ref="a06f840efef58b550473f4fe1e5f27efa" args="(uint32_t iThreshold)" -->
@@ -7249,6 +7267,8 @@ Friends</h2></td></tr>
 <div class="memdoc">
 
 <p>sets the max buffered threshold when <a class="el" href="classCsock.html#af748608ba80f9bd54294292930db560e" title="set the value of m_bEnableReadLine to true, we don&#39;t want to store a buffer for ReadLine, unless we want it">EnableReadLine()</a> is enabled </p>
+
+<p>Referenced by <a class="el" href="classCClient.html#a51f196439c3218b2dce8f7c6610dad14">CClient()</a>.</p>
 
 </div>
 </div>
@@ -8855,6 +8875,21 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a112ec23b06fbe15a5758eac95a3815b6"></a><!-- doxytag: member="CClient::m_bEchoMessage" ref="a112ec23b06fbe15a5758eac95a3815b6" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classCClient.html#a112ec23b06fbe15a5758eac95a3815b6">CClient::m_bEchoMessage</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Referenced by <a class="el" href="classCClient.html#a373d49a2361e2228765a2cc70f769338">HasEchoMessage()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a4dcb6bfc77a9c36629c0381743074d22"></a><!-- doxytag: member="CClient::m_bGotNick" ref="a4dcb6bfc77a9c36629c0381743074d22" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -9154,7 +9189,7 @@ Friends</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 7 2015 19:28:52 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Apr 26 2015 19:14:44 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
