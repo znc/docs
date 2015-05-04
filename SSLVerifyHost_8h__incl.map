@@ -1,7 +1,7 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$build_2include_2znc_2Csocket_8h.html" title="znc/Csocket.h" alt="" coords="1061,83,1170,112"/>
-<area shape="rect" id="node12" href="$ZNCString_8h.html" title="znc/ZNCString.h" alt="" coords="1965,315,2090,344"/>
-<area shape="rect" id="node5" href="$include_2znc_2defines_8h.html" title="znc/defines.h" alt="" coords="2201,160,2307,189"/>
-<area shape="rect" id="node7" href="$zncconfig_8h.html" title="znc/zncconfig.h" alt="" coords="2091,392,2211,421"/>
-<area shape="rect" id="node9" href="$ZNCDebug_8h.html" title="znc/ZNCDebug.h" alt="" coords="2086,237,2217,267"/>
+<area shape="rect" id="node3" href="$build_2include_2znc_2Csocket_8h.html" title="znc/Csocket.h" alt="" coords="1114,83,1224,112"/>
+<area shape="rect" id="node12" href="$ZNCString_8h.html" title="znc/ZNCString.h" alt="" coords="2085,315,2210,344"/>
+<area shape="rect" id="node5" href="$include_2znc_2defines_8h.html" title="znc/defines.h" alt="" coords="2321,160,2428,189"/>
+<area shape="rect" id="node7" href="$zncconfig_8h.html" title="znc/zncconfig.h" alt="" coords="2212,392,2332,421"/>
+<area shape="rect" id="node9" href="$ZNCDebug_8h.html" title="znc/ZNCDebug.h" alt="" coords="2206,237,2337,267"/>
 </map>
