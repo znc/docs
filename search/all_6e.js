@@ -14,6 +14,7 @@ var searchData=
   ['noarg',['NoArg',['../classCIRCSock.html#a8e68d9e0596157b56783e5e9603f7b69ad8393389d80a63f9b18ba1e05628edf1',1,'CIRCSock']]],
   ['nonblockingio',['NonBlockingIO',['../classCsock.html#abef02be96a92f5097556f1b7c082e76a',1,'Csock::NonBlockingIO()'],['../classCsock.html#abef02be96a92f5097556f1b7c082e76a',1,'Csock::NonBlockingIO()']]],
   ['nothing',['NOTHING',['../main_8h.html#aad4a7ebff687dc5228cc3fd4d25067f2',1,'main.h']]],
+  ['notifyserverdependentcaps',['NotifyServerDependentCaps',['../classCClient.html#ad7ce16aa59d52e0a516c4c26b0b11f57',1,'CClient']]],
   ['num',['NUM',['../classPString.html#a3d15380aec9d92c71dd759f5fa4d9661a68728939bbdc5c2f7b769045fb63fb5e',1,'PString']]],
   ['num2ptr',['NUM2PTR',['../swigperlrun_8h.html#a91fac0c4d634b8ee2267bfae3a048839',1,'swigperlrun.h']]]
 ];

@@ -59,6 +59,7 @@ var searchData=
   ['clearpaths',['ClearPaths',['../classCTemplate.html#a3f48f80bf9f0885c01ac36ae7ad18218',1,'CTemplate']]],
   ['clearquerybuffer',['ClearQueryBuffer',['../classCIRCNetwork.html#afbe20fd3dfa56b323a18c8400b3b58d3',1,'CIRCNetwork']]],
   ['clearrawbuffer',['ClearRawBuffer',['../classCIRCNetwork.html#ab952927e08482877d6fecc17d135530b',1,'CIRCNetwork']]],
+  ['clearserverdependentcaps',['ClearServerDependentCaps',['../classCClient.html#aad55fde2c3c77276ba6dd8c87b48e818',1,'CClient']]],
   ['clearsubpages',['ClearSubPages',['../classCModule.html#a461b86482eff9c758e81ec5c0e46dd10',1,'CModule']]],
   ['cleartrustedproxies',['ClearTrustedProxies',['../classCZNC.html#af92e8dc9eead11ff730cef3150a6b992',1,'CZNC']]],
   ['clearwritebuffer',['ClearWriteBuffer',['../classCsock.html#ade75f55f69d6cfebf3eaccd320928e72',1,'Csock::ClearWriteBuffer()'],['../classCsock.html#ade75f55f69d6cfebf3eaccd320928e72',1,'Csock::ClearWriteBuffer()']]],

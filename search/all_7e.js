@@ -5,7 +5,6 @@ var searchData=
   ['_7ecbuffer',['~CBuffer',['../classCBuffer.html#ab5e8bcbbfc7920c3cca12094f211cea9',1,'CBuffer']]],
   ['_7ecbufline',['~CBufLine',['../classCBufLine.html#af06ddb6c9fe1465ee4eab3dde254836c',1,'CBufLine']]],
   ['_7ecchan',['~CChan',['../classCChan.html#afe427246ad3c7aa71246b2c70a1b8ff3',1,'CChan']]],
-  ['_7ecclient',['~CClient',['../classCClient.html#afc8da2070385a173a89e2a5a548e52f0',1,'CClient']]],
   ['_7ecclientauth',['~CClientAuth',['../classCClientAuth.html#a71ba955e4d1ffddc9b55c69abcbacac8',1,'CClientAuth']]],
   ['_7ecconfigentry',['~CConfigEntry',['../structCConfigEntry.html#a129055e65a3238b2d5087e846ab73552',1,'CConfigEntry']]],
   ['_7eccron',['~CCron',['../classCCron.html#a149881d078d8e2c7469dc1b19f3b48e6',1,'CCron::~CCron()'],['../classCCron.html#a149881d078d8e2c7469dc1b19f3b48e6',1,'CCron::~CCron()']]],
