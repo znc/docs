@@ -130,6 +130,8 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMCString.html#a36be97bfe0d092595c58b7e6d6f326dc">MCString</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an empty <a class="el" href="classMCString.html" title="A dictionary for strings.">MCString</a>.  <a href="#a36be97bfe0d092595c58b7e6d6f326dc"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMCString.html#ad6c1b02f46954568acf764bb4fcd6784">MCString</a> (std::initializer_list&lt; std::pair&lt; const <a class="el" href="classCString.html">CString</a>, <a class="el" href="classCString.html">CString</a> &gt;&gt; list)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classMCString.html" title="A dictionary for strings.">MCString</a> using an initializer list eg.  <a href="#ad6c1b02f46954568acf764bb4fcd6784"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMCString.html#a1b92f7c03d685af89ffeb2698c585eed">~MCString</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct this <a class="el" href="classMCString.html" title="A dictionary for strings.">MCString</a>.  <a href="#a1b92f7c03d685af89ffeb2698c585eed"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="classMCString.html#ad659058c5ac29c1649d0e7f368993fa4">status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMCString.html#a809a6562208a20f7244aa70728d7af96">WriteToDisk</a> (const <a class="el" href="classCString.html">CString</a> &amp;sPath, mode_t iMode=0644) const </td></tr>
@@ -157,6 +159,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>A dictionary for strings. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>Replace with "using MCString = std::map&lt;CString, CString&gt;;" in ZNC 2.0</dd></dl>
 <p>This class maps strings to other strings. </p>
 </div><hr/><h2>Member Enumeration Documentation</h2>
 <a class="anchor" id="ad659058c5ac29c1649d0e7f368993fa4"></a><!-- doxytag: member="MCString::status_t" ref="ad659058c5ac29c1649d0e7f368993fa4" args="" -->
@@ -209,6 +212,26 @@ Static Public Attributes</h2></td></tr>
 <div class="memdoc">
 
 <p>Construct an empty <a class="el" href="classMCString.html" title="A dictionary for strings.">MCString</a>. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad6c1b02f46954568acf764bb4fcd6784"></a><!-- doxytag: member="MCString::MCString" ref="ad6c1b02f46954568acf764bb4fcd6784" args="(std::initializer_list&lt; std::pair&lt; const CString, CString &gt;&gt; list)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMCString.html#a36be97bfe0d092595c58b7e6d6f326dc">MCString::MCString</a> </td>
+          <td>(</td>
+          <td class="paramtype">std::initializer_list&lt; std::pair&lt; const <a class="el" href="classCString.html">CString</a>, <a class="el" href="classCString.html">CString</a> &gt;&gt;&#160;</td>
+          <td class="paramname"><em>list</em></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Construct a <a class="el" href="classMCString.html" title="A dictionary for strings.">MCString</a> using an initializer list eg. </p>
+<p><a class="el" href="classMCString.html" title="A dictionary for strings.">MCString</a> m = { {"key1", "val1"}, {"key2", "val2"} }; </p>
 
 </div>
 </div>
@@ -483,7 +506,7 @@ template&lt;typename K, typename T&gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 15 2014 16:16:12 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 31 2015 20:23:48 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

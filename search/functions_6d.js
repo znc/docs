@@ -9,7 +9,7 @@ var searchData=
   ['maxjoins',['MaxJoins',['../classCUser.html#aa927121a90a0663bf53fecf34d553eed',1,'CUser']]],
   ['maxnetworks',['MaxNetworks',['../classCUser.html#a3449ca7b2f99e5275546d0611d0ac147',1,'CUser']]],
   ['maxquerybuffers',['MaxQueryBuffers',['../classCUser.html#a776c59c908691f6486f96a177aac8a19',1,'CUser']]],
-  ['mcstring',['MCString',['../classMCString.html#a36be97bfe0d092595c58b7e6d6f326dc',1,'MCString']]],
+  ['mcstring',['MCString',['../classMCString.html#a36be97bfe0d092595c58b7e6d6f326dc',1,'MCString::MCString()'],['../classMCString.html#ad6c1b02f46954568acf764bb4fcd6784',1,'MCString::MCString(std::initializer_list&lt; std::pair&lt; const CString, CString &gt;&gt; list)']]],
   ['mcstring_5fiter',['MCString_iter',['../classMCString__iter.html#ab301c4676642f748faff15daa0fb3468',1,'MCString_iter::MCString_iter()'],['../classMCString__iter.html#a5274ec94a24296ab2898b0d73e0b008c',1,'MCString_iter::MCString_iter(MCString::iterator z)']]],
   ['md5',['MD5',['../classCBlowfish.html#a3920dbbfea688328c00a83a1ba0828e6',1,'CBlowfish::MD5(const unsigned char *input, u_int ilen)'],['../classCBlowfish.html#aa3d2df9ec3d839762bf5ec36c83a3b06',1,'CBlowfish::MD5(const CString &amp;sInput, bool bHexEncode=false)'],['../classCString.html#ad1c00158c4e52037f7113c18816f70f4',1,'CString::MD5()']]],
   ['md5_5ffinish',['md5_finish',['../classCMD5.html#a527c4e9897e5db7d0411e27d7812923a',1,'CMD5']]],

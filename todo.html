@@ -76,22 +76,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><dl class="reflist">
-<dt><a class="anchor" id="_todo000004"></a>Member <a class="el" href="classCString.html#a82d0cd4949b4478c607e5d25664aed6e">CString::Base64Encode</a>  (<a class="el" href="classCString.html" title="String class that is used inside ZNC.">CString</a> &amp;sRet, unsigned int uWrap=0) const </dt>
+<dt><a class="anchor" id="_todo000005"></a>Member <a class="el" href="classCString.html#a82d0cd4949b4478c607e5d25664aed6e">CString::Base64Encode</a>  (<a class="el" href="classCString.html" title="String class that is used inside ZNC.">CString</a> &amp;sRet, unsigned int uWrap=0) const </dt>
 <dd><p class="startdd">WTF @ uWrap. </p>
 <p class="enddd">This only returns false if some formula we use was wrong?!  </p>
 </dd>
-<dt><a class="anchor" id="_todo000005"></a>Member <a class="el" href="classCString.html#a4fc636e923db4a933f7b5c4e2772100d">CString::Base64Encode</a>  (unsigned int uWrap=0)</dt>
+<dt><a class="anchor" id="_todo000006"></a>Member <a class="el" href="classCString.html#a4fc636e923db4a933f7b5c4e2772100d">CString::Base64Encode</a>  (unsigned int uWrap=0)</dt>
 <dd>return value and param are as with Base64Encode() from above.  </dd>
-<dt><a class="anchor" id="_todo000006"></a>Member <a class="el" href="classCString.html#a16727bd81045c0d4e2f2207b4a4a3e22">CString::Base64Encode_n</a>  (unsigned int uWrap=0) const </dt>
+<dt><a class="anchor" id="_todo000007"></a>Member <a class="el" href="classCString.html#a16727bd81045c0d4e2f2207b4a4a3e22">CString::Base64Encode_n</a>  (unsigned int uWrap=0) const </dt>
 <dd>uWrap is as broken as Base64Encode()'s uWrap. </dd>
-<dt><a class="anchor" id="_todo000003"></a>Member <a class="el" href="classCString.html#a8674edda2e245e07e05eea41675e11e2">CString::WildCmp</a>  (const <a class="el" href="classCString.html" title="String class that is used inside ZNC.">CString</a> &amp;sWild, CaseSensitivity cs=CaseSensitive) const </dt>
+<dt><a class="anchor" id="_todo000004"></a>Member <a class="el" href="classCString.html#a8674edda2e245e07e05eea41675e11e2">CString::WildCmp</a>  (const <a class="el" href="classCString.html" title="String class that is used inside ZNC.">CString</a> &amp;sWild, CaseSensitivity cs=CaseSensitive) const </dt>
 <dd>Make cs CaseInsensitive by default.  </dd>
-<dt><a class="anchor" id="_todo000002"></a>Member <a class="el" href="classCString.html#adb5704f54077344132a2627b47487799">CString::WildCmp</a>  (const <a class="el" href="classCString.html" title="String class that is used inside ZNC.">CString</a> &amp;sWild, const <a class="el" href="classCString.html" title="String class that is used inside ZNC.">CString</a> &amp;sString, CaseSensitivity cs=CaseSensitive)</dt>
+<dt><a class="anchor" id="_todo000003"></a>Member <a class="el" href="classCString.html#adb5704f54077344132a2627b47487799">CString::WildCmp</a>  (const <a class="el" href="classCString.html" title="String class that is used inside ZNC.">CString</a> &amp;sWild, const <a class="el" href="classCString.html" title="String class that is used inside ZNC.">CString</a> &amp;sString, CaseSensitivity cs=CaseSensitive)</dt>
 <dd>Make cs CaseInsensitive by default.  </dd>
 <dt><a class="anchor" id="_todo000001"></a>Member <a class="el" href="build_2include_2znc_2Csocket_8h.html#a93a66872a528e462d42a3e13bddde1e8">GetSockError</a>  ()</dt>
 <dd><p class="startdd">need to make this sock specific via getsockopt </p>
-<p class="enddd">need to make this sock specific via getsockopt </p>
+<p class="enddd">need to make this sock specific via getsockopt  </p>
 </dd>
+<dt><a class="anchor" id="_todo000002"></a>Class <a class="el" href="classMCString.html">MCString</a>  </dt>
+<dd>Replace with "using MCString = std::map&lt;CString, CString&gt;;" in ZNC 2.0</dd>
 </dl>
 </div></div><!-- contents -->
 <!-- window showing the filter options -->
@@ -111,7 +113,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Feb 23 2015 08:11:56 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 31 2015 20:23:46 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

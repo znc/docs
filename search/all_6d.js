@@ -254,7 +254,7 @@ var searchData=
   ['mcs_5fewrite',['MCS_EWRITE',['../classMCString.html#ad659058c5ac29c1649d0e7f368993fa4a83e393aae9950c3590c94ab94835a77d',1,'MCString']]],
   ['mcs_5fewritefil',['MCS_EWRITEFIL',['../classMCString.html#ad659058c5ac29c1649d0e7f368993fa4a53d31af64966d748ec5382c3785494a9',1,'MCString']]],
   ['mcs_5fsuccess',['MCS_SUCCESS',['../classMCString.html#ad659058c5ac29c1649d0e7f368993fa4a7890add35b7abddbeeb0e2fdd7f45911',1,'MCString']]],
-  ['mcstring',['MCString',['../classMCString.html',1,'MCString'],['../classMCString.html#a36be97bfe0d092595c58b7e6d6f326dc',1,'MCString::MCString()']]],
+  ['mcstring',['MCString',['../classMCString.html',1,'MCString'],['../classMCString.html#a36be97bfe0d092595c58b7e6d6f326dc',1,'MCString::MCString()'],['../classMCString.html#ad6c1b02f46954568acf764bb4fcd6784',1,'MCString::MCString(std::initializer_list&lt; std::pair&lt; const CString, CString &gt;&gt; list)']]],
   ['mcstring_5fiter',['MCString_iter',['../classMCString__iter.html',1,'MCString_iter'],['../classMCString__iter.html#ab301c4676642f748faff15daa0fb3468',1,'MCString_iter::MCString_iter()'],['../classMCString__iter.html#a5274ec94a24296ab2898b0d73e0b008c',1,'MCString_iter::MCString_iter(MCString::iterator z)']]],
   ['md5',['MD5',['../classCBlowfish.html#a3920dbbfea688328c00a83a1ba0828e6',1,'CBlowfish::MD5(const unsigned char *input, u_int ilen)'],['../classCBlowfish.html#aa3d2df9ec3d839762bf5ec36c83a3b06',1,'CBlowfish::MD5(const CString &amp;sInput, bool bHexEncode=false)'],['../classCString.html#ad1c00158c4e52037f7113c18816f70f4',1,'CString::MD5()']]],
   ['md5_2eh',['MD5.h',['../MD5_8h.html',1,'']]],

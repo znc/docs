@@ -149,6 +149,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCString.html#a869c1034fe46ace197f35235f773a529">CString</a> (const char *c, size_t l)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCString.html#a3764d97aa284e8faf419d40ea93f167a">CString</a> (const std::string &amp;s)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCString.html#a979bc64acf43e067aa6a5a5b576696c1">CString</a> (size_t n, char c)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCString.html#a329fbc18b58d50566357f12848c65f4e">CString</a> (std::initializer_list&lt; char &gt; list)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCString.html#a6c71f771ccdbdbed1d711788355aeea5">~CString</a> ()</td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCString.html#a6ddd53291db7dd02225c8d2ce4254f15">Convert</a> (T *target) const </td></tr>
@@ -679,6 +680,23 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a329fbc18b58d50566357f12848c65f4e"></a><!-- doxytag: member="CString::CString" ref="a329fbc18b58d50566357f12848c65f4e" args="(std::initializer_list&lt; char &gt; list)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCString.html#a15309c1cdd54243dec4c4b3b3b9b24e4">CString::CString</a> </td>
+          <td>(</td>
+          <td class="paramtype">std::initializer_list&lt; char &gt;&#160;</td>
+          <td class="paramname"><em>list</em></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a6c71f771ccdbdbed1d711788355aeea5"></a><!-- doxytag: member="CString::~CString" ref="a6c71f771ccdbdbed1d711788355aeea5" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -833,7 +851,7 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>true unless this code is buggy. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd><p class="startdd">WTF @ uWrap. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo:</a></b></dt><dd><p class="startdd">WTF @ uWrap. </p>
 <p class="enddd">This only returns false if some formula we use was wrong?! </p>
 </dd></dl>
 
@@ -856,7 +874,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Base64-encode the current string. </p>
 <p>This string is overwritten with the result of the encode. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo:</a></b></dt><dd>return value and param are as with <a class="el" href="classCString.html#a82d0cd4949b4478c607e5d25664aed6e" title="Base64-encode the current string.">Base64Encode()</a> from above. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000006">Todo:</a></b></dt><dd>return value and param are as with <a class="el" href="classCString.html#a82d0cd4949b4478c607e5d25664aed6e" title="Base64-encode the current string.">Base64Encode()</a> from above. </dd></dl>
 
 </div>
 </div>
@@ -876,7 +894,7 @@ Protected Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Base64-encode the current string. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000006">Todo:</a></b></dt><dd>uWrap is as broken as <a class="el" href="classCString.html#a82d0cd4949b4478c607e5d25664aed6e" title="Base64-encode the current string.">Base64Encode()</a>'s uWrap.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000007">Todo:</a></b></dt><dd>uWrap is as broken as <a class="el" href="classCString.html#a82d0cd4949b4478c607e5d25664aed6e" title="Base64-encode the current string.">Base64Encode()</a>'s uWrap.</dd></dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The encoded string. </dd></dl>
 
 </div>
@@ -2982,7 +3000,7 @@ template&lt;typename Iterator &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>Make cs CaseInsensitive by default. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>Make cs CaseInsensitive by default. </dd></dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>true if the wildcard matches. </dd></dl>
 
 <p>Referenced by <a class="el" href="classCDir.html#ae54b36850105c776527e918d6f25b9a3">CDir::FillByWildcard()</a>.</p>
@@ -3022,7 +3040,7 @@ template&lt;typename Iterator &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>Make cs CaseInsensitive by default. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd>Make cs CaseInsensitive by default. </dd></dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The result of <code>this-&gt;WildCmp(sWild, *this);</code>. </dd></dl>
 
 </div>
@@ -3075,7 +3093,7 @@ template&lt;typename Iterator &gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 26 2015 06:09:18 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 31 2015 20:23:47 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
