@@ -167,6 +167,8 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a6ee35f74840b853d113256fb5f30114a">AddCTCPReply</a> (const <a class="el" href="classCString.html">CString</a> &amp;sCTCP, const <a class="el" href="classCString.html">CString</a> &amp;sReply)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a9ee65083a1ae9a12e991b0ff54cdb64f">DelCTCPReply</a> (const <a class="el" href="classCString.html">CString</a> &amp;sCTCP)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a50409191d3116e9952ff6e576bf443d8">SetBufferCount</a> (unsigned int u, bool bForce=false)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a42d7d3eff93c8ffab9a7df26a40b653f">SetChanBufferSize</a> (unsigned int u, bool bForce=false)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#ada571fa4b9432ee925073c4d9275b8ab">SetQueryBufferSize</a> (unsigned int u, bool bForce=false)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a335efbd77ee1ff8f1efa436548655b4c">SetAutoClearChanBuffer</a> (bool b)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a033c5d3ae5f694a1d3fd9f3d9521aa70">SetAutoClearQueryBuffer</a> (bool b)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a033ba9b6f43282315b1e23b2b79785df">SetBeingDeleted</a> (bool b)</td></tr>
@@ -207,6 +209,8 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#af85a1ff66019804346eb333ed60c205f">GetQuitMsg</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classMCString.html">MCString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#aaaed8627e4d28afad4a7e4ed441be16d">GetCTCPReplies</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a1720f38e7f92c903a9e372eb3e147d21">GetBufferCount</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a4207260ce4eb1455e2f576a926a682b4">GetChanBufferSize</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#ae4c2ebbcedcde63e769a0c2df27cdf27">GetQueryBufferSize</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#afe0c8d6d66ec666a58a3ca0e8b82f850">AutoClearChanBuffer</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#af0d6c7ca5c4ef5082125a4adee542e57">AutoClearQueryBuffer</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a37c17624b40f2b63b47aa3cf96041965">IsBeingDeleted</a> () const </td></tr>
@@ -257,7 +261,8 @@ Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classCIRCNetwork.html">CIRCNetwork</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a8f9d81b4e3ff7f1b3569a2b3370611a6">m_vIRCNetworks</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classCClient.html">CClient</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a3c4c1f6aa917bbbad3d29d216d308583">m_vClients</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">std::set&lt; <a class="el" href="classCString.html">CString</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a391cd3a8c62f7ecf94a486532ed8834f">m_ssAllowedHosts</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#ad5e7f783cbafe74fd0c04993adad3331">m_uBufferCount</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#ab23fd100d5dc8493539182d6e0a14b1d">m_uChanBufferSize</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#acebf58a40ca87fa7fe30789b32297bf3">m_uQueryBufferSize</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a3c1ee97fec7366f1d43540a18270da0d">m_uBytesRead</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a155803b84918b91532cd1736cd5fa122">m_uBytesWritten</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a83e2963681645a32d54b4b37e6ef75a7">m_uMaxJoinTries</a></td></tr>
@@ -871,6 +876,23 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">Deprecated:</a></b></dt><dd>Use <a class="el" href="classCUser.html#a4207260ce4eb1455e2f576a926a682b4">GetChanBufferSize()</a> or <a class="el" href="classCUser.html#ae4c2ebbcedcde63e769a0c2df27cdf27">GetQueryBufferSize()</a> instead.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4207260ce4eb1455e2f576a926a682b4"></a><!-- doxytag: member="CUser::GetChanBufferSize" ref="a4207260ce4eb1455e2f576a926a682b4" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int <a class="el" href="classCUser.html#a4207260ce4eb1455e2f576a926a682b4">CUser::GetChanBufferSize</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
 
 </div>
 </div>
@@ -1094,6 +1116,22 @@ Protected Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">const <a class="el" href="classCString.html">CString</a>&amp; <a class="el" href="classCUser.html#a03c260f9d87f87b1fd9bdea5da9c7a4a">CUser::GetPassSalt</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae4c2ebbcedcde63e769a0c2df27cdf27"></a><!-- doxytag: member="CUser::GetQueryBufferSize" ref="ae4c2ebbcedcde63e769a0c2df27cdf27" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int <a class="el" href="classCUser.html#ae4c2ebbcedcde63e769a0c2df27cdf27">CUser::GetQueryBufferSize</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1944,6 +1982,34 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>Use <a class="el" href="classCUser.html#a42d7d3eff93c8ffab9a7df26a40b653f">SetChanBufferSize()</a> or <a class="el" href="classCUser.html#ada571fa4b9432ee925073c4d9275b8ab">SetQueryBufferSize()</a> instead.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a42d7d3eff93c8ffab9a7df26a40b653f"></a><!-- doxytag: member="CUser::SetChanBufferSize" ref="a42d7d3eff93c8ffab9a7df26a40b653f" args="(unsigned int u, bool bForce=false)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classCUser.html#a42d7d3eff93c8ffab9a7df26a40b653f">CUser::SetChanBufferSize</a> </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bForce</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
 
 </div>
 </div>
@@ -2180,6 +2246,33 @@ Protected Attributes</h2></td></tr>
           <td></td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>sSalt</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ada571fa4b9432ee925073c4d9275b8ab"></a><!-- doxytag: member="CUser::SetQueryBufferSize" ref="ada571fa4b9432ee925073c4d9275b8ab" args="(unsigned int u, bool bForce=false)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classCUser.html#ada571fa4b9432ee925073c4d9275b8ab">CUser::SetQueryBufferSize</a> </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bForce</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2819,19 +2912,6 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ad5e7f783cbafe74fd0c04993adad3331"></a><!-- doxytag: member="CUser::m_uBufferCount" ref="ad5e7f783cbafe74fd0c04993adad3331" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned int <a class="el" href="classCUser.html#ad5e7f783cbafe74fd0c04993adad3331">CUser::m_uBufferCount</a><code> [protected]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="a3c1ee97fec7366f1d43540a18270da0d"></a><!-- doxytag: member="CUser::m_uBytesRead" ref="a3c1ee97fec7366f1d43540a18270da0d" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -2859,6 +2939,19 @@ Protected Attributes</h2></td></tr>
 <div class="memdoc">
 
 <p>Referenced by <a class="el" href="classCUser.html#a54c48c7771a1225804b0a981507b2e7d">AddBytesWritten()</a>, and <a class="el" href="classCUser.html#a586590690bc02b1a6eb1597b09ae67d3">BytesWritten()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab23fd100d5dc8493539182d6e0a14b1d"></a><!-- doxytag: member="CUser::m_uChanBufferSize" ref="ab23fd100d5dc8493539182d6e0a14b1d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int <a class="el" href="classCUser.html#ab23fd100d5dc8493539182d6e0a14b1d">CUser::m_uChanBufferSize</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
 
 </div>
 </div>
@@ -2922,6 +3015,19 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="acebf58a40ca87fa7fe30789b32297bf3"></a><!-- doxytag: member="CUser::m_uQueryBufferSize" ref="acebf58a40ca87fa7fe30789b32297bf3" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int <a class="el" href="classCUser.html#acebf58a40ca87fa7fe30789b32297bf3">CUser::m_uQueryBufferSize</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a3c4c1f6aa917bbbad3d29d216d308583"></a><!-- doxytag: member="CUser::m_vClients" ref="a3c4c1f6aa917bbbad3d29d216d308583" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -2971,7 +3077,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 12 2015 17:48:17 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 31 2015 21:05:54 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
