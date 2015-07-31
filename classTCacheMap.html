@@ -126,6 +126,8 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Cycles through the queue removing all of the stale entries.  <a href="#a310531274916c803f033df8fc47a8abc"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTCacheMap.html#ab73bfc280a8b52c7664118c123eb317e">Clear</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear all entries.  <a href="#ab73bfc280a8b52c7664118c123eb317e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::map&lt; K, V &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTCacheMap.html#acd3c4fd85a78890e19f945b9043bc2b5">GetItems</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns all entries.  <a href="#acd3c4fd85a78890e19f945b9043bc2b5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTCacheMap.html#abe04718bbc0379ab673d5ab2b99c00f2">SetTTL</a> (unsigned int u)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTCacheMap.html#a2d7a76002e7f16e0e9eed0c5738f58fb">GetTTL</a> () const </td></tr>
 <tr><td colspan="2"><h2><a name="pro-types"></a>
@@ -385,7 +387,7 @@ template&lt;typename K, typename V = bool&gt; </div>
 
 <p>Cycles through the queue removing all of the stale entries. </p>
 
-<p>Referenced by <a class="el" href="classTCacheMap.html#af5ad62704308d4b69ae91588c0269a07">TCacheMap&lt; CString &gt;::GetItem()</a>, and <a class="el" href="classTCacheMap.html#a1e71e07184c9db482dcb7a99ae5bc119">TCacheMap&lt; CString &gt;::HasItem()</a>.</p>
+<p>Referenced by <a class="el" href="classTCacheMap.html#af5ad62704308d4b69ae91588c0269a07">TCacheMap&lt; CString &gt;::GetItem()</a>, <a class="el" href="classTCacheMap.html#acd3c4fd85a78890e19f945b9043bc2b5">TCacheMap&lt; CString &gt;::GetItems()</a>, and <a class="el" href="classTCacheMap.html#a1e71e07184c9db482dcb7a99ae5bc119">TCacheMap&lt; CString &gt;::HasItem()</a>.</p>
 
 </div>
 </div>
@@ -436,6 +438,26 @@ template&lt;typename K, typename V = bool&gt; </div>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Pointer to the item or nullptr if there is no suitable one </dd></dl>
 
 <p>Referenced by <a class="el" href="classCZNC.html#ac363db659da14e79ff7f07cd627e6a2f">CZNC::GetServerThrottle()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acd3c4fd85a78890e19f945b9043bc2b5"></a><!-- doxytag: member="TCacheMap::GetItems" ref="acd3c4fd85a78890e19f945b9043bc2b5" args="()" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K, typename V = bool&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;K,V&gt; <a class="el" href="classTCacheMap.html">TCacheMap</a>&lt; K, V &gt;::<a class="el" href="classTCacheMap.html#acd3c4fd85a78890e19f945b9043bc2b5">GetItems</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Returns all entries. </p>
 
 </div>
 </div>
@@ -555,7 +577,7 @@ template&lt;typename K, typename V = bool&gt; </div>
 <p>Map of cached items. </p>
 <p>The value portion of the map is for the expire time </p>
 
-<p>Referenced by <a class="el" href="classTCacheMap.html#ab6b68331b3c3a23f839534adfb1ac813">TCacheMap&lt; CString &gt;::AddItem()</a>, <a class="el" href="classTCacheMap.html#a310531274916c803f033df8fc47a8abc">TCacheMap&lt; CString &gt;::Cleanup()</a>, <a class="el" href="classTCacheMap.html#ab73bfc280a8b52c7664118c123eb317e">TCacheMap&lt; CString &gt;::Clear()</a>, <a class="el" href="classTCacheMap.html#af5ad62704308d4b69ae91588c0269a07">TCacheMap&lt; CString &gt;::GetItem()</a>, <a class="el" href="classTCacheMap.html#a1e71e07184c9db482dcb7a99ae5bc119">TCacheMap&lt; CString &gt;::HasItem()</a>, and <a class="el" href="classTCacheMap.html#a4e80ed1aede8eeb8d9f6092950358c04">TCacheMap&lt; CString &gt;::RemItem()</a>.</p>
+<p>Referenced by <a class="el" href="classTCacheMap.html#ab6b68331b3c3a23f839534adfb1ac813">TCacheMap&lt; CString &gt;::AddItem()</a>, <a class="el" href="classTCacheMap.html#a310531274916c803f033df8fc47a8abc">TCacheMap&lt; CString &gt;::Cleanup()</a>, <a class="el" href="classTCacheMap.html#ab73bfc280a8b52c7664118c123eb317e">TCacheMap&lt; CString &gt;::Clear()</a>, <a class="el" href="classTCacheMap.html#af5ad62704308d4b69ae91588c0269a07">TCacheMap&lt; CString &gt;::GetItem()</a>, <a class="el" href="classTCacheMap.html#acd3c4fd85a78890e19f945b9043bc2b5">TCacheMap&lt; CString &gt;::GetItems()</a>, <a class="el" href="classTCacheMap.html#a1e71e07184c9db482dcb7a99ae5bc119">TCacheMap&lt; CString &gt;::HasItem()</a>, and <a class="el" href="classTCacheMap.html#a4e80ed1aede8eeb8d9f6092950358c04">TCacheMap&lt; CString &gt;::RemItem()</a>.</p>
 
 </div>
 </div>
@@ -599,7 +621,7 @@ template&lt;typename K, typename V = bool&gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 1 2015 04:38:38 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 31 2015 21:47:23 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

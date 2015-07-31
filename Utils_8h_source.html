@@ -313,20 +313,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00334"></a>00334                 <a class="code" href="classTCacheMap.html#a9d5a76f1b92e3d3a8d873e5e66823e39" title="Map of cached items.">m_mItems</a>.clear();
 <a name="l00335"></a>00335         }
 <a name="l00336"></a>00336 
-<a name="l00337"></a>00337         <span class="comment">// Setters</span>
-<a name="l00338"></a><a class="code" href="classTCacheMap.html#abe04718bbc0379ab673d5ab2b99c00f2">00338</a>         <span class="keywordtype">void</span> <a class="code" href="classTCacheMap.html#abe04718bbc0379ab673d5ab2b99c00f2">SetTTL</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> u) { <a class="code" href="classTCacheMap.html#a2d8a4c593429354d3a442ba77173ed80" title="Default time-to-live duration.">m_uTTL</a> = u; }
-<a name="l00339"></a>00339         <span class="comment">// !Setters</span>
-<a name="l00340"></a>00340         <span class="comment">// Getters</span>
-<a name="l00341"></a><a class="code" href="classTCacheMap.html#a2d7a76002e7f16e0e9eed0c5738f58fb">00341</a>         <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classTCacheMap.html#a2d7a76002e7f16e0e9eed0c5738f58fb">GetTTL</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classTCacheMap.html#a2d8a4c593429354d3a442ba77173ed80" title="Default time-to-live duration.">m_uTTL</a>; }
-<a name="l00342"></a>00342         <span class="comment">// !Getters</span>
-<a name="l00343"></a>00343 <span class="keyword">protected</span>:
-<a name="l00344"></a><a class="code" href="classTCacheMap.html#ad030261fdb9f2ec14b4afcffbce47b31">00344</a>         <span class="keyword">typedef</span> std::pair&lt;unsigned long long, V&gt; <a class="code" href="classTCacheMap.html#ad030261fdb9f2ec14b4afcffbce47b31">value</a>;
-<a name="l00345"></a><a class="code" href="classTCacheMap.html#ac29fbd1d01dec1b68e626e1c1bed4f8c">00345</a>         <span class="keyword">typedef</span> <span class="keyword">typename</span> std::map&lt;K, value&gt;::iterator <a class="code" href="classTCacheMap.html#ac29fbd1d01dec1b68e626e1c1bed4f8c">iterator</a>;
-<a name="l00346"></a><a class="code" href="classTCacheMap.html#a9d5a76f1b92e3d3a8d873e5e66823e39">00346</a>         std::map&lt;K, value&gt;   <a class="code" href="classTCacheMap.html#a9d5a76f1b92e3d3a8d873e5e66823e39" title="Map of cached items.">m_mItems</a>;   
-<a name="l00347"></a><a class="code" href="classTCacheMap.html#a2d8a4c593429354d3a442ba77173ed80">00347</a>         <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>         <a class="code" href="classTCacheMap.html#a2d8a4c593429354d3a442ba77173ed80" title="Default time-to-live duration.">m_uTTL</a>;     
-<a name="l00348"></a>00348 };
-<a name="l00349"></a>00349 
-<a name="l00350"></a>00350 <span class="preprocessor">#endif // !ZNC_UTILS_H</span>
+<a name="l00340"></a><a class="code" href="classTCacheMap.html#acd3c4fd85a78890e19f945b9043bc2b5">00340</a>         std::map&lt;K,V&gt; <a class="code" href="classTCacheMap.html#acd3c4fd85a78890e19f945b9043bc2b5" title="Returns all entries.">GetItems</a>() {
+<a name="l00341"></a>00341                 <a class="code" href="classTCacheMap.html#a310531274916c803f033df8fc47a8abc" title="Cycles through the queue removing all of the stale entries.">Cleanup</a>();
+<a name="l00342"></a>00342                 std::map&lt;K,V&gt; mItems;
+<a name="l00343"></a>00343                 <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; it : <a class="code" href="classTCacheMap.html#a9d5a76f1b92e3d3a8d873e5e66823e39" title="Map of cached items.">m_mItems</a>) {
+<a name="l00344"></a>00344                         mItems[it.first] = it.second.second;
+<a name="l00345"></a>00345                 }
+<a name="l00346"></a>00346                 <span class="keywordflow">return</span> mItems;
+<a name="l00347"></a>00347         }
+<a name="l00348"></a>00348 
+<a name="l00349"></a>00349         <span class="comment">// Setters</span>
+<a name="l00350"></a><a class="code" href="classTCacheMap.html#abe04718bbc0379ab673d5ab2b99c00f2">00350</a>         <span class="keywordtype">void</span> <a class="code" href="classTCacheMap.html#abe04718bbc0379ab673d5ab2b99c00f2">SetTTL</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> u) { <a class="code" href="classTCacheMap.html#a2d8a4c593429354d3a442ba77173ed80" title="Default time-to-live duration.">m_uTTL</a> = u; }
+<a name="l00351"></a>00351         <span class="comment">// !Setters</span>
+<a name="l00352"></a>00352         <span class="comment">// Getters</span>
+<a name="l00353"></a><a class="code" href="classTCacheMap.html#a2d7a76002e7f16e0e9eed0c5738f58fb">00353</a>         <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classTCacheMap.html#a2d7a76002e7f16e0e9eed0c5738f58fb">GetTTL</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classTCacheMap.html#a2d8a4c593429354d3a442ba77173ed80" title="Default time-to-live duration.">m_uTTL</a>; }
+<a name="l00354"></a>00354         <span class="comment">// !Getters</span>
+<a name="l00355"></a>00355 <span class="keyword">protected</span>:
+<a name="l00356"></a><a class="code" href="classTCacheMap.html#ad030261fdb9f2ec14b4afcffbce47b31">00356</a>         <span class="keyword">typedef</span> std::pair&lt;unsigned long long, V&gt; <a class="code" href="classTCacheMap.html#ad030261fdb9f2ec14b4afcffbce47b31">value</a>;
+<a name="l00357"></a><a class="code" href="classTCacheMap.html#ac29fbd1d01dec1b68e626e1c1bed4f8c">00357</a>         <span class="keyword">typedef</span> <span class="keyword">typename</span> std::map&lt;K, value&gt;::iterator <a class="code" href="classTCacheMap.html#ac29fbd1d01dec1b68e626e1c1bed4f8c">iterator</a>;
+<a name="l00358"></a><a class="code" href="classTCacheMap.html#a9d5a76f1b92e3d3a8d873e5e66823e39">00358</a>         std::map&lt;K, value&gt;   <a class="code" href="classTCacheMap.html#a9d5a76f1b92e3d3a8d873e5e66823e39" title="Map of cached items.">m_mItems</a>;   
+<a name="l00359"></a><a class="code" href="classTCacheMap.html#a2d8a4c593429354d3a442ba77173ed80">00359</a>         <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>         <a class="code" href="classTCacheMap.html#a2d8a4c593429354d3a442ba77173ed80" title="Default time-to-live duration.">m_uTTL</a>;     
+<a name="l00360"></a>00360 };
+<a name="l00361"></a>00361 
+<a name="l00362"></a>00362 <span class="preprocessor">#endif // !ZNC_UTILS_H</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -345,7 +354,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 19 2015 22:12:23 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 31 2015 21:47:21 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
