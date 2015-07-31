@@ -1,6 +1,7 @@
 var searchData=
 [
   ['m_5fbacceptgzip',['m_bAcceptGzip',['../classCHTTPSock.html#a4989bbc2744c5701ed6b2f97da6cbdb4',1,'CHTTPSock']]],
+  ['m_5fbaccountnotify',['m_bAccountNotify',['../classCClient.html#a1ff2353521613039c95751a901a6fa08',1,'CClient::m_bAccountNotify()'],['../classCIRCSock.html#a998525b6310f35481808ee0bd3fa80d3',1,'CIRCSock::m_bAccountNotify()']]],
   ['m_5fbadmin',['m_bAdmin',['../classCUser.html#a3adfecf0c84bb907f28de26c0753bad1',1,'CUser']]],
   ['m_5fbappendtimestamp',['m_bAppendTimestamp',['../classCUser.html#a9127812fa81d430dbe300e2432e00cd5',1,'CUser']]],
   ['m_5fbauthed',['m_bAuthed',['../classCIRCSock.html#a4a56115765938ab378a6c6957729556e',1,'CIRCSock']]],
@@ -20,6 +21,7 @@ var searchData=
   ['m_5fbdone',['m_bDone',['../classCHTTPSock.html#a4a53039e53142afe7835fd0f0e8d273f',1,'CHTTPSock']]],
   ['m_5fbechomessage',['m_bEchoMessage',['../classCClient.html#a112ec23b06fbe15a5758eac95a3815b6',1,'CClient']]],
   ['m_5fbenabled',['m_bEnabled',['../classCSMonitorFD.html#a05bf53533f4226018fb9d9094577b13f',1,'CSMonitorFD']]],
+  ['m_5fbextendedjoin',['m_bExtendedJoin',['../classCClient.html#ad15b1aa50b29a324e6efe12482e131bc',1,'CClient::m_bExtendedJoin()'],['../classCIRCSock.html#a1de813d63dd7be524c5316507449e714',1,'CIRCSock::m_bExtendedJoin()']]],
   ['m_5fbfloodprotection',['m_bFloodProtection',['../classCIRCSock.html#a6fd7a7dd713c3902fce85acceb0b4359',1,'CIRCSock']]],
   ['m_5fbgotheader',['m_bGotHeader',['../classCHTTPSock.html#accbfde6c17500c682ff4b2373fbe0edf',1,'CHTTPSock']]],
   ['m_5fbgotnick',['m_bGotNick',['../classCClient.html#a4dcb6bfc77a9c36629c0381743074d22',1,'CClient']]],

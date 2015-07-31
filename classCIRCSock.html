@@ -408,6 +408,8 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#a5d93e75a2a6d0048ccfe5df7adb61182">HasNamesx</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#a0a2a10401a93deada603eb6c284d65a3">HasUHNames</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#aaf17bbdaa4af6bc0633a9c8cf9517203">HasAwayNotify</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#a40db1e2aae405d29a2225e1f25503d14">HasAccountNotify</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#ae545a85407cfea8bcbc0b17ca59618ba">HasExtendedJoin</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const std::set&lt; unsigned char &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#a046e54a07af1119c6d308a46cddd7bfd">GetUserModes</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#a5e4bc8682496411835b7a1ac56d855bc">IsAuthed</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="ZNCString_8h.html#a84b05218977775b974a8db49e81f02a4">SCString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#a649ee4acc010d8b565672a8d82f490aa">GetAcceptedCaps</a> () const </td></tr>
@@ -915,6 +917,8 @@ Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#a665e62bc635ed3e90e7d615ff074aadb">m_bNamesx</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#a33f71b6a0bcdd61f64d602aaa822dbd0">m_bUHNames</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#afcd9ab8ba016ae28294a48eefecf3872">m_bAwayNotify</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#a998525b6310f35481808ee0bd3fa80d3">m_bAccountNotify</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#a1de813d63dd7be524c5316507449e714">m_bExtendedJoin</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#a21169efc297c6470a2a3289f4067a863">m_sPerms</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#a0aec6eb58b4b0442193110ba43f8a933">m_sPermModes</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">std::set&lt; unsigned char &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#aa202e332e87f04301b7603c5af95c538">m_scUserModes</a></td></tr>
@@ -2250,8 +2254,6 @@ Friends</h2></td></tr>
 
 <p>just mark us as closed, the parent can pick it up </p>
 
-<p>Referenced by <a class="el" href="classCExecSock.html#a6f53928f3c1396b60f8bafe4b2a0f1f7">CExecSock::Kill()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="ace2cccec9d2ba551369b41b60324496f"></a><!-- doxytag: member="CIRCSock::Close" ref="ace2cccec9d2ba551369b41b60324496f" args="(ECloseType eCloseType=CLT_NOW)" -->
@@ -2270,6 +2272,8 @@ Friends</h2></td></tr>
 <div class="memdoc">
 
 <p>just mark us as closed, the parent can pick it up </p>
+
+<p>Referenced by <a class="el" href="classCExecSock.html#a6f53928f3c1396b60f8bafe4b2a0f1f7">CExecSock::Kill()</a>.</p>
 
 </div>
 </div>
@@ -5296,6 +5300,8 @@ Friends</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Referenced by <a class="el" href="classCExecSock.html#aafd98b69a6096f4e5fae7727dce57e15">CExecSock::~CExecSock()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a56f9ff0e03c457b40e146f34d39a6589"></a><!-- doxytag: member="CIRCSock::GetWSock" ref="a56f9ff0e03c457b40e146f34d39a6589" args="()" -->
@@ -5312,8 +5318,6 @@ Friends</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Referenced by <a class="el" href="classCExecSock.html#aafd98b69a6096f4e5fae7727dce57e15">CExecSock::~CExecSock()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="ab68bc795b1051b75af46c17a21d8ca12"></a><!-- doxytag: member="CIRCSock::GetWSock" ref="ab68bc795b1051b75af46c17a21d8ca12" args="() const " -->
@@ -5383,6 +5387,24 @@ Friends</h2></td></tr>
 
 <p>Get the peer's X509 cert. </p>
 <p>it is up to you, the caller to call X509_free() on this object </p>
+
+</div>
+</div>
+<a class="anchor" id="a40db1e2aae405d29a2225e1f25503d14"></a><!-- doxytag: member="CIRCSock::HasAccountNotify" ref="a40db1e2aae405d29a2225e1f25503d14" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classCIRCSock.html#a40db1e2aae405d29a2225e1f25503d14">CIRCSock::HasAccountNotify</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="classCIRCSock.html#a998525b6310f35481808ee0bd3fa80d3">m_bAccountNotify</a>.</p>
 
 </div>
 </div>
@@ -5401,6 +5423,24 @@ Friends</h2></td></tr>
 <div class="memdoc">
 
 <p>References <a class="el" href="classCIRCSock.html#afcd9ab8ba016ae28294a48eefecf3872">m_bAwayNotify</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae545a85407cfea8bcbc0b17ca59618ba"></a><!-- doxytag: member="CIRCSock::HasExtendedJoin" ref="ae545a85407cfea8bcbc0b17ca59618ba" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classCIRCSock.html#ae545a85407cfea8bcbc0b17ca59618ba">CIRCSock::HasExtendedJoin</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="classCIRCSock.html#a1de813d63dd7be524c5316507449e714">m_bExtendedJoin</a>.</p>
 
 </div>
 </div>
@@ -7824,8 +7864,6 @@ Friends</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Referenced by <a class="el" href="classCExecSock.html#aafd98b69a6096f4e5fae7727dce57e15">CExecSock::~CExecSock()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a8c0b180de5d12104c0f7018eec13e57a"></a><!-- doxytag: member="CIRCSock::SetRSock" ref="a8c0b180de5d12104c0f7018eec13e57a" args="(cs_sock_t iSock)" -->
@@ -7842,6 +7880,8 @@ Friends</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Referenced by <a class="el" href="classCExecSock.html#aafd98b69a6096f4e5fae7727dce57e15">CExecSock::~CExecSock()</a>.</p>
 
 </div>
 </div>
@@ -8966,6 +9006,21 @@ Friends</h2></td></tr>
 </div>
 </div>
 <hr/><h2>Member Data Documentation</h2>
+<a class="anchor" id="a998525b6310f35481808ee0bd3fa80d3"></a><!-- doxytag: member="CIRCSock::m_bAccountNotify" ref="a998525b6310f35481808ee0bd3fa80d3" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classCIRCSock.html#a998525b6310f35481808ee0bd3fa80d3">CIRCSock::m_bAccountNotify</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Referenced by <a class="el" href="classCIRCSock.html#a40db1e2aae405d29a2225e1f25503d14">HasAccountNotify()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a4a56115765938ab378a6c6957729556e"></a><!-- doxytag: member="CIRCSock::m_bAuthed" ref="a4a56115765938ab378a6c6957729556e" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -8993,6 +9048,21 @@ Friends</h2></td></tr>
 <div class="memdoc">
 
 <p>Referenced by <a class="el" href="classCIRCSock.html#aaf17bbdaa4af6bc0633a9c8cf9517203">HasAwayNotify()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1de813d63dd7be524c5316507449e714"></a><!-- doxytag: member="CIRCSock::m_bExtendedJoin" ref="a1de813d63dd7be524c5316507449e714" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classCIRCSock.html#a1de813d63dd7be524c5316507449e714">CIRCSock::m_bExtendedJoin</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Referenced by <a class="el" href="classCIRCSock.html#ae545a85407cfea8bcbc0b17ca59618ba">HasExtendedJoin()</a>.</p>
 
 </div>
 </div>
@@ -9379,7 +9449,7 @@ Friends</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 12 2015 17:48:16 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 31 2015 20:04:49 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

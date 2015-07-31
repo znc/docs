@@ -362,6 +362,8 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a319a96bce425a463b9d1f0dd2e5d45f5">GetIdentifier</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#abc89a1263ff7c3e7d175c93bc3778497">HasCapNotify</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#ad1e08707e370c75a0b32cf45820ccde0">HasAwayNotify</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a8286c6b28d129abc15f94c8ba619b13c">HasAccountNotify</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a9e2edd76d720067d9a597dff739ac5cf">HasExtendedJoin</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#ace6094779c4996b22120498f96721d8b">HasNamesx</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a48ee2d9821da1fd2ff595fed9234e1de">HasUHNames</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#aa6d2ffa5742cdf22f946d96190c54e7c">IsAway</a> () const </td></tr>
@@ -912,6 +914,8 @@ Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a4677879435714d40ed86fb4015574544">m_bInCap</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#ad3e0d19a88a7e64c0bf166da340831b5">m_bCapNotify</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#acde77f3a60e3f30c1024e2e7c5a92ba2">m_bAwayNotify</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a1ff2353521613039c95751a901a6fa08">m_bAccountNotify</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#ad15b1aa50b29a324e6efe12482e131bc">m_bExtendedJoin</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#ab64f13eeabc94d15da06307cb6b5dd0d">m_bNamesx</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#af01077729afee80f51b9491e129983bc">m_bUHNames</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a2712e5bf9b58c9763b67d1afeb50b90f">m_bAway</a></td></tr>
@@ -1700,7 +1704,7 @@ Friends</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="classCClient.html#acde77f3a60e3f30c1024e2e7c5a92ba2">m_bAwayNotify</a>, <a class="el" href="classCClient.html#a2c5d770392a8933365723db5171ffc33">m_bBatch</a>, <a class="el" href="classCClient.html#ad3e0d19a88a7e64c0bf166da340831b5">m_bCapNotify</a>, <a class="el" href="classCClient.html#a112ec23b06fbe15a5758eac95a3815b6">m_bEchoMessage</a>, <a class="el" href="classCClient.html#ab64f13eeabc94d15da06307cb6b5dd0d">m_bNamesx</a>, <a class="el" href="classCClient.html#a8afc9e0fc6830144ba363339375dfc29">m_bServerTime</a>, and <a class="el" href="classCClient.html#af01077729afee80f51b9491e129983bc">m_bUHNames</a>.</p>
+<p>References <a class="el" href="classCClient.html#a1ff2353521613039c95751a901a6fa08">m_bAccountNotify</a>, <a class="el" href="classCClient.html#acde77f3a60e3f30c1024e2e7c5a92ba2">m_bAwayNotify</a>, <a class="el" href="classCClient.html#a2c5d770392a8933365723db5171ffc33">m_bBatch</a>, <a class="el" href="classCClient.html#ad3e0d19a88a7e64c0bf166da340831b5">m_bCapNotify</a>, <a class="el" href="classCClient.html#a112ec23b06fbe15a5758eac95a3815b6">m_bEchoMessage</a>, <a class="el" href="classCClient.html#ad15b1aa50b29a324e6efe12482e131bc">m_bExtendedJoin</a>, <a class="el" href="classCClient.html#ab64f13eeabc94d15da06307cb6b5dd0d">m_bNamesx</a>, <a class="el" href="classCClient.html#a8afc9e0fc6830144ba363339375dfc29">m_bServerTime</a>, and <a class="el" href="classCClient.html#af01077729afee80f51b9491e129983bc">m_bUHNames</a>.</p>
 
 </div>
 </div>
@@ -5248,6 +5252,24 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a8286c6b28d129abc15f94c8ba619b13c"></a><!-- doxytag: member="CClient::HasAccountNotify" ref="a8286c6b28d129abc15f94c8ba619b13c" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classCClient.html#a8286c6b28d129abc15f94c8ba619b13c">CClient::HasAccountNotify</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="classCClient.html#a1ff2353521613039c95751a901a6fa08">m_bAccountNotify</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ad1e08707e370c75a0b32cf45820ccde0"></a><!-- doxytag: member="CClient::HasAwayNotify" ref="ad1e08707e370c75a0b32cf45820ccde0" args="() const " -->
 <div class="memitem">
 <div class="memproto">
@@ -5317,6 +5339,24 @@ Friends</h2></td></tr>
 <div class="memdoc">
 
 <p>References <a class="el" href="classCClient.html#a112ec23b06fbe15a5758eac95a3815b6">m_bEchoMessage</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9e2edd76d720067d9a597dff739ac5cf"></a><!-- doxytag: member="CClient::HasExtendedJoin" ref="a9e2edd76d720067d9a597dff739ac5cf" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classCClient.html#a9e2edd76d720067d9a597dff739ac5cf">CClient::HasExtendedJoin</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="classCClient.html#ad15b1aa50b29a324e6efe12482e131bc">m_bExtendedJoin</a>.</p>
 
 </div>
 </div>
@@ -8187,8 +8227,6 @@ Friends</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Referenced by <a class="el" href="classCExecSock.html#aafd98b69a6096f4e5fae7727dce57e15">CExecSock::~CExecSock()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a66a0fe0e53850900f824ca60ced81e05"></a><!-- doxytag: member="CClient::SetWSock" ref="a66a0fe0e53850900f824ca60ced81e05" args="(cs_sock_t iSock)" -->
@@ -8205,6 +8243,8 @@ Friends</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Referenced by <a class="el" href="classCExecSock.html#aafd98b69a6096f4e5fae7727dce57e15">CExecSock::~CExecSock()</a>.</p>
 
 </div>
 </div>
@@ -8903,6 +8943,21 @@ Friends</h2></td></tr>
 </div>
 </div>
 <hr/><h2>Member Data Documentation</h2>
+<a class="anchor" id="a1ff2353521613039c95751a901a6fa08"></a><!-- doxytag: member="CClient::m_bAccountNotify" ref="a1ff2353521613039c95751a901a6fa08" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classCClient.html#a1ff2353521613039c95751a901a6fa08">CClient::m_bAccountNotify</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Referenced by <a class="el" href="classCClient.html#a51f196439c3218b2dce8f7c6610dad14">CClient()</a>, and <a class="el" href="classCClient.html#a8286c6b28d129abc15f94c8ba619b13c">HasAccountNotify()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a2712e5bf9b58c9763b67d1afeb50b90f"></a><!-- doxytag: member="CClient::m_bAway" ref="a2712e5bf9b58c9763b67d1afeb50b90f" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -8975,6 +9030,21 @@ Friends</h2></td></tr>
 <div class="memdoc">
 
 <p>Referenced by <a class="el" href="classCClient.html#a51f196439c3218b2dce8f7c6610dad14">CClient()</a>, and <a class="el" href="classCClient.html#a373d49a2361e2228765a2cc70f769338">HasEchoMessage()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad15b1aa50b29a324e6efe12482e131bc"></a><!-- doxytag: member="CClient::m_bExtendedJoin" ref="ad15b1aa50b29a324e6efe12482e131bc" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classCClient.html#ad15b1aa50b29a324e6efe12482e131bc">CClient::m_bExtendedJoin</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Referenced by <a class="el" href="classCClient.html#a51f196439c3218b2dce8f7c6610dad14">CClient()</a>, and <a class="el" href="classCClient.html#a9e2edd76d720067d9a597dff739ac5cf">HasExtendedJoin()</a>.</p>
 
 </div>
 </div>
@@ -9303,7 +9373,7 @@ Friends</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 12 2015 17:48:15 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 31 2015 20:04:48 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
