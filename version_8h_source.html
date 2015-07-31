@@ -94,9 +94,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00011"></a><a class="code" href="version_8h.html#a1c6d5de492ac61ad29aec7aa9a436bbf">00011</a> <span class="preprocessor">#define VERSION        (VERSION_MAJOR + VERSION_MINOR / 10.0)</span>
 <a name="l00012"></a>00012 <span class="preprocessor"></span>
 <a name="l00013"></a>00013 <span class="comment">// You can add -DVERSION_EXTRA=&quot;stuff&quot; to your CXXFLAGS!</span>
-<a name="l00014"></a>00014 <span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="version_8h.html#a7ad9abc1340b29c9666bfddf0378995e">ZNC_VERSION_EXTRA</a>;
-<a name="l00015"></a>00015 
-<a name="l00016"></a>00016 <span class="preprocessor">#endif // !ZNC_VERSION_H</span>
+<a name="l00014"></a>00014 <span class="preprocessor">#ifndef VERSION_EXTRA</span>
+<a name="l00015"></a><a class="code" href="version_8h.html#a078eaa4fbbcc2c248521462f87787e87">00015</a> <span class="preprocessor"></span><span class="preprocessor"># define VERSION_EXTRA &quot;&quot;</span>
+<a name="l00016"></a>00016 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
+<a name="l00017"></a>00017 <span class="preprocessor"></span><span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="version_8h.html#a7ad9abc1340b29c9666bfddf0378995e">ZNC_VERSION_EXTRA</a>;
+<a name="l00018"></a>00018 
+<a name="l00019"></a>00019 <span class="preprocessor">#endif // !ZNC_VERSION_H</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -115,7 +118,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 7 2015 15:47:06 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 31 2015 22:15:22 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
