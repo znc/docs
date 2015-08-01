@@ -39,6 +39,8 @@ var searchData=
   ['replace_5fn',['Replace_n',['../classCString.html#a176f24ea1423b28cfedf635a13baf62f',1,'CString']]],
   ['requiresadmin',['RequiresAdmin',['../classCWebSubPage.html#a216f8095c10c223967cf2360d3cc1b3f',1,'CWebSubPage']]],
   ['reset',['Reset',['../classCCron.html#a5d146f6713c1b9e163bac0e3c84a5e74',1,'CCron::Reset()'],['../classCChan.html#a6defdd3977e406f581b95f4e8f412261',1,'CChan::Reset()'],['../classCNick.html#ae793ab4d1023ff2568e77a2d27c3063d',1,'CNick::Reset()'],['../classCCron.html#a5d146f6713c1b9e163bac0e3c84a5e74',1,'CCron::Reset()']]],
+  ['resetautoclearchanbuffer',['ResetAutoClearChanBuffer',['../classCChan.html#aa220256d6369b211c821c01a229bcf84',1,'CChan']]],
+  ['resetbuffercount',['ResetBufferCount',['../classCChan.html#aa08052f42fdd41e9d0663635b36b2924',1,'CChan']]],
   ['resetbytesread',['ResetBytesRead',['../classCsock.html#a8d07fe5d296508b0a324444baa16eec0',1,'Csock::ResetBytesRead()'],['../classCsock.html#a8d07fe5d296508b0a324444baa16eec0',1,'Csock::ResetBytesRead()']]],
   ['resetbyteswritten',['ResetBytesWritten',['../classCsock.html#ac872aac9bcf7d2f8465d1f708478395c',1,'Csock::ResetBytesWritten()'],['../classCsock.html#ac872aac9bcf7d2f8465d1f708478395c',1,'Csock::ResetBytesWritten()']]],
   ['resetchans',['ResetChans',['../classCIRCSock.html#a6cb0066551d7a541b8fb5c088b26e5f8',1,'CIRCSock']]],
