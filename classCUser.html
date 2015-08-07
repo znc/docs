@@ -119,6 +119,8 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCConfig.html">CConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#abf4e4513f1c83036fa8e6204c5f17f71">ToConfig</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a01f18d381b7fabf84b77f30b6b7073b2">CheckPass</a> (const <a class="el" href="classCString.html">CString</a> &amp;sPass) const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a4e0035f6e23425108972ae56b2fcac7d">AddAllowedHost</a> (const <a class="el" href="classCString.html">CString</a> &amp;sHostMask)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#ae93ebb3929b88bac49d4d92c773f115e">RemAllowedHost</a> (const <a class="el" href="classCString.html">CString</a> &amp;sHostMask)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a4595afbdbd7d791c76f347db5e5817f1">ClearAllowedHosts</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a59c776e3cfa9c38314a9cbf9b6e0938b">IsHostAllowed</a> (const <a class="el" href="classCString.html">CString</a> &amp;sHostMask) const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#ade961df399b28c1175f304bd5e0b4f8f">IsValid</a> (<a class="el" href="classCString.html">CString</a> &amp;sErrMsg, bool bSkipPass=false) const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCModules.html">CModules</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a80621a2ebc6ab60d00f78f73ae59d3c7">GetModules</a> ()</td></tr>
@@ -614,6 +616,22 @@ Protected Attributes</h2></td></tr>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>sPass</em></td><td>)</td>
           <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4595afbdbd7d791c76f347db5e5817f1"></a><!-- doxytag: member="CUser::ClearAllowedHosts" ref="a4595afbdbd7d791c76f347db5e5817f1" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classCUser.html#a4595afbdbd7d791c76f347db5e5817f1">CUser::ClearAllowedHosts</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div>
@@ -1801,6 +1819,23 @@ Protected Attributes</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae93ebb3929b88bac49d4d92c773f115e"></a><!-- doxytag: member="CUser::RemAllowedHost" ref="ae93ebb3929b88bac49d4d92c773f115e" args="(const CString &amp;sHostMask)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classCUser.html#ae93ebb3929b88bac49d4d92c773f115e">CUser::RemAllowedHost</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
+          <td class="paramname"><em>sHostMask</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div>
@@ -3077,7 +3112,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 31 2015 21:05:54 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 7 2015 08:39:50 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

@@ -168,6 +168,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="ZNCString_8h.html#a84b05218977775b974a8db49e81f02a4">SCString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a94f994c9831e2f329c904b9de85d83d1">GetTrustedFingerprints</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a1252f6a0868cbdc59472b6b68362e66d">AddTrustedFingerprint</a> (const <a class="el" href="classCString.html">CString</a> &amp;sFP)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a051dc22061ca06859850eb9156c05a70">DelTrustedFingerprint</a> (const <a class="el" href="classCString.html">CString</a> &amp;sFP)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a1b980a601b29e643b189d2b90dd9fa9f">ClearTrustedFingerprints</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#ad31d62aef178a8666c32217c05e97b23">SetIRCConnectEnabled</a> (bool b)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#afb46811ebc83af9b686336458c118b49">GetIRCConnectEnabled</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCIRCSock.html">CIRCSock</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a27a6ffbc39efcc218e98a13cbc802a3c">GetIRCSock</a> ()</td></tr>
@@ -698,6 +699,24 @@ Protected Attributes</h2></td></tr>
 <div class="memdoc">
 
 <p>References <a class="el" href="classCBuffer.html#aeb76b075c8088d786660215a1c245aa2">CBuffer::Clear()</a>, and <a class="el" href="classCIRCNetwork.html#a410597f307e5d183f3b20a2d3dd3a9b6">m_RawBuffer</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1b980a601b29e643b189d2b90dd9fa9f"></a><!-- doxytag: member="CIRCNetwork::ClearTrustedFingerprints" ref="a1b980a601b29e643b189d2b90dd9fa9f" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classCIRCNetwork.html#a1b980a601b29e643b189d2b90dd9fa9f">CIRCNetwork::ClearTrustedFingerprints</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="classCIRCNetwork.html#a546890c8b8a74c3eb6070bab952c6ecc">m_ssTrustedFingerprints</a>.</p>
 
 </div>
 </div>
@@ -2709,7 +2728,7 @@ Protected Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Referenced by <a class="el" href="classCIRCNetwork.html#a1252f6a0868cbdc59472b6b68362e66d">AddTrustedFingerprint()</a>, <a class="el" href="classCIRCNetwork.html#a051dc22061ca06859850eb9156c05a70">DelTrustedFingerprint()</a>, and <a class="el" href="classCIRCNetwork.html#a94f994c9831e2f329c904b9de85d83d1">GetTrustedFingerprints()</a>.</p>
+<p>Referenced by <a class="el" href="classCIRCNetwork.html#a1252f6a0868cbdc59472b6b68362e66d">AddTrustedFingerprint()</a>, <a class="el" href="classCIRCNetwork.html#a1b980a601b29e643b189d2b90dd9fa9f">ClearTrustedFingerprints()</a>, <a class="el" href="classCIRCNetwork.html#a051dc22061ca06859850eb9156c05a70">DelTrustedFingerprint()</a>, and <a class="el" href="classCIRCNetwork.html#a94f994c9831e2f329c904b9de85d83d1">GetTrustedFingerprints()</a>.</p>
 
 </div>
 </div>
@@ -2835,7 +2854,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 12 2015 17:48:15 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 7 2015 08:39:49 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

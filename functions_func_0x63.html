@@ -247,6 +247,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classCTable.html#ada2fd03e0f806e1c6b2df1ef9215c0d2">CTable</a>
 , <a class="el" href="classTCacheMap.html#ab73bfc280a8b52c7664118c123eb317e">TCacheMap&lt; K, V &gt;</a>
 </li>
+<li>ClearAllowedHosts()
+: <a class="el" href="classCUser.html#a4595afbdbd7d791c76f347db5e5817f1">CUser</a>
+</li>
 <li>ClearBindHosts()
 : <a class="el" href="classCZNC.html#a766aff126e7e0038df77f5864fd0267f">CZNC</a>
 </li>
@@ -287,6 +290,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>ClearSubPages()
 : <a class="el" href="classCModule.html#a461b86482eff9c758e81ec5c0e46dd10">CModule</a>
+</li>
+<li>ClearTrustedFingerprints()
+: <a class="el" href="classCIRCNetwork.html#a1b980a601b29e643b189d2b90dd9fa9f">CIRCNetwork</a>
 </li>
 <li>ClearTrustedProxies()
 : <a class="el" href="classCZNC.html#af92e8dc9eead11ff730cef3150a6b992">CZNC</a>
@@ -345,22 +351,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classCNick.html#abdab6d7698b6f5d7b7d258001ed84a8f">CNick</a>
 </li>
 <li>Connect()
-: <a class="el" href="classCSocketManager.html#a13a348894dc0f6f03aad11f9b2cfa32b">CSocketManager</a>
+: <a class="el" href="classCSocket.html#aeb45ba68fff1f1740cec0e52f636418a">CSocket</a>
+, <a class="el" href="classCsock.html#aca10fb9ed6fae8ab232df34964be7e47">Csock</a>
+, <a class="el" href="classCSocketManager.html#a13a348894dc0f6f03aad11f9b2cfa32b">CSocketManager</a>
 , <a class="el" href="classCsock.html#aca10fb9ed6fae8ab232df34964be7e47">Csock</a>
 , <a class="el" href="classCSocketManager.html#a13a348894dc0f6f03aad11f9b2cfa32b">CSocketManager</a>
 , <a class="el" href="classCIRCNetwork.html#af852de5d1a8fb5d1608d81015ea39a36">CIRCNetwork</a>
 , <a class="el" href="classCSockManager.html#ab0bd931246527c073926a8c7d728dc42">CSockManager</a>
-, <a class="el" href="classCSocket.html#aeb45ba68fff1f1740cec0e52f636418a">CSocket</a>
-, <a class="el" href="classCsock.html#aca10fb9ed6fae8ab232df34964be7e47">Csock</a>
 </li>
 <li>Connected()
 : <a class="el" href="classCsock.html#adb18e57324c2abe83eea8bf8dc32cd33">Csock</a>
 , <a class="el" href="classCClient.html#aa8f20c24426aa55e8c96b8caa9600352">CClient</a>
 , <a class="el" href="classCHTTPSock.html#a6a29e266309a77ea7297ab2bb8a95d91">CHTTPSock</a>
 , <a class="el" href="classCIRCSock.html#a6ca774849ec163d6bbbc166e77d92b71">CIRCSock</a>
-, <a class="el" href="classCPerlSocket.html#aea976d51d04f101e6cb0d6bde95c1dea">CPerlSocket</a>
 , <a class="el" href="classCPySocket.html#ae647f19dab71693d70ec1c758803228b">CPySocket</a>
 , <a class="el" href="classCsock.html#adb18e57324c2abe83eea8bf8dc32cd33">Csock</a>
+, <a class="el" href="classCPerlSocket.html#aea976d51d04f101e6cb0d6bde95c1dea">CPerlSocket</a>
 </li>
 <li>ConnectFD()
 : <a class="el" href="classCsock.html#aed53de4046def7f4efbed8f449ec5fcb">Csock</a>
@@ -370,9 +376,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>ConnectionFrom()
 : <a class="el" href="classCsock.html#a46eaa8d1a67946a6d2f6349f40d551e2">Csock</a>
-, <a class="el" href="classCRealListener.html#a03adebccc54bf911d0dcd92722298b2a">CRealListener</a>
 , <a class="el" href="classCSocket.html#a438f469a3d719b67b9e3cc34ff09a7b2">CSocket</a>
 , <a class="el" href="classCsock.html#a46eaa8d1a67946a6d2f6349f40d551e2">Csock</a>
+, <a class="el" href="classCRealListener.html#a03adebccc54bf911d0dcd92722298b2a">CRealListener</a>
 </li>
 <li>ConnectionRefused()
 : <a class="el" href="classCsock.html#acc930b9f368c7226e9fd36f9f6b6ef91">Csock</a>
@@ -394,12 +400,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>ConvertAddress()
 : <a class="el" href="classCsock.html#ab03fd24a2d7a397ef9bbe864df6dda31">Csock</a>
 , <a class="el" href="classCZNCSock.html#a1301e874a81e8f2b64ff2af0a0e018a6">CZNCSock</a>
+, <a class="el" href="classCsock.html#ab03fd24a2d7a397ef9bbe864df6dda31">Csock</a>
 </li>
 <li>Copy()
-: <a class="el" href="classCsock.html#a6de0e591c1bc2a80bbfd7462f8ad14fa">Csock</a>
-, <a class="el" href="classCFile.html#afbed76c582157ac4b43732a04c99849d">CFile</a>
+: <a class="el" href="classCFile.html#afbed76c582157ac4b43732a04c99849d">CFile</a>
 , <a class="el" href="classCsock.html#a6de0e591c1bc2a80bbfd7462f8ad14fa">Csock</a>
-, <a class="el" href="classCFile.html#a0fe06e8cfcc4a426d79d93dc6bd0b840">CFile</a>
 </li>
 <li>CPerlModule()
 : <a class="el" href="classCPerlModule.html#a7a7bd4a92290eb570cf6b6f104df6da5">CPerlModule</a>
@@ -426,7 +431,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classCPyTimer.html#a8f185ee18d99d7a1630d5f2724bd93e6">CPyTimer</a>
 </li>
 <li>CQuery()
-: <a class="el" href="classCQuery.html#a7b5e2ca71ef08a6fca1637991139243e">CQuery</a>
+: <a class="el" href="classCQuery.html#a11d35d203223f49b61b0406708fab79d">CQuery</a>
 </li>
 <li>CRealListener()
 : <a class="el" href="classCRealListener.html#ab67e65cafefee32b07aa95ca9883b25b">CRealListener</a>
@@ -441,7 +446,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classCSockCommon.html#a8c88a085560956832660b9cbf94b7e63">CSockCommon</a>
 </li>
 <li>Crypt()
-: <a class="el" href="classCBlowfish.html#acba0c1a74658ce380a497f0165f63d50">CBlowfish</a>
+: <a class="el" href="classCBlowfish.html#aff253ecee59efd527b9b167cdd8b3c04">CBlowfish</a>
 , <a class="el" href="classCString.html#a63fee9048ec4cdc27dcb6b6df637fba5">CString</a>
 </li>
 <li>CSCharBuffer()
@@ -484,16 +489,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classCSSSListener.html#a38ebac95e16bb19c05eb92f6bdb88a2c">CSSSListener</a>
 </li>
 <li>CString()
-: <a class="el" href="classCString.html#accdba20374c2c04b5fe43f559f097390">CString</a>
+: <a class="el" href="classCString.html#a329fbc18b58d50566357f12848c65f4e">CString</a>
 </li>
 <li>CTable()
 : <a class="el" href="classCTable.html#ad985a92cc568ed77bca58adf638abebf">CTable</a>
 </li>
 <li>CTemplate()
-: <a class="el" href="classCTemplate.html#ab182c3e00729c91a9823eccecf590ca8">CTemplate</a>
+: <a class="el" href="classCTemplate.html#adbc15e113468e753805dac342acc0745">CTemplate</a>
 </li>
 <li>CTemplateLoopContext()
-: <a class="el" href="classCTemplateLoopContext.html#a7a9778439bcf6804fee112e9000c6738">CTemplateLoopContext</a>
+: <a class="el" href="classCTemplateLoopContext.html#a3c09d0038e57d3c01f2a280c841a3904">CTemplateLoopContext</a>
 </li>
 <li>CTemplateOptions()
 : <a class="el" href="classCTemplateOptions.html#a745e29f83aee741e2e42e2366ef129a7">CTemplateOptions</a>
@@ -508,13 +513,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classCTimer.html#a90a25e0c1b56ccec8813a594ec02a522">CTimer</a>
 </li>
 <li>CUser()
-: <a class="el" href="classCUser.html#ad9eba5fe8737f1e7bf64b7e9fdfcd49c">CUser</a>
+: <a class="el" href="classCUser.html#a09ed8b6f56cb6203daa91d6d4d5d531d">CUser</a>
 </li>
 <li>CUtils()
 : <a class="el" href="classCUtils.html#a1a00f2dc59d68a7c9bbdaf77e2f1a5c7">CUtils</a>
 </li>
 <li>CWebSession()
-: <a class="el" href="classCWebSession.html#a01deda3b0b8e4351de7042eb3328933f">CWebSession</a>
+: <a class="el" href="classCWebSession.html#a6d34066b7a2bdfc388e944401e99160b">CWebSession</a>
 </li>
 <li>CWebSessionMap()
 : <a class="el" href="classCWebSessionMap.html#ae0642de954db1ac9828cecd9a5002068">CWebSessionMap</a>
@@ -523,7 +528,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classCWebSock.html#a424772b6340da757ee28060ab66ec6b7">CWebSock</a>
 </li>
 <li>CWebSubPage()
-: <a class="el" href="classCWebSubPage.html#a45261c7f67f3f11b4190c92fe39a84a1">CWebSubPage</a>
+: <a class="el" href="classCWebSubPage.html#a1a52e1269758de8f8df7eee5147a1831">CWebSubPage</a>
 </li>
 <li>Cycle()
 : <a class="el" href="classCChan.html#ab3d92c9340786c51015350625977f367">CChan</a>
@@ -532,7 +537,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classCZNC.html#a80ecf2d9299af26092cac232375f02cb">CZNC</a>
 </li>
 <li>CZNCSock()
-: <a class="el" href="classCZNCSock.html#add82c89b245fccc103e225a9bf0f2211">CZNCSock</a>
+: <a class="el" href="classCZNCSock.html#a1141e3b6e49b036d3060ebb4d9ad4528">CZNCSock</a>
 </li>
 <li>CZNCTagHandler()
 : <a class="el" href="classCZNCTagHandler.html#a512b9b5cb86771cacf7130126a90f36e">CZNCTagHandler</a>
@@ -556,7 +561,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 31 2015 20:23:48 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 7 2015 08:39:51 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

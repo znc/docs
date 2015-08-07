@@ -23,6 +23,7 @@ var searchData=
   ['refuselogin',['RefuseLogin',['../classCAuthBase.html#ad2ff0071505e11eb171a157860b1156a',1,'CAuthBase::RefuseLogin()'],['../classCClient.html#afd72c7bef3316b2bf787d255169704df',1,'CClient::RefuseLogin()']]],
   ['rehashconfig',['RehashConfig',['../classCZNC.html#a62120e7240b6f04775f745ddcd70ca1f',1,'CZNC']]],
   ['reloadmodule',['ReloadModule',['../classCModules.html#a4e94f31aabbcf796f85221477d2e590c',1,'CModules']]],
+  ['remallowedhost',['RemAllowedHost',['../classCUser.html#ae93ebb3929b88bac49d4d92c773f115e',1,'CUser']]],
   ['rembindhost',['RemBindHost',['../classCZNC.html#ac278e6c21fdbd1c9f34121b21a0a9aa7',1,'CZNC']]],
   ['remcommand',['RemCommand',['../classCModule.html#a62440890e4a4c61b76576ba90aed4ccb',1,'CModule']]],
   ['remitem',['RemItem',['../classTCacheMap.html#a4e80ed1aede8eeb8d9f6092950358c04',1,'TCacheMap']]],
