@@ -157,6 +157,9 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a241329b8a382193ef5edba3fc2c6dcef">SetProtectWebSessions</a> (bool b)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#acc31768cc4e0db8cf165eb242630ac28">SetHideVersion</a> (bool b)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a68fa22ca0e610d6b74352398c37737e8">SetConnectDelay</a> (unsigned int i)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a5184d1281c72cc426cea40fdad20d02f">SetSSLCiphers</a> (const <a class="el" href="classCString.html">CString</a> &amp;sCiphers)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#ad113e2bf6470a82e5dd90e8d58e7f57c">SetSSLProtocols</a> (const <a class="el" href="classCString.html">CString</a> &amp;sProtocols)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a89c6a537816e90b2f7a5c8692d872cf3">SetSSLCertFile</a> (const <a class="el" href="classCString.html">CString</a> &amp;sFile)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="classCZNC.html#a872d81d61388f9acb7f8e6e966b4fd8f">ConfigState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a6c1f455a26eb3a5d06c93bbf9308420a">GetConfigState</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCSockManager.html">CSockManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a381caa7205b21e33ffc70f2bb0499cd1">GetManager</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classCSockManager.html">CSockManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a80b7e6d056de980988e337a86b2170bb">GetManager</a> () const </td></tr>
@@ -183,7 +186,9 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#ae805b2e17a557307584e6d3c79e561ab">GetProtectWebSessions</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a95489a5bdde0ff6002ecde62721ef0da">GetHideVersion</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a5d90576373bd699ec5aae7a501aa0d7a">GetSSLCiphers</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a1cc6e72e41e7045de78c140aacb786eb">GetSSLProtocols</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCsock.html#a5386b79c9e11eb2e3e175473378abf44">Csock::EDisableProtocol</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a56d1656c4b9fb895762a284a4cf8ad00">GetDisabledSSLProtocols</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#afbf3c1ee2c7d08959e0614cbf1afa807">GetSSLCertFile</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCUser.html">CUser</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#ac53d84f70f1a4d75272b1e979fcaf1b4">FindUser</a> (const <a class="el" href="classCString.html">CString</a> &amp;sUsername)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCModule.html">CModule</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a4b740ee958849bd6d2851a544cfca1fd">FindModule</a> (const <a class="el" href="classCString.html">CString</a> &amp;sModName, const <a class="el" href="classCString.html">CString</a> &amp;sUsername)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCModule.html">CModule</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#ad97c968b3d3cb4df41826c621aa2ccf9">FindModule</a> (const <a class="el" href="classCString.html">CString</a> &amp;sModName, <a class="el" href="classCUser.html">CUser</a> *pUser)</td></tr>
@@ -214,6 +219,7 @@ Static Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a928920d8b4902ff1e8c85915eaa8ab61">GetVersion</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a61107b86cb3dd4a4d0e754ee59d8014a">GetTag</a> (bool bIncludeVersion=true, bool bHTML=false)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a449f570b54ef2db316afd90675564c7a">GetCompileOptionsString</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="ZNCString_8h.html#af7252b7c4a0d4ec44ddc136c6055ae51">VCString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#ae8938dc7b6ea015965345cd56bd2e1c5">GetAvailableSSLProtocols</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a8f4b82cdf59707994f31bac9df624dad">CreateInstance</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classCZNC.html">CZNC</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a5a34f72a1539f7ed0516cfbbe7512e27">Get</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#ac613c83f7abc5dc636b3e89e4b5d7069">DestroyInstance</a> ()</td></tr>
@@ -1083,6 +1089,22 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ae8938dc7b6ea015965345cd56bd2e1c5"></a><!-- doxytag: member="CZNC::GetAvailableSSLProtocols" ref="ae8938dc7b6ea015965345cd56bd2e1c5" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="ZNCString_8h.html#af7252b7c4a0d4ec44ddc136c6055ae51">VCString</a> <a class="el" href="classCZNC.html#ae8938dc7b6ea015965345cd56bd2e1c5">CZNC::GetAvailableSSLProtocols</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="aa3294cdfbbca488e7e619c9f15fcb34b"></a><!-- doxytag: member="CZNC::GetBindHosts" ref="aa3294cdfbbca488e7e619c9f15fcb34b" args="() const " -->
 <div class="memitem">
 <div class="memproto">
@@ -1487,6 +1509,24 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="afbf3c1ee2c7d08959e0614cbf1afa807"></a><!-- doxytag: member="CZNC::GetSSLCertFile" ref="afbf3c1ee2c7d08959e0614cbf1afa807" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCString.html">CString</a> <a class="el" href="classCZNC.html#afbf3c1ee2c7d08959e0614cbf1afa807">CZNC::GetSSLCertFile</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="classCZNC.html#ab2c0b3d47c1f1ef777c330c304a64dd3">m_sSSLCertFile</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a5d90576373bd699ec5aae7a501aa0d7a"></a><!-- doxytag: member="CZNC::GetSSLCiphers" ref="a5d90576373bd699ec5aae7a501aa0d7a" args="() const " -->
 <div class="memitem">
 <div class="memproto">
@@ -1502,6 +1542,24 @@ Protected Attributes</h2></td></tr>
 <div class="memdoc">
 
 <p>References <a class="el" href="classCZNC.html#a713bc1c6831f78d839436943ee2a55d9">m_sSSLCiphers</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1cc6e72e41e7045de78c140aacb786eb"></a><!-- doxytag: member="CZNC::GetSSLProtocols" ref="a1cc6e72e41e7045de78c140aacb786eb" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCString.html">CString</a> <a class="el" href="classCZNC.html#a1cc6e72e41e7045de78c140aacb786eb">CZNC::GetSSLProtocols</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="classCZNC.html#a68980526cc0a63bc397c003206bae79f">m_sSSLProtocols</a>.</p>
 
 </div>
 </div>
@@ -2072,6 +2130,61 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a89c6a537816e90b2f7a5c8692d872cf3"></a><!-- doxytag: member="CZNC::SetSSLCertFile" ref="a89c6a537816e90b2f7a5c8692d872cf3" args="(const CString &amp;sFile)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classCZNC.html#a89c6a537816e90b2f7a5c8692d872cf3">CZNC::SetSSLCertFile</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
+          <td class="paramname"><em>sFile</em></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="classCZNC.html#ab2c0b3d47c1f1ef777c330c304a64dd3">m_sSSLCertFile</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5184d1281c72cc426cea40fdad20d02f"></a><!-- doxytag: member="CZNC::SetSSLCiphers" ref="a5184d1281c72cc426cea40fdad20d02f" args="(const CString &amp;sCiphers)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classCZNC.html#a5184d1281c72cc426cea40fdad20d02f">CZNC::SetSSLCiphers</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
+          <td class="paramname"><em>sCiphers</em></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="classCZNC.html#a713bc1c6831f78d839436943ee2a55d9">m_sSSLCiphers</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad113e2bf6470a82e5dd90e8d58e7f57c"></a><!-- doxytag: member="CZNC::SetSSLProtocols" ref="ad113e2bf6470a82e5dd90e8d58e7f57c" args="(const CString &amp;sProtocols)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classCZNC.html#ad113e2bf6470a82e5dd90e8d58e7f57c">CZNC::SetSSLProtocols</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
+          <td class="paramname"><em>sProtocols</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a84ce3dc0ad5a0102a5f83db5662280cd"></a><!-- doxytag: member="CZNC::SetStatusPrefix" ref="a84ce3dc0ad5a0102a5f83db5662280cd" args="(const CString &amp;s)" -->
 <div class="memitem">
 <div class="memproto">
@@ -2444,6 +2557,8 @@ Protected Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Referenced by <a class="el" href="classCZNC.html#afbf3c1ee2c7d08959e0614cbf1afa807">GetSSLCertFile()</a>, and <a class="el" href="classCZNC.html#a89c6a537816e90b2f7a5c8692d872cf3">SetSSLCertFile()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a713bc1c6831f78d839436943ee2a55d9"></a><!-- doxytag: member="CZNC::m_sSSLCiphers" ref="a713bc1c6831f78d839436943ee2a55d9" args="" -->
@@ -2457,7 +2572,7 @@ Protected Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Referenced by <a class="el" href="classCZNC.html#a5d90576373bd699ec5aae7a501aa0d7a">GetSSLCiphers()</a>.</p>
+<p>Referenced by <a class="el" href="classCZNC.html#a5d90576373bd699ec5aae7a501aa0d7a">GetSSLCiphers()</a>, and <a class="el" href="classCZNC.html#a5184d1281c72cc426cea40fdad20d02f">SetSSLCiphers()</a>.</p>
 
 </div>
 </div>
@@ -2471,6 +2586,8 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Referenced by <a class="el" href="classCZNC.html#a1cc6e72e41e7045de78c140aacb786eb">GetSSLProtocols()</a>.</p>
 
 </div>
 </div>
@@ -2701,7 +2818,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 12 2015 17:48:17 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 7 2015 08:48:59 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
