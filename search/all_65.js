@@ -72,6 +72,8 @@ var searchData=
   ['euserperms',['EUserPerms',['../classCChan.html#a8e48d2ab8131ea73f085d4dfb0591f16',1,'CChan']]],
   ['ex_5frestart',['EX_Restart',['../classCException.html#a6f33628b840f8d255299da8736136a88a90be7afdb1865a72cb9321e6fc9b07e1',1,'CException']]],
   ['ex_5fshutdown',['EX_Shutdown',['../classCException.html#a6f33628b840f8d255299da8736136a88a1e29403a3b236afbaa36d74269bb0237',1,'CException']]],
+  ['excludeprefix',['ExcludePrefix',['../classCMessage.html#a07909da9c64f7e1a642ca76b34d8e7a3a3b66d1c4a45a10d55113c138fcb579c3',1,'CMessage']]],
+  ['excludetags',['ExcludeTags',['../classCMessage.html#a07909da9c64f7e1a642ca76b34d8e7a3a50ccad0225b73bdb9105c6ffdbcb5a8a',1,'CMessage']]],
   ['execsock_2eh',['ExecSock.h',['../ExecSock_8h.html',1,'']]],
   ['execute',['Execute',['../classCExecSock.html#a0ee409ec0f4c111bc49ab1e681b1acfa',1,'CExecSock']]],
   ['exists',['Exists',['../classCFile.html#a02bfa86bab54613600b99406a08d5a50',1,'CFile::Exists() const '],['../classCFile.html#a4ee3fa88e7d7fbf2cbcced387f390e3f',1,'CFile::Exists(const CString &amp;sFile)']]],

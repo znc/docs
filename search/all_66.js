@@ -50,6 +50,7 @@ var searchData=
   ['firstline',['FirstLine',['../classCString.html#a5a010f8cc2c01a65907b4ab9ed0ae471',1,'CString']]],
   ['followsslcipherserverpreference',['FollowSSLCipherServerPreference',['../classCsock.html#a7351461473e488d632bad0a054e9a0f4',1,'Csock::FollowSSLCipherServerPreference()'],['../classCsock.html#a7351461473e488d632bad0a054e9a0f4',1,'Csock::FollowSSLCipherServerPreference()']]],
   ['forcelogin',['ForceLogin',['../classCHTTPSock.html#a8061644d6450bec2d272ac2a9771c874',1,'CHTTPSock::ForceLogin()'],['../classCWebSock.html#a095fa3a2d58e9ccd1083a53a1529cd65',1,'CWebSock::ForceLogin()']]],
+  ['formatflags',['FormatFlags',['../classCMessage.html#a07909da9c64f7e1a642ca76b34d8e7a3',1,'CMessage']]],
   ['formatservertime',['FormatServerTime',['../classCUtils.html#a4a3a2068b26d7605ffd0f7c559a000ac',1,'CUtils']]],
   ['formattime',['FormatTime',['../classCUtils.html#a1971c679165ddcb004f9c05558774dcb',1,'CUtils']]],
   ['forwardraw353',['ForwardRaw353',['../classCIRCSock.html#a717035665f7473a273830fec9f8feb5b',1,'CIRCSock::ForwardRaw353(const CString &amp;sLine) const '],['../classCIRCSock.html#af08ee392ba4edd792cb8581f3050be48',1,'CIRCSock::ForwardRaw353(const CString &amp;sLine, CClient *pClient) const ']]],

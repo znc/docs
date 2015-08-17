@@ -128,6 +128,7 @@ Static Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUtils.html#a6728eb4474a918b1b6b0dd0da66ed197">CTime</a> (time_t t, const <a class="el" href="classCString.html">CString</a> &amp;sTZ)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUtils.html#a1971c679165ddcb004f9c05558774dcb">FormatTime</a> (time_t t, const <a class="el" href="classCString.html">CString</a> &amp;sFormat, const <a class="el" href="classCString.html">CString</a> &amp;sTZ)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUtils.html#a4a3a2068b26d7605ffd0f7c559a000ac">FormatServerTime</a> (const timeval &amp;tv)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static timeval&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUtils.html#af5a652663f0b2ca714119560f43666a0">ParseServerTime</a> (const <a class="el" href="classCString.html">CString</a> &amp;sTime)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="ZNCString_8h.html#a84b05218977775b974a8db49e81f02a4">SCString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUtils.html#a7de4cb9ea789938dea83b66ade28bd96">GetTimezones</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="ZNCString_8h.html#a84b05218977775b974a8db49e81f02a4">SCString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUtils.html#a0136ab5edc8330a2d01b45b69aa2a7aa">GetEncodings</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classMCString.html">MCString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUtils.html#ab7374d12ececc457863cbeb5aff8f5ff">GetMessageTags</a> (const <a class="el" href="classCString.html">CString</a> &amp;sLine)</td></tr>
@@ -563,6 +564,23 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="af5a652663f0b2ca714119560f43666a0"></a><!-- doxytag: member="CUtils::ParseServerTime" ref="af5a652663f0b2ca714119560f43666a0" args="(const CString &amp;sTime)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static timeval <a class="el" href="classCUtils.html#af5a652663f0b2ca714119560f43666a0">CUtils::ParseServerTime</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
+          <td class="paramname"><em>sTime</em></td><td>)</td>
+          <td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ad5128efe3eff62abc007a544e36658cb"></a><!-- doxytag: member="CUtils::PrintAction" ref="ad5128efe3eff62abc007a544e36658cb" args="(const CString &amp;sMessage)" -->
 <div class="memitem">
 <div class="memproto">
@@ -786,7 +804,7 @@ Static Public Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 26 2015 06:09:18 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 17 2015 23:04:11 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

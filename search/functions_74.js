@@ -20,6 +20,7 @@ var searchData=
   ['tolonglong',['ToLongLong',['../classCString.html#ac44a7757d3f84f8977aab932d28d25ae',1,'CString']]],
   ['topercent',['ToPercent',['../classCString.html#ac772de648db199c455fe8a776c08739d',1,'CString']]],
   ['toshort',['ToShort',['../classCString.html#aec8917e41434898428b9e5184c834b42',1,'CString']]],
+  ['tostring',['ToString',['../classCMessage.html#afb668fcc41fb8bf233a011b1ac08917d',1,'CMessage']]],
   ['totimestr',['ToTimeStr',['../classCString.html#a8612ac17ce7175e593af16019be7077f',1,'CString']]],
   ['touint',['ToUInt',['../classCString.html#ad3f0fff160acd9619a941b715640adb5',1,'CString']]],
   ['toulong',['ToULong',['../classCString.html#a149573c31d6b75e6db521b42d0d708e8',1,'CString']]],

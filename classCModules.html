@@ -158,11 +158,16 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#a285c85cd3165368deaed60988ae788fe">OnModNotice</a> (const <a class="el" href="classCString.html">CString</a> &amp;sMessage)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#ac741a9d3354c4a9a5b0ed1c23d449426">OnModCTCP</a> (const <a class="el" href="classCString.html">CString</a> &amp;sMessage)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#a4cfb721c00ed43bf58fd5a9120c5b38e">OnQuit</a> (const <a class="el" href="classCNick.html">CNick</a> &amp;Nick, const <a class="el" href="classCString.html">CString</a> &amp;sMessage, const std::vector&lt; <a class="el" href="classCChan.html">CChan</a> * &gt; &amp;vChans)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#a3cb13e1cc8c41874cee124ce23a614d8">OnQuitMessage</a> (<a class="el" href="classCQuitMessage.html">CQuitMessage</a> &amp;Message, const std::vector&lt; <a class="el" href="classCChan.html">CChan</a> * &gt; &amp;vChans)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#acf4f52ae99687dc9a596954bd294c670">OnNick</a> (const <a class="el" href="classCNick.html">CNick</a> &amp;Nick, const <a class="el" href="classCString.html">CString</a> &amp;sNewNick, const std::vector&lt; <a class="el" href="classCChan.html">CChan</a> * &gt; &amp;vChans)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#a881e04e1078ade6b842a9e5bc0d647b9">OnNickMessage</a> (<a class="el" href="classCNickMessage.html">CNickMessage</a> &amp;Message, const std::vector&lt; <a class="el" href="classCChan.html">CChan</a> * &gt; &amp;vChans)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#a6f314b8342315df1da58faa747dbbb5a">OnKick</a> (const <a class="el" href="classCNick.html">CNick</a> &amp;Nick, const <a class="el" href="classCString.html">CString</a> &amp;sOpNick, <a class="el" href="classCChan.html">CChan</a> &amp;Channel, const <a class="el" href="classCString.html">CString</a> &amp;sMessage)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#ad4e9a58fd85992758c1571486d4cd51a">OnKickMessage</a> (<a class="el" href="classCKickMessage.html">CKickMessage</a> &amp;Message)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#adf0c885779a28254092323711acdd3d5">OnJoining</a> (<a class="el" href="classCChan.html">CChan</a> &amp;Channel)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#a09921903eb9ca6ccf190f28742e70550">OnJoin</a> (const <a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCChan.html">CChan</a> &amp;Channel)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#a64b5ea2e7cc7bd304dc4f87c12808653">OnJoinMessage</a> (<a class="el" href="classCJoinMessage.html">CJoinMessage</a> &amp;Message)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#af3f59621e39eb1c155f2f318c53c962f">OnPart</a> (const <a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCChan.html">CChan</a> &amp;Channel, const <a class="el" href="classCString.html">CString</a> &amp;sMessage)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#a2f03a79d9b774d19d72fc5f0bd2cb70a">OnPartMessage</a> (<a class="el" href="classCPartMessage.html">CPartMessage</a> &amp;Message)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#a47b5930b6390721d7509c4e63cbbb03b">OnInvite</a> (const <a class="el" href="classCNick.html">CNick</a> &amp;Nick, const <a class="el" href="classCString.html">CString</a> &amp;sChan)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#a62f809aa75bd541dce870c6156ddd588">OnChanBufferStarting</a> (<a class="el" href="classCChan.html">CChan</a> &amp;Chan, <a class="el" href="classCClient.html">CClient</a> &amp;Client)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#a3a2fc3a6c21f611f692f62df8d0a7724">OnChanBufferEnding</a> (<a class="el" href="classCChan.html">CChan</a> &amp;Chan, <a class="el" href="classCClient.html">CClient</a> &amp;Client)</td></tr>
@@ -170,6 +175,8 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#a61d9272440b38b6afb4d2b0522962885">OnChanBufferPlayLine</a> (<a class="el" href="classCChan.html">CChan</a> &amp;Chan, <a class="el" href="classCClient.html">CClient</a> &amp;Client, <a class="el" href="classCString.html">CString</a> &amp;sLine)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#ad03f0ccea4d08c13dfaaca032afc9a71">OnPrivBufferPlayLine2</a> (<a class="el" href="classCClient.html">CClient</a> &amp;Client, <a class="el" href="classCString.html">CString</a> &amp;sLine, const timeval &amp;tv)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#a074a79c4ff65cace17f9bd6fcb80fb46">OnPrivBufferPlayLine</a> (<a class="el" href="classCClient.html">CClient</a> &amp;Client, <a class="el" href="classCString.html">CString</a> &amp;sLine)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#af7a4fd7ac0d5f641d2259f17352f62e2">OnChanBufferPlayMessage</a> (<a class="el" href="classCMessage.html">CMessage</a> &amp;Message)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#a273cb02538aa2598bd68b3343aa108db">OnPrivBufferPlayMessage</a> (<a class="el" href="classCMessage.html">CMessage</a> &amp;Message)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#a64247e6ae1d671d20c685e6e45123525">OnClientLogin</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#afcbfa43510b0837bed5f3d4bfbf39386">OnClientDisconnect</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#a8fb3bd6202fadf600f093971cf26c6b6">OnUserRaw</a> (<a class="el" href="classCString.html">CString</a> &amp;sLine)</td></tr>
@@ -185,14 +192,23 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#acec73f6adf7cc1a7c0dc26efa6950ced">OnUserQuit</a> (<a class="el" href="classCString.html">CString</a> &amp;sMessage)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#a48a6682883726a053707e125bb23ff57">OnCTCPReply</a> (<a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCString.html">CString</a> &amp;sMessage)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#ad00bd444169b85e493958e002e8c0488">OnPrivCTCP</a> (<a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCString.html">CString</a> &amp;sMessage)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#ae9d1bd919a60541f075a03bfca93d650">OnPrivCTCPMessage</a> (<a class="el" href="classCPrivCTCP.html">CPrivCTCP</a> &amp;Message)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#a1cbd837036b13858a0f28ac5427bef93">OnChanCTCP</a> (<a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCChan.html">CChan</a> &amp;Channel, <a class="el" href="classCString.html">CString</a> &amp;sMessage)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#a5863cefa8008dbd79e3f9bf023534154">OnChanCTCPMessage</a> (<a class="el" href="classCChanCTCP.html">CChanCTCP</a> &amp;Message)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#a2276cdc0360382ade792bcba4ba2aacb">OnPrivAction</a> (<a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCString.html">CString</a> &amp;sMessage)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#a57cbbae6aa56f771157ae7a1f114473e">OnPrivActionMessage</a> (<a class="el" href="classCPrivAction.html">CPrivAction</a> &amp;Message)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#a28bb4c59f30cb961da2d1df3dbba53f6">OnChanAction</a> (<a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCChan.html">CChan</a> &amp;Channel, <a class="el" href="classCString.html">CString</a> &amp;sMessage)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#a3af30ab9132ccb1f32964b55a2fdb4ce">OnChanActionMessage</a> (<a class="el" href="classCChanAction.html">CChanAction</a> &amp;Message)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#aab516f86326f04f3f68c1d7fddc1e1fc">OnPrivMsg</a> (<a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCString.html">CString</a> &amp;sMessage)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#a645bc6bd04a821e18dfd7b721c775dcd">OnPrivMessage</a> (<a class="el" href="classCPrivMessage.html">CPrivMessage</a> &amp;Message)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#a9d33fa3fdb1006ab0c4bb722598e4a4e">OnChanMsg</a> (<a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCChan.html">CChan</a> &amp;Channel, <a class="el" href="classCString.html">CString</a> &amp;sMessage)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#a9e8bdb03c5e7f24d316bcdcb097dc2cb">OnChanMessage</a> (<a class="el" href="classCChanMessage.html">CChanMessage</a> &amp;Message)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#a914842950d3b4674ceb07da565b81d5e">OnPrivNotice</a> (<a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCString.html">CString</a> &amp;sMessage)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#a4984609472896d64640c7ab867b700ed">OnPrivNoticeMessage</a> (<a class="el" href="classCPrivNotice.html">CPrivNotice</a> &amp;Message)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#a6d106b8fc6cd989720f9b635559413d6">OnChanNotice</a> (<a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCChan.html">CChan</a> &amp;Channel, <a class="el" href="classCString.html">CString</a> &amp;sMessage)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#a62c440ee03a18ba07ed7932770951f2d">OnChanNoticeMessage</a> (<a class="el" href="classCChanNotice.html">CChanNotice</a> &amp;Message)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#a201d4b5372f0def6a48559113a18fc71">OnTopic</a> (<a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCChan.html">CChan</a> &amp;Channel, <a class="el" href="classCString.html">CString</a> &amp;sTopic)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#a6920812e6bfc71868649b39dd3a7b582">OnTopicMessage</a> (<a class="el" href="classCTopicMessage.html">CTopicMessage</a> &amp;Message)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#a7242009fac6805b2801bf8ae4ae55bb2">OnTimerAutoJoin</a> (<a class="el" href="classCChan.html">CChan</a> &amp;Channel)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#a885e0d92ff427004da23cb714b2ca337">OnAddNetwork</a> (<a class="el" href="classCIRCNetwork.html">CIRCNetwork</a> &amp;Network, <a class="el" href="classCString.html">CString</a> &amp;sErrorRet)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#a584e714590d3f6f474a1abee4c76582f">OnDeleteNetwork</a> (<a class="el" href="classCIRCNetwork.html">CIRCNetwork</a> &amp;Network)</td></tr>
@@ -751,6 +767,23 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a3af30ab9132ccb1f32964b55a2fdb4ce"></a><!-- doxytag: member="CModules::OnChanActionMessage" ref="a3af30ab9132ccb1f32964b55a2fdb4ce" args="(CChanAction &amp;Message)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classCModules.html#a3af30ab9132ccb1f32964b55a2fdb4ce">CModules::OnChanActionMessage</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCChanAction.html">CChanAction</a> &amp;&#160;</td>
+          <td class="paramname"><em>Message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a3a2fc3a6c21f611f692f62df8d0a7724"></a><!-- doxytag: member="CModules::OnChanBufferEnding" ref="a3a2fc3a6c21f611f692f62df8d0a7724" args="(CChan &amp;Chan, CClient &amp;Client)" -->
 <div class="memitem">
 <div class="memproto">
@@ -850,6 +883,23 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="af7a4fd7ac0d5f641d2259f17352f62e2"></a><!-- doxytag: member="CModules::OnChanBufferPlayMessage" ref="af7a4fd7ac0d5f641d2259f17352f62e2" args="(CMessage &amp;Message)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classCModules.html#af7a4fd7ac0d5f641d2259f17352f62e2">CModules::OnChanBufferPlayMessage</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCMessage.html">CMessage</a> &amp;&#160;</td>
+          <td class="paramname"><em>Message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a62f809aa75bd541dce870c6156ddd588"></a><!-- doxytag: member="CModules::OnChanBufferStarting" ref="a62f809aa75bd541dce870c6156ddd588" args="(CChan &amp;Chan, CClient &amp;Client)" -->
 <div class="memitem">
 <div class="memproto">
@@ -903,6 +953,40 @@ Protected Attributes</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5863cefa8008dbd79e3f9bf023534154"></a><!-- doxytag: member="CModules::OnChanCTCPMessage" ref="a5863cefa8008dbd79e3f9bf023534154" args="(CChanCTCP &amp;Message)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classCModules.html#a5863cefa8008dbd79e3f9bf023534154">CModules::OnChanCTCPMessage</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCChanCTCP.html">CChanCTCP</a> &amp;&#160;</td>
+          <td class="paramname"><em>Message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9e8bdb03c5e7f24d316bcdcb097dc2cb"></a><!-- doxytag: member="CModules::OnChanMessage" ref="a9e8bdb03c5e7f24d316bcdcb097dc2cb" args="(CChanMessage &amp;Message)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classCModules.html#a9e8bdb03c5e7f24d316bcdcb097dc2cb">CModules::OnChanMessage</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCChanMessage.html">CChanMessage</a> &amp;&#160;</td>
+          <td class="paramname"><em>Message</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div>
@@ -969,6 +1053,23 @@ Protected Attributes</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a62c440ee03a18ba07ed7932770951f2d"></a><!-- doxytag: member="CModules::OnChanNoticeMessage" ref="a62c440ee03a18ba07ed7932770951f2d" args="(CChanNotice &amp;Message)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classCModules.html#a62c440ee03a18ba07ed7932770951f2d">CModules::OnChanNoticeMessage</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCChanNotice.html">CChanNotice</a> &amp;&#160;</td>
+          <td class="paramname"><em>Message</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div>
@@ -1689,6 +1790,23 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a64b5ea2e7cc7bd304dc4f87c12808653"></a><!-- doxytag: member="CModules::OnJoinMessage" ref="a64b5ea2e7cc7bd304dc4f87c12808653" args="(CJoinMessage &amp;Message)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classCModules.html#a64b5ea2e7cc7bd304dc4f87c12808653">CModules::OnJoinMessage</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCJoinMessage.html">CJoinMessage</a> &amp;&#160;</td>
+          <td class="paramname"><em>Message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a6f314b8342315df1da58faa747dbbb5a"></a><!-- doxytag: member="CModules::OnKick" ref="a6f314b8342315df1da58faa747dbbb5a" args="(const CNick &amp;Nick, const CString &amp;sOpNick, CChan &amp;Channel, const CString &amp;sMessage)" -->
 <div class="memitem">
 <div class="memproto">
@@ -1721,6 +1839,23 @@ Protected Attributes</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad4e9a58fd85992758c1571486d4cd51a"></a><!-- doxytag: member="CModules::OnKickMessage" ref="ad4e9a58fd85992758c1571486d4cd51a" args="(CKickMessage &amp;Message)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classCModules.html#ad4e9a58fd85992758c1571486d4cd51a">CModules::OnKickMessage</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCKickMessage.html">CKickMessage</a> &amp;&#160;</td>
+          <td class="paramname"><em>Message</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div>
@@ -2009,6 +2144,33 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a881e04e1078ade6b842a9e5bc0d647b9"></a><!-- doxytag: member="CModules::OnNickMessage" ref="a881e04e1078ade6b842a9e5bc0d647b9" args="(CNickMessage &amp;Message, const std::vector&lt; CChan * &gt; &amp;vChans)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classCModules.html#a881e04e1078ade6b842a9e5bc0d647b9">CModules::OnNickMessage</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCNickMessage.html">CNickMessage</a> &amp;&#160;</td>
+          <td class="paramname"><em>Message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classCChan.html">CChan</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vChans</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="aa25834b51fe46bd2ab69f4107dc07cd6"></a><!-- doxytag: member="CModules::OnOp" ref="aa25834b51fe46bd2ab69f4107dc07cd6" args="(const CNick &amp;OpNick, const CNick &amp;Nick, CChan &amp;Channel, bool bNoChange)" -->
 <div class="memitem">
 <div class="memproto">
@@ -2120,6 +2282,23 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a2f03a79d9b774d19d72fc5f0bd2cb70a"></a><!-- doxytag: member="CModules::OnPartMessage" ref="a2f03a79d9b774d19d72fc5f0bd2cb70a" args="(CPartMessage &amp;Message)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classCModules.html#a2f03a79d9b774d19d72fc5f0bd2cb70a">CModules::OnPartMessage</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCPartMessage.html">CPartMessage</a> &amp;&#160;</td>
+          <td class="paramname"><em>Message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a764e1182336e990540022cc596d9696d"></a><!-- doxytag: member="CModules::OnPostRehash" ref="a764e1182336e990540022cc596d9696d" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -2172,6 +2351,23 @@ Protected Attributes</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a57cbbae6aa56f771157ae7a1f114473e"></a><!-- doxytag: member="CModules::OnPrivActionMessage" ref="a57cbbae6aa56f771157ae7a1f114473e" args="(CPrivAction &amp;Message)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classCModules.html#a57cbbae6aa56f771157ae7a1f114473e">CModules::OnPrivActionMessage</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCPrivAction.html">CPrivAction</a> &amp;&#160;</td>
+          <td class="paramname"><em>Message</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div>
@@ -2239,6 +2435,23 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a273cb02538aa2598bd68b3343aa108db"></a><!-- doxytag: member="CModules::OnPrivBufferPlayMessage" ref="a273cb02538aa2598bd68b3343aa108db" args="(CMessage &amp;Message)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classCModules.html#a273cb02538aa2598bd68b3343aa108db">CModules::OnPrivBufferPlayMessage</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCMessage.html">CMessage</a> &amp;&#160;</td>
+          <td class="paramname"><em>Message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ad00bd444169b85e493958e002e8c0488"></a><!-- doxytag: member="CModules::OnPrivCTCP" ref="ad00bd444169b85e493958e002e8c0488" args="(CNick &amp;Nick, CString &amp;sMessage)" -->
 <div class="memitem">
 <div class="memproto">
@@ -2259,6 +2472,40 @@ Protected Attributes</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae9d1bd919a60541f075a03bfca93d650"></a><!-- doxytag: member="CModules::OnPrivCTCPMessage" ref="ae9d1bd919a60541f075a03bfca93d650" args="(CPrivCTCP &amp;Message)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classCModules.html#ae9d1bd919a60541f075a03bfca93d650">CModules::OnPrivCTCPMessage</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCPrivCTCP.html">CPrivCTCP</a> &amp;&#160;</td>
+          <td class="paramname"><em>Message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a645bc6bd04a821e18dfd7b721c775dcd"></a><!-- doxytag: member="CModules::OnPrivMessage" ref="a645bc6bd04a821e18dfd7b721c775dcd" args="(CPrivMessage &amp;Message)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classCModules.html#a645bc6bd04a821e18dfd7b721c775dcd">CModules::OnPrivMessage</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCPrivMessage.html">CPrivMessage</a> &amp;&#160;</td>
+          <td class="paramname"><em>Message</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div>
@@ -2320,6 +2567,23 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a4984609472896d64640c7ab867b700ed"></a><!-- doxytag: member="CModules::OnPrivNoticeMessage" ref="a4984609472896d64640c7ab867b700ed" args="(CPrivNotice &amp;Message)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classCModules.html#a4984609472896d64640c7ab867b700ed">CModules::OnPrivNoticeMessage</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCPrivNotice.html">CPrivNotice</a> &amp;&#160;</td>
+          <td class="paramname"><em>Message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a4cfb721c00ed43bf58fd5a9120c5b38e"></a><!-- doxytag: member="CModules::OnQuit" ref="a4cfb721c00ed43bf58fd5a9120c5b38e" args="(const CNick &amp;Nick, const CString &amp;sMessage, const std::vector&lt; CChan * &gt; &amp;vChans)" -->
 <div class="memitem">
 <div class="memproto">
@@ -2335,6 +2599,33 @@ Protected Attributes</h2></td></tr>
           <td></td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>sMessage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classCChan.html">CChan</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vChans</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3cb13e1cc8c41874cee124ce23a614d8"></a><!-- doxytag: member="CModules::OnQuitMessage" ref="a3cb13e1cc8c41874cee124ce23a614d8" args="(CQuitMessage &amp;Message, const std::vector&lt; CChan * &gt; &amp;vChans)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classCModules.html#a3cb13e1cc8c41874cee124ce23a614d8">CModules::OnQuitMessage</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCQuitMessage.html">CQuitMessage</a> &amp;&#160;</td>
+          <td class="paramname"><em>Message</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2596,6 +2887,23 @@ Protected Attributes</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6920812e6bfc71868649b39dd3a7b582"></a><!-- doxytag: member="CModules::OnTopicMessage" ref="a6920812e6bfc71868649b39dd3a7b582" args="(CTopicMessage &amp;Message)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classCModules.html#a6920812e6bfc71868649b39dd3a7b582">CModules::OnTopicMessage</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCTopicMessage.html">CTopicMessage</a> &amp;&#160;</td>
+          <td class="paramname"><em>Message</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div>
@@ -3238,7 +3546,7 @@ template&lt;typename T&gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 12 2015 17:48:16 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 17 2015 23:04:10 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

@@ -83,6 +83,7 @@ var searchData=
   ['m_5fmsrequestcookies',['m_msRequestCookies',['../classCHTTPSock.html#a160000820a5fe7aaa2e0c5d4a0c33de9',1,'CHTTPSock']]],
   ['m_5fmsresponsecookies',['m_msResponseCookies',['../classCHTTPSock.html#a75a82cb7286eaeb2dc3638d11f74d666',1,'CHTTPSock']]],
   ['m_5fmssctcpreplies',['m_mssCTCPReplies',['../classCUser.html#a000616b218f0e3c3b3eaa1daf4f12304',1,'CUser']]],
+  ['m_5fmsstags',['m_mssTags',['../classCBufLine.html#a8b9fdb916ba58a47bb8fdedeb79e54c5',1,'CBufLine']]],
   ['m_5fmsusers',['m_msUsers',['../classCZNC.html#a04d07ea2fcec527c2115718d60f83950',1,'CZNC']]],
   ['m_5fmsvsgetparams',['m_msvsGETParams',['../classCHTTPSock.html#a859e20f4b19436c18a6d6136c8444317',1,'CHTTPSock']]],
   ['m_5fmsvspostparams',['m_msvsPOSTParams',['../classCHTTPSock.html#a07637f4033f332867a8abab4539cacc4',1,'CHTTPSock']]],

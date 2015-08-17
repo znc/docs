@@ -380,6 +380,9 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a8052e65d1e46a4687d264bf7b4a698f5">SetPlaybackActive</a> (bool bActive)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a2d67f4f447e6b0fa29179a43edd49954">PutIRC</a> (const <a class="el" href="classCString.html">CString</a> &amp;sLine)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a2a58ecbf1d322248522d4dd7d99cf476">PutClient</a> (const <a class="el" href="classCString.html">CString</a> &amp;sLine)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a raw data line to the client.  <a href="#a2a58ecbf1d322248522d4dd7d99cf476"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a7083b1c248a18f0059e5016fbc09b87b">PutClient</a> (const <a class="el" href="classCMessage.html">CMessage</a> &amp;Message)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a message to the client.  <a href="#a7083b1c248a18f0059e5016fbc09b87b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a3e7aa93b76046226f873abe326e5afbe">PutStatus</a> (const <a class="el" href="classCTable.html">CTable</a> &amp;table)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a95c4896bf413b899cad57d3e1c07a565">PutStatus</a> (const <a class="el" href="classCString.html">CString</a> &amp;sLine)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a7b305ee8cbb4556e4148d62edeb05536">PutStatusNotice</a> (const <a class="el" href="classCString.html">CString</a> &amp;sLine)</td></tr>
@@ -6398,6 +6401,49 @@ Friends</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Sends a raw data line to the client. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sLine</td><td>The line to be sent.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>The line is first passed <em>unmodified</em> to the <a class="el" href="classCModule.html#adcd01f5f8e420581ccad874c99ef62b4">CModule::OnSendToClient()</a> module hook. If no module halts the process, the line is then sent to the client.</p>
+<p>These lines appear in the debug output in the following syntax: </p>
+<div class="fragment"><pre class="fragment"> [time] (user/network) ZNC -&gt; CLI [line] 
+</pre></div> 
+</div>
+</div>
+<a class="anchor" id="a7083b1c248a18f0059e5016fbc09b87b"></a><!-- doxytag: member="CClient::PutClient" ref="a7083b1c248a18f0059e5016fbc09b87b" args="(const CMessage &amp;Message)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classCClient.html#a2a58ecbf1d322248522d4dd7d99cf476">CClient::PutClient</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCMessage.html">CMessage</a> &amp;&#160;</td>
+          <td class="paramname"><em>Message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Sends a message to the client. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Message</td><td>The message to be sent. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="note"><dt><b>Note:</b></dt><dd>Only known and compatible message tags are sent.</dd></dl>
+<p>Not all IRC clients are capable of handling arbitrary sets of message tags. For example, some older versions of some popular clients were prepared to parse just one interesting tag, <code>time</code>, and would break if multiple tags were included. Thus, in order to stay compatible with a variety of IRC clients, ZNC has to filter out message tags that the client has not explicitly requested.</p>
+<p>The following table documents currently supported message tags, and which capabilities the client is required to have requested to receive the respective message tags.</p>
+<p>Message tag | Capability ----------- | ---------- <code>time</code> |  <a class="el" href="classCClient.html#ac310500d908b99efdbf4db08233aced4">CClient::HasServerTime()</a> (<a href="http://ircv3.net/specs/extensions/server-time-3.2.html">server-time</a>) <code>batch</code> |  <a class="el" href="classCClient.html#a7203f3eecefc2f9a7fc787591d9303e2">CClient::HasBatch()</a> (<a href="http://ircv3.net/specs/extensions/batch-3.2.html">batch</a>)</p>
+<dl class="warning"><dt><b>Warning:</b></dt><dd>Bypassing the filter may cause troubles to some older IRC clients.</dd></dl>
+<p>It is possible to bypass the filter by converting a message to a string using  <a class="el" href="classCMessage.html#afb668fcc41fb8bf233a011b1ac08917d">CMessage::ToString()</a>, and passing the resulting raw line to the  <a class="el" href="classCClient.html#a2a58ecbf1d322248522d4dd7d99cf476" title="Sends a raw data line to the client.">CClient::PutClient(const CString&amp; sLine)</a> overload: </p>
+<div class="fragment"><pre class="fragment">  pClient-&gt;PutClient(Message.ToString());
+</pre></div> 
 </div>
 </div>
 <a class="anchor" id="a2d67f4f447e6b0fa29179a43edd49954"></a><!-- doxytag: member="CClient::PutIRC" ref="a2d67f4f447e6b0fa29179a43edd49954" args="(const CString &amp;sLine)" -->
@@ -8227,6 +8273,8 @@ Friends</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Referenced by <a class="el" href="classCExecSock.html#aafd98b69a6096f4e5fae7727dce57e15">CExecSock::~CExecSock()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a66a0fe0e53850900f824ca60ced81e05"></a><!-- doxytag: member="CClient::SetWSock" ref="a66a0fe0e53850900f824ca60ced81e05" args="(cs_sock_t iSock)" -->
@@ -8243,8 +8291,6 @@ Friends</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-
-<p>Referenced by <a class="el" href="classCExecSock.html#aafd98b69a6096f4e5fae7727dce57e15">CExecSock::~CExecSock()</a>.</p>
 
 </div>
 </div>
@@ -9373,7 +9419,7 @@ Friends</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 31 2015 20:04:48 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 17 2015 23:04:09 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

@@ -23,5 +23,7 @@ var searchData=
   ['esql',['ESQL',['../classCString.html#a8f63759db4ef372abb9cfa4751648e1fa5528b3d17d10fc5d915c4888b2c0c142',1,'CString']]],
   ['eurl',['EURL',['../classCString.html#a8f63759db4ef372abb9cfa4751648e1fa51df786ffcb52b401ad2ef2d10170f75',1,'CString']]],
   ['ex_5frestart',['EX_Restart',['../classCException.html#a6f33628b840f8d255299da8736136a88a90be7afdb1865a72cb9321e6fc9b07e1',1,'CException']]],
-  ['ex_5fshutdown',['EX_Shutdown',['../classCException.html#a6f33628b840f8d255299da8736136a88a1e29403a3b236afbaa36d74269bb0237',1,'CException']]]
+  ['ex_5fshutdown',['EX_Shutdown',['../classCException.html#a6f33628b840f8d255299da8736136a88a1e29403a3b236afbaa36d74269bb0237',1,'CException']]],
+  ['excludeprefix',['ExcludePrefix',['../classCMessage.html#a07909da9c64f7e1a642ca76b34d8e7a3a3b66d1c4a45a10d55113c138fcb579c3',1,'CMessage']]],
+  ['excludetags',['ExcludeTags',['../classCMessage.html#a07909da9c64f7e1a642ca76b34d8e7a3a50ccad0225b73bdb9105c6ffdbcb5a8a',1,'CMessage']]]
 ];

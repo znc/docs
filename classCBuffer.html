@@ -114,7 +114,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCBuffer.html#afa8775924c4c300053d7cae919ac924b">CBuffer</a> (unsigned int uLineCount=100)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCBuffer.html#ab5e8bcbbfc7920c3cca12094f211cea9">~CBuffer</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCBuffer.html#ad0885ab8078ea108c65ac8c8deabf90c">AddLine</a> (const <a class="el" href="classCString.html">CString</a> &amp;sFormat, const <a class="el" href="classCString.html">CString</a> &amp;sText=&quot;&quot;, const timeval *ts=nullptr)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCBuffer.html#a127959b88e9062cf4449ff11442b86f8">AddLine</a> (const <a class="el" href="classCString.html">CString</a> &amp;sFormat, const <a class="el" href="classCString.html">CString</a> &amp;sText=&quot;&quot;, const timeval *ts=nullptr, const <a class="el" href="classMCString.html">MCString</a> &amp;mssTags=<a class="el" href="classMCString.html#a3685e619a8c946b897e33de99347fc70">MCString::EmptyMap</a>)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCBuffer.html#a2e1ea4120131546a7abd971b25a83d58">UpdateLine</a> (const <a class="el" href="classCString.html">CString</a> &amp;sMatch, const <a class="el" href="classCString.html">CString</a> &amp;sFormat, const <a class="el" href="classCString.html">CString</a> &amp;sText=&quot;&quot;)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as AddLine, but replaces a line whose format string starts with sMatch if there is one.  <a href="#a2e1ea4120131546a7abd971b25a83d58"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCBuffer.html#afd27977ca48e644c23b5ae34b70f04b2">UpdateExactLine</a> (const <a class="el" href="classCString.html">CString</a> &amp;sFormat, const <a class="el" href="classCString.html">CString</a> &amp;sText=&quot;&quot;)</td></tr>
@@ -169,12 +169,12 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="ad0885ab8078ea108c65ac8c8deabf90c"></a><!-- doxytag: member="CBuffer::AddLine" ref="ad0885ab8078ea108c65ac8c8deabf90c" args="(const CString &amp;sFormat, const CString &amp;sText=&quot;&quot;, const timeval *ts=nullptr)" -->
+<a class="anchor" id="a127959b88e9062cf4449ff11442b86f8"></a><!-- doxytag: member="CBuffer::AddLine" ref="a127959b88e9062cf4449ff11442b86f8" args="(const CString &amp;sFormat, const CString &amp;sText=&quot;&quot;, const timeval *ts=nullptr, const MCString &amp;mssTags=MCString::EmptyMap)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">size_type <a class="el" href="classCBuffer.html#ad0885ab8078ea108c65ac8c8deabf90c">CBuffer::AddLine</a> </td>
+          <td class="memname">size_type <a class="el" href="classCBuffer.html#a127959b88e9062cf4449ff11442b86f8">CBuffer::AddLine</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>sFormat</em>, </td>
@@ -189,7 +189,13 @@ Private Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const timeval *&#160;</td>
-          <td class="paramname"><em>ts</em> = <code>nullptr</code>&#160;</td>
+          <td class="paramname"><em>ts</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classMCString.html">MCString</a> &amp;&#160;</td>
+          <td class="paramname"><em>mssTags</em> = <code><a class="el" href="classMCString.html#a3685e619a8c946b897e33de99347fc70">MCString::EmptyMap</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -200,7 +206,7 @@ Private Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Referenced by <a class="el" href="classCQuery.html#a0fbcb85199c34f837aa0b4ce7ece75f7">CQuery::AddBuffer()</a>, <a class="el" href="classCChan.html#a67401b6571f7d5c53d0d7bfb6c9c3052">CChan::AddBuffer()</a>, <a class="el" href="classCIRCNetwork.html#afaf914638739abe06ce7d6cf4b51aba3">CIRCNetwork::AddMotdBuffer()</a>, <a class="el" href="classCIRCNetwork.html#a444af52611ea727b28fec56442e8f3da">CIRCNetwork::AddNoticeBuffer()</a>, and <a class="el" href="classCIRCNetwork.html#a3b1ce33a1816deb2868bfc59b18d3c96">CIRCNetwork::AddRawBuffer()</a>.</p>
+<p>Referenced by <a class="el" href="classCQuery.html#a378ebd1f96b226fd95bf36d50cb142d5">CQuery::AddBuffer()</a>, <a class="el" href="classCChan.html#abe78bfee4718321d26f11f3515a576bd">CChan::AddBuffer()</a>, <a class="el" href="classCIRCNetwork.html#afaf914638739abe06ce7d6cf4b51aba3">CIRCNetwork::AddMotdBuffer()</a>, <a class="el" href="classCIRCNetwork.html#a444af52611ea727b28fec56442e8f3da">CIRCNetwork::AddNoticeBuffer()</a>, and <a class="el" href="classCIRCNetwork.html#a3b1ce33a1816deb2868bfc59b18d3c96">CIRCNetwork::AddRawBuffer()</a>.</p>
 
 </div>
 </div>
@@ -459,7 +465,7 @@ Private Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 26 2015 06:09:17 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 17 2015 23:04:09 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

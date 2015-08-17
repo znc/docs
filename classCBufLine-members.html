@@ -85,15 +85,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 This is the complete list of members for <a class="el" href="classCBufLine.html">CBufLine</a>, including all inherited members.<table>
   <tr class="memlist"><td><a class="el" href="classCBufLine.html#a320b273b34d3dc59c643f6f4ed192c1c">CBufLine</a>()</td><td><a class="el" href="classCBufLine.html">CBufLine</a></td><td><code> [inline]</code></td></tr>
-  <tr class="memlist"><td><a class="el" href="classCBufLine.html#a50122d42e9831d81050122431af32d97">CBufLine</a>(const CString &amp;sFormat, const CString &amp;sText=&quot;&quot;, const timeval *ts=nullptr)</td><td><a class="el" href="classCBufLine.html">CBufLine</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCBufLine.html#ab5cd912c434ed2be21e28d93bfb57e6d">CBufLine</a>(const CString &amp;sFormat, const CString &amp;sText=&quot;&quot;, const timeval *ts=nullptr, const MCString &amp;mssTags=MCString::EmptyMap)</td><td><a class="el" href="classCBufLine.html">CBufLine</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCBufLine.html#af2b9f9a5ab176f6d3260e913f4f68386">GetFormat</a>() const </td><td><a class="el" href="classCBufLine.html">CBufLine</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCBufLine.html#a58288eed2757ac96bcc4d6305fab07e8">GetLine</a>(const CClient &amp;Client, const MCString &amp;msParams) const </td><td><a class="el" href="classCBufLine.html">CBufLine</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCBufLine.html#a85b0c28fe9b9c81adb12e0ac7d5e7fab">GetTags</a>() const </td><td><a class="el" href="classCBufLine.html">CBufLine</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCBufLine.html#a8ea077ee7858b1a2f9c8f0b398d06455">GetText</a>() const </td><td><a class="el" href="classCBufLine.html">CBufLine</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCBufLine.html#a3e7175441aa887204602ee5bda9f2ce7">GetTime</a>() const </td><td><a class="el" href="classCBufLine.html">CBufLine</a></td><td><code> [inline]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCBufLine.html#a8b9fdb916ba58a47bb8fdedeb79e54c5">m_mssTags</a></td><td><a class="el" href="classCBufLine.html">CBufLine</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCBufLine.html#a36aadd94a513beaf204eecd9d41c113f">m_sFormat</a></td><td><a class="el" href="classCBufLine.html">CBufLine</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCBufLine.html#a3310db35cdf223943441e77d745b603d">m_sText</a></td><td><a class="el" href="classCBufLine.html">CBufLine</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCBufLine.html#a524b0abede00c543c49a403ef9d5bfc8">m_time</a></td><td><a class="el" href="classCBufLine.html">CBufLine</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCBufLine.html#aaf8a626a22f5254a5440ed901af40cf2">SetFormat</a>(const CString &amp;sFormat)</td><td><a class="el" href="classCBufLine.html">CBufLine</a></td><td><code> [inline]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCBufLine.html#a1df881d8f3aa079121b2f238bc033926">SetTags</a>(const MCString &amp;mssTags)</td><td><a class="el" href="classCBufLine.html">CBufLine</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCBufLine.html#a218b3a44c729bdb276d01d564a6d2b40">SetText</a>(const CString &amp;sText)</td><td><a class="el" href="classCBufLine.html">CBufLine</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCBufLine.html#ab43e1feae2df949f070b22a5820c0119">SetTime</a>(const timeval &amp;ts)</td><td><a class="el" href="classCBufLine.html">CBufLine</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCBufLine.html#a49e37d9c015679aa2fcc779b37671c1c">UpdateTime</a>()</td><td><a class="el" href="classCBufLine.html">CBufLine</a></td><td></td></tr>
@@ -116,7 +119,7 @@ This is the complete list of members for <a class="el" href="classCBufLine.html"
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 26 2015 06:09:17 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 17 2015 23:04:09 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

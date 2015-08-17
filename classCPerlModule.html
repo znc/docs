@@ -281,12 +281,28 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#a2a9c599bbfc40207c6749c110e5288f0">OnRawMode</a> (const <a class="el" href="classCNick.html">CNick</a> &amp;OpNick, <a class="el" href="classCChan.html">CChan</a> &amp;Channel, const <a class="el" href="classCString.html">CString</a> &amp;sModes, const <a class="el" href="classCString.html">CString</a> &amp;sArgs)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#adfa8fd21416f686f4a5a141761002404">OnUnknownModCommand</a> (const <a class="el" href="classCString.html">CString</a> &amp;sCommand)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This is similar to <a class="el" href="classCModule.html#a9af8127da998dbca33d77e58634b5283" title="Called when a command to your module is sent, e.g.">OnModCommand()</a>, but it is only called if HandleCommand didn't find any that wants to handle this.  <a href="#adfa8fd21416f686f4a5a141761002404"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#a2efc8b3f0afc5f096f348db0b1f83ffd">OnQuitMessage</a> (<a class="el" href="classCQuitMessage.html">CQuitMessage</a> &amp;Message, const std::vector&lt; <a class="el" href="classCChan.html">CChan</a> * &gt; &amp;vChans)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#aad3a13439d5f97ac9ac0221d7ddd745a">OnNickMessage</a> (<a class="el" href="classCNickMessage.html">CNickMessage</a> &amp;Message, const std::vector&lt; <a class="el" href="classCChan.html">CChan</a> * &gt; &amp;vChans)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#a6571825701a102de33200bec96f770ad">OnKickMessage</a> (<a class="el" href="classCKickMessage.html">CKickMessage</a> &amp;Message)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#a928b7c9e4ef1471018e3028f5fc53a22">OnJoinMessage</a> (<a class="el" href="classCJoinMessage.html">CJoinMessage</a> &amp;Message)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#aa344ecc4dcc1a50377152f4dc91895a3">OnPartMessage</a> (<a class="el" href="classCPartMessage.html">CPartMessage</a> &amp;Message)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#ac78549c98c1a6648c6a1e4a0ad4ddc3c">OnInvite</a> (const <a class="el" href="classCNick.html">CNick</a> &amp;Nick, const <a class="el" href="classCString.html">CString</a> &amp;sChan)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when user is invited into a channel.  <a href="#ac78549c98c1a6648c6a1e4a0ad4ddc3c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#add13109f49591071c187fa7ed209807f">OnChanBufferPlayLine2</a> (<a class="el" href="classCChan.html">CChan</a> &amp;Chan, <a class="el" href="classCClient.html">CClient</a> &amp;Client, <a class="el" href="classCString.html">CString</a> &amp;sLine, const timeval &amp;tv)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when for each line during a channel's buffer play back.  <a href="#add13109f49591071c187fa7ed209807f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#a3cfe7fae36b09dd33b2532b87802de77">OnChanBufferPlayMessage</a> (<a class="el" href="classCMessage.html">CMessage</a> &amp;Message)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#a4b43ad07e3c004439cca4f9933f6a9b8">OnPrivBufferPlayLine2</a> (<a class="el" href="classCClient.html">CClient</a> &amp;Client, <a class="el" href="classCString.html">CString</a> &amp;sLine, const timeval &amp;tv)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a line from the query buffer is played back.  <a href="#a4b43ad07e3c004439cca4f9933f6a9b8"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#aa2236f951c590ea372a6ebc6fc5645ca">OnPrivBufferPlayMessage</a> (<a class="el" href="classCMessage.html">CMessage</a> &amp;Message)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#a0638f7680c0fc6b1c949bee8fc4a61d9">OnPrivCTCPMessage</a> (<a class="el" href="classCPrivCTCP.html">CPrivCTCP</a> &amp;Message)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#a19cbe03c810ce237ffca74527211abfc">OnChanCTCPMessage</a> (<a class="el" href="classCChanCTCP.html">CChanCTCP</a> &amp;Message)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#af57ccd2e382ea0e11050bdc152c9d1ef">OnPrivActionMessage</a> (<a class="el" href="classCPrivAction.html">CPrivAction</a> &amp;Message)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#ab3ca21c54cc589ee57dc9685963bfc3d">OnChanActionMessage</a> (<a class="el" href="classCChanAction.html">CChanAction</a> &amp;Message)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#a91c06a38fe6dfba84d459f1c1cf5380e">OnPrivMessage</a> (<a class="el" href="classCPrivMessage.html">CPrivMessage</a> &amp;Message)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#a74fc9e95057f48e5859585801af163d1">OnChanMessage</a> (<a class="el" href="classCChanMessage.html">CChanMessage</a> &amp;Message)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#a461e2a1cc225bb7de251f1c9ac9c6663">OnPrivNoticeMessage</a> (<a class="el" href="classCPrivNotice.html">CPrivNotice</a> &amp;Message)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#aa5c8bdf705784ab4d9635cfd1fa722bb">OnChanNoticeMessage</a> (<a class="el" href="classCChanNotice.html">CChanNotice</a> &amp;Message)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#a0d97be55459082fcfb8984c3da184660">OnTopicMessage</a> (<a class="el" href="classCTopicMessage.html">CTopicMessage</a> &amp;Message)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="Modules_8h.html#a2f2b7746e7590ac0383278e975f13855">ModHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#a21df1a7f9b964dd941ba0c970a265a56">GetDLL</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#af8c3ecd92352e21e203de4ff1a804f32">PutIRC</a> (const <a class="el" href="classCString.html">CString</a> &amp;sLine)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This function sends a given raw IRC line to the IRC server, if we are connected to one.  <a href="#af8c3ecd92352e21e203de4ff1a804f32"></a><br/></td></tr>
@@ -1740,6 +1756,23 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ab3ca21c54cc589ee57dc9685963bfc3d"></a><!-- doxytag: member="CPerlModule::OnChanActionMessage" ref="ab3ca21c54cc589ee57dc9685963bfc3d" args="(CChanAction &amp;Message)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCModule.html#ab3ca21c54cc589ee57dc9685963bfc3d">CModule::OnChanActionMessage</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCChanAction.html">CChanAction</a> &amp;&#160;</td>
+          <td class="paramname"><em>Message</em></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a01275db656b1926b6e651de3c52039d5"></a><!-- doxytag: member="CPerlModule::OnChanBufferEnding" ref="a01275db656b1926b6e651de3c52039d5" args="(CChan &amp;Chan, CClient &amp;Client) override" -->
 <div class="memitem">
 <div class="memproto">
@@ -1865,6 +1898,23 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a3cfe7fae36b09dd33b2532b87802de77"></a><!-- doxytag: member="CPerlModule::OnChanBufferPlayMessage" ref="a3cfe7fae36b09dd33b2532b87802de77" args="(CMessage &amp;Message)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCModule.html#a3cfe7fae36b09dd33b2532b87802de77">CModule::OnChanBufferPlayMessage</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCMessage.html">CMessage</a> &amp;&#160;</td>
+          <td class="paramname"><em>Message</em></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a6867d489c2359c8c56f500e256ffbba5"></a><!-- doxytag: member="CPerlModule::OnChanBufferStarting" ref="a6867d489c2359c8c56f500e256ffbba5" args="(CChan &amp;Chan, CClient &amp;Client) override" -->
 <div class="memitem">
 <div class="memproto">
@@ -1947,6 +1997,40 @@ Protected Attributes</h2></td></tr>
 <dl class="return"><dt><b>Returns:</b></dt><dd>See <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2" title="This enum is just used for return from module hooks.">CModule::EModRet</a>. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classCModule.html#a822dcb30e583feb2f358b3e44605f6bf">CModule</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a19cbe03c810ce237ffca74527211abfc"></a><!-- doxytag: member="CPerlModule::OnChanCTCPMessage" ref="a19cbe03c810ce237ffca74527211abfc" args="(CChanCTCP &amp;Message)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCModule.html#a19cbe03c810ce237ffca74527211abfc">CModule::OnChanCTCPMessage</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCChanCTCP.html">CChanCTCP</a> &amp;&#160;</td>
+          <td class="paramname"><em>Message</em></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a74fc9e95057f48e5859585801af163d1"></a><!-- doxytag: member="CPerlModule::OnChanMessage" ref="a74fc9e95057f48e5859585801af163d1" args="(CChanMessage &amp;Message)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCModule.html#a74fc9e95057f48e5859585801af163d1">CModule::OnChanMessage</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCChanMessage.html">CChanMessage</a> &amp;&#160;</td>
+          <td class="paramname"><em>Message</em></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
 
 </div>
 </div>
@@ -2039,6 +2123,23 @@ Protected Attributes</h2></td></tr>
 <dl class="return"><dt><b>Returns:</b></dt><dd>See <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2" title="This enum is just used for return from module hooks.">CModule::EModRet</a>. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classCModule.html#a6244b74e02407b35cf9411c5329f8172">CModule</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa5c8bdf705784ab4d9635cfd1fa722bb"></a><!-- doxytag: member="CPerlModule::OnChanNoticeMessage" ref="aa5c8bdf705784ab4d9635cfd1fa722bb" args="(CChanNotice &amp;Message)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCModule.html#aa5c8bdf705784ab4d9635cfd1fa722bb">CModule::OnChanNoticeMessage</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCChanNotice.html">CChanNotice</a> &amp;&#160;</td>
+          <td class="paramname"><em>Message</em></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
 
 </div>
 </div>
@@ -3016,6 +3117,23 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a928b7c9e4ef1471018e3028f5fc53a22"></a><!-- doxytag: member="CPerlModule::OnJoinMessage" ref="a928b7c9e4ef1471018e3028f5fc53a22" args="(CJoinMessage &amp;Message)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="classCModule.html#a928b7c9e4ef1471018e3028f5fc53a22">CModule::OnJoinMessage</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCJoinMessage.html">CJoinMessage</a> &amp;&#160;</td>
+          <td class="paramname"><em>Message</em></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a5b7683c9067bf45a6fbe0061dff4bf6a"></a><!-- doxytag: member="CPerlModule::OnKick" ref="a5b7683c9067bf45a6fbe0061dff4bf6a" args="(const CNick &amp;OpNick, const CString &amp;sKickedNick, CChan &amp;Channel, const CString &amp;sMessage) override" -->
 <div class="memitem">
 <div class="memproto">
@@ -3065,6 +3183,23 @@ Protected Attributes</h2></td></tr>
 </dl>
 
 <p>Reimplemented from <a class="el" href="classCModule.html#a40e64777f5f435bea31d5e6b9cea25d5">CModule</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6571825701a102de33200bec96f770ad"></a><!-- doxytag: member="CPerlModule::OnKickMessage" ref="a6571825701a102de33200bec96f770ad" args="(CKickMessage &amp;Message)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="classCModule.html#a6571825701a102de33200bec96f770ad">CModule::OnKickMessage</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCKickMessage.html">CKickMessage</a> &amp;&#160;</td>
+          <td class="paramname"><em>Message</em></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
 
 </div>
 </div>
@@ -3486,6 +3621,33 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aad3a13439d5f97ac9ac0221d7ddd745a"></a><!-- doxytag: member="CPerlModule::OnNickMessage" ref="aad3a13439d5f97ac9ac0221d7ddd745a" args="(CNickMessage &amp;Message, const std::vector&lt; CChan * &gt; &amp;vChans)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="classCModule.html#aad3a13439d5f97ac9ac0221d7ddd745a">CModule::OnNickMessage</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCNickMessage.html">CNickMessage</a> &amp;&#160;</td>
+          <td class="paramname"><em>Message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classCChan.html">CChan</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vChans</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a86b1fb88ee1f5cb89d81c281e05e6bf1"></a><!-- doxytag: member="CPerlModule::OnOp" ref="a86b1fb88ee1f5cb89d81c281e05e6bf1" args="(const CNick &amp;OpNick, const CNick &amp;Nick, CChan &amp;Channel, bool bNoChange)" -->
 <div class="memitem">
 <div class="memproto">
@@ -3613,6 +3775,23 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aa344ecc4dcc1a50377152f4dc91895a3"></a><!-- doxytag: member="CPerlModule::OnPartMessage" ref="aa344ecc4dcc1a50377152f4dc91895a3" args="(CPartMessage &amp;Message)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="classCModule.html#aa344ecc4dcc1a50377152f4dc91895a3">CModule::OnPartMessage</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCPartMessage.html">CPartMessage</a> &amp;&#160;</td>
+          <td class="paramname"><em>Message</em></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ad2fd9638a5bcccb57499902d769076c5"></a><!-- doxytag: member="CPerlModule::OnPostRehash" ref="ad2fd9638a5bcccb57499902d769076c5" args="() override" -->
 <div class="memitem">
 <div class="memproto">
@@ -3693,6 +3872,23 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="af57ccd2e382ea0e11050bdc152c9d1ef"></a><!-- doxytag: member="CPerlModule::OnPrivActionMessage" ref="af57ccd2e382ea0e11050bdc152c9d1ef" args="(CPrivAction &amp;Message)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCModule.html#af57ccd2e382ea0e11050bdc152c9d1ef">CModule::OnPrivActionMessage</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCPrivAction.html">CPrivAction</a> &amp;&#160;</td>
+          <td class="paramname"><em>Message</em></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="aa13ea5f8f758c3bf5e1dff64a491cbe9"></a><!-- doxytag: member="CPerlModule::OnPrivBufferPlayLine" ref="aa13ea5f8f758c3bf5e1dff64a491cbe9" args="(CClient &amp;Client, CString &amp;sLine) override" -->
 <div class="memitem">
 <div class="memproto">
@@ -3766,6 +3962,23 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aa2236f951c590ea372a6ebc6fc5645ca"></a><!-- doxytag: member="CPerlModule::OnPrivBufferPlayMessage" ref="aa2236f951c590ea372a6ebc6fc5645ca" args="(CMessage &amp;Message)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCModule.html#aa2236f951c590ea372a6ebc6fc5645ca">CModule::OnPrivBufferPlayMessage</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCMessage.html">CMessage</a> &amp;&#160;</td>
+          <td class="paramname"><em>Message</em></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="aad1d7a0575077a23ded9381ff7a958eb"></a><!-- doxytag: member="CPerlModule::OnPrivCTCP" ref="aad1d7a0575077a23ded9381ff7a958eb" args="(CNick &amp;Nick, CString &amp;sMessage) override" -->
 <div class="memitem">
 <div class="memproto">
@@ -3802,6 +4015,40 @@ Protected Attributes</h2></td></tr>
 <dl class="return"><dt><b>Returns:</b></dt><dd>See <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2" title="This enum is just used for return from module hooks.">CModule::EModRet</a>. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classCModule.html#a6b8c4ec8d47188803dc69e505f9a7992">CModule</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0638f7680c0fc6b1c949bee8fc4a61d9"></a><!-- doxytag: member="CPerlModule::OnPrivCTCPMessage" ref="a0638f7680c0fc6b1c949bee8fc4a61d9" args="(CPrivCTCP &amp;Message)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCModule.html#a0638f7680c0fc6b1c949bee8fc4a61d9">CModule::OnPrivCTCPMessage</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCPrivCTCP.html">CPrivCTCP</a> &amp;&#160;</td>
+          <td class="paramname"><em>Message</em></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a91c06a38fe6dfba84d459f1c1cf5380e"></a><!-- doxytag: member="CPerlModule::OnPrivMessage" ref="a91c06a38fe6dfba84d459f1c1cf5380e" args="(CPrivMessage &amp;Message)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCModule.html#a91c06a38fe6dfba84d459f1c1cf5380e">CModule::OnPrivMessage</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCPrivMessage.html">CPrivMessage</a> &amp;&#160;</td>
+          <td class="paramname"><em>Message</em></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
 
 </div>
 </div>
@@ -3883,6 +4130,23 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a461e2a1cc225bb7de251f1c9ac9c6663"></a><!-- doxytag: member="CPerlModule::OnPrivNoticeMessage" ref="a461e2a1cc225bb7de251f1c9ac9c6663" args="(CPrivNotice &amp;Message)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCModule.html#a461e2a1cc225bb7de251f1c9ac9c6663">CModule::OnPrivNoticeMessage</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCPrivNotice.html">CPrivNotice</a> &amp;&#160;</td>
+          <td class="paramname"><em>Message</em></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a701f7bb61d120925faa10cac3a51aa44"></a><!-- doxytag: member="CPerlModule::OnQuit" ref="a701f7bb61d120925faa10cac3a51aa44" args="(const CNick &amp;Nick, const CString &amp;sMessage, const std::vector&lt; CChan * &gt; &amp;vChans) override" -->
 <div class="memitem">
 <div class="memproto">
@@ -3925,6 +4189,33 @@ Protected Attributes</h2></td></tr>
 </dl>
 
 <p>Reimplemented from <a class="el" href="classCModule.html#a9d2af61e4e9a0dd688c5c30cb27d38b2">CModule</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2efc8b3f0afc5f096f348db0b1f83ffd"></a><!-- doxytag: member="CPerlModule::OnQuitMessage" ref="a2efc8b3f0afc5f096f348db0b1f83ffd" args="(CQuitMessage &amp;Message, const std::vector&lt; CChan * &gt; &amp;vChans)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="classCModule.html#a2efc8b3f0afc5f096f348db0b1f83ffd">CModule::OnQuitMessage</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCQuitMessage.html">CQuitMessage</a> &amp;&#160;</td>
+          <td class="paramname"><em>Message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classCChan.html">CChan</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vChans</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
 
 </div>
 </div>
@@ -4282,6 +4573,23 @@ Protected Attributes</h2></td></tr>
 <dl class="return"><dt><b>Returns:</b></dt><dd>See <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2" title="This enum is just used for return from module hooks.">CModule::EModRet</a>. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classCModule.html#a8a825ffb7ac2d41d4185fda7642982c0">CModule</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0d97be55459082fcfb8984c3da184660"></a><!-- doxytag: member="CPerlModule::OnTopicMessage" ref="a0d97be55459082fcfb8984c3da184660" args="(CTopicMessage &amp;Message)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCModule.html#a0d97be55459082fcfb8984c3da184660">CModule::OnTopicMessage</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCTopicMessage.html">CTopicMessage</a> &amp;&#160;</td>
+          <td class="paramname"><em>Message</em></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
 
 </div>
 </div>
@@ -5666,7 +5974,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 12 2015 17:48:16 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 17 2015 23:04:10 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

@@ -162,7 +162,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCChan.html#a49dd995eb8c3a6c99c3678d69cf2e4c0">SetBufferCount</a> (unsigned int u, bool bForce=false)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCChan.html#a6b5453adf11257d9ab472b6d10a53353">InheritBufferCount</a> (unsigned int u, bool bForce=false)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCChan.html#aa08052f42fdd41e9d0663635b36b2924">ResetBufferCount</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCChan.html#a67401b6571f7d5c53d0d7bfb6c9c3052">AddBuffer</a> (const <a class="el" href="classCString.html">CString</a> &amp;sFormat, const <a class="el" href="classCString.html">CString</a> &amp;sText=&quot;&quot;, const timeval *ts=nullptr)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCChan.html#abe78bfee4718321d26f11f3515a576bd">AddBuffer</a> (const <a class="el" href="classCString.html">CString</a> &amp;sFormat, const <a class="el" href="classCString.html">CString</a> &amp;sText=&quot;&quot;, const timeval *ts=nullptr, const <a class="el" href="classMCString.html">MCString</a> &amp;mssTags=<a class="el" href="classMCString.html#a3685e619a8c946b897e33de99347fc70">MCString::EmptyMap</a>)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCChan.html#a1ad5495c2eca092630dce84c18430049">ClearBuffer</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCChan.html#a3eaf763f6f3445ceed0cc9e10f8ee742">SendBuffer</a> (<a class="el" href="classCClient.html">CClient</a> *pClient)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCChan.html#ae3855ec5cb4d07611fca2ccff4de94f0">SendBuffer</a> (<a class="el" href="classCClient.html">CClient</a> *pClient, const <a class="el" href="classCBuffer.html">CBuffer</a> &amp;Buffer)</td></tr>
@@ -379,12 +379,12 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a67401b6571f7d5c53d0d7bfb6c9c3052"></a><!-- doxytag: member="CChan::AddBuffer" ref="a67401b6571f7d5c53d0d7bfb6c9c3052" args="(const CString &amp;sFormat, const CString &amp;sText=&quot;&quot;, const timeval *ts=nullptr)" -->
+<a class="anchor" id="abe78bfee4718321d26f11f3515a576bd"></a><!-- doxytag: member="CChan::AddBuffer" ref="abe78bfee4718321d26f11f3515a576bd" args="(const CString &amp;sFormat, const CString &amp;sText=&quot;&quot;, const timeval *ts=nullptr, const MCString &amp;mssTags=MCString::EmptyMap)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">size_t <a class="el" href="classCChan.html#a67401b6571f7d5c53d0d7bfb6c9c3052">CChan::AddBuffer</a> </td>
+          <td class="memname">size_t <a class="el" href="classCChan.html#abe78bfee4718321d26f11f3515a576bd">CChan::AddBuffer</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>sFormat</em>, </td>
@@ -399,7 +399,13 @@ Protected Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const timeval *&#160;</td>
-          <td class="paramname"><em>ts</em> = <code>nullptr</code>&#160;</td>
+          <td class="paramname"><em>ts</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classMCString.html">MCString</a> &amp;&#160;</td>
+          <td class="paramname"><em>mssTags</em> = <code><a class="el" href="classMCString.html#a3685e619a8c946b897e33de99347fc70">MCString::EmptyMap</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -410,7 +416,7 @@ Protected Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="classCBuffer.html#ad0885ab8078ea108c65ac8c8deabf90c">CBuffer::AddLine()</a>, and <a class="el" href="classCChan.html#a2c9e974b0a35fe072fa939b3dbd1840a">m_Buffer</a>.</p>
+<p>References <a class="el" href="classCBuffer.html#a127959b88e9062cf4449ff11442b86f8">CBuffer::AddLine()</a>, and <a class="el" href="classCChan.html#a2c9e974b0a35fe072fa939b3dbd1840a">m_Buffer</a>.</p>
 
 </div>
 </div>
@@ -1957,7 +1963,7 @@ Protected Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Referenced by <a class="el" href="classCChan.html#a67401b6571f7d5c53d0d7bfb6c9c3052">AddBuffer()</a>, <a class="el" href="classCChan.html#a1ad5495c2eca092630dce84c18430049">ClearBuffer()</a>, <a class="el" href="classCChan.html#a82bfd95792874351dda1a47fb58138e3">GetBuffer()</a>, <a class="el" href="classCChan.html#aa518aaeefaeb48d68c70a440aea72221">GetBufferCount()</a>, <a class="el" href="classCChan.html#a6b5453adf11257d9ab472b6d10a53353">InheritBufferCount()</a>, and <a class="el" href="classCChan.html#a49dd995eb8c3a6c99c3678d69cf2e4c0">SetBufferCount()</a>.</p>
+<p>Referenced by <a class="el" href="classCChan.html#abe78bfee4718321d26f11f3515a576bd">AddBuffer()</a>, <a class="el" href="classCChan.html#a1ad5495c2eca092630dce84c18430049">ClearBuffer()</a>, <a class="el" href="classCChan.html#a82bfd95792874351dda1a47fb58138e3">GetBuffer()</a>, <a class="el" href="classCChan.html#aa518aaeefaeb48d68c70a440aea72221">GetBufferCount()</a>, <a class="el" href="classCChan.html#a6b5453adf11257d9ab472b6d10a53353">InheritBufferCount()</a>, and <a class="el" href="classCChan.html#a49dd995eb8c3a6c99c3678d69cf2e4c0">SetBufferCount()</a>.</p>
 
 </div>
 </div>
@@ -2162,7 +2168,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 2 2015 21:56:36 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 17 2015 23:04:09 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
