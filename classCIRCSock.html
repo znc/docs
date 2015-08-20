@@ -410,6 +410,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#aaf17bbdaa4af6bc0633a9c8cf9517203">HasAwayNotify</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#a40db1e2aae405d29a2225e1f25503d14">HasAccountNotify</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#ae545a85407cfea8bcbc0b17ca59618ba">HasExtendedJoin</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#ad2b9f62defdcb81d06c27a45de4ce345">HasServerTime</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const std::set&lt; unsigned char &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#a046e54a07af1119c6d308a46cddd7bfd">GetUserModes</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#a5e4bc8682496411835b7a1ac56d855bc">IsAuthed</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="ZNCString_8h.html#a84b05218977775b974a8db49e81f02a4">SCString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#a649ee4acc010d8b565672a8d82f490aa">GetAcceptedCaps</a> () const </td></tr>
@@ -919,6 +920,7 @@ Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#afcd9ab8ba016ae28294a48eefecf3872">m_bAwayNotify</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#a998525b6310f35481808ee0bd3fa80d3">m_bAccountNotify</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#a1de813d63dd7be524c5316507449e714">m_bExtendedJoin</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#a83b7ff5f09d8e39f1097620e041a17c8">m_bServerTime</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#a21169efc297c6470a2a3289f4067a863">m_sPerms</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#a0aec6eb58b4b0442193110ba43f8a933">m_sPermModes</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">std::set&lt; unsigned char &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#aa202e332e87f04301b7603c5af95c538">m_scUserModes</a></td></tr>
@@ -5498,6 +5500,24 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ad2b9f62defdcb81d06c27a45de4ce345"></a><!-- doxytag: member="CIRCSock::HasServerTime" ref="ad2b9f62defdcb81d06c27a45de4ce345" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classCIRCSock.html#ad2b9f62defdcb81d06c27a45de4ce345">CIRCSock::HasServerTime</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="classCIRCSock.html#a83b7ff5f09d8e39f1097620e041a17c8">m_bServerTime</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a0a2a10401a93deada603eb6c284d65a3"></a><!-- doxytag: member="CIRCSock::HasUHNames" ref="a0a2a10401a93deada603eb6c284d65a3" args="() const " -->
 <div class="memitem">
 <div class="memproto">
@@ -9006,6 +9026,21 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a83b7ff5f09d8e39f1097620e041a17c8"></a><!-- doxytag: member="CIRCSock::m_bServerTime" ref="a83b7ff5f09d8e39f1097620e041a17c8" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classCIRCSock.html#a83b7ff5f09d8e39f1097620e041a17c8">CIRCSock::m_bServerTime</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Referenced by <a class="el" href="classCIRCSock.html#ad2b9f62defdcb81d06c27a45de4ce345">HasServerTime()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a33f71b6a0bcdd61f64d602aaa822dbd0"></a><!-- doxytag: member="CIRCSock::m_bUHNames" ref="a33f71b6a0bcdd61f64d602aaa822dbd0" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -9361,7 +9396,7 @@ Friends</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 17 2015 23:04:09 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Aug 20 2015 21:46:50 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

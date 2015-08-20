@@ -26,7 +26,7 @@ var searchData=
   ['hasreadline',['HasReadLine',['../classCsock.html#a30d7c0b563bd61256cab129b6c567829',1,'Csock::HasReadLine() const '],['../classCsock.html#a30d7c0b563bd61256cab129b6c567829',1,'Csock::HasReadLine() const ']]],
   ['hasselfmessage',['HasSelfMessage',['../classCClient.html#a6a503b2b1723d5a175d4fa7c3ef5bf2d',1,'CClient']]],
   ['hasservers',['HasServers',['../classCIRCNetwork.html#a9c0f16b35306bf8efc22f9d89c806016',1,'CIRCNetwork']]],
-  ['hasservertime',['HasServerTime',['../classCClient.html#ac310500d908b99efdbf4db08233aced4',1,'CClient']]],
+  ['hasservertime',['HasServerTime',['../classCClient.html#ac310500d908b99efdbf4db08233aced4',1,'CClient::HasServerTime()'],['../classCIRCSock.html#ad2b9f62defdcb81d06c27a45de4ce345',1,'CIRCSock::HasServerTime()']]],
   ['hasspacefornewnetwork',['HasSpaceForNewNetwork',['../classCUser.html#a3e7d948bfa47e5701e326571e22408ae',1,'CUser']]],
   ['hasuhnames',['HasUHNames',['../classCClient.html#a48ee2d9821da1fd2ff595fed9234e1de',1,'CClient::HasUHNames()'],['../classCIRCSock.html#a0a2a10401a93deada603eb6c284d65a3',1,'CIRCSock::HasUHNames()']]],
   ['haswritebuffer',['HasWriteBuffer',['../classCsock.html#a556d37415c5c017c3336eb5228d1beb1',1,'Csock::HasWriteBuffer() const '],['../classCsock.html#a556d37415c5c017c3336eb5228d1beb1',1,'Csock::HasWriteBuffer() const ']]],
