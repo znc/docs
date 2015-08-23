@@ -198,6 +198,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#a2a9c599bbfc40207c6749c110e5288f0">OnRawMode</a> (const <a class="el" href="classCNick.html">CNick</a> &amp;OpNick, <a class="el" href="classCChan.html">CChan</a> &amp;Channel, const <a class="el" href="classCString.html">CString</a> &amp;sModes, const <a class="el" href="classCString.html">CString</a> &amp;sArgs)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#a90f4ce597d5461c003052ec01ae1ef2f">OnRaw</a> (<a class="el" href="classCString.html">CString</a> &amp;sLine)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called on any raw IRC line received from the <em>IRC server</em>.  <a href="#a90f4ce597d5461c003052ec01ae1ef2f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#aa2dc1e3fd157b0dbe9bb5cebafce1a21">OnRawMessage</a> (<a class="el" href="classCMessage.html">CMessage</a> &amp;Message)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#a73fd3f4fb91ff32f4f6cd6230031f42c">OnStatusCommand</a> (<a class="el" href="classCString.html">CString</a> &amp;sCommand)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a command to *status is sent.  <a href="#a73fd3f4fb91ff32f4f6cd6230031f42c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#a9af8127da998dbca33d77e58634b5283">OnModCommand</a> (const <a class="el" href="classCString.html">CString</a> &amp;sCommand)</td></tr>
@@ -4274,6 +4275,23 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aa2dc1e3fd157b0dbe9bb5cebafce1a21"></a><!-- doxytag: member="CModule::OnRawMessage" ref="aa2dc1e3fd157b0dbe9bb5cebafce1a21" args="(CMessage &amp;Message)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCModule.html#aa2dc1e3fd157b0dbe9bb5cebafce1a21">CModule::OnRawMessage</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCMessage.html">CMessage</a> &amp;&#160;</td>
+          <td class="paramname"><em>Message</em></td><td>)</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a2a9c599bbfc40207c6749c110e5288f0"></a><!-- doxytag: member="CModule::OnRawMode" ref="a2a9c599bbfc40207c6749c110e5288f0" args="(const CNick &amp;OpNick, CChan &amp;Channel, const CString &amp;sModes, const CString &amp;sArgs)" -->
 <div class="memitem">
 <div class="memproto">
@@ -6018,7 +6036,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 17 2015 23:04:10 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Aug 23 2015 10:16:41 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

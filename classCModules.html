@@ -153,6 +153,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#a112b8c40ea4a8f97640b05a58a64e838">OnMode2</a> (const <a class="el" href="classCNick.html">CNick</a> *pOpNick, <a class="el" href="classCChan.html">CChan</a> &amp;Channel, char uMode, const <a class="el" href="classCString.html">CString</a> &amp;sArg, bool bAdded, bool bNoChange)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#aebc42709bc0e9588015167864b9aad0a">OnMode</a> (const <a class="el" href="classCNick.html">CNick</a> &amp;OpNick, <a class="el" href="classCChan.html">CChan</a> &amp;Channel, char uMode, const <a class="el" href="classCString.html">CString</a> &amp;sArg, bool bAdded, bool bNoChange)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#a2ccf3eb2e8c6f657a9ba7cd07357d641">OnRaw</a> (<a class="el" href="classCString.html">CString</a> &amp;sLine)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#a1d6d011826d0e334814a9f7b107c9626">OnRawMessage</a> (<a class="el" href="classCMessage.html">CMessage</a> &amp;Message)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#ad2d18b696fc7927f4b3c1eb6c592a814">OnStatusCommand</a> (<a class="el" href="classCString.html">CString</a> &amp;sCommand)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#aa61f7656e5b3d2fa0f32eca81a826517">OnModCommand</a> (const <a class="el" href="classCString.html">CString</a> &amp;sCommand)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#a285c85cd3165368deaed60988ae788fe">OnModNotice</a> (const <a class="el" href="classCString.html">CString</a> &amp;sMessage)</td></tr>
@@ -2661,6 +2662,23 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a1d6d011826d0e334814a9f7b107c9626"></a><!-- doxytag: member="CModules::OnRawMessage" ref="a1d6d011826d0e334814a9f7b107c9626" args="(CMessage &amp;Message)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classCModules.html#a1d6d011826d0e334814a9f7b107c9626">CModules::OnRawMessage</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCMessage.html">CMessage</a> &amp;&#160;</td>
+          <td class="paramname"><em>Message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ade65b82fe7d5523cc7bad59e285d1404"></a><!-- doxytag: member="CModules::OnRawMode" ref="ade65b82fe7d5523cc7bad59e285d1404" args="(const CNick &amp;OpNick, CChan &amp;Channel, const CString &amp;sModes, const CString &amp;sArgs)" -->
 <div class="memitem">
 <div class="memproto">
@@ -3546,7 +3564,7 @@ template&lt;typename T&gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 17 2015 23:04:10 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Aug 23 2015 10:16:41 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
