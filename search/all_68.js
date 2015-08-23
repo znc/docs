@@ -31,6 +31,7 @@ var searchData=
   ['hasloop',['HasLoop',['../classCTemplate.html#acf9cb2380c0b6d34234543227189a5dd',1,'CTemplate']]],
   ['hasmode',['HasMode',['../classCChan.html#a0b152787be0c3d6c6b95cbebb3de0e72',1,'CChan']]],
   ['hasnamesx',['HasNamesx',['../classCClient.html#ace6094779c4996b22120498f96721d8b',1,'CClient::HasNamesx()'],['../classCIRCSock.html#a5d93e75a2a6d0048ccfe5df7adb61182',1,'CIRCSock::HasNamesx()']]],
+  ['hasnv',['HasNV',['../classCModule.html#a2cbd16cc53a45a71540e565c70365a9d',1,'CModule']]],
   ['hasparam',['HasParam',['../classCHTTPSock.html#aa3cb230874197fdecef8bac13446b111',1,'CHTTPSock']]],
   ['hasperm',['HasPerm',['../classCChan.html#adb55690d23658dedc1e4f864a37a3ee6',1,'CChan::HasPerm()'],['../classCNick.html#a6d82457b97a3ee83400c1037b71d1528',1,'CNick::HasPerm()']]],
   ['hasreadline',['HasReadLine',['../classCsock.html#a30d7c0b563bd61256cab129b6c567829',1,'Csock::HasReadLine() const '],['../classCsock.html#a30d7c0b563bd61256cab129b6c567829',1,'Csock::HasReadLine() const ']]],

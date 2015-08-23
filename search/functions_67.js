@@ -287,7 +287,7 @@ var searchData=
   ['getuserclients',['GetUserClients',['../classCUser.html#addc8e65212da0ef36eae15664645af63',1,'CUser']]],
   ['getusermap',['GetUserMap',['../classCZNC.html#aa27953d60feb3e279264a15810cad0a4',1,'CZNC']]],
   ['getusermodes',['GetUserModes',['../classCIRCSock.html#a046e54a07af1119c6d308a46cddd7bfd',1,'CIRCSock']]],
-  ['getusername',['GetUsername',['../classCAuthBase.html#a37fb1c1adb4318af00cf3b9cc26c81eb',1,'CAuthBase::GetUsername()'],['../classCUser.html#ad99e4e5f3db7611f72edec359d7eb749',1,'CUser::GetUserName()']]],
+  ['getusername',['GetUserName',['../classCUser.html#ad99e4e5f3db7611f72edec359d7eb749',1,'CUser::GetUserName()'],['../classCAuthBase.html#a37fb1c1adb4318af00cf3b9cc26c81eb',1,'CAuthBase::GetUsername()']]],
   ['getuserpath',['GetUserPath',['../classCUser.html#a91e12087175bb11b1ca8a2326422a83d',1,'CUser::GetUserPath()'],['../classCZNC.html#aac294f78eaadfc5df23599aab3c1b1fb',1,'CZNC::GetUserPath()']]],
   ['getvalue',['GetValue',['../classCTemplateLoopContext.html#af759a07a3f543ce03340b78520f35cf6',1,'CTemplateLoopContext::GetValue()'],['../classCTemplate.html#aea3aa5598fecc8d7635dcdeb98710b20',1,'CTemplate::GetValue()']]],
   ['getversion',['GetVersion',['../classCZNC.html#a928920d8b4902ff1e8c85915eaa8ab61',1,'CZNC::GetVersion()'],['../modperl_2module_8h.html#a8b430e5f9909e94c42fa6e0b5c193d91',1,'GetVersion():&#160;module.h'],['../modpython_2module_8h.html#a8b430e5f9909e94c42fa6e0b5c193d91',1,'GetVersion():&#160;module.h']]],
