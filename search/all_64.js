@@ -1,12 +1,10 @@
 var searchData=
 [
-  ['dcast',['dcast',['../structswig__type__info.html#a07df4bedf85be77b23756b531b60e0dd',1,'swig_type_info']]],
   ['debug',['debug',['../classCDebug.html#a1639e4b89bfad4c29c9769e0bc3f4db5',1,'CDebug::debug()'],['../classCDebug.html#a4d49b5a02ac1bd965ca05ed7192986b4',1,'CDebug::Debug()'],['../ZNCDebug_8h.html#a9c8bd5c22c538fb934e235b11ff3bf57',1,'DEBUG():&#160;ZNCDebug.h']]],
   ['decode',['Decode',['../classMCString.html#ad0eaf05fcab06db0027802f02c23b0aa',1,'MCString']]],
   ['decrowindex',['DecRowIndex',['../classCTemplateLoopContext.html#a26d48bfd44148f9ae992c70b156ef2d3',1,'CTemplateLoopContext']]],
   ['decrypt',['Decrypt',['../classCString.html#ae30eccf1811c3054fc3159bcbac12e79',1,'CString']]],
   ['decrypt_5fn',['Decrypt_n',['../classCString.html#a2efd065d4135aa5494ccbcde1c8fc3a8',1,'CString']]],
-  ['delargs',['delargs',['../structSwigPyClientData.html#a9cb4b9b02743d09dbe216f304e2b7df0',1,'SwigPyClientData']]],
   ['delchan',['DelChan',['../classCIRCNetwork.html#adbf13d2dbda3c3aa5e7c6f8719e90ff0',1,'CIRCNetwork']]],
   ['delcron',['DelCron',['../classCSockCommon.html#af74cc57cbc14a24544d2e203aef684c6',1,'CSockCommon::DelCron(const CS_STRING &amp;sName, bool bDeleteAll=true, bool bCaseSensitive=true)'],['../classCSockCommon.html#a2fe7814ee93f196745b636039213add5',1,'CSockCommon::DelCron(uint32_t iPos)'],['../classCSockCommon.html#af74cc57cbc14a24544d2e203aef684c6',1,'CSockCommon::DelCron(const CS_STRING &amp;sName, bool bDeleteAll=true, bool bCaseSensitive=true)'],['../classCSockCommon.html#a2fe7814ee93f196745b636039213add5',1,'CSockCommon::DelCron(uint32_t iPos)']]],
   ['delcronbyaddr',['DelCronByAddr',['../classCSockCommon.html#aeab4ac132ceeae7475be2302f4a3729c',1,'CSockCommon::DelCronByAddr(CCron *pcCron)'],['../classCSockCommon.html#aeab4ac132ceeae7475be2302f4a3729c',1,'CSockCommon::DelCronByAddr(CCron *pcCron)']]],
@@ -29,7 +27,6 @@ var searchData=
   ['denyloadmod',['DenyLoadMod',['../classCUser.html#aca50e97385169432a0ac7e5b27504761',1,'CUser']]],
   ['denysetbindhost',['DenySetBindHost',['../classCUser.html#ad3c363dce6c52606614a0e69e6c922e2',1,'CUser']]],
   ['dereference',['Dereference',['../classCsock.html#a0ffefa30e1140bac8aec4e397b7d9895',1,'Csock::Dereference()'],['../classCsock.html#a0ffefa30e1140bac8aec4e397b7d9895',1,'Csock::Dereference()']]],
-  ['destroy',['destroy',['../structSwigPyClientData.html#a1c4e62712f23db599e85e24e14818d59',1,'SwigPyClientData']]],
   ['destroyinstance',['DestroyInstance',['../classCZNC.html#ac613c83f7abc5dc636b3e89e4b5d7069',1,'CZNC']]],
   ['detachuser',['DetachUser',['../classCChan.html#a391a57fc4c75353d45c6b04795df477e',1,'CChan']]],
   ['disable',['Disable',['../classCChan.html#a9a9ea4a0c23e0389a1564a06b14588fa',1,'CChan']]],
@@ -43,6 +40,5 @@ var searchData=
   ['dns_5fvhost',['DNS_VHOST',['../classCsock.html#a94aab05249b29e4446077664dee91e5ea21f9bc029ad10ffbb5930842ec9381b7',1,'Csock']]],
   ['dnslookup',['DNSLookup',['../classCsock.html#a765aca4259f116588f591762286905f4',1,'Csock::DNSLookup(EDNSLType eDNSLType)'],['../classCsock.html#a765aca4259f116588f591762286905f4',1,'Csock::DNSLookup(EDNSLType eDNSLType)']]],
   ['dumpconfig',['DumpConfig',['../classCZNC.html#a94777b3548358a6b32a9512993d2bbc3',1,'CZNC']]],
-  ['dvalue',['dvalue',['../structswig__constant__info.html#ad8a9279a3cc632e7a8f43a8d162de78d',1,'swig_constant_info::dvalue()'],['../structswig__const__info.html#a74e477f1dbf515bcb7e2ef07a1d34c35',1,'swig_const_info::dvalue()']]],
   ['dynamicselectloop',['DynamicSelectLoop',['../classCSocketManager.html#aa5259aaf7a27ee048eb2a6480f45c387',1,'CSocketManager::DynamicSelectLoop(uint64_t iLowerBounds, uint64_t iUpperBounds, time_t iMaxResolution=3600)'],['../classCSocketManager.html#aa5259aaf7a27ee048eb2a6480f45c387',1,'CSocketManager::DynamicSelectLoop(uint64_t iLowerBounds, uint64_t iUpperBounds, time_t iMaxResolution=3600)']]]
 ];

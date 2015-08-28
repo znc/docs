@@ -11,7 +11,6 @@ var searchData=
   ['read_5feof',['READ_EOF',['../classCsock.html#ae0bf394f0683437a754dd535a7d1df65a6a6802eb39d29ef138184d7f89ae0360',1,'Csock']]],
   ['read_5ferr',['READ_ERR',['../classCsock.html#ae0bf394f0683437a754dd535a7d1df65a56005016c0f46b3d19bd19702c9c4ead',1,'Csock']]],
   ['read_5ftimedout',['READ_TIMEDOUT',['../classCsock.html#ae0bf394f0683437a754dd535a7d1df65a844c8b2bd49de14949ab11acbd863055',1,'Csock']]],
-  ['readbufferproc',['readbufferproc',['../swigpyrun_8h.html#a4fb5dde22554b2e8cbf604eaf6b8fc53',1,'swigpyrun.h']]],
   ['readdata',['ReadData',['../classCsock.html#a0b807704b265df360de15a1cfcbb23e0',1,'Csock::ReadData()'],['../classCHTTPSock.html#a2cf7b04dceecfa3814e49a0ed4964fb4',1,'CHTTPSock::ReadData()'],['../classCPerlSocket.html#aa1aa59de090b6593566068add581f994',1,'CPerlSocket::ReadData()'],['../classCPySocket.html#a670f1d9267785c06a6406454497fd7f4',1,'CPySocket::ReadData()'],['../classCsock.html#a0b807704b265df360de15a1cfcbb23e0',1,'Csock::ReadData()']]],
   ['readfile',['ReadFile',['../classCFile.html#a872648ac7ba544a6a2c74e3aece4401e',1,'CFile']]],
   ['readfilter',['ReadFilter',['../classMCString.html#a9844af50a84a4b26957bdc4688aa20d7',1,'MCString']]],

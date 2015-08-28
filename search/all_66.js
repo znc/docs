@@ -56,7 +56,6 @@ var searchData=
   ['forwardraw353',['ForwardRaw353',['../classCIRCSock.html#a717035665f7473a273830fec9f8feb5b',1,'CIRCSock::ForwardRaw353(const CString &amp;sLine) const '],['../classCIRCSock.html#af08ee392ba4edd792cb8581f3050be48',1,'CIRCSock::ForwardRaw353(const CString &amp;sLine, CClient *pClient) const ']]],
   ['fpcertverifycb',['FPCertVerifyCB',['../build_2include_2znc_2Csocket_8h.html#aa5463d49fb8abd380d534f606e69f6d4',1,'FPCertVerifyCB():&#160;Csocket.h'],['../third__party_2Csocket_2Csocket_8h.html#aa5463d49fb8abd380d534f606e69f6d4',1,'FPCertVerifyCB():&#160;Csocket.h']]],
   ['fptimer_5ft',['FPTimer_t',['../Modules_8h.html#ac37bb819056da7480b0bc7a717b45233',1,'Modules.h']]],
-  ['freefunc',['freefunc',['../swigpyrun_8h.html#aaa452a52dbfb432ac57356bef6a98869',1,'swigpyrun.h']]],
   ['ft_5fblock',['FT_BLOCK',['../classCFile.html#a435517a6d0f80f49dc93c6bf3d335d6ba097be20c723759a615d03d9cda3df157',1,'CFile']]],
   ['ft_5fcharacter',['FT_CHARACTER',['../classCFile.html#a435517a6d0f80f49dc93c6bf3d335d6ba8c2c91492dc49ebf2ae28d5bd7f7b192',1,'CFile']]],
   ['ft_5fdirectory',['FT_DIRECTORY',['../classCFile.html#a435517a6d0f80f49dc93c6bf3d335d6bae6ab03669e75cc33c22f9fa1ee39dce0',1,'CFile']]],

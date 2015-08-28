@@ -57,9 +57,5 @@ var searchData=
   ['tryexlock',['TryExLock',['../classCFile.html#a796535e782c6c62c9ff8e2b979630185',1,'CFile::TryExLock(const CString &amp;sLockFile, int iFlags=O_RDWR|O_CREAT)'],['../classCFile.html#a45bfd40aca06fd2aad194724150f582a',1,'CFile::TryExLock()']]],
   ['tsocketmanager',['TSocketManager',['../classTSocketManager.html',1,'TSocketManager&lt; T &gt;'],['../classTSocketManager.html#a3e36d395a959b8988328f54e7a4da656',1,'TSocketManager::TSocketManager()'],['../classTSocketManager.html#a3e36d395a959b8988328f54e7a4da656',1,'TSocketManager::TSocketManager()']]],
   ['tsocketmanager_3c_20czncsock_20_3e',['TSocketManager< CZNCSock >',['../classTSocketManager.html',1,'']]],
-  ['twebsubpage',['TWebSubPage',['../WebModules_8h.html#ada19e8ed0a50222c36dbddbe175af39c',1,'WebModules.h']]],
-  ['ty',['ty',['../structSwigPyObject.html#a510b5a6f66a8a33c0a54c3eeb83e5ba5',1,'SwigPyObject::ty()'],['../structSwigPyPacked.html#aa6f6be0a8a1bff7710200fbe8d51acf0',1,'SwigPyPacked::ty()']]],
-  ['type',['type',['../structswig__cast__info.html#a06b74832d16cc0c4fd147e4c39095cd9',1,'swig_cast_info::type()'],['../structswig__constant__info.html#a762e00c9007d9358bde546bba02fb2e3',1,'swig_constant_info::type()'],['../structswig__variable__info.html#abe5f2d16cf8caba9fef8e76384e2cd3d',1,'swig_variable_info::type()'],['../structPyHeapTypeObject.html#a8b961137de4ebeed5a5d2e4b47ee1ca7',1,'PyHeapTypeObject::type()'],['../structswig__const__info.html#ae8bbc99e1cda11f24e306365cbf33893',1,'swig_const_info::type()']]],
-  ['type_5finitial',['type_initial',['../structswig__module__info.html#aaf36c0bb2e9e796ff1576359d52507c9',1,'swig_module_info']]],
-  ['types',['types',['../structswig__module__info.html#a0a70e9ae189c2a26c92adbf2fabcd549',1,'swig_module_info']]]
+  ['twebsubpage',['TWebSubPage',['../WebModules_8h.html#ada19e8ed0a50222c36dbddbe175af39c',1,'WebModules.h']]]
 ];

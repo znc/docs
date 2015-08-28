@@ -1,7 +1,6 @@
 var searchData=
 [
   ['defines_2eh',['defines.h',['../include_2znc_2defines_8h.html',1,'']]],
-  ['implicitconv',['implicitconv',['../structSwigPyClientData.html#a5f9ebdbc04a774559a64b926b6ec4070',1,'SwigPyClientData']]],
   ['inbound',['INBOUND',['../classCsock.html#a12ece5f34b7f197eb764e25b0b43b999a42d6aa63a541581e5e7804d4d0e68ab7',1,'Csock']]],
   ['incjointries',['IncJoinTries',['../classCChan.html#a403fe4c05f84a7390170fd2400635e36',1,'CChan']]],
   ['includeall',['IncludeAll',['../classCMessage.html#a07909da9c64f7e1a642ca76b34d8e7a3a671a1c47894dced240b08ef505086fec',1,'CMessage']]],
@@ -16,7 +15,6 @@ var searchData=
   ['inithomepath',['InitHomePath',['../classCFile.html#ad2ff7bb2df4b87adde17323ff8939144',1,'CFile']]],
   ['initssl',['InitSSL',['../build_2include_2znc_2Csocket_8h.html#a21432c8f7ba3dea407ec00c03cc3e13e',1,'InitSSL(ECompType eCompressionType=CT_NONE):&#160;Csocket.h'],['../third__party_2Csocket_2Csocket_8h.html#a21432c8f7ba3dea407ec00c03cc3e13e',1,'InitSSL(ECompType eCompressionType=CT_NONE):&#160;Csocket.h']]],
   ['int',['INT',['../classPString.html#a3d15380aec9d92c71dd759f5fa4d9661a30752768571556cd19012ffc099c9730',1,'PString']]],
-  ['int2ptr',['INT2PTR',['../swigperlrun_8h.html#abbc4a3f90370716e2313006d8e7d5053',1,'swigperlrun.h']]],
   ['invalidate',['Invalidate',['../classCAuthBase.html#a83d7e2b0877b17244680b72df6ec46c6',1,'CAuthBase::Invalidate()'],['../classCClientAuth.html#a13f9e93a376dbcd18d1d3307b97963c9',1,'CClientAuth::Invalidate()']]],
   ['ircconnected',['IRCConnected',['../classCIRCNetwork.html#acb59f974abebead9826ec900c4cda3d7',1,'CIRCNetwork']]],
   ['ircdisconnected',['IRCDisconnected',['../classCIRCNetwork.html#a11ceb1ea1c998695e9dc1bd3840a133a',1,'CIRCNetwork']]],
@@ -70,6 +68,8 @@ var searchData=
   ['isvalididentifier',['IsValidIdentifier',['../classCClient.html#a25e8c5f0e58ba2b8132d073576a295ef',1,'CClient']]],
   ['isvalidnetwork',['IsValidNetwork',['../classCIRCNetwork.html#a3253620b3dc05b53547a5cbc84c1872f',1,'CIRCNetwork']]],
   ['isvalidusername',['IsValidUserName',['../classCUser.html#a018b0c276ec64e156b023696157e2e85',1,'CUser']]],
-  ['iterator',['iterator',['../classTCacheMap.html#ac29fbd1d01dec1b68e626e1c1bed4f8c',1,'TCacheMap']]],
-  ['ivsize',['IVSIZE',['../swigperlrun_8h.html#a0b1ab9561b9721a2222e66985455bf2c',1,'swigperlrun.h']]]
+  ['iterate_2eh',['iterate.h',['../iterate_8h.html',1,'']]],
+  ['iterate_5fget_5fsum',['iterate_get_sum',['../iterate_8h.html#a3578d3c892d16c17c3f1eb612e42f3f3',1,'iterate.h']]],
+  ['iterate_5fh',['ITERATE_H',['../iterate_8h.html#a236951c60185df2fcd05a57ce538cd48',1,'iterate.h']]],
+  ['iterator',['iterator',['../classTCacheMap.html#ac29fbd1d01dec1b68e626e1c1bed4f8c',1,'TCacheMap']]]
 ];
