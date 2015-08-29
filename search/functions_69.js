@@ -61,6 +61,5 @@ var searchData=
   ['isvalidhostname',['IsValidHostName',['../classCServer.html#a90810ca5e292e219244a800ad8e7cee0',1,'CServer']]],
   ['isvalididentifier',['IsValidIdentifier',['../classCClient.html#a25e8c5f0e58ba2b8132d073576a295ef',1,'CClient']]],
   ['isvalidnetwork',['IsValidNetwork',['../classCIRCNetwork.html#a3253620b3dc05b53547a5cbc84c1872f',1,'CIRCNetwork']]],
-  ['isvalidusername',['IsValidUserName',['../classCUser.html#a018b0c276ec64e156b023696157e2e85',1,'CUser']]],
-  ['iterate_5fget_5fsum',['iterate_get_sum',['../iterate_8h.html#a3578d3c892d16c17c3f1eb612e42f3f3',1,'iterate.h']]]
+  ['isvalidusername',['IsValidUserName',['../classCUser.html#a018b0c276ec64e156b023696157e2e85',1,'CUser']]]
 ];

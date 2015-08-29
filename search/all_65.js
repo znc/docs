@@ -61,6 +61,7 @@ var searchData=
   ['epagereqresult',['EPageReqResult',['../classCWebSock.html#a8b46819ec286f193efb0f8efcc8ace5a',1,'CWebSock']]],
   ['equals',['Equals',['../classCString.html#a2bbac3280dc943bf6a68ee023d707a06',1,'CString::Equals(const CString &amp;s, CaseSensitivity cs=CaseInsensitive) const '],['../classCString.html#a24a659b4abcb3b406fa9529d0df4f398',1,'CString::Equals(const CString &amp;s, bool bCaseSensitive, CString::size_type uLen=CString::npos) const ']]],
   ['errnobadsslcert',['errnoBadSSLCert',['../classCZNCSock.html#a58222e8d6adf6157d11e5b40f444e5b5a0bade2ff8f3b4bb0327f8ccfb4c71493',1,'CZNCSock']]],
+  ['errsv',['ERRSV',['../swigperlrun_8h.html#a40cd22362f4fd817898b99b9cc8ec9c2',1,'swigperlrun.h']]],
   ['escape',['Escape',['../classCString.html#acc8330c48fac287ed655268b12771ddc',1,'CString::Escape(EEscape eFrom, EEscape eTo)'],['../classCString.html#acb33c1aff1ad63ccbb676a24ea062ebe',1,'CString::Escape(EEscape eTo)']]],
   ['escape_5fn',['Escape_n',['../classCString.html#acff39c9ac5bf2994a9fb511b2b972387',1,'CString::Escape_n(EEscape eFrom, EEscape eTo) const '],['../classCString.html#a6138f7659460c0c49efb08be2ad37306',1,'CString::Escape_n(EEscape eTo) const ']]],
   ['esql',['ESQL',['../classCString.html#a8f63759db4ef372abb9cfa4751648e1fa5528b3d17d10fc5d915c4888b2c0c142',1,'CString']]],

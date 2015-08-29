@@ -105,7 +105,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00022"></a><a class="code" href="classCPyRetString.html#a11adafd7913c4559d4a18c792d9c1fbf">00022</a>         <a class="code" href="classCPyRetString.html#a11adafd7913c4559d4a18c792d9c1fbf">CPyRetString</a>(<a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; S) : <a class="code" href="classCPyRetString.html#a5c8a6c198c06c08038a3cd1d6d64520e">s</a>(S) {}
 <a name="l00023"></a><a class="code" href="classCPyRetString.html#a8ef16261fcd519b6b50aa6f3d8f45da5">00023</a>         <span class="keyword">static</span> PyObject* <a class="code" href="classCPyRetString.html#a8ef16261fcd519b6b50aa6f3d8f45da5">wrap</a>(<a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a>&amp; S) {
 <a name="l00024"></a>00024                 <a class="code" href="classCPyRetString.html">CPyRetString</a>* x = <span class="keyword">new</span> <a class="code" href="classCPyRetString.html#a11adafd7913c4559d4a18c792d9c1fbf">CPyRetString</a>(S);
-<a name="l00025"></a>00025                 <span class="keywordflow">return</span> SWIG_NewInstanceObj(x, SWIG_TypeQuery(<span class="stringliteral">&quot;CPyRetString*&quot;</span>), SWIG_POINTER_OWN);
+<a name="l00025"></a>00025                 <span class="keywordflow">return</span> <a class="code" href="swigperlrun_8h.html#a27e06002d6d8728005edd12c144444c3">SWIG_NewInstanceObj</a>(x, <a class="code" href="swigperlrun_8h.html#a5bf256cecd146ec7840c31de25099f7a">SWIG_TypeQuery</a>(<span class="stringliteral">&quot;CPyRetString*&quot;</span>), <a class="code" href="swigperlrun_8h.html#a1a125b0e9c551bb9cdeb21b8e5be5b57">SWIG_POINTER_OWN</a>);
 <a name="l00026"></a>00026         }
 <a name="l00027"></a>00027 };
 <a name="l00028"></a>00028 
@@ -115,7 +115,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00032"></a><a class="code" href="classCPyRetBool.html#ac9d881b2662584ee0cd366ec4b78dc92">00032</a>         <a class="code" href="classCPyRetBool.html#ac9d881b2662584ee0cd366ec4b78dc92">CPyRetBool</a>(<span class="keywordtype">bool</span>&amp; B) : <a class="code" href="classCPyRetBool.html#a4e408a796252549149cad889aa2ca0ef">b</a>(B) {}
 <a name="l00033"></a><a class="code" href="classCPyRetBool.html#a79766a8670c3e4eee83ee1445ee3244b">00033</a>         <span class="keyword">static</span> PyObject* <a class="code" href="classCPyRetBool.html#a79766a8670c3e4eee83ee1445ee3244b">wrap</a>(<span class="keywordtype">bool</span>&amp; B) {
 <a name="l00034"></a>00034                 <a class="code" href="classCPyRetBool.html">CPyRetBool</a>* x = <span class="keyword">new</span> <a class="code" href="classCPyRetBool.html#ac9d881b2662584ee0cd366ec4b78dc92">CPyRetBool</a>(B);
-<a name="l00035"></a>00035                 <span class="keywordflow">return</span> SWIG_NewInstanceObj(x, SWIG_TypeQuery(<span class="stringliteral">&quot;CPyRetBool*&quot;</span>), SWIG_POINTER_OWN);
+<a name="l00035"></a>00035                 <span class="keywordflow">return</span> <a class="code" href="swigperlrun_8h.html#a27e06002d6d8728005edd12c144444c3">SWIG_NewInstanceObj</a>(x, <a class="code" href="swigperlrun_8h.html#a5bf256cecd146ec7840c31de25099f7a">SWIG_TypeQuery</a>(<span class="stringliteral">&quot;CPyRetBool*&quot;</span>), <a class="code" href="swigperlrun_8h.html#a1a125b0e9c551bb9cdeb21b8e5be5b57">SWIG_POINTER_OWN</a>);
 <a name="l00036"></a>00036         }
 <a name="l00037"></a>00037 };
 </pre></div></div><!-- contents -->
@@ -136,7 +136,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 28 2015 21:49:06 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Aug 29 2015 19:39:00 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

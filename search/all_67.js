@@ -1,11 +1,9 @@
 var searchData=
 [
   ['gatherfdsforselect',['GatherFDsForSelect',['../classCSMonitorFD.html#a2f9c01b3fd444bec72e17fa8360b1107',1,'CSMonitorFD::GatherFDsForSelect(std::map&lt; cs_sock_t, short &gt; &amp;miiReadyFds, long &amp;iTimeoutMS)'],['../classCSMonitorFD.html#a2f9c01b3fd444bec72e17fa8360b1107',1,'CSMonitorFD::GatherFDsForSelect(std::map&lt; cs_sock_t, short &gt; &amp;miiReadyFds, long &amp;iTimeoutMS)'],['../classCCurlSock.html#acd5988897f74f23654b1d0ffdb284d8e',1,'CCurlSock::GatherFDsForSelect()']]],
-  ['gauss_2eh',['gauss.h',['../gauss_8h.html',1,'']]],
-  ['gauss_5fget_5fsum',['gauss_get_sum',['../gauss_8h.html#ab60dc0194c01dd0f0be9a41093a67761',1,'gauss.h']]],
-  ['gauss_5fh',['GAUSS_H',['../gauss_8h.html#afd4b232f1f3ad32181fb0915b28bcd10',1,'gauss.h']]],
   ['generatecert',['GenerateCert',['../classCUtils.html#ad33b54dff362848c42ff92adc5009466',1,'CUtils']]],
-  ['get',['Get',['../classCZNC.html#a5a34f72a1539f7ed0516cfbbe7512e27',1,'CZNC::Get()'],['../classMCString__iter.html#ad80dcc1f2ec9d277b3f45966757b7473',1,'MCString_iter::get()'],['../classCModulesIter.html#ab102ad631a47de1e8a4d4bfa72a944cf',1,'CModulesIter::get()']]],
+  ['get',['get',['../structswig__variable__info.html#ae3610cd02fbbc445c7790058d34af391',1,'swig_variable_info::get()'],['../classMCString__iter.html#ad80dcc1f2ec9d277b3f45966757b7473',1,'MCString_iter::get()'],['../classCModulesIter.html#ab102ad631a47de1e8a4d4bfa72a944cf',1,'CModulesIter::get()'],['../classCZNC.html#a5a34f72a1539f7ed0516cfbbe7512e27',1,'CZNC::Get()']]],
+  ['get_5fsv',['get_sv',['../swigperlrun_8h.html#a2356d5ec33faab63b43c3b430f529061',1,'swigperlrun.h']]],
   ['getacceptedcaps',['GetAcceptedCaps',['../classCIRCSock.html#a649ee4acc010d8b565672a8d82f490aa',1,'CIRCSock']]],
   ['getaccepttype',['GetAcceptType',['../classCListener.html#a8538f0a81787b03ec849422ea96ce18e',1,'CListener']]],
   ['getaddr',['GetAddr',['../classCSSockAddr.html#a66aec7e4d8f9c35c584cc9708c4b828b',1,'CSSockAddr::GetAddr()'],['../classCSSockAddr.html#a66aec7e4d8f9c35c584cc9708c4b828b',1,'CSSockAddr::GetAddr()']]],

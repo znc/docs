@@ -240,6 +240,7 @@ var searchData=
   ['m_5fvsoutput',['m_vsOutput',['../classCTable.html#ab4ef7514684d2326066caff490447cdc',1,'CTable']]],
   ['m_5fvssendqueue',['m_vsSendQueue',['../classCIRCSock.html#a63608a81ad8ea61fe48c0f16115ef4c8',1,'CIRCSock']]],
   ['m_5fvstrustedproxies',['m_vsTrustedProxies',['../classCZNC.html#a7e1f2715045e46ffb341e85f80062a18',1,'CZNC']]],
+  ['magic_5fpperl',['MAGIC_PPERL',['../swigperlrun_8h.html#ad67719506fc6ef22525ab63801960007',1,'swigperlrun.h']]],
   ['main_2eh',['main.h',['../main_8h.html',1,'']]],
   ['makecleanusername',['MakeCleanUserName',['../classCUser.html#a4db7d0cc25784c80ae512b7799c457e3',1,'CUser']]],
   ['makedir',['MakeDir',['../classCDir.html#a12596c7385e23e0920c6bf6b81fc9af8',1,'CDir']]],
