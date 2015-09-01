@@ -147,6 +147,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a237d14a883e4b338f98793bdfd7ffecc">BytesRead</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a5fd8b425e8bb4f26c51a6c2e096311a4">BytesWritten</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCZNC.html#a61a17d25718d53b4afc4200511cbe093">TrafficStatsMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a2d10228be05e8f89c3a4c2f6ae6f109a">GetTrafficStats</a> (<a class="el" href="classCZNC.html#a87b420043293a1efb3dbe31d84f15657">TrafficStatsPair</a> &amp;Users, <a class="el" href="classCZNC.html#a87b420043293a1efb3dbe31d84f15657">TrafficStatsPair</a> &amp;ZNC, <a class="el" href="classCZNC.html#a87b420043293a1efb3dbe31d84f15657">TrafficStatsPair</a> &amp;Total)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCZNC.html#a61a17d25718d53b4afc4200511cbe093">TrafficStatsMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a1314bb92c4ac241cc4b11c29ec080619">GetNetworkTrafficStats</a> (const <a class="el" href="classCString.html">CString</a> &amp;sUsername, <a class="el" href="classCZNC.html#a87b420043293a1efb3dbe31d84f15657">TrafficStatsPair</a> &amp;Total)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a39f72cb18b8762775dfb545cbd5fc7ec">AuthUser</a> (std::shared_ptr&lt; <a class="el" href="classCAuthBase.html">CAuthBase</a> &gt; AuthClass)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#ae1efbd99644160640cc883fbfea6339d">SetConfigState</a> (enum <a class="el" href="classCZNC.html#a872d81d61388f9acb7f8e6e966b4fd8f">ConfigState</a> e)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a08b653c1bf557dc0e0cc29fe4ae84242">SetSkinName</a> (const <a class="el" href="classCString.html">CString</a> &amp;s)</td></tr>
@@ -1423,6 +1424,33 @@ Protected Attributes</h2></td></tr>
 <div class="memdoc">
 
 <p>References <a class="el" href="classCZNC.html#a77c73e215ae312fc683b58a282bd1c6e">m_vsMotd</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1314bb92c4ac241cc4b11c29ec080619"></a><!-- doxytag: member="CZNC::GetNetworkTrafficStats" ref="a1314bb92c4ac241cc4b11c29ec080619" args="(const CString &amp;sUsername, TrafficStatsPair &amp;Total)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCZNC.html#a61a17d25718d53b4afc4200511cbe093">TrafficStatsMap</a> <a class="el" href="classCZNC.html#a1314bb92c4ac241cc4b11c29ec080619">CZNC::GetNetworkTrafficStats</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
+          <td class="paramname"><em>sUsername</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classCZNC.html#a87b420043293a1efb3dbe31d84f15657">TrafficStatsPair</a> &amp;&#160;</td>
+          <td class="paramname"><em>Total</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
 
 </div>
 </div>
@@ -2826,7 +2854,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 1 2015 19:30:23 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 1 2015 23:22:47 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

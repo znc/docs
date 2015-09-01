@@ -219,6 +219,10 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a67e80f525b607bb1cc554c50b3df83da">SetFloodBurst</a> (unsigned short int uFloodBurst)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">unsigned short int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a71f040790117703f1dfba65e315b0550">GetJoinDelay</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#aa89ade21d65d1aa1cea5c58e22517eae">SetJoinDelay</a> (unsigned short int uJoinDelay)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#aad7f90433fc6cf2ef5992e89b7f4437f">BytesRead</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a00aa58b72d27818b7f6238a6577afe26">BytesWritten</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a1dc5f2f168caa08364e410dc30cb2ef4">AddBytesRead</a> (unsigned long long u)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a16078d1ce9efbf4d67301473297c8493">AddBytesWritten</a> (unsigned long long u)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a2350ac58e306613e32a4aa95a92e7ce9">ExpandString</a> (const <a class="el" href="classCString.html">CString</a> &amp;sStr) const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a3326cc965187db6551375ee4f7582d49">ExpandString</a> (const <a class="el" href="classCString.html">CString</a> &amp;sStr, <a class="el" href="classCString.html">CString</a> &amp;sRet) const </td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-methods"></a>
@@ -258,6 +262,8 @@ Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">CIRCNetworkPingTimer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a6f681108797394360afadb84e5858700">m_pPingTimer</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">CIRCNetworkJoinTimer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a502ffe4f75fe06dee55b69df16a84e27">m_pJoinTimer</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">unsigned short int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a3b112d6ab6397e713f6c27618c2a83df">m_uJoinDelay</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a76128bfe228aa87bca8ab2294e21c697">m_uBytesRead</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#ac5f1039a0b099ad5400a90ba31df3a50">m_uBytesWritten</a></td></tr>
 </table>
 <hr/><h2>Member Enumeration Documentation</h2>
 <a class="anchor" id="a9fed91ead68a69eb6c7e40d290fffe6b"></a><!-- doxytag: member="CIRCNetwork::@1" ref="a9fed91ead68a69eb6c7e40d290fffe6b" args="" -->
@@ -378,6 +384,44 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a1dc5f2f168caa08364e410dc30cb2ef4"></a><!-- doxytag: member="CIRCNetwork::AddBytesRead" ref="a1dc5f2f168caa08364e410dc30cb2ef4" args="(unsigned long long u)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classCIRCNetwork.html#a1dc5f2f168caa08364e410dc30cb2ef4">CIRCNetwork::AddBytesRead</a> </td>
+          <td>(</td>
+          <td class="paramtype">unsigned long long&#160;</td>
+          <td class="paramname"><em>u</em></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="classCIRCNetwork.html#a76128bfe228aa87bca8ab2294e21c697">m_uBytesRead</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a16078d1ce9efbf4d67301473297c8493"></a><!-- doxytag: member="CIRCNetwork::AddBytesWritten" ref="a16078d1ce9efbf4d67301473297c8493" args="(unsigned long long u)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classCIRCNetwork.html#a16078d1ce9efbf4d67301473297c8493">CIRCNetwork::AddBytesWritten</a> </td>
+          <td>(</td>
+          <td class="paramtype">unsigned long long&#160;</td>
+          <td class="paramname"><em>u</em></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="classCIRCNetwork.html#ac5f1039a0b099ad5400a90ba31df3a50">m_uBytesWritten</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="af60240fa84f6940b5953a540cbd8958f"></a><!-- doxytag: member="CIRCNetwork::AddChan" ref="af60240fa84f6940b5953a540cbd8958f" args="(CChan *pChan)" -->
 <div class="memitem">
 <div class="memproto">
@@ -614,6 +658,42 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aad7f90433fc6cf2ef5992e89b7f4437f"></a><!-- doxytag: member="CIRCNetwork::BytesRead" ref="aad7f90433fc6cf2ef5992e89b7f4437f" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long long <a class="el" href="classCIRCNetwork.html#aad7f90433fc6cf2ef5992e89b7f4437f">CIRCNetwork::BytesRead</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="classCIRCNetwork.html#a76128bfe228aa87bca8ab2294e21c697">m_uBytesRead</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a00aa58b72d27818b7f6238a6577afe26"></a><!-- doxytag: member="CIRCNetwork::BytesWritten" ref="a00aa58b72d27818b7f6238a6577afe26" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long long <a class="el" href="classCIRCNetwork.html#a00aa58b72d27818b7f6238a6577afe26">CIRCNetwork::BytesWritten</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="classCIRCNetwork.html#ac5f1039a0b099ad5400a90ba31df3a50">m_uBytesWritten</a>.</p>
 
 </div>
 </div>
@@ -2766,6 +2846,36 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a76128bfe228aa87bca8ab2294e21c697"></a><!-- doxytag: member="CIRCNetwork::m_uBytesRead" ref="a76128bfe228aa87bca8ab2294e21c697" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long long <a class="el" href="classCIRCNetwork.html#a76128bfe228aa87bca8ab2294e21c697">CIRCNetwork::m_uBytesRead</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Referenced by <a class="el" href="classCIRCNetwork.html#a1dc5f2f168caa08364e410dc30cb2ef4">AddBytesRead()</a>, and <a class="el" href="classCIRCNetwork.html#aad7f90433fc6cf2ef5992e89b7f4437f">BytesRead()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac5f1039a0b099ad5400a90ba31df3a50"></a><!-- doxytag: member="CIRCNetwork::m_uBytesWritten" ref="ac5f1039a0b099ad5400a90ba31df3a50" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long long <a class="el" href="classCIRCNetwork.html#ac5f1039a0b099ad5400a90ba31df3a50">CIRCNetwork::m_uBytesWritten</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Referenced by <a class="el" href="classCIRCNetwork.html#a16078d1ce9efbf4d67301473297c8493">AddBytesWritten()</a>, and <a class="el" href="classCIRCNetwork.html#a00aa58b72d27818b7f6238a6577afe26">BytesWritten()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="abf1ae0e6cdfc960f4b16b113e4df9be0"></a><!-- doxytag: member="CIRCNetwork::m_uFloodBurst" ref="abf1ae0e6cdfc960f4b16b113e4df9be0" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -2888,7 +2998,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 17 2015 23:04:09 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 1 2015 23:22:46 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

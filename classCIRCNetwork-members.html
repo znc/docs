@@ -84,6 +84,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 This is the complete list of members for <a class="el" href="classCIRCNetwork.html">CIRCNetwork</a>, including all inherited members.<table>
+  <tr class="memlist"><td><a class="el" href="classCIRCNetwork.html#a1dc5f2f168caa08364e410dc30cb2ef4">AddBytesRead</a>(unsigned long long u)</td><td><a class="el" href="classCIRCNetwork.html">CIRCNetwork</a></td><td><code> [inline]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCIRCNetwork.html#a16078d1ce9efbf4d67301473297c8493">AddBytesWritten</a>(unsigned long long u)</td><td><a class="el" href="classCIRCNetwork.html">CIRCNetwork</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCIRCNetwork.html#af60240fa84f6940b5953a540cbd8958f">AddChan</a>(CChan *pChan)</td><td><a class="el" href="classCIRCNetwork.html">CIRCNetwork</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCIRCNetwork.html#aa9aa30eea6e00e72f140cfbb4db9170e">AddChan</a>(const CString &amp;sName, bool bInConfig)</td><td><a class="el" href="classCIRCNetwork.html">CIRCNetwork</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCIRCNetwork.html#afaf914638739abe06ce7d6cf4b51aba3">AddMotdBuffer</a>(const CString &amp;sFormat, const CString &amp;sText=&quot;&quot;)</td><td><a class="el" href="classCIRCNetwork.html">CIRCNetwork</a></td><td><code> [inline]</code></td></tr>
@@ -94,6 +96,8 @@ This is the complete list of members for <a class="el" href="classCIRCNetwork.ht
   <tr class="memlist"><td><a class="el" href="classCIRCNetwork.html#ab9590922fa4b039e76a45763b0ca0a7e">AddServer</a>(const CString &amp;sName, unsigned short uPort, const CString &amp;sPass=&quot;&quot;, bool bSSL=false)</td><td><a class="el" href="classCIRCNetwork.html">CIRCNetwork</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCIRCNetwork.html#a1252f6a0868cbdc59472b6b68362e66d">AddTrustedFingerprint</a>(const CString &amp;sFP)</td><td><a class="el" href="classCIRCNetwork.html">CIRCNetwork</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCIRCNetwork.html#a042c3c87829e1ea910fa7fd54dbb8d1f">BounceAllClients</a>()</td><td><a class="el" href="classCIRCNetwork.html">CIRCNetwork</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCIRCNetwork.html#aad7f90433fc6cf2ef5992e89b7f4437f">BytesRead</a>() const </td><td><a class="el" href="classCIRCNetwork.html">CIRCNetwork</a></td><td><code> [inline]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCIRCNetwork.html#a00aa58b72d27818b7f6238a6577afe26">BytesWritten</a>() const </td><td><a class="el" href="classCIRCNetwork.html">CIRCNetwork</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCIRCNetwork.html#aa2947b26744629753ef41994192ccd89">CheckIRCConnect</a>()</td><td><a class="el" href="classCIRCNetwork.html">CIRCNetwork</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCIRCNetwork.html#a5af5cfea130fa4cf3052be186fb539dd">CIRCNetwork</a>(CUser *pUser, const CString &amp;sName)</td><td><a class="el" href="classCIRCNetwork.html">CIRCNetwork</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCIRCNetwork.html#a9e5a5c743fc9da666d56d47eeac8a3df">CIRCNetwork</a>(CUser *pUser, const CIRCNetwork &amp;Network)</td><td><a class="el" href="classCIRCNetwork.html">CIRCNetwork</a></td><td></td></tr>
@@ -186,6 +190,8 @@ This is the complete list of members for <a class="el" href="classCIRCNetwork.ht
   <tr class="memlist"><td><a class="el" href="classCIRCNetwork.html#ad1f9a954080d07200135ff4e51bcef5c">m_sQuitMsg</a></td><td><a class="el" href="classCIRCNetwork.html">CIRCNetwork</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCIRCNetwork.html#a0f79841fdf0700e902432cdc4917c987">m_sRealName</a></td><td><a class="el" href="classCIRCNetwork.html">CIRCNetwork</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCIRCNetwork.html#a546890c8b8a74c3eb6070bab952c6ecc">m_ssTrustedFingerprints</a></td><td><a class="el" href="classCIRCNetwork.html">CIRCNetwork</a></td><td><code> [protected]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCIRCNetwork.html#a76128bfe228aa87bca8ab2294e21c697">m_uBytesRead</a></td><td><a class="el" href="classCIRCNetwork.html">CIRCNetwork</a></td><td><code> [protected]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCIRCNetwork.html#ac5f1039a0b099ad5400a90ba31df3a50">m_uBytesWritten</a></td><td><a class="el" href="classCIRCNetwork.html">CIRCNetwork</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCIRCNetwork.html#abf1ae0e6cdfc960f4b16b113e4df9be0">m_uFloodBurst</a></td><td><a class="el" href="classCIRCNetwork.html">CIRCNetwork</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCIRCNetwork.html#a3b112d6ab6397e713f6c27618c2a83df">m_uJoinDelay</a></td><td><a class="el" href="classCIRCNetwork.html">CIRCNetwork</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCIRCNetwork.html#aa1281c5c6b0c68315706ddc1e11c53cd">m_uServerIdx</a></td><td><a class="el" href="classCIRCNetwork.html">CIRCNetwork</a></td><td><code> [protected]</code></td></tr>
@@ -246,7 +252,7 @@ This is the complete list of members for <a class="el" href="classCIRCNetwork.ht
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 17 2015 23:04:09 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 1 2015 23:22:46 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
