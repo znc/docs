@@ -1,5 +1,7 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$zncconfig_8h.html" title="znc/zncconfig.h" alt="" coords="5,237,125,267"/>
-<area shape="rect" id="node5" href="$ZNCString_8h.html" title="znc/ZNCString.h" alt="" coords="321,160,447,189"/>
-<area shape="rect" id="node22" href="$Buffer_8h.html" title="znc/Buffer.h" alt="" coords="143,83,239,112"/>
+<area shape="rect" id="node3" href="$zncconfig_8h.html" title="znc/zncconfig.h" alt="" coords="61,392,181,421"/>
+<area shape="rect" id="node5" href="$ZNCString_8h.html" title="znc/ZNCString.h" alt="" coords="384,315,509,344"/>
+<area shape="rect" id="node22" href="$Buffer_8h.html" title="znc/Buffer.h" alt="" coords="196,83,292,112"/>
+<area shape="rect" id="node26" href="$Message_8h.html" title="znc/Message.h" alt="" coords="185,160,303,189"/>
+<area shape="rect" id="node30" href="$Nick_8h.html" title="znc/Nick.h" alt="" coords="172,237,257,267"/>
 </map>

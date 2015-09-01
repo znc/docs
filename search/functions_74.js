@@ -18,6 +18,7 @@ var searchData=
   ['token',['Token',['../classCString.html#afa5f580ce80354f9e22f36f895a2e6a3',1,'CString::Token(size_t uPos, bool bRest=false, const CString &amp;sSep=&quot; &quot;, bool bAllowEmpty=false) const '],['../classCString.html#a6aeb724ad1f216015361e608bd5b3a89',1,'CString::Token(size_t uPos, bool bRest, const CString &amp;sSep, bool bAllowEmpty, const CString &amp;sLeft, const CString &amp;sRight, bool bTrimQuotes=true) const ']]],
   ['tolong',['ToLong',['../classCString.html#a50497c249b946ece8ef818f21e8a80a9',1,'CString']]],
   ['tolonglong',['ToLongLong',['../classCString.html#ac44a7757d3f84f8977aab932d28d25ae',1,'CString']]],
+  ['tomessage',['ToMessage',['../classCBufLine.html#a0c9473309eda4f08efac19d8b6ba7143',1,'CBufLine']]],
   ['topercent',['ToPercent',['../classCString.html#ac772de648db199c455fe8a776c08739d',1,'CString']]],
   ['toshort',['ToShort',['../classCString.html#aec8917e41434898428b9e5184c834b42',1,'CString']]],
   ['tostring',['ToString',['../classCMessage.html#afb668fcc41fb8bf233a011b1ac08917d',1,'CMessage']]],

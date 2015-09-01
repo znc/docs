@@ -95,7 +95,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classCMessage__inherit__graph.png" border="0" usemap="#CMessage_inherit__map" alt="Inheritance graph"/></div>
 <map name="CMessage_inherit__map" id="CMessage_inherit__map">
-<area shape="rect" id="node3" href="classCChanAction.html" title="CChanAction" alt="" coords="151,5,255,35"/><area shape="rect" id="node5" href="classCChanCTCP.html" title="CChanCTCP" alt="" coords="155,59,251,88"/><area shape="rect" id="node7" href="classCChanMessage.html" title="CChanMessage" alt="" coords="143,112,263,141"/><area shape="rect" id="node9" href="classCChanNotice.html" title="CChanNotice" alt="" coords="151,165,255,195"/><area shape="rect" id="node11" href="classCJoinMessage.html" title="CJoinMessage" alt="" coords="148,219,257,248"/><area shape="rect" id="node13" href="classCKickMessage.html" title="CKickMessage" alt="" coords="147,272,259,301"/><area shape="rect" id="node15" href="classCNickMessage.html" title="CNickMessage" alt="" coords="145,325,260,355"/><area shape="rect" id="node17" href="classCPartMessage.html" title="CPartMessage" alt="" coords="147,379,259,408"/><area shape="rect" id="node19" href="classCPrivAction.html" title="CPrivAction" alt="" coords="156,432,249,461"/><area shape="rect" id="node21" href="classCPrivCTCP.html" title="CPrivCTCP" alt="" coords="160,485,245,515"/><area shape="rect" id="node23" href="classCPrivMessage.html" title="CPrivMessage" alt="" coords="148,539,257,568"/><area shape="rect" id="node25" href="classCPrivNotice.html" title="CPrivNotice" alt="" coords="156,592,249,621"/><area shape="rect" id="node27" href="classCQuitMessage.html" title="CQuitMessage" alt="" coords="145,645,260,675"/><area shape="rect" id="node29" href="classCTopicMessage.html" title="CTopicMessage" alt="" coords="144,699,261,728"/></map>
+<area shape="rect" id="node3" href="classCNickMessage.html" title="CNickMessage" alt="" coords="148,85,263,115"/><area shape="rect" id="node5" href="classCQuitMessage.html" title="CQuitMessage" alt="" coords="148,139,263,168"/><area shape="rect" id="node7" href="classCTargetMessage.html" title="CTargetMessage" alt="" coords="143,192,268,221"/><area shape="rect" id="node9" href="classCActionMessage.html" title="CActionMessage" alt="" coords="319,5,447,35"/><area shape="rect" id="node11" href="classCCTCPMessage.html" title="CCTCPMessage" alt="" coords="323,59,443,88"/><area shape="rect" id="node13" href="classCJoinMessage.html" title="CJoinMessage" alt="" coords="328,112,437,141"/><area shape="rect" id="node15" href="classCKickMessage.html" title="CKickMessage" alt="" coords="327,165,439,195"/><area shape="rect" id="node17" href="classCNoticeMessage.html" title="CNoticeMessage" alt="" coords="319,219,447,248"/><area shape="rect" id="node19" href="classCPartMessage.html" title="CPartMessage" alt="" coords="327,272,439,301"/><area shape="rect" id="node21" href="classCTextMessage.html" title="CTextMessage" alt="" coords="327,325,439,355"/><area shape="rect" id="node23" href="classCTopicMessage.html" title="CTopicMessage" alt="" coords="324,379,441,408"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 
 <p><a href="classCMessage-members.html">List of all members.</a></p>
@@ -110,6 +110,7 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMessage.html#adc8e4e8b99841113d5149416c554e536">CMessage</a> (const <a class="el" href="classCString.html">CString</a> &amp;sMessage=&quot;&quot;)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMessage.html#abf0526e789beda9d6615ef4c4d5581c3">CMessage</a> (const <a class="el" href="classCNick.html">CNick</a> &amp;Nick, const <a class="el" href="classCString.html">CString</a> &amp;sCommand, const <a class="el" href="ZNCString_8h.html#af7252b7c4a0d4ec44ddc136c6055ae51">VCString</a> &amp;vsParams=<a class="el" href="ZNCString_8h.html#af7252b7c4a0d4ec44ddc136c6055ae51">VCString</a>(), const <a class="el" href="classMCString.html">MCString</a> &amp;mssTags=<a class="el" href="classMCString.html#a3685e619a8c946b897e33de99347fc70">MCString::EmptyMap</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMessage.html#a280b550192a8147f85a00c5aeb0ee261">Clone</a> (const <a class="el" href="classCMessage.html">CMessage</a> &amp;Other)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCIRCNetwork.html">CIRCNetwork</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMessage.html#a2785d0660a216f25685a66a366fd7944">GetNetwork</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMessage.html#adf283066203892552523df0cc40615d5">SetNetwork</a> (<a class="el" href="classCIRCNetwork.html">CIRCNetwork</a> *pNetwork)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCClient.html">CClient</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMessage.html#a336e216767f4a0dc7df056e98eada39f">GetClient</a> () const </td></tr>
@@ -217,6 +218,23 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a280b550192a8147f85a00c5aeb0ee261"></a><!-- doxytag: member="CMessage::Clone" ref="a280b550192a8147f85a00c5aeb0ee261" args="(const CMessage &amp;Other)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classCMessage.html#a280b550192a8147f85a00c5aeb0ee261">CMessage::Clone</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCMessage.html">CMessage</a> &amp;&#160;</td>
+          <td class="paramname"><em>Other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a1708e7d9227de0efd6a2f285278ca0a2"></a><!-- doxytag: member="CMessage::GetChan" ref="a1708e7d9227de0efd6a2f285278ca0a2" args="() const " -->
 <div class="memitem">
 <div class="memproto">
@@ -330,7 +348,7 @@ Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Referenced by <a class="el" href="classCKickMessage.html#a5ac5b664482092cc7ad559ef185bfb71">CKickMessage::GetKickedNick()</a>, <a class="el" href="classCNickMessage.html#af4676920b276f2dc9bdeae1717162719">CNickMessage::GetNewNick()</a>, <a class="el" href="classCKickMessage.html#ae94e0bc7d1b6833da2e63c6ea0b76219">CKickMessage::GetReason()</a>, <a class="el" href="classCPartMessage.html#a98be6ccaa27c1a47f9c3250f4c387836">CPartMessage::GetReason()</a>, <a class="el" href="classCQuitMessage.html#a5b9977da5ce501efc6a45f8749d79e6b">CQuitMessage::GetReason()</a>, <a class="el" href="classCChanAction.html#a616fabed246bdbb831f8fa228d4edcdb">CChanAction::GetText()</a>, <a class="el" href="classCChanCTCP.html#a57661d175e2943a6c1eb589a2bfad0b2">CChanCTCP::GetText()</a>, <a class="el" href="classCChanMessage.html#afb96a9765176c62a520f9eb49ab3cd50">CChanMessage::GetText()</a>, <a class="el" href="classCChanNotice.html#ae32b3b219dd820f1942419e396ebadd6">CChanNotice::GetText()</a>, <a class="el" href="classCPrivAction.html#a2b446e4f05583f718d35d32861a3a320">CPrivAction::GetText()</a>, <a class="el" href="classCPrivCTCP.html#a9ccf648331003688ccdd30d60cdb8601">CPrivCTCP::GetText()</a>, <a class="el" href="classCPrivMessage.html#a574efe48a9c8840c5b8f7cd8437d1186">CPrivMessage::GetText()</a>, <a class="el" href="classCPrivNotice.html#abc624ca1bcedc413e28d5a8ecff0ab1b">CPrivNotice::GetText()</a>, and <a class="el" href="classCTopicMessage.html#accb676395693f29b8f3c110e811f8af3">CTopicMessage::GetTopic()</a>.</p>
+<p>Referenced by <a class="el" href="classCJoinMessage.html#a0f4c5f385f1fe7c3e99a9c51d708bdd5">CJoinMessage::GetKey()</a>, <a class="el" href="classCKickMessage.html#a5ac5b664482092cc7ad559ef185bfb71">CKickMessage::GetKickedNick()</a>, <a class="el" href="classCNickMessage.html#af4676920b276f2dc9bdeae1717162719">CNickMessage::GetNewNick()</a>, <a class="el" href="classCKickMessage.html#ae94e0bc7d1b6833da2e63c6ea0b76219">CKickMessage::GetReason()</a>, <a class="el" href="classCPartMessage.html#a98be6ccaa27c1a47f9c3250f4c387836">CPartMessage::GetReason()</a>, <a class="el" href="classCQuitMessage.html#a5b9977da5ce501efc6a45f8749d79e6b">CQuitMessage::GetReason()</a>, <a class="el" href="classCTargetMessage.html#a29499f5301ae0a0cd184783f386bea90">CTargetMessage::GetTarget()</a>, <a class="el" href="classCActionMessage.html#a2b7915f68ea18c772d7a81fb30be20c6">CActionMessage::GetText()</a>, <a class="el" href="classCCTCPMessage.html#a1cda0f7c9faa34b562a3aa48a4df3d13">CCTCPMessage::GetText()</a>, <a class="el" href="classCNoticeMessage.html#ad3032e6c9e3c3bd30f0be2e6fe26ee42">CNoticeMessage::GetText()</a>, <a class="el" href="classCTextMessage.html#a1b9e2aa14ca4381dc0949737ab8d1c07">CTextMessage::GetText()</a>, and <a class="el" href="classCTopicMessage.html#accb676395693f29b8f3c110e811f8af3">CTopicMessage::GetTopic()</a>.</p>
 
 </div>
 </div>
@@ -408,6 +426,8 @@ Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Referenced by <a class="el" href="classCBufLine.html#a85b0c28fe9b9c81adb12e0ac7d5e7fab">CBufLine::GetTags()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ac3fcc15ecb3ce7224e1b7fef7b4efe18"></a><!-- doxytag: member="CMessage::GetTime" ref="ac3fcc15ecb3ce7224e1b7fef7b4efe18" args="() const " -->
@@ -423,6 +443,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Referenced by <a class="el" href="classCBufLine.html#a3e7175441aa887204602ee5bda9f2ce7">CBufLine::GetTime()</a>.</p>
 
 </div>
 </div>
@@ -440,6 +462,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Referenced by <a class="el" href="classCBufLine.html#aaf8a626a22f5254a5440ed901af40cf2">CBufLine::SetFormat()</a>.</p>
 
 </div>
 </div>
@@ -553,7 +577,7 @@ Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Referenced by <a class="el" href="classCKickMessage.html#a31cb72dd0fe79f6a10be47704619f8cd">CKickMessage::SetKickedNick()</a>, <a class="el" href="classCNickMessage.html#a017584f1c4b94d179b8ce6fa4c22d6c9">CNickMessage::SetNewNick()</a>, <a class="el" href="classCKickMessage.html#aa67627448553d21fca6793f67fa94fcc">CKickMessage::SetReason()</a>, <a class="el" href="classCPartMessage.html#ab07a9d995bee9a736fa5d2a330bafbbe">CPartMessage::SetReason()</a>, <a class="el" href="classCQuitMessage.html#aac7e72468f3a141ea1607eb9c2b23d55">CQuitMessage::SetReason()</a>, <a class="el" href="classCChanAction.html#a9af2295ae3df939b86bc74c877a3eb2e">CChanAction::SetText()</a>, <a class="el" href="classCChanCTCP.html#a42a775c8fa37dea9e65727ebc0d855f0">CChanCTCP::SetText()</a>, <a class="el" href="classCChanMessage.html#a44babbc5726dd1158ba0ba898c22184b">CChanMessage::SetText()</a>, <a class="el" href="classCChanNotice.html#ac5230e1110339643f22143547847fe23">CChanNotice::SetText()</a>, <a class="el" href="classCPrivAction.html#a1340e7795da4250cbfae44d9fb7f3ce5">CPrivAction::SetText()</a>, <a class="el" href="classCPrivCTCP.html#a3dc185977f9ff845a97d55993e5c7418">CPrivCTCP::SetText()</a>, <a class="el" href="classCPrivMessage.html#af0d5849031394c170237fafd7f036af0">CPrivMessage::SetText()</a>, <a class="el" href="classCPrivNotice.html#af2ad3f0c5cd0dde38de4c086dd7ed344">CPrivNotice::SetText()</a>, and <a class="el" href="classCTopicMessage.html#a2316efb3fcedb9cd98fc926c0a0353ab">CTopicMessage::SetTopic()</a>.</p>
+<p>Referenced by <a class="el" href="classCJoinMessage.html#a1fe80919738f9f073372a12a7bbd3bcd">CJoinMessage::SetKey()</a>, <a class="el" href="classCKickMessage.html#a31cb72dd0fe79f6a10be47704619f8cd">CKickMessage::SetKickedNick()</a>, <a class="el" href="classCNickMessage.html#a017584f1c4b94d179b8ce6fa4c22d6c9">CNickMessage::SetNewNick()</a>, <a class="el" href="classCKickMessage.html#aa67627448553d21fca6793f67fa94fcc">CKickMessage::SetReason()</a>, <a class="el" href="classCPartMessage.html#ab07a9d995bee9a736fa5d2a330bafbbe">CPartMessage::SetReason()</a>, <a class="el" href="classCQuitMessage.html#aac7e72468f3a141ea1607eb9c2b23d55">CQuitMessage::SetReason()</a>, <a class="el" href="classCTargetMessage.html#ac7ed5de249bf8bc2d39545cf94405816">CTargetMessage::SetTarget()</a>, <a class="el" href="classCActionMessage.html#aeab4c7d7ac84bce7dfd7f0d9008b6959">CActionMessage::SetText()</a>, <a class="el" href="classCCTCPMessage.html#a9a4f528bd46325cfaa4696e68177f25c">CCTCPMessage::SetText()</a>, <a class="el" href="classCNoticeMessage.html#ace6df2e329ed6b94f804f04fbe6465b7">CNoticeMessage::SetText()</a>, <a class="el" href="classCTextMessage.html#a01734e0bafb08572b1d4bdadb91f8e66">CTextMessage::SetText()</a>, and <a class="el" href="classCTopicMessage.html#a2316efb3fcedb9cd98fc926c0a0353ab">CTopicMessage::SetTopic()</a>.</p>
 
 </div>
 </div>
@@ -616,6 +640,8 @@ Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Referenced by <a class="el" href="classCBufLine.html#a1df881d8f3aa079121b2f238bc033926">CBufLine::SetTags()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a3c6b3ce1115251b35190eced6de870a0"></a><!-- doxytag: member="CMessage::SetTime" ref="a3c6b3ce1115251b35190eced6de870a0" args="(const timeval &amp;ts)" -->
@@ -633,6 +659,8 @@ Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Referenced by <a class="el" href="classCBufLine.html#ab43e1feae2df949f070b22a5820c0119">CBufLine::SetTime()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="afb668fcc41fb8bf233a011b1ac08917d"></a><!-- doxytag: member="CMessage::ToString" ref="afb668fcc41fb8bf233a011b1ac08917d" args="(unsigned int uFlags=IncludeAll) const " -->
@@ -649,6 +677,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Referenced by <a class="el" href="classCBufLine.html#a7d9d9e0ca16212b1f2d297932c2aedcb">CBufLine::GetFormat()</a>.</p>
 
 </div>
 </div>
@@ -673,7 +703,7 @@ Public Member Functions</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 27 2015 11:38:45 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 1 2015 19:30:22 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

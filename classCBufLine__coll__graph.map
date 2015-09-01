@@ -1,7 +1,6 @@
 <map id="G" name="G">
-<area shape="rect" id="node2" href="$classCString.html" title="String class that is used inside ZNC." alt="" coords="104,181,173,211"/>
-<area shape="rect" id="node4" title="STL class." alt="" coords="55,101,140,131"/>
+<area shape="rect" id="node2" href="$classCString.html" title="String class that is used inside ZNC." alt="" coords="63,165,132,195"/>
+<area shape="rect" id="node4" title="STL class." alt="" coords="55,85,140,115"/>
 <area shape="rect" id="node6" title="STL class." alt="" coords="5,5,189,35"/>
-<area shape="rect" id="node8" href="$classMCString.html" title="A dictionary for strings." alt="" coords="211,181,291,211"/>
-<area shape="rect" id="node10" title="STL class." alt="" coords="164,101,375,131"/>
+<area shape="rect" id="node8" href="$classCMessage.html" title="CMessage" alt="" coords="156,165,244,195"/>
 </map>
