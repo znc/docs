@@ -305,6 +305,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#a8f4edcdc51d54edb9b18baaf4666fa83">OnUserPartMessage</a> (<a class="el" href="classCPartMessage.html">CPartMessage</a> &amp;Message)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#a93cb4d96e369bd60c9470bb25e6490b1">OnUserTopicMessage</a> (<a class="el" href="classCTopicMessage.html">CTopicMessage</a> &amp;Message)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#a1b960e23debc480f7b98d93a808325a9">OnUserQuitMessage</a> (<a class="el" href="classCQuitMessage.html">CQuitMessage</a> &amp;Message)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#ae42bbcff58f389046da6e6d1c108eff4">OnCTCPReplyMessage</a> (<a class="el" href="classCCTCPMessage.html">CCTCPMessage</a> &amp;Message)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#a6aa5ad6122182cbcfb98aff043954eab">OnPrivCTCPMessage</a> (<a class="el" href="classCCTCPMessage.html">CCTCPMessage</a> &amp;Message)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#abce46c5fcb304cf459f6f78144adab46">OnChanCTCPMessage</a> (<a class="el" href="classCCTCPMessage.html">CCTCPMessage</a> &amp;Message)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#ab1b5b298e942fe4071ca1b197b282fbb">OnPrivActionMessage</a> (<a class="el" href="classCActionMessage.html">CActionMessage</a> &amp;Message)</td></tr>
@@ -2496,6 +2497,23 @@ Protected Attributes</h2></td></tr>
 <dl class="return"><dt><b>Returns:</b></dt><dd>See <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2" title="This enum is just used for return from module hooks.">CModule::EModRet</a>. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classCModule.html#af0d3be37a28c2a7fc3fe9e5e1545a7a1">CModule</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae42bbcff58f389046da6e6d1c108eff4"></a><!-- doxytag: member="CPerlModule::OnCTCPReplyMessage" ref="ae42bbcff58f389046da6e6d1c108eff4" args="(CCTCPMessage &amp;Message)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCModule.html#ae42bbcff58f389046da6e6d1c108eff4">CModule::OnCTCPReplyMessage</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCCTCPMessage.html">CCTCPMessage</a> &amp;&#160;</td>
+          <td class="paramname"><em>Message</em></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
 
 </div>
 </div>
@@ -6208,7 +6226,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 1 2015 19:30:22 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 3 2015 18:29:03 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
