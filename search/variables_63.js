@@ -1,5 +1,8 @@
 var searchData=
 [
+  ['call_5fcount_5f',['call_count_',['../classtesting_1_1internal_1_1ExpectationBase.html#aea95d46f7583566e3f7a081b0668ad4c',1,'testing::internal::ExpectationBase']]],
+  ['cardinality_5f',['cardinality_',['../classtesting_1_1internal_1_1ExpectationBase.html#ad0aedcc01c0c9a998952a2b2f486595c',1,'testing::internal::ExpectationBase']]],
+  ['cardinality_5fspecified_5f',['cardinality_specified_',['../classtesting_1_1internal_1_1ExpectationBase.html#ad2ca7220ed1a395bd850ff06c500a402',1,'testing::internal::ExpectationBase']]],
   ['caseinsensitive',['CaseInsensitive',['../classCString.html#a5733db47a1cbad5ebe79bca80afdd3f1',1,'CString']]],
   ['casesensitive',['CaseSensitive',['../classCString.html#a4ab48ee7748580ed1aa9e2643c31210c',1,'CString']]],
   ['cast',['cast',['../structswig__type__info.html#ae535f16234db99893f07880cb94a848e',1,'swig_type_info']]],

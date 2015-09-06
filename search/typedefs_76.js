@@ -1,7 +1,9 @@
 var searchData=
 [
   ['value',['value',['../classTCacheMap.html#ad030261fdb9f2ec14b4afcffbce47b31',1,'TCacheMap']]],
+  ['value_5ftype',['value_type',['../classtesting_1_1ExpectationSet.html#aab6d2d4800cec231bcedae33deaca7f6',1,'testing::ExpectationSet::value_type()'],['../classtesting_1_1internal_1_1NativeArray.html#a12216d686e16e4cc63d952fada5b2ba9',1,'testing::internal::NativeArray::value_type()'],['../structtesting_1_1internal_1_1IteratorTraits.html#a29de4320a9c53ce438d3561b94e515bb',1,'testing::internal::IteratorTraits::value_type()'],['../structtesting_1_1internal_1_1IteratorTraits_3_01T_01_5_01_4.html#a7e46869ed36cc5aea898e243d270a8be',1,'testing::internal::IteratorTraits&lt; T * &gt;::value_type()'],['../structtesting_1_1internal_1_1IteratorTraits_3_01const_01T_01_5_01_4.html#ae7c8867223e106f374b56a7dc4a85547',1,'testing::internal::IteratorTraits&lt; const T * &gt;::value_type()']]],
   ['vcstring',['VCString',['../ZNCString_8h.html#af7252b7c4a0d4ec44ddc136c6055ae51',1,'ZNCString.h']]],
+  ['view',['View',['../classtesting_1_1internal_1_1ContainerEqMatcher.html#a1565779cdc3d617fcdc8293f9b53c2a6',1,'testing::internal::ContainerEqMatcher::View()'],['../classtesting_1_1internal_1_1QuantifierMatcherImpl.html#aa1e6b1653b6fdee1b0cfc4c58a9059e6',1,'testing::internal::QuantifierMatcherImpl::View()'],['../classtesting_1_1internal_1_1ElementsAreMatcherImpl.html#a68c37c6cc56c047323543044445a5022',1,'testing::internal::ElementsAreMatcherImpl::View()'],['../classtesting_1_1internal_1_1UnorderedElementsAreMatcherImpl.html#adbd6dfef7713dd30d569b4220eb808d3',1,'testing::internal::UnorderedElementsAreMatcherImpl::View()']]],
   ['vpair',['VPair',['../ZNCString_8h.html#a293a93c83fd11c40659f9bcb9f21419f',1,'ZNCString.h']]],
   ['vwebsubpages',['VWebSubPages',['../WebModules_8h.html#ab585ce11740587b08deb0da25de3c2d6',1,'WebModules.h']]]
 ];

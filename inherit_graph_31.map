@@ -1,4 +1,4 @@
 <map id="G" name="G">
-<area shape="rect" id="node1" href="$classCSMonitorFD.html" title="Class to tie sockets to for monitoring by Csocket at either the Csock or TSockManager." alt="" coords="7,5,111,35"/>
-<area shape="rect" id="node3" href="$classCCurlSock.html" title="Csocket style wrapper around libcurl&#45;multi." alt="" coords="161,5,247,35"/>
+<area shape="rect" id="node1" href="$classCSListener.html" title="options container to create a listener" alt="" coords="5,5,96,35"/>
+<area shape="rect" id="node3" href="$classCSSSListener.html" title="CSSSListener" alt="" coords="144,5,253,35"/>
 </map>
