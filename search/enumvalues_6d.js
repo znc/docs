@@ -16,5 +16,6 @@ var searchData=
   ['mcs_5fereadfil',['MCS_EREADFIL',['../classMCString.html#ad659058c5ac29c1649d0e7f368993fa4af294052180a6dfb3e7c6142d66088816',1,'MCString']]],
   ['mcs_5fewrite',['MCS_EWRITE',['../classMCString.html#ad659058c5ac29c1649d0e7f368993fa4a83e393aae9950c3590c94ab94835a77d',1,'MCString']]],
   ['mcs_5fewritefil',['MCS_EWRITEFIL',['../classMCString.html#ad659058c5ac29c1649d0e7f368993fa4a53d31af64966d748ec5382c3785494a9',1,'MCString']]],
-  ['mcs_5fsuccess',['MCS_SUCCESS',['../classMCString.html#ad659058c5ac29c1649d0e7f368993fa4a7890add35b7abddbeeb0e2fdd7f45911',1,'MCString']]]
+  ['mcs_5fsuccess',['MCS_SUCCESS',['../classMCString.html#ad659058c5ac29c1649d0e7f368993fa4a7890add35b7abddbeeb0e2fdd7f45911',1,'MCString']]],
+  ['mode',['Mode',['../classCMessage.html#a0c73f73428ca8fd0c3f10a497d2fcb11ab4b213f0ac3b09b47a80a04efabefe5e',1,'CMessage']]]
 ];

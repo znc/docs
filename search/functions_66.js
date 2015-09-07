@@ -84,7 +84,7 @@ var searchData=
   ['formatservertime',['FormatServerTime',['../classCUtils.html#a4a3a2068b26d7605ffd0f7c559a000ac',1,'CUtils']]],
   ['formattime',['FormatTime',['../classCUtils.html#a1971c679165ddcb004f9c05558774dcb',1,'CUtils']]],
   ['formattimeinmillisasseconds',['FormatTimeInMillisAsSeconds',['../namespacetesting_1_1internal.html#aa61da90c04dfdef06183c11a6fa6669e',1,'testing::internal']]],
-  ['forwardraw353',['ForwardRaw353',['../classCIRCSock.html#a717035665f7473a273830fec9f8feb5b',1,'CIRCSock::ForwardRaw353(const CString &amp;sLine) const '],['../classCIRCSock.html#af08ee392ba4edd792cb8581f3050be48',1,'CIRCSock::ForwardRaw353(const CString &amp;sLine, CClient *pClient) const ']]],
+  ['forwardraw353',['ForwardRaw353',['../classCIRCSock.html#aa64fd117a722df6c76971f20607704ca',1,'CIRCSock::ForwardRaw353(const CMessage &amp;Message) const '],['../classCIRCSock.html#ac6734e38f49852767d2397decd79279d',1,'CIRCSock::ForwardRaw353(const CMessage &amp;Message, CClient *pClient) const ']]],
   ['fraction_5fbits',['fraction_bits',['../classtesting_1_1internal_1_1FloatingPoint.html#aa0167b7b10a934b743ba3c1f47421e63',1,'testing::internal::FloatingPoint']]],
   ['freopen',['FReopen',['../namespacetesting_1_1internal_1_1posix.html#a9ef6d089cdae03f9d9e0e6d379c40703',1,'testing::internal::posix']]],
   ['friend_5ftest',['FRIEND_TEST',['../classPrivateCode.html#a9a74a333501232539ab1636f0928d8f2',1,'PrivateCode::FRIEND_TEST(PrivateCodeTest, CanAccessPrivateMembers)'],['../classPrivateCode.html#a29b6823300f68d78691476eeeaed8a7c',1,'PrivateCode::FRIEND_TEST(PrivateCodeFixtureTest, CanAccessPrivateMembers)']]],

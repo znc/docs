@@ -30,6 +30,7 @@ var searchData=
   ['kfloatingpoint',['kFloatingPoint',['../namespacetesting_1_1internal.html#aa8747bda20137c9aa7f846dee830e686acdce59b8c136926ace18aa9c2995878d',1,'testing::internal']]],
   ['kfractionbitcount',['kFractionBitCount',['../classtesting_1_1internal_1_1FloatingPoint.html#a0b756a6d2a4f5f5b41ca79651c06c043',1,'testing::internal::FloatingPoint']]],
   ['kfractionbitmask',['kFractionBitMask',['../classtesting_1_1internal_1_1FloatingPoint.html#a0ac75d4ffd24f14bca452abe8a718da1',1,'testing::internal::FloatingPoint']]],
+  ['kick',['Kick',['../classCMessage.html#a0c73f73428ca8fd0c3f10a497d2fcb11af84b8d19f4f64ea5b500fa6bff57d17b',1,'CMessage']]],
   ['kill',['Kill',['../classCExecSock.html#a6f53928f3c1396b60f8bafe4b2a0f1f7',1,'CExecSock']]],
   ['kindof',['KindOf',['../structtesting_1_1internal_1_1KindOf.html',1,'testing::internal']]],
   ['kinfo',['kInfo',['../namespacetesting_1_1internal.html#a203d1a8a2147a53d12bbdae40d443914a396aacfaee2849eaab7c1de9773d624d',1,'testing::internal']]],

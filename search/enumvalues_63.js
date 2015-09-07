@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['capability',['Capability',['../classCMessage.html#a0c73f73428ca8fd0c3f10a497d2fcb11aa4eefbbbfce387af3a4ac97952dd52f4',1,'CMessage']]],
   ['caseinsensitive',['CaseInsensitive',['../ZNCString_8h.html#aaa929f83398f109dfbff9789108b159ba661bce8278aa797301d87df7dcd5cf10',1,'ZNCString.h']]],
   ['casesensitive',['CaseSensitive',['../ZNCString_8h.html#aaa929f83398f109dfbff9789108b159ba69a0083547e2ee614b9ab57d7e0471a9',1,'ZNCString.h']]],
   ['clt_5fafterwrite',['CLT_AFTERWRITE',['../classCsock.html#a8b185717b466c70d2934fce9775c54daa09c3a0350b7af7fabc47a3a422d9a8c9',1,'Csock']]],
@@ -16,5 +17,6 @@ var searchData=
   ['cst_5fstart',['CST_START',['../classCsock.html#a1ddb2a5d92aefe7db7a88b3824d7c4daa6f3a502e66c1cfa0d5507c0b949343a9',1,'Csock']]],
   ['ct_5fnone',['CT_NONE',['../build_2include_2znc_2Csocket_8h.html#a233f31a47c2ebf7099843a7b37a1bf61abc1edbe45d74e83b1f8330ebbfc19fb0',1,'CT_NONE():&#160;Csocket.h'],['../third__party_2Csocket_2Csocket_8h.html#a233f31a47c2ebf7099843a7b37a1bf61abc1edbe45d74e83b1f8330ebbfc19fb0',1,'CT_NONE():&#160;Csocket.h']]],
   ['ct_5frle',['CT_RLE',['../build_2include_2znc_2Csocket_8h.html#a233f31a47c2ebf7099843a7b37a1bf61ab6ef93fe3f12878600415a8437a281e1',1,'CT_RLE():&#160;Csocket.h'],['../third__party_2Csocket_2Csocket_8h.html#a233f31a47c2ebf7099843a7b37a1bf61ab6ef93fe3f12878600415a8437a281e1',1,'CT_RLE():&#160;Csocket.h']]],
-  ['ct_5fzlib',['CT_ZLIB',['../build_2include_2znc_2Csocket_8h.html#a233f31a47c2ebf7099843a7b37a1bf61ac6c3c3cb17d18ad46195ae78094a774e',1,'CT_ZLIB():&#160;Csocket.h'],['../third__party_2Csocket_2Csocket_8h.html#a233f31a47c2ebf7099843a7b37a1bf61ac6c3c3cb17d18ad46195ae78094a774e',1,'CT_ZLIB():&#160;Csocket.h']]]
+  ['ct_5fzlib',['CT_ZLIB',['../build_2include_2znc_2Csocket_8h.html#a233f31a47c2ebf7099843a7b37a1bf61ac6c3c3cb17d18ad46195ae78094a774e',1,'CT_ZLIB():&#160;Csocket.h'],['../third__party_2Csocket_2Csocket_8h.html#a233f31a47c2ebf7099843a7b37a1bf61ac6c3c3cb17d18ad46195ae78094a774e',1,'CT_ZLIB():&#160;Csocket.h']]],
+  ['ctcp',['CTCP',['../classCMessage.html#a0c73f73428ca8fd0c3f10a497d2fcb11a4e6368a091c9f17f09c6b6807b657bdd',1,'CMessage']]]
 ];

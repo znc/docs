@@ -9,6 +9,7 @@ var searchData=
   ['kfail',['kFail',['../namespacetesting_1_1internal.html#adfcd859062983a889f4bd18e6977357ea6fc25174a501f31b090a2b556f77fdc1',1,'testing::internal']]],
   ['kfatalfailure',['kFatalFailure',['../classtesting_1_1TestPartResult.html#a65ae656b33fdfdfffaf34858778a52d5ae1bf0b610b697a43fee97628cdab4ea1',1,'testing::TestPartResult']]],
   ['kfloatingpoint',['kFloatingPoint',['../namespacetesting_1_1internal.html#aa8747bda20137c9aa7f846dee830e686acdce59b8c136926ace18aa9c2995878d',1,'testing::internal']]],
+  ['kick',['Kick',['../classCMessage.html#a0c73f73428ca8fd0c3f10a497d2fcb11af84b8d19f4f64ea5b500fa6bff57d17b',1,'CMessage']]],
   ['kinfo',['kInfo',['../namespacetesting_1_1internal.html#a203d1a8a2147a53d12bbdae40d443914a396aacfaee2849eaab7c1de9773d624d',1,'testing::internal']]],
   ['kinsequence',['kInSequence',['../classtesting_1_1internal_1_1ExpectationBase.html#a450f34b979ec5814c91d4eab6b78cfc2ac9e8abdc7de4697d2174c560e7a0a595',1,'testing::internal::ExpectationBase']]],
   ['kinteger',['kInteger',['../namespacetesting_1_1internal.html#aa8747bda20137c9aa7f846dee830e686a8a52f0fd73e05da35c45d80653633cab',1,'testing::internal']]],

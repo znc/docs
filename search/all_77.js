@@ -1,6 +1,7 @@
 var searchData=
 [
   ['waitforchildlock',['WaitForChildLock',['../classCZNC.html#a9507ce9a96d584b46e6f04328f785713',1,'CZNC']]],
+  ['wallops',['Wallops',['../classCMessage.html#a0c73f73428ca8fd0c3f10a497d2fcb11a87df389d7501587b280108756fdf55b5',1,'CMessage']]],
   ['webmodules_2eh',['WebModules.h',['../WebModules_8h.html',1,'']]],
   ['webrequiresadmin',['WebRequiresAdmin',['../classCModule.html#abe2b6023625deb2d20451bc84be57ef1',1,'CModule::WebRequiresAdmin()'],['../classCPerlModule.html#a8c2487ef310d7acd8eb24094921cb3d8',1,'CPerlModule::WebRequiresAdmin()'],['../classCPyModule.html#a948366386ea38fd0b0d95b8cb90ecb7b',1,'CPyModule::WebRequiresAdmin()']]],
   ['webrequireslogin',['WebRequiresLogin',['../classCModule.html#a2b7cf260382ef4fbc23a328aca6a5551',1,'CModule::WebRequiresLogin()'],['../classCPerlModule.html#af880f408d30c56ee83a3187251b749d9',1,'CPerlModule::WebRequiresLogin()'],['../classCPyModule.html#aa66445d3d2b3a4ce96d79e306fdc6db7',1,'CPyModule::WebRequiresLogin()']]],
@@ -13,8 +14,8 @@ var searchData=
   ['whendynamiccasttomatcherbase_3c_20to_20_26_20_3e',['WhenDynamicCastToMatcherBase< To & >',['../classtesting_1_1internal_1_1WhenDynamicCastToMatcherBase.html',1,'testing::internal']]],
   ['whensorted',['WhenSorted',['../namespacetesting.html#a01468e3e641c72a2efb605b4c34675ee',1,'testing']]],
   ['whensortedby',['WhenSortedBy',['../namespacetesting.html#af74dfcde9ed88d79cf69dfda049078a3',1,'testing']]],
-  ['whensortedbymatcher',['WhenSortedByMatcher',['../classtesting_1_1internal_1_1WhenSortedByMatcher.html',1,'testing::internal']]],
   ['whensortedbymatcher',['WhenSortedByMatcher',['../classtesting_1_1internal_1_1WhenSortedByMatcher.html#a5c5e625b3f0be9f7380f5be744f61b1c',1,'testing::internal::WhenSortedByMatcher']]],
+  ['whensortedbymatcher',['WhenSortedByMatcher',['../classtesting_1_1internal_1_1WhenSortedByMatcher.html',1,'testing::internal']]],
   ['widecstringequals',['WideCStringEquals',['../classtesting_1_1internal_1_1String.html#a4f5e053907ebced07fe0dc52dd2d1e85',1,'testing::internal::String']]],
   ['widestringtoutf8',['WideStringToUtf8',['../namespacetesting_1_1internal.html#a5e9c5e926954775317fab4fa198e27de',1,'testing::internal']]],
   ['widget',['Widget',['../classWidget.html',1,'Widget'],['../classWidget.html#ab573b75a8a69d29c298af2485fb9cda9',1,'Widget::Widget()']]],

@@ -362,15 +362,6 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#ada022fa461a124755eb9946feb207a6c">~CIRCSock</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#a22cbf881b7f5881ebbcbfd2735e4d8e9">CIRCSock</a> (const <a class="el" href="classCIRCSock.html">CIRCSock</a> &amp;)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCIRCSock.html">CIRCSock</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#aee13d7f9079e4298a4ea084e912264d8">operator=</a> (const <a class="el" href="classCIRCSock.html">CIRCSock</a> &amp;)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#a1e3a1c4024c609ab810e8bfef609475b">OnCTCPReply</a> (<a class="el" href="classCMessage.html">CMessage</a> &amp;Message)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#a0e43acd491bc7f3be2cd9c944a3116b5">OnPrivCTCP</a> (<a class="el" href="classCMessage.html">CMessage</a> &amp;Message)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#a655196ba7077fc8fecff4e9c3e4f5b79">OnChanCTCP</a> (<a class="el" href="classCMessage.html">CMessage</a> &amp;Message)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#ab5f8a71453cc9502f635ddba9871008f">OnGeneralCTCP</a> (<a class="el" href="classCMessage.html">CMessage</a> &amp;Message)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#a8e6f47d3ee50108297802be5aae116b8">OnPrivMsg</a> (<a class="el" href="classCMessage.html">CMessage</a> &amp;Message)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#a579e0dc1070c46971d9c53e0c455962e">OnChanMsg</a> (<a class="el" href="classCMessage.html">CMessage</a> &amp;Message)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#ae1c020731497334c1c04b0544b6a3bb6">OnPrivNotice</a> (<a class="el" href="classCMessage.html">CMessage</a> &amp;Message)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#a68d0d5426b6dd3d54972d160fec896c3">OnChanNotice</a> (<a class="el" href="classCMessage.html">CMessage</a> &amp;Message)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#a5f5dc82c59778a9175043125ce14b36e">OnServerCapAvailable</a> (const <a class="el" href="classCString.html">CString</a> &amp;sCap)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#a8ebfbd660d1965c9cbb7c76aaeac7c06">ReadLine</a> (const <a class="el" href="classCString.html">CString</a> &amp;sData) override</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#a6ca774849ec163d6bbbc166e77d92b71">Connected</a> () override</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Connected event.  <a href="#a6ca774849ec163d6bbbc166e77d92b71"></a><br/></td></tr>
@@ -418,8 +409,8 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#a44646a856309595ee2c9d496ff831417">IsCapAccepted</a> (const <a class="el" href="classCString.html">CString</a> &amp;sCap)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classMCString.html">MCString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#a9cff083da920fa15836194dde3515c98">GetISupport</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#ad028960726b2b661f4aa86863821369b">GetISupport</a> (const <a class="el" href="classCString.html">CString</a> &amp;sKey, const <a class="el" href="classCString.html">CString</a> &amp;sDefault=&quot;&quot;) const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#a717035665f7473a273830fec9f8feb5b">ForwardRaw353</a> (const <a class="el" href="classCString.html">CString</a> &amp;sLine) const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#af08ee392ba4edd792cb8581f3050be48">ForwardRaw353</a> (const <a class="el" href="classCString.html">CString</a> &amp;sLine, <a class="el" href="classCClient.html">CClient</a> *pClient) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#aa64fd117a722df6c76971f20607704ca">ForwardRaw353</a> (const <a class="el" href="classCMessage.html">CMessage</a> &amp;Message) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#ac6734e38f49852767d2397decd79279d">ForwardRaw353</a> (const <a class="el" href="classCMessage.html">CMessage</a> &amp;Message, <a class="el" href="classCClient.html">CClient</a> *pClient) const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNCSock.html#a1301e874a81e8f2b64ff2af0a0e018a6">ConvertAddress</a> (const struct sockaddr_storage *pAddr, socklen_t iAddrLen, <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sIP, u_short *piPort) const override</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#ab03fd24a2d7a397ef9bbe864df6dda31">ConvertAddress</a> (const struct sockaddr_storage *pAddr, socklen_t iAddrLen, <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sIP, uint16_t *piPort) const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve name info (numeric only) for a given sockaddr_storage  <a href="#ab03fd24a2d7a397ef9bbe864df6dda31"></a><br/></td></tr>
@@ -2257,6 +2248,8 @@ Friends</h2></td></tr>
 
 <p>just mark us as closed, the parent can pick it up </p>
 
+<p>Referenced by <a class="el" href="classCExecSock.html#a6f53928f3c1396b60f8bafe4b2a0f1f7">CExecSock::Kill()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ace2cccec9d2ba551369b41b60324496f"></a><!-- doxytag: member="CIRCSock::Close" ref="ace2cccec9d2ba551369b41b60324496f" args="(ECloseType eCloseType=CLT_NOW)" -->
@@ -2275,8 +2268,6 @@ Friends</h2></td></tr>
 <div class="memdoc">
 
 <p>just mark us as closed, the parent can pick it up </p>
-
-<p>Referenced by <a class="el" href="classCExecSock.html#a6f53928f3c1396b60f8bafe4b2a0f1f7">CExecSock::Kill()</a>.</p>
 
 </div>
 </div>
@@ -3290,15 +3281,15 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a717035665f7473a273830fec9f8feb5b"></a><!-- doxytag: member="CIRCSock::ForwardRaw353" ref="a717035665f7473a273830fec9f8feb5b" args="(const CString &amp;sLine) const " -->
+<a class="anchor" id="aa64fd117a722df6c76971f20607704ca"></a><!-- doxytag: member="CIRCSock::ForwardRaw353" ref="aa64fd117a722df6c76971f20607704ca" args="(const CMessage &amp;Message) const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classCIRCSock.html#a717035665f7473a273830fec9f8feb5b">CIRCSock::ForwardRaw353</a> </td>
+          <td class="memname">void <a class="el" href="classCIRCSock.html#aa64fd117a722df6c76971f20607704ca">CIRCSock::ForwardRaw353</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
-          <td class="paramname"><em>sLine</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classCMessage.html">CMessage</a> &amp;&#160;</td>
+          <td class="paramname"><em>Message</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -3307,15 +3298,15 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af08ee392ba4edd792cb8581f3050be48"></a><!-- doxytag: member="CIRCSock::ForwardRaw353" ref="af08ee392ba4edd792cb8581f3050be48" args="(const CString &amp;sLine, CClient *pClient) const " -->
+<a class="anchor" id="ac6734e38f49852767d2397decd79279d"></a><!-- doxytag: member="CIRCSock::ForwardRaw353" ref="ac6734e38f49852767d2397decd79279d" args="(const CMessage &amp;Message, CClient *pClient) const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classCIRCSock.html#a717035665f7473a273830fec9f8feb5b">CIRCSock::ForwardRaw353</a> </td>
+          <td class="memname">void <a class="el" href="classCIRCSock.html#aa64fd117a722df6c76971f20607704ca">CIRCSock::ForwardRaw353</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
-          <td class="paramname"><em>sLine</em>, </td>
+          <td class="paramtype">const <a class="el" href="classCMessage.html">CMessage</a> &amp;&#160;</td>
+          <td class="paramname"><em>Message</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -6022,159 +6013,6 @@ Friends</h2></td></tr>
 <div class="memdoc">
 
 <p>Use this to change your fd's to blocking or none blocking. </p>
-
-</div>
-</div>
-<a class="anchor" id="a655196ba7077fc8fecff4e9c3e4f5b79"></a><!-- doxytag: member="CIRCSock::OnChanCTCP" ref="a655196ba7077fc8fecff4e9c3e4f5b79" args="(CMessage &amp;Message)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classCIRCSock.html#a655196ba7077fc8fecff4e9c3e4f5b79">CIRCSock::OnChanCTCP</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classCMessage.html">CMessage</a> &amp;&#160;</td>
-          <td class="paramname"><em>Message</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a579e0dc1070c46971d9c53e0c455962e"></a><!-- doxytag: member="CIRCSock::OnChanMsg" ref="a579e0dc1070c46971d9c53e0c455962e" args="(CMessage &amp;Message)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classCIRCSock.html#a579e0dc1070c46971d9c53e0c455962e">CIRCSock::OnChanMsg</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classCMessage.html">CMessage</a> &amp;&#160;</td>
-          <td class="paramname"><em>Message</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a68d0d5426b6dd3d54972d160fec896c3"></a><!-- doxytag: member="CIRCSock::OnChanNotice" ref="a68d0d5426b6dd3d54972d160fec896c3" args="(CMessage &amp;Message)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classCIRCSock.html#a68d0d5426b6dd3d54972d160fec896c3">CIRCSock::OnChanNotice</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classCMessage.html">CMessage</a> &amp;&#160;</td>
-          <td class="paramname"><em>Message</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a1e3a1c4024c609ab810e8bfef609475b"></a><!-- doxytag: member="CIRCSock::OnCTCPReply" ref="a1e3a1c4024c609ab810e8bfef609475b" args="(CMessage &amp;Message)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classCIRCSock.html#a1e3a1c4024c609ab810e8bfef609475b">CIRCSock::OnCTCPReply</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classCMessage.html">CMessage</a> &amp;&#160;</td>
-          <td class="paramname"><em>Message</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ab5f8a71453cc9502f635ddba9871008f"></a><!-- doxytag: member="CIRCSock::OnGeneralCTCP" ref="ab5f8a71453cc9502f635ddba9871008f" args="(CMessage &amp;Message)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classCIRCSock.html#ab5f8a71453cc9502f635ddba9871008f">CIRCSock::OnGeneralCTCP</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classCMessage.html">CMessage</a> &amp;&#160;</td>
-          <td class="paramname"><em>Message</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a0e43acd491bc7f3be2cd9c944a3116b5"></a><!-- doxytag: member="CIRCSock::OnPrivCTCP" ref="a0e43acd491bc7f3be2cd9c944a3116b5" args="(CMessage &amp;Message)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classCIRCSock.html#a0e43acd491bc7f3be2cd9c944a3116b5">CIRCSock::OnPrivCTCP</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classCMessage.html">CMessage</a> &amp;&#160;</td>
-          <td class="paramname"><em>Message</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a8e6f47d3ee50108297802be5aae116b8"></a><!-- doxytag: member="CIRCSock::OnPrivMsg" ref="a8e6f47d3ee50108297802be5aae116b8" args="(CMessage &amp;Message)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classCIRCSock.html#a8e6f47d3ee50108297802be5aae116b8">CIRCSock::OnPrivMsg</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classCMessage.html">CMessage</a> &amp;&#160;</td>
-          <td class="paramname"><em>Message</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ae1c020731497334c1c04b0544b6a3bb6"></a><!-- doxytag: member="CIRCSock::OnPrivNotice" ref="ae1c020731497334c1c04b0544b6a3bb6" args="(CMessage &amp;Message)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classCIRCSock.html#ae1c020731497334c1c04b0544b6a3bb6">CIRCSock::OnPrivNotice</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classCMessage.html">CMessage</a> &amp;&#160;</td>
-          <td class="paramname"><em>Message</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a5f5dc82c59778a9175043125ce14b36e"></a><!-- doxytag: member="CIRCSock::OnServerCapAvailable" ref="a5f5dc82c59778a9175043125ce14b36e" args="(const CString &amp;sCap)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classCIRCSock.html#a5f5dc82c59778a9175043125ce14b36e">CIRCSock::OnServerCapAvailable</a> </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
-          <td class="paramname"><em>sCap</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
 
 </div>
 </div>
@@ -9387,7 +9225,7 @@ Friends</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 6 2015 20:59:14 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Sep 7 2015 08:29:54 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

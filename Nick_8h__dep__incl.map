@@ -1,12 +1,12 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$Chan_8h.html" title="Chan.h" alt="" coords="22,237,89,267"/>
-<area shape="rect" id="node5" href="$IRCNetwork_8h.html" title="IRCNetwork.h" alt="" coords="74,315,178,344"/>
-<area shape="rect" id="node7" href="$IRCSock_8h.html" title="IRCSock.h" alt="" coords="403,83,486,112"/>
-<area shape="rect" id="node9" href="$Message_8h.html" title="Message.h" alt="" coords="289,83,379,112"/>
-<area shape="rect" id="node17" href="$User_8h.html" title="User.h" alt="" coords="257,237,318,267"/>
-<area shape="rect" id="node11" href="$Buffer_8h.html" title="Buffer.h" alt="" coords="145,160,214,189"/>
-<area shape="rect" id="node19" href="$Modules_8h.html" title="Modules.h" alt="" coords="341,160,426,189"/>
-<area shape="rect" id="node15" href="$Query_8h.html" title="Query.h" alt="" coords="163,237,233,267"/>
-<area shape="rect" id="node21" href="$znc_8h.html" title="znc.h" alt="" coords="449,237,505,267"/>
-<area shape="rect" id="node24" href="$modperl_2module_8h.html" title="module.h" alt="" coords="342,237,425,267"/>
+<area shape="rect" id="node3" href="$Chan_8h.html" title="Chan.h" alt="" coords="351,237,418,267"/>
+<area shape="rect" id="node5" href="$IRCNetwork_8h.html" title="IRCNetwork.h" alt="" coords="103,315,207,344"/>
+<area shape="rect" id="node7" href="$IRCSock_8h.html" title="IRCSock.h" alt="" coords="302,160,385,189"/>
+<area shape="rect" id="node9" href="$Message_8h.html" title="Message.h" alt="" coords="206,83,297,112"/>
+<area shape="rect" id="node17" href="$User_8h.html" title="User.h" alt="" coords="442,237,503,267"/>
+<area shape="rect" id="node11" href="$Buffer_8h.html" title="Buffer.h" alt="" coords="209,160,278,189"/>
+<area shape="rect" id="node20" href="$Modules_8h.html" title="Modules.h" alt="" coords="99,160,185,189"/>
+<area shape="rect" id="node15" href="$Query_8h.html" title="Query.h" alt="" coords="207,237,277,267"/>
+<area shape="rect" id="node22" href="$znc_8h.html" title="znc.h" alt="" coords="127,237,183,267"/>
+<area shape="rect" id="node25" href="$modperl_2module_8h.html" title="module.h" alt="" coords="21,237,103,267"/>
 </map>

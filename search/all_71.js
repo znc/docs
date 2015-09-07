@@ -6,6 +6,6 @@ var searchData=
   ['queue',['Queue',['../classQueue.html',1,'Queue&lt; E &gt;'],['../classQueue.html#ab09891e54b51dc677ee6efb350687ae4',1,'Queue::Queue()']]],
   ['queue_3c_20e_20_3e',['Queue< E >',['../classQueueNode.html#ad4336229b1d7c3626e4ba69f236b202d',1,'QueueNode']]],
   ['queuenode',['QueueNode',['../classQueueNode.html',1,'']]],
-  ['quit',['Quit',['../classCIRCSock.html#a4d8282501344835986d277ba34589453',1,'CIRCSock']]],
+  ['quit',['Quit',['../classCMessage.html#a0c73f73428ca8fd0c3f10a497d2fcb11a14a01309f88b0f6fc12c51dec76535f3',1,'CMessage::Quit()'],['../classCIRCSock.html#a4d8282501344835986d277ba34589453',1,'CIRCSock::Quit()']]],
   ['quotesplit',['QuoteSplit',['../classCString.html#a3760b68ca2fb92f1e37ee6228847173d',1,'CString']]]
 ];

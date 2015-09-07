@@ -117,7 +117,7 @@ var searchData=
   ['formatservertime',['FormatServerTime',['../classCUtils.html#a4a3a2068b26d7605ffd0f7c559a000ac',1,'CUtils']]],
   ['formattime',['FormatTime',['../classCUtils.html#a1971c679165ddcb004f9c05558774dcb',1,'CUtils']]],
   ['formattimeinmillisasseconds',['FormatTimeInMillisAsSeconds',['../namespacetesting_1_1internal.html#aa61da90c04dfdef06183c11a6fa6669e',1,'testing::internal']]],
-  ['forwardraw353',['ForwardRaw353',['../classCIRCSock.html#a717035665f7473a273830fec9f8feb5b',1,'CIRCSock::ForwardRaw353(const CString &amp;sLine) const '],['../classCIRCSock.html#af08ee392ba4edd792cb8581f3050be48',1,'CIRCSock::ForwardRaw353(const CString &amp;sLine, CClient *pClient) const ']]],
+  ['forwardraw353',['ForwardRaw353',['../classCIRCSock.html#aa64fd117a722df6c76971f20607704ca',1,'CIRCSock::ForwardRaw353(const CMessage &amp;Message) const '],['../classCIRCSock.html#ac6734e38f49852767d2397decd79279d',1,'CIRCSock::ForwardRaw353(const CMessage &amp;Message, CClient *pClient) const ']]],
   ['fpcertverifycb',['FPCertVerifyCB',['../build_2include_2znc_2Csocket_8h.html#aa5463d49fb8abd380d534f606e69f6d4',1,'FPCertVerifyCB():&#160;Csocket.h'],['../third__party_2Csocket_2Csocket_8h.html#aa5463d49fb8abd380d534f606e69f6d4',1,'FPCertVerifyCB():&#160;Csocket.h']]],
   ['fptimer_5ft',['FPTimer_t',['../Modules_8h.html#ac37bb819056da7480b0bc7a717b45233',1,'Modules.h']]],
   ['fraction_5fbits',['fraction_bits',['../classtesting_1_1internal_1_1FloatingPoint.html#aa0167b7b10a934b743ba3c1f47421e63',1,'testing::internal::FloatingPoint']]],
