@@ -281,6 +281,8 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#a1dc47cfa75074831a0c76982ac5d4af5">OnMode</a> (const <a class="el" href="classCNick.html">CNick</a> &amp;OpNick, <a class="el" href="classCChan.html">CChan</a> &amp;Channel, char uMode, const <a class="el" href="classCString.html">CString</a> &amp;sArg, bool bAdded, bool bNoChange)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#a2a9c599bbfc40207c6749c110e5288f0">OnRawMode</a> (const <a class="el" href="classCNick.html">CNick</a> &amp;OpNick, <a class="el" href="classCChan.html">CChan</a> &amp;Channel, const <a class="el" href="classCString.html">CString</a> &amp;sModes, const <a class="el" href="classCString.html">CString</a> &amp;sArgs)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#aa2dc1e3fd157b0dbe9bb5cebafce1a21">OnRawMessage</a> (<a class="el" href="classCMessage.html">CMessage</a> &amp;Message)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#abd3349b12227ca939770a5c32813a3e6">OnNumericMessage</a> (<a class="el" href="classCNumericMessage.html">CNumericMessage</a> &amp;Message)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a numeric message is received from the <em>IRC server</em>.  <a href="#abd3349b12227ca939770a5c32813a3e6"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#adfa8fd21416f686f4a5a141761002404">OnUnknownModCommand</a> (const <a class="el" href="classCString.html">CString</a> &amp;sCommand)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This is similar to <a class="el" href="classCModule.html#a9af8127da998dbca33d77e58634b5283" title="Called when a command to your module is sent, e.g.">OnModCommand()</a>, but it is only called if HandleCommand didn't find any that wants to handle this.  <a href="#adfa8fd21416f686f4a5a141761002404"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#a2efc8b3f0afc5f096f348db0b1f83ffd">OnQuitMessage</a> (<a class="el" href="classCQuitMessage.html">CQuitMessage</a> &amp;Message, const std::vector&lt; <a class="el" href="classCChan.html">CChan</a> * &gt; &amp;vChans)</td></tr>
@@ -3697,6 +3699,32 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="abd3349b12227ca939770a5c32813a3e6"></a><!-- doxytag: member="CPerlModule::OnNumericMessage" ref="abd3349b12227ca939770a5c32813a3e6" args="(CNumericMessage &amp;Message)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCModule.html#abd3349b12227ca939770a5c32813a3e6">CModule::OnNumericMessage</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCNumericMessage.html">CNumericMessage</a> &amp;&#160;</td>
+          <td class="paramname"><em>Message</em></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Called when a numeric message is received from the <em>IRC server</em>. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Message</td><td>The received message. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>See <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2" title="This enum is just used for return from module hooks.">CModule::EModRet</a>. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a86b1fb88ee1f5cb89d81c281e05e6bf1"></a><!-- doxytag: member="CPerlModule::OnOp" ref="a86b1fb88ee1f5cb89d81c281e05e6bf1" args="(const CNick &amp;OpNick, const CNick &amp;Nick, CChan &amp;Channel, bool bNoChange)" -->
 <div class="memitem">
 <div class="memproto">
@@ -6227,7 +6255,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 6 2015 20:59:14 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Sep 7 2015 15:08:12 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

@@ -216,6 +216,7 @@ This is the complete list of members for <a class="el" href="classCModule.html">
   <tr class="memlist"><td><a class="el" href="classCModule.html#a1f10365644abef42d65aee13e9b6a7f0">OnModuleUnloading</a>(CModule *pModule, bool &amp;bSuccess, CString &amp;sRetMsg)</td><td><a class="el" href="classCModule.html">CModule</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCModule.html#a35c1670f9ebab0ccae9ff9fc31ca5420">OnNick</a>(const CNick &amp;Nick, const CString &amp;sNewNick, const std::vector&lt; CChan * &gt; &amp;vChans)</td><td><a class="el" href="classCModule.html">CModule</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCModule.html#aad3a13439d5f97ac9ac0221d7ddd745a">OnNickMessage</a>(CNickMessage &amp;Message, const std::vector&lt; CChan * &gt; &amp;vChans)</td><td><a class="el" href="classCModule.html">CModule</a></td><td><code> [virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCModule.html#abd3349b12227ca939770a5c32813a3e6">OnNumericMessage</a>(CNumericMessage &amp;Message)</td><td><a class="el" href="classCModule.html">CModule</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCModule.html#a86b1fb88ee1f5cb89d81c281e05e6bf1">OnOp</a>(const CNick &amp;OpNick, const CNick &amp;Nick, CChan &amp;Channel, bool bNoChange)</td><td><a class="el" href="classCModule.html">CModule</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCModule.html#af4682bf72366684e129d2afd18335459">OnOp2</a>(const CNick *pOpNick, const CNick &amp;Nick, CChan &amp;Channel, bool bNoChange)</td><td><a class="el" href="classCModule.html">CModule</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCModule.html#ac996ebc79545a7591a753d4563eec51b">OnPart</a>(const CNick &amp;Nick, CChan &amp;Channel, const CString &amp;sMessage)</td><td><a class="el" href="classCModule.html">CModule</a></td><td><code> [virtual]</code></td></tr>
@@ -298,8 +299,8 @@ This is the complete list of members for <a class="el" href="classCModule.html">
   <tr class="memlist"><td><a class="el" href="classCModule.html#a46edcc71ac53f3368eea289fe197e9c6">SetUser</a>(CUser *pUser)</td><td><a class="el" href="classCModule.html">CModule</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCModule.html#a059e463c0d30f14bb49c58740d064f27">UnlinkSocket</a>(CSocket *pSocket)</td><td><a class="el" href="classCModule.html">CModule</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCModule.html#a4080d03ce3cfd8c38093d33ad565c410">UnlinkTimer</a>(CTimer *pTimer)</td><td><a class="el" href="classCModule.html">CModule</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="classCModule.html#aad1b3611e4d3891b93fcb3aded5609f5a8f3ef8f7aa9f586ea2e375f063658f60">UNLOAD</a> enum value</td><td><a class="el" href="classCModule.html">CModule</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCModule.html#afe4a1a37b1597db3a2f04ed7ac2ac7c9">Unload</a>()</td><td><a class="el" href="classCModule.html">CModule</a></td><td><code> [inline]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classCModule.html#aad1b3611e4d3891b93fcb3aded5609f5a8f3ef8f7aa9f586ea2e375f063658f60">UNLOAD</a> enum value</td><td><a class="el" href="classCModule.html">CModule</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classCModule.html#abe2b6023625deb2d20451bc84be57ef1">WebRequiresAdmin</a>()</td><td><a class="el" href="classCModule.html">CModule</a></td><td><code> [inline, virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCModule.html#a2b7cf260382ef4fbc23a328aca6a5551">WebRequiresLogin</a>()</td><td><a class="el" href="classCModule.html">CModule</a></td><td><code> [inline, virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classCModule.html#a5805daa01f486b156ec5a424ef3fe2bd">~CModule</a>()</td><td><a class="el" href="classCModule.html">CModule</a></td><td><code> [virtual]</code></td></tr>
@@ -321,7 +322,7 @@ This is the complete list of members for <a class="el" href="classCModule.html">
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 6 2015 20:59:14 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Sep 7 2015 15:08:12 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

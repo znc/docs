@@ -200,6 +200,8 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#a90f4ce597d5461c003052ec01ae1ef2f">OnRaw</a> (<a class="el" href="classCString.html">CString</a> &amp;sLine)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called on any raw IRC line received from the <em>IRC server</em>.  <a href="#a90f4ce597d5461c003052ec01ae1ef2f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#aa2dc1e3fd157b0dbe9bb5cebafce1a21">OnRawMessage</a> (<a class="el" href="classCMessage.html">CMessage</a> &amp;Message)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#abd3349b12227ca939770a5c32813a3e6">OnNumericMessage</a> (<a class="el" href="classCNumericMessage.html">CNumericMessage</a> &amp;Message)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a numeric message is received from the <em>IRC server</em>.  <a href="#abd3349b12227ca939770a5c32813a3e6"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#a73fd3f4fb91ff32f4f6cd6230031f42c">OnStatusCommand</a> (<a class="el" href="classCString.html">CString</a> &amp;sCommand)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a command to *status is sent.  <a href="#a73fd3f4fb91ff32f4f6cd6230031f42c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#a9af8127da998dbca33d77e58634b5283">OnModCommand</a> (const <a class="el" href="classCString.html">CString</a> &amp;sCommand)</td></tr>
@@ -3724,6 +3726,32 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="abd3349b12227ca939770a5c32813a3e6"></a><!-- doxytag: member="CModule::OnNumericMessage" ref="abd3349b12227ca939770a5c32813a3e6" args="(CNumericMessage &amp;Message)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> <a class="el" href="classCModule.html#abd3349b12227ca939770a5c32813a3e6">CModule::OnNumericMessage</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCNumericMessage.html">CNumericMessage</a> &amp;&#160;</td>
+          <td class="paramname"><em>Message</em></td><td>)</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Called when a numeric message is received from the <em>IRC server</em>. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Message</td><td>The received message. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>See <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2" title="This enum is just used for return from module hooks.">CModule::EModRet</a>. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a86b1fb88ee1f5cb89d81c281e05e6bf1"></a><!-- doxytag: member="CModule::OnOp" ref="a86b1fb88ee1f5cb89d81c281e05e6bf1" args="(const CNick &amp;OpNick, const CNick &amp;Nick, CChan &amp;Channel, bool bNoChange)" -->
 <div class="memitem">
 <div class="memproto">
@@ -6271,7 +6299,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 6 2015 20:59:14 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Sep 7 2015 15:08:12 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
