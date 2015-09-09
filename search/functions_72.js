@@ -26,7 +26,7 @@ var searchData=
   ['registerparameterizedtests',['RegisterParameterizedTests',['../classtesting_1_1internal_1_1UnitTestImpl.html#af84d2515f1a272a8783f00a3e8c0aff8',1,'testing::internal::UnitTestImpl']]],
   ['rehashconfig',['RehashConfig',['../classCZNC.html#a62120e7240b6f04775f745ddcd70ca1f',1,'CZNC']]],
   ['reinterpretbits',['ReinterpretBits',['../classtesting_1_1internal_1_1FloatingPoint.html#ac551f793522e54fbd8a25acb79eac5b1',1,'testing::internal::FloatingPoint']]],
-  ['release',['release',['../classtesting_1_1internal_1_1scoped__ptr.html#a7a4f3e568d81a5d8bcb5f8d6bf5130b1',1,'testing::internal::scoped_ptr::release()'],['../classtesting_1_1TestEventListeners.html#a5d4bfb7d8584801d6074bb0ec28f8bda',1,'testing::TestEventListeners::Release()']]],
+  ['release',['Release',['../classtesting_1_1TestEventListeners.html#a5d4bfb7d8584801d6074bb0ec28f8bda',1,'testing::TestEventListeners::Release()'],['../classtesting_1_1internal_1_1scoped__ptr.html#a7a4f3e568d81a5d8bcb5f8d6bf5130b1',1,'testing::internal::scoped_ptr::release()']]],
   ['reloadmodule',['ReloadModule',['../classCModules.html#a4e94f31aabbcf796f85221477d2e590c',1,'CModules']]],
   ['remallowedhost',['RemAllowedHost',['../classCUser.html#ae93ebb3929b88bac49d4d92c773f115e',1,'CUser']]],
   ['rembindhost',['RemBindHost',['../classCZNC.html#ac278e6c21fdbd1c9f34121b21a0a9aa7',1,'CZNC']]],
@@ -88,7 +88,7 @@ var searchData=
   ['rightchomp',['RightChomp',['../classCString.html#a7bc85d37b1db399a890527512f631248',1,'CString']]],
   ['rightchomp_5fn',['RightChomp_n',['../classCString.html#a4c84b2f3cad0db92af7659dce90499a8',1,'CString']]],
   ['rmdir',['RmDir',['../namespacetesting_1_1internal_1_1posix.html#acbad5d4ea5b73fd1765f5f760642932a',1,'testing::internal::posix']]],
-  ['run',['run',['../classCCron.html#a3eed49e9ab5e1f03bc56d6e307dd52f8',1,'CCron::run(timeval &amp;tNow)'],['../classCCron.html#a3eed49e9ab5e1f03bc56d6e307dd52f8',1,'CCron::run(timeval &amp;tNow)'],['../classtesting_1_1internal_1_1TransformTupleValuesHelper.html#a27773f284f43c712ec72923a872d35fc',1,'testing::internal::TransformTupleValuesHelper::Run()'],['../classtesting_1_1UnitTest.html#a2febc800536b44500565f4c423f359d3',1,'testing::UnitTest::Run()']]],
+  ['run',['Run',['../classtesting_1_1internal_1_1TransformTupleValuesHelper.html#a27773f284f43c712ec72923a872d35fc',1,'testing::internal::TransformTupleValuesHelper::Run()'],['../classtesting_1_1UnitTest.html#a2febc800536b44500565f4c423f359d3',1,'testing::UnitTest::Run()'],['../classCCron.html#a3eed49e9ab5e1f03bc56d6e307dd52f8',1,'CCron::run(timeval &amp;tNow)'],['../classCCron.html#a3eed49e9ab5e1f03bc56d6e307dd52f8',1,'CCron::run(timeval &amp;tNow)']]],
   ['run_5fall_5ftests',['RUN_ALL_TESTS',['../gtest_8h.html#a853a3792807489591d3d4a2f2ff9359f',1,'gtest.h']]],
   ['runalltests',['RunAllTests',['../classtesting_1_1internal_1_1UnitTestImpl.html#a1fb6be9971f4768c4136a05aa9e7e375',1,'testing::internal::UnitTestImpl']]],
   ['runjob',['RunJob',['../classCCron.html#ae55653bbe37861680eb83641b35fc60d',1,'CCron::RunJob()'],['../classCFPTimer.html#ad8641d84593df19bb3b880cac94a9a81',1,'CFPTimer::RunJob()'],['../classCPerlTimer.html#ae8875a25ea47ff8b4845be40618beeb3',1,'CPerlTimer::RunJob()'],['../classCPyTimer.html#abe45638e6b95ff87de6deb756970bc49',1,'CPyTimer::RunJob()'],['../classCCron.html#ae55653bbe37861680eb83641b35fc60d',1,'CCron::RunJob()']]]
