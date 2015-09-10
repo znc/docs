@@ -5,11 +5,8 @@ var searchData=
   ['page_5fnotfound',['PAGE_NOTFOUND',['../classCWebSock.html#a8b46819ec286f193efb0f8efcc8ace5aa49375e06d5518e3afa2330b7560444b2',1,'CWebSock']]],
   ['page_5fprint',['PAGE_PRINT',['../classCWebSock.html#a8b46819ec286f193efb0f8efcc8ace5aac14cae1c69bf0832310470531b1e4b51',1,'CWebSock']]],
   ['part',['Part',['../classCMessage.html#a0c73f73428ca8fd0c3f10a497d2fcb11a73ed48d0b8873903e2291761e29168f7',1,'CMessage']]],
-  ['perl_5floaded',['Perl_Loaded',['../modperl_2module_8h.html#a1d4b8c407564f739022df8b5c4efaaa9a8f42bb5e0102a51c6758918758edf5f3',1,'module.h']]],
-  ['perl_5floaderror',['Perl_LoadError',['../modperl_2module_8h.html#a1d4b8c407564f739022df8b5c4efaaa9a5c45aa54c01780e876d35e7ef9243adc',1,'module.h']]],
-  ['perl_5fnotfound',['Perl_NotFound',['../modperl_2module_8h.html#a1d4b8c407564f739022df8b5c4efaaa9ad8406ca4ca7a9df35409271685e928be',1,'module.h']]],
   ['ping',['Ping',['../classCMessage.html#a0c73f73428ca8fd0c3f10a497d2fcb11a507a1653d630a26718a8502061d494ae',1,'CMessage']]],
-  ['ping_5ffrequency',['PING_FREQUENCY',['../classCIRCNetwork.html#a9fed91ead68a69eb6c7e40d290fffe6ba3f207f8f9ab984372258f4363011138e',1,'CIRCNetwork']]],
-  ['ping_5fslack',['PING_SLACK',['../classCIRCNetwork.html#a9fed91ead68a69eb6c7e40d290fffe6bae044431ba9a775c6489d2383df14f4d3',1,'CIRCNetwork']]],
+  ['ping_5ffrequency',['PING_FREQUENCY',['../classCIRCNetwork.html#ad69c1740c87d99581a5f9761a9d69b0aa3f207f8f9ab984372258f4363011138e',1,'CIRCNetwork']]],
+  ['ping_5fslack',['PING_SLACK',['../classCIRCNetwork.html#ad69c1740c87d99581a5f9761a9d69b0aae044431ba9a775c6489d2383df14f4d3',1,'CIRCNetwork']]],
   ['pong',['Pong',['../classCMessage.html#a0c73f73428ca8fd0c3f10a497d2fcb11a0b1bb0cb82cb8e8d386d420886099408',1,'CMessage']]]
 ];

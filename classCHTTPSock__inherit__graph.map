@@ -1,5 +1,5 @@
 <map id="G" name="G">
-<area shape="rect" id="node12" href="$classCWebSock.html" title="CWebSock" alt="" coords="21,392,109,421"/>
+<area shape="rect" id="node11" href="$classCWebSock.html" title="CWebSock" alt="" coords="21,392,109,421"/>
 <area shape="rect" id="node2" href="$classCSocket.html" title="Base Csock implementation to be used by modules." alt="" coords="28,237,103,267"/>
 <area shape="rect" id="node4" href="$classCZNCSock.html" title="CZNCSock" alt="" coords="20,160,111,189"/>
 <area shape="rect" id="node6" href="$classCsock.html" title="Basic socket class." alt="" coords="36,83,95,112"/>

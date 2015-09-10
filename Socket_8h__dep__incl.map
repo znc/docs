@@ -1,12 +1,11 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$Client_8h.html" title="Client.h" alt="" coords="19,160,88,189"/>
-<area shape="rect" id="node5" href="$znc_8h.html" title="znc.h" alt="" coords="84,315,140,344"/>
-<area shape="rect" id="node9" href="$ExecSock_8h.html" title="ExecSock.h" alt="" coords="56,83,149,112"/>
-<area shape="rect" id="node11" href="$HTTPSock_8h.html" title="HTTPSock.h" alt="" coords="331,83,427,112"/>
-<area shape="rect" id="node20" href="$IRCSock_8h.html" title="IRCSock.h" alt="" coords="224,83,307,112"/>
-<area shape="rect" id="node22" href="$Listener_8h.html" title="Listener.h" alt="" coords="123,237,205,267"/>
-<area shape="rect" id="node7" href="$IRCNetwork_8h.html" title="IRCNetwork.h" alt="" coords="60,392,164,421"/>
-<area shape="rect" id="node13" href="$WebModules_8h.html" title="WebModules.h" alt="" coords="273,160,385,189"/>
-<area shape="rect" id="node15" href="$Modules_8h.html" title="Modules.h" alt="" coords="280,237,365,267"/>
-<area shape="rect" id="node18" href="$modperl_2module_8h.html" title="module.h" alt="" coords="281,315,364,344"/>
+<area shape="rect" id="node3" href="$Client_8h.html" title="Client.h" alt="" coords="5,160,75,189"/>
+<area shape="rect" id="node5" href="$znc_8h.html" title="znc.h" alt="" coords="140,315,196,344"/>
+<area shape="rect" id="node9" href="$ExecSock_8h.html" title="ExecSock.h" alt="" coords="149,83,243,112"/>
+<area shape="rect" id="node11" href="$HTTPSock_8h.html" title="HTTPSock.h" alt="" coords="267,83,363,112"/>
+<area shape="rect" id="node18" href="$IRCSock_8h.html" title="IRCSock.h" alt="" coords="387,83,469,112"/>
+<area shape="rect" id="node20" href="$Listener_8h.html" title="Listener.h" alt="" coords="379,237,461,267"/>
+<area shape="rect" id="node7" href="$IRCNetwork_8h.html" title="IRCNetwork.h" alt="" coords="116,392,220,421"/>
+<area shape="rect" id="node13" href="$WebModules_8h.html" title="WebModules.h" alt="" coords="204,160,316,189"/>
+<area shape="rect" id="node15" href="$Modules_8h.html" title="Modules.h" alt="" coords="183,237,268,267"/>
 </map>

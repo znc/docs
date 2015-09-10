@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -91,7 +90,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <!-- doxytag: class="CString" --><!-- doxytag: inherits="std::string" -->
-<p><a class="el" href="classString.html">String</a> class that is used inside ZNC.  
+<p>String class that is used inside ZNC.  
  <a href="classCString.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="ZNCString_8h_source.html">ZNCString.h</a>&gt;</code></p>
@@ -102,7 +101,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classCString__inherit__graph.png" border="0" usemap="#CString_inherit__map" alt="Inheritance graph"/></div>
 <map name="CString_inherit__map" id="CString_inherit__map">
-<area shape="rect" id="node7" href="classPString.html" title="PString" alt="" coords="64,237,131,267"/><area shape="rect" id="node2" title="STL class." alt="" coords="55,83,140,112"/><area shape="rect" id="node4" title="STL class." alt="" coords="5,5,189,35"/></map>
+<area shape="rect" id="node2" title="STL class." alt="" coords="55,83,140,112"/><area shape="rect" id="node4" title="STL class." alt="" coords="5,5,189,35"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for CString:</div>
@@ -297,7 +296,7 @@ Protected Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">unsigned char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCString.html#acdb15cec03e094073ef8e6dfd4ee288c">strnchr</a> (const unsigned char *src, unsigned char c, unsigned int iMaxBytes, unsigned char *pFill=nullptr, unsigned int *piCount=nullptr) const </td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="classString.html">String</a> class that is used inside ZNC. </p>
+<div class="textblock"><p>String class that is used inside ZNC. </p>
 <p>All strings that are used in ZNC and its modules should use instances of this class. It provides helpful functions for parsing input like <a class="el" href="classCString.html#afa5f580ce80354f9e22f36f895a2e6a3" title="Get a token out of this string.">Token()</a> and <a class="el" href="classCString.html#afc992e453be9545c96a6c69d1701e349" title="Split up this string into tokens.">Split()</a>. </p>
 </div><hr/><h2>Member Enumeration Documentation</h2>
 <a class="anchor" id="a8f63759db4ef372abb9cfa4751648e1f"></a><!-- doxytag: member="CString::EEscape" ref="a8f63759db4ef372abb9cfa4751648e1f" args="" -->
@@ -771,7 +770,7 @@ Protected Member Functions</h2></td></tr>
 <p>Treat this string as base64-encoded data and decode it. </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">sRet</td><td><a class="el" href="classString.html">String</a> to which the result of the decode is safed. </td></tr>
+    <tr><td class="paramname">sRet</td><td>String to which the result of the decode is safed. </td></tr>
   </table>
   </dd>
 </dl>
@@ -846,7 +845,7 @@ Protected Member Functions</h2></td></tr>
 <p>Base64-encode the current string. </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">sRet</td><td><a class="el" href="classString.html">String</a> where the result is saved. </td></tr>
+    <tr><td class="paramname">sRet</td><td>String where the result is saved. </td></tr>
     <tr><td class="paramname">uWrap</td><td>A boolean(!?!) that decides if the result should be wrapped after everywhere 57 characters. </td></tr>
   </table>
   </dd>
@@ -1277,7 +1276,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000008">Deprecated:</a></b></dt><dd></dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000036">Deprecated:</a></b></dt><dd></dd></dl>
 
 </div>
 </div>
@@ -2345,7 +2344,7 @@ template&lt;typename Iterator &gt; </div>
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>The numerical value of this string similar to atoi(). </dd></dl>
 
-<p>Referenced by <a class="el" href="classCConfig.html#ae95d2f8b265d63748cc9175d02569d79">CConfig::FindDoubleEntry()</a>, and <a class="el" href="classPString.html#acd1c6f4b91b7aa661edac99f01478bf7">PString::GetSV()</a>.</p>
+<p>Referenced by <a class="el" href="classCConfig.html#ae95d2f8b265d63748cc9175d02569d79">CConfig::FindDoubleEntry()</a>.</p>
 
 </div>
 </div>
@@ -2530,8 +2529,6 @@ template&lt;typename Iterator &gt; </div>
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>The numerical value of this string similar to atoi(). </dd></dl>
 
-<p>Referenced by <a class="el" href="classPString.html#acd1c6f4b91b7aa661edac99f01478bf7">PString::GetSV()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="ac772de648db199c455fe8a776c08739d"></a><!-- doxytag: member="CString::ToPercent" ref="ac772de648db199c455fe8a776c08739d" args="(double d)" -->
@@ -2653,8 +2650,6 @@ template&lt;typename Iterator &gt; </div>
 </div>
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>The numerical value of this string similar to atoi(). </dd></dl>
-
-<p>Referenced by <a class="el" href="classPString.html#acd1c6f4b91b7aa661edac99f01478bf7">PString::GetSV()</a>.</p>
 
 </div>
 </div>
@@ -3086,7 +3081,7 @@ template&lt;typename Iterator &gt; </div>
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Defines</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Defines</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -3098,7 +3093,7 @@ template&lt;typename Iterator &gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 7 2015 08:29:56 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Sep 9 2015 23:59:44 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

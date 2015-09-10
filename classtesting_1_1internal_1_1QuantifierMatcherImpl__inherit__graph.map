@@ -1,6 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node7" href="$classtesting_1_1internal_1_1ContainsMatcherImpl.html" title="testing::internal::ContainsMatcherImpl\&lt; Container \&gt;" alt="" coords="1029,5,1387,35"/>
-<area shape="rect" id="node9" href="$classtesting_1_1internal_1_1EachMatcherImpl.html" title="testing::internal::EachMatcherImpl\&lt; Container \&gt;" alt="" coords="1043,59,1373,88"/>
-<area shape="rect" id="node2" href="$classtesting_1_1MatcherInterface.html" title="testing::MatcherInterface\&lt; Container \&gt;" alt="" coords="296,32,571,61"/>
-<area shape="rect" id="node4" href="$classtesting_1_1MatcherDescriberInterface.html" title="testing::MatcherDescriberInterface" alt="" coords="5,32,248,61"/>
-</map>

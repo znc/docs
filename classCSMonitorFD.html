@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -91,7 +90,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>Class to tie sockets to for monitoring by Csocket at either the <a class="el" href="classCsock.html" title="Basic socket class.">Csock</a> or TSockManager.  
  <a href="classCSMonitorFD.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="build_2include_2znc_2Csocket_8h_source.html">Csocket.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="Csocket_8h_source.html">Csocket.h</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for CSMonitorFD:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -117,74 +116,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSMonitorFD.html#a2412511cd29e868d6dedeabd83e7b5ed">CSMonitorFD</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSMonitorFD.html#a6dfde6e3e600b25908b90e3d160eac56">~CSMonitorFD</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSMonitorFD.html#a2f9c01b3fd444bec72e17fa8360b1107">GatherFDsForSelect</a> (std::map&lt; <a class="el" href="build_2include_2znc_2Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a>, short &gt; &amp;miiReadyFds, long &amp;iTimeoutMS)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSMonitorFD.html#a2f9c01b3fd444bec72e17fa8360b1107">GatherFDsForSelect</a> (std::map&lt; <a class="el" href="Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a>, short &gt; &amp;miiReadyFds, long &amp;iTimeoutMS)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">called before select, typically you don't need to reimplement this just add sockets via Add and let the default implementation have its way  <a href="#a2f9c01b3fd444bec72e17fa8360b1107"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSMonitorFD.html#a56495cb9b48d777407222e0e374375db">FDsThatTriggered</a> (const std::map&lt; <a class="el" href="build_2include_2znc_2Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a>, short &gt; &amp;miiReadyFds)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSMonitorFD.html#a56495cb9b48d777407222e0e374375db">FDsThatTriggered</a> (const std::map&lt; <a class="el" href="Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a>, short &gt; &amp;miiReadyFds)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">called when there are fd's belonging to this class that have triggered  <a href="#a56495cb9b48d777407222e0e374375db"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSMonitorFD.html#a7011d6a80138c3df7a7cd71e3d7dbada">CheckFDs</a> (const std::map&lt; <a class="el" href="build_2include_2znc_2Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a>, short &gt; &amp;miiReadyFds)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSMonitorFD.html#a7011d6a80138c3df7a7cd71e3d7dbada">CheckFDs</a> (const std::map&lt; <a class="el" href="Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a>, short &gt; &amp;miiReadyFds)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">gets called to diff miiReadyFds with m_miiMonitorFDs, and calls FDsThatTriggered when appropriate.  <a href="#a7011d6a80138c3df7a7cd71e3d7dbada"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSMonitorFD.html#adb2f7cb1cfa8e6bb331cd91f9461eb8a">Add</a> (<a class="el" href="build_2include_2znc_2Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a> iFD, short iMonitorEvents)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSMonitorFD.html#adb2f7cb1cfa8e6bb331cd91f9461eb8a">Add</a> (<a class="el" href="Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a> iFD, short iMonitorEvents)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">adds a file descriptor to be monitored  <a href="#adb2f7cb1cfa8e6bb331cd91f9461eb8a"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSMonitorFD.html#a9b0f7e95d924fb1d3e4d979f2ece5fd6">Remove</a> (<a class="el" href="build_2include_2znc_2Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a> iFD)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">removes this fd from monitoring  <a href="#a9b0f7e95d924fb1d3e4d979f2ece5fd6"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSMonitorFD.html#a4c34edbe1c49b818671d1b9311beb97b">DisableMonitor</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">causes this monitor to be removed  <a href="#a4c34edbe1c49b818671d1b9311beb97b"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSMonitorFD.html#a058e8019e86a2a727c393b92487cc7e0">IsEnabled</a> () const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSMonitorFD.html#a2412511cd29e868d6dedeabd83e7b5ed">CSMonitorFD</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSMonitorFD.html#a6dfde6e3e600b25908b90e3d160eac56">~CSMonitorFD</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSMonitorFD.html#a2f9c01b3fd444bec72e17fa8360b1107">GatherFDsForSelect</a> (std::map&lt; <a class="el" href="build_2include_2znc_2Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a>, short &gt; &amp;miiReadyFds, long &amp;iTimeoutMS)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">called before select, typically you don't need to reimplement this just add sockets via Add and let the default implementation have its way  <a href="#a2f9c01b3fd444bec72e17fa8360b1107"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSMonitorFD.html#a56495cb9b48d777407222e0e374375db">FDsThatTriggered</a> (const std::map&lt; <a class="el" href="build_2include_2znc_2Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a>, short &gt; &amp;miiReadyFds)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">called when there are fd's belonging to this class that have triggered  <a href="#a56495cb9b48d777407222e0e374375db"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSMonitorFD.html#a7011d6a80138c3df7a7cd71e3d7dbada">CheckFDs</a> (const std::map&lt; <a class="el" href="build_2include_2znc_2Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a>, short &gt; &amp;miiReadyFds)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">gets called to diff miiReadyFds with m_miiMonitorFDs, and calls FDsThatTriggered when appropriate.  <a href="#a7011d6a80138c3df7a7cd71e3d7dbada"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSMonitorFD.html#adb2f7cb1cfa8e6bb331cd91f9461eb8a">Add</a> (<a class="el" href="build_2include_2znc_2Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a> iFD, short iMonitorEvents)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">adds a file descriptor to be monitored  <a href="#adb2f7cb1cfa8e6bb331cd91f9461eb8a"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSMonitorFD.html#a9b0f7e95d924fb1d3e4d979f2ece5fd6">Remove</a> (<a class="el" href="build_2include_2znc_2Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a> iFD)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSMonitorFD.html#a9b0f7e95d924fb1d3e4d979f2ece5fd6">Remove</a> (<a class="el" href="Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a> iFD)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">removes this fd from monitoring  <a href="#a9b0f7e95d924fb1d3e4d979f2ece5fd6"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSMonitorFD.html#a4c34edbe1c49b818671d1b9311beb97b">DisableMonitor</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">causes this monitor to be removed  <a href="#a4c34edbe1c49b818671d1b9311beb97b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSMonitorFD.html#a058e8019e86a2a727c393b92487cc7e0">IsEnabled</a> () const </td></tr>
 <tr><td colspan="2"><h2><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="build_2include_2znc_2Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a>, short &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSMonitorFD.html#a0d0984a1c22481d974f50d90000d4def">m_miiMonitorFDs</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a>, short &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSMonitorFD.html#a0d0984a1c22481d974f50d90000d4def">m_miiMonitorFDs</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSMonitorFD.html#a05bf53533f4226018fb9d9094577b13f">m_bEnabled</a></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Class to tie sockets to for monitoring by Csocket at either the <a class="el" href="classCsock.html" title="Basic socket class.">Csock</a> or TSockManager. </p>
 </div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a2412511cd29e868d6dedeabd83e7b5ed"></a><!-- doxytag: member="CSMonitorFD::CSMonitorFD" ref="a2412511cd29e868d6dedeabd83e7b5ed" args="()" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classCSMonitorFD.html#a2412511cd29e868d6dedeabd83e7b5ed">CSMonitorFD::CSMonitorFD</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td><code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a6dfde6e3e600b25908b90e3d160eac56"></a><!-- doxytag: member="CSMonitorFD::~CSMonitorFD" ref="a6dfde6e3e600b25908b90e3d160eac56" args="()" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="classCSMonitorFD.html#a6dfde6e3e600b25908b90e3d160eac56">CSMonitorFD::~CSMonitorFD</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td><code> [inline, virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="a2412511cd29e868d6dedeabd83e7b5ed"></a><!-- doxytag: member="CSMonitorFD::CSMonitorFD" ref="a2412511cd29e868d6dedeabd83e7b5ed" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -225,44 +177,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">void <a class="el" href="classCSMonitorFD.html#adb2f7cb1cfa8e6bb331cd91f9461eb8a">CSMonitorFD::Add</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="build_2include_2znc_2Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a>&#160;</td>
-          <td class="paramname"><em>iFD</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">short&#160;</td>
-          <td class="paramname"><em>iMonitorEvents</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td><code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>adds a file descriptor to be monitored </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">iFD</td><td>the file descriptor </td></tr>
-    <tr><td class="paramname">iMonitorEvents</td><td>bitset of events to monitor for (</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classCSocketManager.html#a34b615125f84c6fc0d082e56f4817498" title="this is a strict wrapper around C-api select(). Added in the event you need to do special work here...">CSockManager::ECheckType</a>) </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="adb2f7cb1cfa8e6bb331cd91f9461eb8a"></a><!-- doxytag: member="CSMonitorFD::Add" ref="adb2f7cb1cfa8e6bb331cd91f9461eb8a" args="(cs_sock_t iFD, short iMonitorEvents)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classCSMonitorFD.html#adb2f7cb1cfa8e6bb331cd91f9461eb8a">CSMonitorFD::Add</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="build_2include_2znc_2Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a>&#160;</td>
           <td class="paramname"><em>iFD</em>, </td>
         </tr>
         <tr>
@@ -299,34 +214,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">virtual bool <a class="el" href="classCSMonitorFD.html#a7011d6a80138c3df7a7cd71e3d7dbada">CSMonitorFD::CheckFDs</a> </td>
           <td>(</td>
-          <td class="paramtype">const std::map&lt; <a class="el" href="build_2include_2znc_2Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a>, short &gt; &amp;&#160;</td>
-          <td class="paramname"><em>miiReadyFds</em></td><td>)</td>
-          <td><code> [virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>gets called to diff miiReadyFds with m_miiMonitorFDs, and calls FDsThatTriggered when appropriate. </p>
-<p>Typically you don't need to reimplement this. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">miiReadyFds</td><td>the map of all triggered fd's, not just the fd's from this class </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd>returning false will remove this from monitoring </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a7011d6a80138c3df7a7cd71e3d7dbada"></a><!-- doxytag: member="CSMonitorFD::CheckFDs" ref="a7011d6a80138c3df7a7cd71e3d7dbada" args="(const std::map&lt; cs_sock_t, short &gt; &amp;miiReadyFds)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool <a class="el" href="classCSMonitorFD.html#a7011d6a80138c3df7a7cd71e3d7dbada">CSMonitorFD::CheckFDs</a> </td>
-          <td>(</td>
-          <td class="paramtype">const std::map&lt; <a class="el" href="build_2include_2znc_2Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a>, short &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::map&lt; <a class="el" href="Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a>, short &gt; &amp;&#160;</td>
           <td class="paramname"><em>miiReadyFds</em></td><td>)</td>
           <td><code> [virtual]</code></td>
         </tr>
@@ -364,24 +252,6 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a4c34edbe1c49b818671d1b9311beb97b"></a><!-- doxytag: member="CSMonitorFD::DisableMonitor" ref="a4c34edbe1c49b818671d1b9311beb97b" args="()" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classCSMonitorFD.html#a4c34edbe1c49b818671d1b9311beb97b">CSMonitorFD::DisableMonitor</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td><code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>causes this monitor to be removed </p>
-
-</div>
-</div>
 <a class="anchor" id="a56495cb9b48d777407222e0e374375db"></a><!-- doxytag: member="CSMonitorFD::FDsThatTriggered" ref="a56495cb9b48d777407222e0e374375db" args="(const std::map&lt; cs_sock_t, short &gt; &amp;miiReadyFds)" -->
 <div class="memitem">
 <div class="memproto">
@@ -389,34 +259,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">virtual bool <a class="el" href="classCSMonitorFD.html#a56495cb9b48d777407222e0e374375db">CSMonitorFD::FDsThatTriggered</a> </td>
           <td>(</td>
-          <td class="paramtype">const std::map&lt; <a class="el" href="build_2include_2znc_2Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a>, short &gt; &amp;&#160;</td>
-          <td class="paramname"><em>miiReadyFds</em></td><td>)</td>
-          <td><code> [inline, virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>called when there are fd's belonging to this class that have triggered </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">miiReadyFds</td><td>the map of fd's with the bits that triggered them (</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classCSocketManager.html#a34b615125f84c6fc0d082e56f4817498" title="this is a strict wrapper around C-api select(). Added in the event you need to do special work here...">CSockManager::ECheckType</a>) </dd></dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd>returning false will remove this from monitoring </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a56495cb9b48d777407222e0e374375db"></a><!-- doxytag: member="CSMonitorFD::FDsThatTriggered" ref="a56495cb9b48d777407222e0e374375db" args="(const std::map&lt; cs_sock_t, short &gt; &amp;miiReadyFds)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool <a class="el" href="classCSMonitorFD.html#a56495cb9b48d777407222e0e374375db">CSMonitorFD::FDsThatTriggered</a> </td>
-          <td>(</td>
-          <td class="paramtype">const std::map&lt; <a class="el" href="build_2include_2znc_2Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a>, short &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::map&lt; <a class="el" href="Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a>, short &gt; &amp;&#160;</td>
           <td class="paramname"><em>miiReadyFds</em></td><td>)</td>
           <td><code> [inline, virtual]</code></td>
         </tr>
@@ -443,50 +286,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">virtual bool <a class="el" href="classCSMonitorFD.html#a2f9c01b3fd444bec72e17fa8360b1107">CSMonitorFD::GatherFDsForSelect</a> </td>
           <td>(</td>
-          <td class="paramtype">std::map&lt; <a class="el" href="build_2include_2znc_2Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a>, short &gt; &amp;&#160;</td>
-          <td class="paramname"><em>miiReadyFds</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">long &amp;&#160;</td>
-          <td class="paramname"><em>iTimeoutMS</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>called before select, typically you don't need to reimplement this just add sockets via Add and let the default implementation have its way </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">miiReadyFds</td><td>fill with fd's to monitor and the associated bit to check them for (</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classCSocketManager.html#a34b615125f84c6fc0d082e56f4817498" title="this is a strict wrapper around C-api select(). Added in the event you need to do special work here...">CSockManager::ECheckType</a>) </dd></dl>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">iTimeoutMS</td><td>the timeout to change to, setting this to -1 (the default) </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd>returning false will remove this from monitoring. The same effect can be had by setting m_bEnabled to false as it is returned from this </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a2f9c01b3fd444bec72e17fa8360b1107"></a><!-- doxytag: member="CSMonitorFD::GatherFDsForSelect" ref="a2f9c01b3fd444bec72e17fa8360b1107" args="(std::map&lt; cs_sock_t, short &gt; &amp;miiReadyFds, long &amp;iTimeoutMS)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool <a class="el" href="classCSMonitorFD.html#a2f9c01b3fd444bec72e17fa8360b1107">CSMonitorFD::GatherFDsForSelect</a> </td>
-          <td>(</td>
-          <td class="paramtype">std::map&lt; <a class="el" href="build_2include_2znc_2Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a>, short &gt; &amp;&#160;</td>
+          <td class="paramtype">std::map&lt; <a class="el" href="Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a>, short &gt; &amp;&#160;</td>
           <td class="paramname"><em>miiReadyFds</em>, </td>
         </tr>
         <tr>
@@ -538,22 +338,6 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a058e8019e86a2a727c393b92487cc7e0"></a><!-- doxytag: member="CSMonitorFD::IsEnabled" ref="a058e8019e86a2a727c393b92487cc7e0" args="() const " -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classCSMonitorFD.html#a058e8019e86a2a727c393b92487cc7e0">CSMonitorFD::IsEnabled</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const<code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="a9b0f7e95d924fb1d3e4d979f2ece5fd6"></a><!-- doxytag: member="CSMonitorFD::Remove" ref="a9b0f7e95d924fb1d3e4d979f2ece5fd6" args="(cs_sock_t iFD)" -->
 <div class="memitem">
 <div class="memproto">
@@ -561,26 +345,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">void <a class="el" href="classCSMonitorFD.html#a9b0f7e95d924fb1d3e4d979f2ece5fd6">CSMonitorFD::Remove</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="build_2include_2znc_2Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a>&#160;</td>
-          <td class="paramname"><em>iFD</em></td><td>)</td>
-          <td><code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>removes this fd from monitoring </p>
-
-</div>
-</div>
-<a class="anchor" id="a9b0f7e95d924fb1d3e4d979f2ece5fd6"></a><!-- doxytag: member="CSMonitorFD::Remove" ref="a9b0f7e95d924fb1d3e4d979f2ece5fd6" args="(cs_sock_t iFD)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classCSMonitorFD.html#a9b0f7e95d924fb1d3e4d979f2ece5fd6">CSMonitorFD::Remove</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="build_2include_2znc_2Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a>&#160;</td>
           <td class="paramname"><em>iFD</em></td><td>)</td>
           <td><code> [inline]</code></td>
         </tr>
@@ -611,7 +376,7 @@ Protected Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt; <a class="el" href="build_2include_2znc_2Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a>, short &gt; <a class="el" href="classCSMonitorFD.html#a0d0984a1c22481d974f50d90000d4def">CSMonitorFD::m_miiMonitorFDs</a><code> [protected]</code></td>
+          <td class="memname">std::map&lt; <a class="el" href="Csocket_8h.html#aed9ab6bd8f7ac14b2f727df091a46730">cs_sock_t</a>, short &gt; <a class="el" href="classCSMonitorFD.html#a0d0984a1c22481d974f50d90000d4def">CSMonitorFD::m_miiMonitorFDs</a><code> [protected]</code></td>
         </tr>
       </table>
 </div>
@@ -619,9 +384,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li><a class="el" href="build_2include_2znc_2Csocket_8h_source.html">build/include/znc/Csocket.h</a></li>
-<li><a class="el" href="third__party_2Csocket_2Csocket_8h_source.html">third_party/Csocket/Csocket.h</a></li>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="Csocket_8h_source.html">Csocket.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- window showing the filter options -->
@@ -629,7 +393,7 @@ Protected Attributes</h2></td></tr>
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Defines</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Defines</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -641,7 +405,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 6 2015 20:59:14 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Sep 9 2015 23:59:43 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

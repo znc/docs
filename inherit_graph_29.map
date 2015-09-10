@@ -1,4 +1,18 @@
 <map id="G" name="G">
-<area shape="rect" id="node1" href="$classCSConnection.html" title="options for creating a connection" alt="" coords="5,5,117,35"/>
-<area shape="rect" id="node3" href="$classCSSSLConnection.html" title="CSSSLConnection" alt="" coords="167,5,303,35"/>
+<area shape="rect" id="node1" href="$classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock" alt="" coords="7,151,127,180"/>
+<area shape="rect" id="node3" href="$classCsock.html" title="Basic socket class." alt="" coords="212,123,271,152"/>
+<area shape="rect" id="node25" href="$classCSocketManager.html" title="Best class to use to interact with the sockets." alt="" coords="176,179,307,208"/>
+<area shape="rect" id="node5" href="$classCZNCSock.html" title="CZNCSock" alt="" coords="424,116,515,145"/>
+<area shape="rect" id="node7" href="$classCExecSock.html" title="CExecSock" alt="" coords="668,5,759,35"/>
+<area shape="rect" id="node9" href="$classCIncomingConnection.html" title="CIncomingConnection" alt="" coords="633,59,793,88"/>
+<area shape="rect" id="node11" href="$classCIRCSocket.html" title="Base IRC socket for client&lt;&#45;&gt;ZNC, and ZNC&lt;&#45;&gt;server." alt="" coords="667,112,760,141"/>
+<area shape="rect" id="node17" href="$classCRealListener.html" title="CRealListener" alt="" coords="660,165,767,195"/>
+<area shape="rect" id="node19" href="$classCSocket.html" title="Base Csock implementation to be used by modules." alt="" coords="676,219,751,248"/>
+<area shape="rect" id="node13" href="$classCClient.html" title="CClient" alt="" coords="857,85,924,115"/>
+<area shape="rect" id="node15" href="$classCIRCSock.html" title="CIRCSock" alt="" coords="851,139,931,168"/>
+<area shape="rect" id="node21" href="$classCHTTPSock.html" title="CHTTPSock" alt="" coords="844,219,937,248"/>
+<area shape="rect" id="node23" href="$classCWebSock.html" title="CWebSock" alt="" coords="987,219,1075,248"/>
+<area shape="rect" id="node27" href="$classTSocketManager.html" title="Ease of use templated socket manager." alt="" coords="387,179,552,208"/>
+<area shape="rect" id="node29" href="$classTSocketManager.html" title="TSocketManager\&lt; CZNCSock \&gt;" alt="" coords="356,245,583,275"/>
+<area shape="rect" id="node31" href="$classCSockManager.html" title="CSockManager" alt="" coords="655,272,772,301"/>
 </map>

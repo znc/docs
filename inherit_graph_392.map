@@ -1,6 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node1" href="$classtesting_1_1MatchResultListener.html" title="testing::MatchResultListener" alt="" coords="5,59,208,88"/>
-<area shape="rect" id="node3" href="$classtesting_1_1internal_1_1DummyMatchResultListener.html" title="testing::internal::DummyMatchResultListener" alt="" coords="256,5,565,35"/>
-<area shape="rect" id="node5" href="$classtesting_1_1internal_1_1StreamMatchResultListener.html" title="testing::internal::StreamMatchResultListener" alt="" coords="257,59,564,88"/>
-<area shape="rect" id="node7" href="$classtesting_1_1StringMatchResultListener.html" title="testing::StringMatchResultListener" alt="" coords="291,112,531,141"/>
-</map>

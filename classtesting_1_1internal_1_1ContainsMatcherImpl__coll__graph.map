@@ -1,7 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$classtesting_1_1internal_1_1QuantifierMatcherImpl.html" title="testing::internal::QuantifierMatcherImpl\&lt; Container \&gt;" alt="" coords="837,31,1200,60"/>
-<area shape="rect" id="node4" href="$classtesting_1_1MatcherInterface.html" title="testing::MatcherInterface\&lt; Container \&gt;" alt="" coords="408,5,683,35"/>
-<area shape="rect" id="node6" href="$classtesting_1_1MatcherDescriberInterface.html" title="testing::MatcherDescriberInterface" alt="" coords="60,5,303,35"/>
-<area shape="rect" id="node8" href="$classtesting_1_1Matcher.html" title="testing::Matcher\&lt; const Element &amp; \&gt;" alt="" coords="415,59,676,88"/>
-<area shape="rect" id="node10" href="$classtesting_1_1internal_1_1MatcherBase.html" title="testing::internal::MatcherBase\&lt; const Element &amp; \&gt;" alt="" coords="7,59,356,88"/>
-</map>

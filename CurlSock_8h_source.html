@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -86,7 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00032"></a>00032 <span class="preprocessor">#ifndef HAVE_CURLSOCK_H</span>
 <a name="l00033"></a>00033 <span class="preprocessor"></span><span class="preprocessor">#define HAVE_CURLSOCK_H</span>
 <a name="l00034"></a>00034 <span class="preprocessor"></span>
-<a name="l00035"></a>00035 <span class="preprocessor">#include &quot;<a class="code" href="third__party_2Csocket_2Csocket_8h.html">Csocket.h</a>&quot;</span>
+<a name="l00035"></a>00035 <span class="preprocessor">#include &quot;<a class="code" href="Csocket_8h.html">Csocket.h</a>&quot;</span>
 <a name="l00036"></a>00036 <span class="preprocessor">#include &lt;curl/curl.h&gt;</span>
 <a name="l00037"></a>00037 
 <a name="l00038"></a>00038 <span class="preprocessor">#ifndef _NO_CSOCKET_NS</span>
@@ -94,7 +93,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00040"></a>00040 {
 <a name="l00041"></a>00041 <span class="preprocessor">#endif </span><span class="comment">/* _NO_CSOCKET_NS */</span>
 <a name="l00042"></a>00042 
-<a name="l00058"></a><a class="code" href="classCCurlSock.html">00058</a> <span class="keyword">class </span><a class="code" href="build_2include_2znc_2Csocket_8h.html#a912dbe0f0d3074e2d17b36975950c0de">CS_EXPORT</a> <a class="code" href="classCCurlSock.html" title="Csocket style wrapper around libcurl-multi.">CCurlSock</a> : <span class="keyword">public</span> <a class="code" href="classCSMonitorFD.html" title="Class to tie sockets to for monitoring by Csocket at either the Csock or TSockManager.">CSMonitorFD</a>
+<a name="l00058"></a><a class="code" href="classCCurlSock.html">00058</a> <span class="keyword">class </span><a class="code" href="Csocket_8h.html#a912dbe0f0d3074e2d17b36975950c0de">CS_EXPORT</a> <a class="code" href="classCCurlSock.html" title="Csocket style wrapper around libcurl-multi.">CCurlSock</a> : <span class="keyword">public</span> <a class="code" href="classCSMonitorFD.html" title="Class to tie sockets to for monitoring by Csocket at either the Csock or TSockManager.">CSMonitorFD</a>
 <a name="l00059"></a>00059 {
 <a name="l00060"></a>00060 <span class="keyword">public</span>:
 <a name="l00061"></a>00061         <a class="code" href="classCCurlSock.html" title="Csocket style wrapper around libcurl-multi.">CCurlSock</a>();
@@ -103,7 +102,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00065"></a>00065         <span class="keyword">virtual</span> <span class="keywordtype">bool</span> GatherFDsForSelect( std::map&lt; int, int16_t &gt; &amp; miiReadyFds, <span class="keywordtype">long</span> &amp; iTimeoutMS );
 <a name="l00067"></a><a class="code" href="classCCurlSock.html#ac712e12af1b568ae43ff0949c5dc7e7f">00067</a>         <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classCCurlSock.html#ac712e12af1b568ae43ff0949c5dc7e7f" title="reimplement this to do nothing as its not needed">CheckFDs</a>( <span class="keyword">const</span> std::map&lt; int, int16_t &gt; &amp; miiReadyFds ) { <span class="keywordflow">return</span>( m_bEnabled ); }
 <a name="l00068"></a>00068 
-<a name="l00078"></a>00078         CURL * Retr( <span class="keyword">const</span> <a class="code" href="build_2include_2znc_2Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; sURL, <span class="keyword">const</span> <a class="code" href="build_2include_2znc_2Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; sReferrer = <span class="stringliteral">&quot;&quot;</span> );
+<a name="l00078"></a>00078         CURL * Retr( <span class="keyword">const</span> <a class="code" href="include_2znc_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; sURL, <span class="keyword">const</span> <a class="code" href="include_2znc_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp; sReferrer = <span class="stringliteral">&quot;&quot;</span> );
 <a name="l00079"></a>00079 
 <a name="l00080"></a>00080 <span class="keyword">protected</span>:
 <a name="l00082"></a>00082         <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnCURLComplete( CURL * pCURL ) = 0;
@@ -139,7 +138,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Defines</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Defines</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -151,7 +150,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 6 2015 20:59:11 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Sep 9 2015 23:59:42 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

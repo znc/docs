@@ -1,12 +1,11 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$Chan_8h.html" title="Chan.h" alt="" coords="351,237,418,267"/>
-<area shape="rect" id="node5" href="$IRCNetwork_8h.html" title="IRCNetwork.h" alt="" coords="103,315,207,344"/>
-<area shape="rect" id="node7" href="$IRCSock_8h.html" title="IRCSock.h" alt="" coords="302,160,385,189"/>
-<area shape="rect" id="node9" href="$Message_8h.html" title="Message.h" alt="" coords="206,83,297,112"/>
-<area shape="rect" id="node17" href="$User_8h.html" title="User.h" alt="" coords="442,237,503,267"/>
-<area shape="rect" id="node11" href="$Buffer_8h.html" title="Buffer.h" alt="" coords="209,160,278,189"/>
-<area shape="rect" id="node20" href="$Modules_8h.html" title="Modules.h" alt="" coords="99,160,185,189"/>
-<area shape="rect" id="node15" href="$Query_8h.html" title="Query.h" alt="" coords="207,237,277,267"/>
-<area shape="rect" id="node22" href="$znc_8h.html" title="znc.h" alt="" coords="127,237,183,267"/>
-<area shape="rect" id="node25" href="$modperl_2module_8h.html" title="module.h" alt="" coords="21,237,103,267"/>
+<area shape="rect" id="node3" href="$Chan_8h.html" title="Chan.h" alt="" coords="32,237,99,267"/>
+<area shape="rect" id="node5" href="$IRCNetwork_8h.html" title="IRCNetwork.h" alt="" coords="92,315,196,344"/>
+<area shape="rect" id="node7" href="$IRCSock_8h.html" title="IRCSock.h" alt="" coords="73,160,156,189"/>
+<area shape="rect" id="node9" href="$Message_8h.html" title="Message.h" alt="" coords="160,83,251,112"/>
+<area shape="rect" id="node17" href="$User_8h.html" title="User.h" alt="" coords="363,237,424,267"/>
+<area shape="rect" id="node11" href="$Buffer_8h.html" title="Buffer.h" alt="" coords="180,160,249,189"/>
+<area shape="rect" id="node20" href="$Modules_8h.html" title="Modules.h" alt="" coords="273,160,359,189"/>
+<area shape="rect" id="node15" href="$Query_8h.html" title="Query.h" alt="" coords="181,237,251,267"/>
+<area shape="rect" id="node22" href="$znc_8h.html" title="znc.h" alt="" coords="280,237,336,267"/>
 </map>
