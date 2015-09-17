@@ -227,7 +227,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00144"></a>00144 
 <a name="l00145"></a><a class="code" href="classCModeMessage.html">00145</a> <span class="keyword">class </span><a class="code" href="classCModeMessage.html">CModeMessage</a> : <span class="keyword">public</span> <a class="code" href="classCTargetMessage.html">CTargetMessage</a> {
 <a name="l00146"></a>00146 <span class="keyword">public</span>:
-<a name="l00147"></a><a class="code" href="classCModeMessage.html#a9360c10b1a19b4b9df1f381030bc174f">00147</a>         <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a> <a class="code" href="classCModeMessage.html#a9360c10b1a19b4b9df1f381030bc174f">GetModes</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classCMessage.html#a240529f0bac4d7ceeb5d862c25f3f7c8">GetParams</a>(1); }
+<a name="l00147"></a><a class="code" href="classCModeMessage.html#a9360c10b1a19b4b9df1f381030bc174f">00147</a>         <a class="code" href="classCString.html" title="String class that is used inside ZNC.">CString</a> <a class="code" href="classCModeMessage.html#a9360c10b1a19b4b9df1f381030bc174f">GetModes</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classCMessage.html#a240529f0bac4d7ceeb5d862c25f3f7c8">GetParams</a>(1).TrimPrefix_n(<span class="stringliteral">&quot;:&quot;</span>); }
 <a name="l00148"></a>00148 };
 <a name="l00149"></a>00149 
 <a name="l00150"></a><a class="code" href="classCNickMessage.html">00150</a> <span class="keyword">class </span><a class="code" href="classCNickMessage.html">CNickMessage</a> : <span class="keyword">public</span> <a class="code" href="classCMessage.html">CMessage</a> {
@@ -314,7 +314,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 9 2015 23:59:42 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 17 2015 11:46:01 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
