@@ -109,10 +109,12 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCMessage.html">CMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCBufLine.html#a0c9473309eda4f08efac19d8b6ba7143">ToMessage</a> (const <a class="el" href="classCClient.html">CClient</a> &amp;Client, const <a class="el" href="classMCString.html">MCString</a> &amp;mssParams) const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCBufLine.html#aba0e398374b3188e4182a3447bfd3828">GetLine</a> (const <a class="el" href="classCClient.html">CClient</a> &amp;Client, const <a class="el" href="classMCString.html">MCString</a> &amp;mssParams) const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCBufLine.html#a49e37d9c015679aa2fcc779b37671c1c">UpdateTime</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCBufLine.html#ab28702f7b4c5221cc1b863d9844a0556">Equals</a> (const <a class="el" href="classCMessage.html">CMessage</a> &amp;Format) const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCBufLine.html#aaf8a626a22f5254a5440ed901af40cf2">SetFormat</a> (const <a class="el" href="classCString.html">CString</a> &amp;sFormat)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCBufLine.html#a218b3a44c729bdb276d01d564a6d2b40">SetText</a> (const <a class="el" href="classCString.html">CString</a> &amp;sText)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCBufLine.html#ab43e1feae2df949f070b22a5820c0119">SetTime</a> (const timeval &amp;ts)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCBufLine.html#a1df881d8f3aa079121b2f238bc033926">SetTags</a> (const <a class="el" href="classMCString.html">MCString</a> &amp;mssTags)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCBufLine.html#a9fb42552a8ef61f0586215137d003398">GetCommand</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCBufLine.html#a7d9d9e0ca16212b1f2d297932c2aedcb">GetFormat</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCBufLine.html#a8ea077ee7858b1a2f9c8f0b398d06455">GetText</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">timeval&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCBufLine.html#a3e7175441aa887204602ee5bda9f2ce7">GetTime</a> () const </td></tr>
@@ -202,6 +204,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd></dd></dl>
 
 </div>
 </div>
@@ -222,6 +225,43 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="ab28702f7b4c5221cc1b863d9844a0556"></a><!-- doxytag: member="CBufLine::Equals" ref="ab28702f7b4c5221cc1b863d9844a0556" args="(const CMessage &amp;Format) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classCBufLine.html#ab28702f7b4c5221cc1b863d9844a0556">CBufLine::Equals</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCMessage.html">CMessage</a> &amp;&#160;</td>
+          <td class="paramname"><em>Format</em></td><td>)</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="classCMessage.html#aa0ce86ff42c4089e7469bfde7b6deddb">CMessage::Equals()</a>, and <a class="el" href="classCBufLine.html#aa34861bab1f5f1e445083158d468fa24">m_Message</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9fb42552a8ef61f0586215137d003398"></a><!-- doxytag: member="CBufLine::GetCommand" ref="a9fb42552a8ef61f0586215137d003398" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classCString.html">CString</a>&amp; <a class="el" href="classCBufLine.html#a9fb42552a8ef61f0586215137d003398">CBufLine::GetCommand</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="classCMessage.html#a06edd71892b7e1a89cf2d27c834840c6">CMessage::GetCommand()</a>, and <a class="el" href="classCBufLine.html#aa34861bab1f5f1e445083158d468fa24">m_Message</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a7d9d9e0ca16212b1f2d297932c2aedcb"></a><!-- doxytag: member="CBufLine::GetFormat" ref="a7d9d9e0ca16212b1f2d297932c2aedcb" args="() const " -->
 <div class="memitem">
 <div class="memproto">
@@ -264,7 +304,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>Use <a class="el" href="classCBufLine.html#a0c9473309eda4f08efac19d8b6ba7143">ToMessage()</a> instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">Deprecated:</a></b></dt><dd>Use <a class="el" href="classCBufLine.html#a0c9473309eda4f08efac19d8b6ba7143">ToMessage()</a> instead </dd></dl>
 
 </div>
 </div>
@@ -438,6 +478,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000003">Deprecated:</a></b></dt><dd></dd></dl>
 
 </div>
 </div>
@@ -453,7 +494,7 @@ Protected Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Referenced by <a class="el" href="classCBufLine.html#a7d9d9e0ca16212b1f2d297932c2aedcb">GetFormat()</a>, <a class="el" href="classCBufLine.html#a85b0c28fe9b9c81adb12e0ac7d5e7fab">GetTags()</a>, <a class="el" href="classCBufLine.html#a3e7175441aa887204602ee5bda9f2ce7">GetTime()</a>, <a class="el" href="classCBufLine.html#aaf8a626a22f5254a5440ed901af40cf2">SetFormat()</a>, <a class="el" href="classCBufLine.html#a1df881d8f3aa079121b2f238bc033926">SetTags()</a>, and <a class="el" href="classCBufLine.html#ab43e1feae2df949f070b22a5820c0119">SetTime()</a>.</p>
+<p>Referenced by <a class="el" href="classCBufLine.html#ab28702f7b4c5221cc1b863d9844a0556">Equals()</a>, <a class="el" href="classCBufLine.html#a9fb42552a8ef61f0586215137d003398">GetCommand()</a>, <a class="el" href="classCBufLine.html#a7d9d9e0ca16212b1f2d297932c2aedcb">GetFormat()</a>, <a class="el" href="classCBufLine.html#a85b0c28fe9b9c81adb12e0ac7d5e7fab">GetTags()</a>, <a class="el" href="classCBufLine.html#a3e7175441aa887204602ee5bda9f2ce7">GetTime()</a>, <a class="el" href="classCBufLine.html#aaf8a626a22f5254a5440ed901af40cf2">SetFormat()</a>, <a class="el" href="classCBufLine.html#a1df881d8f3aa079121b2f238bc033926">SetTags()</a>, and <a class="el" href="classCBufLine.html#ab43e1feae2df949f070b22a5820c0119">SetTime()</a>.</p>
 
 </div>
 </div>
@@ -493,7 +534,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 9 2015 23:59:42 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Sep 20 2015 21:37:51 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

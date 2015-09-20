@@ -44,6 +44,5 @@ var searchData=
   ['forcelogin',['ForceLogin',['../classCHTTPSock.html#a8061644d6450bec2d272ac2a9771c874',1,'CHTTPSock::ForceLogin()'],['../classCWebSock.html#a095fa3a2d58e9ccd1083a53a1529cd65',1,'CWebSock::ForceLogin()']]],
   ['formatservertime',['FormatServerTime',['../classCUtils.html#a4a3a2068b26d7605ffd0f7c559a000ac',1,'CUtils']]],
   ['formattime',['FormatTime',['../classCUtils.html#a1971c679165ddcb004f9c05558774dcb',1,'CUtils']]],
-  ['forwardraw353',['ForwardRaw353',['../classCIRCSock.html#aa64fd117a722df6c76971f20607704ca',1,'CIRCSock::ForwardRaw353(const CMessage &amp;Message) const '],['../classCIRCSock.html#ac6734e38f49852767d2397decd79279d',1,'CIRCSock::ForwardRaw353(const CMessage &amp;Message, CClient *pClient) const ']]],
   ['ftype',['FType',['../classCFile.html#acb9edf807e3c56ad2607e871c11c96bb',1,'CFile']]]
 ];

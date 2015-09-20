@@ -140,6 +140,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMessage.html#adc8e4e8b99841113d5149416c554e536">CMessage</a> (const <a class="el" href="classCString.html">CString</a> &amp;sMessage=&quot;&quot;)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMessage.html#abf0526e789beda9d6615ef4c4d5581c3">CMessage</a> (const <a class="el" href="classCNick.html">CNick</a> &amp;<a class="el" href="classCMessage.html#a0c73f73428ca8fd0c3f10a497d2fcb11a3cf7c0f130d005ae402cf10d23c3c746">Nick</a>, const <a class="el" href="classCString.html">CString</a> &amp;sCommand, const <a class="el" href="ZNCString_8h.html#af7252b7c4a0d4ec44ddc136c6055ae51">VCString</a> &amp;vsParams=<a class="el" href="ZNCString_8h.html#af7252b7c4a0d4ec44ddc136c6055ae51">VCString</a>(), const <a class="el" href="classMCString.html">MCString</a> &amp;mssTags=<a class="el" href="classMCString.html#a3685e619a8c946b897e33de99347fc70">MCString::EmptyMap</a>)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCMessage.html#a0c73f73428ca8fd0c3f10a497d2fcb11">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMessage.html#a3f9996e5943ab6645fbbe4b654c7cf90">GetType</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMessage.html#aa0ce86ff42c4089e7469bfde7b6deddb">Equals</a> (const <a class="el" href="classCMessage.html">CMessage</a> &amp;Other) const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMessage.html#a280b550192a8147f85a00c5aeb0ee261">Clone</a> (const <a class="el" href="classCMessage.html">CMessage</a> &amp;Other)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCIRCNetwork.html">CIRCNetwork</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMessage.html#a2785d0660a216f25685a66a366fd7944">GetNetwork</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMessage.html#adf283066203892552523df0cc40615d5">SetNetwork</a> (<a class="el" href="classCIRCNetwork.html">CIRCNetwork</a> *pNetwork)</td></tr>
@@ -324,6 +325,25 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aa0ce86ff42c4089e7469bfde7b6deddb"></a><!-- doxytag: member="CMessage::Equals" ref="aa0ce86ff42c4089e7469bfde7b6deddb" args="(const CMessage &amp;Other) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classCMessage.html#aa0ce86ff42c4089e7469bfde7b6deddb">CMessage::Equals</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCMessage.html">CMessage</a> &amp;&#160;</td>
+          <td class="paramname"><em>Other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Referenced by <a class="el" href="classCBufLine.html#ab28702f7b4c5221cc1b863d9844a0556">CBufLine::Equals()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a1708e7d9227de0efd6a2f285278ca0a2"></a><!-- doxytag: member="CMessage::GetChan" ref="a1708e7d9227de0efd6a2f285278ca0a2" args="() const " -->
 <div class="memitem">
 <div class="memproto">
@@ -370,7 +390,7 @@ Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Referenced by <a class="el" href="classCNumericMessage.html#ae5772b371b6d24e8bc2e9e95ce6c2d5a">CNumericMessage::GetCode()</a>, and <a class="el" href="classCCTCPMessage.html#a1430f5d9398d9ebc84bb5fcdca4588ce">CCTCPMessage::IsReply()</a>.</p>
+<p>Referenced by <a class="el" href="classCNumericMessage.html#ae5772b371b6d24e8bc2e9e95ce6c2d5a">CNumericMessage::GetCode()</a>, <a class="el" href="classCBufLine.html#a9fb42552a8ef61f0586215137d003398">CBufLine::GetCommand()</a>, and <a class="el" href="classCCTCPMessage.html#a1430f5d9398d9ebc84bb5fcdca4588ce">CCTCPMessage::IsReply()</a>.</p>
 
 </div>
 </div>
@@ -814,7 +834,7 @@ Public Member Functions</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 9 2015 23:59:43 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Sep 20 2015 21:37:52 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

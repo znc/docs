@@ -99,6 +99,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classCBuffer.html">CBuffer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCQuery.html#a349f61f8e6c8f3304a05a2a8094b2b64">GetBuffer</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCQuery.html#a7f268e01eb4f5c1e154b181955c540b5">GetBufferCount</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCQuery.html#a1009846eb49b30ca49c07e8b60b19564">SetBufferCount</a> (unsigned int u, bool bForce=false)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCQuery.html#a9edbad297dde23316b488fbfdbcaef70">AddBuffer</a> (const <a class="el" href="classCMessage.html">CMessage</a> &amp;Format, const <a class="el" href="classCString.html">CString</a> &amp;sText=&quot;&quot;)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCQuery.html#a378ebd1f96b226fd95bf36d50cb142d5">AddBuffer</a> (const <a class="el" href="classCString.html">CString</a> &amp;sFormat, const <a class="el" href="classCString.html">CString</a> &amp;sText=&quot;&quot;, const timeval *ts=nullptr, const <a class="el" href="classMCString.html">MCString</a> &amp;mssTags=<a class="el" href="classMCString.html#a3685e619a8c946b897e33de99347fc70">MCString::EmptyMap</a>)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCQuery.html#a6010d9531a3721c8cb2533136aba331b">ClearBuffer</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCQuery.html#a4d56fb83642e60492c3418bb798b6381">SendBuffer</a> (<a class="el" href="classCClient.html">CClient</a> *pClient)</td></tr>
@@ -167,12 +168,41 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a9edbad297dde23316b488fbfdbcaef70"></a><!-- doxytag: member="CQuery::AddBuffer" ref="a9edbad297dde23316b488fbfdbcaef70" args="(const CMessage &amp;Format, const CString &amp;sText=&quot;&quot;)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t <a class="el" href="classCQuery.html#a9edbad297dde23316b488fbfdbcaef70">CQuery::AddBuffer</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCMessage.html">CMessage</a> &amp;&#160;</td>
+          <td class="paramname"><em>Format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
+          <td class="paramname"><em>sText</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="classCBuffer.html#add5d0a61831a5a6a6052a66038eeb4eb">CBuffer::AddLine()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a378ebd1f96b226fd95bf36d50cb142d5"></a><!-- doxytag: member="CQuery::AddBuffer" ref="a378ebd1f96b226fd95bf36d50cb142d5" args="(const CString &amp;sFormat, const CString &amp;sText=&quot;&quot;, const timeval *ts=nullptr, const MCString &amp;mssTags=MCString::EmptyMap)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">size_t <a class="el" href="classCQuery.html#a378ebd1f96b226fd95bf36d50cb142d5">CQuery::AddBuffer</a> </td>
+          <td class="memname">size_t <a class="el" href="classCQuery.html#a9edbad297dde23316b488fbfdbcaef70">CQuery::AddBuffer</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>sFormat</em>, </td>
@@ -203,8 +233,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000040">Deprecated:</a></b></dt><dd></dd></dl>
 
-<p>References <a class="el" href="classCBuffer.html#a127959b88e9062cf4449ff11442b86f8">CBuffer::AddLine()</a>.</p>
+<p>References <a class="el" href="classCBuffer.html#add5d0a61831a5a6a6052a66038eeb4eb">CBuffer::AddLine()</a>.</p>
 
 </div>
 </div>
@@ -387,7 +418,7 @@ Public Member Functions</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 9 2015 23:59:43 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Sep 20 2015 21:37:52 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

@@ -151,6 +151,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCTargetMessage.html#a29499f5301ae0a0cd184783f386bea90">GetTarget</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCTargetMessage.html#ac7ed5de249bf8bc2d39545cf94405816">SetTarget</a> (const <a class="el" href="classCString.html">CString</a> &amp;sTarget)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCMessage.html#a0c73f73428ca8fd0c3f10a497d2fcb11">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMessage.html#a3f9996e5943ab6645fbbe4b654c7cf90">GetType</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMessage.html#aa0ce86ff42c4089e7469bfde7b6deddb">Equals</a> (const <a class="el" href="classCMessage.html">CMessage</a> &amp;Other) const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMessage.html#a280b550192a8147f85a00c5aeb0ee261">Clone</a> (const <a class="el" href="classCMessage.html">CMessage</a> &amp;Other)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCIRCNetwork.html">CIRCNetwork</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMessage.html#a2785d0660a216f25685a66a366fd7944">GetNetwork</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMessage.html#adf283066203892552523df0cc40615d5">SetNetwork</a> (<a class="el" href="classCIRCNetwork.html">CIRCNetwork</a> *pNetwork)</td></tr>
@@ -278,6 +279,25 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aa0ce86ff42c4089e7469bfde7b6deddb"></a><!-- doxytag: member="CPartMessage::Equals" ref="aa0ce86ff42c4089e7469bfde7b6deddb" args="(const CMessage &amp;Other) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classCMessage.html#aa0ce86ff42c4089e7469bfde7b6deddb">CMessage::Equals</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCMessage.html">CMessage</a> &amp;&#160;</td>
+          <td class="paramname"><em>Other</em></td><td>)</td>
+          <td> const<code> [inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Referenced by <a class="el" href="classCBufLine.html#ab28702f7b4c5221cc1b863d9844a0556">CBufLine::Equals()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a1708e7d9227de0efd6a2f285278ca0a2"></a><!-- doxytag: member="CPartMessage::GetChan" ref="a1708e7d9227de0efd6a2f285278ca0a2" args="() const " -->
 <div class="memitem">
 <div class="memproto">
@@ -324,7 +344,7 @@ Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Referenced by <a class="el" href="classCNumericMessage.html#ae5772b371b6d24e8bc2e9e95ce6c2d5a">CNumericMessage::GetCode()</a>, and <a class="el" href="classCCTCPMessage.html#a1430f5d9398d9ebc84bb5fcdca4588ce">CCTCPMessage::IsReply()</a>.</p>
+<p>Referenced by <a class="el" href="classCNumericMessage.html#ae5772b371b6d24e8bc2e9e95ce6c2d5a">CNumericMessage::GetCode()</a>, <a class="el" href="classCBufLine.html#a9fb42552a8ef61f0586215137d003398">CBufLine::GetCommand()</a>, and <a class="el" href="classCCTCPMessage.html#a1430f5d9398d9ebc84bb5fcdca4588ce">CCTCPMessage::IsReply()</a>.</p>
 
 </div>
 </div>
@@ -842,7 +862,7 @@ Public Member Functions</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 9 2015 23:59:43 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Sep 20 2015 21:37:52 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

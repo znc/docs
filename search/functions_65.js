@@ -14,7 +14,7 @@ var searchData=
   ['endsubconfigs',['EndSubConfigs',['../classCConfig.html#a555414da7e12a3e127374d4565ecfc12',1,'CConfig']]],
   ['endswith',['EndsWith',['../classCString.html#a951daa2ad2198f1e9acf943831bab94e',1,'CString']]],
   ['endtimers',['EndTimers',['../classCModule.html#af56ad0847095be179b9866d2b68199a0',1,'CModule']]],
-  ['equals',['Equals',['../classCString.html#a2bbac3280dc943bf6a68ee023d707a06',1,'CString::Equals(const CString &amp;s, CaseSensitivity cs=CaseInsensitive) const '],['../classCString.html#a24a659b4abcb3b406fa9529d0df4f398',1,'CString::Equals(const CString &amp;s, bool bCaseSensitive, CString::size_type uLen=CString::npos) const ']]],
+  ['equals',['Equals',['../classCBufLine.html#ab28702f7b4c5221cc1b863d9844a0556',1,'CBufLine::Equals()'],['../classCMessage.html#aa0ce86ff42c4089e7469bfde7b6deddb',1,'CMessage::Equals()'],['../classCString.html#a2bbac3280dc943bf6a68ee023d707a06',1,'CString::Equals(const CString &amp;s, CaseSensitivity cs=CaseInsensitive) const '],['../classCString.html#a24a659b4abcb3b406fa9529d0df4f398',1,'CString::Equals(const CString &amp;s, bool bCaseSensitive, CString::size_type uLen=CString::npos) const ']]],
   ['escape',['Escape',['../classCString.html#acc8330c48fac287ed655268b12771ddc',1,'CString::Escape(EEscape eFrom, EEscape eTo)'],['../classCString.html#acb33c1aff1ad63ccbb676a24ea062ebe',1,'CString::Escape(EEscape eTo)']]],
   ['escape_5fn',['Escape_n',['../classCString.html#acff39c9ac5bf2994a9fb511b2b972387',1,'CString::Escape_n(EEscape eFrom, EEscape eTo) const '],['../classCString.html#a6138f7659460c0c49efb08be2ad37306',1,'CString::Escape_n(EEscape eTo) const ']]],
   ['execute',['Execute',['../classCExecSock.html#a0ee409ec0f4c111bc49ab1e681b1acfa',1,'CExecSock']]],

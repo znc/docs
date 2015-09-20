@@ -58,7 +58,7 @@ var searchData=
   ['entrymap',['EntryMap',['../classCConfig.html#a144ae0411f6f76194d7626d12cba38ba',1,'CConfig']]],
   ['entrymapiterator',['EntryMapIterator',['../classCConfig.html#aefa785e9c3062c8b2aefb381a60125fd',1,'CConfig']]],
   ['epagereqresult',['EPageReqResult',['../classCWebSock.html#a8b46819ec286f193efb0f8efcc8ace5a',1,'CWebSock']]],
-  ['equals',['Equals',['../classCString.html#a2bbac3280dc943bf6a68ee023d707a06',1,'CString::Equals(const CString &amp;s, CaseSensitivity cs=CaseInsensitive) const '],['../classCString.html#a24a659b4abcb3b406fa9529d0df4f398',1,'CString::Equals(const CString &amp;s, bool bCaseSensitive, CString::size_type uLen=CString::npos) const ']]],
+  ['equals',['Equals',['../classCBufLine.html#ab28702f7b4c5221cc1b863d9844a0556',1,'CBufLine::Equals()'],['../classCMessage.html#aa0ce86ff42c4089e7469bfde7b6deddb',1,'CMessage::Equals()'],['../classCString.html#a2bbac3280dc943bf6a68ee023d707a06',1,'CString::Equals(const CString &amp;s, CaseSensitivity cs=CaseInsensitive) const '],['../classCString.html#a24a659b4abcb3b406fa9529d0df4f398',1,'CString::Equals(const CString &amp;s, bool bCaseSensitive, CString::size_type uLen=CString::npos) const ']]],
   ['errnobadsslcert',['errnoBadSSLCert',['../classCZNCSock.html#a0670d76c83779715ef4e5046874ed905a0bade2ff8f3b4bb0327f8ccfb4c71493',1,'CZNCSock']]],
   ['error',['Error',['../classCMessage.html#a0c73f73428ca8fd0c3f10a497d2fcb11ada3dc89ce3c397449e774a7be03bd467',1,'CMessage']]],
   ['escape',['Escape',['../classCString.html#acc8330c48fac287ed655268b12771ddc',1,'CString::Escape(EEscape eFrom, EEscape eTo)'],['../classCString.html#acb33c1aff1ad63ccbb676a24ea062ebe',1,'CString::Escape(EEscape eTo)']]],

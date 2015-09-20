@@ -114,6 +114,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCBuffer.html#afa8775924c4c300053d7cae919ac924b">CBuffer</a> (unsigned int uLineCount=100)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCBuffer.html#ab5e8bcbbfc7920c3cca12094f211cea9">~CBuffer</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCBuffer.html#add5d0a61831a5a6a6052a66038eeb4eb">AddLine</a> (const <a class="el" href="classCMessage.html">CMessage</a> &amp;Format, const <a class="el" href="classCString.html">CString</a> &amp;sText=&quot;&quot;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCBuffer.html#a4cf17a6291212975e38c10b73c3735ed">UpdateLine</a> (const <a class="el" href="classCString.html">CString</a> &amp;sCommand, const <a class="el" href="classCMessage.html">CMessage</a> &amp;Format, const <a class="el" href="classCString.html">CString</a> &amp;sText=&quot;&quot;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCBuffer.html#afa2ac2f6a58556f90f5b41c12f4a9b7c">UpdateExactLine</a> (const <a class="el" href="classCMessage.html">CMessage</a> &amp;Format, const <a class="el" href="classCString.html">CString</a> &amp;sText=&quot;&quot;)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCBuffer.html#a127959b88e9062cf4449ff11442b86f8">AddLine</a> (const <a class="el" href="classCString.html">CString</a> &amp;sFormat, const <a class="el" href="classCString.html">CString</a> &amp;sText=&quot;&quot;, const timeval *ts=nullptr, const <a class="el" href="classMCString.html">MCString</a> &amp;mssTags=<a class="el" href="classMCString.html#a3685e619a8c946b897e33de99347fc70">MCString::EmptyMap</a>)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCBuffer.html#a2e1ea4120131546a7abd971b25a83d58">UpdateLine</a> (const <a class="el" href="classCString.html">CString</a> &amp;sMatch, const <a class="el" href="classCString.html">CString</a> &amp;sFormat, const <a class="el" href="classCString.html">CString</a> &amp;sText=&quot;&quot;)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as AddLine, but replaces a line whose format string starts with sMatch if there is one.  <a href="#a2e1ea4120131546a7abd971b25a83d58"></a><br/></td></tr>
@@ -169,12 +172,41 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="add5d0a61831a5a6a6052a66038eeb4eb"></a><!-- doxytag: member="CBuffer::AddLine" ref="add5d0a61831a5a6a6052a66038eeb4eb" args="(const CMessage &amp;Format, const CString &amp;sText=&quot;&quot;)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_type <a class="el" href="classCBuffer.html#add5d0a61831a5a6a6052a66038eeb4eb">CBuffer::AddLine</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCMessage.html">CMessage</a> &amp;&#160;</td>
+          <td class="paramname"><em>Format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
+          <td class="paramname"><em>sText</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Referenced by <a class="el" href="classCQuery.html#a9edbad297dde23316b488fbfdbcaef70">CQuery::AddBuffer()</a>, <a class="el" href="classCChan.html#a3ef288ce45ae2fec65d611ddf94787ea">CChan::AddBuffer()</a>, <a class="el" href="classCIRCNetwork.html#a870f7fba7dc0008c5d0503121342dd1e">CIRCNetwork::AddMotdBuffer()</a>, <a class="el" href="classCIRCNetwork.html#a10e712c4e737f849ad1bfdf57d65cb73">CIRCNetwork::AddNoticeBuffer()</a>, and <a class="el" href="classCIRCNetwork.html#a7e8becd5e6828db5bca5c5e8ccdf0dd4">CIRCNetwork::AddRawBuffer()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a127959b88e9062cf4449ff11442b86f8"></a><!-- doxytag: member="CBuffer::AddLine" ref="a127959b88e9062cf4449ff11442b86f8" args="(const CString &amp;sFormat, const CString &amp;sText=&quot;&quot;, const timeval *ts=nullptr, const MCString &amp;mssTags=MCString::EmptyMap)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">size_type <a class="el" href="classCBuffer.html#a127959b88e9062cf4449ff11442b86f8">CBuffer::AddLine</a> </td>
+          <td class="memname">size_type <a class="el" href="classCBuffer.html#add5d0a61831a5a6a6052a66038eeb4eb">CBuffer::AddLine</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>sFormat</em>, </td>
@@ -205,8 +237,6 @@ Private Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-
-<p>Referenced by <a class="el" href="classCQuery.html#a378ebd1f96b226fd95bf36d50cb142d5">CQuery::AddBuffer()</a>, <a class="el" href="classCChan.html#abe78bfee4718321d26f11f3515a576bd">CChan::AddBuffer()</a>, <a class="el" href="classCIRCNetwork.html#afaf914638739abe06ce7d6cf4b51aba3">CIRCNetwork::AddMotdBuffer()</a>, <a class="el" href="classCIRCNetwork.html#a444af52611ea727b28fec56442e8f3da">CIRCNetwork::AddNoticeBuffer()</a>, and <a class="el" href="classCIRCNetwork.html#a3b1ce33a1816deb2868bfc59b18d3c96">CIRCNetwork::AddRawBuffer()</a>.</p>
 
 </div>
 </div>
@@ -359,12 +389,41 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="afa2ac2f6a58556f90f5b41c12f4a9b7c"></a><!-- doxytag: member="CBuffer::UpdateExactLine" ref="afa2ac2f6a58556f90f5b41c12f4a9b7c" args="(const CMessage &amp;Format, const CString &amp;sText=&quot;&quot;)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_type <a class="el" href="classCBuffer.html#afa2ac2f6a58556f90f5b41c12f4a9b7c">CBuffer::UpdateExactLine</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCMessage.html">CMessage</a> &amp;&#160;</td>
+          <td class="paramname"><em>Format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
+          <td class="paramname"><em>sText</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Referenced by <a class="el" href="classCIRCNetwork.html#a3098020b7f3cfdabf155daf5900c3d51">CIRCNetwork::UpdateExactRawBuffer()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="afd27977ca48e644c23b5ae34b70f04b2"></a><!-- doxytag: member="CBuffer::UpdateExactLine" ref="afd27977ca48e644c23b5ae34b70f04b2" args="(const CString &amp;sFormat, const CString &amp;sText=&quot;&quot;)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">size_type <a class="el" href="classCBuffer.html#afd27977ca48e644c23b5ae34b70f04b2">CBuffer::UpdateExactLine</a> </td>
+          <td class="memname">size_type <a class="el" href="classCBuffer.html#afa2ac2f6a58556f90f5b41c12f4a9b7c">CBuffer::UpdateExactLine</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>sFormat</em>, </td>
@@ -387,7 +446,40 @@ Private Attributes</h2></td></tr>
 <p>Same as UpdateLine, but does nothing if this exact line already exists. </p>
 <p>We need this because "/version" sends us the 005 raws again </p>
 
-<p>Referenced by <a class="el" href="classCIRCNetwork.html#acb10932f16ad264253c9afc40f22bbfd">CIRCNetwork::UpdateExactRawBuffer()</a>.</p>
+</div>
+</div>
+<a class="anchor" id="a4cf17a6291212975e38c10b73c3735ed"></a><!-- doxytag: member="CBuffer::UpdateLine" ref="a4cf17a6291212975e38c10b73c3735ed" args="(const CString &amp;sCommand, const CMessage &amp;Format, const CString &amp;sText=&quot;&quot;)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_type <a class="el" href="classCBuffer.html#a4cf17a6291212975e38c10b73c3735ed">CBuffer::UpdateLine</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
+          <td class="paramname"><em>sCommand</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classCMessage.html">CMessage</a> &amp;&#160;</td>
+          <td class="paramname"><em>Format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
+          <td class="paramname"><em>sText</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Referenced by <a class="el" href="classCIRCNetwork.html#aa2016587fa15530d04524ae337f2f000">CIRCNetwork::UpdateMotdBuffer()</a>, <a class="el" href="classCIRCNetwork.html#ad19253bff95a6d01f6b20eecaafe6b37">CIRCNetwork::UpdateNoticeBuffer()</a>, and <a class="el" href="classCIRCNetwork.html#aa2acf8adb4f669ea67ee24dbbd3bad6c">CIRCNetwork::UpdateRawBuffer()</a>.</p>
 
 </div>
 </div>
@@ -396,7 +488,7 @@ Private Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">size_type <a class="el" href="classCBuffer.html#a2e1ea4120131546a7abd971b25a83d58">CBuffer::UpdateLine</a> </td>
+          <td class="memname">size_type <a class="el" href="classCBuffer.html#a4cf17a6291212975e38c10b73c3735ed">CBuffer::UpdateLine</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>sMatch</em>, </td>
@@ -423,8 +515,6 @@ Private Attributes</h2></td></tr>
 <div class="memdoc">
 
 <p>Same as AddLine, but replaces a line whose format string starts with sMatch if there is one. </p>
-
-<p>Referenced by <a class="el" href="classCIRCNetwork.html#ad2e93267b0a2707e8cd13a739f105956">CIRCNetwork::UpdateMotdBuffer()</a>, <a class="el" href="classCIRCNetwork.html#aee8a7a13b6f1a88608fab585869b1a8b">CIRCNetwork::UpdateNoticeBuffer()</a>, and <a class="el" href="classCIRCNetwork.html#a586fa42b6a103e3f732b3c846ead868a">CIRCNetwork::UpdateRawBuffer()</a>.</p>
 
 </div>
 </div>
@@ -465,7 +555,7 @@ Private Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 9 2015 23:59:42 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Sep 20 2015 21:37:51 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
