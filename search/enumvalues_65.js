@@ -1,6 +1,7 @@
 var searchData=
 [
   ['eascii',['EASCII',['../classCString.html#a8f63759db4ef372abb9cfa4751648e1faf8934edb03e6594d1a760a8ad17b4a27',1,'CString']]],
+  ['econfig_5fneed_5fquit',['ECONFIG_NEED_QUIT',['../classCZNC.html#a872d81d61388f9acb7f8e6e966b4fd8fa012d958180c00dde3046de369f0dc55d',1,'CZNC']]],
   ['econfig_5fneed_5frehash',['ECONFIG_NEED_REHASH',['../classCZNC.html#a872d81d61388f9acb7f8e6e966b4fd8fa9140778bf5d1d3e1e1cd8e47f2a4dbba',1,'CZNC']]],
   ['econfig_5fneed_5fverbose_5fwrite',['ECONFIG_NEED_VERBOSE_WRITE',['../classCZNC.html#a872d81d61388f9acb7f8e6e966b4fd8faa934642d053a77e72e557f49b3320128',1,'CZNC']]],
   ['econfig_5fneed_5fwrite',['ECONFIG_NEED_WRITE',['../classCZNC.html#a872d81d61388f9acb7f8e6e966b4fd8faaed9dd2fbdf3136f1e890fbc7013eb9c',1,'CZNC']]],
