@@ -1,5 +1,5 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$Modules_8h.html" title="Modules.h" alt="" coords="19,83,104,112"/>
-<area shape="rect" id="node5" href="$znc_8h.html" title="znc.h" alt="" coords="33,160,89,189"/>
-<area shape="rect" id="node7" href="$IRCNetwork_8h.html" title="IRCNetwork.h" alt="" coords="9,237,113,267"/>
+<map id="WebModules.h" name="WebModules.h">
+<area shape="rect" id="node2" href="$Modules_8h.html" title="Modules.h" alt="" coords="18,80,104,107"/>
+<area shape="rect" id="node3" href="$znc_8h.html" title="znc.h" alt="" coords="33,155,88,181"/>
+<area shape="rect" id="node4" href="$IRCNetwork_8h.html" title="IRCNetwork.h" alt="" coords="9,229,113,256"/>
 </map>

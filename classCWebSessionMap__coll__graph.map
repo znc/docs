@@ -1,6 +1,6 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$classTCacheMap.html" title="TCacheMap\&lt; CString, std::shared_ptr\&lt; CWebSession \&gt; \&gt;" alt="" coords="5,357,397,387"/>
-<area shape="rect" id="node6" href="$classCString.html" title="String class that is used inside ZNC." alt="" coords="167,165,236,195"/>
-<area shape="rect" id="node8" title="STL class." alt="" coords="159,85,244,115"/>
-<area shape="rect" id="node10" title="STL class." alt="" coords="109,5,293,35"/>
+<map id="CWebSessionMap" name="CWebSessionMap">
+<area shape="rect" id="node2" href="$classTCacheMap.html" title="TCacheMap\&lt; CString,\l std::shared_ptr\&lt; CWebSession \&gt; \&gt;" alt="" coords="5,374,259,415"/>
+<area shape="rect" id="node4" href="$classCString.html" title="String class that is used inside ZNC. " alt="" coords="97,176,167,203"/>
+<area shape="rect" id="node5" title="STL class. " alt="" coords="89,99,175,125"/>
+<area shape="rect" id="node6" title="STL class. " alt="" coords="63,6,200,47"/>
 </map>

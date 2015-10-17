@@ -1,4 +1,4 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$classCTimer.html" title="CTimer" alt="" coords="13,83,80,112"/>
-<area shape="rect" id="node4" href="$classCCron.html" title="this is the main cron job class" alt="" coords="16,5,77,35"/>
+<map id="CFPTimer" name="CFPTimer">
+<area shape="rect" id="node2" href="$classCTimer.html" title="CTimer" alt="" coords="12,80,79,107"/>
+<area shape="rect" id="node3" href="$classCCron.html" title="this is the main cron job class " alt="" coords="15,5,76,32"/>
 </map>

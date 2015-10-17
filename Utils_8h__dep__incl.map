@@ -1,8 +1,8 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$Client_8h.html" title="Client.h" alt="" coords="5,160,75,189"/>
-<area shape="rect" id="node9" href="$Modules_8h.html" title="Modules.h" alt="" coords="99,160,184,189"/>
-<area shape="rect" id="node12" href="$User_8h.html" title="User.h" alt="" coords="128,83,189,112"/>
-<area shape="rect" id="node14" href="$WebModules_8h.html" title="WebModules.h" alt="" coords="213,83,325,112"/>
-<area shape="rect" id="node5" href="$znc_8h.html" title="znc.h" alt="" coords="63,237,119,267"/>
-<area shape="rect" id="node7" href="$IRCNetwork_8h.html" title="IRCNetwork.h" alt="" coords="39,315,143,344"/>
+<map id="Utils.h" name="Utils.h">
+<area shape="rect" id="node2" href="$Client_8h.html" title="Client.h" alt="" coords="5,155,75,181"/>
+<area shape="rect" id="node5" href="$Modules_8h.html" title="Modules.h" alt="" coords="99,155,185,181"/>
+<area shape="rect" id="node6" href="$User_8h.html" title="User.h" alt="" coords="129,80,191,107"/>
+<area shape="rect" id="node7" href="$WebModules_8h.html" title="WebModules.h" alt="" coords="215,80,328,107"/>
+<area shape="rect" id="node3" href="$znc_8h.html" title="znc.h" alt="" coords="63,229,117,256"/>
+<area shape="rect" id="node4" href="$IRCNetwork_8h.html" title="IRCNetwork.h" alt="" coords="38,304,143,331"/>
 </map>

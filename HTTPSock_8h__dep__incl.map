@@ -1,6 +1,6 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$WebModules_8h.html" title="WebModules.h" alt="" coords="5,83,117,112"/>
-<area shape="rect" id="node5" href="$Modules_8h.html" title="Modules.h" alt="" coords="19,160,104,189"/>
-<area shape="rect" id="node7" href="$znc_8h.html" title="znc.h" alt="" coords="33,237,89,267"/>
-<area shape="rect" id="node9" href="$IRCNetwork_8h.html" title="IRCNetwork.h" alt="" coords="9,315,113,344"/>
+<map id="HTTPSock.h" name="HTTPSock.h">
+<area shape="rect" id="node2" href="$WebModules_8h.html" title="WebModules.h" alt="" coords="5,80,117,107"/>
+<area shape="rect" id="node3" href="$Modules_8h.html" title="Modules.h" alt="" coords="18,155,104,181"/>
+<area shape="rect" id="node4" href="$znc_8h.html" title="znc.h" alt="" coords="33,229,88,256"/>
+<area shape="rect" id="node5" href="$IRCNetwork_8h.html" title="IRCNetwork.h" alt="" coords="9,304,113,331"/>
 </map>

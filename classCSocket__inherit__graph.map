@@ -1,7 +1,7 @@
-<map id="G" name="G">
-<area shape="rect" id="node9" href="$classCHTTPSock.html" title="CHTTPSock" alt="" coords="19,315,112,344"/>
-<area shape="rect" id="node2" href="$classCZNCSock.html" title="CZNCSock" alt="" coords="20,160,111,189"/>
-<area shape="rect" id="node4" href="$classCsock.html" title="Basic socket class." alt="" coords="36,83,95,112"/>
-<area shape="rect" id="node6" href="$classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock" alt="" coords="5,5,125,35"/>
-<area shape="rect" id="node11" href="$classCWebSock.html" title="CWebSock" alt="" coords="21,392,109,421"/>
+<map id="CSocket" name="CSocket">
+<area shape="rect" id="node5" href="$classCHTTPSock.html" title="CHTTPSock" alt="" coords="18,304,112,331"/>
+<area shape="rect" id="node2" href="$classCZNCSock.html" title="CZNCSock" alt="" coords="20,155,111,181"/>
+<area shape="rect" id="node3" href="$classCsock.html" title="Basic socket class. " alt="" coords="35,80,95,107"/>
+<area shape="rect" id="node4" href="$classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock " alt="" coords="5,5,125,32"/>
+<area shape="rect" id="node6" href="$classCWebSock.html" title="CWebSock" alt="" coords="21,379,109,405"/>
 </map>

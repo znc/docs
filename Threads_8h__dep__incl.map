@@ -1,12 +1,12 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$Modules_8h.html" title="Modules.h" alt="" coords="34,315,119,344"/>
-<area shape="rect" id="node9" href="$Socket_8h.html" title="Socket.h" alt="" coords="203,83,280,112"/>
-<area shape="rect" id="node5" href="$znc_8h.html" title="znc.h" alt="" coords="170,392,226,421"/>
-<area shape="rect" id="node7" href="$IRCNetwork_8h.html" title="IRCNetwork.h" alt="" coords="146,469,250,499"/>
-<area shape="rect" id="node11" href="$Client_8h.html" title="Client.h" alt="" coords="207,237,276,267"/>
-<area shape="rect" id="node14" href="$ExecSock_8h.html" title="ExecSock.h" alt="" coords="351,160,444,189"/>
-<area shape="rect" id="node16" href="$HTTPSock_8h.html" title="HTTPSock.h" alt="" coords="32,160,128,189"/>
-<area shape="rect" id="node21" href="$IRCSock_8h.html" title="IRCSock.h" alt="" coords="468,160,551,189"/>
-<area shape="rect" id="node23" href="$Listener_8h.html" title="Listener.h" alt="" coords="268,315,351,344"/>
-<area shape="rect" id="node18" href="$WebModules_8h.html" title="WebModules.h" alt="" coords="20,237,132,267"/>
+<map id="Threads.h" name="Threads.h">
+<area shape="rect" id="node2" href="$Modules_8h.html" title="Modules.h" alt="" coords="34,304,120,331"/>
+<area shape="rect" id="node5" href="$Socket_8h.html" title="Socket.h" alt="" coords="206,80,284,107"/>
+<area shape="rect" id="node3" href="$znc_8h.html" title="znc.h" alt="" coords="173,379,228,405"/>
+<area shape="rect" id="node4" href="$IRCNetwork_8h.html" title="IRCNetwork.h" alt="" coords="149,453,253,480"/>
+<area shape="rect" id="node6" href="$Client_8h.html" title="Client.h" alt="" coords="210,229,280,256"/>
+<area shape="rect" id="node7" href="$ExecSock_8h.html" title="ExecSock.h" alt="" coords="357,155,451,181"/>
+<area shape="rect" id="node8" href="$HTTPSock_8h.html" title="HTTPSock.h" alt="" coords="33,155,129,181"/>
+<area shape="rect" id="node10" href="$IRCSock_8h.html" title="IRCSock.h" alt="" coords="475,155,559,181"/>
+<area shape="rect" id="node11" href="$Listener_8h.html" title="Listener.h" alt="" coords="273,304,356,331"/>
+<area shape="rect" id="node9" href="$WebModules_8h.html" title="WebModules.h" alt="" coords="21,229,133,256"/>
 </map>

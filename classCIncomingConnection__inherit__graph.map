@@ -1,5 +1,5 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$classCZNCSock.html" title="CZNCSock" alt="" coords="40,160,131,189"/>
-<area shape="rect" id="node4" href="$classCsock.html" title="Basic socket class." alt="" coords="56,83,115,112"/>
-<area shape="rect" id="node6" href="$classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock" alt="" coords="25,5,145,35"/>
+<map id="CIncomingConnection" name="CIncomingConnection">
+<area shape="rect" id="node2" href="$classCZNCSock.html" title="CZNCSock" alt="" coords="40,155,131,181"/>
+<area shape="rect" id="node3" href="$classCsock.html" title="Basic socket class. " alt="" coords="55,80,115,107"/>
+<area shape="rect" id="node4" href="$classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock " alt="" coords="25,5,145,32"/>
 </map>
