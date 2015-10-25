@@ -168,7 +168,7 @@ var searchData=
   ['getnextchecktimeout',['GetNextCheckTimeout',['../classCsock.html#a73e056b2b0c00d95db0b0b1a64210857',1,'Csock']]],
   ['getnextrow',['GetNextRow',['../classCTemplateLoopContext.html#a977cbb618ab9bc80b968adb163981b67',1,'CTemplateLoopContext']]],
   ['getnextrun',['GetNextRun',['../classCCron.html#a4d31be5aa13690b98128a4e413e52c68',1,'CCron']]],
-  ['getnextserver',['GetNextServer',['../classCIRCNetwork.html#ae5ef4c7f5b542c323c1273987cf3d9ed',1,'CIRCNetwork']]],
+  ['getnextserver',['GetNextServer',['../classCIRCNetwork.html#a2e4b6b6af3bf16a7174fc0b0526b7eae',1,'CIRCNetwork']]],
   ['getnick',['GetNick',['../classCClient.html#af901810b926e6ba76ef8c87a1b3714bf',1,'CClient::GetNick()'],['../classCIRCNetwork.html#ad25a4733c92ee6d61e31023650696f6d',1,'CIRCNetwork::GetNick()'],['../classCIRCSock.html#a3918566a6462ae88ab2f99904be02351',1,'CIRCSock::GetNick()'],['../classCMessage.html#a7d55334f7dc1137c1064cb1bd26c1cf6',1,'CMessage::GetNick()'],['../classCMessage.html#aca0f64d9c7955078ded50d297afb04b3',1,'CMessage::GetNick() const '],['../classCNick.html#a92bda81cbcc181113f0d49781b41402c',1,'CNick::GetNick()'],['../classCUser.html#a2a8b987e0bed0733f515a562d6fd0688',1,'CUser::GetNick()']]],
   ['getnickcount',['GetNickCount',['../classCChan.html#abbc509c7a8a7cd384b8cb33fa5b224f7',1,'CChan']]],
   ['getnickmask',['GetNickMask',['../classCClient.html#ace936e366f5ae08b0c645c257bc72635',1,'CClient::GetNickMask()'],['../classCIRCSock.html#a7c35d9120c0739490b209245695a4be4',1,'CIRCSock::GetNickMask()'],['../classCNick.html#a93e87c503c46723201bc2f79a2b717bb',1,'CNick::GetNickMask()']]],
