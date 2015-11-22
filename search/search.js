@@ -16,7 +16,7 @@ var indexSectionsWithContent =
   6: "cefst",
   7: "acdefghijklmnopqrstuvw",
   8: "c",
-  9: "_acdgmnpsuv",
+  9: "_acdgmnprsuv",
   10: "dt"
 };
 

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['sha256_5fblock_5fsize',['SHA256_BLOCK_SIZE',['../SHA256_8h.html#a9c1fe69ad43d4ca74b84303a0ed64f2f',1,'SHA256.h']]],
-  ['sha256_5fdigest_5fsize',['SHA256_DIGEST_SIZE',['../SHA256_8h.html#a81efbc0fc101b06a914f7ff9e2fbc0e9',1,'SHA256.h']]]
+  ['register_5fznc_5fmessage',['REGISTER_ZNC_MESSAGE',['../Message_8h.html#a06ffde3c4e46403dacba3c5e03f651aa',1,'Message.h']]]
 ];

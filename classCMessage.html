@@ -201,6 +201,18 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afb668fcc41fb8bf233a011b1ac08917d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4801f27dfe9eae5cc8b49558c53d2f3d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMessage.html#a4801f27dfe9eae5cc8b49558c53d2f3d">Parse</a> (<a class="el" href="classCString.html">CString</a> sMessage)</td></tr>
 <tr class="separator:a4801f27dfe9eae5cc8b49558c53d2f3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14f91e98c8acf4d4fa9a994a9998a756"><td class="memTemplParams" colspan="2">template&lt;typename M &gt; </td></tr>
+<tr class="memitem:a14f91e98c8acf4d4fa9a994a9998a756"><td class="memTemplItemLeft" align="right" valign="top">M &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCMessage.html#a14f91e98c8acf4d4fa9a994a9998a756">As</a> ()&amp;</td></tr>
+<tr class="separator:a14f91e98c8acf4d4fa9a994a9998a756"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad30130bcba740c47c533ead9354b7655"><td class="memTemplParams" colspan="2">template&lt;typename M &gt; </td></tr>
+<tr class="memitem:ad30130bcba740c47c533ead9354b7655"><td class="memTemplItemLeft" align="right" valign="top">const M &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCMessage.html#ad30130bcba740c47c533ead9354b7655">As</a> () const &amp;</td></tr>
+<tr class="separator:ad30130bcba740c47c533ead9354b7655"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a976b0ae2c1914a6f6599b554709eec28"><td class="memTemplParams" colspan="2">template&lt;typename M &gt; </td></tr>
+<tr class="memitem:a976b0ae2c1914a6f6599b554709eec28"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCMessage.html#a976b0ae2c1914a6f6599b554709eec28">operator M &amp;</a> ()&amp;</td></tr>
+<tr class="separator:a976b0ae2c1914a6f6599b554709eec28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14f5a9b7561f58cad73ade3282e528d1"><td class="memTemplParams" colspan="2">template&lt;typename M &gt; </td></tr>
+<tr class="memitem:a14f5a9b7561f58cad73ade3282e528d1"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCMessage.html#a14f5a9b7561f58cad73ade3282e528d1">operator const M &amp;</a> () const &amp;</td></tr>
+<tr class="separator:a14f5a9b7561f58cad73ade3282e528d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
 <a class="anchor" id="a07909da9c64f7e1a642ca76b34d8e7a3"></a>
@@ -351,6 +363,56 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a14f91e98c8acf4d4fa9a994a9998a756"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename M &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">M&amp; CMessage::As </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad30130bcba740c47c533ead9354b7655"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename M &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const M&amp; CMessage::As </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a280b550192a8147f85a00c5aeb0ee261"></a>
 <div class="memitem">
 <div class="memproto">
@@ -685,6 +747,56 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a14f5a9b7561f58cad73ade3282e528d1"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename M &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CMessage::operator const M &amp; </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a976b0ae2c1914a6f6599b554709eec28"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename M &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CMessage::operator M &amp; </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a4801f27dfe9eae5cc8b49558c53d2f3d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -961,7 +1073,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 17 2015 14:42:46 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 22 2015 23:52:27 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
