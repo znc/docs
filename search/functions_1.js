@@ -54,7 +54,7 @@ var searchData=
   ['allowconnectionfrom',['AllowConnectionFrom',['../classCZNC.html#afa4b1976a35f93ec4efd2c6e25a8e092',1,'CZNC']]],
   ['allowwrite',['AllowWrite',['../classCsock.html#ad93f78657c5e8712ee1f08a928332d34',1,'Csock']]],
   ['appendpath',['AppendPath',['../classCTemplate.html#add77742c27b41209716bd46b8f3d8f7a',1,'CTemplate']]],
-  ['as',['As',['../classCMessage.html#a14f91e98c8acf4d4fa9a994a9998a756',1,'CMessage::As()&amp;'],['../classCMessage.html#ad30130bcba740c47c533ead9354b7655',1,'CMessage::As() const &amp;']]],
+  ['as',['As',['../classCMessage.html#afe2d3cb373eddc475aa9276fbb560108',1,'CMessage::As() ZNC_LVREFQUAL'],['../classCMessage.html#af234e6b7a677fefaf61606e7794067d6',1,'CMessage::As() const ZNC_LVREFQUAL']]],
   ['aslower',['AsLower',['../classCString.html#aa078d780cc25d1870daf1c794649d0de',1,'CString']]],
   ['assignfds',['AssignFDs',['../classCSockCommon.html#a0f90529eb2f0bdf2f4e8d7899e931f07',1,'CSockCommon']]],
   ['asupper',['AsUpper',['../classCString.html#a3346365be83be1ae40e5d953f3fd29c5',1,'CString']]],
