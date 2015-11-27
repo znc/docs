@@ -13,13 +13,13 @@
 <area shape="rect" id="node5" title="STL class. " alt="" coords="259,1181,346,1208"/>
 <area shape="rect" id="node6" title="STL class. " alt="" coords="6,1174,143,1215"/>
 <area shape="rect" id="node7" href="$classCSockManager.html" title="CSockManager" alt="" coords="1990,1685,2109,1712"/>
-<area shape="rect" id="node8" href="$classTSocketManager.html" title="TSocketManager\&lt; CZNCSock \&gt;" alt="" coords="1321,1811,1549,1837"/>
-<area shape="rect" id="node9" href="$classCSocketManager.html" title="Best class to use to interact with the sockets. " alt="" coords="977,2017,1108,2044"/>
-<area shape="rect" id="node10" title="STL class. " alt="" coords="563,1575,733,1601"/>
+<area shape="rect" id="node8" href="$classTSocketManager.html" title="TSocketManager\&lt; CZNCSock \&gt;" alt="" coords="1321,1825,1549,1852"/>
+<area shape="rect" id="node9" href="$classCSocketManager.html" title="Best class to use to interact with the sockets. " alt="" coords="977,2047,1108,2073"/>
+<area shape="rect" id="node10" title="STL class. " alt="" coords="563,1589,733,1616"/>
 <area shape="rect" id="node16" title="STL class. " alt="" coords="757,231,944,257"/>
 <area shape="rect" id="node27" title="STL class. " alt="" coords="763,65,939,92"/>
 <area shape="rect" id="node36" title="STL class. " alt="" coords="575,139,721,181"/>
-<area shape="rect" id="node12" href="$classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock " alt="" coords="587,2033,709,2060"/>
+<area shape="rect" id="node12" href="$classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock " alt="" coords="587,2063,709,2089"/>
 <area shape="rect" id="node15" href="$classCModules.html" title="CModules" alt="" coords="1831,959,1915,985"/>
 <area shape="rect" id="node20" href="$classCIRCSocket.html" title="Base IRC socket for client&lt;&#45;&gt;ZNC, and ZNC&lt;&#45;&gt;server. " alt="" coords="2153,1337,2247,1364"/>
 <area shape="rect" id="node21" href="$classCZNCSock.html" title="CZNCSock" alt="" coords="1389,1437,1480,1464"/>
