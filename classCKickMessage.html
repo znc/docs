@@ -224,12 +224,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af234e6b7a677fefaf61606e7794067d6"><td class="memTemplParams" colspan="2">template&lt;typename M &gt; </td></tr>
 <tr class="memitem:af234e6b7a677fefaf61606e7794067d6"><td class="memTemplItemLeft" align="right" valign="top">const M &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCMessage.html#af234e6b7a677fefaf61606e7794067d6">As</a> () const <a class="el" href="Message_8h.html#a264a49b64aefc34532af29a2cebdf31a">ZNC_LVREFQUAL</a></td></tr>
 <tr class="separator:af234e6b7a677fefaf61606e7794067d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe4fac5057c3386958ba7202d3cdfe82"><td class="memTemplParams" colspan="2">template&lt;typename M &gt; </td></tr>
-<tr class="memitem:afe4fac5057c3386958ba7202d3cdfe82"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCMessage.html#afe4fac5057c3386958ba7202d3cdfe82">operator M &amp;</a> () <a class="el" href="Message_8h.html#a264a49b64aefc34532af29a2cebdf31a">ZNC_LVREFQUAL</a></td></tr>
-<tr class="separator:afe4fac5057c3386958ba7202d3cdfe82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfebde027ca56977cb1d02cd260d33aa"><td class="memTemplParams" colspan="2">template&lt;typename M &gt; </td></tr>
-<tr class="memitem:adfebde027ca56977cb1d02cd260d33aa"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCMessage.html#adfebde027ca56977cb1d02cd260d33aa">operator const M &amp;</a> () const <a class="el" href="Message_8h.html#a264a49b64aefc34532af29a2cebdf31a">ZNC_LVREFQUAL</a></td></tr>
-<tr class="separator:adfebde027ca56977cb1d02cd260d33aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a262f7d9d2c5768e88ace8fdc62bbbf2c"><td class="memTemplParams" colspan="2">template&lt;typename M , typename  = typename std::enable_if&lt;std::is_base_of&lt;CMessage, M&gt;{}&gt;::type&gt; </td></tr>
+<tr class="memitem:a262f7d9d2c5768e88ace8fdc62bbbf2c"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCMessage.html#a262f7d9d2c5768e88ace8fdc62bbbf2c">operator M &amp;</a> () <a class="el" href="Message_8h.html#a264a49b64aefc34532af29a2cebdf31a">ZNC_LVREFQUAL</a></td></tr>
+<tr class="separator:a262f7d9d2c5768e88ace8fdc62bbbf2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3084f60e7369a42c72bfa095431569cf"><td class="memTemplParams" colspan="2">template&lt;typename M , typename  = typename std::enable_if&lt;std::is_base_of&lt;CMessage, M&gt;{}&gt;::type&gt; </td></tr>
+<tr class="memitem:a3084f60e7369a42c72bfa095431569cf"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCMessage.html#a3084f60e7369a42c72bfa095431569cf">operator const M &amp;</a> () const <a class="el" href="Message_8h.html#a264a49b64aefc34532af29a2cebdf31a">ZNC_LVREFQUAL</a></td></tr>
+<tr class="separator:a3084f60e7369a42c72bfa095431569cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
 <a class="anchor" id="a07909da9c64f7e1a642ca76b34d8e7a3"></a>
@@ -824,11 +824,11 @@ template&lt;typename M &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="adfebde027ca56977cb1d02cd260d33aa"></a>
+<a class="anchor" id="a3084f60e7369a42c72bfa095431569cf"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename M &gt; </div>
+template&lt;typename M , typename  = typename std::enable_if&lt;std::is_base_of&lt;CMessage, M&gt;{}&gt;::type&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -849,11 +849,11 @@ template&lt;typename M &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="afe4fac5057c3386958ba7202d3cdfe82"></a>
+<a class="anchor" id="a262f7d9d2c5768e88ace8fdc62bbbf2c"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename M &gt; </div>
+template&lt;typename M , typename  = typename std::enable_if&lt;std::is_base_of&lt;CMessage, M&gt;{}&gt;::type&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1276,7 +1276,7 @@ template&lt;typename M &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Nov 26 2015 14:14:32 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 29 2015 12:38:20 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
