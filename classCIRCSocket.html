@@ -206,6 +206,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5d14ffa21747333136d0b5c62a66f2f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNCSock.html#a5d14ffa21747333136d0b5c62a66f2f5">SSLHandShakeFinished</a> () override</td></tr>
 <tr class="memdesc:a5d14ffa21747333136d0b5c62a66f2f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">called once the SSL handshake is complete, this is triggered via SSL_CB_HANDSHAKE_DONE in SSL_set_info_callback()  <a href="#a5d14ffa21747333136d0b5c62a66f2f5">More...</a><br/></td></tr>
 <tr class="separator:a5d14ffa21747333136d0b5c62a66f2f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3a5a70f2036f37f8f1d3d947a9f0aa4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNCSock.html#ae3a5a70f2036f37f8f1d3d947a9f0aa4">SNIConfigureClient</a> (<a class="el" href="classCString.html">CString</a> &amp;sHostname) override</td></tr>
+<tr class="separator:ae3a5a70f2036f37f8f1d3d947a9f0aa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8a870f8df305f21a0307364fdb3c027"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#ab8a870f8df305f21a0307364fdb3c027">SNIConfigureClient</a> (<a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sHostname)</td></tr>
+<tr class="memdesc:ab8a870f8df305f21a0307364fdb3c027"><td class="mdescLeft">&#160;</td><td class="mdescRight">called to configure the SNI client  <a href="#ab8a870f8df305f21a0307364fdb3c027">More...</a><br/></td></tr>
+<tr class="separator:ab8a870f8df305f21a0307364fdb3c027"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a039ef960176025d06b43997a1156ea5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNCSock.html#a039ef960176025d06b43997a1156ea5f">SetHostToVerifySSL</a> (const <a class="el" href="classCString.html">CString</a> &amp;sHost)</td></tr>
 <tr class="separator:a039ef960176025d06b43997a1156ea5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3673ac5321422d5f0589c9db9149f3d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNCSock.html#a3673ac5321422d5f0589c9db9149f3d2">GetSSLPeerFingerprint</a> () const </td></tr>
@@ -541,9 +546,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a47ac65949b3713a2b32c5167225ffd99"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a47ac65949b3713a2b32c5167225ffd99">SNIConfigureServer</a> (const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sHostname, <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sPemFile, <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sPemPass)</td></tr>
 <tr class="memdesc:a47ac65949b3713a2b32c5167225ffd99"><td class="mdescLeft">&#160;</td><td class="mdescRight">gets called when a SNI request is sent, and used to configure a SNI session  <a href="#a47ac65949b3713a2b32c5167225ffd99">More...</a><br/></td></tr>
 <tr class="separator:a47ac65949b3713a2b32c5167225ffd99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8a870f8df305f21a0307364fdb3c027"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#ab8a870f8df305f21a0307364fdb3c027">SNIConfigureClient</a> (<a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sHostname)</td></tr>
-<tr class="memdesc:ab8a870f8df305f21a0307364fdb3c027"><td class="mdescLeft">&#160;</td><td class="mdescRight">called to configure the SNI client  <a href="#ab8a870f8df305f21a0307364fdb3c027">More...</a><br/></td></tr>
-<tr class="separator:ab8a870f8df305f21a0307364fdb3c027"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae61306403bb7bbff4e2fd766d9854a4b"><td class="memItemLeft" align="right" valign="top">SSL_CTX *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#ae61306403bb7bbff4e2fd766d9854a4b">SetupServerCTX</a> ()</td></tr>
 <tr class="memdesc:ae61306403bb7bbff4e2fd766d9854a4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">creates a new SSL_CTX based on the setup of this sock  <a href="#ae61306403bb7bbff4e2fd766d9854a4b">More...</a><br/></td></tr>
 <tr class="separator:ae61306403bb7bbff4e2fd766d9854a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -5099,6 +5101,30 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ae3a5a70f2036f37f8f1d3d947a9f0aa4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CZNCSock::SNIConfigureClient </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
+          <td class="paramname"><em>sHostname</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ab8a870f8df305f21a0307364fdb3c027"></a>
 <div class="memitem">
 <div class="memproto">
@@ -5603,7 +5629,7 @@ X509_free( pCert );
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Nov 27 2015 01:49:19 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Dec 5 2015 17:59:57 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

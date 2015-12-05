@@ -170,7 +170,7 @@ var searchData=
   ['sinfamily',['SinFamily',['../classCSSockAddr.html#ad623af0b89f38d7310a80d325b31b3df',1,'CSSockAddr']]],
   ['sinport',['SinPort',['../classCSSockAddr.html#aac74ad78513de1b3ccf52212543e405a',1,'CSSockAddr']]],
   ['size',['Size',['../classCBuffer.html#ada8cad56b0d0e3cacfceb5705a38b4e2',1,'CBuffer']]],
-  ['sniconfigureclient',['SNIConfigureClient',['../classCsock.html#ab8a870f8df305f21a0307364fdb3c027',1,'Csock']]],
+  ['sniconfigureclient',['SNIConfigureClient',['../classCZNCSock.html#ae3a5a70f2036f37f8f1d3d947a9f0aa4',1,'CZNCSock::SNIConfigureClient()'],['../classCsock.html#ab8a870f8df305f21a0307364fdb3c027',1,'Csock::SNIConfigureClient()']]],
   ['sniconfigureserver',['SNIConfigureServer',['../classCsock.html#a47ac65949b3713a2b32c5167225ffd99',1,'Csock']]],
   ['sockerror',['SockError',['../classCIRCSock.html#a8f5bf9ae466d6cbbd17bcd794f6dbf66',1,'CIRCSock::SockError()'],['../classCRealListener.html#ac460e1868ec8b2f0d8a94c7298d95554',1,'CRealListener::SockError()'],['../classCSocket.html#adc26f9ac788363a79c3eeec2e92dbf46',1,'CSocket::SockError()'],['../classCsock.html#a2092f1cfd768211741d4d3c4b092563b',1,'Csock::SockError()']]],
   ['split',['Split',['../classCString.html#afc992e453be9545c96a6c69d1701e349',1,'CString::Split(const CString &amp;sDelim, VCString &amp;vsRet, bool bAllowEmpty=true, const CString &amp;sLeft=&quot;&quot;, const CString &amp;sRight=&quot;&quot;, bool bTrimQuotes=true, bool bTrimWhiteSpace=false) const '],['../classCString.html#a6703330320d0a7c4eb30a986c5bfdb47',1,'CString::Split(const CString &amp;sDelim, SCString &amp;ssRet, bool bAllowEmpty=true, const CString &amp;sLeft=&quot;&quot;, const CString &amp;sRight=&quot;&quot;, bool bTrimQuotes=true, bool bTrimWhiteSpace=false) const ']]],
