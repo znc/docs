@@ -105,7 +105,7 @@ var searchData=
   ['contains',['Contains',['../classCString.html#a401cf6414dda568b2d566fbb6b78f824',1,'CString']]],
   ['continue',['CONTINUE',['../classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2ad0e6943f41ec5685684313d482f372aa',1,'CModule']]],
   ['convert',['Convert',['../classCString.html#a6ddd53291db7dd02225c8d2ce4254f15',1,'CString']]],
-  ['convertaddress',['ConvertAddress',['../classCZNCSock.html#a1301e874a81e8f2b64ff2af0a0e018a6',1,'CZNCSock::ConvertAddress()'],['../classCsock.html#ab03fd24a2d7a397ef9bbe864df6dda31',1,'Csock::ConvertAddress()']]],
+  ['convertaddress',['ConvertAddress',['../classCZNCSock.html#a39e591b6d9ac373da15f07b4e6458edd',1,'CZNCSock::ConvertAddress()'],['../classCsock.html#ab03fd24a2d7a397ef9bbe864df6dda31',1,'Csock::ConvertAddress()']]],
   ['copy',['Copy',['../classCFile.html#afbed76c582157ac4b43732a04c99849d',1,'CFile::Copy(const CString &amp;sNewFileName, bool bOverwrite=false)'],['../classCFile.html#a0fe06e8cfcc4a426d79d93dc6bd0b840',1,'CFile::Copy(const CString &amp;sOldFileName, const CString &amp;sNewFileName, bool bOverwrite=false)'],['../classCsock.html#a6de0e591c1bc2a80bbfd7462f8ad14fa',1,'Csock::Copy()']]],
   ['cpartmessage',['CPartMessage',['../classCPartMessage.html',1,'']]],
   ['cquery',['CQuery',['../classCQuery.html',1,'CQuery'],['../classCQuery.html#a7b5e2ca71ef08a6fca1637991139243e',1,'CQuery::CQuery(const CString &amp;sName, CIRCNetwork *pNetwork)'],['../classCQuery.html#ad1831d96238a5ef9e4990faf7e5118e2',1,'CQuery::CQuery(const CQuery &amp;)=delete']]],
