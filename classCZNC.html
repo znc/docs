@@ -218,8 +218,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad113e2bf6470a82e5dd90e8d58e7f57c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89c6a537816e90b2f7a5c8692d872cf3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a89c6a537816e90b2f7a5c8692d872cf3">SetSSLCertFile</a> (const <a class="el" href="classCString.html">CString</a> &amp;sFile)</td></tr>
 <tr class="separator:a89c6a537816e90b2f7a5c8692d872cf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c1f455a26eb3a5d06c93bbf9308420a"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="classCZNC.html#a872d81d61388f9acb7f8e6e966b4fd8f">ConfigState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a6c1f455a26eb3a5d06c93bbf9308420a">GetConfigState</a> () const </td></tr>
-<tr class="separator:a6c1f455a26eb3a5d06c93bbf9308420a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3aa2163e50505b22f7dd5fce11bf48b2"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="classCZNC.html#a872d81d61388f9acb7f8e6e966b4fd8f">ConfigState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a3aa2163e50505b22f7dd5fce11bf48b2">GetConfigState</a> ()</td></tr>
+<tr class="separator:a3aa2163e50505b22f7dd5fce11bf48b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a381caa7205b21e33ffc70f2bb0499cd1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCSockManager.html">CSockManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a381caa7205b21e33ffc70f2bb0499cd1">GetManager</a> ()</td></tr>
 <tr class="separator:a381caa7205b21e33ffc70f2bb0499cd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80b7e6d056de980988e337a86b2170bb"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classCSockManager.html">CSockManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a80b7e6d056de980988e337a86b2170bb">GetManager</a> () const </td></tr>
@@ -355,6 +355,8 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a5442e43d135b1731061ab967ebfa12cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7e4152d475f18629f0b009120f2eb99"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="classCZNC.html#a872d81d61388f9acb7f8e6e966b4fd8f">ConfigState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#af7e4152d475f18629f0b009120f2eb99">m_eConfigState</a></td></tr>
 <tr class="separator:af7e4152d475f18629f0b009120f2eb99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a781347b31bb22af708ce8da25d535394"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a781347b31bb22af708ce8da25d535394">m_mutexConfigState</a></td></tr>
+<tr class="separator:a781347b31bb22af708ce8da25d535394"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c9cfb4970b8cc20dffc4a63753a75cb"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classCListener.html">CListener</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a1c9cfb4970b8cc20dffc4a63753a75cb">m_vpListeners</a></td></tr>
 <tr class="separator:a1c9cfb4970b8cc20dffc4a63753a75cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04d07ea2fcec527c2115718d60f83950"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="classCString.html">CString</a>, <a class="el" href="classCUser.html">CUser</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a04d07ea2fcec527c2115718d60f83950">m_msUsers</a></td></tr>
@@ -1428,7 +1430,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a6c1f455a26eb3a5d06c93bbf9308420a"></a>
+<a class="anchor" id="a3aa2163e50505b22f7dd5fce11bf48b2"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1439,7 +1441,7 @@ Protected Attributes</h2></td></tr>
           <td class="memname">enum <a class="el" href="classCZNC.html#a872d81d61388f9acb7f8e6e966b4fd8f">ConfigState</a> CZNC::GetConfigState </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td></td>
         </tr>
       </table>
   </td>
@@ -1449,7 +1451,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>References <a class="el" href="classCZNC.html#af7e4152d475f18629f0b009120f2eb99">m_eConfigState</a>.</p>
+<p>References <a class="el" href="classCZNC.html#af7e4152d475f18629f0b009120f2eb99">m_eConfigState</a>, and <a class="el" href="classCZNC.html#a781347b31bb22af708ce8da25d535394">m_mutexConfigState</a>.</p>
 
 </div>
 </div>
@@ -2493,7 +2495,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>References <a class="el" href="classCZNC.html#af7e4152d475f18629f0b009120f2eb99">m_eConfigState</a>.</p>
+<p>References <a class="el" href="classCZNC.html#af7e4152d475f18629f0b009120f2eb99">m_eConfigState</a>, and <a class="el" href="classCZNC.html#a781347b31bb22af708ce8da25d535394">m_mutexConfigState</a>.</p>
 
 </div>
 </div>
@@ -2953,7 +2955,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="classCZNC.html#a6c1f455a26eb3a5d06c93bbf9308420a">GetConfigState()</a>, and <a class="el" href="classCZNC.html#ae1efbd99644160640cc883fbfea6339d">SetConfigState()</a>.</p>
+<p>Referenced by <a class="el" href="classCZNC.html#a3aa2163e50505b22f7dd5fce11bf48b2">GetConfigState()</a>, and <a class="el" href="classCZNC.html#ae1efbd99644160640cc883fbfea6339d">SetConfigState()</a>.</p>
 
 </div>
 </div>
@@ -3040,6 +3042,28 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Referenced by <a class="el" href="classCZNC.html#aa27953d60feb3e279264a15810cad0a4">GetUserMap()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a781347b31bb22af708ce8da25d535394"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::mutex CZNC::m_mutexConfigState</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Referenced by <a class="el" href="classCZNC.html#a3aa2163e50505b22f7dd5fce11bf48b2">GetConfigState()</a>, and <a class="el" href="classCZNC.html#ae1efbd99644160640cc883fbfea6339d">SetConfigState()</a>.</p>
 
 </div>
 </div>
@@ -3627,7 +3651,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Nov 27 2015 01:49:19 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Dec 6 2015 01:04:30 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
