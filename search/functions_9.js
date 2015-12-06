@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['icuextfromucallback',['IcuExtFromUCallback',['../classCIRCSocket.html#a4ca087468f8c3d85b7a2bb2ed1b7d23a',1,'CIRCSocket::IcuExtFromUCallback()'],['../classCsock.html#a32e5d0c329fe5ebfc278989c294877fb',1,'Csock::IcuExtFromUCallback()']]],
+  ['icuexttoucallback',['IcuExtToUCallback',['../classCIRCSocket.html#ae56430fabf8e38a8105f8d24d79c7805',1,'CIRCSocket::IcuExtToUCallback()'],['../classCsock.html#a7d4025fe0dd318eb29fc22b4a037b853',1,'Csock::IcuExtToUCallback()']]],
   ['incjointries',['IncJoinTries',['../classCChan.html#a403fe4c05f84a7390170fd2400635e36',1,'CChan']]],
   ['inconfig',['InConfig',['../classCChan.html#a606624bca637c7c21d138f0fabb32397',1,'CChan']]],
   ['incrowindex',['IncRowIndex',['../classCTemplateLoopContext.html#a520a6d2338be39290e2c002e9efe4659',1,'CTemplateLoopContext']]],
@@ -57,7 +59,7 @@ var searchData=
   ['istrue',['IsTrue',['../classCTemplate.html#ac1bd3e2d29d53726294c898e69d74794',1,'CTemplate']]],
   ['isuserattached',['IsUserAttached',['../classCIRCNetwork.html#a0d50a587fb51df4d4bca12d590e2abb6',1,'CIRCNetwork::IsUserAttached()'],['../classCUser.html#a7fa71a02c2b9a9e10de1ae4371938532',1,'CUser::IsUserAttached()']]],
   ['isuseronline',['IsUserOnline',['../classCIRCNetwork.html#a3f64579e2ed802ed1d27cfc11a16c46e',1,'CIRCNetwork']]],
-  ['isvalid',['IsValid',['../classCUser.html#ade961df399b28c1175f304bd5e0b4f8f',1,'CUser::IsValid()'],['../classCCron.html#affd2692d29c623ab825c1c8cb07f563a',1,'CCron::isValid()']]],
+  ['isvalid',['isValid',['../classCCron.html#affd2692d29c623ab825c1c8cb07f563a',1,'CCron::isValid()'],['../classCUser.html#ade961df399b28c1175f304bd5e0b4f8f',1,'CUser::IsValid()']]],
   ['isvalidhostname',['IsValidHostName',['../classCServer.html#a90810ca5e292e219244a800ad8e7cee0',1,'CServer']]],
   ['isvalididentifier',['IsValidIdentifier',['../classCClient.html#a25e8c5f0e58ba2b8132d073576a295ef',1,'CClient']]],
   ['isvalidnetwork',['IsValidNetwork',['../classCIRCNetwork.html#a3253620b3dc05b53547a5cbc84c1872f',1,'CIRCNetwork']]],

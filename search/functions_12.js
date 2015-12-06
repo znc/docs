@@ -50,5 +50,7 @@ var searchData=
   ['rightchomp',['RightChomp',['../classCString.html#a7bc85d37b1db399a890527512f631248',1,'CString']]],
   ['rightchomp_5fn',['RightChomp_n',['../classCString.html#a4c84b2f3cad0db92af7659dce90499a8',1,'CString']]],
   ['run',['run',['../classCCron.html#a3eed49e9ab5e1f03bc56d6e307dd52f8',1,'CCron']]],
-  ['runjob',['RunJob',['../classCFPTimer.html#ad8641d84593df19bb3b880cac94a9a81',1,'CFPTimer::RunJob()'],['../classCCron.html#ae55653bbe37861680eb83641b35fc60d',1,'CCron::RunJob()']]]
+  ['runjob',['RunJob',['../classCFPTimer.html#ad8641d84593df19bb3b880cac94a9a81',1,'CFPTimer::RunJob()'],['../classCCron.html#ae55653bbe37861680eb83641b35fc60d',1,'CCron::RunJob()']]],
+  ['runmain',['runMain',['../classCJob.html#a8162e03104f0b07ad9efeced07ec2652',1,'CJob']]],
+  ['runthread',['runThread',['../classCJob.html#a38213211a7b12986f9c98e498ea0599a',1,'CJob']]]
 ];

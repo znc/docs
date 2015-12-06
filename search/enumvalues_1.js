@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['cancelled',['CANCELLED',['../classCJob.html#a63886ce212f2f2560392adcc757139faabf874b9fd1e2cb5580f69d7639dba182',1,'CJob']]],
   ['capability',['Capability',['../classCMessage.html#a0c73f73428ca8fd0c3f10a497d2fcb11afa97f6975c9b94a252d204cd22159ff4',1,'CMessage']]],
   ['caseinsensitive',['CaseInsensitive',['../ZNCString_8h.html#aaa929f83398f109dfbff9789108b159ba6bd9264ca00b6021a8d75a68895c1ba1',1,'ZNCString.h']]],
   ['casesensitive',['CaseSensitive',['../ZNCString_8h.html#aaa929f83398f109dfbff9789108b159baaef186eb5e4f306317a661d4b96e397d',1,'ZNCString.h']]],

@@ -294,6 +294,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9cff083da920fa15836194dde3515c98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad028960726b2b661f4aa86863821369b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSock.html#ad028960726b2b661f4aa86863821369b">GetISupport</a> (const <a class="el" href="classCString.html">CString</a> &amp;sKey, const <a class="el" href="classCString.html">CString</a> &amp;sDefault=&quot;&quot;) const </td></tr>
 <tr class="separator:ad028960726b2b661f4aa86863821369b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae56430fabf8e38a8105f8d24d79c7805"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSocket.html#ae56430fabf8e38a8105f8d24d79c7805">IcuExtToUCallback</a> (UConverterToUnicodeArgs *toArgs, const char *codeUnits, int32_t length, UConverterCallbackReason reason, UErrorCode *err) override</td></tr>
+<tr class="memdesc:ae56430fabf8e38a8105f8d24d79c7805"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow IRC control characters to appear even if protocol encoding explicitly disallows them.  <a href="#ae56430fabf8e38a8105f8d24d79c7805">More...</a><br/></td></tr>
+<tr class="separator:ae56430fabf8e38a8105f8d24d79c7805"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ca087468f8c3d85b7a2bb2ed1b7d23a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCSocket.html#a4ca087468f8c3d85b7a2bb2ed1b7d23a">IcuExtFromUCallback</a> (UConverterFromUnicodeArgs *fromArgs, const UChar *codeUnits, int32_t length, UChar32 codePoint, UConverterCallbackReason reason, UErrorCode *err) override</td></tr>
+<tr class="separator:a4ca087468f8c3d85b7a2bb2ed1b7d23a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39e591b6d9ac373da15f07b4e6458edd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNCSock.html#a39e591b6d9ac373da15f07b4e6458edd">ConvertAddress</a> (const struct sockaddr_storage *pAddr, socklen_t iAddrLen, <a class="el" href="classCString.html">CString</a> &amp;sIP, u_short *piPort) const override</td></tr>
 <tr class="separator:a39e591b6d9ac373da15f07b4e6458edd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab03fd24a2d7a397ef9bbe864df6dda31"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#ab03fd24a2d7a397ef9bbe864df6dda31">ConvertAddress</a> (const struct sockaddr_storage *pAddr, socklen_t iAddrLen, <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sIP, uint16_t *piPort) const </td></tr>
@@ -316,8 +321,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3673ac5321422d5f0589c9db9149f3d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a148e6216e3ef442d9ef604834d8c3c05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNCSock.html#a148e6216e3ef442d9ef604834d8c3c05">SetSSLTrustedPeerFingerprints</a> (const <a class="el" href="ZNCString_8h.html#a84b05218977775b974a8db49e81f02a4">SCString</a> &amp;ssFPs)</td></tr>
 <tr class="separator:a148e6216e3ef442d9ef604834d8c3c05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad45449663df4443887919b744b6560fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNCSock.html#ad45449663df4443887919b744b6560fc">SetEncoding</a> (const <a class="el" href="classCString.html">CString</a> &amp;)</td></tr>
-<tr class="separator:ad45449663df4443887919b744b6560fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f6f020f9d9aea1caa880a7e3498860f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNCSock.html#a9f6f020f9d9aea1caa880a7e3498860f">GetRemoteIP</a> () const </td></tr>
 <tr class="separator:a9f6f020f9d9aea1caa880a7e3498860f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f3b85490d28167617cf0e85782512b4"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCsock.html">Csock</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a9f3b85490d28167617cf0e85782512b4">GetSockObj</a> (const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sHostname, uint16_t iPort)</td></tr>
@@ -683,6 +686,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8661f34691c2e04ab1e861750650abff"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a8661f34691c2e04ab1e861750650abff">GetMaxConns</a> () const </td></tr>
 <tr class="memdesc:a8661f34691c2e04ab1e861750650abff"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the number of max pending connections when type is LISTENER  <a href="#a8661f34691c2e04ab1e861750650abff">More...</a><br/></td></tr>
 <tr class="separator:a8661f34691c2e04ab1e861750650abff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35db4b2adfcad925c22a56e185223d92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a35db4b2adfcad925c22a56e185223d92">SetEncoding</a> (const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sEncoding)</td></tr>
+<tr class="separator:a35db4b2adfcad925c22a56e185223d92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99c8b88340c7a3fc86b7864a20bdd562"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSockCommon.html#a99c8b88340c7a3fc86b7864a20bdd562">CleanupCrons</a> ()</td></tr>
 <tr class="separator:a99c8b88340c7a3fc86b7864a20bdd562"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af27e285dc370946e91badb733542c0dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSockCommon.html#af27e285dc370946e91badb733542c0dd">CleanupFDMonitors</a> ()</td></tr>
@@ -4164,6 +4169,124 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a4ca087468f8c3d85b7a2bb2ed1b7d23a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CIRCSocket::IcuExtFromUCallback </td>
+          <td>(</td>
+          <td class="paramtype">UConverterFromUnicodeArgs *&#160;</td>
+          <td class="paramname"><em>fromArgs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const UChar *&#160;</td>
+          <td class="paramname"><em>codeUnits</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UChar32&#160;</td>
+          <td class="paramname"><em>codePoint</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UConverterCallbackReason&#160;</td>
+          <td class="paramname"><em>reason</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UErrorCode *&#160;</td>
+          <td class="paramname"><em>err</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classCsock.html#a32e5d0c329fe5ebfc278989c294877fb">Csock</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae56430fabf8e38a8105f8d24d79c7805"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CIRCSocket::IcuExtToUCallback </td>
+          <td>(</td>
+          <td class="paramtype">UConverterToUnicodeArgs *&#160;</td>
+          <td class="paramname"><em>toArgs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>codeUnits</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UConverterCallbackReason&#160;</td>
+          <td class="paramname"><em>reason</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UErrorCode *&#160;</td>
+          <td class="paramname"><em>err</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Allow IRC control characters to appear even if protocol encoding explicitly disallows them. </p>
+<p>E.g. ISO-2022-JP disallows 0x0F, which in IRC means "reset format", so by default it gets replaced with U+FFFD ("replacement character"). <a href="https://code.google.com/p/chromium/issues/detail?id=277062#c3">https://code.google.com/p/chromium/issues/detail?id=277062#c3</a></p>
+<p>In case if protocol encoding uses these code points for something else, the encoding takes preference, and they are not IRC control characters anymore. </p>
+
+<p>Reimplemented from <a class="el" href="classCsock.html#a7d4025fe0dd318eb29fc22b4a037b853">Csock</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a5e4bc8682496411835b7a1ac56d855bc"></a>
 <div class="memitem">
 <div class="memproto">
@@ -5371,7 +5494,7 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ad45449663df4443887919b744b6560fc"></a>
+<a class="anchor" id="a35db4b2adfcad925c22a56e185223d92"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -5379,16 +5502,16 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void CZNCSock::SetEncoding </td>
+          <td class="memname">void Csock::SetEncoding </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td>
+          <td class="paramname"><em>sEncoding</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -7326,7 +7449,7 @@ X509_free( pCert );
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Dec 5 2015 18:21:32 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Dec 6 2015 01:33:13 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

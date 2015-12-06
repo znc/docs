@@ -16,6 +16,7 @@ var searchData=
   ['efread',['EFRead',['../classCsock.html#ae0bf394f0683437a754dd535a7d1df65',1,'Csock']]],
   ['efselect',['EFSelect',['../classCsock.html#aa033a0324589c4247df589f049cae2a7',1,'Csock']]],
   ['ehashtype',['eHashType',['../classCUser.html#af1c920f65be0d78a064858cf139d15af',1,'CUser']]],
+  ['ejobstate',['EJobState',['../classCJob.html#a63886ce212f2f2560392adcc757139fa',1,'CJob']]],
   ['emessages',['EMessages',['../classCSocketManager.html#af9564d9c13bf73ba8c05876a64342f4f',1,'CSocketManager']]],
   ['emodes',['EModes',['../classCChan.html#acf15763add0520a1225a5bba7a398c57',1,'CChan']]],
   ['emodexception',['EModException',['../classCModule.html#aad1b3611e4d3891b93fcb3aded5609f5',1,'CModule']]],

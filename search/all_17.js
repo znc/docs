@@ -2,6 +2,7 @@ var searchData=
 [
   ['waitforchildlock',['WaitForChildLock',['../classCZNC.html#a9507ce9a96d584b46e6f04328f785713',1,'CZNC']]],
   ['wallops',['Wallops',['../classCMessage.html#a0c73f73428ca8fd0c3f10a497d2fcb11abb42bdd63630966e475a226c0171cebd',1,'CMessage']]],
+  ['wascancelled',['wasCancelled',['../classCJob.html#a15a6814c8d18882356cd8bb3015648eb',1,'CJob']]],
   ['webmodules_2eh',['WebModules.h',['../WebModules_8h.html',1,'']]],
   ['webrequiresadmin',['WebRequiresAdmin',['../classCModule.html#abe2b6023625deb2d20451bc84be57ef1',1,'CModule']]],
   ['webrequireslogin',['WebRequiresLogin',['../classCModule.html#a2b7cf260382ef4fbc23a328aca6a5551',1,'CModule']]],

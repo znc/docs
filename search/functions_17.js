@@ -1,6 +1,7 @@
 var searchData=
 [
   ['waitforchildlock',['WaitForChildLock',['../classCZNC.html#a9507ce9a96d584b46e6f04328f785713',1,'CZNC']]],
+  ['wascancelled',['wasCancelled',['../classCJob.html#a15a6814c8d18882356cd8bb3015648eb',1,'CJob']]],
   ['webrequiresadmin',['WebRequiresAdmin',['../classCModule.html#abe2b6023625deb2d20451bc84be57ef1',1,'CModule']]],
   ['webrequireslogin',['WebRequiresLogin',['../classCModule.html#a2b7cf260382ef4fbc23a328aca6a5551',1,'CModule']]],
   ['wildcmp',['WildCmp',['../classCString.html#adb5704f54077344132a2627b47487799',1,'CString::WildCmp(const CString &amp;sWild, const CString &amp;sString, CaseSensitivity cs=CaseSensitive)'],['../classCString.html#a8674edda2e245e07e05eea41675e11e2',1,'CString::WildCmp(const CString &amp;sWild, CaseSensitivity cs=CaseSensitive) const ']]],

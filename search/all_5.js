@@ -34,6 +34,7 @@ var searchData=
   ['ehashtype',['eHashType',['../classCUser.html#af1c920f65be0d78a064858cf139d15af',1,'CUser']]],
   ['ehexcolon',['EHEXCOLON',['../classCString.html#a8f63759db4ef372abb9cfa4751648e1fa9f6faef4d8ad972adcc5518947686ff6',1,'CString']]],
   ['ehtml',['EHTML',['../classCString.html#a8f63759db4ef372abb9cfa4751648e1fa32bc4b62f40af2f5fdf24c20efb2399f',1,'CString']]],
+  ['ejobstate',['EJobState',['../classCJob.html#a63886ce212f2f2560392adcc757139fa',1,'CJob']]],
   ['ellipsize',['Ellipsize',['../classCString.html#a0ca8b6317484678e3570f367e505289d',1,'CString']]],
   ['emessages',['EMessages',['../classCSocketManager.html#af9564d9c13bf73ba8c05876a64342f4f',1,'CSocketManager']]],
   ['emodes',['EModes',['../classCChan.html#acf15763add0520a1225a5bba7a398c57',1,'CChan']]],

@@ -61,7 +61,7 @@ var searchData=
   ['setdetached',['SetDetached',['../classCChan.html#ad24bff3bbe283a352023d2cbf5078961',1,'CChan']]],
   ['setdhparamlocation',['SetDHParamLocation',['../classCsock.html#ae4a08e77c04a71b86d218c356fe35244',1,'Csock::SetDHParamLocation()'],['../classCSListener.html#a48c640011e85b8b9fce923ea094ec25b',1,'CSListener::SetDHParamLocation()']]],
   ['setdocroot',['SetDocRoot',['../classCHTTPSock.html#a9e22370636a2976663ecaffcfeaa3008',1,'CHTTPSock']]],
-  ['setencoding',['SetEncoding',['../classCIRCNetwork.html#af0921129d282fd6b8cf9cd84aaa30b61',1,'CIRCNetwork::SetEncoding()'],['../classCZNCSock.html#ad45449663df4443887919b744b6560fc',1,'CZNCSock::SetEncoding()']]],
+  ['setencoding',['SetEncoding',['../classCIRCNetwork.html#af0921129d282fd6b8cf9cd84aaa30b61',1,'CIRCNetwork::SetEncoding()'],['../classCsock.html#a35db4b2adfcad925c22a56e185223d92',1,'Csock::SetEncoding()']]],
   ['setfile',['SetFile',['../classCTemplate.html#ad253dd167d43a0f6df38e78428ab2700',1,'CTemplate']]],
   ['setfilename',['SetFileName',['../classCFile.html#a431c39d9f36351f9d91360c520750886',1,'CFile']]],
   ['setfileposition',['SetFilePosition',['../classCTemplateLoopContext.html#acd4e48d8877c7d61896f9348bbaf2ca9',1,'CTemplateLoopContext']]],
