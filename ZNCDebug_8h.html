@@ -143,13 +143,13 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> { \</div>
-<div class="line">        if (<a class="code" href="classCDebug.html#a4d49b5a02ac1bd965ca05ed7192986b4">CDebug::Debug</a>()) { \</div>
-<div class="line">                CDebugStream sDebug;\</div>
-<div class="line">                sDebug &lt;&lt; f;\</div>
-<div class="line">        } \</div>
-<div class="line">} <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="classCDebug_html_a4d49b5a02ac1bd965ca05ed7192986b4"><div class="ttname"><a href="classCDebug.html#a4d49b5a02ac1bd965ca05ed7192986b4">CDebug::Debug</a></div><div class="ttdeci">static bool Debug()</div><div class="ttdef"><b>Definition:</b> ZNCDebug.h:47</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                         \</div>
+<div class="line">        if (<a class="code" href="classCDebug.html#a4d49b5a02ac1bd965ca05ed7192986b4">CDebug::Debug</a>()) {   \</div>
+<div class="line">            CDebugStream sDebug; \</div>
+<div class="line">            sDebug &lt;&lt; f;         \</div>
+<div class="line">        }                        \</div>
+<div class="line">    } <span class="keywordflow">while</span> (0)</div>
+<div class="ttc" id="classCDebug_html_a4d49b5a02ac1bd965ca05ed7192986b4"><div class="ttname"><a href="classCDebug.html#a4d49b5a02ac1bd965ca05ed7192986b4">CDebug::Debug</a></div><div class="ttdeci">static bool Debug()</div><div class="ttdef"><b>Definition:</b> ZNCDebug.h:48</div></div>
 </div><!-- fragment -->
 <p>Output a debug info if debugging is enabled. </p>
 <p>If ZNC was compiled with <code>&ndash;enable-debug</code> or was started with <code>&ndash;debug</code>, the given argument will be sent to stdout.</p>
@@ -167,7 +167,7 @@ Macros</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 17 2015 14:42:46 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 8 2015 20:19:27 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

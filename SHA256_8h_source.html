@@ -125,8 +125,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#ifndef ZNC_SHA2_H</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZNC_SHA2_H</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="SHA256_8h.html#a81efbc0fc101b06a914f7ff9e2fbc0e9">   37</a></span>&#160;<span class="preprocessor">#define SHA256_DIGEST_SIZE ( 256 / 8)</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="SHA256_8h.html#a9c1fe69ad43d4ca74b84303a0ed64f2f">   38</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define SHA256_BLOCK_SIZE  ( 512 / 8)</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="SHA256_8h.html#a81efbc0fc101b06a914f7ff9e2fbc0e9">   37</a></span>&#160;<span class="preprocessor">#define SHA256_DIGEST_SIZE (256 / 8)</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="SHA256_8h.html#a9c1fe69ad43d4ca74b84303a0ed64f2f">   38</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define SHA256_BLOCK_SIZE (512 / 8)</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &lt;znc/zncconfig.h&gt;</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
@@ -144,15 +144,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="structsha256__ctx.html#aa591a46656ced77add6737f3a79858a4">   53</a></span>&#160;    uint32_t h[8];</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;} <a class="code" href="structsha256__ctx.html">sha256_ctx</a>;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keywordtype">void</span> <a class="code" href="SHA256_8h.html#afe689aec5bba515b61783dfde677f1b7">sha256_init</a>(<a class="code" href="structsha256__ctx.html">sha256_ctx</a> * ctx);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keywordtype">void</span> <a class="code" href="SHA256_8h.html#a3eeca548f4793b93ba6514a3d47552c2">sha256_update</a>(<a class="code" href="structsha256__ctx.html">sha256_ctx</a> *ctx, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *message,</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                   <span class="keywordtype">size_t</span> len);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keywordtype">void</span> <a class="code" href="SHA256_8h.html#ab07b43a12a5196c1d0fd8edd4e8f1e6f">sha256_final</a>(<a class="code" href="structsha256__ctx.html">sha256_ctx</a> *ctx, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *digest);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keywordtype">void</span> <a class="code" href="SHA256_8h.html#af7c3a97ad7ad575bdc1c142599d62a56">sha256</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *message, <span class="keywordtype">size_t</span> len,</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *digest);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !ZNC_SHA2_H */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keywordtype">void</span> <a class="code" href="SHA256_8h.html#afe689aec5bba515b61783dfde677f1b7">sha256_init</a>(<a class="code" href="structsha256__ctx.html">sha256_ctx</a>* ctx);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keywordtype">void</span> <a class="code" href="SHA256_8h.html#a3eeca548f4793b93ba6514a3d47552c2">sha256_update</a>(<a class="code" href="structsha256__ctx.html">sha256_ctx</a>* ctx, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* message, <span class="keywordtype">size_t</span> len);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keywordtype">void</span> <a class="code" href="SHA256_8h.html#ab07b43a12a5196c1d0fd8edd4e8f1e6f">sha256_final</a>(<a class="code" href="structsha256__ctx.html">sha256_ctx</a>* ctx, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* digest);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keywordtype">void</span> <a class="code" href="SHA256_8h.html#af7c3a97ad7ad575bdc1c142599d62a56">sha256</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* message, <span class="keywordtype">size_t</span> len, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* digest);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !ZNC_SHA2_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="SHA256_8h_html_a3eeca548f4793b93ba6514a3d47552c2"><div class="ttname"><a href="SHA256_8h.html#a3eeca548f4793b93ba6514a3d47552c2">sha256_update</a></div><div class="ttdeci">void sha256_update(sha256_ctx *ctx, const unsigned char *message, size_t len)</div></div>
 <div class="ttc" id="SHA256_8h_html_af7c3a97ad7ad575bdc1c142599d62a56"><div class="ttname"><a href="SHA256_8h.html#af7c3a97ad7ad575bdc1c142599d62a56">sha256</a></div><div class="ttdeci">void sha256(const unsigned char *message, size_t len, unsigned char *digest)</div></div>
 <div class="ttc" id="SHA256_8h_html_ab07b43a12a5196c1d0fd8edd4e8f1e6f"><div class="ttname"><a href="SHA256_8h.html#ab07b43a12a5196c1d0fd8edd4e8f1e6f">sha256_final</a></div><div class="ttdeci">void sha256_final(sha256_ctx *ctx, unsigned char *digest)</div></div>
@@ -164,7 +161,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 17 2015 14:42:46 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 8 2015 20:19:27 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

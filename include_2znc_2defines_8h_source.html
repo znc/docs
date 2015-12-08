@@ -123,17 +123,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">// Redefine some Csocket debugging mechanisms to use ZNC&#39;s</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="include_2znc_2defines_8h.html#a310acab4b9485259268b9c729ffd2b39">   35</a></span>&#160;<span class="preprocessor">#define CS_DEBUG(f)  DEBUG(__FILE__ &lt;&lt; &quot;:&quot; &lt;&lt; __LINE__ &lt;&lt; &quot; &quot; &lt;&lt; f)</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="include_2znc_2defines_8h.html#ad94effca1b2e8da32cc64bb4a6717c61">   36</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PERROR(f)    DEBUG(__FILE__ &lt;&lt; &quot;:&quot; &lt;&lt; __LINE__ &lt;&lt; &quot; &quot; &lt;&lt; f &lt;&lt; &quot;: &quot; &lt;&lt; strerror(GetSockError()))</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif // !ZNC_DEFINES_H</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="include_2znc_2defines_8h.html#a310acab4b9485259268b9c729ffd2b39">   35</a></span>&#160;<span class="preprocessor">#define CS_DEBUG(f) DEBUG(__FILE__ &lt;&lt; &quot;:&quot; &lt;&lt; __LINE__ &lt;&lt; &quot; &quot; &lt;&lt; f)</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="include_2znc_2defines_8h.html#ad94effca1b2e8da32cc64bb4a6717c61">   36</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PERROR(f)                                         \</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">    DEBUG(__FILE__ &lt;&lt; &quot;:&quot; &lt;&lt; __LINE__ &lt;&lt; &quot; &quot; &lt;&lt; f &lt;&lt; &quot;: &quot; \</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">                   &lt;&lt; strerror(GetSockError()))</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif  // !ZNC_DEFINES_H</span></div>
 <div class="ttc" id="ZNCDebug_8h_html"><div class="ttname"><a href="ZNCDebug_8h.html">ZNCDebug.h</a></div></div>
 <div class="ttc" id="ZNCString_8h_html"><div class="ttname"><a href="ZNCString_8h.html">ZNCString.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 17 2015 14:42:45 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 8 2015 20:19:27 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
