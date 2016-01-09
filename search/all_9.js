@@ -43,6 +43,7 @@ var searchData=
   ['isenabled',['IsEnabled',['../classCSMonitorFD.html#a058e8019e86a2a727c393b92487cc7e0',1,'CSMonitorFD']]],
   ['isfifo',['IsFifo',['../classCFile.html#aece661363b7d3754c1e886f1c9734007',1,'CFile::IsFifo(const CString &amp;sLongName, bool bUseLstat=false)'],['../classCFile.html#af759d236c26901c194ceeb0784098f81',1,'CFile::IsFifo(bool bUseLstat=false) const ']]],
   ['isfloodprotected',['IsFloodProtected',['../classCIRCSock.html#ae0d12a73c946092ec659254eee6fda2a',1,'CIRCSock']]],
+  ['isforcingencoding',['IsForcingEncoding',['../classCZNC.html#a045e3b701bf65fa25cdfd68d7ca3d060',1,'CZNC']]],
   ['ishostallowed',['IsHostAllowed',['../classCUser.html#a59c776e3cfa9c38314a9cbf9b6e0938b',1,'CUser::IsHostAllowed()'],['../classCZNC.html#a4275ef73093f6e9d984c364313c5d5e9',1,'CZNC::IsHostAllowed()']]],
   ['isircaway',['IsIRCAway',['../classCIRCNetwork.html#ade37a1ef81981e593218669a336838cb',1,'CIRCNetwork']]],
   ['isircconnected',['IsIRCConnected',['../classCIRCNetwork.html#a224fd484b0cf83611ee8469eac0d234c',1,'CIRCNetwork']]],

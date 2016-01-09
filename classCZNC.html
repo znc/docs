@@ -327,6 +327,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:add044eb8beb38d220bb97749ef98d262"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a82e487aa67867ce34791466b329567"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a2a82e487aa67867ce34791466b329567">ResumeConnectQueue</a> ()</td></tr>
 <tr class="separator:a2a82e487aa67867ce34791466b329567"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3976bead6b9202861df01f4b0baa813a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a3976bead6b9202861df01f4b0baa813a">ForceEncoding</a> ()</td></tr>
+<tr class="separator:a3976bead6b9202861df01f4b0baa813a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9b44cfb82f6126718abac6af48d7937"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#ac9b44cfb82f6126718abac6af48d7937">UnforceEncoding</a> ()</td></tr>
+<tr class="separator:ac9b44cfb82f6126718abac6af48d7937"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a045e3b701bf65fa25cdfd68d7ca3d060"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a045e3b701bf65fa25cdfd68d7ca3d060">IsForcingEncoding</a> () const </td></tr>
+<tr class="separator:a045e3b701bf65fa25cdfd68d7ca3d060"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15c1c53ec5480f8a7ccf0f3563bd1043"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a15c1c53ec5480f8a7ccf0f3563bd1043">FixupEncoding</a> (const <a class="el" href="classCString.html">CString</a> &amp;sEncoding) const </td></tr>
+<tr class="separator:a15c1c53ec5480f8a7ccf0f3563bd1043"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30b4e72e9f09fb536c072a0dd5c6199e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a30b4e72e9f09fb536c072a0dd5c6199e">LeakConnectQueueTimer</a> (CConnectQueueTimer *pTimer)</td></tr>
 <tr class="separator:a30b4e72e9f09fb536c072a0dd5c6199e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -415,6 +423,8 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a426bb80fb8ff02435b69d91f7174411d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cdab8cadfd599304fad46542f9efa84"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a0cdab8cadfd599304fad46542f9efa84">m_uiConnectPaused</a></td></tr>
 <tr class="separator:a0cdab8cadfd599304fad46542f9efa84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05a41ba1385e8215e19425f072bb18d9"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a05a41ba1385e8215e19425f072bb18d9">m_uiForceEncoding</a></td></tr>
+<tr class="separator:a05a41ba1385e8215e19425f072bb18d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47ddfe2e31ac432261dbd9f9271eb3c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTCacheMap.html">TCacheMap</a>&lt; <a class="el" href="classCString.html">CString</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a47ddfe2e31ac432261dbd9f9271eb3c7">m_sConnectThrottle</a></td></tr>
 <tr class="separator:a47ddfe2e31ac432261dbd9f9271eb3c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0946e948111699c1d35b1caf66c73c0b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNC.html#a0946e948111699c1d35b1caf66c73c0b">m_bProtectWebSessions</a></td></tr>
@@ -1278,6 +1288,37 @@ Protected Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>sUsername</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a15c1c53ec5480f8a7ccf0f3563bd1043"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCString.html">CString</a> CZNC::FixupEncoding </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
+          <td class="paramname"><em>sEncoding</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3976bead6b9202861df01f4b0baa813a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CZNC::ForceEncoding </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -2248,6 +2289,21 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a045e3b701bf65fa25cdfd68d7ca3d060"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CZNC::IsForcingEncoding </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a4275ef73093f6e9d984c364313c5d5e9"></a>
 <div class="memitem">
 <div class="memproto">
@@ -2787,6 +2843,21 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>References <a class="el" href="classCZNC.html#a5442e43d135b1731061ab967ebfa12cf">m_TimeStarted</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac9b44cfb82f6126718abac6af48d7937"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CZNC::UnforceEncoding </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -3535,6 +3606,26 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a05a41ba1385e8215e19425f072bb18d9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int CZNC::m_uiForceEncoding</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a433c1098f7463f9665bdb4611dfc1b37"></a>
 <div class="memitem">
 <div class="memproto">
@@ -3651,7 +3742,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Dec 8 2015 20:19:28 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 9 2016 15:26:40 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
