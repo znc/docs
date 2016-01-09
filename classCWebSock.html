@@ -355,6 +355,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3673ac5321422d5f0589c9db9149f3d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a148e6216e3ef442d9ef604834d8c3c05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNCSock.html#a148e6216e3ef442d9ef604834d8c3c05">SetSSLTrustedPeerFingerprints</a> (const <a class="el" href="ZNCString_8h.html#a84b05218977775b974a8db49e81f02a4">SCString</a> &amp;ssFPs)</td></tr>
 <tr class="separator:a148e6216e3ef442d9ef604834d8c3c05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad45449663df4443887919b744b6560fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNCSock.html#ad45449663df4443887919b744b6560fc">SetEncoding</a> (const <a class="el" href="classCString.html">CString</a> &amp;)</td></tr>
+<tr class="separator:ad45449663df4443887919b744b6560fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35db4b2adfcad925c22a56e185223d92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a35db4b2adfcad925c22a56e185223d92">SetEncoding</a> (const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sEncoding)</td></tr>
+<tr class="separator:a35db4b2adfcad925c22a56e185223d92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ffefa30e1140bac8aec4e397b7d9895"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a0ffefa30e1140bac8aec4e397b7d9895">Dereference</a> ()</td></tr>
 <tr class="memdesc:a0ffefa30e1140bac8aec4e397b7d9895"><td class="mdescLeft">&#160;</td><td class="mdescRight">in the event you pass this class to <a class="el" href="classCsock.html#a6de0e591c1bc2a80bbfd7462f8ad14fa" title="use this to copy a sock from one to the other, override it if you have special needs in the event of ...">Copy()</a>, you MUST call this function or on the original <a class="el" href="classCsock.html" title="Basic socket class. ">Csock</a> other wise bad side effects will happen (double deletes, weird sock closures, etc) if you call this function and have not handled the internal pointers, other bad things can happend (memory leaks, fd leaks, etc) the whole point of this function is to allow this class to go away without shutting down  <a href="#a0ffefa30e1140bac8aec4e397b7d9895">More...</a><br/></td></tr>
 <tr class="separator:a0ffefa30e1140bac8aec4e397b7d9895"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -706,8 +710,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8661f34691c2e04ab1e861750650abff"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a8661f34691c2e04ab1e861750650abff">GetMaxConns</a> () const </td></tr>
 <tr class="memdesc:a8661f34691c2e04ab1e861750650abff"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the number of max pending connections when type is LISTENER  <a href="#a8661f34691c2e04ab1e861750650abff">More...</a><br/></td></tr>
 <tr class="separator:a8661f34691c2e04ab1e861750650abff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35db4b2adfcad925c22a56e185223d92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a35db4b2adfcad925c22a56e185223d92">SetEncoding</a> (const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sEncoding)</td></tr>
-<tr class="separator:a35db4b2adfcad925c22a56e185223d92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba7dd422944e544b68b67bb3109163a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#aba7dd422944e544b68b67bb3109163a4">GetEncoding</a> () const </td></tr>
+<tr class="separator:aba7dd422944e544b68b67bb3109163a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d4025fe0dd318eb29fc22b4a037b853"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a7d4025fe0dd318eb29fc22b4a037b853">IcuExtToUCallback</a> (UConverterToUnicodeArgs *toArgs, const char *codeUnits, int32_t length, UConverterCallbackReason reason, UErrorCode *err)</td></tr>
 <tr class="separator:a7d4025fe0dd318eb29fc22b4a037b853"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32e5d0c329fe5ebfc278989c294877fb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a32e5d0c329fe5ebfc278989c294877fb">IcuExtFromUCallback</a> (UConverterFromUnicodeArgs *fromArgs, const UChar *codeUnits, int32_t length, UChar32 codePoint, UConverterCallbackReason reason, UErrorCode *err)</td></tr>
@@ -3003,6 +3007,29 @@ Protected Attributes</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aba7dd422944e544b68b67bb3109163a4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> Csock::GetEncoding </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -6275,6 +6302,30 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ad45449663df4443887919b744b6560fc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CZNCSock::SetEncoding </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a35db4b2adfcad925c22a56e185223d92"></a>
 <div class="memitem">
 <div class="memproto">
@@ -8136,7 +8187,7 @@ X509_free( pCert );
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 6 2015 01:33:13 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 9 2016 18:12:45 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

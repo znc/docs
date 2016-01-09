@@ -83,7 +83,7 @@ var searchData=
   ['getdisabledsslprotocols',['GetDisabledSSLProtocols',['../classCZNC.html#a56d1656c4b9fb895762a284a4cf8ad00',1,'CZNC']]],
   ['getdll',['GetDLL',['../classCModule.html#a21df1a7f9b964dd941ba0c970a265a56',1,'CModule']]],
   ['getdocroot',['GetDocRoot',['../classCHTTPSock.html#acc8ffd41997a37f7a1fd124ef4ef986c',1,'CHTTPSock']]],
-  ['getencoding',['GetEncoding',['../classCIRCNetwork.html#a12f0060c4beec424f934390ccc5505e8',1,'CIRCNetwork']]],
+  ['getencoding',['GetEncoding',['../classCIRCNetwork.html#a12f0060c4beec424f934390ccc5505e8',1,'CIRCNetwork::GetEncoding()'],['../classCsock.html#aba7dd422944e544b68b67bb3109163a4',1,'Csock::GetEncoding()']]],
   ['getencodings',['GetEncodings',['../classCUtils.html#a0136ab5edc8330a2d01b45b69aa2a7aa',1,'CUtils']]],
   ['geterrno',['GetErrno',['../classCSocketManager.html#a6f9847ab23fa9444d960b3bf21819adf',1,'CSocketManager']]],
   ['getescapefrom',['GetEscapeFrom',['../classCTemplateOptions.html#a6c3ba780ffe960ef58188956c4749147',1,'CTemplateOptions']]],
