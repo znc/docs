@@ -276,7 +276,6 @@ var searchData=
   ['modechange',['ModeChange',['../classCChan.html#a9bb8b326dcadb07e99786cd75d3bebd2',1,'CChan']]],
   ['modhandle',['ModHandle',['../Modules_8h.html#a2f2b7746e7590ac0383278e975f13855',1,'Modules.h']]],
   ['modloader',['ModLoader',['../classCModInfo.html#a9f4ec517ae108076ee853b9221c45477',1,'CModInfo']]],
-  ['module_5fexport',['MODULE_EXPORT',['../Modules_8h.html#a49d85811d1043ff1f3d7df4be3d90138',1,'Modules.h']]],
   ['moduledefs',['MODULEDEFS',['../Modules_8h.html#a4c40fcb15b7d280cf45b5b0b4269951b',1,'Modules.h']]],
   ['modules_2eh',['Modules.h',['../Modules_8h.html',1,'']]],
   ['moduletypetostring',['ModuleTypeToString',['../classCModInfo.html#a791e3525a64244528c0b7ef2d800da06',1,'CModInfo']]],

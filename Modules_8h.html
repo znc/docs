@@ -147,8 +147,8 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a49d85811d1043ff1f3d7df4be3d90138"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Modules_8h.html#a49d85811d1043ff1f3d7df4be3d90138">MODULE_EXPORT</a></td></tr>
-<tr class="separator:a49d85811d1043ff1f3d7df4be3d90138"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11c735aa9c02d58a8af0d320a3d2d689"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Modules_8h.html#a11c735aa9c02d58a8af0d320a3d2d689">ZNC_EXPORT_LIB_EXPORT</a></td></tr>
+<tr class="separator:a11c735aa9c02d58a8af0d320a3d2d689"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59871c32e2941b0cde4f8bf205106e80"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Modules_8h.html#a59871c32e2941b0cde4f8bf205106e80">MODCOMMONDEFS</a>(CLASS, DESCRIPTION, TYPE)</td></tr>
 <tr class="separator:a59871c32e2941b0cde4f8bf205106e80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4cb82bfe0e2c41d222152aaec5300156"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Modules_8h.html#a4cb82bfe0e2c41d222152aaec5300156">MODCONSTRUCTOR</a>(CLASS)</td></tr>
@@ -241,23 +241,25 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {                                                        <a class="code" href="Modules_8h.html#a49d85811d1043ff1f3d7df4be3d90138">\</a></div>
-<div class="line"><a class="code" href="Modules_8h.html#a49d85811d1043ff1f3d7df4be3d90138">    MODULE_EXPORT</a> <span class="keywordtype">bool</span> ZNCModInfo(<span class="keywordtype">double</span> dCoreVersion, <a class="code" href="classCModInfo.html">CModInfo</a>&amp; Info); \</div>
-<div class="line">    bool ZNCModInfo(<span class="keywordtype">double</span> dCoreVersion, <a class="code" href="classCModInfo.html">CModInfo</a>&amp; Info) {              \</div>
-<div class="line">        if (dCoreVersion != <a class="code" href="version_8h.html#a1c6d5de492ac61ad29aec7aa9a436bbf">VERSION</a>) return false;                      \</div>
-<div class="line">        Info.SetDescription(DESCRIPTION);                               \</div>
-<div class="line">        Info.SetDefaultType(TYPE);                                      \</div>
-<div class="line">        Info.AddType(TYPE);                                             \</div>
-<div class="line">        Info.SetLoader(<a class="code" href="Modules_8h.html#a8b5d0454edfcc804812ba915d0102551">TModLoad</a>&lt;CLASS&gt;);                                \</div>
-<div class="line">        <a class="code" href="Modules_8h.html#a5d7c3884ce014df7cd13a5a90347ecf1">TModInfo</a>&lt;CLASS&gt;(Info);                                          \</div>
-<div class="line">        return true;                                                    \</div>
-<div class="line">    }                                                                   \</div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {                                               <a class="code" href="Modules_8h.html#a11c735aa9c02d58a8af0d320a3d2d689">\</a></div>
+<div class="line"><a class="code" href="Modules_8h.html#a11c735aa9c02d58a8af0d320a3d2d689">    ZNC_EXPORT_LIB_EXPORT</a> <span class="keywordtype">bool</span> ZNCModInfo(<span class="keywordtype">double</span> dCoreVersion, \</div>
+<div class="line">                                          <a class="code" href="classCModInfo.html">CModInfo</a>&amp; Info);     <a class="code" href="Modules_8h.html#a11c735aa9c02d58a8af0d320a3d2d689">\</a></div>
+<div class="line"><a class="code" href="Modules_8h.html#a11c735aa9c02d58a8af0d320a3d2d689">    ZNC_EXPORT_LIB_EXPORT</a> <span class="keywordtype">bool</span> ZNCModInfo(<span class="keywordtype">double</span> dCoreVersion, \</div>
+<div class="line">                                          <a class="code" href="classCModInfo.html">CModInfo</a>&amp; Info) {    \</div>
+<div class="line">        if (dCoreVersion != <a class="code" href="version_8h.html#a1c6d5de492ac61ad29aec7aa9a436bbf">VERSION</a>) return false;             \</div>
+<div class="line">        Info.SetDescription(DESCRIPTION);                      \</div>
+<div class="line">        Info.SetDefaultType(TYPE);                             \</div>
+<div class="line">        Info.AddType(TYPE);                                    \</div>
+<div class="line">        Info.SetLoader(<a class="code" href="Modules_8h.html#a8b5d0454edfcc804812ba915d0102551">TModLoad</a>&lt;CLASS&gt;);                       \</div>
+<div class="line">        <a class="code" href="Modules_8h.html#a5d7c3884ce014df7cd13a5a90347ecf1">TModInfo</a>&lt;CLASS&gt;(Info);                                 \</div>
+<div class="line">        return true;                                           \</div>
+<div class="line">    }                                                          \</div>
 <div class="line">    }</div>
-<div class="ttc" id="version_8h_html_a1c6d5de492ac61ad29aec7aa9a436bbf"><div class="ttname"><a href="version_8h.html#a1c6d5de492ac61ad29aec7aa9a436bbf">VERSION</a></div><div class="ttdeci">#define VERSION</div><div class="ttdef"><b>Definition:</b> version.h:11</div></div>
-<div class="ttc" id="classCModInfo_html"><div class="ttname"><a href="classCModInfo.html">CModInfo</a></div><div class="ttdef"><b>Definition:</b> Modules.h:206</div></div>
-<div class="ttc" id="Modules_8h_html_a8b5d0454edfcc804812ba915d0102551"><div class="ttname"><a href="Modules_8h.html#a8b5d0454edfcc804812ba915d0102551">TModLoad</a></div><div class="ttdeci">CModule * TModLoad(ModHandle p, CUser *pUser, CIRCNetwork *pNetwork, const CString &amp;sModName, const CString &amp;sModPath, CModInfo::EModuleType eType)</div><div class="ttdef"><b>Definition:</b> Modules.h:289</div></div>
-<div class="ttc" id="Modules_8h_html_a5d7c3884ce014df7cd13a5a90347ecf1"><div class="ttname"><a href="Modules_8h.html#a5d7c3884ce014df7cd13a5a90347ecf1">TModInfo</a></div><div class="ttdeci">void TModInfo(CModInfo &amp;Info)</div><div class="ttdef"><b>Definition:</b> Modules.h:286</div></div>
-<div class="ttc" id="Modules_8h_html_a49d85811d1043ff1f3d7df4be3d90138"><div class="ttname"><a href="Modules_8h.html#a49d85811d1043ff1f3d7df4be3d90138">MODULE_EXPORT</a></div><div class="ttdeci">#define MODULE_EXPORT</div><div class="ttdef"><b>Definition:</b> Modules.h:56</div></div>
+<div class="ttc" id="version_8h_html_a1c6d5de492ac61ad29aec7aa9a436bbf"><div class="ttname"><a href="version_8h.html#a1c6d5de492ac61ad29aec7aa9a436bbf">VERSION</a></div><div class="ttdeci">#define VERSION</div><div class="ttdef"><b>Definition:</b> version.h:14</div></div>
+<div class="ttc" id="classCModInfo_html"><div class="ttname"><a href="classCModInfo.html">CModInfo</a></div><div class="ttdef"><b>Definition:</b> Modules.h:210</div></div>
+<div class="ttc" id="Modules_8h_html_a8b5d0454edfcc804812ba915d0102551"><div class="ttname"><a href="Modules_8h.html#a8b5d0454edfcc804812ba915d0102551">TModLoad</a></div><div class="ttdeci">CModule * TModLoad(ModHandle p, CUser *pUser, CIRCNetwork *pNetwork, const CString &amp;sModName, const CString &amp;sModPath, CModInfo::EModuleType eType)</div><div class="ttdef"><b>Definition:</b> Modules.h:293</div></div>
+<div class="ttc" id="Modules_8h_html_a5d7c3884ce014df7cd13a5a90347ecf1"><div class="ttname"><a href="Modules_8h.html#a5d7c3884ce014df7cd13a5a90347ecf1">TModInfo</a></div><div class="ttdeci">void TModInfo(CModInfo &amp;Info)</div><div class="ttdef"><b>Definition:</b> Modules.h:290</div></div>
+<div class="ttc" id="Modules_8h_html_a11c735aa9c02d58a8af0d320a3d2d689"><div class="ttname"><a href="Modules_8h.html#a11c735aa9c02d58a8af0d320a3d2d689">ZNC_EXPORT_LIB_EXPORT</a></div><div class="ttdeci">#define ZNC_EXPORT_LIB_EXPORT</div><div class="ttdef"><b>Definition:</b> Modules.h:58</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -279,11 +281,11 @@ Functions</h2></td></tr>
 <div class="line">          <a class="code" href="classCModInfo.html#a616fabebbbf49bf06cfff90b8f32c57f">CModInfo::EModuleType</a> eType)                         \</div>
 <div class="line">        : <a class="code" href="classCModule.html">CModule</a>(pDLL, pUser, pNetwork, sModName, sModPath, eType)</div>
 <div class="ttc" id="classCUser_html"><div class="ttname"><a href="classCUser.html">CUser</a></div><div class="ttdef"><b>Definition:</b> User.h:37</div></div>
-<div class="ttc" id="classCModInfo_html_a616fabebbbf49bf06cfff90b8f32c57f"><div class="ttname"><a href="classCModInfo.html#a616fabebbbf49bf06cfff90b8f32c57f">CModInfo::EModuleType</a></div><div class="ttdeci">EModuleType</div><div class="ttdef"><b>Definition:</b> Modules.h:208</div></div>
-<div class="ttc" id="Modules_8h_html_a2f2b7746e7590ac0383278e975f13855"><div class="ttname"><a href="Modules_8h.html#a2f2b7746e7590ac0383278e975f13855">ModHandle</a></div><div class="ttdeci">void * ModHandle</div><div class="ttdef"><b>Definition:</b> Modules.h:204</div></div>
+<div class="ttc" id="classCModInfo_html_a616fabebbbf49bf06cfff90b8f32c57f"><div class="ttname"><a href="classCModInfo.html#a616fabebbbf49bf06cfff90b8f32c57f">CModInfo::EModuleType</a></div><div class="ttdeci">EModuleType</div><div class="ttdef"><b>Definition:</b> Modules.h:212</div></div>
+<div class="ttc" id="Modules_8h_html_a2f2b7746e7590ac0383278e975f13855"><div class="ttname"><a href="Modules_8h.html#a2f2b7746e7590ac0383278e975f13855">ModHandle</a></div><div class="ttdeci">void * ModHandle</div><div class="ttdef"><b>Definition:</b> Modules.h:208</div></div>
 <div class="ttc" id="classCIRCNetwork_html"><div class="ttname"><a href="classCIRCNetwork.html">CIRCNetwork</a></div><div class="ttdef"><b>Definition:</b> IRCNetwork.h:40</div></div>
 <div class="ttc" id="classCString_html"><div class="ttname"><a href="classCString.html">CString</a></div><div class="ttdoc">String class that is used inside ZNC. </div><div class="ttdef"><b>Definition:</b> ZNCString.h:68</div></div>
-<div class="ttc" id="classCModule_html"><div class="ttname"><a href="classCModule.html">CModule</a></div><div class="ttdoc">The base class for your own ZNC modules. </div><div class="ttdef"><b>Definition:</b> Modules.h:364</div></div>
+<div class="ttc" id="classCModule_html"><div class="ttname"><a href="classCModule.html">CModule</a></div><div class="ttdoc">The base class for your own ZNC modules. </div><div class="ttdef"><b>Definition:</b> Modules.h:368</div></div>
 </div><!-- fragment -->
 <p>Instead of writing a constructor, you should call this macro. </p>
 <p>It accepts all the necessary arguments and passes them on to <a class="el" href="classCModule.html" title="The base class for your own ZNC modules. ">CModule</a>'s constructor. You should assume that there are no arguments to the constructor.</p>
@@ -299,18 +301,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a class="anchor" id="a49d85811d1043ff1f3d7df4be3d90138"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MODULE_EXPORT</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -403,6 +393,18 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>This works exactly like MODULEDEFS, but for user modules. </p>
+
+</div>
+</div>
+<a class="anchor" id="a11c735aa9c02d58a8af0d320a3d2d689"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZNC_EXPORT_LIB_EXPORT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -505,7 +507,7 @@ template&lt;class M &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Dec 8 2015 20:19:27 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 16 2016 10:14:51 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
