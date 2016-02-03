@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['p',['p',['../classCModule.html#a18ab5f412efdeec4511bfa196387ef26',1,'CModule::p()'],['../classCSocket.html#a0fa9a2f7877cd11fb0bd08c48c316da5',1,'CSocket::p()'],['../classCCoreTranslationMixin.html#a35e9fa493cda28bccbe5b031503d7f69',1,'CCoreTranslationMixin::p()']]],
   ['parse',['Parse',['../classCConfig.html#a8cc17d8df64108b78bda1f119995f030',1,'CConfig::Parse()'],['../classCMessage.html#a4801f27dfe9eae5cc8b49558c53d2f3d',1,'CMessage::Parse()'],['../classCNick.html#a6fdefe91c9b229179361ae1eb1283b0e',1,'CNick::Parse()'],['../classCTemplateOptions.html#a89370598255f8507f004e998d97d628d',1,'CTemplateOptions::Parse()']]],
   ['parseconfig',['ParseConfig',['../classCIRCNetwork.html#aa33dd310b9d1d43c5a2d8dbd360f0637',1,'CIRCNetwork::ParseConfig()'],['../classCUser.html#ae17386027db366333a5d1914dbef2622',1,'CUser::ParseConfig()'],['../classCZNC.html#a5174297977297b45764d8a823786c793',1,'CZNC::ParseConfig()']]],
   ['parseparams',['ParseParams',['../classCHTTPSock.html#aeb21c37436df262b70ff1d1a66839dd1',1,'CHTTPSock']]],
@@ -9,7 +10,9 @@ var searchData=
   ['pausecap',['PauseCap',['../classCIRCSock.html#a7e70763948d2c945f84201d40d8086c0',1,'CIRCSock']]],
   ['pauseconnectqueue',['PauseConnectQueue',['../classCZNC.html#add044eb8beb38d220bb97749ef98d262',1,'CZNC']]],
   ['pauseread',['PauseRead',['../classCsock.html#a41d8b0fb0cc4884bdc90d5010cc7ab3b',1,'Csock']]],
+  ['plural',['Plural',['../classCTranslation.html#ae3f872747c909a3d3131c082f7a29ce3',1,'CTranslation']]],
   ['popen2',['popen2',['../classCExecSock.html#a3a3cdba9a08e1ae3040c3f4b432035cb',1,'CExecSock']]],
+  ['poplanguage',['PopLanguage',['../classCTranslation.html#a4fcb4ffbf47333823d5f5f2b19d25e58',1,'CTranslation']]],
   ['prependpath',['PrependPath',['../classCTemplate.html#aa039852b3dc77e86e767ffaa783720bd',1,'CTemplate']]],
   ['print',['Print',['../classCTemplate.html#a61403ee10909ce74b52fefa88cc4e639',1,'CTemplate::Print(std::ostream &amp;oOut)'],['../classCTemplate.html#a91da9da4317b70cb71e8c5d318bae006',1,'CTemplate::Print(const CString &amp;sFileName, std::ostream &amp;oOut)']]],
   ['printaction',['PrintAction',['../classCUtils.html#ad5128efe3eff62abc007a544e36658cb',1,'CUtils']]],
@@ -27,6 +30,7 @@ var searchData=
   ['printtemplate',['PrintTemplate',['../classCWebSock.html#a3465a27f2a3d460ce9aaa8346bd51b48',1,'CWebSock']]],
   ['process',['Process',['../classCGetAddrInfo.html#a315c0fc484347988f22fd4ed42499db6',1,'CGetAddrInfo']]],
   ['pushbuff',['PushBuff',['../classCsock.html#af5503bfd5516bd1bb281d2616d9321b0',1,'Csock']]],
+  ['pushlanguage',['PushLanguage',['../classCTranslation.html#a21fb3d7ac5f37acd34794174614ad260',1,'CTranslation']]],
   ['putalluser',['PutAllUser',['../classCUser.html#aac9d005a1fbbc0f922567fb82347ef36',1,'CUser']]],
   ['putclient',['PutClient',['../classCClient.html#a2a58ecbf1d322248522d4dd7d99cf476',1,'CClient::PutClient(const CString &amp;sLine)'],['../classCClient.html#af295aefca5642178d7886b2d8e47c3ad',1,'CClient::PutClient(const CMessage &amp;Message)']]],
   ['putirc',['PutIRC',['../classCClient.html#a2d67f4f447e6b0fa29179a43edd49954',1,'CClient::PutIRC()'],['../classCIRCNetwork.html#ab4f833676f163957e60b7f7e4290d093',1,'CIRCNetwork::PutIRC()'],['../classCIRCSock.html#afba5876713b8cad27a6a2603041f62b7',1,'CIRCSock::PutIRC()'],['../classCModule.html#af8c3ecd92352e21e203de4ff1a804f32',1,'CModule::PutIRC()']]],

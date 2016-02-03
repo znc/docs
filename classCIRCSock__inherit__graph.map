@@ -1,6 +1,7 @@
 <map id="CIRCSock" name="CIRCSock">
-<area shape="rect" id="node2" href="$classCIRCSocket.html" title="Base IRC socket for client&lt;&#45;&gt;ZNC, and ZNC&lt;&#45;&gt;server. " alt="" coords="18,229,112,256"/>
-<area shape="rect" id="node3" href="$classCZNCSock.html" title="CZNCSock" alt="" coords="20,155,111,181"/>
+<area shape="rect" id="node2" href="$classCIRCSocket.html" title="Base IRC socket for client&lt;&#45;&gt;ZNC, and ZNC&lt;&#45;&gt;server. " alt="" coords="85,229,179,256"/>
+<area shape="rect" id="node3" href="$classCZNCSock.html" title="CZNCSock" alt="" coords="87,155,177,181"/>
 <area shape="rect" id="node4" href="$classCsock.html" title="Basic socket class. " alt="" coords="35,80,95,107"/>
 <area shape="rect" id="node5" href="$classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock " alt="" coords="5,5,125,32"/>
+<area shape="rect" id="node6" href="$classCCoreTranslationMixin.html" title="CCoreTranslationMixin" alt="" coords="119,80,280,107"/>
 </map>

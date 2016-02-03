@@ -4,6 +4,7 @@ var searchData=
   ['networkmodule',['NetworkModule',['../classCModInfo.html#a616fabebbbf49bf06cfff90b8f32c57fa06d28b56fbc77d9595270f01e0838c76',1,'CModInfo']]],
   ['networkmodulecall',['NETWORKMODULECALL',['../main_8h.html#a30ead2b69471df3ce714ea98006c795d',1,'main.h']]],
   ['networkmoduledefs',['NETWORKMODULEDEFS',['../Modules_8h.html#a037f51f2570d3f8099a9b1adb20a9ea9',1,'Modules.h']]],
+  ['newreference',['NewReference',['../classCTranslation.html#a0d8a6e58835f6bd124803750afdf3681',1,'CTranslation']]],
   ['nick',['Nick',['../classCMessage.html#a0c73f73428ca8fd0c3f10a497d2fcb11afd144f65f19df1c7adaa116c44ce2617',1,'CMessage']]],
   ['nick_2eh',['Nick.h',['../Nick_8h.html',1,'']]],
   ['nickequals',['NickEquals',['../classCNick.html#af8d11940b96b5bcaa376c26a61c75a69',1,'CNick']]],

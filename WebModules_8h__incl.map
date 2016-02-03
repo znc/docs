@@ -1,9 +1,10 @@
 <map id="WebModules.h" name="WebModules.h">
-<area shape="rect" id="node3" href="$Template_8h.html" title="znc/Template.h" alt="" coords="154,229,272,256"/>
-<area shape="rect" id="node15" href="$HTTPSock_8h.html" title="znc/HTTPSock.h" alt="" coords="344,80,467,107"/>
-<area shape="rect" id="node19" href="$Utils_8h.html" title="znc/Utils.h" alt="" coords="1275,304,1363,331"/>
-<area shape="rect" id="node4" href="$ZNCString_8h.html" title="znc/ZNCString.h" alt="" coords="1431,379,1557,405"/>
-<area shape="rect" id="node16" href="$Socket_8h.html" title="znc/Socket.h" alt="" coords="399,155,503,181"/>
-<area shape="rect" id="node36" href="$FileUtils_8h.html" title="znc/FileUtils.h" alt="" coords="1793,304,1900,331"/>
-<area shape="rect" id="node18" href="$Threads_8h.html" title="znc/Threads.h" alt="" coords="719,229,829,256"/>
+<area shape="rect" id="node3" href="$Template_8h.html" title="znc/Template.h" alt="" coords="226,229,344,256"/>
+<area shape="rect" id="node15" href="$HTTPSock_8h.html" title="znc/HTTPSock.h" alt="" coords="1048,80,1171,107"/>
+<area shape="rect" id="node19" href="$Utils_8h.html" title="znc/Utils.h" alt="" coords="1475,304,1563,331"/>
+<area shape="rect" id="node4" href="$ZNCString_8h.html" title="znc/ZNCString.h" alt="" coords="841,379,967,405"/>
+<area shape="rect" id="node16" href="$Socket_8h.html" title="znc/Socket.h" alt="" coords="777,155,881,181"/>
+<area shape="rect" id="node38" href="$FileUtils_8h.html" title="znc/FileUtils.h" alt="" coords="2095,304,2203,331"/>
+<area shape="rect" id="node18" href="$Threads_8h.html" title="znc/Threads.h" alt="" coords="774,229,884,256"/>
+<area shape="rect" id="node36" href="$Translation_8h.html" title="znc/Translation.h" alt="" coords="1223,229,1351,256"/>
 </map>

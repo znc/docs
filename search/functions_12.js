@@ -42,6 +42,7 @@ var searchData=
   ['resetreallistener',['ResetRealListener',['../classCListener.html#a9e5a700a7c6e4e4050b7c5f888e6f024',1,'CListener']]],
   ['resetstarttime',['ResetStartTime',['../classCsock.html#a605cf090085d0d6df23531ec4b99360b',1,'Csock']]],
   ['resettimer',['ResetTimer',['../classCsock.html#a51258305f0f1e2c84d76a0fd8a258b35',1,'Csock']]],
+  ['resolve',['Resolve',['../classCDelayedTranslation.html#aa8062d580f6ca44fb4db31e8e81d70e9',1,'CDelayedTranslation']]],
   ['resolveliteral',['ResolveLiteral',['../classCTemplate.html#aa65f4e7a28eb4c2ff746af2e774be2e3',1,'CTemplate']]],
   ['resumecap',['ResumeCap',['../classCIRCSock.html#ab343be563217d7274f4de5e8b71ef83a',1,'CIRCSock']]],
   ['resumeconnectqueue',['ResumeConnectQueue',['../classCZNC.html#a2a82e487aa67867ce34791466b329567',1,'CZNC']]],

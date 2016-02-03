@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['p',['p',['../classCModule.html#a18ab5f412efdeec4511bfa196387ef26',1,'CModule::p()'],['../classCSocket.html#a0fa9a2f7877cd11fb0bd08c48c316da5',1,'CSocket::p()'],['../classCCoreTranslationMixin.html#a35e9fa493cda28bccbe5b031503d7f69',1,'CCoreTranslationMixin::p()']]],
   ['page_5fdeferred',['PAGE_DEFERRED',['../classCWebSock.html#a8b46819ec286f193efb0f8efcc8ace5aaed7577fdfcd06ddb9682e78fb3eded33',1,'CWebSock']]],
   ['page_5fdone',['PAGE_DONE',['../classCWebSock.html#a8b46819ec286f193efb0f8efcc8ace5aa72df4856d64b0036fb188d8adcf00ffa',1,'CWebSock']]],
   ['page_5fnotfound',['PAGE_NOTFOUND',['../classCWebSock.html#a8b46819ec286f193efb0f8efcc8ace5aa49375e06d5518e3afa2330b7560444b2',1,'CWebSock']]],
@@ -18,8 +19,10 @@ var searchData=
   ['ping',['Ping',['../classCMessage.html#a0c73f73428ca8fd0c3f10a497d2fcb11ab85815d04cec053ce6deb8021f2df1b8',1,'CMessage']]],
   ['ping_5ffrequency',['PING_FREQUENCY',['../classCIRCNetwork.html#ad69c1740c87d99581a5f9761a9d69b0aa3f207f8f9ab984372258f4363011138e',1,'CIRCNetwork']]],
   ['ping_5fslack',['PING_SLACK',['../classCIRCNetwork.html#ad69c1740c87d99581a5f9761a9d69b0aae044431ba9a775c6489d2383df14f4d3',1,'CIRCNetwork']]],
+  ['plural',['Plural',['../classCTranslation.html#ae3f872747c909a3d3131c082f7a29ce3',1,'CTranslation']]],
   ['pong',['Pong',['../classCMessage.html#a0c73f73428ca8fd0c3f10a497d2fcb11a4d94412495a32342e1b8c78f7960f2bc',1,'CMessage']]],
   ['popen2',['popen2',['../classCExecSock.html#a3a3cdba9a08e1ae3040c3f4b432035cb',1,'CExecSock']]],
+  ['poplanguage',['PopLanguage',['../classCTranslation.html#a4fcb4ffbf47333823d5f5f2b19d25e58',1,'CTranslation']]],
   ['prependpath',['PrependPath',['../classCTemplate.html#aa039852b3dc77e86e767ffaa783720bd',1,'CTemplate']]],
   ['print',['Print',['../classCTemplate.html#a61403ee10909ce74b52fefa88cc4e639',1,'CTemplate::Print(std::ostream &amp;oOut)'],['../classCTemplate.html#a91da9da4317b70cb71e8c5d318bae006',1,'CTemplate::Print(const CString &amp;sFileName, std::ostream &amp;oOut)']]],
   ['printaction',['PrintAction',['../classCUtils.html#ad5128efe3eff62abc007a544e36658cb',1,'CUtils']]],
@@ -37,6 +40,7 @@ var searchData=
   ['printtemplate',['PrintTemplate',['../classCWebSock.html#a3465a27f2a3d460ce9aaa8346bd51b48',1,'CWebSock']]],
   ['process',['Process',['../classCGetAddrInfo.html#a315c0fc484347988f22fd4ed42499db6',1,'CGetAddrInfo']]],
   ['pushbuff',['PushBuff',['../classCsock.html#af5503bfd5516bd1bb281d2616d9321b0',1,'Csock']]],
+  ['pushlanguage',['PushLanguage',['../classCTranslation.html#a21fb3d7ac5f37acd34794174614ad260',1,'CTranslation']]],
   ['putalluser',['PutAllUser',['../classCUser.html#aac9d005a1fbbc0f922567fb82347ef36',1,'CUser']]],
   ['putclient',['PutClient',['../classCClient.html#a2a58ecbf1d322248522d4dd7d99cf476',1,'CClient::PutClient(const CString &amp;sLine)'],['../classCClient.html#af295aefca5642178d7886b2d8e47c3ad',1,'CClient::PutClient(const CMessage &amp;Message)']]],
   ['putirc',['PutIRC',['../classCClient.html#a2d67f4f447e6b0fa29179a43edd49954',1,'CClient::PutIRC()'],['../classCIRCNetwork.html#ab4f833676f163957e60b7f7e4290d093',1,'CIRCNetwork::PutIRC()'],['../classCIRCSock.html#afba5876713b8cad27a6a2603041f62b7',1,'CIRCSock::PutIRC()'],['../classCModule.html#af8c3ecd92352e21e203de4ff1a804f32',1,'CModule::PutIRC()']]],

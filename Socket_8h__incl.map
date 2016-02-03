@@ -1,5 +1,6 @@
 <map id="Socket.h" name="Socket.h">
-<area shape="rect" id="node4" href="$Threads_8h.html" title="znc/Threads.h" alt="" coords="810,80,920,107"/>
-<area shape="rect" id="node5" href="$Utils_8h.html" title="znc/Utils.h" alt="" coords="543,155,631,181"/>
-<area shape="rect" id="node6" href="$ZNCString_8h.html" title="znc/ZNCString.h" alt="" coords="255,229,381,256"/>
+<area shape="rect" id="node4" href="$Threads_8h.html" title="znc/Threads.h" alt="" coords="397,80,507,107"/>
+<area shape="rect" id="node31" href="$Translation_8h.html" title="znc/Translation.h" alt="" coords="1666,80,1794,107"/>
+<area shape="rect" id="node5" href="$Utils_8h.html" title="znc/Utils.h" alt="" coords="1283,155,1371,181"/>
+<area shape="rect" id="node6" href="$ZNCString_8h.html" title="znc/ZNCString.h" alt="" coords="2032,229,2158,256"/>
 </map>

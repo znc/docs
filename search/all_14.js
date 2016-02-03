@@ -1,6 +1,7 @@
 var searchData=
 [
   ['defines_2eh',['defines.h',['../third__party_2Csocket_2examples_2defines_8h.html',1,'']]],
+  ['t',['t',['../classCModInfo.html#aa8b65e62e7832e24a72328c4de18bbc2',1,'CModInfo::t()'],['../classCModule.html#ae95c80e95e9b0ddc6a21b73c25188b09',1,'CModule::t()'],['../classCSocket.html#a9a6b25ed5684b27e3e9909005a0f73d6',1,'CSocket::t()'],['../classCCoreTranslationMixin.html#aee76487b8f3a85a32ab12dad11e4e42c',1,'CCoreTranslationMixin::t()']]],
   ['tcachemap',['TCacheMap',['../classTCacheMap.html',1,'TCacheMap&lt; K, V &gt;'],['../classTCacheMap.html#aec86844fc2c73f3b78c77247ed9bc8a7',1,'TCacheMap::TCacheMap()']]],
   ['tcachemap_3c_20cstring_20_3e',['TCacheMap&lt; CString &gt;',['../classTCacheMap.html',1,'']]],
   ['tcachemap_3c_20cstring_2c_20std_3a_3ashared_5fptr_3c_20cwebsession_20_3e_20_3e',['TCacheMap&lt; CString, std::shared_ptr&lt; CWebSession &gt; &gt;',['../classTCacheMap.html',1,'']]],
@@ -46,6 +47,7 @@ var searchData=
   ['toushort',['ToUShort',['../classCString.html#a665c09d5e41805751b524e3ee4cd0ac8',1,'CString']]],
   ['trafficstatsmap',['TrafficStatsMap',['../classCZNC.html#a61a17d25718d53b4afc4200511cbe093',1,'CZNC']]],
   ['trafficstatspair',['TrafficStatsPair',['../classCZNC.html#a87b420043293a1efb3dbe31d84f15657',1,'CZNC']]],
+  ['translation_2eh',['Translation.h',['../Translation_8h.html',1,'']]],
   ['trim',['Trim',['../classCString.html#ac76f53229663fef6fea4ecf8a1c41a1e',1,'CString']]],
   ['trim_5fn',['Trim_n',['../classCString.html#a426f5c86b08f72ef7a238807e96d6f05',1,'CString']]],
   ['trimleft',['TrimLeft',['../classCString.html#acc5c8a9294ed3cd12e1a8858011c1c9b',1,'CString']]],

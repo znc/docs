@@ -1,7 +1,8 @@
 <map id="CIRCSocket" name="CIRCSocket">
-<area shape="rect" id="node2" href="$classCZNCSock.html" title="CZNCSock" alt="" coords="167,448,257,475"/>
-<area shape="rect" id="node3" href="$classCsock.html" title="Basic socket class. " alt="" coords="182,371,241,397"/>
-<area shape="rect" id="node4" href="$classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock " alt="" coords="151,293,272,320"/>
+<area shape="rect" id="node2" href="$classCZNCSock.html" title="CZNCSock" alt="" coords="227,448,317,475"/>
+<area shape="rect" id="node3" href="$classCsock.html" title="Basic socket class. " alt="" coords="142,371,201,397"/>
+<area shape="rect" id="node4" href="$classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock " alt="" coords="111,293,232,320"/>
 <area shape="rect" id="node6" href="$classCCron.html" title="this is the main cron job class " alt="" coords="60,112,121,139"/>
 <area shape="rect" id="node8" href="$classCSMonitorFD.html" title="Class to tie sockets to for monitoring by Csocket at either the Csock or TSockManager. " alt="" coords="255,112,360,139"/>
+<area shape="rect" id="node10" href="$classCCoreTranslationMixin.html" title="CCoreTranslationMixin" alt="" coords="226,371,387,397"/>
 </map>
