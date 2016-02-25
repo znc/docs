@@ -271,7 +271,7 @@ var searchData=
   ['gettimestampprepend',['GetTimestampPrepend',['../classCUser.html#a8e669b41461468b7d8f0ed4f99de5e44',1,'CUser']]],
   ['gettimezone',['GetTimezone',['../classCUser.html#a61db12624a9110c492ab9f38fbc93e3b',1,'CUser']]],
   ['gettimezones',['GetTimezones',['../classCUtils.html#a7de4cb9ea789938dea83b66ade28bd96',1,'CUtils']]],
-  ['gettitle',['GetTitle',['../classCWebSubPage.html#a9c947b6141290b7ca8f9268f47bba003',1,'CWebSubPage']]],
+  ['gettitle',['GetTitle',['../classCWebSubPage.html#a2408b2d6f749ab5cc875910b9ec2fa97',1,'CWebSubPage']]],
   ['gettopic',['GetTopic',['../classCChan.html#acf02876f87134514ed1a36e64117eaff',1,'CChan::GetTopic()'],['../classCTopicMessage.html#accb676395693f29b8f3c110e811f8af3',1,'CTopicMessage::GetTopic()']]],
   ['gettopicdate',['GetTopicDate',['../classCChan.html#a106613dc4479a57dc00ded5c151ff77c',1,'CChan']]],
   ['gettopicowner',['GetTopicOwner',['../classCChan.html#acfb133d1f2703844378814cf443c67f3',1,'CChan']]],

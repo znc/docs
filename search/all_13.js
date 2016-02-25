@@ -161,7 +161,7 @@ var searchData=
   ['settimestampformat',['SetTimestampFormat',['../classCUser.html#a36bc55672a697449c0f10f62a89006eb',1,'CUser']]],
   ['settimestampprepend',['SetTimestampPrepend',['../classCUser.html#af99530b1f29f7758cd38e1232f12d4b5',1,'CUser']]],
   ['settimezone',['SetTimezone',['../classCUser.html#a87dec54a0d58ae8d2b6357ddf137e1e5',1,'CUser']]],
-  ['settitle',['SetTitle',['../classCWebSubPage.html#a5ed63b63fc6d60dbee7810bce9d67363',1,'CWebSubPage']]],
+  ['settitle',['SetTitle',['../classCWebSubPage.html#a5ed63b63fc6d60dbee7810bce9d67363',1,'CWebSubPage::SetTitle(const CString &amp;s)'],['../classCWebSubPage.html#a33c4ae1219f9d3a8f9accbbe3460feee',1,'CWebSubPage::SetTitle(const CDelayedTranslation &amp;d)']]],
   ['settopic',['SetTopic',['../classCChan.html#a004d950fdfce824aceed959dc6c20a60',1,'CChan::SetTopic()'],['../classCTopicMessage.html#a2316efb3fcedb9cd98fc926c0a0353ab',1,'CTopicMessage::SetTopic()']]],
   ['settopicdate',['SetTopicDate',['../classCChan.html#a1af8f91f8e50c648b81673218372d0f4',1,'CChan']]],
   ['settopicowner',['SetTopicOwner',['../classCChan.html#ac4158d513027d265c20a8b5124c1aa2b',1,'CChan']]],
