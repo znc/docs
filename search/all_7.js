@@ -48,6 +48,7 @@ var searchData=
   ['getcompileoptionsstring',['GetCompileOptionsString',['../classCZNC.html#a449f570b54ef2db316afd90675564c7a',1,'CZNC']]],
   ['getconfigfile',['GetConfigFile',['../classCZNC.html#a70e1559e2954c70192bcb3c763aafdff',1,'CZNC']]],
   ['getconfigstate',['GetConfigState',['../classCZNC.html#a3aa2163e50505b22f7dd5fce11bf48b2',1,'CZNC']]],
+  ['getconfigwritedelay',['GetConfigWriteDelay',['../classCZNC.html#a4b6b847d4725ecfdd5170fe0822c2bb2',1,'CZNC']]],
   ['getconfpath',['GetConfPath',['../classCZNC.html#a4248caeb79be397f95c37996da805d2b',1,'CZNC']]],
   ['getconnectdelay',['GetConnectDelay',['../classCZNC.html#a0f5077bfeebc05494c58cc199db3ff47',1,'CZNC']]],
   ['getconnectionqueue',['GetConnectionQueue',['../classCZNC.html#a8563f1feacb931f1572ea37675e39805',1,'CZNC']]],

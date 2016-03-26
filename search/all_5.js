@@ -8,6 +8,7 @@ var searchData=
   ['echecktype',['ECheckType',['../classCSocketManager.html#a34b615125f84c6fc0d082e56f4817498',1,'CSocketManager']]],
   ['eclosetype',['ECloseType',['../classCsock.html#a8b185717b466c70d2934fce9775c54da',1,'Csock']]],
   ['ecomptype',['ECompType',['../Csocket_8h.html#a233f31a47c2ebf7099843a7b37a1bf61',1,'Csocket.h']]],
+  ['econfig_5fdelayed_5fwrite',['ECONFIG_DELAYED_WRITE',['../classCZNC.html#a872d81d61388f9acb7f8e6e966b4fd8fabc0ac69ba2cf9a0cd212025bd73b113e',1,'CZNC']]],
   ['econfig_5fneed_5fquit',['ECONFIG_NEED_QUIT',['../classCZNC.html#a872d81d61388f9acb7f8e6e966b4fd8fa012d958180c00dde3046de369f0dc55d',1,'CZNC']]],
   ['econfig_5fneed_5frehash',['ECONFIG_NEED_REHASH',['../classCZNC.html#a872d81d61388f9acb7f8e6e966b4fd8fa9140778bf5d1d3e1e1cd8e47f2a4dbba',1,'CZNC']]],
   ['econfig_5fneed_5fverbose_5fwrite',['ECONFIG_NEED_VERBOSE_WRITE',['../classCZNC.html#a872d81d61388f9acb7f8e6e966b4fd8faa934642d053a77e72e557f49b3320128',1,'CZNC']]],

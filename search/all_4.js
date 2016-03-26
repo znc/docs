@@ -32,6 +32,7 @@ var searchData=
   ['destroyinstance',['DestroyInstance',['../classCZNC.html#ac613c83f7abc5dc636b3e89e4b5d7069',1,'CZNC']]],
   ['detachuser',['DetachUser',['../classCChan.html#a391a57fc4c75353d45c6b04795df477e',1,'CChan']]],
   ['disable',['Disable',['../classCChan.html#a9a9ea4a0c23e0389a1564a06b14588fa',1,'CChan']]],
+  ['disableconfigtimer',['DisableConfigTimer',['../classCZNC.html#abad9aa0c248d0dcff50c12e5572cde43',1,'CZNC']]],
   ['disableconnectqueue',['DisableConnectQueue',['../classCZNC.html#a69bad33ff322924a73f2dbad111b6ec3',1,'CZNC']]],
   ['disablemonitor',['DisableMonitor',['../classCSMonitorFD.html#a4c34edbe1c49b818671d1b9311beb97b',1,'CSMonitorFD']]],
   ['disablereadline',['DisableReadLine',['../classCsock.html#adfee091e6a74b7ad8db05171465412c0',1,'Csock']]],
