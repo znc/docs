@@ -304,6 +304,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:add13109f49591071c187fa7ed209807f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ac89c3fb0346904e87212e606d87134"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#a6ac89c3fb0346904e87212e606d87134">OnChanBufferPlayLine</a> (<a class="el" href="classCChan.html">CChan</a> &amp;Chan, <a class="el" href="classCClient.html">CClient</a> &amp;Client, <a class="el" href="classCString.html">CString</a> &amp;sLine)</td></tr>
 <tr class="separator:a6ac89c3fb0346904e87212e606d87134"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2130b5edf2a6e3922be87fe1ac3491ea"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#a2130b5edf2a6e3922be87fe1ac3491ea">OnPrivBufferStarting</a> (<a class="el" href="classCQuery.html">CQuery</a> &amp;Query, <a class="el" href="classCClient.html">CClient</a> &amp;Client)</td></tr>
+<tr class="memdesc:a2130b5edf2a6e3922be87fe1ac3491ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called before a query buffer is played back to a client.  <a href="#a2130b5edf2a6e3922be87fe1ac3491ea">More...</a><br/></td></tr>
+<tr class="separator:a2130b5edf2a6e3922be87fe1ac3491ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c5786f13320ef3f1acb1d7124117d21"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#a5c5786f13320ef3f1acb1d7124117d21">OnPrivBufferEnding</a> (<a class="el" href="classCQuery.html">CQuery</a> &amp;Query, <a class="el" href="classCClient.html">CClient</a> &amp;Client)</td></tr>
+<tr class="memdesc:a5c5786f13320ef3f1acb1d7124117d21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called after a query buffer was played back to a client.  <a href="#a5c5786f13320ef3f1acb1d7124117d21">More...</a><br/></td></tr>
+<tr class="separator:a5c5786f13320ef3f1acb1d7124117d21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2236f951c590ea372a6ebc6fc5645ca"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#aa2236f951c590ea372a6ebc6fc5645ca">OnPrivBufferPlayMessage</a> (<a class="el" href="classCMessage.html">CMessage</a> &amp;Message)</td></tr>
 <tr class="memdesc:aa2236f951c590ea372a6ebc6fc5645ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called for each message during a query's buffer play back.  <a href="#aa2236f951c590ea372a6ebc6fc5645ca">More...</a><br/></td></tr>
 <tr class="separator:aa2236f951c590ea372a6ebc6fc5645ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -4947,6 +4953,51 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a5c5786f13320ef3f1acb1d7124117d21"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> CModule::OnPrivBufferEnding </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCQuery.html">CQuery</a> &amp;&#160;</td>
+          <td class="paramname"><em>Query</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classCClient.html">CClient</a> &amp;&#160;</td>
+          <td class="paramname"><em>Client</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called after a query buffer was played back to a client. </p>
+<dl class="section since"><dt>Since</dt><dd>1.7.0 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Query</td><td>The query which was played back. </td></tr>
+    <tr><td class="paramname">Client</td><td>The client the buffer was played back to. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>See <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2" title="This enum is just used for return from module hooks. ">CModule::EModRet</a>. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a50d61c6af10b303309d23a404108e5fc"></a>
 <div class="memitem">
 <div class="memproto">
@@ -5050,6 +5101,51 @@ Protected Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">Message</td><td>The playback message. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>See <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2" title="This enum is just used for return from module hooks. ">CModule::EModRet</a>. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2130b5edf2a6e3922be87fe1ac3491ea"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> CModule::OnPrivBufferStarting </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCQuery.html">CQuery</a> &amp;&#160;</td>
+          <td class="paramname"><em>Query</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classCClient.html">CClient</a> &amp;&#160;</td>
+          <td class="paramname"><em>Client</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called before a query buffer is played back to a client. </p>
+<dl class="section since"><dt>Since</dt><dd>1.7.0 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Query</td><td>The query which will be played back. </td></tr>
+    <tr><td class="paramname">Client</td><td>The client the buffer will be played back to. </td></tr>
   </table>
   </dd>
 </dl>
@@ -7874,7 +7970,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 3 2016 00:07:55 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 17 2016 22:32:51 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

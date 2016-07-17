@@ -237,6 +237,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a655b17653bcca9e0fc1eafaccfc576a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61d9272440b38b6afb4d2b0522962885"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#a61d9272440b38b6afb4d2b0522962885">OnChanBufferPlayLine</a> (<a class="el" href="classCChan.html">CChan</a> &amp;Chan, <a class="el" href="classCClient.html">CClient</a> &amp;Client, <a class="el" href="classCString.html">CString</a> &amp;sLine)</td></tr>
 <tr class="separator:a61d9272440b38b6afb4d2b0522962885"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad229ebfda27cda47cda777cd5e17bc34"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#ad229ebfda27cda47cda777cd5e17bc34">OnPrivBufferStarting</a> (<a class="el" href="classCQuery.html">CQuery</a> &amp;Query, <a class="el" href="classCClient.html">CClient</a> &amp;Client)</td></tr>
+<tr class="separator:ad229ebfda27cda47cda777cd5e17bc34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1453d058fa89fd121eafbfdb1dc617ff"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#a1453d058fa89fd121eafbfdb1dc617ff">OnPrivBufferEnding</a> (<a class="el" href="classCQuery.html">CQuery</a> &amp;Query, <a class="el" href="classCClient.html">CClient</a> &amp;Client)</td></tr>
+<tr class="separator:a1453d058fa89fd121eafbfdb1dc617ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad03f0ccea4d08c13dfaaca032afc9a71"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#ad03f0ccea4d08c13dfaaca032afc9a71">OnPrivBufferPlayLine2</a> (<a class="el" href="classCClient.html">CClient</a> &amp;Client, <a class="el" href="classCString.html">CString</a> &amp;sLine, const timeval &amp;tv)</td></tr>
 <tr class="separator:ad03f0ccea4d08c13dfaaca032afc9a71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a074a79c4ff65cace17f9bd6fcb80fb46"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#a074a79c4ff65cace17f9bd6fcb80fb46">OnPrivBufferPlayLine</a> (<a class="el" href="classCClient.html">CClient</a> &amp;Client, <a class="el" href="classCString.html">CString</a> &amp;sLine)</td></tr>
@@ -2570,6 +2574,32 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a1453d058fa89fd121eafbfdb1dc617ff"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CModules::OnPrivBufferEnding </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCQuery.html">CQuery</a> &amp;&#160;</td>
+          <td class="paramname"><em>Query</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classCClient.html">CClient</a> &amp;&#160;</td>
+          <td class="paramname"><em>Client</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a074a79c4ff65cace17f9bd6fcb80fb46"></a>
 <div class="memitem">
 <div class="memproto">
@@ -2638,6 +2668,32 @@ Protected Attributes</h2></td></tr>
           <td class="paramtype"><a class="el" href="classCMessage.html">CMessage</a> &amp;&#160;</td>
           <td class="paramname"><em>Message</em></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad229ebfda27cda47cda777cd5e17bc34"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CModules::OnPrivBufferStarting </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCQuery.html">CQuery</a> &amp;&#160;</td>
+          <td class="paramname"><em>Query</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classCClient.html">CClient</a> &amp;&#160;</td>
+          <td class="paramname"><em>Client</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3932,7 +3988,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 3 2016 00:07:55 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 17 2016 22:32:51 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
