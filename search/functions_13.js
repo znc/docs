@@ -156,6 +156,8 @@ var searchData=
   ['settopic',['SetTopic',['../classCChan.html#a004d950fdfce824aceed959dc6c20a60',1,'CChan::SetTopic()'],['../classCTopicMessage.html#a2316efb3fcedb9cd98fc926c0a0353ab',1,'CTopicMessage::SetTopic()']]],
   ['settopicdate',['SetTopicDate',['../classCChan.html#a1af8f91f8e50c648b81673218372d0f4',1,'CChan']]],
   ['settopicowner',['SetTopicOwner',['../classCChan.html#ac4158d513027d265c20a8b5124c1aa2b',1,'CChan']]],
+  ['settrustallcerts',['SetTrustAllCerts',['../classCIRCNetwork.html#a6a559ffcc621b1dd4a68d7beb59279c9',1,'CIRCNetwork::SetTrustAllCerts()'],['../classCZNCSock.html#aaec61406509ca6626085cb193bf2af1d',1,'CZNCSock::SetTrustAllCerts()']]],
+  ['settrustpki',['SetTrustPKI',['../classCIRCNetwork.html#a96dc326c5c35649135b9c59227b422ce',1,'CIRCNetwork::SetTrustPKI()'],['../classCZNCSock.html#a493c6539093b6cded7c926f4ed81f656',1,'CZNCSock::SetTrustPKI()']]],
   ['setttl',['SetTTL',['../classTCacheMap.html#abe04718bbc0379ab673d5ab2b99c00f2',1,'TCacheMap']]],
   ['settype',['SetType',['../classCModule.html#a0aa064cf7e141dc0c3ef0738c4cbf87d',1,'CModule::SetType()'],['../classCsock.html#a2a5253a340c9f42ece84e1bba36e0099',1,'Csock::SetType()']]],
   ['setupserverctx',['SetupServerCTX',['../classCsock.html#ae61306403bb7bbff4e2fd766d9854a4b',1,'Csock']]],

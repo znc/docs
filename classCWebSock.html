@@ -364,6 +364,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3673ac5321422d5f0589c9db9149f3d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a148e6216e3ef442d9ef604834d8c3c05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNCSock.html#a148e6216e3ef442d9ef604834d8c3c05">SetSSLTrustedPeerFingerprints</a> (const <a class="el" href="ZNCString_8h.html#a84b05218977775b974a8db49e81f02a4">SCString</a> &amp;ssFPs)</td></tr>
 <tr class="separator:a148e6216e3ef442d9ef604834d8c3c05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaec61406509ca6626085cb193bf2af1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNCSock.html#aaec61406509ca6626085cb193bf2af1d">SetTrustAllCerts</a> (const bool bTrustAll=false)</td></tr>
+<tr class="separator:aaec61406509ca6626085cb193bf2af1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2217300f2920bb984b5c62afa3353dd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNCSock.html#ae2217300f2920bb984b5c62afa3353dd">GetTrustAllCerts</a> () const </td></tr>
+<tr class="separator:ae2217300f2920bb984b5c62afa3353dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a493c6539093b6cded7c926f4ed81f656"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNCSock.html#a493c6539093b6cded7c926f4ed81f656">SetTrustPKI</a> (const bool bTrustPKI=true)</td></tr>
+<tr class="separator:a493c6539093b6cded7c926f4ed81f656"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa05971984efac52cd2fc52e06d6318bc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNCSock.html#aa05971984efac52cd2fc52e06d6318bc">GetTrustPKI</a> () const </td></tr>
+<tr class="separator:aa05971984efac52cd2fc52e06d6318bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad45449663df4443887919b744b6560fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCZNCSock.html#ad45449663df4443887919b744b6560fc">SetEncoding</a> (const <a class="el" href="classCString.html">CString</a> &amp;)</td></tr>
 <tr class="separator:ad45449663df4443887919b744b6560fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35db4b2adfcad925c22a56e185223d92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a35db4b2adfcad925c22a56e185223d92">SetEncoding</a> (const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sEncoding)</td></tr>
@@ -4554,6 +4562,52 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ae2217300f2920bb984b5c62afa3353dd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CZNCSock::GetTrustAllCerts </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa05971984efac52cd2fc52e06d6318bc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CZNCSock::GetTrustPKI </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ab498eee2cf1f399d736760ccd73af00e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -7266,6 +7320,54 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aaec61406509ca6626085cb193bf2af1d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CZNCSock::SetTrustAllCerts </td>
+          <td>(</td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>bTrustAll</em> = <code>false</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a493c6539093b6cded7c926f4ed81f656"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CZNCSock::SetTrustPKI </td>
+          <td>(</td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>bTrustPKI</em> = <code>true</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a2a5253a340c9f42ece84e1bba36e0099"></a>
 <div class="memitem">
 <div class="memproto">
@@ -8503,7 +8605,7 @@ X509_free( pCert );
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 3 2016 00:07:56 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 8 2016 23:23:20 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

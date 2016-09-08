@@ -52,6 +52,8 @@ var searchData=
   ['m_5fbsentheader',['m_bSentHeader',['../classCHTTPSock.html#a82e75c672e7cb7e1ca3e5899cee929aa',1,'CHTTPSock']]],
   ['m_5fbservertime',['m_bServerTime',['../classCClient.html#a8afc9e0fc6830144ba363339375dfc29',1,'CClient::m_bServerTime()'],['../classCIRCSock.html#a83b7ff5f09d8e39f1097620e041a17c8',1,'CIRCSock::m_bServerTime()']]],
   ['m_5fbssl',['m_bSSL',['../classCListener.html#ac64c9693713396bc58f20a1c66f356f7',1,'CListener::m_bSSL()'],['../classCServer.html#abccacd6f614737b67e4559737b4c610a',1,'CServer::m_bSSL()']]],
+  ['m_5fbtrustallcerts',['m_bTrustAllCerts',['../classCIRCNetwork.html#a3fe59c5645d72de6f7d625bb5f715670',1,'CIRCNetwork']]],
+  ['m_5fbtrustpki',['m_bTrustPKI',['../classCIRCNetwork.html#ac1bd33dad3bd44ce3e3e368f30344b39',1,'CIRCNetwork']]],
   ['m_5fbuffer',['m_Buffer',['../classCChan.html#a2c9e974b0a35fe072fa939b3dbd1840a',1,'CChan']]],
   ['m_5fbuhnames',['m_bUHNames',['../classCClient.html#af01077729afee80f51b9491e129983bc',1,'CClient::m_bUHNames()'],['../classCIRCSock.html#a33f71b6a0bcdd61f64d602aaa822dbd0',1,'CIRCSock::m_bUHNames()']]],
   ['m_5feaccepttype',['m_eAcceptType',['../classCListener.html#a1a6f5bae1ca8ae9eeadbf3970934a000',1,'CListener']]],
