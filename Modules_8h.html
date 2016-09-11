@@ -242,29 +242,30 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {                                                              <a class="code" href="Modules_8h.html#a11c735aa9c02d58a8af0d320a3d2d689">\</a></div>
-<div class="line"><a class="code" href="Modules_8h.html#a11c735aa9c02d58a8af0d320a3d2d689">    ZNC_EXPORT_LIB_EXPORT</a> <span class="keywordtype">bool</span> ZNCModInfo(<span class="keywordtype">double</span> dCoreVersion,                \</div>
-<div class="line">                                          <a class="code" href="classCModInfo.html">CModInfo</a>&amp; Info);                    <a class="code" href="Modules_8h.html#a11c735aa9c02d58a8af0d320a3d2d689">\</a></div>
-<div class="line"><a class="code" href="Modules_8h.html#a11c735aa9c02d58a8af0d320a3d2d689">    ZNC_EXPORT_LIB_EXPORT</a> <span class="keywordtype">bool</span> ZNCModInfo(<span class="keywordtype">double</span> dCoreVersion,                \</div>
-<div class="line">                                          <a class="code" href="classCModInfo.html">CModInfo</a>&amp; Info) {                   \</div>
-<div class="line">        if (dCoreVersion != <a class="code" href="version_8h.html#a1c6d5de492ac61ad29aec7aa9a436bbf">VERSION</a>) return false;                            \</div>
-<div class="line">        auto t = [&amp;](const <a class="code" href="classCString.html">CString</a>&amp; sEnglish, const <a class="code" href="classCString.html">CString</a>&amp; sContext = &quot;&quot;) { \</div>
-<div class="line">            return sEnglish.empty() ? <span class="stringliteral">&quot;&quot;</span> : Info.<a class="code" href="classCModInfo.html#aa8b65e62e7832e24a72328c4de18bbc2">t</a>(sEnglish, sContext);        \</div>
-<div class="line">        };                                                                    \</div>
-<div class="line">        t(<a class="code" href="classCString.html">CString</a>()); <span class="comment">/* Don&#39;t warn about unused t */</span>                         \</div>
-<div class="line">        Info.SetDescription(DESCRIPTION);                                     \</div>
-<div class="line">        Info.SetDefaultType(TYPE);                                            \</div>
-<div class="line">        Info.AddType(TYPE);                                                   \</div>
-<div class="line">        Info.SetLoader(TModLoad&lt;CLASS&gt;);                                      \</div>
-<div class="line">        TModInfo&lt;CLASS&gt;(Info);                                                \</div>
-<div class="line">        return <span class="keyword">true</span>;                                                          \</div>
-<div class="line">    }                                                                         \</div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {                                                         <a class="code" href="Modules_8h.html#a11c735aa9c02d58a8af0d320a3d2d689">\</a></div>
+<div class="line"><a class="code" href="Modules_8h.html#a11c735aa9c02d58a8af0d320a3d2d689">    ZNC_EXPORT_LIB_EXPORT</a> <span class="keywordtype">bool</span> ZNCModInfo(<span class="keywordtype">double</span> dCoreVersion,           \</div>
+<div class="line">                                          <a class="code" href="classCModInfo.html">CModInfo</a>&amp; Info);               <a class="code" href="Modules_8h.html#a11c735aa9c02d58a8af0d320a3d2d689">\</a></div>
+<div class="line"><a class="code" href="Modules_8h.html#a11c735aa9c02d58a8af0d320a3d2d689">    ZNC_EXPORT_LIB_EXPORT</a> <span class="keywordtype">bool</span> ZNCModInfo(<span class="keywordtype">double</span> dCoreVersion,           \</div>
+<div class="line">                                          <a class="code" href="classCModInfo.html">CModInfo</a>&amp; Info) {              \</div>
+<div class="line">        if (dCoreVersion != <a class="code" href="version_8h.html#a1c6d5de492ac61ad29aec7aa9a436bbf">VERSION</a>) return false;                       \</div>
+<div class="line">        auto t_s = [&amp;](const <a class="code" href="classCString.html">CString</a>&amp; sEnglish,                          \</div>
+<div class="line">                       const <a class="code" href="classCString.html">CString</a>&amp; sContext = &quot;&quot;) {                   \</div>
+<div class="line">            return sEnglish.empty() ? <span class="stringliteral">&quot;&quot;</span> : Info.<a class="code" href="classCModInfo.html#a20dd822980124191faba55e53694af6a">t_s</a>(sEnglish, sContext); \</div>
+<div class="line">        };                                                               \</div>
+<div class="line">        t_s(<a class="code" href="classCString.html">CString</a>()); <span class="comment">/* Don&#39;t warn about unused t_s */</span>                \</div>
+<div class="line">        Info.SetDescription(DESCRIPTION);                                \</div>
+<div class="line">        Info.SetDefaultType(TYPE);                                       \</div>
+<div class="line">        Info.AddType(TYPE);                                              \</div>
+<div class="line">        Info.SetLoader(TModLoad&lt;CLASS&gt;);                                 \</div>
+<div class="line">        TModInfo&lt;CLASS&gt;(Info);                                           \</div>
+<div class="line">        return <span class="keyword">true</span>;                                                     \</div>
+<div class="line">    }                                                                    \</div>
 <div class="line">    }</div>
 <div class="ttc" id="version_8h_html_a1c6d5de492ac61ad29aec7aa9a436bbf"><div class="ttname"><a href="version_8h.html#a1c6d5de492ac61ad29aec7aa9a436bbf">VERSION</a></div><div class="ttdeci">#define VERSION</div><div class="ttdef"><b>Definition:</b> version.h:14</div></div>
 <div class="ttc" id="classCString_html"><div class="ttname"><a href="classCString.html">CString</a></div><div class="ttdoc">String class that is used inside ZNC. </div><div class="ttdef"><b>Definition:</b> ZNCString.h:68</div></div>
-<div class="ttc" id="classCModInfo_html"><div class="ttname"><a href="classCModInfo.html">CModInfo</a></div><div class="ttdef"><b>Definition:</b> Modules.h:216</div></div>
+<div class="ttc" id="classCModInfo_html_a20dd822980124191faba55e53694af6a"><div class="ttname"><a href="classCModInfo.html#a20dd822980124191faba55e53694af6a">CModInfo::t_s</a></div><div class="ttdeci">CString t_s(const CString &amp;sEnglish, const CString &amp;sContext=&quot;&quot;) const </div></div>
+<div class="ttc" id="classCModInfo_html"><div class="ttname"><a href="classCModInfo.html">CModInfo</a></div><div class="ttdef"><b>Definition:</b> Modules.h:217</div></div>
 <div class="ttc" id="Modules_8h_html_a11c735aa9c02d58a8af0d320a3d2d689"><div class="ttname"><a href="Modules_8h.html#a11c735aa9c02d58a8af0d320a3d2d689">ZNC_EXPORT_LIB_EXPORT</a></div><div class="ttdeci">#define ZNC_EXPORT_LIB_EXPORT</div><div class="ttdef"><b>Definition:</b> Modules.h:60</div></div>
-<div class="ttc" id="classCModInfo_html_aa8b65e62e7832e24a72328c4de18bbc2"><div class="ttname"><a href="classCModInfo.html#aa8b65e62e7832e24a72328c4de18bbc2">CModInfo::t</a></div><div class="ttdeci">CString t(const CString &amp;sEnglish, const CString &amp;sContext=&quot;&quot;) const </div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -286,11 +287,11 @@ Functions</h2></td></tr>
 <div class="line">          <a class="code" href="classCModInfo.html#a616fabebbbf49bf06cfff90b8f32c57f">CModInfo::EModuleType</a> eType)                         \</div>
 <div class="line">        : <a class="code" href="classCModule.html">CModule</a>(pDLL, pUser, pNetwork, sModName, sModPath, eType)</div>
 <div class="ttc" id="classCUser_html"><div class="ttname"><a href="classCUser.html">CUser</a></div><div class="ttdef"><b>Definition:</b> User.h:37</div></div>
-<div class="ttc" id="classCModInfo_html_a616fabebbbf49bf06cfff90b8f32c57f"><div class="ttname"><a href="classCModInfo.html#a616fabebbbf49bf06cfff90b8f32c57f">CModInfo::EModuleType</a></div><div class="ttdeci">EModuleType</div><div class="ttdef"><b>Definition:</b> Modules.h:218</div></div>
-<div class="ttc" id="Modules_8h_html_a2f2b7746e7590ac0383278e975f13855"><div class="ttname"><a href="Modules_8h.html#a2f2b7746e7590ac0383278e975f13855">ModHandle</a></div><div class="ttdeci">void * ModHandle</div><div class="ttdef"><b>Definition:</b> Modules.h:214</div></div>
+<div class="ttc" id="classCModInfo_html_a616fabebbbf49bf06cfff90b8f32c57f"><div class="ttname"><a href="classCModInfo.html#a616fabebbbf49bf06cfff90b8f32c57f">CModInfo::EModuleType</a></div><div class="ttdeci">EModuleType</div><div class="ttdef"><b>Definition:</b> Modules.h:219</div></div>
+<div class="ttc" id="Modules_8h_html_a2f2b7746e7590ac0383278e975f13855"><div class="ttname"><a href="Modules_8h.html#a2f2b7746e7590ac0383278e975f13855">ModHandle</a></div><div class="ttdeci">void * ModHandle</div><div class="ttdef"><b>Definition:</b> Modules.h:215</div></div>
 <div class="ttc" id="classCIRCNetwork_html"><div class="ttname"><a href="classCIRCNetwork.html">CIRCNetwork</a></div><div class="ttdef"><b>Definition:</b> IRCNetwork.h:40</div></div>
 <div class="ttc" id="classCString_html"><div class="ttname"><a href="classCString.html">CString</a></div><div class="ttdoc">String class that is used inside ZNC. </div><div class="ttdef"><b>Definition:</b> ZNCString.h:68</div></div>
-<div class="ttc" id="classCModule_html"><div class="ttname"><a href="classCModule.html">CModule</a></div><div class="ttdoc">The base class for your own ZNC modules. </div><div class="ttdef"><b>Definition:</b> Modules.h:381</div></div>
+<div class="ttc" id="classCModule_html"><div class="ttname"><a href="classCModule.html">CModule</a></div><div class="ttdoc">The base class for your own ZNC modules. </div><div class="ttdef"><b>Definition:</b> Modules.h:382</div></div>
 </div><!-- fragment -->
 <p>Instead of writing a constructor, you should call this macro. </p>
 <p>It accepts all the necessary arguments and passes them on to <a class="el" href="classCModule.html" title="The base class for your own ZNC modules. ">CModule</a>'s constructor. You should assume that there are no arguments to the constructor.</p>
@@ -512,7 +513,7 @@ template&lt;class M &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 17 2016 22:32:50 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Sep 11 2016 23:53:23 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

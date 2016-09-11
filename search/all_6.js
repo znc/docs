@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['f',['f',['../classCModule.html#a8b37e2f31bab6bebe964bffa2886afee',1,'CModule::f()'],['../classCSocket.html#af476b60f5c45953e4805062b3721c883',1,'CSocket::f()'],['../classCCoreTranslationMixin.html#a7eacd2d02172cc0a483ab7f2fc57293c',1,'CCoreTranslationMixin::f()']]],
   ['f_5fadmin',['F_ADMIN',['../classCWebSubPage.html#ab13b226520b2b4a81544c763537aab5eab9ebb6c8c3503f72a91cc5311d58638d',1,'CWebSubPage']]],
   ['fa_5fatime',['FA_ATime',['../classCFile.html#afc91ecc432088c036bba86b9fb726cbba49c0a52804d54be574cbf9794db15d8e',1,'CFile']]],
   ['fa_5fctime',['FA_CTime',['../classCFile.html#afc91ecc432088c036bba86b9fb726cbba576a3dbc194cfc24f83c87eee7dd0279',1,'CFile']]],
