@@ -220,9 +220,13 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Here is a small explanation of how messages on IRC work, and how you can use this class to get useful information from the parsed message. </p>
 <p>The output varies greatly and this advice may not apply to every message type, but this will hopefully help you understand how it works more accurately.</p>
-<p>=some-timestamp :server.network.net 366 something #channel :End of /NAMES list. tags nick 0 1 2 3</p>
-<p><code>tags</code> is the IRCv3 tags associated with the message, obtained with GetTag(s). the  tag can also be obtained with <a class="el" href="classCMessage.html#ac3fcc15ecb3ce7224e1b7fef7b4efe18">GetTime()</a>, some messages have other tags with them. Tags may not always be present. Refer to IRCv3 for documentation on tags. <code>nick</code> is the sender, which can be obtained with <a class="el" href="classCMessage.html#a7d55334f7dc1137c1064cb1bd26c1cf6">GetNick()</a> <code>0</code> is the command, which is obtained via GetCommand, or with GetParam(0) <code>1</code> is the first parameter index, which usually includes a sender or a recipient. <code>2</code> is the target or element the message is about. <code>3</code> is likely to contain the message, but this may very per message type.</p>
-<p>When using GetParam (which corresponds to the numbers given above), ZNC will remove the leading colon (:), this is not true for GetParams.</p>
+<p>=some-tag :server.network.net 366 something #channel :End of /NAMES list. tags nick cmd 0 1 2</p>
+<ul>
+<li><code>tags</code> is the IRCv3 tags associated with the message, obtained with GetTag("t"). the  tag can also be obtained with <a class="el" href="classCMessage.html#ac3fcc15ecb3ce7224e1b7fef7b4efe18">GetTime()</a>, some messages have other tags with them. Tags may not always be present. Refer to IRCv3 for documentation on tags.</li>
+<li><code>nick</code> is the sender, which can be obtained with <a class="el" href="classCMessage.html#a7d55334f7dc1137c1064cb1bd26c1cf6">GetNick()</a></li>
+<li><code>cmd</code> is command, which is obtained via <a class="el" href="classCMessage.html#a06edd71892b7e1a89cf2d27c834840c6">GetCommand()</a></li>
+<li><code>0</code>, <code>1</code>, ... are parameters, available via GetParam(n), which removes the leading colon (:). If you don't want to remove the colon, use <a class="el" href="classCMessage.html#a240529f0bac4d7ceeb5d862c25f3f7c8">GetParams()</a>.</li>
+</ul>
 <p>For certain events, like a PRIVMSG, convienience commands like <a class="el" href="classCMessage.html#a1708e7d9227de0efd6a2f285278ca0a2">GetChan()</a> and <a class="el" href="classCMessage.html#a7d55334f7dc1137c1064cb1bd26c1cf6">GetNick()</a> are available, this is not true for all <a class="el" href="classCMessage.html" title="Here is a small explanation of how messages on IRC work, and how you can use this class to get useful...">CMessage</a> extensions. </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a class="anchor" id="a07909da9c64f7e1a642ca76b34d8e7a3"></a>
@@ -1083,7 +1087,7 @@ template&lt;typename M , typename  = typename std::enable_if&lt;                
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 3 2016 22:58:10 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 12 2016 16:59:55 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

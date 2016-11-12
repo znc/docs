@@ -165,6 +165,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a478c4df339ecb8ccef8defeb463a924e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#a478c4df339ecb8ccef8defeb463a924e">OnWebRequest</a> (<a class="el" href="classCWebSock.html">CWebSock</a> &amp;WebSock, const <a class="el" href="classCString.html">CString</a> &amp;sPageName, <a class="el" href="classCTemplate.html">CTemplate</a> &amp;Tmpl)</td></tr>
 <tr class="memdesc:a478c4df339ecb8ccef8defeb463a924e"><td class="mdescLeft">&#160;</td><td class="mdescRight">If OnWebPreRequest returned false, and the RequiresAdmin/IsAdmin check has been passed, this method will be called with the page name.  <a href="#a478c4df339ecb8ccef8defeb463a924e">More...</a><br/></td></tr>
 <tr class="separator:a478c4df339ecb8ccef8defeb463a924e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa81a0768863f207aa0702777f534802"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#aaa81a0768863f207aa0702777f534802">ValidateWebRequestCSRFCheck</a> (<a class="el" href="classCWebSock.html">CWebSock</a> &amp;WebSock, const <a class="el" href="classCString.html">CString</a> &amp;sPageName)</td></tr>
+<tr class="memdesc:aaa81a0768863f207aa0702777f534802"><td class="mdescLeft">&#160;</td><td class="mdescRight">If ValidateWebRequestCSRFCheck returned false, a CSRF error will be printed.  <a href="#aaa81a0768863f207aa0702777f534802">More...</a><br/></td></tr>
+<tr class="separator:aaa81a0768863f207aa0702777f534802"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaebd70e381be4722362fc03aba822ce7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#aaebd70e381be4722362fc03aba822ce7">AddSubPage</a> (<a class="el" href="WebModules_8h.html#ada19e8ed0a50222c36dbddbe175af39c">TWebSubPage</a> spSubPage)</td></tr>
 <tr class="memdesc:aaebd70e381be4722362fc03aba822ce7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a sub page for the sidebar.  <a href="#aaebd70e381be4722362fc03aba822ce7">More...</a><br/></td></tr>
 <tr class="separator:aaebd70e381be4722362fc03aba822ce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -7565,6 +7568,50 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aaa81a0768863f207aa0702777f534802"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool CModule::ValidateWebRequestCSRFCheck </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCWebSock.html">CWebSock</a> &amp;&#160;</td>
+          <td class="paramname"><em>WebSock</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
+          <td class="paramname"><em>sPageName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If ValidateWebRequestCSRFCheck returned false, a CSRF error will be printed. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">WebSock</td><td>The active request. </td></tr>
+    <tr><td class="paramname">sPageName</td><td>The name of the page that has been requested. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>You MUST return true if the CSRF token is valid. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="abe2b6023625deb2d20451bc84be57ef1"></a>
 <div class="memitem">
 <div class="memproto">
@@ -7970,7 +8017,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 11 2016 23:53:23 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 12 2016 16:59:55 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
