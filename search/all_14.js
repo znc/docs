@@ -17,6 +17,7 @@ var searchData=
   ['threads_2eh',['Threads.h',['../Threads_8h.html',1,'']]],
   ['timeout',['Timeout',['../classCClient.html#a98cd5fa145d4d798df1047ec8bbae9ae',1,'CClient::Timeout()'],['../classCIRCSock.html#a5ef79baf8be21c2c4c4fa74501d03f1e',1,'CIRCSock::Timeout()'],['../classCsock.html#ac32577c8dac5ec04fdbdf22ff813a874',1,'Csock::Timeout()']]],
   ['timestarted',['TimeStarted',['../classCZNC.html#aa304f58b58088d44a7fc663eea8f60f7',1,'CZNC']]],
+  ['tls',['TLS',['../classCsock.html#aa7da8fe2945d8cfca7c53aec88fdad68a4ee03e96c6e98d128581d5a501c729cd',1,'Csock']]],
   ['tls1',['TLS1',['../classCsock.html#aa7da8fe2945d8cfca7c53aec88fdad68aa5f0d66c54b5d1d1dc470a8de2196f3b',1,'Csock']]],
   ['tls11',['TLS11',['../classCsock.html#aa7da8fe2945d8cfca7c53aec88fdad68afe7b977cb013e4e4cecf52c5e556685e',1,'Csock']]],
   ['tls12',['TLS12',['../classCsock.html#aa7da8fe2945d8cfca7c53aec88fdad68af4dceb7a8d0001e838430f7cbed6b9cb',1,'Csock']]],

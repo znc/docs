@@ -17,7 +17,6 @@ var searchData=
   ['cst_5fok',['CST_OK',['../classCsock.html#a1ddb2a5d92aefe7db7a88b3824d7c4daa59f976336ffa12f10e0eebcccd5b84f7',1,'Csock']]],
   ['cst_5fstart',['CST_START',['../classCsock.html#a1ddb2a5d92aefe7db7a88b3824d7c4daaa319f60f9dd920e4a51f93f27f552a87',1,'Csock']]],
   ['ct_5fnone',['CT_NONE',['../Csocket_8h.html#a233f31a47c2ebf7099843a7b37a1bf61abc1edbe45d74e83b1f8330ebbfc19fb0',1,'Csocket.h']]],
-  ['ct_5frle',['CT_RLE',['../Csocket_8h.html#a233f31a47c2ebf7099843a7b37a1bf61ab6ef93fe3f12878600415a8437a281e1',1,'Csocket.h']]],
   ['ct_5fzlib',['CT_ZLIB',['../Csocket_8h.html#a233f31a47c2ebf7099843a7b37a1bf61ac6c3c3cb17d18ad46195ae78094a774e',1,'Csocket.h']]],
   ['ctcp',['CTCP',['../classCMessage.html#a0c73f73428ca8fd0c3f10a497d2fcb11ae26f5a9b4908a956f8a2231164415e6b',1,'CMessage']]]
 ];
