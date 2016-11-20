@@ -22,7 +22,7 @@ var searchData=
   ['delserver',['DelServer',['../classCIRCNetwork.html#aa41c3df391a80704b62968f4ce7bba18',1,'CIRCNetwork']]],
   ['delservers',['DelServers',['../classCIRCNetwork.html#a083879cf7ce5253a7be92cdc9de7729d',1,'CIRCNetwork']]],
   ['delsock',['DelSock',['../classCSocketManager.html#aee351fd02bdd11badbefde04df270a91',1,'CSocketManager']]],
-  ['delsockbyaddr',['DelSockByAddr',['../classCSocketManager.html#a1a0731cb30af8a552de36b4c2cf9e931',1,'CSocketManager']]],
+  ['delsockbyaddr',['DelSockByAddr',['../classCSockManager.html#a51e3b4ab1e575d7ade95c542a502f838',1,'CSockManager::DelSockByAddr()'],['../classCSocketManager.html#a1a0731cb30af8a552de36b4c2cf9e931',1,'CSocketManager::DelSockByAddr()']]],
   ['deltrustedfingerprint',['DelTrustedFingerprint',['../classCIRCNetwork.html#a051dc22061ca06859850eb9156c05a70',1,'CIRCNetwork']]],
   ['denyloadmod',['DenyLoadMod',['../classCUser.html#aca50e97385169432a0ac7e5b27504761',1,'CUser']]],
   ['denysetbindhost',['DenySetBindHost',['../classCUser.html#ad3c363dce6c52606614a0e69e6c922e2',1,'CUser']]],

@@ -149,6 +149,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab0bd931246527c073926a8c7d728dc42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ec6089669a31efdd578ba0a8328cb69"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSockManager.html#a5ec6089669a31efdd578ba0a8328cb69">GetAnonConnectionCount</a> (const <a class="el" href="classCString.html">CString</a> &amp;sIP) const </td></tr>
 <tr class="separator:a5ec6089669a31efdd578ba0a8328cb69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51e3b4ab1e575d7ade95c542a502f838"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSockManager.html#a51e3b4ab1e575d7ade95c542a502f838">DelSockByAddr</a> (<a class="el" href="classCsock.html">Csock</a> *pcSock) override</td></tr>
+<tr class="memdesc:a51e3b4ab1e575d7ade95c542a502f838"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a sock by addr its position is looked up the socket is deleted, the appropriate call backs are peformed and its instance is removed from the manager.  <a href="#a51e3b4ab1e575d7ade95c542a502f838">More...</a><br/></td></tr>
+<tr class="separator:a51e3b4ab1e575d7ade95c542a502f838"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa764343c60b9bbbc71541f7bd0b0e873"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCZNCSock.html">CZNCSock</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTSocketManager.html#aa764343c60b9bbbc71541f7bd0b0e873">GetSockObj</a> (const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sHostname, uint16_t uPort, int iTimeout=60)</td></tr>
 <tr class="separator:aa764343c60b9bbbc71541f7bd0b0e873"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14af95b2ed46e8134b81599e63af9b0b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSocketManager.html#a14af95b2ed46e8134b81599e63af9b0b">clear</a> ()</td></tr>
@@ -199,9 +202,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa4cf0e5844d640d1308af68b62273944"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSocketManager.html#aa4cf0e5844d640d1308af68b62273944">SetSelectTimeout</a> (uint64_t iTimeout)</td></tr>
 <tr class="memdesc:aa4cf0e5844d640d1308af68b62273944"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Select Timeout in MICROSECONDS ( 1000 == 1 millisecond ) Setting this to 0 will cause no timeout to happen, <a class="el" href="classCSocketManager.html#acf705393b54ade69835134e900c7bf85">Select()</a> will return instantly.  <a href="#aa4cf0e5844d640d1308af68b62273944">More...</a><br/></td></tr>
 <tr class="separator:aa4cf0e5844d640d1308af68b62273944"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a0731cb30af8a552de36b4c2cf9e931"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSocketManager.html#a1a0731cb30af8a552de36b4c2cf9e931">DelSockByAddr</a> (<a class="el" href="classCsock.html">Csock</a> *pcSock)</td></tr>
-<tr class="memdesc:a1a0731cb30af8a552de36b4c2cf9e931"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a sock by addr its position is looked up the socket is deleted, the appropriate call backs are peformed and its instance is removed from the manager.  <a href="#a1a0731cb30af8a552de36b4c2cf9e931">More...</a><br/></td></tr>
-<tr class="separator:a1a0731cb30af8a552de36b4c2cf9e931"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee351fd02bdd11badbefde04df270a91"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSocketManager.html#aee351fd02bdd11badbefde04df270a91">DelSock</a> (size_t iPos)</td></tr>
 <tr class="memdesc:aee351fd02bdd11badbefde04df270a91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a sock by position in the vector the socket is deleted, the appropriate call backs are peformed and its instance is removed from the manager deleting in a loop can be tricky, be sure you watch your position.  <a href="#aee351fd02bdd11badbefde04df270a91">More...</a><br/></td></tr>
 <tr class="separator:aee351fd02bdd11badbefde04df270a91"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -844,7 +844,7 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a1a0731cb30af8a552de36b4c2cf9e931"></a>
+<a class="anchor" id="a51e3b4ab1e575d7ade95c542a502f838"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -852,7 +852,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void CSocketManager::DelSockByAddr </td>
+          <td class="memname">void CSockManager::DelSockByAddr </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classCsock.html">Csock</a> *&#160;</td>
           <td class="paramname"><em>pcSock</em></td><td>)</td>
@@ -861,12 +861,14 @@ Friends</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Delete a sock by addr its position is looked up the socket is deleted, the appropriate call backs are peformed and its instance is removed from the manager. </p>
+
+<p>Reimplemented from <a class="el" href="classCSocketManager.html#a1a0731cb30af8a552de36b4c2cf9e931">CSocketManager</a>.</p>
 
 </div>
 </div>
@@ -1982,7 +1984,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 6 2015 12:47:18 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 20 2016 22:01:52 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
