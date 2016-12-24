@@ -54,7 +54,6 @@ var searchData=
   ['getconnectionqueue',['GetConnectionQueue',['../classCZNC.html#a8563f1feacb931f1572ea37675e39805',1,'CZNC']]],
   ['getconstate',['GetConState',['../classCsock.html#aa09f26f997f90406b7291547c559f4a6',1,'Csock']]],
   ['getcontenttype',['GetContentType',['../classCHTTPSock.html#a0dc2a8ca88de41a5282476d8090e1167',1,'CHTTPSock']]],
-  ['getcoreversion',['GetCoreVersion',['../classCModule.html#a17958ce716fb178a071d32ee036ffebf',1,'CModule']]],
   ['getcreationdate',['GetCreationDate',['../classCChan.html#a6701d89616f1f5190533e917bf1cb71f',1,'CChan']]],
   ['getcrons',['GetCrons',['../classCSockCommon.html#a77b04d9e37e9e4e110d8463430d3a763',1,'CSockCommon']]],
   ['getcsockfromctx',['GetCsockFromCTX',['../Csocket_8h.html#aea50301bc3134c0e200baf9a2e6a1175',1,'Csocket.h']]],

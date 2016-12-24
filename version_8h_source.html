@@ -97,11 +97,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="version_8h.html#a1a53b724b6de666faa8a9e0d06d1055f">    6</a></span>&#160;<span class="preprocessor">#define VERSION_MAJOR 1</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="version_8h.html#ae0cb52afb79b185b1bf82c7e235f682b">    7</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define VERSION_MINOR 7</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="version_8h.html#a901edadf17488bb6be1ac9a1e3cfea7a">    8</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define VERSION_PATCH -1</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor"></span><span class="comment">// This one is for display purpose</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor"></span><span class="comment">// This one is for display purpose and to check ABI compatibility of modules</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="version_8h.html#acfc1668731750cb1ee8974b8a7c133ef">   10</a></span>&#160;<span class="preprocessor">#define VERSION_STR &quot;1.7.x&quot;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">//  This one is for ZNCModInfo</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">// Don&#39;t use this one</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="version_8h.html#a1c6d5de492ac61ad29aec7aa9a436bbf">   14</a></span>&#160;<span class="preprocessor">#define VERSION (VERSION_MAJOR + VERSION_MINOR / 10.0)</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// You can add -DVERSION_EXTRA=&quot;stuff&quot; to your CXXFLAGS!</span></div>
@@ -110,12 +110,49 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor"></span><span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="version_8h.html#a7ad9abc1340b29c9666bfddf0378995e">ZNC_VERSION_EXTRA</a>;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#endif  // !ZNC_VERSION_H</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">// Compilation options which affect ABI</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#ifdef HAVE_IPV6</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="version_8h.html#a62d1ebc30aac30ddf6bd04e68773eb5e">   25</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZNC_VERSION_TEXT_IPV6 &quot;yes&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZNC_VERSION_TEXT_IPV6 &quot;no&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#ifdef HAVE_LIBSSL</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="version_8h.html#a544a6134c49e6f5eec7deb7da1791492">   31</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZNC_VERSION_TEXT_SSL &quot;yes&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZNC_VERSION_TEXT_SSL &quot;no&quot;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#ifdef HAVE_THREADED_DNS</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="version_8h.html#adbb19370a1d80d45389b33f21064325a">   37</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZNC_VERSION_TEXT_DNS &quot;threads&quot;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZNC_VERSION_TEXT_DNS &quot;blocking&quot;</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#ifdef HAVE_ICU</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="version_8h.html#a59f60bc72b834212f7972768d121607f">   43</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZNC_VERSION_TEXT_ICU &quot;yes&quot;</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZNC_VERSION_TEXT_ICU &quot;no&quot;</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#ifdef HAVE_I18N</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZNC_VERSION_TEXT_I18N &quot;yes&quot;</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="version_8h.html#a3f3b2be872a6a2aef48b190f46743f1d">   51</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZNC_VERSION_TEXT_I18N &quot;no&quot;</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="version_8h.html#a600716d148f6a53d27ccf4849b4d8639">   54</a></span>&#160;<span class="preprocessor">#define ZNC_COMPILE_OPTIONS_STRING                                    \</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">    &quot;IPv6: &quot; ZNC_VERSION_TEXT_IPV6 &quot;, SSL: &quot; ZNC_VERSION_TEXT_SSL     \</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">    &quot;, DNS: &quot; ZNC_VERSION_TEXT_DNS &quot;, charset: &quot; ZNC_VERSION_TEXT_ICU \</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">    &quot;, i18n: &quot; ZNC_VERSION_TEXT_I18N</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif  // !ZNC_VERSION_H</span></div>
 <div class="ttc" id="version_8h_html_a7ad9abc1340b29c9666bfddf0378995e"><div class="ttname"><a href="version_8h.html#a7ad9abc1340b29c9666bfddf0378995e">ZNC_VERSION_EXTRA</a></div><div class="ttdeci">const char * ZNC_VERSION_EXTRA</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 16 2016 10:14:51 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Dec 24 2016 19:16:33 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

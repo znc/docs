@@ -40,6 +40,7 @@ var searchData=
   ['cmodemessage',['CModeMessage',['../classCModeMessage.html',1,'']]],
   ['cmodinfo',['CModInfo',['../classCModInfo.html',1,'']]],
   ['cmodule',['CModule',['../classCModule.html',1,'']]],
+  ['cmoduleentry',['CModuleEntry',['../structCModuleEntry.html',1,'']]],
   ['cmodulejob',['CModuleJob',['../classCModuleJob.html',1,'']]],
   ['cmodules',['CModules',['../classCModules.html',1,'']]],
   ['cnick',['CNick',['../classCNick.html',1,'']]],
