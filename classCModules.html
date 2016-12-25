@@ -317,12 +317,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:acc7c028493f378b99ea645900b4af862"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab516f86326f04f3f68c1d7fddc1e1fc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#aab516f86326f04f3f68c1d7fddc1e1fc">OnPrivMsg</a> (<a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCString.html">CString</a> &amp;sMessage)</td></tr>
 <tr class="separator:aab516f86326f04f3f68c1d7fddc1e1fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e310e6575940ec5c2e5c7a9c4e21959"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#a5e310e6575940ec5c2e5c7a9c4e21959">OnPrivMessage</a> (<a class="el" href="classCTextMessage.html">CTextMessage</a> &amp;Message)</td></tr>
-<tr class="separator:a5e310e6575940ec5c2e5c7a9c4e21959"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39352282b634b3b67a004ba1cc653266"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#a39352282b634b3b67a004ba1cc653266">OnPrivTextMessage</a> (<a class="el" href="classCTextMessage.html">CTextMessage</a> &amp;Message)</td></tr>
+<tr class="separator:a39352282b634b3b67a004ba1cc653266"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d33fa3fdb1006ab0c4bb722598e4a4e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#a9d33fa3fdb1006ab0c4bb722598e4a4e">OnChanMsg</a> (<a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCChan.html">CChan</a> &amp;Channel, <a class="el" href="classCString.html">CString</a> &amp;sMessage)</td></tr>
 <tr class="separator:a9d33fa3fdb1006ab0c4bb722598e4a4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4ba5e42ece21f1e930f1c851326ca11"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#ad4ba5e42ece21f1e930f1c851326ca11">OnChanMessage</a> (<a class="el" href="classCTextMessage.html">CTextMessage</a> &amp;Message)</td></tr>
-<tr class="separator:ad4ba5e42ece21f1e930f1c851326ca11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72dcc75abf1151655711f88cf3a0479b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#a72dcc75abf1151655711f88cf3a0479b">OnChanTextMessage</a> (<a class="el" href="classCTextMessage.html">CTextMessage</a> &amp;Message)</td></tr>
+<tr class="separator:a72dcc75abf1151655711f88cf3a0479b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a914842950d3b4674ceb07da565b81d5e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#a914842950d3b4674ceb07da565b81d5e">OnPrivNotice</a> (<a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCString.html">CString</a> &amp;sMessage)</td></tr>
 <tr class="separator:a914842950d3b4674ceb07da565b81d5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7e33227e705c9ee41b989d975579668"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModules.html#ab7e33227e705c9ee41b989d975579668">OnPrivNoticeMessage</a> (<a class="el" href="classCNoticeMessage.html">CNoticeMessage</a> &amp;Message)</td></tr>
@@ -1194,22 +1194,6 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ad4ba5e42ece21f1e930f1c851326ca11"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool CModules::OnChanMessage </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classCTextMessage.html">CTextMessage</a> &amp;&#160;</td>
-          <td class="paramname"><em>Message</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="a9d33fa3fdb1006ab0c4bb722598e4a4e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1384,6 +1368,22 @@ Protected Attributes</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a72dcc75abf1151655711f88cf3a0479b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CModules::OnChanTextMessage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCTextMessage.html">CTextMessage</a> &amp;&#160;</td>
+          <td class="paramname"><em>Message</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2742,22 +2742,6 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a5e310e6575940ec5c2e5c7a9c4e21959"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool CModules::OnPrivMessage </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classCTextMessage.html">CTextMessage</a> &amp;&#160;</td>
-          <td class="paramname"><em>Message</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="aab516f86326f04f3f68c1d7fddc1e1fc"></a>
 <div class="memitem">
 <div class="memproto">
@@ -2818,6 +2802,22 @@ Protected Attributes</h2></td></tr>
           <td class="memname">bool CModules::OnPrivNoticeMessage </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classCNoticeMessage.html">CNoticeMessage</a> &amp;&#160;</td>
+          <td class="paramname"><em>Message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a39352282b634b3b67a004ba1cc653266"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CModules::OnPrivTextMessage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCTextMessage.html">CTextMessage</a> &amp;&#160;</td>
           <td class="paramname"><em>Message</em></td><td>)</td>
           <td></td>
         </tr>
@@ -3988,7 +3988,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 17 2016 22:32:51 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Dec 25 2016 16:09:59 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
