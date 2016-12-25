@@ -47,6 +47,7 @@ var searchData=
   ['cnickmessage',['CNickMessage',['../classCNickMessage.html',1,'']]],
   ['cnoticemessage',['CNoticeMessage',['../classCNoticeMessage.html',1,'']]],
   ['cnumericmessage',['CNumericMessage',['../classCNumericMessage.html',1,'']]],
+  ['coptionaltranslation',['COptionalTranslation',['../classCOptionalTranslation.html',1,'']]],
   ['cpartmessage',['CPartMessage',['../classCPartMessage.html',1,'']]],
   ['cquery',['CQuery',['../classCQuery.html',1,'']]],
   ['cquitmessage',['CQuitMessage',['../classCQuitMessage.html',1,'']]],

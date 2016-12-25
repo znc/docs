@@ -532,10 +532,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6cb0fdc5c7da4928d447f46428142f2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b25f6d0ed7e92dcc18d3b11a2c48398"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#a7b25f6d0ed7e92dcc18d3b11a2c48398">AddCommand</a> (const <a class="el" href="classCString.html">CString</a> &amp;sCmd, <a class="el" href="classCModCommand.html#ac1b783f249d3acaa8c43173e4afc7415">CModCommand::ModCmdFunc</a> func, const <a class="el" href="classCString.html">CString</a> &amp;sArgs=&quot;&quot;, const <a class="el" href="classCString.html">CString</a> &amp;sDesc=&quot;&quot;)</td></tr>
 <tr class="separator:a7b25f6d0ed7e92dcc18d3b11a2c48398"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa741495f4f97b5e0d78753c63b2a5ddc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#aa741495f4f97b5e0d78753c63b2a5ddc">AddCommand</a> (const <a class="el" href="classCString.html">CString</a> &amp;sCmd, const <a class="el" href="classCString.html">CString</a> &amp;sArgs, const <a class="el" href="classCString.html">CString</a> &amp;sDesc, std::function&lt; void(const <a class="el" href="classCString.html">CString</a> &amp;sLine)&gt; func)</td></tr>
-<tr class="separator:aa741495f4f97b5e0d78753c63b2a5ddc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bf27a249e8c44d54608f897229042ad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#a6bf27a249e8c44d54608f897229042ad">AddCommand</a> (const <a class="el" href="classCString.html">CString</a> &amp;sCmd, const <a class="el" href="classCString.html">CString</a> &amp;sArgs, const <a class="el" href="classCDelayedTranslation.html">CDelayedTranslation</a> &amp;dDesc, std::function&lt; void(const <a class="el" href="classCString.html">CString</a> &amp;sLine)&gt; func)</td></tr>
-<tr class="separator:a6bf27a249e8c44d54608f897229042ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a508f6ee4343dcf9f5b56c42363af4ea5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#a508f6ee4343dcf9f5b56c42363af4ea5">AddCommand</a> (const <a class="el" href="classCString.html">CString</a> &amp;sCmd, const <a class="el" href="classCOptionalTranslation.html">COptionalTranslation</a> &amp;Args, const <a class="el" href="classCOptionalTranslation.html">COptionalTranslation</a> &amp;Desc, std::function&lt; void(const <a class="el" href="classCString.html">CString</a> &amp;sLine)&gt; func)</td></tr>
+<tr class="separator:a508f6ee4343dcf9f5b56c42363af4ea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62440890e4a4c61b76576ba90aed4ccb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#a62440890e4a4c61b76576ba90aed4ccb">RemCommand</a> (const <a class="el" href="classCString.html">CString</a> &amp;sCmd)</td></tr>
 <tr class="separator:a62440890e4a4c61b76576ba90aed4ccb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aedfef504a752c93618e2ff2a8433c3f1"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classCModCommand.html">CModCommand</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#aedfef504a752c93618e2ff2a8433c3f1">FindCommand</a> (const <a class="el" href="classCString.html">CString</a> &amp;sCmd) const </td></tr>
@@ -893,10 +891,11 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if the command was successfully added. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000040">Deprecated:</a></b></dt><dd>Use the variant with <a class="el" href="classCOptionalTranslation.html">COptionalTranslation</a>. </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="aa741495f4f97b5e0d78753c63b2a5ddc"></a>
+<a class="anchor" id="a508f6ee4343dcf9f5b56c42363af4ea5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -909,14 +908,14 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
-          <td class="paramname"><em>sArgs</em>, </td>
+          <td class="paramtype">const <a class="el" href="classCOptionalTranslation.html">COptionalTranslation</a> &amp;&#160;</td>
+          <td class="paramname"><em>Args</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
-          <td class="paramname"><em>sDesc</em>, </td>
+          <td class="paramtype">const <a class="el" href="classCOptionalTranslation.html">COptionalTranslation</a> &amp;&#160;</td>
+          <td class="paramname"><em>Desc</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -931,45 +930,12 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>True if the command was successfully added. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a6bf27a249e8c44d54608f897229042ad"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool CModule::AddCommand </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
-          <td class="paramname"><em>sCmd</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
-          <td class="paramname"><em>sArgs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classCDelayedTranslation.html">CDelayedTranslation</a> &amp;&#160;</td>
-          <td class="paramname"><em>dDesc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::function&lt; void(const <a class="el" href="classCString.html">CString</a> &amp;sLine)&gt;&#160;</td>
-          <td class="paramname"><em>func</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dDesc</td><td>Either a string "", or the result of <a class="el" href="classCModule.html#a10fb739d37d8ccca8cdb34215d1b10e4">t_d()</a> </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the command was successfully added. </dd></dl>
 
 </div>
@@ -7986,7 +7952,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 25 2016 16:09:59 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Dec 25 2016 21:33:46 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

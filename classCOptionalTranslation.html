@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>ZNC: CDelayedTranslation Class Reference</title>
+<title>ZNC: COptionalTranslation Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -85,9 +85,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="classCDelayedTranslation-members.html">List of all members</a>  </div>
+<a href="classCOptionalTranslation-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">CDelayedTranslation Class Reference</div>  </div>
+<div class="title">COptionalTranslation Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -95,15 +95,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1499b1ec25e853326806520cde25ca5c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDelayedTranslation.html#a1499b1ec25e853326806520cde25ca5c">CDelayedTranslation</a> ()=default</td></tr>
-<tr class="separator:a1499b1ec25e853326806520cde25ca5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88d620acd7b49b5db358ec58fe77e0a3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDelayedTranslation.html#a88d620acd7b49b5db358ec58fe77e0a3">CDelayedTranslation</a> (const <a class="el" href="classCString.html">CString</a> &amp;sDomain, const <a class="el" href="classCString.html">CString</a> &amp;sContext, const <a class="el" href="classCString.html">CString</a> &amp;sEnglish)</td></tr>
-<tr class="separator:a88d620acd7b49b5db358ec58fe77e0a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8062d580f6ca44fb4db31e8e81d70e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDelayedTranslation.html#aa8062d580f6ca44fb4db31e8e81d70e9">Resolve</a> () const </td></tr>
-<tr class="separator:aa8062d580f6ca44fb4db31e8e81d70e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fd1c1cce2fcf27ab9283dc052a6bb1b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCOptionalTranslation.html#a4fd1c1cce2fcf27ab9283dc052a6bb1b">COptionalTranslation</a> (const <a class="el" href="classCString.html">CString</a> &amp;sText)</td></tr>
+<tr class="separator:a4fd1c1cce2fcf27ab9283dc052a6bb1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa85957e5723d5d30af5096724abaad8d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCOptionalTranslation.html#aa85957e5723d5d30af5096724abaad8d">COptionalTranslation</a> (const char *s)</td></tr>
+<tr class="separator:aa85957e5723d5d30af5096724abaad8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3840da9239358d514b6e08e145ba1ef6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCOptionalTranslation.html#a3840da9239358d514b6e08e145ba1ef6">COptionalTranslation</a> (const <a class="el" href="classCDelayedTranslation.html">CDelayedTranslation</a> &amp;dTranslation)</td></tr>
+<tr class="separator:a3840da9239358d514b6e08e145ba1ef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0fda64258c580c91e911995af84d222"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCOptionalTranslation.html#aa0fda64258c580c91e911995af84d222">Resolve</a> () const </td></tr>
+<tr class="separator:aa0fda64258c580c91e911995af84d222"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a1499b1ec25e853326806520cde25ca5c"></a>
+<a class="anchor" id="a4fd1c1cce2fcf27ab9283dc052a6bb1b"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -111,22 +113,23 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">CDelayedTranslation::CDelayedTranslation </td>
+          <td class="memname">COptionalTranslation::COptionalTranslation </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
+          <td class="paramname"><em>sText</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a88d620acd7b49b5db358ec58fe77e0a3"></a>
+<a class="anchor" id="aa85957e5723d5d30af5096724abaad8d"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -134,27 +137,35 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">CDelayedTranslation::CDelayedTranslation </td>
+          <td class="memname">COptionalTranslation::COptionalTranslation </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
-          <td class="paramname"><em>sDomain</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
-          <td class="paramname"><em>sContext</em>, </td>
         </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3840da9239358d514b6e08e145ba1ef6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
+          <td class="memname">COptionalTranslation::COptionalTranslation </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCDelayedTranslation.html">CDelayedTranslation</a> &amp;&#160;</td>
+          <td class="paramname"><em>dTranslation</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
-          <td class="paramname"><em>sEnglish</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -167,20 +178,30 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="aa8062d580f6ca44fb4db31e8e81d70e9"></a>
+<a class="anchor" id="aa0fda64258c580c91e911995af84d222"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCString.html">CString</a> CDelayedTranslation::Resolve </td>
+          <td class="memname"><a class="el" href="classCString.html">CString</a> COptionalTranslation::Resolve </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="classCOptionalTranslation.html#aa0fda64258c580c91e911995af84d222">COptionalTranslation::Resolve()</a>.</p>
+<p>References <a class="el" href="classCDelayedTranslation.html#aa8062d580f6ca44fb4db31e8e81d70e9">CDelayedTranslation::Resolve()</a>.</p>
+
+<p>Referenced by <a class="el" href="classCModCommand.html#a22390a1667673a9da522803122bdeae7">CModCommand::GetArgs()</a>, <a class="el" href="classCModCommand.html#a708c00b51afd658525d716c18dcff4a7">CModCommand::GetDescription()</a>, and <a class="el" href="classCWebSubPage.html#a2408b2d6f749ab5cc875910b9ec2fa97">CWebSubPage::GetTitle()</a>.</p>
 
 </div>
 </div>

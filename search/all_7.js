@@ -15,7 +15,7 @@ var searchData=
   ['getaltnick',['GetAltNick',['../classCIRCNetwork.html#afe0e30555b41d58430f8e4a64222e589',1,'CIRCNetwork::GetAltNick()'],['../classCUser.html#afe6f76a7f18877f5658d5ea805b53a3b',1,'CUser::GetAltNick()']]],
   ['getanonconnectioncount',['GetAnonConnectionCount',['../classCSockManager.html#a5ec6089669a31efdd578ba0a8328cb69',1,'CSockManager']]],
   ['getanoniplimit',['GetAnonIPLimit',['../classCZNC.html#a823ebca7054bdcc9b273f4d54fc83a9a',1,'CZNC']]],
-  ['getargs',['GetArgs',['../classCModCommand.html#acce5bb1b8ee84191cab29afce021b8ed',1,'CModCommand::GetArgs()'],['../classCModule.html#a6defb1c81497c221a304926275ad2563',1,'CModule::GetArgs()']]],
+  ['getargs',['GetArgs',['../classCModCommand.html#a22390a1667673a9da522803122bdeae7',1,'CModCommand::GetArgs()'],['../classCModule.html#a6defb1c81497c221a304926275ad2563',1,'CModule::GetArgs()']]],
   ['getargshelptext',['GetArgsHelpText',['../classCModInfo.html#a468d4cd956c2b47e0f5d1ddfe76173a0',1,'CModInfo']]],
   ['getatime',['GetATime',['../classCFile.html#a7b0c28e7a02a451ca0d12b4a2cef4602',1,'CFile::GetATime() const '],['../classCFile.html#ae540435761823aacb41af115b4cbaf1e',1,'CFile::GetATime(const CString &amp;sFile)']]],
   ['getavailablemods',['GetAvailableMods',['../classCModules.html#a212ea5f8905169547e6e581faf3d7d17',1,'CModules']]],
