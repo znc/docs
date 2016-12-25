@@ -25,6 +25,7 @@ var searchData=
   ['cgetaddrinfo',['CGetAddrInfo',['../classCGetAddrInfo.html#a88796e7dbb9c7fb21f652351ac920ecb',1,'CGetAddrInfo']]],
   ['changedir',['ChangeDir',['../classCDir.html#ac7d1e272f7c255096298dfcc9e24270e',1,'CDir']]],
   ['changenick',['ChangeNick',['../classCChan.html#a4bfc9fd069000cf2b3e808152ef0c414',1,'CChan']]],
+  ['checkcidr',['CheckCIDR',['../classCUtils.html#a0220c8fd9099441ae4b85a410537caea',1,'CUtils']]],
   ['checkfds',['CheckFDs',['../classCSMonitorFD.html#a7011d6a80138c3df7a7cd71e3d7dbada',1,'CSMonitorFD::CheckFDs()'],['../classCSockCommon.html#a4c0a6d0367eb1531cdc11c05a65be076',1,'CSockCommon::CheckFDs()'],['../classCCurlSock.html#ac712e12af1b568ae43ff0949c5dc7e7f',1,'CCurlSock::CheckFDs()']]],
   ['checkircconnect',['CheckIRCConnect',['../classCIRCNetwork.html#aa2947b26744629753ef41994192ccd89',1,'CIRCNetwork']]],
   ['checkpass',['CheckPass',['../classCUser.html#a01f18d381b7fabf84b77f30b6b7073b2',1,'CUser']]],

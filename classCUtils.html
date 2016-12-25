@@ -163,6 +163,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a7de4cb9ea789938dea83b66ade28bd96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0136ab5edc8330a2d01b45b69aa2a7aa"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="ZNCString_8h.html#a84b05218977775b974a8db49e81f02a4">SCString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUtils.html#a0136ab5edc8330a2d01b45b69aa2a7aa">GetEncodings</a> ()</td></tr>
 <tr class="separator:a0136ab5edc8330a2d01b45b69aa2a7aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0220c8fd9099441ae4b85a410537caea"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUtils.html#a0220c8fd9099441ae4b85a410537caea">CheckCIDR</a> (const <a class="el" href="classCString.html">CString</a> &amp;sIP, const <a class="el" href="classCString.html">CString</a> &amp;sRange)</td></tr>
+<tr class="memdesc:a0220c8fd9099441ae4b85a410537caea"><td class="mdescLeft">&#160;</td><td class="mdescRight">CIDR notation checker, e.g.  <a href="#a0220c8fd9099441ae4b85a410537caea">More...</a><br/></td></tr>
+<tr class="separator:a0220c8fd9099441ae4b85a410537caea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7374d12ececc457863cbeb5aff8f5ff"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classMCString.html">MCString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUtils.html#ab7374d12ececc457863cbeb5aff8f5ff">GetMessageTags</a> (const <a class="el" href="classCString.html">CString</a> &amp;sLine)</td></tr>
 <tr class="separator:ab7374d12ececc457863cbeb5aff8f5ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8227de4f84982154cdf8ab1435726e83"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUtils.html#a8227de4f84982154cdf8ab1435726e83">SetMessageTags</a> (<a class="el" href="classCString.html">CString</a> &amp;sLine, const <a class="el" href="classMCString.html">MCString</a> &amp;mssTags)</td></tr>
@@ -205,6 +208,44 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a0220c8fd9099441ae4b85a410537caea"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool CUtils::CheckCIDR </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
+          <td class="paramname"><em>sIP</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
+          <td class="paramname"><em>sRange</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>CIDR notation checker, e.g. </p>
+<p>"192.0.2.0/24" or "2001:db8::/32"</p>
+<p>For historical reasons also allows wildcards, e.g. "192.168.*" </p>
+
+</div>
+</div>
 <a class="anchor" id="a6728eb4474a918b1b6b0dd0da66ed197"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1037,7 +1078,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 3 2016 22:58:10 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Dec 25 2016 15:20:10 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
