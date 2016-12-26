@@ -19,8 +19,6 @@ var searchData=
   ['pcversionextra',['pcVersionExtra',['../structCModuleEntry.html#aef977cab90338f88c853934d5b7e24d4',1,'CModuleEntry']]],
   ['perror',['PERROR',['../include_2znc_2defines_8h.html#ad94effca1b2e8da32cc64bb4a6717c61',1,'PERROR():&#160;defines.h'],['../Csocket_8h.html#ad94effca1b2e8da32cc64bb4a6717c61',1,'PERROR():&#160;Csocket.h']]],
   ['ping',['Ping',['../classCMessage.html#a0c73f73428ca8fd0c3f10a497d2fcb11ab85815d04cec053ce6deb8021f2df1b8',1,'CMessage']]],
-  ['ping_5ffrequency',['PING_FREQUENCY',['../classCIRCNetwork.html#ad69c1740c87d99581a5f9761a9d69b0aa3f207f8f9ab984372258f4363011138e',1,'CIRCNetwork']]],
-  ['ping_5fslack',['PING_SLACK',['../classCIRCNetwork.html#ad69c1740c87d99581a5f9761a9d69b0aae044431ba9a775c6489d2383df14f4d3',1,'CIRCNetwork']]],
   ['plural',['Plural',['../classCTranslation.html#ae3f872747c909a3d3131c082f7a29ce3',1,'CTranslation']]],
   ['pong',['Pong',['../classCMessage.html#a0c73f73428ca8fd0c3f10a497d2fcb11a4d94412495a32342e1b8c78f7960f2bc',1,'CMessage']]],
   ['popen2',['popen2',['../classCExecSock.html#a3a3cdba9a08e1ae3040c3f4b432035cb',1,'CExecSock']]],

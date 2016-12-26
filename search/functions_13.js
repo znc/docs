@@ -105,6 +105,7 @@ var searchData=
   ['setnewnick',['SetNewNick',['../classCNickMessage.html#a017584f1c4b94d179b8ce6fa4c22d6c9',1,'CNickMessage']]],
   ['setnextserver',['SetNextServer',['../classCIRCNetwork.html#a079a375fbcad0bb78b145041edec96f8',1,'CIRCNetwork']]],
   ['setnick',['SetNick',['../classCClient.html#aa1d9f0d1711ed9c26af9cd556aee7873',1,'CClient::SetNick()'],['../classCIRCNetwork.html#a3ebdd2184017b7f58272570559ca7a28',1,'CIRCNetwork::SetNick()'],['../classCMessage.html#a1e1933320f882da2aa19514513eed623',1,'CMessage::SetNick()'],['../classCNick.html#a4f7a5e28bd81170bbd40a4783c7cc527',1,'CNick::SetNick()'],['../classCUser.html#a40d7b7262a1462cfea0ceda8da68540c',1,'CUser::SetNick()']]],
+  ['setnotraffictimeout',['SetNoTrafficTimeout',['../classCUser.html#ac0233a32e5efefb8cd60e96e2f401347',1,'CUser']]],
   ['setnv',['SetNV',['../classCModule.html#a7fe4ebfa8b30c371e8718fbe00728a7b',1,'CModule']]],
   ['setparam',['SetParam',['../classCMessage.html#ae5693433c2368e93095d194e24d19d14',1,'CMessage']]],
   ['setparams',['SetParams',['../classCMessage.html#ae421d4c231ce054ea1bd8f5b2e8c0ae3',1,'CMessage']]],

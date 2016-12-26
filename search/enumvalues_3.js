@@ -21,7 +21,7 @@ var searchData=
   ['ehtml',['EHTML',['../classCString.html#a8f63759db4ef372abb9cfa4751648e1fa32bc4b62f40af2f5fdf24c20efb2399f',1,'CString']]],
   ['emsgtag',['EMSGTAG',['../classCString.html#a8f63759db4ef372abb9cfa4751648e1fae314cdc57a80ca57bf6deceddb389ab1',1,'CString']]],
   ['enamedfmt',['ENAMEDFMT',['../classCString.html#a8f63759db4ef372abb9cfa4751648e1fa67ff7b2e0153ba73fb8058882e5d2548',1,'CString']]],
-  ['errnobadsslcert',['errnoBadSSLCert',['../classCZNCSock.html#a0670d76c83779715ef4e5046874ed905a0bade2ff8f3b4bb0327f8ccfb4c71493',1,'CZNCSock']]],
+  ['errnobadsslcert',['errnoBadSSLCert',['../classCZNCSock.html#af2ddc924a2e3e4c385fb2801f4fddfe5a0bade2ff8f3b4bb0327f8ccfb4c71493',1,'CZNCSock']]],
   ['error',['Error',['../classCMessage.html#a0c73f73428ca8fd0c3f10a497d2fcb11a902b0d55fddef6f8d651fe1035b7d4bd',1,'CMessage']]],
   ['esql',['ESQL',['../classCString.html#a8f63759db4ef372abb9cfa4751648e1fa5528b3d17d10fc5d915c4888b2c0c142',1,'CString']]],
   ['eurl',['EURL',['../classCString.html#a8f63759db4ef372abb9cfa4751648e1fa51df786ffcb52b401ad2ef2d10170f75',1,'CString']]],

@@ -180,13 +180,13 @@ Public Types</h2></td></tr>
 <a class="el" href="classCsock.html#a8b185717b466c70d2934fce9775c54daae8fc175ce4b5343fb8089632487c0285">CLT_DEREFERENCE</a> = 3
  }</td></tr>
 <tr class="separator:a8b185717b466c70d2934fce9775c54da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a611d00c1dbe35aa38f6cb22a7e9045"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="classCsock.html#a5a611d00c1dbe35aa38f6cb22a7e9045a7ca5c1837fd4777f4c30736ba3d2b6b2">TMO_READ</a> = 1, 
-<a class="el" href="classCsock.html#a5a611d00c1dbe35aa38f6cb22a7e9045a91dd1f8946079c9d55a9fdceaf08140b">TMO_WRITE</a> = 2, 
-<a class="el" href="classCsock.html#a5a611d00c1dbe35aa38f6cb22a7e9045a7b49e7c8277b2b9f541a370d9c3e656d">TMO_ACCEPT</a> = 4, 
-<a class="el" href="classCsock.html#a5a611d00c1dbe35aa38f6cb22a7e9045af53c83452a73e97d1b89e9e7743ddb13">TMO_ALL</a> = TMO_READ|TMO_WRITE|TMO_ACCEPT
+<tr class="memitem:a7aed3bd39d2545f8c7b4a7a6b12e39e3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="classCsock.html#a7aed3bd39d2545f8c7b4a7a6b12e39e3a7ca5c1837fd4777f4c30736ba3d2b6b2">TMO_READ</a> = 1, 
+<a class="el" href="classCsock.html#a7aed3bd39d2545f8c7b4a7a6b12e39e3a91dd1f8946079c9d55a9fdceaf08140b">TMO_WRITE</a> = 2, 
+<a class="el" href="classCsock.html#a7aed3bd39d2545f8c7b4a7a6b12e39e3a7b49e7c8277b2b9f541a370d9c3e656d">TMO_ACCEPT</a> = 4, 
+<a class="el" href="classCsock.html#a7aed3bd39d2545f8c7b4a7a6b12e39e3af53c83452a73e97d1b89e9e7743ddb13">TMO_ALL</a> = TMO_READ|TMO_WRITE|TMO_ACCEPT
  }</td></tr>
-<tr class="memdesc:a5a611d00c1dbe35aa38f6cb22a7e9045"><td class="mdescLeft">&#160;</td><td class="mdescRight">this timeout isn't just connection timeout, but also timeout on NOT recieving data, to disable this set it to 0 then the normal TCP timeout will apply (basically TCP will kill a dead connection) Set the timeout, set to 0 to never timeout  <a href="classCsock.html#a5a611d00c1dbe35aa38f6cb22a7e9045">More...</a><br/></td></tr>
-<tr class="separator:a5a611d00c1dbe35aa38f6cb22a7e9045"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:a7aed3bd39d2545f8c7b4a7a6b12e39e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">this timeout isn't just connection timeout, but also timeout on NOT recieving data, to disable this set it to 0 then the normal TCP timeout will apply (basically TCP will kill a dead connection) Set the timeout, set to 0 to never timeout  <a href="classCsock.html#a7aed3bd39d2545f8c7b4a7a6b12e39e3">More...</a><br/></td></tr>
+<tr class="separator:a7aed3bd39d2545f8c7b4a7a6b12e39e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94aab05249b29e4446077664dee91e5e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a94aab05249b29e4446077664dee91e5e">EDNSLType</a> { <a class="el" href="classCsock.html#a94aab05249b29e4446077664dee91e5ea7ad7bffbc3827e2b09ded86d9d95e0c5">DNS_VHOST</a>, 
 <a class="el" href="classCsock.html#a94aab05249b29e4446077664dee91e5ea61e4aa93fa8c8d34d7393f13767f3817">DNS_DEST</a>
  }</td></tr>
@@ -340,7 +340,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7ce960e8ee0f890f668673c0e9cdceeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f2bf004de57a5ebf6450941e4d7eceb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a7f2bf004de57a5ebf6450941e4d7eceb">IsReadPaused</a> () const </td></tr>
 <tr class="separator:a7f2bf004de57a5ebf6450941e4d7eceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d9f4c33c736ec6153257c647cf8fa9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a8d9f4c33c736ec6153257c647cf8fa9d">SetTimeout</a> (int iTimeout, uint32_t iTimeoutType=<a class="el" href="classCsock.html#a5a611d00c1dbe35aa38f6cb22a7e9045af53c83452a73e97d1b89e9e7743ddb13">TMO_ALL</a>)</td></tr>
+<tr class="memitem:a8d9f4c33c736ec6153257c647cf8fa9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a8d9f4c33c736ec6153257c647cf8fa9d">SetTimeout</a> (int iTimeout, uint32_t iTimeoutType=<a class="el" href="classCsock.html#a7aed3bd39d2545f8c7b4a7a6b12e39e3af53c83452a73e97d1b89e9e7743ddb13">TMO_ALL</a>)</td></tr>
 <tr class="memdesc:a8d9f4c33c736ec6153257c647cf8fa9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Currently this uses the same value for all timeouts, and iTimeoutType merely states which event will be checked for timeouts.  <a href="#a8d9f4c33c736ec6153257c647cf8fa9d">More...</a><br/></td></tr>
 <tr class="separator:a8d9f4c33c736ec6153257c647cf8fa9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acff43c3905e9753cf948f97c297c89b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#acff43c3905e9753cf948f97c297c89b9">SetTimeoutType</a> (uint32_t iTimeoutType)</td></tr>
@@ -658,9 +658,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
 Protected Types</h2></td></tr>
-<tr class="memitem:a0670d76c83779715ef4e5046874ed905"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="classCZNCSock.html#a0670d76c83779715ef4e5046874ed905a0bade2ff8f3b4bb0327f8ccfb4c71493">errnoBadSSLCert</a> = 12569
+<tr class="memitem:af2ddc924a2e3e4c385fb2801f4fddfe5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="classCZNCSock.html#af2ddc924a2e3e4c385fb2801f4fddfe5a0bade2ff8f3b4bb0327f8ccfb4c71493">errnoBadSSLCert</a> = 12569
  }</td></tr>
-<tr class="separator:a0670d76c83779715ef4e5046874ed905"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:af2ddc924a2e3e4c385fb2801f4fddfe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
 Static Protected Member Functions</h2></td></tr>
@@ -683,7 +683,7 @@ Protected Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd><a href="#" onclick="location.href='mai'+'lto:'+'ima'+'gi'+'nos'+'@i'+'mag'+'in'+'os.'+'ne'+'t'; return false;">imagi<span style="display: none;">.nosp@m.</span>nos@<span style="display: none;">.nosp@m.</span>imagi<span style="display: none;">.nosp@m.</span>nos.<span style="display: none;">.nosp@m.</span>net</a> </dd></dl>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
-<a class="anchor" id="a0670d76c83779715ef4e5046874ed905"></a>
+<a class="anchor" id="af2ddc924a2e3e4c385fb2801f4fddfe5"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -701,13 +701,13 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a0670d76c83779715ef4e5046874ed905a0bade2ff8f3b4bb0327f8ccfb4c71493"></a>errnoBadSSLCert</em>&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="af2ddc924a2e3e4c385fb2801f4fddfe5a0bade2ff8f3b4bb0327f8ccfb4c71493"></a>errnoBadSSLCert</em>&#160;</td><td class="fielddoc">
 </td></tr>
 </table>
 
 </div>
 </div>
-<a class="anchor" id="a5a611d00c1dbe35aa38f6cb22a7e9045"></a>
+<a class="anchor" id="a7aed3bd39d2545f8c7b4a7a6b12e39e3"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -727,13 +727,13 @@ Protected Attributes</h2></td></tr>
 
 <p>this timeout isn't just connection timeout, but also timeout on NOT recieving data, to disable this set it to 0 then the normal TCP timeout will apply (basically TCP will kill a dead connection) Set the timeout, set to 0 to never timeout </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a5a611d00c1dbe35aa38f6cb22a7e9045a7ca5c1837fd4777f4c30736ba3d2b6b2"></a>TMO_READ</em>&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a7aed3bd39d2545f8c7b4a7a6b12e39e3a7ca5c1837fd4777f4c30736ba3d2b6b2"></a>TMO_READ</em>&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a5a611d00c1dbe35aa38f6cb22a7e9045a91dd1f8946079c9d55a9fdceaf08140b"></a>TMO_WRITE</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="a7aed3bd39d2545f8c7b4a7a6b12e39e3a91dd1f8946079c9d55a9fdceaf08140b"></a>TMO_WRITE</em>&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a5a611d00c1dbe35aa38f6cb22a7e9045a7b49e7c8277b2b9f541a370d9c3e656d"></a>TMO_ACCEPT</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="a7aed3bd39d2545f8c7b4a7a6b12e39e3a7b49e7c8277b2b9f541a370d9c3e656d"></a>TMO_ACCEPT</em>&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a5a611d00c1dbe35aa38f6cb22a7e9045af53c83452a73e97d1b89e9e7743ddb13"></a>TMO_ALL</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="a7aed3bd39d2545f8c7b4a7a6b12e39e3af53c83452a73e97d1b89e9e7743ddb13"></a>TMO_ALL</em>&#160;</td><td class="fielddoc">
 </td></tr>
 </table>
 
@@ -5374,7 +5374,7 @@ Protected Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>iTimeoutType</em> = <code><a class="el" href="classCsock.html#a5a611d00c1dbe35aa38f6cb22a7e9045af53c83452a73e97d1b89e9e7743ddb13">TMO_ALL</a></code>&#160;</td>
+          <td class="paramname"><em>iTimeoutType</em> = <code><a class="el" href="classCsock.html#a7aed3bd39d2545f8c7b4a7a6b12e39e3af53c83452a73e97d1b89e9e7743ddb13">TMO_ALL</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -6241,7 +6241,7 @@ X509_free( pCert );
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Nov 18 2016 10:18:17 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Dec 26 2016 16:11:26 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -262,6 +262,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aade627c876ac263dc8e7f3388ca752b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93b7d4c430420cadc30d039fdf1a3b15"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a93b7d4c430420cadc30d039fdf1a3b15">SetMaxQueryBuffers</a> (unsigned int i)</td></tr>
 <tr class="separator:a93b7d4c430420cadc30d039fdf1a3b15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0233a32e5efefb8cd60e96e2f401347"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#ac0233a32e5efefb8cd60e96e2f401347">SetNoTrafficTimeout</a> (unsigned int i)</td></tr>
+<tr class="separator:ac0233a32e5efefb8cd60e96e2f401347"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addc8e65212da0ef36eae15664645af63"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="classCClient.html">CClient</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#addc8e65212da0ef36eae15664645af63">GetUserClients</a> () const </td></tr>
 <tr class="separator:addc8e65212da0ef36eae15664645af63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ff9c638b064f4852df3dcc98c2f2741"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classCClient.html">CClient</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a1ff9c638b064f4852df3dcc98c2f2741">GetAllClients</a> () const </td></tr>
@@ -312,6 +314,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5077640810b13876841a6bd1abf49901"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10c02b8254d210bf76db8906be969d1d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a10c02b8254d210bf76db8906be969d1d">GetDefaultChanModes</a> () const </td></tr>
 <tr class="separator:a10c02b8254d210bf76db8906be969d1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aced61dbe64e539f2d651face03366ce4"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#aced61dbe64e539f2d651face03366ce4">GetPingFrequency</a> () const </td></tr>
+<tr class="memdesc:aced61dbe64e539f2d651face03366ce4"><td class="mdescLeft">&#160;</td><td class="mdescRight">How long must an IRC connection be idle before ZNC sends a ping.  <a href="#aced61dbe64e539f2d651face03366ce4">More...</a><br/></td></tr>
+<tr class="separator:aced61dbe64e539f2d651face03366ce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab129c39c7781fc8e6f4549e0f243a66"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#aab129c39c7781fc8e6f4549e0f243a66">GetPingSlack</a> () const </td></tr>
+<tr class="memdesc:aab129c39c7781fc8e6f4549e0f243a66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time between checks if PINGs need to be sent.  <a href="#aab129c39c7781fc8e6f4549e0f243a66">More...</a><br/></td></tr>
+<tr class="separator:aab129c39c7781fc8e6f4549e0f243a66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d3dc753616aa839bd89671e95a0b349"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a0d3dc753616aa839bd89671e95a0b349">GetNoTrafficTimeout</a> () const </td></tr>
+<tr class="memdesc:a0d3dc753616aa839bd89671e95a0b349"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timeout after which IRC connections are closed.  <a href="#a0d3dc753616aa839bd89671e95a0b349">More...</a><br/></td></tr>
+<tr class="separator:a0d3dc753616aa839bd89671e95a0b349"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af85a1ff66019804346eb333ed60c205f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#af85a1ff66019804346eb333ed60c205f">GetQuitMsg</a> () const </td></tr>
 <tr class="separator:af85a1ff66019804346eb333ed60c205f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaaed8627e4d28afad4a7e4ed441be16d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classMCString.html">MCString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#aaaed8627e4d28afad4a7e4ed441be16d">GetCTCPReplies</a> () const </td></tr>
@@ -438,6 +449,8 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a98d449fa6716743231513d231f1231b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d813ccc606708f662d66cf1fd82d7de"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a8d813ccc606708f662d66cf1fd82d7de">m_uMaxJoins</a></td></tr>
 <tr class="separator:a8d813ccc606708f662d66cf1fd82d7de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dab68e546c4a71481b9e24e4d2e192e"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a1dab68e546c4a71481b9e24e4d2e192e">m_uNoTrafficTimeout</a></td></tr>
+<tr class="separator:a1dab68e546c4a71481b9e24e4d2e192e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0b1f888ad13ef3ab75e62d23876c816"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#ad0b1f888ad13ef3ab75e62d23876c816">m_sSkinName</a></td></tr>
 <tr class="separator:ad0b1f888ad13ef3ab75e62d23876c816"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3742b4988b42716ff0284ce2bbf5a9ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a3742b4988b42716ff0284ce2bbf5a9ba">m_sLanguage</a></td></tr>
@@ -1271,6 +1284,34 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a0d3dc753616aa839bd89671e95a0b349"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int CUser::GetNoTrafficTimeout </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Timeout after which IRC connections are closed. </p>
+<p>Must obviously be greater than <a class="el" href="classCUser.html#aced61dbe64e539f2d651face03366ce4" title="How long must an IRC connection be idle before ZNC sends a ping. ">GetPingFrequency()</a> + <a class="el" href="classCUser.html#aab129c39c7781fc8e6f4549e0f243a66" title="Time between checks if PINGs need to be sent. ">GetPingSlack()</a>. </p>
+
+<p>References <a class="el" href="classCUser.html#a1dab68e546c4a71481b9e24e4d2e192e">m_uNoTrafficTimeout</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ad59cbc766b4e44e3bce815102a7aa076"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1313,6 +1354,60 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aced61dbe64e539f2d651face03366ce4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int CUser::GetPingFrequency </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>How long must an IRC connection be idle before ZNC sends a ping. </p>
+
+<p>References <a class="el" href="classCUser.html#a1dab68e546c4a71481b9e24e4d2e192e">m_uNoTrafficTimeout</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aab129c39c7781fc8e6f4549e0f243a66"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int CUser::GetPingSlack </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Time between checks if PINGs need to be sent. </p>
+
+<p>References <a class="el" href="classCUser.html#a1dab68e546c4a71481b9e24e4d2e192e">m_uNoTrafficTimeout</a>.</p>
 
 </div>
 </div>
@@ -2520,6 +2615,32 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ac0233a32e5efefb8cd60e96e2f401347"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CUser::SetNoTrafficTimeout </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>References <a class="el" href="classCUser.html#a1dab68e546c4a71481b9e24e4d2e192e">m_uNoTrafficTimeout</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a1bf89a3d0ae097bcdc352aa047ef0db1"></a>
 <div class="memitem">
 <div class="memproto">
@@ -3630,6 +3751,28 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a1dab68e546c4a71481b9e24e4d2e192e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int CUser::m_uNoTrafficTimeout</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Referenced by <a class="el" href="classCUser.html#a0d3dc753616aa839bd89671e95a0b349">GetNoTrafficTimeout()</a>, <a class="el" href="classCUser.html#aced61dbe64e539f2d651face03366ce4">GetPingFrequency()</a>, <a class="el" href="classCUser.html#aab129c39c7781fc8e6f4549e0f243a66">GetPingSlack()</a>, and <a class="el" href="classCUser.html#ac0233a32e5efefb8cd60e96e2f401347">SetNoTrafficTimeout()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="acebf58a40ca87fa7fe30789b32297bf3"></a>
 <div class="memitem">
 <div class="memproto">
@@ -3698,7 +3841,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 25 2016 21:33:47 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Dec 26 2016 16:11:26 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

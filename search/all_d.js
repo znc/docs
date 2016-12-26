@@ -229,6 +229,7 @@ var searchData=
   ['m_5fumaxnetworks',['m_uMaxNetworks',['../classCUser.html#a921a8e1b22dff94138229239d14fdc8e',1,'CUser']]],
   ['m_5fumaxnicklen',['m_uMaxNickLen',['../classCIRCSock.html#a6985a5ea4a7f6189ec13cb63e7d10147',1,'CIRCSock']]],
   ['m_5fumaxquerybuffers',['m_uMaxQueryBuffers',['../classCUser.html#a98d449fa6716743231513d231f1231b3',1,'CUser']]],
+  ['m_5funotraffictimeout',['m_uNoTrafficTimeout',['../classCUser.html#a1dab68e546c4a71481b9e24e4d2e192e',1,'CUser']]],
   ['m_5funumctcp',['m_uNumCTCP',['../classCIRCSock.html#a6122b0392c7d2e650a8ae286ccb73301',1,'CIRCSock']]],
   ['m_5fuport',['m_uPort',['../classCListener.html#a04a8b2f6b2dfbcc7438e58050259d9bc',1,'CListener::m_uPort()'],['../classCServer.html#ad282f9e8885d332fc672976d8bba466a',1,'CServer::m_uPort()']]],
   ['m_5fupostlen',['m_uPostLen',['../classCHTTPSock.html#ac665c108f3614abbbf6e6ed67aba83c2',1,'CHTTPSock']]],
