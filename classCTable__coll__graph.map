@@ -1,6 +1,6 @@
 <map id="CTable" name="CTable">
-<area shape="rect" id="node2" title="STL class. " alt="" coords="5,267,179,309"/>
-<area shape="rect" id="node5" href="$classCString.html" title="String class that is used inside ZNC. " alt="" coords="252,176,321,203"/>
-<area shape="rect" id="node6" title="STL class. " alt="" coords="243,99,329,125"/>
-<area shape="rect" id="node7" title="STL class. " alt="" coords="218,6,355,47"/>
+<area shape="rect" id="node2" title="STL class. " alt="" coords="517,5,691,46"/>
+<area shape="rect" id="node5" href="$classCString.html" title="String class that is used inside ZNC. " alt="" coords="333,104,403,131"/>
+<area shape="rect" id="node6" title="STL class. " alt="" coords="195,104,282,131"/>
+<area shape="rect" id="node7" title="STL class. " alt="" coords="6,97,143,138"/>
 </map>
