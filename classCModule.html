@@ -444,11 +444,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a05bc390a545cd0e56a46aa57a8338692"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#a05bc390a545cd0e56a46aa57a8338692">OnDeleteNetwork</a> (<a class="el" href="classCIRCNetwork.html">CIRCNetwork</a> &amp;Network)</td></tr>
 <tr class="memdesc:a05bc390a545cd0e56a46aa57a8338692"><td class="mdescLeft">&#160;</td><td class="mdescRight">This module hook is called when a network is deleted.  <a href="#a05bc390a545cd0e56a46aa57a8338692">More...</a><br/></td></tr>
 <tr class="separator:a05bc390a545cd0e56a46aa57a8338692"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd23aae2ad6ff8e38fd5db0d1cf12d35"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#acd23aae2ad6ff8e38fd5db0d1cf12d35">OnSendToClientMessage</a> (<a class="el" href="classCMessage.html">CMessage</a> &amp;Message)</td></tr>
+<tr class="memdesc:acd23aae2ad6ff8e38fd5db0d1cf12d35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called immediately before ZNC sends a raw traffic line to a client.  <a href="#acd23aae2ad6ff8e38fd5db0d1cf12d35">More...</a><br/></td></tr>
+<tr class="separator:acd23aae2ad6ff8e38fd5db0d1cf12d35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adcd01f5f8e420581ccad874c99ef62b4"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#adcd01f5f8e420581ccad874c99ef62b4">OnSendToClient</a> (<a class="el" href="classCString.html">CString</a> &amp;sLine, <a class="el" href="classCClient.html">CClient</a> &amp;Client)</td></tr>
-<tr class="memdesc:adcd01f5f8e420581ccad874c99ef62b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when ZNC sends a raw traffic line to a client.  <a href="#adcd01f5f8e420581ccad874c99ef62b4">More...</a><br/></td></tr>
 <tr class="separator:adcd01f5f8e420581ccad874c99ef62b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd12527b09eee5b7ba65b3a0201a2bd4"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#abd12527b09eee5b7ba65b3a0201a2bd4">OnSendToIRCMessage</a> (<a class="el" href="classCMessage.html">CMessage</a> &amp;Message)</td></tr>
+<tr class="memdesc:abd12527b09eee5b7ba65b3a0201a2bd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called immediately before ZNC sends a raw traffic line to the IRC server.  <a href="#abd12527b09eee5b7ba65b3a0201a2bd4">More...</a><br/></td></tr>
+<tr class="separator:abd12527b09eee5b7ba65b3a0201a2bd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d0094fc70d0e10957546d0a4ee6e8bb"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#a6d0094fc70d0e10957546d0a4ee6e8bb">OnSendToIRC</a> (<a class="el" href="classCString.html">CString</a> &amp;sLine)</td></tr>
-<tr class="memdesc:a6d0094fc70d0e10957546d0a4ee6e8bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when ZNC sends a raw traffic line to the IRC server.  <a href="#a6d0094fc70d0e10957546d0a4ee6e8bb">More...</a><br/></td></tr>
 <tr class="separator:a6d0094fc70d0e10957546d0a4ee6e8bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21df1a7f9b964dd941ba0c970a265a56"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Modules_8h.html#a2f2b7746e7590ac0383278e975f13855">ModHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#a21df1a7f9b964dd941ba0c970a265a56">GetDLL</a> ()</td></tr>
 <tr class="separator:a21df1a7f9b964dd941ba0c970a265a56"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -891,7 +895,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if the command was successfully added. </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000040">Deprecated:</a></b></dt><dd>Use the variant with <a class="el" href="classCOptionalTranslation.html">COptionalTranslation</a>. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000042">Deprecated:</a></b></dt><dd>Use the variant with <a class="el" href="classCOptionalTranslation.html">COptionalTranslation</a>. </dd></dl>
 
 </div>
 </div>
@@ -5534,12 +5538,37 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000040">Deprecated:</a></b></dt><dd>Use <a class="el" href="classCModule.html#acd23aae2ad6ff8e38fd5db0d1cf12d35" title="Called immediately before ZNC sends a raw traffic line to a client. ">OnSendToClientMessage()</a> instead. </dd></dl>
 
-<p>Called when ZNC sends a raw traffic line to a client. </p>
+</div>
+</div>
+<a class="anchor" id="acd23aae2ad6ff8e38fd5db0d1cf12d35"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> CModule::OnSendToClientMessage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCMessage.html">CMessage</a> &amp;&#160;</td>
+          <td class="paramname"><em>Message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called immediately before ZNC sends a raw traffic line to a client. </p>
+<dl class="section since"><dt>Since</dt><dd>1.7.0 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">sLine</td><td>The raw traffic line sent. </td></tr>
-    <tr><td class="paramname">Client</td><td>The client this line is sent to. </td></tr>
+    <tr><td class="paramname">Message</td><td>The message being sent to the client. </td></tr>
   </table>
   </dd>
 </dl>
@@ -5569,11 +5598,37 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000041">Deprecated:</a></b></dt><dd>Use <a class="el" href="classCModule.html#abd12527b09eee5b7ba65b3a0201a2bd4" title="Called immediately before ZNC sends a raw traffic line to the IRC server. ">OnSendToIRCMessage()</a> instead. </dd></dl>
 
-<p>Called when ZNC sends a raw traffic line to the IRC server. </p>
+</div>
+</div>
+<a class="anchor" id="abd12527b09eee5b7ba65b3a0201a2bd4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> CModule::OnSendToIRCMessage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCMessage.html">CMessage</a> &amp;&#160;</td>
+          <td class="paramname"><em>Message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called immediately before ZNC sends a raw traffic line to the IRC server. </p>
+<dl class="section since"><dt>Since</dt><dd>1.7.0 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">sLine</td><td>The raw traffic line sent. </td></tr>
+    <tr><td class="paramname">Message</td><td>The message being sent to the IRC server. </td></tr>
   </table>
   </dd>
 </dl>
@@ -7952,7 +8007,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 16 2017 09:56:23 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Apr 22 2017 00:44:34 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

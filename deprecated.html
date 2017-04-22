@@ -102,7 +102,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <dd></dd>
 <dt><a class="anchor" id="_deprecated000006"></a>Member <a class="el" href="classCIRCNetwork.html#a586fa42b6a103e3f732b3c846ead868a">CIRCNetwork::UpdateRawBuffer</a>  (const <a class="el" href="classCString.html" title="String class that is used inside ZNC. ">CString</a> &amp;sMatch, const <a class="el" href="classCString.html" title="String class that is used inside ZNC. ">CString</a> &amp;sFormat, const <a class="el" href="classCString.html" title="String class that is used inside ZNC. ">CString</a> &amp;sText="")</dt>
 <dd></dd>
-<dt><a class="anchor" id="_deprecated000040"></a>Member <a class="el" href="classCModule.html#a7b25f6d0ed7e92dcc18d3b11a2c48398">CModule::AddCommand</a>  (const <a class="el" href="classCString.html" title="String class that is used inside ZNC. ">CString</a> &amp;sCmd, <a class="el" href="classCModCommand.html#ac1b783f249d3acaa8c43173e4afc7415" title="Type for the callback function that handles the actual command. ">CModCommand::ModCmdFunc</a> func, const <a class="el" href="classCString.html" title="String class that is used inside ZNC. ">CString</a> &amp;sArgs="", const <a class="el" href="classCString.html" title="String class that is used inside ZNC. ">CString</a> &amp;sDesc="")</dt>
+<dt><a class="anchor" id="_deprecated000042"></a>Member <a class="el" href="classCModule.html#a7b25f6d0ed7e92dcc18d3b11a2c48398">CModule::AddCommand</a>  (const <a class="el" href="classCString.html" title="String class that is used inside ZNC. ">CString</a> &amp;sCmd, <a class="el" href="classCModCommand.html#ac1b783f249d3acaa8c43173e4afc7415" title="Type for the callback function that handles the actual command. ">CModCommand::ModCmdFunc</a> func, const <a class="el" href="classCString.html" title="String class that is used inside ZNC. ">CString</a> &amp;sArgs="", const <a class="el" href="classCString.html" title="String class that is used inside ZNC. ">CString</a> &amp;sDesc="")</dt>
 <dd>Use the variant with <a class="el" href="classCOptionalTranslation.html">COptionalTranslation</a>.  </dd>
 <dt><a class="anchor" id="_deprecated000034"></a>Member <a class="el" href="classCModule.html#a6a794208af0b48e9555a4db438c80873">CModule::OnChanAction</a>  (<a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCChan.html">CChan</a> &amp;Channel, <a class="el" href="classCString.html" title="String class that is used inside ZNC. ">CString</a> &amp;sMessage)</dt>
 <dd>Use OnChanActionMessage() instead.  </dd>
@@ -140,6 +140,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <dd>Use OnPrivNoticeMessage() instead.  </dd>
 <dt><a class="anchor" id="_deprecated000012"></a>Member <a class="el" href="classCModule.html#a9d2af61e4e9a0dd688c5c30cb27d38b2">CModule::OnQuit</a>  (const <a class="el" href="classCNick.html">CNick</a> &amp;Nick, const <a class="el" href="classCString.html" title="String class that is used inside ZNC. ">CString</a> &amp;sMessage, const std::vector&lt; CChan * &gt; &amp;vChans)</dt>
 <dd>Use OnQuitMessage() instead.  </dd>
+<dt><a class="anchor" id="_deprecated000040"></a>Member <a class="el" href="classCModule.html#adcd01f5f8e420581ccad874c99ef62b4">CModule::OnSendToClient</a>  (<a class="el" href="classCString.html" title="String class that is used inside ZNC. ">CString</a> &amp;sLine, <a class="el" href="classCClient.html">CClient</a> &amp;Client)</dt>
+<dd>Use OnSendToClientMessage() instead.  </dd>
+<dt><a class="anchor" id="_deprecated000041"></a>Member <a class="el" href="classCModule.html#a6d0094fc70d0e10957546d0a4ee6e8bb">CModule::OnSendToIRC</a>  (<a class="el" href="classCString.html" title="String class that is used inside ZNC. ">CString</a> &amp;sLine)</dt>
+<dd>Use OnSendToIRCMessage() instead.  </dd>
 <dt><a class="anchor" id="_deprecated000039"></a>Member <a class="el" href="classCModule.html#a8a825ffb7ac2d41d4185fda7642982c0">CModule::OnTopic</a>  (<a class="el" href="classCNick.html">CNick</a> &amp;Nick, <a class="el" href="classCChan.html">CChan</a> &amp;Channel, <a class="el" href="classCString.html" title="String class that is used inside ZNC. ">CString</a> &amp;sTopic)</dt>
 <dd>Use OnTopicMessage() instead.  </dd>
 <dt><a class="anchor" id="_deprecated000023"></a>Member <a class="el" href="classCModule.html#ad324f5949d88f1aa2e8dca0e315b8d16">CModule::OnUserAction</a>  (<a class="el" href="classCString.html" title="String class that is used inside ZNC. ">CString</a> &amp;sTarget, <a class="el" href="classCString.html" title="String class that is used inside ZNC. ">CString</a> &amp;sMessage)</dt>
@@ -160,31 +164,31 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <dd>Use OnUserQuitMessage() instead.  </dd>
 <dt><a class="anchor" id="_deprecated000028"></a>Member <a class="el" href="classCModule.html#a60a8d8af6d435c28757408cdd497ec49">CModule::OnUserTopic</a>  (<a class="el" href="classCString.html" title="String class that is used inside ZNC. ">CString</a> &amp;sChannel, <a class="el" href="classCString.html" title="String class that is used inside ZNC. ">CString</a> &amp;sTopic)</dt>
 <dd>Use OnUserTopicMessage() instead.  </dd>
-<dt><a class="anchor" id="_deprecated000041"></a>Member <a class="el" href="classCQuery.html#a378ebd1f96b226fd95bf36d50cb142d5">CQuery::AddBuffer</a>  (const <a class="el" href="classCString.html" title="String class that is used inside ZNC. ">CString</a> &amp;sFormat, const <a class="el" href="classCString.html" title="String class that is used inside ZNC. ">CString</a> &amp;sText="", const timeval *ts=nullptr, const <a class="el" href="classMCString.html" title="A dictionary for strings. ">MCString</a> &amp;mssTags=<a class="el" href="classMCString.html#a3685e619a8c946b897e33de99347fc70" title="A static instance of an empty map. ">MCString::EmptyMap</a>)</dt>
+<dt><a class="anchor" id="_deprecated000043"></a>Member <a class="el" href="classCQuery.html#a378ebd1f96b226fd95bf36d50cb142d5">CQuery::AddBuffer</a>  (const <a class="el" href="classCString.html" title="String class that is used inside ZNC. ">CString</a> &amp;sFormat, const <a class="el" href="classCString.html" title="String class that is used inside ZNC. ">CString</a> &amp;sText="", const timeval *ts=nullptr, const <a class="el" href="classMCString.html" title="A dictionary for strings. ">MCString</a> &amp;mssTags=<a class="el" href="classMCString.html#a3685e619a8c946b897e33de99347fc70" title="A static instance of an empty map. ">MCString::EmptyMap</a>)</dt>
 <dd></dd>
-<dt><a class="anchor" id="_deprecated000050"></a>Member <a class="el" href="classCString.html#a24a659b4abcb3b406fa9529d0df4f398">CString::Equals</a>  (const <a class="el" href="classCString.html" title="String class that is used inside ZNC. ">CString</a> &amp;s, bool bCaseSensitive, CString::size_type uLen=CString::npos) const </dt>
+<dt><a class="anchor" id="_deprecated000052"></a>Member <a class="el" href="classCString.html#a24a659b4abcb3b406fa9529d0df4f398">CString::Equals</a>  (const <a class="el" href="classCString.html" title="String class that is used inside ZNC. ">CString</a> &amp;s, bool bCaseSensitive, CString::size_type uLen=CString::npos) const </dt>
 <dd></dd>
-<dt><a class="anchor" id="_deprecated000043"></a>Member <a class="el" href="classCUser.html#a1720f38e7f92c903a9e372eb3e147d21">CUser::GetBufferCount</a>  () const </dt>
+<dt><a class="anchor" id="_deprecated000045"></a>Member <a class="el" href="classCUser.html#a1720f38e7f92c903a9e372eb3e147d21">CUser::GetBufferCount</a>  () const </dt>
 <dd>Use GetChanBufferSize() or GetQueryBufferSize() instead.  </dd>
-<dt><a class="anchor" id="_deprecated000042"></a>Member <a class="el" href="classCUser.html#a50409191d3116e9952ff6e576bf443d8">CUser::SetBufferCount</a>  (unsigned int u, bool bForce=false)</dt>
+<dt><a class="anchor" id="_deprecated000044"></a>Member <a class="el" href="classCUser.html#a50409191d3116e9952ff6e576bf443d8">CUser::SetBufferCount</a>  (unsigned int u, bool bForce=false)</dt>
 <dd>Use SetChanBufferSize() or SetQueryBufferSize() instead.  </dd>
-<dt><a class="anchor" id="_deprecated000044"></a>Member <a class="el" href="classCUtils.html#ab7374d12ececc457863cbeb5aff8f5ff">CUtils::GetMessageTags</a>  (const <a class="el" href="classCString.html" title="String class that is used inside ZNC. ">CString</a> &amp;sLine)</dt>
+<dt><a class="anchor" id="_deprecated000046"></a>Member <a class="el" href="classCUtils.html#ab7374d12ececc457863cbeb5aff8f5ff">CUtils::GetMessageTags</a>  (const <a class="el" href="classCString.html" title="String class that is used inside ZNC. ">CString</a> &amp;sLine)</dt>
 <dd>Use <a class="el" href="classCMessage.html" title="Here is a small explanation of how messages on IRC work, and how you can use this class to get useful...">CMessage</a> instead  </dd>
-<dt><a class="anchor" id="_deprecated000045"></a>Member <a class="el" href="classCUtils.html#a8227de4f84982154cdf8ab1435726e83">CUtils::SetMessageTags</a>  (<a class="el" href="classCString.html" title="String class that is used inside ZNC. ">CString</a> &amp;sLine, const <a class="el" href="classMCString.html" title="A dictionary for strings. ">MCString</a> &amp;mssTags)</dt>
+<dt><a class="anchor" id="_deprecated000047"></a>Member <a class="el" href="classCUtils.html#a8227de4f84982154cdf8ab1435726e83">CUtils::SetMessageTags</a>  (<a class="el" href="classCString.html" title="String class that is used inside ZNC. ">CString</a> &amp;sLine, const <a class="el" href="classMCString.html" title="A dictionary for strings. ">MCString</a> &amp;mssTags)</dt>
 <dd>Use <a class="el" href="classCMessage.html" title="Here is a small explanation of how messages on IRC work, and how you can use this class to get useful...">CMessage</a> instead  </dd>
-<dt><a class="anchor" id="_deprecated000047"></a>Member <a class="el" href="classCZNC.html#a68573dcd13a9a71561a841b24c41cc00">CZNC::AddBindHost</a>  (const <a class="el" href="classCString.html" title="String class that is used inside ZNC. ">CString</a> &amp;sHost)</dt>
+<dt><a class="anchor" id="_deprecated000049"></a>Member <a class="el" href="classCZNC.html#a68573dcd13a9a71561a841b24c41cc00">CZNC::AddBindHost</a>  (const <a class="el" href="classCString.html" title="String class that is used inside ZNC. ">CString</a> &amp;sHost)</dt>
 <dd>Since 1.7.0. List of allowed bind hosts was a flawed design.  </dd>
-<dt><a class="anchor" id="_deprecated000046"></a>Member <a class="el" href="classCZNC.html#a766aff126e7e0038df77f5864fd0267f">CZNC::ClearBindHosts</a>  ()</dt>
+<dt><a class="anchor" id="_deprecated000048"></a>Member <a class="el" href="classCZNC.html#a766aff126e7e0038df77f5864fd0267f">CZNC::ClearBindHosts</a>  ()</dt>
 <dd>Since 1.7.0. List of allowed bind hosts was a flawed design.  </dd>
-<dt><a class="anchor" id="_deprecated000049"></a>Member <a class="el" href="classCZNC.html#aa3294cdfbbca488e7e619c9f15fcb34b">CZNC::GetBindHosts</a>  () const </dt>
+<dt><a class="anchor" id="_deprecated000051"></a>Member <a class="el" href="classCZNC.html#aa3294cdfbbca488e7e619c9f15fcb34b">CZNC::GetBindHosts</a>  () const </dt>
 <dd>Since 1.7.0. List of allowed bind hosts was a flawed design.  </dd>
-<dt><a class="anchor" id="_deprecated000048"></a>Member <a class="el" href="classCZNC.html#ac278e6c21fdbd1c9f34121b21a0a9aa7">CZNC::RemBindHost</a>  (const <a class="el" href="classCString.html" title="String class that is used inside ZNC. ">CString</a> &amp;sHost)</dt>
+<dt><a class="anchor" id="_deprecated000050"></a>Member <a class="el" href="classCZNC.html#ac278e6c21fdbd1c9f34121b21a0a9aa7">CZNC::RemBindHost</a>  (const <a class="el" href="classCString.html" title="String class that is used inside ZNC. ">CString</a> &amp;sHost)</dt>
 <dd>Since 1.7.0. List of allowed bind hosts was a flawed design. </dd>
 </dl>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 25 2016 21:33:46 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Apr 22 2017 00:44:33 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
