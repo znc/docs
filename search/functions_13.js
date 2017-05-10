@@ -144,6 +144,7 @@ var searchData=
   ['setstdoutistty',['SetStdoutIsTTY',['../classCDebug.html#a4cf370ef181410f69a153fe7e49d77d4',1,'CDebug']]],
   ['settag',['SetTag',['../classCMessage.html#a0690bbf62fabb470fc118fb917cbd24c',1,'CMessage']]],
   ['settags',['SetTags',['../classCBufLine.html#a1df881d8f3aa079121b2f238bc033926',1,'CBufLine::SetTags()'],['../classCMessage.html#ad24f4c384e1ac3069b4871f176b26ec2',1,'CMessage::SetTags()']]],
+  ['settagsupport',['SetTagSupport',['../classCClient.html#a16596197586e197a595e3c4cf574bc29',1,'CClient']]],
   ['settarget',['SetTarget',['../classCTargetMessage.html#ac7ed5de249bf8bc2d39545cf94405816',1,'CTargetMessage']]],
   ['settext',['SetText',['../classCBufLine.html#a218b3a44c729bdb276d01d564a6d2b40',1,'CBufLine::SetText()'],['../classCActionMessage.html#aeab4c7d7ac84bce7dfd7f0d9008b6959',1,'CActionMessage::SetText()'],['../classCCTCPMessage.html#a9a4f528bd46325cfaa4696e68177f25c',1,'CCTCPMessage::SetText()'],['../classCNoticeMessage.html#ace6df2e329ed6b94f804f04fbe6465b7',1,'CNoticeMessage::SetText()'],['../classCTextMessage.html#a01734e0bafb08572b1d4bdadb91f8e66',1,'CTextMessage::SetText()']]],
   ['settime',['SetTime',['../classCBufLine.html#ab43e1feae2df949f070b22a5820c0119',1,'CBufLine::SetTime()'],['../classCMessage.html#a3c6b3ce1115251b35190eced6de870a0',1,'CMessage::SetTime()']]],

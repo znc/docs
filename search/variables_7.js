@@ -177,6 +177,7 @@ var searchData=
   ['m_5fsssldhparamfile',['m_sSSLDHParamFile',['../classCZNC.html#a85c929da830ec6fd5afa167475d58b1a',1,'CZNC']]],
   ['m_5fssslkeyfile',['m_sSSLKeyFile',['../classCZNC.html#ab52c93eb8b8b11a5eb0df69c29078aee',1,'CZNC']]],
   ['m_5fssslprotocols',['m_sSSLProtocols',['../classCZNC.html#a68980526cc0a63bc397c003206bae79f',1,'CZNC']]],
+  ['m_5fsssupportedtags',['m_ssSupportedTags',['../classCClient.html#a90cf045b0f7d3aff931731fd52796a99',1,'CClient']]],
   ['m_5fsstatusprefix',['m_sStatusPrefix',['../classCUser.html#afe7977edbe977a22a468a65a11918ca2',1,'CUser::m_sStatusPrefix()'],['../classCZNC.html#a23003acd39148cc03a18abc14c5f05d2',1,'CZNC::m_sStatusPrefix()']]],
   ['m_5fsstrustedfingerprints',['m_ssTrustedFingerprints',['../classCIRCNetwork.html#a546890c8b8a74c3eb6070bab952c6ecc',1,'CIRCNetwork']]],
   ['m_5fstext',['m_sText',['../classCBufLine.html#a3310db35cdf223943441e77d745b603d',1,'CBufLine']]],
