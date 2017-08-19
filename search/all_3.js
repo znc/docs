@@ -178,6 +178,7 @@ var searchData=
   ['ctopicmessage',['CTopicMessage',['../classCTopicMessage.html',1,'']]],
   ['ctranslation',['CTranslation',['../classCTranslation.html',1,'']]],
   ['ctranslationdomainrefholder',['CTranslationDomainRefHolder',['../structCTranslationDomainRefHolder.html',1,'CTranslationDomainRefHolder'],['../structCTranslationDomainRefHolder.html#acda71b7248d5ce9a10b9e8c72a8c18bd',1,'CTranslationDomainRefHolder::CTranslationDomainRefHolder()']]],
+  ['ctranslationinfo',['CTranslationInfo',['../structCTranslationInfo.html',1,'']]],
   ['curlsock_2eh',['CurlSock.h',['../CurlSock_8h.html',1,'']]],
   ['cuser',['CUser',['../classCUser.html',1,'CUser'],['../classCUser.html#a09ed8b6f56cb6203daa91d6d4d5d531d',1,'CUser::CUser(const CString &amp;sUserName)'],['../classCUser.html#a2001a3f1624413efcd2e82af29bc5d8a',1,'CUser::CUser(const CUser &amp;)=delete']]],
   ['cutils',['CUtils',['../classCUtils.html',1,'CUtils'],['../classCUtils.html#a1a00f2dc59d68a7c9bbdaf77e2f1a5c7',1,'CUtils::CUtils()']]],

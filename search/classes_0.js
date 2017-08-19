@@ -78,6 +78,7 @@ var searchData=
   ['ctopicmessage',['CTopicMessage',['../classCTopicMessage.html',1,'']]],
   ['ctranslation',['CTranslation',['../classCTranslation.html',1,'']]],
   ['ctranslationdomainrefholder',['CTranslationDomainRefHolder',['../structCTranslationDomainRefHolder.html',1,'']]],
+  ['ctranslationinfo',['CTranslationInfo',['../structCTranslationInfo.html',1,'']]],
   ['cuser',['CUser',['../classCUser.html',1,'']]],
   ['cutils',['CUtils',['../classCUtils.html',1,'']]],
   ['cwebsession',['CWebSession',['../classCWebSession.html',1,'']]],
