@@ -14,6 +14,7 @@ var searchData=
   ['fill',['Fill',['../classCDir.html#a13c88ec72a6ca8d8fbdab33f44b43fa0',1,'CDir']]],
   ['fillbywildcard',['FillByWildcard',['../classCDir.html#ae54b36850105c776527e918d6f25b9a3',1,'CDir']]],
   ['fillmessageloops',['FillMessageLoops',['../classCWebSession.html#a2c0c0226c89dd2e59e7b10ceaa63586f',1,'CWebSession']]],
+  ['filter',['Filter',['../classCDebug.html#a5d9a91169707ac454603338ab1a3f004',1,'CDebug']]],
   ['find',['Find',['../classCString.html#a7e1a54afe490b204997e6d99d8c7689f',1,'CString']]],
   ['findboolentry',['FindBoolEntry',['../classCConfig.html#a68b5550db6774a3c301b7eabdfe1db37',1,'CConfig']]],
   ['findchan',['FindChan',['../classCIRCNetwork.html#a578b03ef1ae44f29dc53f7c9597f06a0',1,'CIRCNetwork']]],
