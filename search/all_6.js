@@ -55,7 +55,7 @@ var searchData=
   ['forcelogin',['ForceLogin',['../classCHTTPSock.html#a8061644d6450bec2d272ac2a9771c874',1,'CHTTPSock::ForceLogin()'],['../classCWebSock.html#a095fa3a2d58e9ccd1083a53a1529cd65',1,'CWebSock::ForceLogin()']]],
   ['formatflags',['FormatFlags',['../classCMessage.html#a07909da9c64f7e1a642ca76b34d8e7a3',1,'CMessage']]],
   ['formatservertime',['FormatServerTime',['../classCUtils.html#a4a3a2068b26d7605ffd0f7c559a000ac',1,'CUtils']]],
-  ['formattime',['FormatTime',['../classCUtils.html#a1971c679165ddcb004f9c05558774dcb',1,'CUtils']]],
+  ['formattime',['FormatTime',['../classCUtils.html#a1971c679165ddcb004f9c05558774dcb',1,'CUtils::FormatTime(time_t t, const CString &amp;sFormat, const CString &amp;sTZ)'],['../classCUtils.html#aa18e637eb48a97c8312aff22b79fa271',1,'CUtils::FormatTime(const timeval &amp;tv, const CString &amp;sFormat, const CString &amp;sTZ)']]],
   ['fpcertverifycb',['FPCertVerifyCB',['../Csocket_8h.html#aa5463d49fb8abd380d534f606e69f6d4',1,'Csocket.h']]],
   ['fpfillmodinfo',['fpFillModInfo',['../structCModuleEntry.html#a195aa0ee9e66d8e181500e6356de3a81',1,'CModuleEntry']]],
   ['fptimer_5ft',['FPTimer_t',['../Modules_8h.html#ac37bb819056da7480b0bc7a717b45233',1,'Modules.h']]],

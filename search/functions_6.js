@@ -46,6 +46,6 @@ var searchData=
   ['forceencoding',['ForceEncoding',['../classCZNC.html#a3976bead6b9202861df01f4b0baa813a',1,'CZNC']]],
   ['forcelogin',['ForceLogin',['../classCHTTPSock.html#a8061644d6450bec2d272ac2a9771c874',1,'CHTTPSock::ForceLogin()'],['../classCWebSock.html#a095fa3a2d58e9ccd1083a53a1529cd65',1,'CWebSock::ForceLogin()']]],
   ['formatservertime',['FormatServerTime',['../classCUtils.html#a4a3a2068b26d7605ffd0f7c559a000ac',1,'CUtils']]],
-  ['formattime',['FormatTime',['../classCUtils.html#a1971c679165ddcb004f9c05558774dcb',1,'CUtils']]],
+  ['formattime',['FormatTime',['../classCUtils.html#a1971c679165ddcb004f9c05558774dcb',1,'CUtils::FormatTime(time_t t, const CString &amp;sFormat, const CString &amp;sTZ)'],['../classCUtils.html#aa18e637eb48a97c8312aff22b79fa271',1,'CUtils::FormatTime(const timeval &amp;tv, const CString &amp;sFormat, const CString &amp;sTZ)']]],
   ['ftype',['FType',['../classCFile.html#acb9edf807e3c56ad2607e871c11c96bb',1,'CFile']]]
 ];
