@@ -252,6 +252,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac19c0321e4ab465c8db43fdb7ba5c736"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af99530b1f29f7758cd38e1232f12d4b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#af99530b1f29f7758cd38e1232f12d4b5">SetTimestampPrepend</a> (bool b)</td></tr>
 <tr class="separator:af99530b1f29f7758cd38e1232f12d4b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6af1d95a1b254d4b436181ecae15adf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#af6af1d95a1b254d4b436181ecae15adf">SetAuthOnlyViaModule</a> (bool b)</td></tr>
+<tr class="separator:af6af1d95a1b254d4b436181ecae15adf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87dec54a0d58ae8d2b6357ddf137e1e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a87dec54a0d58ae8d2b6357ddf137e1e5">SetTimezone</a> (const <a class="el" href="classCString.html">CString</a> &amp;s)</td></tr>
 <tr class="separator:a87dec54a0d58ae8d2b6357ddf137e1e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93f48832a3e4da7c8ca952948d61f013"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a93f48832a3e4da7c8ca952948d61f013">SetJoinTries</a> (unsigned int i)</td></tr>
@@ -312,6 +314,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad3c363dce6c52606614a0e69e6c922e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a668a2fc9df60fe7c401dc56579ba2310"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a668a2fc9df60fe7c401dc56579ba2310">MultiClients</a> () const </td></tr>
 <tr class="separator:a668a2fc9df60fe7c401dc56579ba2310"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6b666b6d03323369bb302724a3c056e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#ae6b666b6d03323369bb302724a3c056e">AuthOnlyViaModule</a> () const </td></tr>
+<tr class="separator:ae6b666b6d03323369bb302724a3c056e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5077640810b13876841a6bd1abf49901"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a5077640810b13876841a6bd1abf49901">GetStatusPrefix</a> () const </td></tr>
 <tr class="separator:a5077640810b13876841a6bd1abf49901"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10c02b8254d210bf76db8906be969d1d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a10c02b8254d210bf76db8906be969d1d">GetDefaultChanModes</a> () const </td></tr>
@@ -427,6 +431,8 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a9127812fa81d430dbe300e2432e00cd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a589661139897e636e3620df14d4fb979"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a589661139897e636e3620df14d4fb979">m_bPrependTimestamp</a></td></tr>
 <tr class="separator:a589661139897e636e3620df14d4fb979"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4548cabb93933ec11e27c0a09a8cf53a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a4548cabb93933ec11e27c0a09a8cf53a">m_bAuthOnlyViaModule</a></td></tr>
+<tr class="separator:a4548cabb93933ec11e27c0a09a8cf53a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d127161fa9a69d5fb9d78246168f620"><td class="memItemLeft" align="right" valign="top">CUserTimer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a0d127161fa9a69d5fb9d78246168f620">m_pUserTimer</a></td></tr>
 <tr class="separator:a0d127161fa9a69d5fb9d78246168f620"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f9d81b4e3ff7f1b3569a2b3370611a6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classCIRCNetwork.html">CIRCNetwork</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a8f9d81b4e3ff7f1b3569a2b3370611a6">m_vIRCNetworks</a></td></tr>
@@ -738,6 +744,21 @@ Protected Attributes</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae6b666b6d03323369bb302724a3c056e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CUser::AuthOnlyViaModule </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2268,6 +2289,32 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="af6af1d95a1b254d4b436181ecae15adf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CUser::SetAuthOnlyViaModule </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>b</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>References <a class="el" href="classCUser.html#a4548cabb93933ec11e27c0a09a8cf53a">m_bAuthOnlyViaModule</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a335efbd77ee1ff8f1efa436548655b4c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -2992,6 +3039,28 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Referenced by <a class="el" href="classCUser.html#ac19c0321e4ab465c8db43fdb7ba5c736">SetTimestampAppend()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4548cabb93933ec11e27c0a09a8cf53a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CUser::m_bAuthOnlyViaModule</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Referenced by <a class="el" href="classCUser.html#af6af1d95a1b254d4b436181ecae15adf">SetAuthOnlyViaModule()</a>.</p>
 
 </div>
 </div>
@@ -3869,7 +3938,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 10 2017 12:41:06 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Dec 22 2017 16:51:30 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

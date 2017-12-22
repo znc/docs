@@ -5,6 +5,7 @@ var searchData=
   ['m_5fbadmin',['m_bAdmin',['../classCUser.html#a3adfecf0c84bb907f28de26c0753bad1',1,'CUser']]],
   ['m_5fbappendtimestamp',['m_bAppendTimestamp',['../classCUser.html#a9127812fa81d430dbe300e2432e00cd5',1,'CUser']]],
   ['m_5fbauthed',['m_bAuthed',['../classCIRCSock.html#a4a56115765938ab378a6c6957729556e',1,'CIRCSock']]],
+  ['m_5fbauthonlyviamodule',['m_bAuthOnlyViaModule',['../classCUser.html#a4548cabb93933ec11e27c0a09a8cf53a',1,'CUser::m_bAuthOnlyViaModule()'],['../classCZNC.html#ada441af5a6722ce9700fd61527a43a7d',1,'CZNC::m_bAuthOnlyViaModule()']]],
   ['m_5fbautoclearchanbuffer',['m_bAutoClearChanBuffer',['../classCChan.html#ad7caaee836d1a81c3a11a064c276617c',1,'CChan::m_bAutoClearChanBuffer()'],['../classCUser.html#a1f08040c6bab38f7b1981c7febe103d1',1,'CUser::m_bAutoClearChanBuffer()']]],
   ['m_5fbautoclearquerybuffer',['m_bAutoClearQueryBuffer',['../classCUser.html#af6ab509314c9fb7fc289ef3d793868e5',1,'CUser']]],
   ['m_5fbaway',['m_bAway',['../classCClient.html#a2712e5bf9b58c9763b67d1afeb50b90f',1,'CClient']]],

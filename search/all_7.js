@@ -18,6 +18,7 @@ var searchData=
   ['getargs',['GetArgs',['../classCModCommand.html#a22390a1667673a9da522803122bdeae7',1,'CModCommand::GetArgs()'],['../classCModule.html#a6defb1c81497c221a304926275ad2563',1,'CModule::GetArgs()']]],
   ['getargshelptext',['GetArgsHelpText',['../classCModInfo.html#a468d4cd956c2b47e0f5d1ddfe76173a0',1,'CModInfo']]],
   ['getatime',['GetATime',['../classCFile.html#a7b0c28e7a02a451ca0d12b4a2cef4602',1,'CFile::GetATime() const '],['../classCFile.html#ae540435761823aacb41af115b4cbaf1e',1,'CFile::GetATime(const CString &amp;sFile)']]],
+  ['getauthonlyviamodule',['GetAuthOnlyViaModule',['../classCZNC.html#abe8c4395d7f28c94e09fd8a75883dfcb',1,'CZNC']]],
   ['getavailablemods',['GetAvailableMods',['../classCModules.html#a212ea5f8905169547e6e581faf3d7d17',1,'CModules']]],
   ['getavailablesslprotocols',['GetAvailableSSLProtocols',['../classCZNC.html#ae8938dc7b6ea015965345cd56bd2e1c5',1,'CZNC']]],
   ['getavailskins',['GetAvailSkins',['../classCWebSock.html#a4389ee004e4b881b2c3d1f3be467da63',1,'CWebSock']]],
