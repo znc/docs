@@ -43,6 +43,7 @@ var searchData=
   ['hasspacefornewnetwork',['HasSpaceForNewNetwork',['../classCUser.html#a3e7d948bfa47e5701e326571e22408ae',1,'CUser']]],
   ['hasuhnames',['HasUHNames',['../classCClient.html#a48ee2d9821da1fd2ff595fed9234e1de',1,'CClient::HasUHNames()'],['../classCIRCSock.html#a0a2a10401a93deada603eb6c284d65a3',1,'CIRCSock::HasUHNames()']]],
   ['haswritebuffer',['HasWriteBuffer',['../classCsock.html#a556d37415c5c017c3336eb5228d1beb1',1,'Csock']]],
+  ['have_5funix_5fsocket',['HAVE_UNIX_SOCKET',['../Csocket_8h.html#a86c6ecba3975900c148895683c0d7516',1,'Csocket.h']]],
   ['helpuser',['HelpUser',['../classCClient.html#a6e669ae3c33d7d0102d5b6c5804a5151',1,'CClient']]],
   ['httpsock_2eh',['HTTPSock.h',['../HTTPSock_8h.html',1,'']]]
 ];

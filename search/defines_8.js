@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['register_5fznc_5fmessage',['REGISTER_ZNC_MESSAGE',['../Message_8h.html#a06ffde3c4e46403dacba3c5e03f651aa',1,'Message.h']]]
+  ['perror',['PERROR',['../include_2znc_2defines_8h.html#ad94effca1b2e8da32cc64bb4a6717c61',1,'PERROR():&#160;defines.h'],['../Csocket_8h.html#ad94effca1b2e8da32cc64bb4a6717c61',1,'PERROR():&#160;Csocket.h']]]
 ];

@@ -14,6 +14,7 @@ var searchData=
   ['listenhost',['ListenHost',['../classCSockManager.html#afc0da60cb021e5c2733f7b5b5fef9e36',1,'CSockManager']]],
   ['listening',['Listening',['../classCsock.html#aa8ab288dec0530dac35001c20694a86e',1,'Csock']]],
   ['listenrand',['ListenRand',['../classCSockManager.html#adc77f0bab68df1dc1facf65f923affe4',1,'CSockManager']]],
+  ['listenunix',['ListenUnix',['../classCsock.html#afd80c56cc554af8b2a13d3a9501d5b56',1,'Csock']]],
   ['listsockets',['ListSockets',['../classCModule.html#aa9fd09b5f0dde4cb792b36778d9c1b24',1,'CModule']]],
   ['listtimers',['ListTimers',['../classCModule.html#a1e620f63bed45508a2ada1f67c047284',1,'CModule']]],
   ['loadmodule',['LoadModule',['../classCModules.html#a69ff7f35d2fdead4a8009b853a151562',1,'CModules']]],

@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['perror',['PERROR',['../include_2znc_2defines_8h.html#ad94effca1b2e8da32cc64bb4a6717c61',1,'PERROR():&#160;defines.h'],['../Csocket_8h.html#ad94effca1b2e8da32cc64bb4a6717c61',1,'PERROR():&#160;Csocket.h']]]
+  ['networkmodulecall',['NETWORKMODULECALL',['../main_8h.html#a30ead2b69471df3ce714ea98006c795d',1,'main.h']]],
+  ['networkmoduledefs',['NETWORKMODULEDEFS',['../Modules_8h.html#a037f51f2570d3f8099a9b1adb20a9ea9',1,'Modules.h']]],
+  ['nothing',['NOTHING',['../main_8h.html#aad4a7ebff687dc5228cc3fd4d25067f2',1,'main.h']]]
 ];

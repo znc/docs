@@ -7,7 +7,7 @@ var searchData=
   ['getaccepttype',['GetAcceptType',['../classCListener.html#a8538f0a81787b03ec849422ea96ce18e',1,'CListener']]],
   ['getaddr',['GetAddr',['../classCSSockAddr.html#a66aec7e4d8f9c35c584cc9708c4b828b',1,'CSSockAddr']]],
   ['getaddr6',['GetAddr6',['../classCSSockAddr.html#a3592792fc948887710902e4be8724315',1,'CSSockAddr']]],
-  ['getaddrinfo',['GetAddrInfo',['../classCsock.html#ae16b99983e6e37d4ca0325e7a871d1cf',1,'Csock::GetAddrInfo()'],['../Csocket_8h.html#a29bff300a60b5369a0ed488a9411429e',1,'GetAddrInfo():&#160;Csocket.h']]],
+  ['getaddrinfo',['GetAddrInfo',['../classCsock.html#ae16b99983e6e37d4ca0325e7a871d1cf',1,'Csock']]],
   ['getaddrtype',['GetAddrType',['../classCListener.html#af56e05c918b70b89f8cc4f111284e9ec',1,'CListener']]],
   ['getafrequire',['GetAFRequire',['../classCSSockAddr.html#a42d371b8c17b2d207a528fedd5230f06',1,'CSSockAddr::GetAFRequire()'],['../classCSConnection.html#a9e6692c199aeff3f7854efe9c0754091',1,'CSConnection::GetAFRequire()'],['../classCSListener.html#a70d29f3ba072289966e19fea6e600d04',1,'CSListener::GetAFRequire()']]],
   ['getallclients',['GetAllClients',['../classCUser.html#a1ff9c638b064f4852df3dcc98c2f2741',1,'CUser']]],

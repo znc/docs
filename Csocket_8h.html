@@ -98,9 +98,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="textblock"><code>#include &quot;defines.h&quot;</code><br/>
 <code>#include &lt;stdio.h&gt;</code><br/>
+<code>#include &lt;fcntl.h&gt;</code><br/>
 <code>#include &lt;unistd.h&gt;</code><br/>
 <code>#include &lt;sys/time.h&gt;</code><br/>
-<code>#include &lt;fcntl.h&gt;</code><br/>
 <code>#include &lt;sys/file.h&gt;</code><br/>
 <code>#include &lt;netinet/in.h&gt;</code><br/>
 <code>#include &lt;arpa/inet.h&gt;</code><br/>
@@ -124,6 +124,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;string&gt;</code><br/>
 <code>#include &lt;set&gt;</code><br/>
 <code>#include &lt;map&gt;</code><br/>
+<code>#include &lt;sys/un.h&gt;</code><br/>
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for Csocket.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -197,6 +198,8 @@ Macros</h2></td></tr>
 <tr class="separator:ad94effca1b2e8da32cc64bb4a6717c61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7c7a74c1982fb7cd171a87ea30b32a8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Csocket_8h.html#ac7c7a74c1982fb7cd171a87ea30b32a8">CS_INVALID_SOCK</a>&#160;&#160;&#160;-1</td></tr>
 <tr class="separator:ac7c7a74c1982fb7cd171a87ea30b32a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86c6ecba3975900c148895683c0d7516"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Csocket_8h.html#a86c6ecba3975900c148895683c0d7516">HAVE_UNIX_SOCKET</a></td></tr>
+<tr class="separator:a86c6ecba3975900c148895683c0d7516"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -216,9 +219,9 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a29bff300a60b5369a0ed488a9411429e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Csocket_8h.html#a29bff300a60b5369a0ed488a9411429e">GetAddrInfo</a> (const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sHostname, <a class="el" href="classCsock.html">Csock</a> *pSock, <a class="el" href="classCSSockAddr.html">CSSockAddr</a> &amp;csSockAddr)</td></tr>
-<tr class="memdesc:a29bff300a60b5369a0ed488a9411429e"><td class="mdescLeft">&#160;</td><td class="mdescRight">backwards compatible wrapper around <a class="el" href="classCGetAddrInfo.html" title="this function is a wrapper around getaddrinfo (for ipv6) ">CGetAddrInfo</a> and gethostbyname  <a href="#a29bff300a60b5369a0ed488a9411429e">More...</a><br/></td></tr>
-<tr class="separator:a29bff300a60b5369a0ed488a9411429e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76333074e321e48e33478726bf5198ca"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Csocket_8h.html#a76333074e321e48e33478726bf5198ca">CS_GetAddrInfo</a> (const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sHostname, <a class="el" href="classCsock.html">Csock</a> *pSock, <a class="el" href="classCSSockAddr.html">CSSockAddr</a> &amp;csSockAddr)</td></tr>
+<tr class="memdesc:a76333074e321e48e33478726bf5198ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">backwards compatible wrapper around <a class="el" href="classCGetAddrInfo.html" title="this function is a wrapper around getaddrinfo (for ipv6) ">CGetAddrInfo</a> and gethostbyname  <a href="#a76333074e321e48e33478726bf5198ca">More...</a><br/></td></tr>
+<tr class="separator:a76333074e321e48e33478726bf5198ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7385a980b6d95fd45b12b235d875ff2d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Csocket_8h.html#a7385a980b6d95fd45b12b235d875ff2d">GetCsockSSLIdx</a> ()</td></tr>
 <tr class="memdesc:a7385a980b6d95fd45b12b235d875ff2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This returns the [ex_]data index position for SSL objects only.  <a href="#a7385a980b6d95fd45b12b235d875ff2d">More...</a><br/></td></tr>
 <tr class="separator:a7385a980b6d95fd45b12b235d875ff2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -315,6 +318,18 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define CS_STRING&#160;&#160;&#160;std::string</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a86c6ecba3975900c148895683c0d7516"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HAVE_UNIX_SOCKET</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -452,40 +467,12 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ac5bda577da9cd6d01f8bfce632efe4f1"></a>
+<a class="anchor" id="a76333074e321e48e33478726bf5198ca"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void CSAdjustTVTimeout </td>
-          <td>(</td>
-          <td class="paramtype">struct timeval &amp;&#160;</td>
-          <td class="paramname"><em>tv</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">long&#160;</td>
-          <td class="paramname"><em>iTimeoutMS</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>adjusts tv with a new timeout if iTimeoutMS is smaller </p>
-
-</div>
-</div>
-<a class="anchor" id="a29bff300a60b5369a0ed488a9411429e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int GetAddrInfo </td>
+          <td class="memname">int CS_GetAddrInfo </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td>
           <td class="paramname"><em>sHostname</em>, </td>
@@ -511,6 +498,34 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p>backwards compatible wrapper around <a class="el" href="classCGetAddrInfo.html" title="this function is a wrapper around getaddrinfo (for ipv6) ">CGetAddrInfo</a> and gethostbyname </p>
+
+</div>
+</div>
+<a class="anchor" id="ac5bda577da9cd6d01f8bfce632efe4f1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSAdjustTVTimeout </td>
+          <td>(</td>
+          <td class="paramtype">struct timeval &amp;&#160;</td>
+          <td class="paramname"><em>tv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>iTimeoutMS</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>adjusts tv with a new timeout if iTimeoutMS is smaller </p>
 
 </div>
 </div>
@@ -812,7 +827,7 @@ template&lt;class T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Nov 18 2016 10:18:16 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Dec 22 2017 16:08:48 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

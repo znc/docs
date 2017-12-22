@@ -270,6 +270,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aca10fb9ed6fae8ab232df34964be7e47"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#aca10fb9ed6fae8ab232df34964be7e47">Connect</a> ()</td></tr>
 <tr class="memdesc:aca10fb9ed6fae8ab232df34964be7e47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the connection, this is used by the socket manager, and shouldn't be called directly by the user.  <a href="#aca10fb9ed6fae8ab232df34964be7e47">More...</a><br/></td></tr>
 <tr class="separator:aca10fb9ed6fae8ab232df34964be7e47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a104051ecd70cadd95f6cfda44ad7deb6"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a104051ecd70cadd95f6cfda44ad7deb6">ConnectUnix</a> (const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sPath)</td></tr>
+<tr class="memdesc:a104051ecd70cadd95f6cfda44ad7deb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to a UNIX socket.  <a href="#a104051ecd70cadd95f6cfda44ad7deb6">More...</a><br/></td></tr>
+<tr class="separator:a104051ecd70cadd95f6cfda44ad7deb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd80c56cc554af8b2a13d3a9501d5b56"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#afd80c56cc554af8b2a13d3a9501d5b56">ListenUnix</a> (const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sBindFile, int iMaxConns=SOMAXCONN, uint32_t iTimeout=0)</td></tr>
+<tr class="memdesc:afd80c56cc554af8b2a13d3a9501d5b56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Listens for connections on an UNIX socket.  <a href="#afd80c56cc554af8b2a13d3a9501d5b56">More...</a><br/></td></tr>
+<tr class="separator:afd80c56cc554af8b2a13d3a9501d5b56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32e80e3b3e655ceb34127c2c0ef8f3b0"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a32e80e3b3e655ceb34127c2c0ef8f3b0">Listen</a> (uint16_t iPort, int iMaxConns=SOMAXCONN, const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sBindHost=&quot;&quot;, uint32_t iTimeout=0, bool bDetach=false)</td></tr>
 <tr class="memdesc:a32e80e3b3e655ceb34127c2c0ef8f3b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Listens for connections.  <a href="#a32e80e3b3e655ceb34127c2c0ef8f3b0">More...</a><br/></td></tr>
 <tr class="separator:a32e80e3b3e655ceb34127c2c0ef8f3b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1695,6 +1701,38 @@ Protected Attributes</h2></td></tr>
 <p>Create the SSL connection. </p>
 <dl class="section return"><dt>Returns</dt><dd>true on success</dd></dl>
 <p>This is used by the socket manager, and shouldn't be called directly by the user. </p>
+
+</div>
+</div>
+<a class="anchor" id="a104051ecd70cadd95f6cfda44ad7deb6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Csock::ConnectUnix </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td>
+          <td class="paramname"><em>sPath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Connect to a UNIX socket. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sPath</td><td>the path to the UNIX socket. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -3973,6 +4011,56 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="afd80c56cc554af8b2a13d3a9501d5b56"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Csock::ListenUnix </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="third__party_2Csocket_2examples_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td>
+          <td class="paramname"><em>sBindFile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iMaxConns</em> = <code>SOMAXCONN</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>iTimeout</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Listens for connections on an UNIX socket. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sBindFile</td><td>the socket on which to listen </td></tr>
+    <tr><td class="paramname">iMaxConns</td><td>the maximum amount of pending connections to allow </td></tr>
+    <tr><td class="paramname">iTimeout</td><td>if no connections come in by this timeout, the listener is closed </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a7a5acbe54d37f4a3f4c85a339451ee2e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -6241,7 +6329,7 @@ X509_free( pCert );
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 26 2016 17:43:43 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Dec 22 2017 16:08:48 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
