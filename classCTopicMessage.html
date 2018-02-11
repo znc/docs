@@ -156,6 +156,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:accb676395693f29b8f3c110e811f8af3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2316efb3fcedb9cd98fc926c0a0353ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCTopicMessage.html#a2316efb3fcedb9cd98fc926c0a0353ab">SetTopic</a> (const <a class="el" href="classCString.html">CString</a> &amp;sTopic)</td></tr>
 <tr class="separator:a2316efb3fcedb9cd98fc926c0a0353ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa796f11d1464f04b6a24ae1346b9103b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCTopicMessage.html#aa796f11d1464f04b6a24ae1346b9103b">GetText</a> () const </td></tr>
+<tr class="separator:aa796f11d1464f04b6a24ae1346b9103b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58f0f022b929f70bd946fcf974d496bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCTopicMessage.html#a58f0f022b929f70bd946fcf974d496bc">SetText</a> (const <a class="el" href="classCString.html">CString</a> &amp;sText)</td></tr>
+<tr class="separator:a58f0f022b929f70bd946fcf974d496bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29499f5301ae0a0cd184783f386bea90"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCTargetMessage.html#a29499f5301ae0a0cd184783f386bea90">GetTarget</a> () const </td></tr>
 <tr class="separator:a29499f5301ae0a0cd184783f386bea90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7ed5de249bf8bc2d39545cf94405816"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCTargetMessage.html#ac7ed5de249bf8bc2d39545cf94405816">SetTarget</a> (const <a class="el" href="classCString.html">CString</a> &amp;sTarget)</td></tr>
@@ -722,6 +726,31 @@ template&lt;typename M &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="aa796f11d1464f04b6a24ae1346b9103b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCString.html">CString</a> CTopicMessage::GetText </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>References <a class="el" href="classCTopicMessage.html#accb676395693f29b8f3c110e811f8af3">GetTopic()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ac3fcc15ecb3ce7224e1b7fef7b4efe18"></a>
 <div class="memitem">
 <div class="memproto">
@@ -769,6 +798,8 @@ template&lt;typename M &gt; </div>
 </div><div class="memdoc">
 
 <p>References <a class="el" href="classCMessage.html#a9feb6a4646d4f620e4666b743e57480f">CMessage::GetParam()</a>.</p>
+
+<p>Referenced by <a class="el" href="classCTopicMessage.html#aa796f11d1464f04b6a24ae1346b9103b">GetText()</a>.</p>
 
 </div>
 </div>
@@ -1137,6 +1168,32 @@ template&lt;typename M , typename  = typename std::enable_if&lt;                
 
 </div>
 </div>
+<a class="anchor" id="a58f0f022b929f70bd946fcf974d496bc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CTopicMessage::SetText </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
+          <td class="paramname"><em>sText</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>References <a class="el" href="classCTopicMessage.html#a2316efb3fcedb9cd98fc926c0a0353ab">SetTopic()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a3c6b3ce1115251b35190eced6de870a0"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1187,6 +1244,8 @@ template&lt;typename M , typename  = typename std::enable_if&lt;                
 
 <p>References <a class="el" href="classCMessage.html#ae5693433c2368e93095d194e24d19d14">CMessage::SetParam()</a>.</p>
 
+<p>Referenced by <a class="el" href="classCTopicMessage.html#a58f0f022b929f70bd946fcf974d496bc">SetText()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="afb668fcc41fb8bf233a011b1ac08917d"></a>
@@ -1221,7 +1280,7 @@ template&lt;typename M , typename  = typename std::enable_if&lt;                
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 3 2016 22:58:10 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Feb 11 2018 15:09:57 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
