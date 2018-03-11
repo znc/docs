@@ -63,7 +63,7 @@ var searchData=
   ['isreply',['IsReply',['../classCCTCPMessage.html#a1430f5d9398d9ebc84bb5fcdca4588ce',1,'CCTCPMessage']]],
   ['issock',['IsSock',['../classCFile.html#a94c12de61609a4e0caeacb078824e164',1,'CFile::IsSock(const CString &amp;sLongName, bool bUseLstat=false)'],['../classCFile.html#a6103706171757cdc25d631cbdb15bbf0',1,'CFile::IsSock(bool bUseLstat=false) const ']]],
   ['isssl',['IsSSL',['../classCListener.html#ae28a2729398eb7d26708e4c1b6a52687',1,'CListener::IsSSL()'],['../classCServer.html#a334a441375e5983a9f8857207b6df208',1,'CServer::IsSSL()']]],
-  ['istagenabled',['IsTagEnabled',['../classCClient.html#a611ef45ce7077bcfbf7f5ff9276d7ceb',1,'CClient']]],
+  ['istagenabled',['IsTagEnabled',['../classCClient.html#a611ef45ce7077bcfbf7f5ff9276d7ceb',1,'CClient::IsTagEnabled()'],['../classCIRCSock.html#a4f4ecd9cdce7dbdd2d3afb9cee65499a',1,'CIRCSock::IsTagEnabled()']]],
   ['istrue',['IsTrue',['../classCTemplate.html#ac1bd3e2d29d53726294c898e69d74794',1,'CTemplate']]],
   ['isuserattached',['IsUserAttached',['../classCIRCNetwork.html#a0d50a587fb51df4d4bca12d590e2abb6',1,'CIRCNetwork::IsUserAttached()'],['../classCUser.html#a7fa71a02c2b9a9e10de1ae4371938532',1,'CUser::IsUserAttached()']]],
   ['isuseronline',['IsUserOnline',['../classCIRCNetwork.html#a3f64579e2ed802ed1d27cfc11a16c46e',1,'CIRCNetwork']]],

@@ -178,7 +178,7 @@ var searchData=
   ['m_5fsssldhparamfile',['m_sSSLDHParamFile',['../classCZNC.html#a85c929da830ec6fd5afa167475d58b1a',1,'CZNC']]],
   ['m_5fssslkeyfile',['m_sSSLKeyFile',['../classCZNC.html#ab52c93eb8b8b11a5eb0df69c29078aee',1,'CZNC']]],
   ['m_5fssslprotocols',['m_sSSLProtocols',['../classCZNC.html#a68980526cc0a63bc397c003206bae79f',1,'CZNC']]],
-  ['m_5fsssupportedtags',['m_ssSupportedTags',['../classCClient.html#a90cf045b0f7d3aff931731fd52796a99',1,'CClient']]],
+  ['m_5fsssupportedtags',['m_ssSupportedTags',['../classCClient.html#a90cf045b0f7d3aff931731fd52796a99',1,'CClient::m_ssSupportedTags()'],['../classCIRCSock.html#a9316b5120d9ea7105e4e57952cb1de96',1,'CIRCSock::m_ssSupportedTags()']]],
   ['m_5fsstatusprefix',['m_sStatusPrefix',['../classCUser.html#afe7977edbe977a22a468a65a11918ca2',1,'CUser::m_sStatusPrefix()'],['../classCZNC.html#a23003acd39148cc03a18abc14c5f05d2',1,'CZNC::m_sStatusPrefix()']]],
   ['m_5fsstrustedfingerprints',['m_ssTrustedFingerprints',['../classCIRCNetwork.html#a546890c8b8a74c3eb6070bab952c6ecc',1,'CIRCNetwork']]],
   ['m_5fstext',['m_sText',['../classCBufLine.html#a3310db35cdf223943441e77d745b603d',1,'CBufLine']]],
@@ -236,9 +236,9 @@ var searchData=
   ['m_5fvplisteners',['m_vpListeners',['../classCZNC.html#a1c9cfb4970b8cc20dffc4a63753a75cb',1,'CZNC']]],
   ['m_5fvqueries',['m_vQueries',['../classCIRCNetwork.html#aca8bfeea27b99c6e0809e7c2de523a45',1,'CIRCNetwork']]],
   ['m_5fvsbindhosts',['m_vsBindHosts',['../classCZNC.html#a860796fe08a00ea5e0e9a8a6826f4826',1,'CZNC']]],
+  ['m_5fvsendqueue',['m_vSendQueue',['../classCIRCSock.html#abf8f843e64ec68a1738308dbb72c0eef',1,'CIRCSock']]],
   ['m_5fvservers',['m_vServers',['../classCIRCNetwork.html#a9739ab622c0fb97073a6ea10c14f8058',1,'CIRCNetwork']]],
   ['m_5fvsheaders',['m_vsHeaders',['../classCTable.html#a6246689933c1b0fce1a1b4b5d8531a44',1,'CTable']]],
   ['m_5fvsmotd',['m_vsMotd',['../classCZNC.html#a77c73e215ae312fc683b58a282bd1c6e',1,'CZNC']]],
-  ['m_5fvssendqueue',['m_vsSendQueue',['../classCIRCSock.html#a63608a81ad8ea61fe48c0f16115ef4c8',1,'CIRCSock']]],
   ['m_5fvstrustedproxies',['m_vsTrustedProxies',['../classCZNC.html#a7e1f2715045e46ffb341e85f80062a18',1,'CZNC']]]
 ];
