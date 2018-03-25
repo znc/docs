@@ -87,6 +87,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="classCChan-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">CChan Class Reference</div>  </div>
@@ -95,13 +96,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p><code>#include &lt;<a class="el" href="Chan_8h_source.html">Chan.h</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for CChan:</div>
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for CChan:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classCChan__inherit__graph.png" border="0" usemap="#CChan_inherit__map" alt="Inheritance graph"/></div>
+<map name="CChan_inherit__map" id="CChan_inherit__map">
+<area shape="rect" id="node2" href="classCCoreTranslationMixin.html" title="CCoreTranslationMixin" alt="" coords="5,5,165,32"/></map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for CChan:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classCChan__coll__graph.png" border="0" usemap="#CChan_coll__map" alt="Collaboration graph"/></div>
 <map name="CChan_coll__map" id="CChan_coll__map">
-<area shape="rect" id="node2" href="classCNick.html" title="CNick" alt="" coords="3327,355,3385,381"/><area shape="rect" id="node6" href="classCIRCNetwork.html" title="CIRCNetwork" alt="" coords="2906,613,3009,640"/><area shape="rect" id="node31" href="classCIRCSock.html" title="CIRCSock" alt="" coords="2614,659,2695,685"/><area shape="rect" id="node3" href="classCString.html" title="String class that is used inside ZNC. " alt="" coords="1005,560,1075,587"/><area shape="rect" id="node8" href="classCClient.html" title="CClient" alt="" coords="3887,957,3953,984"/><area shape="rect" id="node20" href="classCUser.html" title="CUser" alt="" coords="3661,1115,3723,1141"/><area shape="rect" id="node41" href="classCServer.html" title="CServer" alt="" coords="1422,264,1495,291"/><area shape="rect" id="node4" title="STL class. " alt="" coords="649,560,735,587"/><area shape="rect" id="node5" title="STL class. " alt="" coords="331,553,469,594"/><area shape="rect" id="node21" href="classCModules.html" title="CModules" alt="" coords="4126,1072,4210,1099"/><area shape="rect" id="node9" href="classCIRCSocket.html" title="Base IRC socket for client&lt;&#45;&gt;ZNC, and ZNC&lt;&#45;&gt;server. " alt="" coords="2193,989,2287,1016"/><area shape="rect" id="node10" href="classCZNCSock.html" title="CZNCSock" alt="" coords="1785,989,1876,1016"/><area shape="rect" id="node11" href="classCsock.html" title="Basic socket class. " alt="" coords="1429,1024,1489,1051"/><area shape="rect" id="node12" href="classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock " alt="" coords="979,1024,1101,1051"/><area shape="rect" id="node14" href="classCCron.html" title="this is the main cron job class " alt="" coords="369,1000,431,1027"/><area shape="rect" id="node16" href="classCSMonitorFD.html" title="Class to tie sockets to for monitoring by Csocket at either the Csock or TSockManager. " alt="" coords="347,1051,453,1077"/><area shape="rect" id="node18" href="classCCoreTranslationMixin.html" title="CCoreTranslationMixin" alt="" coords="1378,973,1539,1000"/><area shape="rect" id="node22" title="STL class. " alt="" coords="1152,1424,1339,1451"/><area shape="rect" id="node26" title="STL class. " alt="" coords="1758,1087,1903,1129"/><area shape="rect" id="node30" title="STL class. " alt="" coords="952,1247,1128,1273"/><area shape="rect" id="node25" href="classMCString.html" title="A dictionary for strings. " alt="" coords="2200,1091,2280,1117"/><area shape="rect" id="node29" href="classCBuffer.html" title="CBuffer" alt="" coords="1424,848,1493,875"/><area shape="rect" id="node35" href="classCMessage.html" title="Here is a small explanation of how messages on IRC work, and how you can use this class to get useful..." alt="" coords="1787,767,1875,793"/><area shape="rect" id="node38" href="classCQuery.html" title="CQuery" alt="" coords="2205,481,2275,508"/></map>
+<area shape="rect" id="node2" href="classCCoreTranslationMixin.html" title="CCoreTranslationMixin" alt="" coords="1378,428,1539,455"/><area shape="rect" id="node11" href="classCZNCSock.html" title="CZNCSock" alt="" coords="1785,327,1876,353"/><area shape="rect" id="node3" href="classCNick.html" title="CNick" alt="" coords="3327,585,3385,612"/><area shape="rect" id="node7" href="classCIRCNetwork.html" title="CIRCNetwork" alt="" coords="2906,867,3009,893"/><area shape="rect" id="node31" href="classCIRCSock.html" title="CIRCSock" alt="" coords="2614,888,2695,915"/><area shape="rect" id="node4" href="classCString.html" title="String class that is used inside ZNC. " alt="" coords="1005,635,1075,661"/><area shape="rect" id="node9" href="classCClient.html" title="CClient" alt="" coords="3887,615,3953,641"/><area shape="rect" id="node20" href="classCUser.html" title="CUser" alt="" coords="3661,977,3723,1004"/><area shape="rect" id="node41" href="classCServer.html" title="CServer" alt="" coords="1422,709,1495,736"/><area shape="rect" id="node5" title="STL class. " alt="" coords="649,635,735,661"/><area shape="rect" id="node6" title="STL class. " alt="" coords="331,627,469,669"/><area shape="rect" id="node21" href="classCModules.html" title="CModules" alt="" coords="4126,1165,4210,1192"/><area shape="rect" id="node10" href="classCIRCSocket.html" title="Base IRC socket for client&lt;&#45;&gt;ZNC, and ZNC&lt;&#45;&gt;server. " alt="" coords="2193,327,2287,353"/><area shape="rect" id="node12" href="classCsock.html" title="Basic socket class. " alt="" coords="1429,119,1489,145"/><area shape="rect" id="node13" href="classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock " alt="" coords="979,33,1101,60"/><area shape="rect" id="node15" href="classCCron.html" title="this is the main cron job class " alt="" coords="369,7,431,33"/><area shape="rect" id="node17" href="classCSMonitorFD.html" title="Class to tie sockets to for monitoring by Csocket at either the Csock or TSockManager. " alt="" coords="347,57,453,84"/><area shape="rect" id="node22" title="STL class. " alt="" coords="1152,1524,1339,1551"/><area shape="rect" id="node26" title="STL class. " alt="" coords="1758,1458,1903,1499"/><area shape="rect" id="node30" title="STL class. " alt="" coords="952,1411,1128,1437"/><area shape="rect" id="node25" href="classMCString.html" title="A dictionary for strings. " alt="" coords="2200,1473,2280,1500"/><area shape="rect" id="node29" href="classCBuffer.html" title="CBuffer" alt="" coords="1424,1372,1493,1399"/><area shape="rect" id="node35" href="classCMessage.html" title="Here is a small explanation of how messages on IRC work, and how you can use this class to get useful..." alt="" coords="1787,912,1875,939"/><area shape="rect" id="node38" href="classCQuery.html" title="CQuery" alt="" coords="2205,1153,2275,1180"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -348,6 +358,17 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a81294037f4f3a8f79d311865b8e48fa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9e140400d4d8c1d04d349716b97907f"><td class="memItemLeft" align="right" valign="top">std::map&lt; char, <a class="el" href="classCString.html">CString</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCChan.html#ab9e140400d4d8c1d04d349716b97907f">m_mcsModes</a></td></tr>
 <tr class="separator:ab9e140400d4d8c1d04d349716b97907f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a0425dbc7f9644cd478f2e4567f14ed89"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCoreTranslationMixin.html#a0425dbc7f9644cd478f2e4567f14ed89">t_s</a> (const <a class="el" href="classCString.html">CString</a> &amp;sEnglish, const <a class="el" href="classCString.html">CString</a> &amp;sContext=&quot;&quot;)</td></tr>
+<tr class="separator:a0425dbc7f9644cd478f2e4567f14ed89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba32403276c1229473a2c77a78ad8a77"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classCInlineFormatMessage.html">CInlineFormatMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCoreTranslationMixin.html#aba32403276c1229473a2c77a78ad8a77">t_f</a> (const <a class="el" href="classCString.html">CString</a> &amp;sEnglish, const <a class="el" href="classCString.html">CString</a> &amp;sContext=&quot;&quot;)</td></tr>
+<tr class="separator:aba32403276c1229473a2c77a78ad8a77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5989876fc49097f7e56aae7c3869ee2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classCInlineFormatMessage.html">CInlineFormatMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCoreTranslationMixin.html#ad5989876fc49097f7e56aae7c3869ee2">t_p</a> (const <a class="el" href="classCString.html">CString</a> &amp;sEnglish, const <a class="el" href="classCString.html">CString</a> &amp;sEnglishes, int iNum, const <a class="el" href="classCString.html">CString</a> &amp;sContext=&quot;&quot;)</td></tr>
+<tr class="separator:ad5989876fc49097f7e56aae7c3869ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa342b667b7cd185502c200d7feebd8d4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classCDelayedTranslation.html">CDelayedTranslation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCoreTranslationMixin.html#aa342b667b7cd185502c200d7feebd8d4">t_d</a> (const <a class="el" href="classCString.html">CString</a> &amp;sEnglish, const <a class="el" href="classCString.html">CString</a> &amp;sContext=&quot;&quot;)</td></tr>
+<tr class="separator:aa342b667b7cd185502c200d7feebd8d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
 <a class="anchor" id="acf15763add0520a1225a5bba7a398c57"></a>
@@ -2716,7 +2737,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 11 2018 21:37:45 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Mar 25 2018 22:46:58 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

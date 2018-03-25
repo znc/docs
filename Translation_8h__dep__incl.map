@@ -1,12 +1,13 @@
 <map id="Translation.h" name="Translation.h">
-<area shape="rect" id="node2" href="$Modules_8h.html" title="Modules.h" alt="" coords="129,304,215,331"/>
-<area shape="rect" id="node3" href="$znc_8h.html" title="znc.h" alt="" coords="331,379,385,405"/>
-<area shape="rect" id="node5" href="$Socket_8h.html" title="Socket.h" alt="" coords="349,80,427,107"/>
-<area shape="rect" id="node9" href="$WebModules_8h.html" title="WebModules.h" alt="" coords="115,229,228,256"/>
-<area shape="rect" id="node4" href="$IRCNetwork_8h.html" title="IRCNetwork.h" alt="" coords="306,453,411,480"/>
-<area shape="rect" id="node6" href="$Client_8h.html" title="Client.h" alt="" coords="525,229,595,256"/>
-<area shape="rect" id="node7" href="$ExecSock_8h.html" title="ExecSock.h" alt="" coords="477,155,571,181"/>
-<area shape="rect" id="node8" href="$HTTPSock_8h.html" title="HTTPSock.h" alt="" coords="145,155,241,181"/>
-<area shape="rect" id="node10" href="$IRCSock_8h.html" title="IRCSock.h" alt="" coords="266,155,349,181"/>
-<area shape="rect" id="node11" href="$Listener_8h.html" title="Listener.h" alt="" coords="317,304,400,331"/>
+<area shape="rect" id="node2" href="$Chan_8h.html" title="Chan.h" alt="" coords="5,80,72,107"/>
+<area shape="rect" id="node3" href="$Modules_8h.html" title="Modules.h" alt="" coords="233,304,319,331"/>
+<area shape="rect" id="node4" href="$znc_8h.html" title="znc.h" alt="" coords="435,379,489,405"/>
+<area shape="rect" id="node6" href="$Socket_8h.html" title="Socket.h" alt="" coords="453,80,531,107"/>
+<area shape="rect" id="node10" href="$WebModules_8h.html" title="WebModules.h" alt="" coords="219,229,332,256"/>
+<area shape="rect" id="node5" href="$IRCNetwork_8h.html" title="IRCNetwork.h" alt="" coords="410,453,515,480"/>
+<area shape="rect" id="node7" href="$Client_8h.html" title="Client.h" alt="" coords="629,229,699,256"/>
+<area shape="rect" id="node8" href="$ExecSock_8h.html" title="ExecSock.h" alt="" coords="581,155,675,181"/>
+<area shape="rect" id="node9" href="$HTTPSock_8h.html" title="HTTPSock.h" alt="" coords="249,155,345,181"/>
+<area shape="rect" id="node11" href="$IRCSock_8h.html" title="IRCSock.h" alt="" coords="370,155,453,181"/>
+<area shape="rect" id="node12" href="$Listener_8h.html" title="Listener.h" alt="" coords="421,304,504,331"/>
 </map>
