@@ -3,4 +3,5 @@
 <area shape="rect" id="node3" href="$classCSocketManager.html" title="Best class to use to interact with the sockets. " alt="" coords="108,80,237,107"/>
 <area shape="rect" id="node4" title="STL class. " alt="" coords="5,5,173,32"/>
 <area shape="rect" id="node5" href="$classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock " alt="" coords="198,5,319,32"/>
+<area shape="rect" id="node6" href="$classCCoreTranslationMixin.html" title="CCoreTranslationMixin" alt="" coords="311,155,472,181"/>
 </map>

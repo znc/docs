@@ -405,7 +405,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;    <a class="code" href="classCString.html">CString</a> m_sFormat;</div>
 <div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;};</div>
 <div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;</div>
-<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;<span class="preprocessor">#endif  // !ZNCSTRING_H</span></div>
+<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;<span class="comment">// For gtest</span></div>
+<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;<span class="preprocessor">#ifdef GTEST_FAIL</span></div>
+<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;<span class="preprocessor"></span><span class="keyword">inline</span> <span class="keywordtype">void</span> PrintTo(<span class="keyword">const</span> <a class="code" href="classCString.html">CString</a>&amp; s, std::ostream* os) {</div>
+<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;    *os &lt;&lt; <span class="charliteral">&#39;&quot;&#39;</span> &lt;&lt; s.<a class="code" href="classCString.html#acff39c9ac5bf2994a9fb511b2b972387">Escape_n</a>(<a class="code" href="classCString.html#a8f63759db4ef372abb9cfa4751648e1fad599e74fb0781674b9217be4ecb6bcfd">CString::EDEBUG</a>) &lt;&lt; <span class="charliteral">&#39;&quot;&#39;</span>;</div>
+<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;}</div>
+<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;<span class="preprocessor">#endif  // !ZNCSTRING_H</span></div>
 <div class="ttc" id="classMCString_html_a9844af50a84a4b26957bdc4688aa20d7"><div class="ttname"><a href="classMCString.html#a9844af50a84a4b26957bdc4688aa20d7">MCString::ReadFilter</a></div><div class="ttdeci">virtual bool ReadFilter(CString &amp;sKey, CString &amp;sValue) const </div><div class="ttdoc">Filter used while reading this map. </div><div class="ttdef"><b>Definition:</b> ZNCString.h:654</div></div>
 <div class="ttc" id="classCString_html_ac00922dc1f28775206a0f07c29cd1e13"><div class="ttname"><a href="classCString.html#ac00922dc1f28775206a0f07c29cd1e13">CString::ToULongLong</a></div><div class="ttdeci">unsigned long long ToULongLong() const </div></div>
 <div class="ttc" id="classCString_html_a63fee9048ec4cdc27dcb6b6df637fba5"><div class="ttname"><a href="classCString.html#a63fee9048ec4cdc27dcb6b6df637fba5">CString::Crypt</a></div><div class="ttdeci">void Crypt(const CString &amp;sPass, bool bEncrypt, const CString &amp;sIvec=&quot;&quot;)</div></div>
@@ -527,7 +534,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 23 2018 09:14:38 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Apr 2 2018 12:40:54 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

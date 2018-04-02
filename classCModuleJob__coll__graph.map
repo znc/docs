@@ -1,35 +1,35 @@
 <map id="CModuleJob" name="CModuleJob">
-<area shape="rect" id="node2" href="$classCJob.html" title="A job is a task which should run without blocking the main thread. " alt="" coords="1897,1176,1948,1203"/>
-<area shape="rect" id="node3" href="$classCString.html" title="String class that is used inside ZNC. " alt="" coords="419,985,488,1012"/>
-<area shape="rect" id="node6" href="$classCModule.html" title="The base class for your own ZNC modules. " alt="" coords="3048,1084,3125,1111"/>
-<area shape="rect" id="node19" href="$classCUser.html" title="CUser" alt="" coords="1892,531,1953,557"/>
-<area shape="rect" id="node21" href="$classCClient.html" title="CClient" alt="" coords="1055,721,1121,748"/>
-<area shape="rect" id="node25" href="$classCIRCNetwork.html" title="CIRCNetwork" alt="" coords="2683,673,2786,700"/>
-<area shape="rect" id="node26" href="$classCNick.html" title="CNick" alt="" coords="3057,583,3116,609"/>
-<area shape="rect" id="node31" href="$classCIRCSock.html" title="CIRCSock" alt="" coords="3907,805,3989,832"/>
-<area shape="rect" id="node33" href="$classCChan.html" title="CChan" alt="" coords="3332,424,3396,451"/>
-<area shape="rect" id="node45" href="$classCServer.html" title="CServer" alt="" coords="659,1097,733,1124"/>
-<area shape="rect" id="node48" href="$classCTimer.html" title="CTimer" alt="" coords="3331,1200,3397,1227"/>
-<area shape="rect" id="node4" title="STL class. " alt="" coords="233,985,319,1012"/>
-<area shape="rect" id="node5" title="STL class. " alt="" coords="6,978,143,1019"/>
-<area shape="rect" id="node15" href="$classCSocket.html" title="Base Csock implementation to be used by modules. " alt="" coords="3327,1015,3401,1041"/>
-<area shape="rect" id="node7" href="$classCSockManager.html" title="CSockManager" alt="" coords="2479,1104,2598,1131"/>
-<area shape="rect" id="node8" href="$classTSocketManager.html" title="TSocketManager\&lt; CZNCSock \&gt;" alt="" coords="1809,1125,2037,1152"/>
-<area shape="rect" id="node9" href="$classCSocketManager.html" title="Best class to use to interact with the sockets. " alt="" coords="1420,1209,1551,1236"/>
-<area shape="rect" id="node10" title="STL class. " alt="" coords="1003,892,1173,919"/>
-<area shape="rect" id="node28" title="STL class. " alt="" coords="1197,299,1373,325"/>
-<area shape="rect" id="node30" title="STL class. " alt="" coords="1597,421,1784,448"/>
-<area shape="rect" id="node38" title="STL class. " alt="" coords="1015,219,1161,261"/>
-<area shape="rect" id="node12" href="$classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock " alt="" coords="14,1279,135,1305"/>
-<area shape="rect" id="node17" href="$classCsock.html" title="Basic socket class. " alt="" coords="246,711,306,737"/>
-<area shape="rect" id="node16" href="$classCZNCSock.html" title="CZNCSock" alt="" coords="408,467,499,493"/>
-<area shape="rect" id="node22" href="$classCIRCSocket.html" title="Base IRC socket for client&lt;&#45;&gt;ZNC, and ZNC&lt;&#45;&gt;server. " alt="" coords="649,43,743,69"/>
-<area shape="rect" id="node18" href="$classCCoreTranslationMixin.html" title="CCoreTranslationMixin" alt="" coords="195,437,357,464"/>
-<area shape="rect" id="node29" href="$classCModules.html" title="CModules" alt="" coords="2317,571,2401,597"/>
-<area shape="rect" id="node27" href="$classCBuffer.html" title="CBuffer" alt="" coords="2324,327,2393,353"/>
-<area shape="rect" id="node36" href="$classCMessage.html" title="Here is a small explanation of how messages on IRC work, and how you can use this class to get useful..." alt="" coords="3320,1508,3408,1535"/>
-<area shape="rect" id="node37" href="$classMCString.html" title="A dictionary for strings. " alt="" coords="1445,248,1525,275"/>
-<area shape="rect" id="node42" href="$classCQuery.html" title="CQuery" alt="" coords="1888,747,1957,773"/>
-<area shape="rect" id="node49" href="$classCCron.html" title="this is the main cron job class " alt="" coords="3056,1208,3117,1235"/>
-<area shape="rect" id="node50" href="$structCTranslationDomainRefHolder.html" title="CTranslationDomainRefHolder" alt="" coords="2629,1103,2840,1129"/>
+<area shape="rect" id="node2" href="$classCJob.html" title="A job is a task which should run without blocking the main thread. " alt="" coords="1897,1442,1948,1469"/>
+<area shape="rect" id="node3" href="$classCString.html" title="String class that is used inside ZNC. " alt="" coords="419,746,488,773"/>
+<area shape="rect" id="node6" href="$classCModule.html" title="The base class for your own ZNC modules. " alt="" coords="3048,1306,3125,1333"/>
+<area shape="rect" id="node19" href="$classCUser.html" title="CUser" alt="" coords="1892,681,1953,707"/>
+<area shape="rect" id="node21" href="$classCClient.html" title="CClient" alt="" coords="1055,826,1121,853"/>
+<area shape="rect" id="node25" href="$classCIRCNetwork.html" title="CIRCNetwork" alt="" coords="2683,771,2786,798"/>
+<area shape="rect" id="node26" href="$classCNick.html" title="CNick" alt="" coords="3057,682,3116,709"/>
+<area shape="rect" id="node31" href="$classCIRCSock.html" title="CIRCSock" alt="" coords="3907,886,3989,913"/>
+<area shape="rect" id="node33" href="$classCChan.html" title="CChan" alt="" coords="3332,486,3396,513"/>
+<area shape="rect" id="node45" href="$classCServer.html" title="CServer" alt="" coords="659,550,733,577"/>
+<area shape="rect" id="node48" href="$classCTimer.html" title="CTimer" alt="" coords="3331,1418,3397,1445"/>
+<area shape="rect" id="node4" title="STL class. " alt="" coords="233,746,319,773"/>
+<area shape="rect" id="node5" title="STL class. " alt="" coords="6,739,143,780"/>
+<area shape="rect" id="node16" href="$classCSocket.html" title="Base Csock implementation to be used by modules. " alt="" coords="3327,1302,3401,1329"/>
+<area shape="rect" id="node7" href="$classCSockManager.html" title="CSockManager" alt="" coords="2299,1493,2418,1519"/>
+<area shape="rect" id="node8" href="$classTSocketManager.html" title="TSocketManager\&lt; CZNCSock \&gt;" alt="" coords="1809,1493,2037,1519"/>
+<area shape="rect" id="node9" href="$classCSocketManager.html" title="Best class to use to interact with the sockets. " alt="" coords="1420,1493,1551,1519"/>
+<area shape="rect" id="node10" title="STL class. " alt="" coords="1003,987,1173,1014"/>
+<area shape="rect" id="node28" title="STL class. " alt="" coords="1197,274,1373,301"/>
+<area shape="rect" id="node30" title="STL class. " alt="" coords="1597,503,1784,530"/>
+<area shape="rect" id="node38" title="STL class. " alt="" coords="1015,336,1161,377"/>
+<area shape="rect" id="node12" href="$classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock " alt="" coords="14,1594,135,1621"/>
+<area shape="rect" id="node18" href="$classCsock.html" title="Basic socket class. " alt="" coords="246,1565,306,1591"/>
+<area shape="rect" id="node13" href="$classCCoreTranslationMixin.html" title="CCoreTranslationMixin" alt="" coords="195,1413,357,1439"/>
+<area shape="rect" id="node17" href="$classCZNCSock.html" title="CZNCSock" alt="" coords="408,1497,499,1523"/>
+<area shape="rect" id="node29" href="$classCModules.html" title="CModules" alt="" coords="2317,726,2401,753"/>
+<area shape="rect" id="node22" href="$classCIRCSocket.html" title="Base IRC socket for client&lt;&#45;&gt;ZNC, and ZNC&lt;&#45;&gt;server. " alt="" coords="649,1463,743,1490"/>
+<area shape="rect" id="node27" href="$classCBuffer.html" title="CBuffer" alt="" coords="2324,363,2393,390"/>
+<area shape="rect" id="node36" href="$classCMessage.html" title="Here is a small explanation of how messages on IRC work, and how you can use this class to get useful..." alt="" coords="3320,1589,3408,1615"/>
+<area shape="rect" id="node37" href="$classMCString.html" title="A dictionary for strings. " alt="" coords="1445,363,1525,390"/>
+<area shape="rect" id="node42" href="$classCQuery.html" title="CQuery" alt="" coords="1888,1063,1957,1090"/>
+<area shape="rect" id="node49" href="$classCCron.html" title="this is the main cron job class " alt="" coords="3056,1531,3117,1558"/>
+<area shape="rect" id="node50" href="$structCTranslationDomainRefHolder.html" title="CTranslationDomainRefHolder" alt="" coords="2629,1430,2840,1457"/>
 </map>

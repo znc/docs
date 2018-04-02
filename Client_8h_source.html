@@ -126,7 +126,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">class </span><a class="code" href="classCChan.html">CChan</a>;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">// !Forward Declarations</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classCAuthBase.html">   38</a></span>&#160;<span class="keyword">class </span><a class="code" href="classCAuthBase.html">CAuthBase</a> {</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classCAuthBase.html">   38</a></span>&#160;<span class="keyword">class </span><a class="code" href="classCAuthBase.html">CAuthBase</a> : <span class="keyword">private</span> <a class="code" href="classCCoreTranslationMixin.html">CCoreTranslationMixin</a> {</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classCAuthBase.html#a8c2d321675d0c4a7bec6a1593d5c486b">   40</a></span>&#160;    <a class="code" href="classCAuthBase.html#a8c2d321675d0c4a7bec6a1593d5c486b">CAuthBase</a>(<span class="keyword">const</span> <a class="code" href="classCString.html">CString</a>&amp; sUsername, <span class="keyword">const</span> <a class="code" href="classCString.html">CString</a>&amp; sPassword,</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;              <a class="code" href="classCZNCSock.html">CZNCSock</a>* pSock)</div>
@@ -430,7 +430,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classCClientAuth_html"><div class="ttname"><a href="classCClientAuth.html">CClientAuth</a></div><div class="ttdef"><b>Definition:</b> Client.h:78</div></div>
 <div class="ttc" id="classCAuthBase_html_a83d7e2b0877b17244680b72df6ec46c6"><div class="ttname"><a href="classCAuthBase.html#a83d7e2b0877b17244680b72df6ec46c6">CAuthBase::Invalidate</a></div><div class="ttdeci">virtual void Invalidate()</div></div>
 <div class="ttc" id="classCClient_html"><div class="ttname"><a href="classCClient.html">CClient</a></div><div class="ttdef"><b>Definition:</b> Client.h:99</div></div>
-<div class="ttc" id="classCIRCSocket_html"><div class="ttname"><a href="classCIRCSocket.html">CIRCSocket</a></div><div class="ttdoc">Base IRC socket for client&lt;-&gt;ZNC, and ZNC&lt;-&gt;server. </div><div class="ttdef"><b>Definition:</b> Socket.h:304</div></div>
+<div class="ttc" id="classCIRCSocket_html"><div class="ttname"><a href="classCIRCSocket.html">CIRCSocket</a></div><div class="ttdoc">Base IRC socket for client&lt;-&gt;ZNC, and ZNC&lt;-&gt;server. </div><div class="ttdef"><b>Definition:</b> Socket.h:305</div></div>
 <div class="ttc" id="classCClient_html_ac4be67b0e3f6fa57fb2a7d3383aa6b98"><div class="ttname"><a href="classCClient.html#ac4be67b0e3f6fa57fb2a7d3383aa6b98">CClient::IsAttached</a></div><div class="ttdeci">bool IsAttached() const </div><div class="ttdef"><b>Definition:</b> Client.h:196</div></div>
 <div class="ttc" id="classCClient_html_abc89a1263ff7c3e7d175c93bc3778497"><div class="ttname"><a href="classCClient.html#abc89a1263ff7c3e7d175c93bc3778497">CClient::HasCapNotify</a></div><div class="ttdeci">bool HasCapNotify() const </div><div class="ttdef"><b>Definition:</b> Client.h:178</div></div>
 <div class="ttc" id="classCClient_html_ace936e366f5ae08b0c645c257bc72635"><div class="ttname"><a href="classCClient.html#ace936e366f5ae08b0c645c257bc72635">CClient::GetNickMask</a></div><div class="ttdeci">CString GetNickMask() const </div></div>
@@ -537,10 +537,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classCMessage_html"><div class="ttname"><a href="classCMessage.html">CMessage</a></div><div class="ttdoc">Here is a small explanation of how messages on IRC work, and how you can use this class to get useful...</div><div class="ttdef"><b>Definition:</b> Message.h:63</div></div>
 <div class="ttc" id="classCAuthBase_html_a01f5bf8c0d6feb24fe3d2d5a957f02aa"><div class="ttname"><a href="classCAuthBase.html#a01f5bf8c0d6feb24fe3d2d5a957f02aa">CAuthBase::AcceptedLogin</a></div><div class="ttdeci">virtual void AcceptedLogin(CUser &amp;User)=0</div></div>
 <div class="ttc" id="classCAuthBase_html_a0b6a4aed1f17057b2bc5c10120ac0e21"><div class="ttname"><a href="classCAuthBase.html#a0b6a4aed1f17057b2bc5c10120ac0e21">CAuthBase::AcceptLogin</a></div><div class="ttdeci">void AcceptLogin(CUser &amp;User)</div></div>
+<div class="ttc" id="classCCoreTranslationMixin_html"><div class="ttname"><a href="classCCoreTranslationMixin.html">CCoreTranslationMixin</a></div><div class="ttdef"><b>Definition:</b> Translation.h:104</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 25 2018 22:46:58 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Apr 2 2018 12:40:54 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
