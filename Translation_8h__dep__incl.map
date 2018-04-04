@@ -2,8 +2,9 @@
 <area shape="rect" id="node2" href="$Chan_8h.html" title="Chan.h" alt="" coords="5,80,72,107"/>
 <area shape="rect" id="node3" href="$Modules_8h.html" title="Modules.h" alt="" coords="233,304,319,331"/>
 <area shape="rect" id="node4" href="$znc_8h.html" title="znc.h" alt="" coords="435,379,489,405"/>
-<area shape="rect" id="node6" href="$Socket_8h.html" title="Socket.h" alt="" coords="453,80,531,107"/>
+<area shape="rect" id="node6" href="$Socket_8h.html" title="Socket.h" alt="" coords="413,80,491,107"/>
 <area shape="rect" id="node10" href="$WebModules_8h.html" title="WebModules.h" alt="" coords="219,229,332,256"/>
+<area shape="rect" id="node13" href="$User_8h.html" title="User.h" alt="" coords="515,80,577,107"/>
 <area shape="rect" id="node5" href="$IRCNetwork_8h.html" title="IRCNetwork.h" alt="" coords="410,453,515,480"/>
 <area shape="rect" id="node7" href="$Client_8h.html" title="Client.h" alt="" coords="629,229,699,256"/>
 <area shape="rect" id="node8" href="$ExecSock_8h.html" title="ExecSock.h" alt="" coords="581,155,675,181"/>

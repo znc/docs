@@ -5,15 +5,17 @@
 <area shape="rect" id="node6" href="$classCModCommand.html" title="A helper class for handling commands in modules. " alt="" coords="340,80,465,107"/>
 <area shape="rect" id="node7" href="$classCModules.html" title="CModules" alt="" coords="490,80,573,107"/>
 <area shape="rect" id="node8" href="$classCSockManager.html" title="CSockManager" alt="" coords="598,80,716,107"/>
-<area shape="rect" id="node9" href="$classCZNCSock.html" title="CZNCSock" alt="" coords="741,80,832,107"/>
+<area shape="rect" id="node9" href="$classCUser.html" title="CUser" alt="" coords="741,80,803,107"/>
+<area shape="rect" id="node10" href="$classCZNC.html" title="CZNC" alt="" coords="827,80,887,107"/>
+<area shape="rect" id="node11" href="$classCZNCSock.html" title="CZNCSock" alt="" coords="912,80,1003,107"/>
 <area shape="rect" id="node3" href="$classCClientAuth.html" title="CClientAuth" alt="" coords="5,155,101,181"/>
-<area shape="rect" id="node10" href="$classCExecSock.html" title="CExecSock" alt="" coords="438,155,529,181"/>
-<area shape="rect" id="node11" href="$classCIncomingConnection.html" title="CIncomingConnection" alt="" coords="554,155,715,181"/>
-<area shape="rect" id="node12" href="$classCIRCSocket.html" title="Base IRC socket for client&lt;&#45;&gt;ZNC, and ZNC&lt;&#45;&gt;server. " alt="" coords="739,155,833,181"/>
-<area shape="rect" id="node15" href="$classCRealListener.html" title="CRealListener" alt="" coords="858,155,965,181"/>
-<area shape="rect" id="node16" href="$classCSocket.html" title="Base Csock implementation to be used by modules. " alt="" coords="991,155,1064,181"/>
-<area shape="rect" id="node13" href="$classCClient.html" title="CClient" alt="" coords="704,229,771,256"/>
-<area shape="rect" id="node14" href="$classCIRCSock.html" title="CIRCSock" alt="" coords="795,229,876,256"/>
-<area shape="rect" id="node17" href="$classCHTTPSock.html" title="CHTTPSock" alt="" coords="981,229,1075,256"/>
-<area shape="rect" id="node18" href="$classCWebSock.html" title="CWebSock" alt="" coords="984,304,1072,331"/>
+<area shape="rect" id="node12" href="$classCExecSock.html" title="CExecSock" alt="" coords="609,155,700,181"/>
+<area shape="rect" id="node13" href="$classCIncomingConnection.html" title="CIncomingConnection" alt="" coords="725,155,885,181"/>
+<area shape="rect" id="node14" href="$classCIRCSocket.html" title="Base IRC socket for client&lt;&#45;&gt;ZNC, and ZNC&lt;&#45;&gt;server. " alt="" coords="910,155,1004,181"/>
+<area shape="rect" id="node17" href="$classCRealListener.html" title="CRealListener" alt="" coords="1029,155,1136,181"/>
+<area shape="rect" id="node18" href="$classCSocket.html" title="Base Csock implementation to be used by modules. " alt="" coords="1161,155,1235,181"/>
+<area shape="rect" id="node15" href="$classCClient.html" title="CClient" alt="" coords="875,229,941,256"/>
+<area shape="rect" id="node16" href="$classCIRCSock.html" title="CIRCSock" alt="" coords="966,229,1047,256"/>
+<area shape="rect" id="node19" href="$classCHTTPSock.html" title="CHTTPSock" alt="" coords="1151,229,1245,256"/>
+<area shape="rect" id="node20" href="$classCWebSock.html" title="CWebSock" alt="" coords="1155,304,1243,331"/>
 </map>
