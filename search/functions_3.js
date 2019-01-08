@@ -121,7 +121,7 @@ var searchData=
   ['ctime',['CTime',['../classCUtils.html#a6728eb4474a918b1b6b0dd0da66ed197',1,'CUtils']]],
   ['ctimer',['CTimer',['../classCTimer.html#a90a25e0c1b56ccec8813a594ec02a522',1,'CTimer::CTimer(CModule *pModule, unsigned int uInterval, unsigned int uCycles, const CString &amp;sLabel, const CString &amp;sDescription)'],['../classCTimer.html#a73cb552071cc4a311c6c98643a641d46',1,'CTimer::CTimer(const CTimer &amp;)=delete']]],
   ['ctranslationdomainrefholder',['CTranslationDomainRefHolder',['../structCTranslationDomainRefHolder.html#acda71b7248d5ce9a10b9e8c72a8c18bd',1,'CTranslationDomainRefHolder']]],
-  ['cuser',['CUser',['../classCUser.html#a09ed8b6f56cb6203daa91d6d4d5d531d',1,'CUser::CUser(const CString &amp;sUserName)'],['../classCUser.html#a2001a3f1624413efcd2e82af29bc5d8a',1,'CUser::CUser(const CUser &amp;)=delete']]],
+  ['cuser',['CUser',['../classCUser.html#a55cfc5ff0cec9bb2cd2aa123c36709f6',1,'CUser::CUser(const CString &amp;sUsername)'],['../classCUser.html#a2001a3f1624413efcd2e82af29bc5d8a',1,'CUser::CUser(const CUser &amp;)=delete']]],
   ['cutils',['CUtils',['../classCUtils.html#a1a00f2dc59d68a7c9bbdaf77e2f1a5c7',1,'CUtils']]],
   ['cwebsession',['CWebSession',['../classCWebSession.html#a6d34066b7a2bdfc388e944401e99160b',1,'CWebSession::CWebSession(const CString &amp;sId, const CString &amp;sIP)'],['../classCWebSession.html#a224bbe035e53b2effdc3f02ad7f2d786',1,'CWebSession::CWebSession(const CWebSession &amp;)=delete']]],
   ['cwebsessionmap',['CWebSessionMap',['../classCWebSessionMap.html#ae0642de954db1ac9828cecd9a5002068',1,'CWebSessionMap']]],

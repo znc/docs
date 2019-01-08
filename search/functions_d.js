@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['makecleanusername',['MakeCleanUserName',['../classCUser.html#a4db7d0cc25784c80ae512b7799c457e3',1,'CUser']]],
+  ['makecleanusername',['MakeCleanUserName',['../classCUser.html#aff6ff6dc651efac84a39e20b73d7f561',1,'CUser::MakeCleanUserName(const CString &amp;sUsername)'],['../classCUser.html#a4055754894c1a23fa76522eb5a29f4c2',1,'CUser::MakeCleanUsername(const CString &amp;sUsername)']]],
   ['makedir',['MakeDir',['../classCDir.html#a12596c7385e23e0920c6bf6b81fc9af8',1,'CDir']]],
   ['makehash',['MakeHash',['../classCMD5.html#a1e2cecbbe161f9e4daae2c3e8d5ee7f6',1,'CMD5']]],
   ['makelower',['MakeLower',['../classCString.html#a17a0dc9c19538e9d6b7bd31aa8884c7e',1,'CString']]],

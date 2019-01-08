@@ -126,8 +126,8 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a09ed8b6f56cb6203daa91d6d4d5d531d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a09ed8b6f56cb6203daa91d6d4d5d531d">CUser</a> (const <a class="el" href="classCString.html">CString</a> &amp;sUserName)</td></tr>
-<tr class="separator:a09ed8b6f56cb6203daa91d6d4d5d531d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55cfc5ff0cec9bb2cd2aa123c36709f6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a55cfc5ff0cec9bb2cd2aa123c36709f6">CUser</a> (const <a class="el" href="classCString.html">CString</a> &amp;sUsername)</td></tr>
+<tr class="separator:a55cfc5ff0cec9bb2cd2aa123c36709f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7db79de57f4dcefec21be181c3df7eca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a7db79de57f4dcefec21be181c3df7eca">~CUser</a> ()</td></tr>
 <tr class="separator:a7db79de57f4dcefec21be181c3df7eca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2001a3f1624413efcd2e82af29bc5d8a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a2001a3f1624413efcd2e82af29bc5d8a">CUser</a> (const <a class="el" href="classCUser.html">CUser</a> &amp;)=delete</td></tr>
@@ -284,6 +284,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1ff9c638b064f4852df3dcc98c2f2741"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad99e4e5f3db7611f72edec359d7eb749"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#ad99e4e5f3db7611f72edec359d7eb749">GetUserName</a> () const </td></tr>
 <tr class="separator:ad99e4e5f3db7611f72edec359d7eb749"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec7adcf5305bf3df1fdd4f4b549b184c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#aec7adcf5305bf3df1fdd4f4b549b184c">GetUsername</a> () const </td></tr>
+<tr class="separator:aec7adcf5305bf3df1fdd4f4b549b184c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30fbc4bd63582b04717bf0e63ef54788"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a30fbc4bd63582b04717bf0e63ef54788">GetCleanUserName</a> () const </td></tr>
 <tr class="separator:a30fbc4bd63582b04717bf0e63ef54788"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a8b987e0bed0733f515a562d6fd0688"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a2a8b987e0bed0733f515a562d6fd0688">GetNick</a> (bool bAllowDefault=true) const </td></tr>
@@ -378,17 +380,21 @@ Public Member Functions</h2></td></tr>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a9ca86456055ddab081c320ed01c176fe"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a9ca86456055ddab081c320ed01c176fe">SaltedHash</a> (const <a class="el" href="classCString.html">CString</a> &amp;sPass, const <a class="el" href="classCString.html">CString</a> &amp;sSalt)</td></tr>
 <tr class="separator:a9ca86456055ddab081c320ed01c176fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a018b0c276ec64e156b023696157e2e85"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a018b0c276ec64e156b023696157e2e85">IsValidUserName</a> (const <a class="el" href="classCString.html">CString</a> &amp;sUserName)</td></tr>
-<tr class="separator:a018b0c276ec64e156b023696157e2e85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4db7d0cc25784c80ae512b7799c457e3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a4db7d0cc25784c80ae512b7799c457e3">MakeCleanUserName</a> (const <a class="el" href="classCString.html">CString</a> &amp;sUserName)</td></tr>
-<tr class="separator:a4db7d0cc25784c80ae512b7799c457e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa180668fe02e81c793e16efdd2f214fe"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#aa180668fe02e81c793e16efdd2f214fe">IsValidUsername</a> (const <a class="el" href="classCString.html">CString</a> &amp;sUsername)</td></tr>
+<tr class="separator:aa180668fe02e81c793e16efdd2f214fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1efe4435c5de75413209fedf51f985fd"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a1efe4435c5de75413209fedf51f985fd">IsValidUserName</a> (const <a class="el" href="classCString.html">CString</a> &amp;sUsername)</td></tr>
+<tr class="separator:a1efe4435c5de75413209fedf51f985fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4055754894c1a23fa76522eb5a29f4c2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a4055754894c1a23fa76522eb5a29f4c2">MakeCleanUsername</a> (const <a class="el" href="classCString.html">CString</a> &amp;sUsername)</td></tr>
+<tr class="separator:a4055754894c1a23fa76522eb5a29f4c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff6ff6dc651efac84a39e20b73d7f561"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#aff6ff6dc651efac84a39e20b73d7f561">MakeCleanUserName</a> (const <a class="el" href="classCString.html">CString</a> &amp;sUsername)</td></tr>
+<tr class="separator:aff6ff6dc651efac84a39e20b73d7f561"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:af07d1c4fcdc6c3d2f997368ff0d498ef"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#af07d1c4fcdc6c3d2f997368ff0d498ef">m_sUserName</a></td></tr>
-<tr class="separator:af07d1c4fcdc6c3d2f997368ff0d498ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16fb1bad0ecb2cc0f30199e43920fd92"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a16fb1bad0ecb2cc0f30199e43920fd92">m_sCleanUserName</a></td></tr>
-<tr class="separator:a16fb1bad0ecb2cc0f30199e43920fd92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a083db7ef7b19b43f6f275abcb68dbe47"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a083db7ef7b19b43f6f275abcb68dbe47">m_sUsername</a></td></tr>
+<tr class="separator:a083db7ef7b19b43f6f275abcb68dbe47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78f36242ab8a7433df54b85f3121413d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a78f36242ab8a7433df54b85f3121413d">m_sCleanUsername</a></td></tr>
+<tr class="separator:a78f36242ab8a7433df54b85f3121413d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab88d88034fad9da0e4dd3da3afc67438"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#ab88d88034fad9da0e4dd3da3afc67438">m_sNick</a></td></tr>
 <tr class="separator:ab88d88034fad9da0e4dd3da3afc67438"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa127db991ca901f756f1fc3800421f23"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#aa127db991ca901f756f1fc3800421f23">m_sAltNick</a></td></tr>
@@ -511,7 +517,7 @@ Static Private Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a09ed8b6f56cb6203daa91d6d4d5d531d"></a>
+<a class="anchor" id="a55cfc5ff0cec9bb2cd2aa123c36709f6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -519,7 +525,7 @@ Static Private Member Functions</h2></td></tr>
           <td class="memname">CUser::CUser </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
-          <td class="paramname"><em>sUserName</em></td><td>)</td>
+          <td class="paramname"><em>sUsername</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1133,7 +1139,7 @@ Static Private Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000048">Deprecated:</a></b></dt><dd>Use <a class="el" href="classCUser.html#a4207260ce4eb1455e2f576a926a682b4">GetChanBufferSize()</a> or <a class="el" href="classCUser.html#ae4c2ebbcedcde63e769a0c2df27cdf27">GetQueryBufferSize()</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000051">Deprecated:</a></b></dt><dd>Use <a class="el" href="classCUser.html#a4207260ce4eb1455e2f576a926a682b4">GetChanBufferSize()</a> or <a class="el" href="classCUser.html#ae4c2ebbcedcde63e769a0c2df27cdf27">GetQueryBufferSize()</a> instead. </dd></dl>
 
 </div>
 </div>
@@ -1663,6 +1669,22 @@ Static Private Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000050">Deprecated:</a></b></dt><dd>Use <a class="el" href="classCUser.html#aec7adcf5305bf3df1fdd4f4b549b184c">GetUsername()</a> instead. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aec7adcf5305bf3df1fdd4f4b549b184c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classCString.html">CString</a>&amp; CUser::GetUsername </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -1793,7 +1815,31 @@ Static Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a018b0c276ec64e156b023696157e2e85"></a>
+<a class="anchor" id="aa180668fe02e81c793e16efdd2f214fe"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool CUser::IsValidUsername </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
+          <td class="paramname"><em>sUsername</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1efe4435c5de75413209fedf51f985fd"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1804,7 +1850,7 @@ Static Private Member Functions</h2></td></tr>
           <td class="memname">static bool CUser::IsValidUserName </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
-          <td class="paramname"><em>sUserName</em></td><td>)</td>
+          <td class="paramname"><em>sUsername</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1814,6 +1860,7 @@ Static Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000047">Deprecated:</a></b></dt><dd>Use <a class="el" href="classCUser.html#aa180668fe02e81c793e16efdd2f214fe">IsValidUsername()</a> instead. </dd></dl>
 
 </div>
 </div>
@@ -1842,7 +1889,31 @@ Static Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a4db7d0cc25784c80ae512b7799c457e3"></a>
+<a class="anchor" id="a4055754894c1a23fa76522eb5a29f4c2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classCString.html">CString</a> CUser::MakeCleanUsername </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
+          <td class="paramname"><em>sUsername</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aff6ff6dc651efac84a39e20b73d7f561"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1853,7 +1924,7 @@ Static Private Member Functions</h2></td></tr>
           <td class="memname">static <a class="el" href="classCString.html">CString</a> CUser::MakeCleanUserName </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
-          <td class="paramname"><em>sUserName</em></td><td>)</td>
+          <td class="paramname"><em>sUsername</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1863,6 +1934,7 @@ Static Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000048">Deprecated:</a></b></dt><dd>Use <a class="el" href="classCUser.html#a4055754894c1a23fa76522eb5a29f4c2">MakeCleanUsername()</a> instead. </dd></dl>
 
 </div>
 </div>
@@ -2433,7 +2505,7 @@ Static Private Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000047">Deprecated:</a></b></dt><dd>Use <a class="el" href="classCUser.html#a42d7d3eff93c8ffab9a7df26a40b653f">SetChanBufferSize()</a> or <a class="el" href="classCUser.html#ada571fa4b9432ee925073c4d9275b8ab">SetQueryBufferSize()</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000049">Deprecated:</a></b></dt><dd>Use <a class="el" href="classCUser.html#a42d7d3eff93c8ffab9a7df26a40b653f">SetChanBufferSize()</a> or <a class="el" href="classCUser.html#ada571fa4b9432ee925073c4d9275b8ab">SetQueryBufferSize()</a> instead. </dd></dl>
 
 </div>
 </div>
@@ -3351,7 +3423,7 @@ Static Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a16fb1bad0ecb2cc0f30199e43920fd92"></a>
+<a class="anchor" id="a78f36242ab8a7433df54b85f3121413d"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -3359,7 +3431,7 @@ Static Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="classCString.html">CString</a> CUser::m_sCleanUserName</td>
+          <td class="memname">const <a class="el" href="classCString.html">CString</a> CUser::m_sCleanUsername</td>
         </tr>
       </table>
   </td>
@@ -3677,7 +3749,7 @@ Static Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af07d1c4fcdc6c3d2f997368ff0d498ef"></a>
+<a class="anchor" id="a083db7ef7b19b43f6f275abcb68dbe47"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -3685,7 +3757,7 @@ Static Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="classCString.html">CString</a> CUser::m_sUserName</td>
+          <td class="memname">const <a class="el" href="classCString.html">CString</a> CUser::m_sUsername</td>
         </tr>
       </table>
   </td>
@@ -3959,7 +4031,7 @@ Static Private Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 4 2018 23:10:30 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 8 2019 23:36:00 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

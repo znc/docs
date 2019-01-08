@@ -182,7 +182,7 @@ var searchData=
   ['ctranslationdomainrefholder',['CTranslationDomainRefHolder',['../structCTranslationDomainRefHolder.html',1,'CTranslationDomainRefHolder'],['../structCTranslationDomainRefHolder.html#acda71b7248d5ce9a10b9e8c72a8c18bd',1,'CTranslationDomainRefHolder::CTranslationDomainRefHolder()']]],
   ['ctranslationinfo',['CTranslationInfo',['../structCTranslationInfo.html',1,'']]],
   ['curlsock_2eh',['CurlSock.h',['../CurlSock_8h.html',1,'']]],
-  ['cuser',['CUser',['../classCUser.html',1,'CUser'],['../classCUser.html#a09ed8b6f56cb6203daa91d6d4d5d531d',1,'CUser::CUser(const CString &amp;sUserName)'],['../classCUser.html#a2001a3f1624413efcd2e82af29bc5d8a',1,'CUser::CUser(const CUser &amp;)=delete']]],
+  ['cuser',['CUser',['../classCUser.html',1,'CUser'],['../classCUser.html#a55cfc5ff0cec9bb2cd2aa123c36709f6',1,'CUser::CUser(const CString &amp;sUsername)'],['../classCUser.html#a2001a3f1624413efcd2e82af29bc5d8a',1,'CUser::CUser(const CUser &amp;)=delete']]],
   ['cutils',['CUtils',['../classCUtils.html',1,'CUtils'],['../classCUtils.html#a1a00f2dc59d68a7c9bbdaf77e2f1a5c7',1,'CUtils::CUtils()']]],
   ['cwebsession',['CWebSession',['../classCWebSession.html',1,'CWebSession'],['../classCWebSession.html#a6d34066b7a2bdfc388e944401e99160b',1,'CWebSession::CWebSession(const CString &amp;sId, const CString &amp;sIP)'],['../classCWebSession.html#a224bbe035e53b2effdc3f02ad7f2d786',1,'CWebSession::CWebSession(const CWebSession &amp;)=delete']]],
   ['cwebsessionmap',['CWebSessionMap',['../classCWebSessionMap.html',1,'CWebSessionMap'],['../classCWebSessionMap.html#ae0642de954db1ac9828cecd9a5002068',1,'CWebSessionMap::CWebSessionMap()']]],
