@@ -310,5 +310,6 @@ var searchData=
   ['getzncpath',['GetZNCPath',['../classCZNC.html#a0055e32c7aa3c4ec1a7017cb516d3623',1,'CZNC']]],
   ['globalmodule',['GlobalModule',['../classCModInfo.html#a616fabebbbf49bf06cfff90b8f32c57fa78d28fa276ce37d650a6e839e3d30f02',1,'CModInfo']]],
   ['globalmodulecall',['GLOBALMODULECALL',['../main_8h.html#aa1eed8df10da6ac6a7b96f264a80d9a4',1,'main.h']]],
-  ['globalmoduledefs',['GLOBALMODULEDEFS',['../Modules_8h.html#a9765c8c2336ca3064c2bbc3cd6fb5fe8',1,'Modules.h']]]
+  ['globalmoduledefs',['GLOBALMODULEDEFS',['../Modules_8h.html#a9765c8c2336ca3064c2bbc3cd6fb5fe8',1,'Modules.h']]],
+  ['gridstyle',['GridStyle',['../classCTable.html#abb56cf9ab1a3d5b2b09eaab3ed8a259ca135b9243405076d0b84d642628c5c33b',1,'CTable']]]
 ];

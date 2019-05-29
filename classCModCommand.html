@@ -143,7 +143,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a3a5e51eb01c37a2961fa25f3b8cae295"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assignment operator, needed so that this can be saved in a std::map.  <a href="#a3a5e51eb01c37a2961fa25f3b8cae295">More...</a><br/></td></tr>
 <tr class="separator:a3a5e51eb01c37a2961fa25f3b8cae295"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6eb7e51050a9f7b17bb1f39f823b442c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModCommand.html#a6eb7e51050a9f7b17bb1f39f823b442c">AddHelp</a> (<a class="el" href="classCTable.html">CTable</a> &amp;Table) const </td></tr>
-<tr class="memdesc:a6eb7e51050a9f7b17bb1f39f823b442c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add this command to the <a class="el" href="classCTable.html" title="Generate a grid-like output from a given input. ">CTable</a> instance.  <a href="#a6eb7e51050a9f7b17bb1f39f823b442c">More...</a><br/></td></tr>
+<tr class="memdesc:a6eb7e51050a9f7b17bb1f39f823b442c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add this command to the <a class="el" href="classCTable.html" title="Generate a grid-like or list-like output from a given input. ">CTable</a> instance.  <a href="#a6eb7e51050a9f7b17bb1f39f823b442c">More...</a><br/></td></tr>
 <tr class="separator:a6eb7e51050a9f7b17bb1f39f823b442c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accfec670153307b7392729372624eab6"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModCommand.html#accfec670153307b7392729372624eab6">GetCommand</a> () const </td></tr>
 <tr class="separator:accfec670153307b7392729372624eab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -159,7 +159,7 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a4c19704b10e804b3447c6c90ce66d793"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModCommand.html#a4c19704b10e804b3447c6c90ce66d793">InitHelp</a> (<a class="el" href="classCTable.html">CTable</a> &amp;Table)</td></tr>
-<tr class="memdesc:a4c19704b10e804b3447c6c90ce66d793"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a <a class="el" href="classCTable.html" title="Generate a grid-like output from a given input. ">CTable</a> so that it can be used with <a class="el" href="classCModCommand.html#a6eb7e51050a9f7b17bb1f39f823b442c" title="Add this command to the CTable instance. ">AddHelp()</a>.  <a href="#a4c19704b10e804b3447c6c90ce66d793">More...</a><br/></td></tr>
+<tr class="memdesc:a4c19704b10e804b3447c6c90ce66d793"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a <a class="el" href="classCTable.html" title="Generate a grid-like or list-like output from a given input. ">CTable</a> so that it can be used with <a class="el" href="classCModCommand.html#a6eb7e51050a9f7b17bb1f39f823b442c" title="Add this command to the CTable instance. ">AddHelp()</a>.  <a href="#a4c19704b10e804b3447c6c90ce66d793">More...</a><br/></td></tr>
 <tr class="separator:a4c19704b10e804b3447c6c90ce66d793"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
@@ -360,10 +360,10 @@ Static Private Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Add this command to the <a class="el" href="classCTable.html" title="Generate a grid-like output from a given input. ">CTable</a> instance. </p>
+<p>Add this command to the <a class="el" href="classCTable.html" title="Generate a grid-like or list-like output from a given input. ">CTable</a> instance. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">Table</td><td>Instance of <a class="el" href="classCTable.html" title="Generate a grid-like output from a given input. ">CTable</a> to which this should be added. </td></tr>
+    <tr><td class="paramname">Table</td><td>Instance of <a class="el" href="classCTable.html" title="Generate a grid-like or list-like output from a given input. ">CTable</a> to which this should be added. </td></tr>
   </table>
   </dd>
 </dl>
@@ -513,10 +513,10 @@ Static Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Initialize a <a class="el" href="classCTable.html" title="Generate a grid-like output from a given input. ">CTable</a> so that it can be used with <a class="el" href="classCModCommand.html#a6eb7e51050a9f7b17bb1f39f823b442c" title="Add this command to the CTable instance. ">AddHelp()</a>. </p>
+<p>Initialize a <a class="el" href="classCTable.html" title="Generate a grid-like or list-like output from a given input. ">CTable</a> so that it can be used with <a class="el" href="classCModCommand.html#a6eb7e51050a9f7b17bb1f39f823b442c" title="Add this command to the CTable instance. ">AddHelp()</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">Table</td><td>The instance of <a class="el" href="classCTable.html" title="Generate a grid-like output from a given input. ">CTable</a> to initialize. </td></tr>
+    <tr><td class="paramname">Table</td><td>The instance of <a class="el" href="classCTable.html" title="Generate a grid-like or list-like output from a given input. ">CTable</a> to initialize. </td></tr>
   </table>
   </dd>
 </dl>
@@ -561,7 +561,7 @@ Static Private Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 2 2018 12:40:54 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 29 2019 08:01:55 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -68,6 +68,7 @@ var searchData=
   ['escape_5fn',['Escape_n',['../classCString.html#acff39c9ac5bf2994a9fb511b2b972387',1,'CString::Escape_n(EEscape eFrom, EEscape eTo) const '],['../classCString.html#a6138f7659460c0c49efb08be2ad37306',1,'CString::Escape_n(EEscape eTo) const ']]],
   ['esql',['ESQL',['../classCString.html#a8f63759db4ef372abb9cfa4751648e1fa5528b3d17d10fc5d915c4888b2c0c142',1,'CString']]],
   ['esslmethod',['ESSLMethod',['../classCsock.html#aa7da8fe2945d8cfca7c53aec88fdad68',1,'Csock']]],
+  ['estyle',['EStyle',['../classCTable.html#abb56cf9ab1a3d5b2b09eaab3ed8a259c',1,'CTable::EStyle()'],['../classCTable.html#a4ba341722c2fd87a7afe4041196c4cf3',1,'CTable::eStyle()']]],
   ['etconn',['ETConn',['../classCsock.html#a12ece5f34b7f197eb764e25b0b43b999',1,'Csock']]],
   ['etype',['EType',['../classCException.html#a6f33628b840f8d255299da8736136a88',1,'CException']]],
   ['eurl',['EURL',['../classCString.html#a8f63759db4ef372abb9cfa4751648e1fa51df786ffcb52b401ad2ef2d10170f75',1,'CString']]],

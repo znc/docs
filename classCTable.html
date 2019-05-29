@@ -84,6 +84,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classCTable-members.html">List of all members</a>  </div>
@@ -92,7 +93,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>Generate a grid-like output from a given input.  
+<p>Generate a grid-like or list-like output from a given input.  
  <a href="classCTable.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="Utils_8h_source.html">Utils.h</a>&gt;</code></p>
@@ -115,6 +116,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <area shape="rect" id="node2" title="STL class. " alt="" coords="517,5,691,46"/><area shape="rect" id="node5" href="classCString.html" title="String class that is used inside ZNC. " alt="" coords="333,104,403,131"/><area shape="rect" id="node6" title="STL class. " alt="" coords="195,104,282,131"/><area shape="rect" id="node7" title="STL class. " alt="" coords="6,97,143,138"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:abb56cf9ab1a3d5b2b09eaab3ed8a259c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCTable.html#abb56cf9ab1a3d5b2b09eaab3ed8a259c">EStyle</a> { <a class="el" href="classCTable.html#abb56cf9ab1a3d5b2b09eaab3ed8a259ca135b9243405076d0b84d642628c5c33b">GridStyle</a>, 
+<a class="el" href="classCTable.html#abb56cf9ab1a3d5b2b09eaab3ed8a259cabcb203a0f3d252d7332e5bd8ed5cbf64">ListStyle</a>
+ }</td></tr>
+<tr class="separator:abb56cf9ab1a3d5b2b09eaab3ed8a259c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad985a92cc568ed77bca58adf638abebf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCTable.html#ad985a92cc568ed77bca58adf638abebf">CTable</a> ()</td></tr>
@@ -124,6 +132,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a06bfd743e00ab5295f15da545b05d3d4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCTable.html#a06bfd743e00ab5295f15da545b05d3d4">AddColumn</a> (const <a class="el" href="classCString.html">CString</a> &amp;sName)</td></tr>
 <tr class="memdesc:a06bfd743e00ab5295f15da545b05d3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new column to the table.  <a href="#a06bfd743e00ab5295f15da545b05d3d4">More...</a><br/></td></tr>
 <tr class="separator:a06bfd743e00ab5295f15da545b05d3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d9f3a347d705739497c96120d0f98fc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCTable.html#a6d9f3a347d705739497c96120d0f98fc">SetStyle</a> (<a class="el" href="classCTable.html#abb56cf9ab1a3d5b2b09eaab3ed8a259c">EStyle</a> eNewStyle)</td></tr>
+<tr class="memdesc:a6d9f3a347d705739497c96120d0f98fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selects the output style of the table.  <a href="#a6d9f3a347d705739497c96120d0f98fc">More...</a><br/></td></tr>
+<tr class="separator:a6d9f3a347d705739497c96120d0f98fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6817cb38f1e9ca815ceb16d69802192"><td class="memItemLeft" align="right" valign="top">size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCTable.html#ac6817cb38f1e9ca815ceb16d69802192">AddRow</a> ()</td></tr>
 <tr class="memdesc:ac6817cb38f1e9ca815ceb16d69802192"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new row to the table.  <a href="#ac6817cb38f1e9ca815ceb16d69802192">More...</a><br/></td></tr>
 <tr class="separator:ac6817cb38f1e9ca815ceb16d69802192"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,12 +158,14 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a34205fd106fa4a4b7a190540f005cbf4"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="classCString.html">CString</a>, <br class="typebreak"/>
 CString::size_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCTable.html#a34205fd106fa4a4b7a190540f005cbf4">m_msuWidths</a></td></tr>
 <tr class="separator:a34205fd106fa4a4b7a190540f005cbf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ba341722c2fd87a7afe4041196c4cf3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCTable.html#abb56cf9ab1a3d5b2b09eaab3ed8a259c">EStyle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCTable.html#a4ba341722c2fd87a7afe4041196c4cf3">eStyle</a> = <a class="el" href="classCTable.html#abb56cf9ab1a3d5b2b09eaab3ed8a259ca135b9243405076d0b84d642628c5c33b">GridStyle</a></td></tr>
+<tr class="separator:a4ba341722c2fd87a7afe4041196c4cf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2396209900e8f592db1f0b2467f7d899"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><b>elements</b></td></tr>
 <tr class="memdesc:a2396209900e8f592db1f0b2467f7d899"><td class="mdescLeft">&#160;</td><td class="mdescRight">STL member.  <a href="#a2396209900e8f592db1f0b2467f7d899">More...</a><br/></td></tr>
 <tr class="separator:a2396209900e8f592db1f0b2467f7d899"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Generate a grid-like output from a given input. </p>
+<div class="textblock"><p>Generate a grid-like or list-like output from a given input. </p>
 <div class="fragment"><div class="line"><a class="code" href="classCTable.html">CTable</a> table;</div>
 <div class="line">table.<a class="code" href="classCTable.html#a06bfd743e00ab5295f15da545b05d3d4">AddColumn</a>(<span class="stringliteral">&quot;a&quot;</span>);</div>
 <div class="line">table.<a class="code" href="classCTable.html#a06bfd743e00ab5295f15da545b05d3d4">AddColumn</a>(<span class="stringliteral">&quot;b&quot;</span>);</div>
@@ -170,7 +183,34 @@ CString::size_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a cl
 | a     | b     |
 +-------+-------+
 | hello | world |
-+-------+-------+</pre> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
++-------+-------+</pre> <pre class="fragment">If the table has at most two columns, one can switch to ListStyle output
+like so:
+</pre> <div class="fragment"><div class="line"><a class="code" href="classCTable.html">CTable</a> table;</div>
+<div class="line">table.<a class="code" href="classCTable.html#a06bfd743e00ab5295f15da545b05d3d4">AddColumn</a>(<span class="stringliteral">&quot;a&quot;</span>);</div>
+<div class="line">table.<a class="code" href="classCTable.html#a06bfd743e00ab5295f15da545b05d3d4">AddColumn</a>(<span class="stringliteral">&quot;b&quot;</span>);</div>
+<div class="line">table.<a class="code" href="classCTable.html#a6d9f3a347d705739497c96120d0f98fc">SetStyle</a>(<a class="code" href="classCTable.html#abb56cf9ab1a3d5b2b09eaab3ed8a259cabcb203a0f3d252d7332e5bd8ed5cbf64">CTable::ListStyle</a>);</div>
+<div class="line"><span class="comment">// ...</span></div>
+</div><!-- fragment --><p>This will yield the following (Note that the header is omitted; asterisks denote bold text): </p>
+<pre class="fragment">*hello*: world</pre> </div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a class="anchor" id="abb56cf9ab1a3d5b2b09eaab3ed8a259c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classCTable.html#abb56cf9ab1a3d5b2b09eaab3ed8a259c">CTable::EStyle</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="abb56cf9ab1a3d5b2b09eaab3ed8a259ca135b9243405076d0b84d642628c5c33b"></a>GridStyle</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="abb56cf9ab1a3d5b2b09eaab3ed8a259cabcb203a0f3d252d7332e5bd8ed5cbf64"></a>ListStyle</em>&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ad985a92cc568ed77bca58adf638abebf"></a>
 <div class="memitem">
 <div class="memproto">
@@ -240,7 +280,7 @@ CString::size_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a cl
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>false if a column by that name already existed. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>false if a column by that name already existed or the current style does not allow this many columns. </dd></dl>
 
 </div>
 </div>
@@ -385,6 +425,32 @@ CString::size_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a cl
 
 </div>
 </div>
+<a class="anchor" id="a6d9f3a347d705739497c96120d0f98fc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CTable::SetStyle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCTable.html#abb56cf9ab1a3d5b2b09eaab3ed8a259c">EStyle</a>&#160;</td>
+          <td class="paramname"><em>eNewStyle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Selects the output style of the table. </p>
+<p>Select between different styles for printing. Default is GridStyle. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">eNewStyle</td><td>Table style type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>false if the style cannot be applied (usually too many columns). </dd></dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a class="anchor" id="a2396209900e8f592db1f0b2467f7d899"></a>
 <div class="memitem">
@@ -405,6 +471,26 @@ CString::size_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a cl
 </div><div class="memdoc">
 
 <p>STL member. </p>
+
+</div>
+</div>
+<a class="anchor" id="a4ba341722c2fd87a7afe4041196c4cf3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCTable.html#abb56cf9ab1a3d5b2b09eaab3ed8a259c">EStyle</a> CTable::eStyle = <a class="el" href="classCTable.html#abb56cf9ab1a3d5b2b09eaab3ed8a259ca135b9243405076d0b84d642628c5c33b">GridStyle</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -454,7 +540,7 @@ CString::size_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a cl
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 3 2017 08:27:08 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 29 2019 08:01:55 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

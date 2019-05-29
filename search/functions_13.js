@@ -143,6 +143,7 @@ var searchData=
   ['setssltrustedpeerfingerprints',['SetSSLTrustedPeerFingerprints',['../classCZNCSock.html#a148e6216e3ef442d9ef604834d8c3c05',1,'CZNCSock']]],
   ['setstatusprefix',['SetStatusPrefix',['../classCUser.html#adeefa79b8c922ad224d498f8a4bf0453',1,'CUser::SetStatusPrefix()'],['../classCZNC.html#a84ce3dc0ad5a0102a5f83db5662280cd',1,'CZNC::SetStatusPrefix()']]],
   ['setstdoutistty',['SetStdoutIsTTY',['../classCDebug.html#a4cf370ef181410f69a153fe7e49d77d4',1,'CDebug']]],
+  ['setstyle',['SetStyle',['../classCTable.html#a6d9f3a347d705739497c96120d0f98fc',1,'CTable']]],
   ['settag',['SetTag',['../classCMessage.html#a0690bbf62fabb470fc118fb917cbd24c',1,'CMessage']]],
   ['settags',['SetTags',['../classCBufLine.html#a1df881d8f3aa079121b2f238bc033926',1,'CBufLine::SetTags()'],['../classCMessage.html#ad24f4c384e1ac3069b4871f176b26ec2',1,'CMessage::SetTags()']]],
   ['settagsupport',['SetTagSupport',['../classCClient.html#a16596197586e197a595e3c4cf574bc29',1,'CClient::SetTagSupport()'],['../classCIRCSock.html#a2674d4821ee84902368d04379ad0c684',1,'CIRCSock::SetTagSupport()']]],
