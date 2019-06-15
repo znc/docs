@@ -254,7 +254,7 @@ var searchData=
   ['m_5fvsmotd',['m_vsMotd',['../classCZNC.html#a77c73e215ae312fc683b58a282bd1c6e',1,'CZNC']]],
   ['m_5fvstrustedproxies',['m_vsTrustedProxies',['../classCZNC.html#a7e1f2715045e46ffb341e85f80062a18',1,'CZNC']]],
   ['main_2eh',['main.h',['../main_8h.html',1,'']]],
-  ['makecleanusername',['MakeCleanUsername',['../classCUser.html#a4055754894c1a23fa76522eb5a29f4c2',1,'CUser::MakeCleanUsername(const CString &amp;sUsername)'],['../classCUser.html#aff6ff6dc651efac84a39e20b73d7f561',1,'CUser::MakeCleanUserName(const CString &amp;sUsername)']]],
+  ['makecleanusername',['MakeCleanUserName',['../classCUser.html#aff6ff6dc651efac84a39e20b73d7f561',1,'CUser::MakeCleanUserName(const CString &amp;sUsername)'],['../classCUser.html#a4055754894c1a23fa76522eb5a29f4c2',1,'CUser::MakeCleanUsername(const CString &amp;sUsername)']]],
   ['makedir',['MakeDir',['../classCDir.html#a12596c7385e23e0920c6bf6b81fc9af8',1,'CDir']]],
   ['makehash',['MakeHash',['../classCMD5.html#a1e2cecbbe161f9e4daae2c3e8d5ee7f6',1,'CMD5']]],
   ['makelower',['MakeLower',['../classCString.html#a17a0dc9c19538e9d6b7bd31aa8884c7e',1,'CString']]],
