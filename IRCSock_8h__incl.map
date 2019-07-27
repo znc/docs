@@ -1,9 +1,9 @@
 <map id="IRCSock.h" name="IRCSock.h">
 <area shape="rect" id="node3" href="$Socket_8h.html" title="znc/Socket.h" alt="" coords="373,80,477,107"/>
 <area shape="rect" id="node34" href="$Nick_8h.html" title="znc/Nick.h" alt="" coords="1341,229,1427,256"/>
-<area shape="rect" id="node35" href="$Message_8h.html" title="znc/Message.h" alt="" coords="1143,155,1259,181"/>
-<area shape="rect" id="node5" href="$Threads_8h.html" title="znc/Threads.h" alt="" coords="370,155,480,181"/>
+<area shape="rect" id="node35" href="$Message_8h.html" title="znc/Message.h" alt="" coords="1143,155,1260,181"/>
+<area shape="rect" id="node5" href="$Threads_8h.html" title="znc/Threads.h" alt="" coords="370,155,481,181"/>
 <area shape="rect" id="node32" href="$Translation_8h.html" title="znc/Translation.h" alt="" coords="867,155,995,181"/>
 <area shape="rect" id="node6" href="$Utils_8h.html" title="znc/Utils.h" alt="" coords="1068,229,1156,256"/>
-<area shape="rect" id="node7" href="$ZNCString_8h.html" title="znc/ZNCString.h" alt="" coords="1423,304,1549,331"/>
+<area shape="rect" id="node7" href="$ZNCString_8h.html" title="znc/ZNCString.h" alt="" coords="1423,304,1550,331"/>
 </map>

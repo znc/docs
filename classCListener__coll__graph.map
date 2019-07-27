@@ -1,12 +1,12 @@
 <map id="CListener" name="CListener">
-<area shape="rect" id="node2" href="$classCString.html" title="String class that is used inside ZNC. " alt="" coords="41,541,111,568"/>
-<area shape="rect" id="node3" title="STL class. " alt="" coords="31,464,117,491"/>
-<area shape="rect" id="node4" title="STL class. " alt="" coords="5,371,141,413"/>
-<area shape="rect" id="node5" href="$classCRealListener.html" title="CRealListener" alt="" coords="142,541,249,568"/>
-<area shape="rect" id="node6" href="$classCZNCSock.html" title="CZNCSock" alt="" coords="151,464,241,491"/>
-<area shape="rect" id="node7" href="$classCsock.html" title="Basic socket class. " alt="" coords="166,379,225,405"/>
-<area shape="rect" id="node8" href="$classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock " alt="" coords="135,293,256,320"/>
-<area shape="rect" id="node10" href="$classCCron.html" title="this is the main cron job class " alt="" coords="84,112,145,139"/>
-<area shape="rect" id="node12" href="$classCSMonitorFD.html" title="Class to tie sockets to for monitoring by Csocket at either the Csock or TSockManager. " alt="" coords="279,112,384,139"/>
-<area shape="rect" id="node14" href="$classCCoreTranslationMixin.html" title="CCoreTranslationMixin" alt="" coords="250,379,411,405"/>
+<area shape="rect" id="node2" href="$classCString.html" title="String class that is used inside ZNC. " alt="" coords="42,531,111,557"/>
+<area shape="rect" id="node3" title="STL class. " alt="" coords="32,455,119,481"/>
+<area shape="rect" id="node4" title="STL class. " alt="" coords="5,364,143,405"/>
+<area shape="rect" id="node5" href="$classCRealListener.html" title="CRealListener" alt="" coords="143,531,251,557"/>
+<area shape="rect" id="node6" href="$classCZNCSock.html" title="CZNCSock" alt="" coords="151,455,242,481"/>
+<area shape="rect" id="node7" href="$classCsock.html" title="Basic socket class. " alt="" coords="167,371,227,398"/>
+<area shape="rect" id="node8" href="$classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock " alt="" coords="136,288,257,315"/>
+<area shape="rect" id="node10" href="$classCCron.html" title="this is the main cron job class " alt="" coords="85,109,146,136"/>
+<area shape="rect" id="node12" href="$classCSMonitorFD.html" title="Class to tie sockets to for monitoring by Csocket at either the Csock or TSockManager. " alt="" coords="280,109,385,136"/>
+<area shape="rect" id="node14" href="$classCCoreTranslationMixin.html" title="CCoreTranslationMixin" alt="" coords="251,371,412,398"/>
 </map>

@@ -1,11 +1,11 @@
 <map id="Message.h" name="Message.h">
-<area shape="rect" id="node2" href="$Buffer_8h.html" title="Buffer.h" alt="" coords="110,80,180,107"/>
+<area shape="rect" id="node2" href="$Buffer_8h.html" title="Buffer.h" alt="" coords="110,80,181,107"/>
 <area shape="rect" id="node7" href="$Client_8h.html" title="Client.h" alt="" coords="205,80,275,107"/>
 <area shape="rect" id="node9" href="$IRCSock_8h.html" title="IRCSock.h" alt="" coords="299,80,383,107"/>
-<area shape="rect" id="node10" href="$Modules_8h.html" title="Modules.h" alt="" coords="407,80,493,107"/>
+<area shape="rect" id="node10" href="$Modules_8h.html" title="Modules.h" alt="" coords="407,80,494,107"/>
 <area shape="rect" id="node3" href="$Chan_8h.html" title="Chan.h" alt="" coords="5,155,72,181"/>
-<area shape="rect" id="node4" href="$IRCNetwork_8h.html" title="IRCNetwork.h" alt="" coords="181,229,285,256"/>
-<area shape="rect" id="node5" href="$Query_8h.html" title="Query.h" alt="" coords="147,155,217,181"/>
-<area shape="rect" id="node6" href="$User_8h.html" title="User.h" alt="" coords="242,155,304,181"/>
-<area shape="rect" id="node8" href="$znc_8h.html" title="znc.h" alt="" coords="329,155,384,181"/>
+<area shape="rect" id="node4" href="$IRCNetwork_8h.html" title="IRCNetwork.h" alt="" coords="181,229,286,256"/>
+<area shape="rect" id="node5" href="$Query_8h.html" title="Query.h" alt="" coords="147,155,218,181"/>
+<area shape="rect" id="node6" href="$User_8h.html" title="User.h" alt="" coords="242,155,305,181"/>
+<area shape="rect" id="node8" href="$znc_8h.html" title="znc.h" alt="" coords="329,155,385,181"/>
 </map>

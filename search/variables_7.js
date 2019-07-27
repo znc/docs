@@ -74,7 +74,7 @@ var searchData=
   ['m_5flpconnectqueue',['m_lpConnectQueue',['../classCZNC.html#ac838356ddf8ad5b022ea9537a271cdac',1,'CZNC']]],
   ['m_5fmanager',['m_Manager',['../classCZNC.html#a3d57e012ee9c64635b4669ab0dfe289e',1,'CZNC']]],
   ['m_5fmcechanmodes',['m_mceChanModes',['../classCIRCSock.html#a9f16c6b0afa3285f4611ea48e4f624b4',1,'CIRCSock']]],
-  ['m_5fmcorecaps',['m_mCoreCaps',['../classCClient.html#a6ba47dfb6dd7595eecc4d3d066d1caea',1,'CClient::m_mCoreCaps()'],['../classCClient.html#adcbff85aece8ce7a416b33f881934c1f',1,'CClient::m_mCoreCaps()']]],
+  ['m_5fmcorecaps',['m_mCoreCaps',['../classCClient.html#adcbff85aece8ce7a416b33f881934c1f',1,'CClient']]],
   ['m_5fmcsmodes',['m_mcsModes',['../classCChan.html#ab9e140400d4d8c1d04d349716b97907f',1,'CChan']]],
   ['m_5fmessage',['m_Message',['../classCBufLine.html#aa34861bab1f5f1e445083158d468fa24',1,'CBufLine']]],
   ['m_5fmiimonitorfds',['m_miiMonitorFDs',['../classCSMonitorFD.html#a0d0984a1c22481d974f50d90000d4def',1,'CSMonitorFD']]],

@@ -1,4 +1,4 @@
 <map id="CSockCommon" name="CSockCommon">
-<area shape="rect" id="node3" href="$classCCron.html" title="this is the main cron job class " alt="" coords="60,112,121,139"/>
-<area shape="rect" id="node5" href="$classCSMonitorFD.html" title="Class to tie sockets to for monitoring by Csocket at either the Csock or TSockManager. " alt="" coords="255,112,360,139"/>
+<area shape="rect" id="node3" href="$classCCron.html" title="this is the main cron job class " alt="" coords="60,109,121,136"/>
+<area shape="rect" id="node5" href="$classCSMonitorFD.html" title="Class to tie sockets to for monitoring by Csocket at either the Csock or TSockManager. " alt="" coords="255,109,361,136"/>
 </map>

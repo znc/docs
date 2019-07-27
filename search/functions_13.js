@@ -89,7 +89,7 @@ var searchData=
   ['setloggedin',['SetLoggedIn',['../classCHTTPSock.html#ad15bcec13e49e25ab2e8ff95fac7d546',1,'CHTTPSock']]],
   ['setlogininfo',['SetLoginInfo',['../classCAuthBase.html#ad218c21287e1de0dce2257a47ac94030',1,'CAuthBase']]],
   ['setmaxbuffersize',['SetMaxBufferSize',['../classCZNC.html#aaa6e9c186e76e941439a642ba19b6b04',1,'CZNC']]],
-  ['setmaxbufferthreshold',['SetMaxBufferThreshold',['../classCClient.html#acd39c947ceab95862b30f28be9da4411',1,'CClient::SetMaxBufferThreshold()'],['../classCsock.html#a06f840efef58b550473f4fe1e5f27efa',1,'Csock::SetMaxBufferThreshold()']]],
+  ['setmaxbufferthreshold',['SetMaxBufferThreshold',['../classCsock.html#a06f840efef58b550473f4fe1e5f27efa',1,'Csock']]],
   ['setmaxconns',['SetMaxConns',['../classCSListener.html#ae16cfb0a44cb7e9667199be05a3be21b',1,'CSListener']]],
   ['setmaxjoins',['SetMaxJoins',['../classCUser.html#adb72f28c78ac482d5874d2fe43044fac',1,'CUser']]],
   ['setmaxnetworks',['SetMaxNetworks',['../classCUser.html#aade627c876ac263dc8e7f3388ca752b1',1,'CUser']]],
