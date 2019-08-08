@@ -200,6 +200,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a240529f0bac4d7ceeb5d862c25f3f7c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a789395906070977786a261150379e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMessage.html#a8a789395906070977786a261150379e8">GetParams</a> (unsigned int uIdx, unsigned int uLen=-1) const <a class="el" href="Message_8h.html#a3efd364223b6b8d8769b8b96ca5b11fc">ZNC_MSG_DEPRECATED</a>(&quot;Use <a class="el" href="classCMessage.html#abe37ccead0039fb9a001d2712a70280d">GetParamsColon</a>() instead&quot;)</td></tr>
 <tr class="separator:a8a789395906070977786a261150379e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6465a3e2cf29c316aa494e85a12b10d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ZNCString_8h.html#af7252b7c4a0d4ec44ddc136c6055ae51">VCString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMessage.html#a6465a3e2cf29c316aa494e85a12b10d5">GetParamsSplit</a> (unsigned int uIdx, unsigned int uLen=-1) const </td></tr>
+<tr class="memdesc:a6465a3e2cf29c316aa494e85a12b10d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a subset of the message parameters.  <a href="#a6465a3e2cf29c316aa494e85a12b10d5">More...</a><br /></td></tr>
+<tr class="separator:a6465a3e2cf29c316aa494e85a12b10d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae421d4c231ce054ea1bd8f5b2e8c0ae3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMessage.html#ae421d4c231ce054ea1bd8f5b2e8c0ae3">SetParams</a> (const <a class="el" href="ZNCString_8h.html#af7252b7c4a0d4ec44ddc136c6055ae51">VCString</a> &amp;vsParams)</td></tr>
 <tr class="separator:ae421d4c231ce054ea1bd8f5b2e8c0ae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe37ccead0039fb9a001d2712a70280d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMessage.html#abe37ccead0039fb9a001d2712a70280d">GetParamsColon</a> (unsigned int uIdx, unsigned int uLen=-1) const </td></tr>
@@ -599,7 +602,7 @@ template&lt;typename M &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="classCJoinMessage.html#a0f4c5f385f1fe7c3e99a9c51d708bdd5">CJoinMessage::GetKey()</a>, <a class="el" href="classCKickMessage.html#a5ac5b664482092cc7ad559ef185bfb71">CKickMessage::GetKickedNick()</a>, <a class="el" href="classCNickMessage.html#af4676920b276f2dc9bdeae1717162719">CNickMessage::GetNewNick()</a>, <a class="el" href="classCMessage.html#a8a789395906070977786a261150379e8">CMessage::GetParams()</a>, <a class="el" href="classCKickMessage.html#ae94e0bc7d1b6833da2e63c6ea0b76219">CKickMessage::GetReason()</a>, <a class="el" href="classCPartMessage.html#a98be6ccaa27c1a47f9c3250f4c387836">CPartMessage::GetReason()</a>, <a class="el" href="classCQuitMessage.html#a5b9977da5ce501efc6a45f8749d79e6b">CQuitMessage::GetReason()</a>, <a class="el" href="classCTargetMessage.html#a29499f5301ae0a0cd184783f386bea90">GetTarget()</a>, <a class="el" href="classCActionMessage.html#a2b7915f68ea18c772d7a81fb30be20c6">CActionMessage::GetText()</a>, <a class="el" href="classCCTCPMessage.html#a1cda0f7c9faa34b562a3aa48a4df3d13">CCTCPMessage::GetText()</a>, <a class="el" href="classCNoticeMessage.html#ad3032e6c9e3c3bd30f0be2e6fe26ee42">CNoticeMessage::GetText()</a>, <a class="el" href="classCTextMessage.html#a1b9e2aa14ca4381dc0949737ab8d1c07">CTextMessage::GetText()</a>, and <a class="el" href="classCTopicMessage.html#accb676395693f29b8f3c110e811f8af3">CTopicMessage::GetTopic()</a>.</p>
+<p>Referenced by <a class="el" href="classCJoinMessage.html#a0f4c5f385f1fe7c3e99a9c51d708bdd5">CJoinMessage::GetKey()</a>, <a class="el" href="classCKickMessage.html#a5ac5b664482092cc7ad559ef185bfb71">CKickMessage::GetKickedNick()</a>, <a class="el" href="classCModeMessage.html#af8f4f5cb70ea14ecd47a6db734b4f3cf">CModeMessage::GetModeList()</a>, <a class="el" href="classCNickMessage.html#af4676920b276f2dc9bdeae1717162719">CNickMessage::GetNewNick()</a>, <a class="el" href="classCMessage.html#a8a789395906070977786a261150379e8">CMessage::GetParams()</a>, <a class="el" href="classCKickMessage.html#ae94e0bc7d1b6833da2e63c6ea0b76219">CKickMessage::GetReason()</a>, <a class="el" href="classCPartMessage.html#a98be6ccaa27c1a47f9c3250f4c387836">CPartMessage::GetReason()</a>, <a class="el" href="classCQuitMessage.html#a5b9977da5ce501efc6a45f8749d79e6b">CQuitMessage::GetReason()</a>, <a class="el" href="classCTargetMessage.html#a29499f5301ae0a0cd184783f386bea90">GetTarget()</a>, <a class="el" href="classCActionMessage.html#a2b7915f68ea18c772d7a81fb30be20c6">CActionMessage::GetText()</a>, <a class="el" href="classCCTCPMessage.html#a1cda0f7c9faa34b562a3aa48a4df3d13">CCTCPMessage::GetText()</a>, <a class="el" href="classCNoticeMessage.html#ad3032e6c9e3c3bd30f0be2e6fe26ee42">CNoticeMessage::GetText()</a>, <a class="el" href="classCTextMessage.html#a1b9e2aa14ca4381dc0949737ab8d1c07">CTextMessage::GetText()</a>, and <a class="el" href="classCTopicMessage.html#accb676395693f29b8f3c110e811f8af3">CTopicMessage::GetTopic()</a>.</p>
 
 </div>
 </div>
@@ -624,7 +627,7 @@ template&lt;typename M &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>References <a class="el" href="classCMessage.html#ae421d4c231ce054ea1bd8f5b2e8c0ae3">CMessage::SetParams()</a>.</p>
+<p>References <a class="el" href="classCMessage.html#a6465a3e2cf29c316aa494e85a12b10d5">CMessage::GetParamsSplit()</a>, and <a class="el" href="classCMessage.html#ae421d4c231ce054ea1bd8f5b2e8c0ae3">CMessage::SetParams()</a>.</p>
 
 </div>
 </div>
@@ -659,7 +662,7 @@ template&lt;typename M &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000012">Deprecated:</a></b></dt><dd>use <a class="el" href="classCMessage.html#abe37ccead0039fb9a001d2712a70280d">GetParamsColon()</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000014">Deprecated:</a></b></dt><dd>use <a class="el" href="classCMessage.html#abe37ccead0039fb9a001d2712a70280d">GetParamsColon()</a> instead. </dd></dl>
 
 <p>References <a class="el" href="classCMessage.html#a9feb6a4646d4f620e4666b743e57480f">CMessage::GetParam()</a>, <a class="el" href="classCMessage.html#abe37ccead0039fb9a001d2712a70280d">CMessage::GetParamsColon()</a>, and <a class="el" href="classCMessage.html#ae5693433c2368e93095d194e24d19d14">CMessage::SetParam()</a>.</p>
 
@@ -698,6 +701,53 @@ template&lt;typename M &gt; </div>
 </div><div class="memdoc">
 
 <p>Referenced by <a class="el" href="classCModeMessage.html#a9360c10b1a19b4b9df1f381030bc174f">CModeMessage::GetModes()</a>, and <a class="el" href="classCMessage.html#a8a789395906070977786a261150379e8">CMessage::GetParams()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6465a3e2cf29c316aa494e85a12b10d5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ZNCString_8h.html#af7252b7c4a0d4ec44ddc136c6055ae51">VCString</a> CMessage::GetParamsSplit </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>uIdx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>uLen</em> = <code>-1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a subset of the message parameters. </p>
+<p>This allows accessing a vector of a specific range of parameters, allowing easy inline use, such as <code>pChan-&gt;SetModes(Message.GetParam(2), Message.GetParamsSplit(3));</code></p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uIdx</td><td>The index of the first parameter to retrieve </td></tr>
+    <tr><td class="paramname">uLen</td><td>How many parameters to retrieve </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A VCString containing the retrieved parameters </dd></dl>
+
+<p>Referenced by <a class="el" href="classCModeMessage.html#a696b3b96e2b8b2a49a3f705aa9beae0f">CModeMessage::GetModeParams()</a>, and <a class="el" href="classCMessage.html#a240529f0bac4d7ceeb5d862c25f3f7c8">CMessage::GetParams()</a>.</p>
 
 </div>
 </div>
@@ -1237,7 +1287,7 @@ template&lt;typename M , typename  = typename std::enable_if&lt;                
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 27 2019 22:44:53 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Aug 8 2019 21:47:35 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

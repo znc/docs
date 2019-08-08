@@ -282,7 +282,7 @@ var searchData=
   ['modconstructor',['MODCONSTRUCTOR',['../Modules_8h.html#a4cb82bfe0e2c41d222152aaec5300156',1,'Modules.h']]],
   ['moddirlist',['ModDirList',['../classCModules.html#a1bbf4b997cb4b6f1dcabf5551930f67f',1,'CModules']]],
   ['mode',['Mode',['../classCMessage.html#a0c73f73428ca8fd0c3f10a497d2fcb11a650be61892bf690026089544abbd9d26',1,'CMessage']]],
-  ['modechange',['ModeChange',['../classCChan.html#a9bb8b326dcadb07e99786cd75d3bebd2',1,'CChan']]],
+  ['modechange',['ModeChange',['../classCChan.html#a9bb8b326dcadb07e99786cd75d3bebd2',1,'CChan::ModeChange(const CString &amp;sModes, const CNick *OpNick=nullptr)'],['../classCChan.html#a5d30dc24b0022628020e2b46e2751894',1,'CChan::ModeChange(const CString &amp;sModes, const VCString &amp;vsModeParams, const CNick *OpNick=nullptr)']]],
   ['modhandle',['ModHandle',['../Modules_8h.html#a2f2b7746e7590ac0383278e975f13855',1,'Modules.h']]],
   ['modloader',['ModLoader',['../classCModInfo.html#a3fa1da2f7a599d40efba4e632d08e9a8',1,'CModInfo']]],
   ['moduledefs',['MODULEDEFS',['../Modules_8h.html#a4c40fcb15b7d280cf45b5b0b4269951b',1,'Modules.h']]],

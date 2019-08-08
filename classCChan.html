@@ -199,8 +199,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a593a0f92fe242d9e253be94455b122b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a513afd4db72b0e7922819664bf7c0055"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCChan.html#a513afd4db72b0e7922819664bf7c0055">SetModes</a> (const <a class="el" href="classCString.html">CString</a> &amp;s)</td></tr>
 <tr class="separator:a513afd4db72b0e7922819664bf7c0055"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec9affa0c44c048262f3e792ebcfab80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCChan.html#aec9affa0c44c048262f3e792ebcfab80">SetModes</a> (const <a class="el" href="classCString.html">CString</a> &amp;sModes, const <a class="el" href="ZNCString_8h.html#af7252b7c4a0d4ec44ddc136c6055ae51">VCString</a> &amp;vsModeParams)</td></tr>
+<tr class="memdesc:aec9affa0c44c048262f3e792ebcfab80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the current modes for this channel.  <a href="#aec9affa0c44c048262f3e792ebcfab80">More...</a><br /></td></tr>
+<tr class="separator:aec9affa0c44c048262f3e792ebcfab80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bb8b326dcadb07e99786cd75d3bebd2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCChan.html#a9bb8b326dcadb07e99786cd75d3bebd2">ModeChange</a> (const <a class="el" href="classCString.html">CString</a> &amp;sModes, const <a class="el" href="classCNick.html">CNick</a> *OpNick=nullptr)</td></tr>
 <tr class="separator:a9bb8b326dcadb07e99786cd75d3bebd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d30dc24b0022628020e2b46e2751894"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCChan.html#a5d30dc24b0022628020e2b46e2751894">ModeChange</a> (const <a class="el" href="classCString.html">CString</a> &amp;sModes, const <a class="el" href="ZNCString_8h.html#af7252b7c4a0d4ec44ddc136c6055ae51">VCString</a> &amp;vsModeParams, const <a class="el" href="classCNick.html">CNick</a> *OpNick=nullptr)</td></tr>
+<tr class="memdesc:a5d30dc24b0022628020e2b46e2751894"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle changing the modes on a channel.  <a href="#a5d30dc24b0022628020e2b46e2751894">More...</a><br /></td></tr>
+<tr class="separator:a5d30dc24b0022628020e2b46e2751894"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a210034203b8f87e30fabdaeef9e5b8d9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCChan.html#a210034203b8f87e30fabdaeef9e5b8d9">AddMode</a> (char cMode, const <a class="el" href="classCString.html">CString</a> &amp;sArg)</td></tr>
 <tr class="separator:a210034203b8f87e30fabdaeef9e5b8d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad405e34b12e1b575754e4bb784e0edec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCChan.html#ad405e34b12e1b575754e4bb784e0edec">RemMode</a> (char cMode)</td></tr>
@@ -617,7 +623,7 @@ Static Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated:</a></b></dt><dd></dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000006">Deprecated:</a></b></dt><dd></dd></dl>
 
 <p>References <a class="el" href="classCBuffer.html#add5d0a61831a5a6a6052a66038eeb4eb">CBuffer::AddLine()</a>, and <a class="el" href="classCChan.html#a2c9e974b0a35fe072fa939b3dbd1840a">m_Buffer</a>.</p>
 
@@ -1750,6 +1756,48 @@ Static Private Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000005">Deprecated:</a></b></dt><dd>Use ModeChange(CString, VCString, CNick*) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5d30dc24b0022628020e2b46e2751894"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CChan::ModeChange </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
+          <td class="paramname"><em>sModes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="ZNCString_8h.html#af7252b7c4a0d4ec44ddc136c6055ae51">VCString</a> &amp;&#160;</td>
+          <td class="paramname"><em>vsModeParams</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classCNick.html">CNick</a> *&#160;</td>
+          <td class="paramname"><em>OpNick</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Handle changing the modes on a channel. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sModes</td><td>The mode string (eg. +ovbs-pbo) </td></tr>
+    <tr><td class="paramname">vsModeParams</td><td>The parameters for the mode string </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -2222,6 +2270,42 @@ Static Private Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated:</a></b></dt><dd>Use SetModes(CString, VCString) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aec9affa0c44c048262f3e792ebcfab80"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CChan::SetModes </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
+          <td class="paramname"><em>sModes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="ZNCString_8h.html#af7252b7c4a0d4ec44ddc136c6055ae51">VCString</a> &amp;&#160;</td>
+          <td class="paramname"><em>vsModeParams</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the current modes for this channel. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sModes</td><td>The mode characters being changed </td></tr>
+    <tr><td class="paramname">vsModeParams</td><td>The parameters for the modes to be set </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -2787,7 +2871,7 @@ Static Private Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 27 2019 22:44:52 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Aug 8 2019 21:47:35 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

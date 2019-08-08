@@ -96,7 +96,7 @@ var searchData=
   ['setmaxquerybuffers',['SetMaxQueryBuffers',['../classCUser.html#a93b7d4c430420cadc30d039fdf1a3b15',1,'CUser']]],
   ['setmessagetags',['SetMessageTags',['../classCUtils.html#a8227de4f84982154cdf8ab1435726e83',1,'CUtils']]],
   ['setmodeknown',['SetModeKnown',['../classCChan.html#a9af828f1b570d93a93b393f63ed92669',1,'CChan']]],
-  ['setmodes',['SetModes',['../classCChan.html#a513afd4db72b0e7922819664bf7c0055',1,'CChan']]],
+  ['setmodes',['SetModes',['../classCChan.html#a513afd4db72b0e7922819664bf7c0055',1,'CChan::SetModes(const CString &amp;s)'],['../classCChan.html#aec9affa0c44c048262f3e792ebcfab80',1,'CChan::SetModes(const CString &amp;sModes, const VCString &amp;vsModeParams)']]],
   ['setmodpath',['SetModPath',['../classCModule.html#a59955ff675d3f269935c12a0655c144c',1,'CModule']]],
   ['setmodule',['SetModule',['../classCTimer.html#a7171aeb93cb84fcafcbd990481d97cc4',1,'CTimer']]],
   ['setmotd',['SetMotd',['../classCZNC.html#ae123d22ff9debd081321bcd4df426067',1,'CZNC']]],

@@ -21,6 +21,7 @@ var searchData=
   ['hasitem',['HasItem',['../classTCacheMap.html#a1e71e07184c9db482dcb7a99ae5bc119',1,'TCacheMap']]],
   ['hasloop',['HasLoop',['../classCTemplate.html#acf9cb2380c0b6d34234543227189a5dd',1,'CTemplate']]],
   ['hasmode',['HasMode',['../classCChan.html#a3412b144306cf0516438660510378b97',1,'CChan']]],
+  ['hasmodes',['HasModes',['../classCModeMessage.html#aa94664245d0416957fd164fa4f2c2686',1,'CModeMessage']]],
   ['hasnamesx',['HasNamesx',['../classCClient.html#ace6094779c4996b22120498f96721d8b',1,'CClient::HasNamesx()'],['../classCIRCSock.html#a5d93e75a2a6d0048ccfe5df7adb61182',1,'CIRCSock::HasNamesx()']]],
   ['hasnv',['HasNV',['../classCModule.html#a2cbd16cc53a45a71540e565c70365a9d',1,'CModule']]],
   ['hasparam',['HasParam',['../classCHTTPSock.html#aa3cb230874197fdecef8bac13446b111',1,'CHTTPSock']]],
