@@ -1,5 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
 <area shape="rect" id="node1" href="$classCCron.html" title="this is the main cron job class " alt="" coords="5,5,67,32"/>
-<area shape="rect" id="node2" href="$classCTimer.html" title="CTimer" alt="" coords="115,5,181,32"/>
-<area shape="rect" id="node3" href="$classCFPTimer.html" title="CFPTimer" alt="" coords="229,5,312,32"/>
+<area shape="rect" id="node2" href="$classCTimer.html" title="CTimer" alt="" coords="115,5,184,32"/>
+<area shape="rect" id="node3" href="$classCFPTimer.html" title="CFPTimer" alt="" coords="232,5,316,32"/>
 </map>

@@ -19,7 +19,7 @@ var searchData=
   ['updatenoticebuffer',['UpdateNoticeBuffer',['../classCIRCNetwork.html#ad19253bff95a6d01f6b20eecaafe6b37',1,'CIRCNetwork::UpdateNoticeBuffer(const CString &amp;sCommand, const CMessage &amp;Format, const CString &amp;sText=&quot;&quot;)'],['../classCIRCNetwork.html#aee8a7a13b6f1a88608fab585869b1a8b',1,'CIRCNetwork::UpdateNoticeBuffer(const CString &amp;sMatch, const CString &amp;sFormat, const CString &amp;sText=&quot;&quot;)']]],
   ['updaterawbuffer',['UpdateRawBuffer',['../classCIRCNetwork.html#aa2acf8adb4f669ea67ee24dbbd3bad6c',1,'CIRCNetwork::UpdateRawBuffer(const CString &amp;sCommand, const CMessage &amp;Format, const CString &amp;sText=&quot;&quot;)'],['../classCIRCNetwork.html#a586fa42b6a103e3f732b3c846ead868a',1,'CIRCNetwork::UpdateRawBuffer(const CString &amp;sMatch, const CString &amp;sFormat, const CString &amp;sText=&quot;&quot;)']]],
   ['updatetime',['UpdateTime',['../classCBufLine.html#a49e37d9c015679aa2fcc779b37671c1c',1,'CBufLine']]],
-  ['urlsplit',['URLSplit',['../classCString.html#acb7d0bada8c196811df6bccb50e0b32f',1,'CString']]],
+  ['urlsplit',['URLSplit',['../classCString.html#aef2a3cee5d37cefb4ab8c845a235edc1',1,'CString']]],
   ['usercommand',['UserCommand',['../classCClient.html#a18f6ed2268a3443e2f1e448241a2f712',1,'CClient']]],
   ['userconnected',['UserConnected',['../classCUser.html#ad3741634ad3ae4d81a607010152bc71c',1,'CUser']]],
   ['userdisconnected',['UserDisconnected',['../classCUser.html#ae1c60057cfb6fa7a7b95380b10861a9f',1,'CUser']]],

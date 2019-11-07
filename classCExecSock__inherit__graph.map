@@ -1,6 +1,6 @@
 <map id="CExecSock" name="CExecSock">
-<area shape="rect" id="node2" href="$classCZNCSock.html" title="CZNCSock" alt="" coords="87,155,178,181"/>
-<area shape="rect" id="node3" href="$classCsock.html" title="Basic socket class. " alt="" coords="36,80,96,107"/>
+<area shape="rect" id="node2" href="$classCZNCSock.html" title="CZNCSock" alt="" coords="90,155,181,181"/>
+<area shape="rect" id="node3" href="$classCsock.html" title="Basic socket class. " alt="" coords="35,80,97,107"/>
 <area shape="rect" id="node4" href="$classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock " alt="" coords="5,5,127,32"/>
-<area shape="rect" id="node5" href="$classCCoreTranslationMixin.html" title="CCoreTranslationMixin" alt="" coords="120,80,281,107"/>
+<area shape="rect" id="node5" href="$classCCoreTranslationMixin.html" title="CCoreTranslationMixin" alt="" coords="121,80,288,107"/>
 </map>

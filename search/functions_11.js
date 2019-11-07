@@ -1,5 +1,5 @@
 var searchData=
 [
   ['quit',['Quit',['../classCIRCSock.html#a4d8282501344835986d277ba34589453',1,'CIRCSock']]],
-  ['quotesplit',['QuoteSplit',['../classCString.html#a3760b68ca2fb92f1e37ee6228847173d',1,'CString']]]
+  ['quotesplit',['QuoteSplit',['../classCString.html#a0c5efdce7eca5f52259749396e603ca2',1,'CString']]]
 ];

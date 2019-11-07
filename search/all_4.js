@@ -1,10 +1,10 @@
 var searchData=
 [
   ['debug',['Debug',['../classCDebug.html#a4d49b5a02ac1bd965ca05ed7192986b4',1,'CDebug::Debug()'],['../classCDebug.html#a1639e4b89bfad4c29c9769e0bc3f4db5',1,'CDebug::debug()'],['../ZNCDebug_8h.html#a9c8bd5c22c538fb934e235b11ff3bf57',1,'DEBUG():&#160;ZNCDebug.h']]],
-  ['decode',['Decode',['../classMCString.html#ad0eaf05fcab06db0027802f02c23b0aa',1,'MCString']]],
+  ['decode',['Decode',['../classMCString.html#af74d4f8932f50c02b7280afbb12b995a',1,'MCString']]],
   ['decrowindex',['DecRowIndex',['../classCTemplateLoopContext.html#a26d48bfd44148f9ae992c70b156ef2d3',1,'CTemplateLoopContext']]],
   ['decrypt',['Decrypt',['../classCString.html#ae30eccf1811c3054fc3159bcbac12e79',1,'CString']]],
-  ['decrypt_5fn',['Decrypt_n',['../classCString.html#a2efd065d4135aa5494ccbcde1c8fc3a8',1,'CString']]],
+  ['decrypt_5fn',['Decrypt_n',['../classCString.html#a4e72cb4e282ae4205cc488263e84458f',1,'CString']]],
   ['delchan',['DelChan',['../classCIRCNetwork.html#adbf13d2dbda3c3aa5e7c6f8719e90ff0',1,'CIRCNetwork']]],
   ['delcron',['DelCron',['../classCSockCommon.html#af74cc57cbc14a24544d2e203aef684c6',1,'CSockCommon::DelCron(const CS_STRING &amp;sName, bool bDeleteAll=true, bool bCaseSensitive=true)'],['../classCSockCommon.html#a2fe7814ee93f196745b636039213add5',1,'CSockCommon::DelCron(uint32_t iPos)']]],
   ['delcronbyaddr',['DelCronByAddr',['../classCSockCommon.html#aeab4ac132ceeae7475be2302f4a3729c',1,'CSockCommon']]],
@@ -24,8 +24,8 @@ var searchData=
   ['delsock',['DelSock',['../classCSocketManager.html#aee351fd02bdd11badbefde04df270a91',1,'CSocketManager']]],
   ['delsockbyaddr',['DelSockByAddr',['../classCSockManager.html#a51e3b4ab1e575d7ade95c542a502f838',1,'CSockManager::DelSockByAddr()'],['../classCSocketManager.html#a1a0731cb30af8a552de36b4c2cf9e931',1,'CSocketManager::DelSockByAddr()']]],
   ['deltrustedfingerprint',['DelTrustedFingerprint',['../classCIRCNetwork.html#a051dc22061ca06859850eb9156c05a70',1,'CIRCNetwork']]],
-  ['denyloadmod',['DenyLoadMod',['../classCUser.html#aca50e97385169432a0ac7e5b27504761',1,'CUser']]],
-  ['denysetbindhost',['DenySetBindHost',['../classCUser.html#ad3c363dce6c52606614a0e69e6c922e2',1,'CUser']]],
+  ['denyloadmod',['DenyLoadMod',['../classCUser.html#a2dc3d39fe60e0fa563139adb23ba47c0',1,'CUser']]],
+  ['denysetbindhost',['DenySetBindHost',['../classCUser.html#a11eb5ffbf467ffccc0b8affdd5916b13',1,'CUser']]],
   ['deprecated_20list',['Deprecated List',['../deprecated.html',1,'']]],
   ['dereference',['Dereference',['../classCsock.html#a0ffefa30e1140bac8aec4e397b7d9895',1,'Csock']]],
   ['destroyinstance',['DestroyInstance',['../classCZNC.html#ac613c83f7abc5dc636b3e89e4b5d7069',1,'CZNC']]],

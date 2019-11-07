@@ -1,8 +1,8 @@
 <map id="User.h" name="User.h">
-<area shape="rect" id="node3" href="$Utils_8h.html" title="znc/Utils.h" alt="" coords="658,229,746,256"/>
-<area shape="rect" id="node21" href="$Buffer_8h.html" title="znc/Buffer.h" alt="" coords="1206,80,1304,107"/>
-<area shape="rect" id="node23" href="$Nick_8h.html" title="znc/Nick.h" alt="" coords="1404,229,1490,256"/>
-<area shape="rect" id="node25" href="$Translation_8h.html" title="znc/Translation.h" alt="" coords="1470,80,1598,107"/>
-<area shape="rect" id="node4" href="$ZNCString_8h.html" title="znc/ZNCString.h" alt="" coords="1368,304,1494,331"/>
-<area shape="rect" id="node22" href="$Message_8h.html" title="znc/Message.h" alt="" coords="1139,155,1256,181"/>
+<area shape="rect" id="node3" href="$Utils_8h.html" title="znc/Utils.h" alt="" coords="663,229,754,256"/>
+<area shape="rect" id="node21" href="$Buffer_8h.html" title="znc/Buffer.h" alt="" coords="1219,80,1318,107"/>
+<area shape="rect" id="node23" href="$Nick_8h.html" title="znc/Nick.h" alt="" coords="1420,229,1509,256"/>
+<area shape="rect" id="node25" href="$Translation_8h.html" title="znc/Translation.h" alt="" coords="1488,80,1619,107"/>
+<area shape="rect" id="node4" href="$ZNCString_8h.html" title="znc/ZNCString.h" alt="" coords="1382,304,1509,331"/>
+<area shape="rect" id="node22" href="$Message_8h.html" title="znc/Message.h" alt="" coords="1152,155,1270,181"/>
 </map>

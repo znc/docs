@@ -1,4 +1,4 @@
 <map id="CNoticeMessage" name="CNoticeMessage">
-<area shape="rect" id="node2" href="$classCTargetMessage.html" title="CTargetMessage" alt="" coords="7,80,133,107"/>
-<area shape="rect" id="node3" href="$classCMessage.html" title="Here is a small explanation of how messages on IRC work, and how you can use this class to get useful..." alt="" coords="26,5,114,32"/>
+<area shape="rect" id="node2" href="$classCTargetMessage.html" title="CTargetMessage" alt="" coords="7,80,135,107"/>
+<area shape="rect" id="node3" href="$classCMessage.html" title="Here is a small explanation of how messages on IRC work, and how you can use this class to get useful..." alt="" coords="27,5,115,32"/>
 </map>

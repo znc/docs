@@ -7,7 +7,7 @@ var searchData=
   ['newreference',['NewReference',['../classCTranslation.html#a0d8a6e58835f6bd124803750afdf3681',1,'CTranslation']]],
   ['nick',['Nick',['../classCMessage.html#a0c73f73428ca8fd0c3f10a497d2fcb11afd144f65f19df1c7adaa116c44ce2617',1,'CMessage']]],
   ['nick_2eh',['Nick.h',['../Nick_8h.html',1,'']]],
-  ['nickequals',['NickEquals',['../classCNick.html#af8d11940b96b5bcaa376c26a61c75a69',1,'CNick']]],
+  ['nickequals',['NickEquals',['../classCNick.html#adac1bae8ed0454907c7939bfba0796fd',1,'CNick']]],
   ['noarg',['NoArg',['../classCIRCSock.html#a8e68d9e0596157b56783e5e9603f7b69ad8393389d80a63f9b18ba1e05628edf1',1,'CIRCSock']]],
   ['nonblockingio',['NonBlockingIO',['../classCsock.html#abef02be96a92f5097556f1b7c082e76a',1,'Csock']]],
   ['nothing',['NOTHING',['../main_8h.html#aad4a7ebff687dc5228cc3fd4d25067f2',1,'main.h']]],

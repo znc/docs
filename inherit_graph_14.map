@@ -1,4 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
 <area shape="rect" id="node1" href="$classCJob.html" title="A job is a task which should run without blocking the main thread. " alt="" coords="5,5,56,32"/>
-<area shape="rect" id="node2" href="$classCModuleJob.html" title="A CJob version which can be safely used in modules. " alt="" coords="104,5,200,32"/>
+<area shape="rect" id="node2" href="$classCModuleJob.html" title="A CJob version which can be safely used in modules. " alt="" coords="104,5,203,32"/>
 </map>
