@@ -259,7 +259,7 @@ var searchData=
   ['getsslciphers',['GetSSLCiphers',['../classCZNC.html#a422b3d0c1fc905dc02180d7cf618eb7e',1,'CZNC']]],
   ['getsslmethod',['GetSSLMethod',['../classCsock.html#aa1b990c4d4f4223dd63a39015c7e06b6',1,'Csock']]],
   ['getsslobject',['GetSSLObject',['../classCsock.html#a98797982ba09e1ffeaf7c76ea2e87137',1,'Csock']]],
-  ['getsslpeerfingerprint',['GetSSLPeerFingerprint',['../classCZNCSock.html#a10093f199ea8efc19c227d9762b608de',1,'CZNCSock']]],
+  ['getsslpeerfingerprint',['GetSSLPeerFingerprint',['../classCZNCSock.html#aa8320ab614317d20df435e79a1655dd7',1,'CZNCSock']]],
   ['getsslprotocols',['GetSSLProtocols',['../classCZNC.html#a0f7b8befced3e73c7bdfe689fc54e7ee',1,'CZNC']]],
   ['getsslsession',['GetSSLSession',['../classCsock.html#a67b6ed34d9a623af15a80dec47a022e3',1,'Csock']]],
   ['getstarttime',['GetStartTime',['../classCsock.html#a1ddbdd9a61f2ef4d18d7dfe01dd54b1e',1,'Csock']]],

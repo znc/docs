@@ -43,6 +43,7 @@ var searchData=
   ['checkpass',['CheckPass',['../classCUser.html#a906dfa564c7a5309191bd1d8f7ce21bb',1,'CUser']]],
   ['checkpathprefix',['CheckPathPrefix',['../classCDir.html#a8470e58b7dc6ad5aebff27646350d891',1,'CDir']]],
   ['checkpost',['CheckPost',['../classCHTTPSock.html#a66ff2afd3f655fd198ce317200e4ec31',1,'CHTTPSock']]],
+  ['checksslcert',['CheckSSLCert',['../classCZNCSock.html#af5361c58b239d3bae828e0a11524696a',1,'CZNCSock']]],
   ['checktimeout',['CheckTimeout',['../classCsock.html#a44a3d6622b5b845f4d3097cc69c84fb6',1,'Csock']]],
   ['chmod',['Chmod',['../classCFile.html#a8432d5b6a40f112f14da7b30041fd1c9',1,'CFile::Chmod(mode_t mode)'],['../classCFile.html#a614fa2a782c524183d775cce376260fa',1,'CFile::Chmod(const CString &amp;sFile, mode_t mode)'],['../classCDir.html#a2fe90698ddcc3349426f5bb63a7cabef',1,'CDir::Chmod(mode_t mode, const CString &amp;sWildcard, const CString &amp;sDir=&quot;.&quot;)'],['../classCDir.html#a70c953085aa8b1a9d113a82785940259',1,'CDir::Chmod(mode_t mode)']]],
   ['chttpsock',['CHTTPSock',['../classCHTTPSock.html',1,'CHTTPSock'],['../classCHTTPSock.html#a565dc45e1d6c49501421d40c77d77b79',1,'CHTTPSock::CHTTPSock(CModule *pMod, const CString &amp;sURIPrefix)'],['../classCHTTPSock.html#a565a5e72db12150bd0870c992d13b27b',1,'CHTTPSock::CHTTPSock(CModule *pMod, const CString &amp;sURIPrefix, const CString &amp;sHostname, unsigned short uPort, int iTimeout=60)']]],

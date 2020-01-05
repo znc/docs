@@ -240,5 +240,6 @@ var searchData=
   ['m_5fvservers',['m_vServers',['../classCIRCNetwork.html#a9739ab622c0fb97073a6ea10c14f8058',1,'CIRCNetwork']]],
   ['m_5fvsheaders',['m_vsHeaders',['../classCTable.html#a6246689933c1b0fce1a1b4b5d8531a44',1,'CTable']]],
   ['m_5fvsmotd',['m_vsMotd',['../classCZNC.html#a77c73e215ae312fc683b58a282bd1c6e',1,'CZNC']]],
+  ['m_5fvssslerror',['m_vsSSLError',['../classCIRCSock.html#a03ea846e1aa028be8c4067b03ab106e8',1,'CIRCSock']]],
   ['m_5fvstrustedproxies',['m_vsTrustedProxies',['../classCZNC.html#a7e1f2715045e46ffb341e85f80062a18',1,'CZNC']]]
 ];
