@@ -7,7 +7,7 @@ var searchData=
   ['unlinkjob',['UnlinkJob',['../classCModule.html#aae004536dec8e2bfb255367aa38a5771',1,'CModule']]],
   ['unlinksocket',['UnlinkSocket',['../classCModule.html#a059e463c0d30f14bb49c58740d064f27',1,'CModule']]],
   ['unlinktimer',['UnlinkTimer',['../classCModule.html#a4080d03ce3cfd8c38093d33ad565c410',1,'CModule']]],
-  ['unload',['UNLOAD',['../classCModule.html#aad1b3611e4d3891b93fcb3aded5609f5a8f3ef8f7aa9f586ea2e375f063658f60',1,'CModule::UNLOAD()'],['../classCModule.html#afe4a1a37b1597db3a2f04ed7ac2ac7c9',1,'CModule::Unload()']]],
+  ['unload',['Unload',['../classCModule.html#afe4a1a37b1597db3a2f04ed7ac2ac7c9',1,'CModule::Unload()'],['../classCModule.html#aad1b3611e4d3891b93fcb3aded5609f5a8f3ef8f7aa9f586ea2e375f063658f60',1,'CModule::UNLOAD()']]],
   ['unloadall',['UnloadAll',['../classCModules.html#a3d26aceb0c625a32ac8763839f6202c7',1,'CModules']]],
   ['unloadmodule',['UnloadModule',['../classCModules.html#a8f56ffdf65190b393304a36d6c72604f',1,'CModules::UnloadModule(const CString &amp;sModule)'],['../classCModules.html#a78ab4e7d2ee7df1db0cb1e670d5175f3',1,'CModules::UnloadModule(const CString &amp;sModule, CString &amp;sRetMsg)']]],
   ['unlock',['UnLock',['../classCFile.html#a8a3627b113a126ad414817fc8b372b87',1,'CFile']]],

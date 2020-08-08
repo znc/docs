@@ -2,6 +2,7 @@ var searchData=
 [
   ['m_5fbacceptgzip',['m_bAcceptGzip',['../classCHTTPSock.html#a4989bbc2744c5701ed6b2f97da6cbdb4',1,'CHTTPSock']]],
   ['m_5fbaccountnotify',['m_bAccountNotify',['../classCClient.html#a1ff2353521613039c95751a901a6fa08',1,'CClient::m_bAccountNotify()'],['../classCIRCSock.html#a998525b6310f35481808ee0bd3fa80d3',1,'CIRCSock::m_bAccountNotify()']]],
+  ['m_5fbaccounttag',['m_bAccountTag',['../classCClient.html#a4396f81d90ea0decd4e72445c05f30ad',1,'CClient::m_bAccountTag()'],['../classCIRCSock.html#abd14783606cb1ead1a24f41fdf004d6d',1,'CIRCSock::m_bAccountTag()']]],
   ['m_5fbadmin',['m_bAdmin',['../classCUser.html#a3adfecf0c84bb907f28de26c0753bad1',1,'CUser']]],
   ['m_5fbappendtimestamp',['m_bAppendTimestamp',['../classCUser.html#a9127812fa81d430dbe300e2432e00cd5',1,'CUser']]],
   ['m_5fbauthed',['m_bAuthed',['../classCIRCSock.html#a4a56115765938ab378a6c6957729556e',1,'CIRCSock']]],

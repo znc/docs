@@ -14,6 +14,7 @@ var searchData=
   ['handlevalue',['HandleValue',['../classCTemplateTagHandler.html#afd5c5ba2bf9fb315e667638804e2e730',1,'CTemplateTagHandler']]],
   ['handlevar',['HandleVar',['../classCTemplateTagHandler.html#a7beaeb4197567e3f6866ba05e3d3568f',1,'CTemplateTagHandler']]],
   ['hasaccountnotify',['HasAccountNotify',['../classCClient.html#abeb1d3fe123e6b2056e61c86fe726a78',1,'CClient::HasAccountNotify()'],['../classCIRCSock.html#a91b1eccb2310b8c9db5573dc2a49db41',1,'CIRCSock::HasAccountNotify()']]],
+  ['hasaccounttag',['HasAccountTag',['../classCClient.html#a09abd813a3356fe510f2d4e80277184a',1,'CClient::HasAccountTag()'],['../classCIRCSock.html#ada83c8ee3d9333d02f645bc1a0c5033b',1,'CIRCSock::HasAccountTag()']]],
   ['hasarg',['HasArg',['../classCIRCSock.html#a8e68d9e0596157b56783e5e9603f7b69a2175a3f8935ca47e0cc580af476f5903',1,'CIRCSock']]],
   ['hasautoclearchanbufferset',['HasAutoClearChanBufferSet',['../classCChan.html#ac6defe47036cb6f2236b56b655f36f15',1,'CChan']]],
   ['hasawaynotify',['HasAwayNotify',['../classCClient.html#a72cd8daae2564e32232cd9790d040c80',1,'CClient::HasAwayNotify()'],['../classCIRCSock.html#ae3aae9fd46c0411861ee9b44e0caa3e2',1,'CIRCSock::HasAwayNotify()']]],
