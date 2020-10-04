@@ -32,7 +32,7 @@ var searchData=
   ['findsocksbyremotehost',['FindSocksByRemoteHost',['../classCSocketManager.html#ae5dfc3708c1f2836fa7e071bbeae7d3f',1,'CSocketManager']]],
   ['findstringentry',['FindStringEntry',['../classCConfig.html#a8bf77bfe0621fb3a4a80b3bc5600debf',1,'CConfig']]],
   ['findstringvector',['FindStringVector',['../classCConfig.html#a07a316349064c04379f2dc0788d61b01',1,'CConfig']]],
-  ['findsubconfig',['FindSubConfig',['../classCConfig.html#a9a4007290d65c4cba75e367aa7657231',1,'CConfig']]],
+  ['findsubconfig',['FindSubConfig',['../classCConfig.html#ad4a5d01b6bf85ab56800f77704a5920d',1,'CConfig']]],
   ['findtimer',['FindTimer',['../classCModule.html#a5f62627d62e671828143d965041d265a',1,'CModule']]],
   ['findtmpl',['FindTmpl',['../classCWebSock.html#a803d3cf514d70220e7542e010dc7ac4d',1,'CWebSock']]],
   ['finduintentry',['FindUIntEntry',['../classCConfig.html#ac20533d8ecae3a544964ddca47e52561',1,'CConfig']]],

@@ -74,9 +74,11 @@ $(function() {
 Public Types</h2></td></tr>
 <tr class="memitem:a144ae0411f6f76194d7626d12cba38ba"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; <a class="el" href="classCString.html">CString</a>, <a class="el" href="ZNCString_8h.html#af7252b7c4a0d4ec44ddc136c6055ae51">VCString</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCConfig.html#a144ae0411f6f76194d7626d12cba38ba">EntryMap</a></td></tr>
 <tr class="separator:a144ae0411f6f76194d7626d12cba38ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11a484feda4737db2e55ed409f794bda"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; <a class="el" href="classCString.html">CString</a>, <a class="el" href="structCConfigEntry.html">CConfigEntry</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCConfig.html#a11a484feda4737db2e55ed409f794bda">SubConfig</a></td></tr>
-<tr class="separator:a11a484feda4737db2e55ed409f794bda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad950df6598c7acbe1b87480981adb4a3"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; <a class="el" href="classCString.html">CString</a>, <a class="el" href="classCConfig.html#a11a484feda4737db2e55ed409f794bda">SubConfig</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCConfig.html#ad950df6598c7acbe1b87480981adb4a3">SubConfigMap</a></td></tr>
+<tr class="memitem:aca7b077bf0c9a4e13d828ca716d6c963"><td class="memItemLeft" align="right" valign="top">typedef std::pair&lt; <a class="el" href="classCString.html">CString</a>, <a class="el" href="structCConfigEntry.html">CConfigEntry</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCConfig.html#aca7b077bf0c9a4e13d828ca716d6c963">SubConfigEntry</a></td></tr>
+<tr class="separator:aca7b077bf0c9a4e13d828ca716d6c963"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b3b1688474581f274bc983210136ae7"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="classCConfig.html#aca7b077bf0c9a4e13d828ca716d6c963">SubConfigEntry</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCConfig.html#a2b3b1688474581f274bc983210136ae7">SubConfig</a></td></tr>
+<tr class="separator:a2b3b1688474581f274bc983210136ae7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad950df6598c7acbe1b87480981adb4a3"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; <a class="el" href="classCString.html">CString</a>, <a class="el" href="classCConfig.html#a2b3b1688474581f274bc983210136ae7">SubConfig</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCConfig.html#ad950df6598c7acbe1b87480981adb4a3">SubConfigMap</a></td></tr>
 <tr class="separator:ad950df6598c7acbe1b87480981adb4a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aefa785e9c3062c8b2aefb381a60125fd"><td class="memItemLeft" align="right" valign="top">typedef EntryMap::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCConfig.html#aefa785e9c3062c8b2aefb381a60125fd">EntryMapIterator</a></td></tr>
 <tr class="separator:aefa785e9c3062c8b2aefb381a60125fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -111,8 +113,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a761a8461f4cb34e888ffa80eef23abe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae95d2f8b265d63748cc9175d02569d79"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCConfig.html#ae95d2f8b265d63748cc9175d02569d79">FindDoubleEntry</a> (const <a class="el" href="classCString.html">CString</a> &amp;sName, double &amp;fRes, double fDefault=0)</td></tr>
 <tr class="separator:ae95d2f8b265d63748cc9175d02569d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a4007290d65c4cba75e367aa7657231"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCConfig.html#a9a4007290d65c4cba75e367aa7657231">FindSubConfig</a> (const <a class="el" href="classCString.html">CString</a> &amp;sName, <a class="el" href="classCConfig.html#a11a484feda4737db2e55ed409f794bda">SubConfig</a> &amp;Config, bool bErase=true)</td></tr>
-<tr class="separator:a9a4007290d65c4cba75e367aa7657231"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4a5d01b6bf85ab56800f77704a5920d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCConfig.html#ad4a5d01b6bf85ab56800f77704a5920d">FindSubConfig</a> (const <a class="el" href="classCString.html">CString</a> &amp;sTag, <a class="el" href="classCConfig.html#a2b3b1688474581f274bc983210136ae7">SubConfig</a> &amp;Config, bool bErase=true)</td></tr>
+<tr class="separator:ad4a5d01b6bf85ab56800f77704a5920d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf5274f1251946260b46ea13da70b9bd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCConfig.html#acf5274f1251946260b46ea13da70b9bd">empty</a> () const</td></tr>
 <tr class="separator:acf5274f1251946260b46ea13da70b9bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8cc17d8df64108b78bda1f119995f030"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCConfig.html#a8cc17d8df64108b78bda1f119995f030">Parse</a> (<a class="el" href="classCFile.html">CFile</a> &amp;file, <a class="el" href="classCString.html">CString</a> &amp;sErrorMsg)</td></tr>
@@ -149,14 +151,28 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a11a484feda4737db2e55ed409f794bda"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a11a484feda4737db2e55ed409f794bda">&#9670;&nbsp;</a></span>SubConfig</h2>
+<a id="a2b3b1688474581f274bc983210136ae7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b3b1688474581f274bc983210136ae7">&#9670;&nbsp;</a></span>SubConfig</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::map&lt;<a class="el" href="classCString.html">CString</a>, <a class="el" href="structCConfigEntry.html">CConfigEntry</a>&gt; <a class="el" href="classCConfig.html#a11a484feda4737db2e55ed409f794bda">CConfig::SubConfig</a></td>
+          <td class="memname">typedef std::vector&lt;<a class="el" href="classCConfig.html#aca7b077bf0c9a4e13d828ca716d6c963">SubConfigEntry</a>&gt; <a class="el" href="classCConfig.html#a2b3b1688474581f274bc983210136ae7">CConfig::SubConfig</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aca7b077bf0c9a4e13d828ca716d6c963"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca7b077bf0c9a4e13d828ca716d6c963">&#9670;&nbsp;</a></span>SubConfigEntry</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::pair&lt;<a class="el" href="classCString.html">CString</a>, <a class="el" href="structCConfigEntry.html">CConfigEntry</a>&gt; <a class="el" href="classCConfig.html#aca7b077bf0c9a4e13d828ca716d6c963">CConfig::SubConfigEntry</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -170,7 +186,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::map&lt;<a class="el" href="classCString.html">CString</a>, <a class="el" href="classCConfig.html#a11a484feda4737db2e55ed409f794bda">SubConfig</a>&gt; <a class="el" href="classCConfig.html#ad950df6598c7acbe1b87480981adb4a3">CConfig::SubConfigMap</a></td>
+          <td class="memname">typedef std::map&lt;<a class="el" href="classCString.html">CString</a>, <a class="el" href="classCConfig.html#a2b3b1688474581f274bc983210136ae7">SubConfig</a>&gt; <a class="el" href="classCConfig.html#ad950df6598c7acbe1b87480981adb4a3">CConfig::SubConfigMap</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -593,8 +609,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a9a4007290d65c4cba75e367aa7657231"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a4007290d65c4cba75e367aa7657231">&#9670;&nbsp;</a></span>FindSubConfig()</h2>
+<a id="ad4a5d01b6bf85ab56800f77704a5920d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4a5d01b6bf85ab56800f77704a5920d">&#9670;&nbsp;</a></span>FindSubConfig()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -606,12 +622,12 @@ Public Member Functions</h2></td></tr>
           <td class="memname">bool CConfig::FindSubConfig </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
-          <td class="paramname"><em>sName</em>, </td>
+          <td class="paramname"><em>sTag</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classCConfig.html#a11a484feda4737db2e55ed409f794bda">SubConfig</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classCConfig.html#a2b3b1688474581f274bc983210136ae7">SubConfig</a> &amp;&#160;</td>
           <td class="paramname"><em>Config</em>, </td>
         </tr>
         <tr>
@@ -785,7 +801,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Nov 7 2019 11:15:39 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 4 2020 20:45:43 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

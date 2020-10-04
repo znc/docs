@@ -202,6 +202,7 @@ var searchData=
   ['stripcontrols_5fn',['StripControls_n',['../classCString.html#a667d0e93fce4ca16ba77f7826d01b6aa',1,'CString']]],
   ['strnchr',['strnchr',['../classCString.html#a9779d0fdbd167e23cfa55d30e70fd6cf',1,'CString']]],
   ['supportstype',['SupportsType',['../classCModInfo.html#a807244b6747745810f27496b7bde0201',1,'CModInfo']]],
+  ['swapchans',['SwapChans',['../classCIRCNetwork.html#aff89daef02a2b08cdffe909e0486df11',1,'CIRCNetwork']]],
   ['swapsockbyaddr',['SwapSockByAddr',['../classCSocketManager.html#a19ac59ce922cab61680e59da1bc3f24a',1,'CSocketManager']]],
   ['swapsockbyidx',['SwapSockByIdx',['../classCSocketManager.html#aa68ca894193d5d5ee79dd3b65e2419f7',1,'CSocketManager']]],
   ['sync',['Sync',['../classCFile.html#a76c1cdb3dd9249d4353309c5bafce014',1,'CFile']]]

@@ -185,6 +185,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa9aa30eea6e00e72f140cfbb4db9170e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adbf13d2dbda3c3aa5e7c6f8719e90ff0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#adbf13d2dbda3c3aa5e7c6f8719e90ff0">DelChan</a> (const <a class="el" href="classCString.html">CString</a> &amp;sName)</td></tr>
 <tr class="separator:adbf13d2dbda3c3aa5e7c6f8719e90ff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90a94f8652a42743c8f584c4abbfbb0e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a90a94f8652a42743c8f584c4abbfbb0e">MoveChan</a> (const <a class="el" href="classCString.html">CString</a> &amp;sChan, unsigned int index, <a class="el" href="classCString.html">CString</a> &amp;sError)</td></tr>
+<tr class="separator:a90a94f8652a42743c8f584c4abbfbb0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff89daef02a2b08cdffe909e0486df11"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#aff89daef02a2b08cdffe909e0486df11">SwapChans</a> (const <a class="el" href="classCString.html">CString</a> &amp;sChan1, const <a class="el" href="classCString.html">CString</a> &amp;sChan2, <a class="el" href="classCString.html">CString</a> &amp;sError)</td></tr>
+<tr class="separator:aff89daef02a2b08cdffe909e0486df11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ac85896fb89faeac26e5535f2753743"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a3ac85896fb89faeac26e5535f2753743">JoinChans</a> ()</td></tr>
 <tr class="separator:a3ac85896fb89faeac26e5535f2753743"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a196867d075a8fca833fb75dcadd68630"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a196867d075a8fca833fb75dcadd68630">JoinChans</a> (std::set&lt; <a class="el" href="classCChan.html">CChan</a> *&gt; &amp;sChans)</td></tr>
@@ -2034,7 +2038,7 @@ Static Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="classCIRCNetwork.html#af60240fa84f6940b5953a540cbd8958f">AddChan()</a>, <a class="el" href="classCIRCNetwork.html#a235bbfbdc4bef0828cabbd411f388154">AddQuery()</a>, <a class="el" href="classCIRCNetwork.html#adbf13d2dbda3c3aa5e7c6f8719e90ff0">DelChan()</a>, <a class="el" href="classCIRCNetwork.html#a4da54a7debfa735b551f9d40bb544ff9">DelQuery()</a>, <a class="el" href="classCIRCNetwork.html#a2ec9519ebd6b1ec36d7e3a6e44ab3210">FindChan()</a>, <a class="el" href="classCIRCNetwork.html#aa337c3b2e46609e01802d6b2df532ce8">FindChans()</a>, <a class="el" href="classCIRCNetwork.html#a9092e808126c73b3d1d8ffa316a01600">FindQueries()</a>, <a class="el" href="classCIRCNetwork.html#ace94b523ff7918eec4ff7a6bb6686887">FindQuery()</a>, <a class="el" href="classCIRCNetwork.html#a6b523dfb5c47e35c1911fae2d3f06bf6">GetChans()</a>, <a class="el" href="classCIRCNetwork.html#a3524606b1c06ff378e594b59942fbdba">GetQueries()</a>, <a class="el" href="classCIRCNetwork.html#a3ac85896fb89faeac26e5535f2753743">JoinChans()</a>, <a class="el" href="classCIRCNetwork.html#acfaf517275a6937fe119abf0ac421b55">m_pModules</a>, <a class="el" href="classCIRCNetwork.html#a865dd8e631106331e937e6b2d00426b7">PutModule()</a>, <a class="el" href="classCIRCNetwork.html#a3e15b751b1502894f7b9b2fff3a2d7b5">PutStatus()</a>, and <a class="el" href="classCIRCNetwork.html#a87a2c491b70d210563ed8b3e8cedacb4">PutUser()</a>.</p>
+<p class="reference">References <a class="el" href="classCIRCNetwork.html#af60240fa84f6940b5953a540cbd8958f">AddChan()</a>, <a class="el" href="classCIRCNetwork.html#a235bbfbdc4bef0828cabbd411f388154">AddQuery()</a>, <a class="el" href="classCIRCNetwork.html#adbf13d2dbda3c3aa5e7c6f8719e90ff0">DelChan()</a>, <a class="el" href="classCIRCNetwork.html#a4da54a7debfa735b551f9d40bb544ff9">DelQuery()</a>, <a class="el" href="classCIRCNetwork.html#a2ec9519ebd6b1ec36d7e3a6e44ab3210">FindChan()</a>, <a class="el" href="classCIRCNetwork.html#aa337c3b2e46609e01802d6b2df532ce8">FindChans()</a>, <a class="el" href="classCIRCNetwork.html#a9092e808126c73b3d1d8ffa316a01600">FindQueries()</a>, <a class="el" href="classCIRCNetwork.html#ace94b523ff7918eec4ff7a6bb6686887">FindQuery()</a>, <a class="el" href="classCIRCNetwork.html#a6b523dfb5c47e35c1911fae2d3f06bf6">GetChans()</a>, <a class="el" href="classCIRCNetwork.html#a3524606b1c06ff378e594b59942fbdba">GetQueries()</a>, <a class="el" href="classCIRCNetwork.html#a3ac85896fb89faeac26e5535f2753743">JoinChans()</a>, <a class="el" href="classCIRCNetwork.html#acfaf517275a6937fe119abf0ac421b55">m_pModules</a>, <a class="el" href="classCIRCNetwork.html#a90a94f8652a42743c8f584c4abbfbb0e">MoveChan()</a>, <a class="el" href="classCIRCNetwork.html#a865dd8e631106331e937e6b2d00426b7">PutModule()</a>, <a class="el" href="classCIRCNetwork.html#a3e15b751b1502894f7b9b2fff3a2d7b5">PutStatus()</a>, <a class="el" href="classCIRCNetwork.html#a87a2c491b70d210563ed8b3e8cedacb4">PutUser()</a>, and <a class="el" href="classCIRCNetwork.html#aff89daef02a2b08cdffe909e0486df11">SwapChans()</a>.</p>
 
 </div>
 </div>
@@ -2575,6 +2579,42 @@ Static Private Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a90a94f8652a42743c8f584c4abbfbb0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90a94f8652a42743c8f584c4abbfbb0e">&#9670;&nbsp;</a></span>MoveChan()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CIRCNetwork::MoveChan </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
+          <td class="paramname"><em>sChan</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
+          <td class="paramname"><em>sError</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="classCIRCNetwork.html#a9e879bacb9d4f77d21cb7eb6cc509de3">GetModules()</a>.</p>
 
 </div>
 </div>
@@ -3297,6 +3337,42 @@ Static Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="reference">Referenced by <a class="el" href="classCIRCNetwork.html#a51ce446bdab991450db79ab3b5b0ad57">GetClients()</a>.</p>
+
+</div>
+</div>
+<a id="aff89daef02a2b08cdffe909e0486df11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff89daef02a2b08cdffe909e0486df11">&#9670;&nbsp;</a></span>SwapChans()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CIRCNetwork::SwapChans </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
+          <td class="paramname"><em>sChan1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
+          <td class="paramname"><em>sChan2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
+          <td class="paramname"><em>sError</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="classCIRCNetwork.html#a9e879bacb9d4f77d21cb7eb6cc509de3">GetModules()</a>.</p>
 
 </div>
 </div>
@@ -4456,7 +4532,7 @@ Static Private Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 5 2020 12:12:57 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 4 2020 20:45:43 for ZNC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
