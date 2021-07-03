@@ -1,6 +1,7 @@
 <map id="CBufLine" name="CBufLine">
-<area shape="rect" id="node2" href="$classCString.html" title="String class that is used inside ZNC. " alt="" coords="40,172,109,199"/>
-<area shape="rect" id="node3" title="STL class. " alt="" coords="31,96,118,123"/>
-<area shape="rect" id="node4" title="STL class. " alt="" coords="5,5,144,47"/>
-<area shape="rect" id="node5" href="$classCMessage.html" title="Here is a small explanation of how messages on IRC work, and how you can use this class to get useful..." alt="" coords="133,172,221,199"/>
+<area shape="rect" id="node1" title=" " alt="" coords="87,261,167,288"/>
+<area shape="rect" id="node2" href="$classCString.html" title="String class that is used inside ZNC." alt="" coords="40,172,109,199"/>
+<area shape="rect" id="node3" title="STL class." alt="" coords="31,96,118,123"/>
+<area shape="rect" id="node4" title="STL class." alt="" coords="5,5,144,47"/>
+<area shape="rect" id="node5" href="$classCMessage.html" title="Here is a small explanation of how messages on IRC work, and how you can use this class to get useful..." alt="" coords="134,172,223,199"/>
 </map>

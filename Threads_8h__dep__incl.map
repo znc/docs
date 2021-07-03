@@ -1,12 +1,13 @@
 <map id="Threads.h" name="Threads.h">
-<area shape="rect" id="node2" href="$Modules_8h.html" title="Modules.h" alt="" coords="35,304,123,331"/>
-<area shape="rect" id="node5" href="$Socket_8h.html" title="Socket.h" alt="" coords="209,80,287,107"/>
-<area shape="rect" id="node3" href="$znc_8h.html" title="znc.h" alt="" coords="176,379,232,405"/>
-<area shape="rect" id="node4" href="$IRCNetwork_8h.html" title="IRCNetwork.h" alt="" coords="149,453,259,480"/>
-<area shape="rect" id="node6" href="$Client_8h.html" title="Client.h" alt="" coords="212,229,284,256"/>
-<area shape="rect" id="node7" href="$ExecSock_8h.html" title="ExecSock.h" alt="" coords="359,155,455,181"/>
-<area shape="rect" id="node8" href="$HTTPSock_8h.html" title="HTTPSock.h" alt="" coords="33,155,132,181"/>
-<area shape="rect" id="node10" href="$IRCSock_8h.html" title="IRCSock.h" alt="" coords="479,155,566,181"/>
-<area shape="rect" id="node11" href="$Listener_8h.html" title="Listener.h" alt="" coords="275,304,360,331"/>
-<area shape="rect" id="node9" href="$WebModules_8h.html" title="WebModules.h" alt="" coords="21,229,137,256"/>
+<area shape="rect" id="node1" title=" " alt="" coords="71,5,158,32"/>
+<area shape="rect" id="node2" href="$Modules_8h.html" title=" " alt="" coords="34,304,123,331"/>
+<area shape="rect" id="node5" href="$Socket_8h.html" title=" " alt="" coords="209,80,287,107"/>
+<area shape="rect" id="node3" href="$znc_8h.html" title=" " alt="" coords="176,379,232,405"/>
+<area shape="rect" id="node4" href="$IRCNetwork_8h.html" title=" " alt="" coords="149,453,259,480"/>
+<area shape="rect" id="node6" href="$Client_8h.html" title=" " alt="" coords="212,229,284,256"/>
+<area shape="rect" id="node7" href="$ExecSock_8h.html" title=" " alt="" coords="359,155,454,181"/>
+<area shape="rect" id="node8" href="$HTTPSock_8h.html" title=" " alt="" coords="33,155,132,181"/>
+<area shape="rect" id="node10" href="$IRCSock_8h.html" title=" " alt="" coords="478,155,565,181"/>
+<area shape="rect" id="node11" href="$Listener_8h.html" title=" " alt="" coords="275,304,360,331"/>
+<area shape="rect" id="node9" href="$WebModules_8h.html" title=" " alt="" coords="20,229,137,256"/>
 </map>

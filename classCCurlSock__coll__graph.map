@@ -1,3 +1,5 @@
 <map id="CCurlSock" name="CCurlSock">
-<area shape="rect" id="node2" href="$classCSMonitorFD.html" title="Class to tie sockets to for monitoring by Csocket at either the Csock or TSockManager. " alt="" coords="33,109,139,136"/>
+<area shape="rect" id="node1" title="Csocket style wrapper around libcurl&#45;multi." alt="" coords="42,185,130,212"/>
+<area shape="rect" id="node2" href="$classCSMonitorFD.html" title="Class to tie sockets to for monitoring by Csocket at either the Csock or TSockManager." alt="" coords="33,109,139,136"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,5,167,47"/>
 </map>

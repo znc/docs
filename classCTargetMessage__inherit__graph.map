@@ -1,12 +1,13 @@
 <map id="CTargetMessage" name="CTargetMessage">
-<area shape="rect" id="node3" href="$classCActionMessage.html" title="CActionMessage" alt="" coords="318,5,447,32"/>
-<area shape="rect" id="node4" href="$classCCTCPMessage.html" title="CCTCPMessage" alt="" coords="322,56,443,83"/>
-<area shape="rect" id="node5" href="$classCJoinMessage.html" title="CJoinMessage" alt="" coords="327,107,439,133"/>
-<area shape="rect" id="node6" href="$classCKickMessage.html" title="CKickMessage" alt="" coords="325,157,441,184"/>
-<area shape="rect" id="node7" href="$classCModeMessage.html" title="CModeMessage" alt="" coords="321,208,444,235"/>
-<area shape="rect" id="node8" href="$classCNoticeMessage.html" title="CNoticeMessage" alt="" coords="317,259,448,285"/>
-<area shape="rect" id="node9" href="$classCPartMessage.html" title="CPartMessage" alt="" coords="326,309,439,336"/>
-<area shape="rect" id="node10" href="$classCTextMessage.html" title="CTextMessage" alt="" coords="325,360,440,387"/>
-<area shape="rect" id="node11" href="$classCTopicMessage.html" title="CTopicMessage" alt="" coords="322,411,443,437"/>
-<area shape="rect" id="node2" href="$classCMessage.html" title="Here is a small explanation of how messages on IRC work, and how you can use this class to get useful..." alt="" coords="5,208,93,235"/>
+<area shape="rect" id="node1" title=" " alt="" coords="143,208,272,235"/>
+<area shape="rect" id="node3" href="$classCActionMessage.html" title=" " alt="" coords="320,5,451,32"/>
+<area shape="rect" id="node4" href="$classCCTCPMessage.html" title=" " alt="" coords="324,56,447,83"/>
+<area shape="rect" id="node5" href="$classCJoinMessage.html" title=" " alt="" coords="329,107,442,133"/>
+<area shape="rect" id="node6" href="$classCKickMessage.html" title=" " alt="" coords="327,157,444,184"/>
+<area shape="rect" id="node7" href="$classCModeMessage.html" title=" " alt="" coords="323,208,448,235"/>
+<area shape="rect" id="node8" href="$classCNoticeMessage.html" title=" " alt="" coords="320,259,451,285"/>
+<area shape="rect" id="node9" href="$classCPartMessage.html" title=" " alt="" coords="328,309,443,336"/>
+<area shape="rect" id="node10" href="$classCTextMessage.html" title=" " alt="" coords="327,360,443,387"/>
+<area shape="rect" id="node11" href="$classCTopicMessage.html" title=" " alt="" coords="324,411,447,437"/>
+<area shape="rect" id="node2" href="$classCMessage.html" title="Here is a small explanation of how messages on IRC work, and how you can use this class to get useful..." alt="" coords="5,208,95,235"/>
 </map>

@@ -1,6 +1,7 @@
 <map id="main.h" name="main.h">
-<area shape="rect" id="node2" href="$Client_8h.html" title="Client.h" alt="" coords="5,80,77,107"/>
-<area shape="rect" id="node5" href="$Modules_8h.html" title="Modules.h" alt="" coords="101,80,189,107"/>
-<area shape="rect" id="node3" href="$znc_8h.html" title="znc.h" alt="" coords="65,155,121,181"/>
-<area shape="rect" id="node4" href="$IRCNetwork_8h.html" title="IRCNetwork.h" alt="" coords="38,229,149,256"/>
+<area shape="rect" id="node1" title=" " alt="" coords="60,5,127,32"/>
+<area shape="rect" id="node2" href="$Client_8h.html" title=" " alt="" coords="5,80,77,107"/>
+<area shape="rect" id="node5" href="$Modules_8h.html" title=" " alt="" coords="102,80,191,107"/>
+<area shape="rect" id="node3" href="$znc_8h.html" title=" " alt="" coords="65,155,121,181"/>
+<area shape="rect" id="node4" href="$IRCNetwork_8h.html" title=" " alt="" coords="38,229,149,256"/>
 </map>

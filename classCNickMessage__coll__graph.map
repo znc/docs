@@ -1,3 +1,4 @@
 <map id="CNickMessage" name="CNickMessage">
-<area shape="rect" id="node2" href="$classCMessage.html" title="Here is a small explanation of how messages on IRC work, and how you can use this class to get useful..." alt="" coords="20,5,108,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,80,124,107"/>
+<area shape="rect" id="node2" href="$classCMessage.html" title="Here is a small explanation of how messages on IRC work, and how you can use this class to get useful..." alt="" coords="20,5,109,32"/>
 </map>

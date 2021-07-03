@@ -1,12 +1,13 @@
 <map id="Nick.h" name="Nick.h">
-<area shape="rect" id="node2" href="$Chan_8h.html" title="Chan.h" alt="" coords="383,229,449,256"/>
-<area shape="rect" id="node3" href="$IRCNetwork_8h.html" title="IRCNetwork.h" alt="" coords="127,304,238,331"/>
-<area shape="rect" id="node4" href="$IRCSock_8h.html" title="IRCSock.h" alt="" coords="26,155,113,181"/>
-<area shape="rect" id="node5" href="$Message_8h.html" title="Message.h" alt="" coords="188,80,279,107"/>
-<area shape="rect" id="node8" href="$User_8h.html" title="User.h" alt="" coords="474,229,537,256"/>
-<area shape="rect" id="node6" href="$Buffer_8h.html" title="Buffer.h" alt="" coords="345,155,417,181"/>
-<area shape="rect" id="node9" href="$Client_8h.html" title="Client.h" alt="" coords="249,155,321,181"/>
-<area shape="rect" id="node11" href="$Modules_8h.html" title="Modules.h" alt="" coords="137,155,225,181"/>
-<area shape="rect" id="node7" href="$Query_8h.html" title="Query.h" alt="" coords="237,229,307,256"/>
-<area shape="rect" id="node10" href="$znc_8h.html" title="znc.h" alt="" coords="155,229,211,256"/>
+<area shape="rect" id="node1" title=" " alt="" coords="202,5,264,32"/>
+<area shape="rect" id="node2" href="$Chan_8h.html" title=" " alt="" coords="384,229,450,256"/>
+<area shape="rect" id="node3" href="$IRCNetwork_8h.html" title=" " alt="" coords="127,304,238,331"/>
+<area shape="rect" id="node4" href="$IRCSock_8h.html" title=" " alt="" coords="26,155,112,181"/>
+<area shape="rect" id="node5" href="$Message_8h.html" title=" " alt="" coords="187,80,279,107"/>
+<area shape="rect" id="node8" href="$User_8h.html" title=" " alt="" coords="475,229,538,256"/>
+<area shape="rect" id="node6" href="$Buffer_8h.html" title=" " alt="" coords="346,155,418,181"/>
+<area shape="rect" id="node9" href="$Client_8h.html" title=" " alt="" coords="250,155,322,181"/>
+<area shape="rect" id="node11" href="$Modules_8h.html" title=" " alt="" coords="136,155,226,181"/>
+<area shape="rect" id="node7" href="$Query_8h.html" title=" " alt="" coords="238,229,308,256"/>
+<area shape="rect" id="node10" href="$znc_8h.html" title=" " alt="" coords="154,229,210,256"/>
 </map>

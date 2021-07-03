@@ -1,7 +1,8 @@
 <map id="FileUtils.h" name="FileUtils.h">
-<area shape="rect" id="node2" href="$HTTPSock_8h.html" title="HTTPSock.h" alt="" coords="14,80,113,107"/>
-<area shape="rect" id="node3" href="$WebModules_8h.html" title="WebModules.h" alt="" coords="5,155,121,181"/>
-<area shape="rect" id="node4" href="$Modules_8h.html" title="Modules.h" alt="" coords="19,229,107,256"/>
-<area shape="rect" id="node5" href="$znc_8h.html" title="znc.h" alt="" coords="35,304,91,331"/>
-<area shape="rect" id="node6" href="$IRCNetwork_8h.html" title="IRCNetwork.h" alt="" coords="8,379,119,405"/>
+<area shape="rect" id="node1" title=" " alt="" coords="21,5,107,32"/>
+<area shape="rect" id="node2" href="$HTTPSock_8h.html" title=" " alt="" coords="15,80,113,107"/>
+<area shape="rect" id="node3" href="$WebModules_8h.html" title=" " alt="" coords="5,155,123,181"/>
+<area shape="rect" id="node4" href="$Modules_8h.html" title=" " alt="" coords="19,229,109,256"/>
+<area shape="rect" id="node5" href="$znc_8h.html" title=" " alt="" coords="36,304,92,331"/>
+<area shape="rect" id="node6" href="$IRCNetwork_8h.html" title=" " alt="" coords="9,379,119,405"/>
 </map>

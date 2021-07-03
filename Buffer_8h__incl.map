@@ -1,5 +1,16 @@
 <map id="Buffer.h" name="Buffer.h">
-<area shape="rect" id="node3" href="$ZNCString_8h.html" title="znc/ZNCString.h" alt="" coords="257,229,384,256"/>
-<area shape="rect" id="node11" href="$Message_8h.html" title="znc/Message.h" alt="" coords="161,80,278,107"/>
-<area shape="rect" id="node12" href="$Nick_8h.html" title="znc/Nick.h" alt="" coords="257,155,347,181"/>
+<area shape="rect" id="node1" title=" " alt="" coords="183,5,255,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,304,127,331"/>
+<area shape="rect" id="node3" href="$ZNCString_8h.html" title=" " alt="" coords="257,229,384,256"/>
+<area shape="rect" id="node11" href="$Message_8h.html" title=" " alt="" coords="160,80,279,107"/>
+<area shape="rect" id="node13" title=" " alt="" coords="371,155,462,181"/>
+<area shape="rect" id="node14" title=" " alt="" coords="355,80,417,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="151,304,202,331"/>
+<area shape="rect" id="node5" title=" " alt="" coords="226,304,269,331"/>
+<area shape="rect" id="node6" title=" " alt="" coords="293,304,351,331"/>
+<area shape="rect" id="node7" title=" " alt="" coords="729,304,792,331"/>
+<area shape="rect" id="node8" title=" " alt="" coords="375,304,450,331"/>
+<area shape="rect" id="node9" title=" " alt="" coords="474,304,570,331"/>
+<area shape="rect" id="node10" title=" " alt="" coords="595,304,705,331"/>
+<area shape="rect" id="node12" href="$Nick_8h.html" title=" " alt="" coords="257,155,347,181"/>
 </map>

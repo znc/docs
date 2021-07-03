@@ -1,2 +1,4 @@
 <map id="CSMonitorFD" name="CSMonitorFD">
+<area shape="rect" id="node1" title="Class to tie sockets to for monitoring by Csocket at either the Csock or TSockManager." alt="" coords="33,109,139,136"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,167,47"/>
 </map>
