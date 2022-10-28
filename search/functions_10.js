@@ -30,7 +30,7 @@ var searchData=
   ['process_3060',['Process',['../classCGetAddrInfo.html#a315c0fc484347988f22fd4ed42499db6',1,'CGetAddrInfo']]],
   ['pushbuff_3061',['PushBuff',['../classCsock.html#af5503bfd5516bd1bb281d2616d9321b0',1,'Csock']]],
   ['pushlanguage_3062',['PushLanguage',['../classCTranslation.html#a21fb3d7ac5f37acd34794174614ad260',1,'CTranslation']]],
-  ['putalluser_3063',['PutAllUser',['../classCUser.html#aac9d005a1fbbc0f922567fb82347ef36',1,'CUser']]],
+  ['putalluser_3063',['PutAllUser',['../classCUser.html#adf98c254271a488e04c643e447f8ea86',1,'CUser']]],
   ['putclient_3064',['PutClient',['../classCClient.html#a2a58ecbf1d322248522d4dd7d99cf476',1,'CClient::PutClient(const CString &amp;sLine)'],['../classCClient.html#af295aefca5642178d7886b2d8e47c3ad',1,'CClient::PutClient(const CMessage &amp;Message)']]],
   ['putclientraw_3065',['PutClientRaw',['../classCClient.html#a148fa379bd535cb44f9ebf1e215e3fa1',1,'CClient']]],
   ['putirc_3066',['PutIRC',['../classCClient.html#a2d67f4f447e6b0fa29179a43edd49954',1,'CClient::PutIRC()'],['../classCIRCNetwork.html#ab4f833676f163957e60b7f7e4290d093',1,'CIRCNetwork::PutIRC(const CString &amp;sLine)'],['../classCIRCNetwork.html#ab2a259cd5226d89bd45906ae6e1a909c',1,'CIRCNetwork::PutIRC(const CMessage &amp;Message)'],['../classCIRCSock.html#afba5876713b8cad27a6a2603041f62b7',1,'CIRCSock::PutIRC(const CString &amp;sLine)'],['../classCIRCSock.html#ad128c2c14dbff50840a0eff14641f6a5',1,'CIRCSock::PutIRC(const CMessage &amp;Message)'],['../classCModule.html#af8c3ecd92352e21e203de4ff1a804f32',1,'CModule::PutIRC(const CString &amp;sLine)'],['../classCModule.html#ac6ccc270e88150d6f87d82652d2235b8',1,'CModule::PutIRC(const CMessage &amp;Message)']]],
