@@ -1,18 +1,18 @@
 <map id="CSockCommon" name="CSockCommon">
-<area shape="rect" id="node1" title="simple class to share common code to both TSockManager and Csock" alt="" coords="375,5,496,32"/>
-<area shape="rect" id="node2" href="$classCsock.html" title="Basic socket class." alt="" coords="345,80,406,107"/>
-<area shape="rect" id="node13" href="$classCSocketManager.html" title="Best class to use to interact with the sockets." alt="" coords="446,80,577,107"/>
-<area shape="rect" id="node3" href="$classCZNCSock.html" title=" " alt="" coords="313,155,403,181"/>
-<area shape="rect" id="node4" href="$classCExecSock.html" title=" " alt="" coords="5,229,97,256"/>
-<area shape="rect" id="node5" href="$classCIncomingConnection.html" title=" " alt="" coords="121,229,285,256"/>
-<area shape="rect" id="node6" href="$classCIRCSocket.html" title="Base IRC socket for client&lt;&#45;&gt;ZNC, and ZNC&lt;&#45;&gt;server." alt="" coords="310,229,406,256"/>
-<area shape="rect" id="node9" href="$classCRealListener.html" title=" " alt="" coords="430,229,542,256"/>
-<area shape="rect" id="node10" href="$classCSocket.html" title="Base Csock implementation to be used by modules." alt="" coords="566,229,641,256"/>
-<area shape="rect" id="node7" href="$classCClient.html" title=" " alt="" coords="273,304,342,331"/>
-<area shape="rect" id="node8" href="$classCIRCSock.html" title=" " alt="" coords="367,304,451,331"/>
-<area shape="rect" id="node11" href="$classCHTTPSock.html" title=" " alt="" coords="555,304,651,331"/>
-<area shape="rect" id="node12" href="$classCWebSock.html" title=" " alt="" coords="558,379,649,405"/>
-<area shape="rect" id="node14" href="$classTSocketManager.html" title="Ease of use templated socket manager." alt="" coords="427,155,595,181"/>
-<area shape="rect" id="node15" href="$classTSocketManager.html" title=" " alt="" coords="620,155,848,181"/>
-<area shape="rect" id="node16" href="$classCSockManager.html" title=" " alt="" coords="675,229,793,256"/>
+<area shape="rect" id="node1" title="simple class to share common code to both TSockManager and Csock" alt="" coords="348,5,469,32"/>
+<area shape="rect" id="node2" href="$classCSocketManager.html" title="Best class to use to interact with the sockets." alt="" coords="283,80,414,107"/>
+<area shape="rect" id="node6" href="$classCsock.html" title="Basic socket class." alt="" coords="454,80,515,107"/>
+<area shape="rect" id="node3" href="$classTSocketManager.html" title=" " alt="" coords="5,155,233,181"/>
+<area shape="rect" id="node5" href="$classTSocketManager.html" title="Ease of use templated socket manager." alt="" coords="265,155,433,181"/>
+<area shape="rect" id="node4" href="$classCSockManager.html" title=" " alt="" coords="47,229,165,256"/>
+<area shape="rect" id="node7" href="$classCZNCSock.html" title=" " alt="" coords="459,155,550,181"/>
+<area shape="rect" id="node8" href="$classCExecSock.html" title=" " alt="" coords="189,229,281,256"/>
+<area shape="rect" id="node9" href="$classCIRCSocket.html" title="Base IRC socket for client&lt;&#45;&gt;ZNC, and ZNC&lt;&#45;&gt;server." alt="" coords="306,229,402,256"/>
+<area shape="rect" id="node12" href="$classCIncomingConnection.html" title=" " alt="" coords="427,229,591,256"/>
+<area shape="rect" id="node13" href="$classCRealListener.html" title=" " alt="" coords="615,229,727,256"/>
+<area shape="rect" id="node14" href="$classCSocket.html" title="Base Csock implementation to be used by modules." alt="" coords="751,229,826,256"/>
+<area shape="rect" id="node10" href="$classCClient.html" title=" " alt="" coords="269,304,338,331"/>
+<area shape="rect" id="node11" href="$classCIRCSock.html" title=" " alt="" coords="363,304,447,331"/>
+<area shape="rect" id="node15" href="$classCHTTPSock.html" title=" " alt="" coords="741,304,837,331"/>
+<area shape="rect" id="node16" href="$classCWebSock.html" title=" " alt="" coords="743,379,834,405"/>
 </map>

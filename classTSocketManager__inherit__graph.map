@@ -1,6 +1,6 @@
 <map id="TSocketManager&lt; T &gt;" name="TSocketManager&lt; T &gt;">
-<area shape="rect" id="node1" title="Ease of use templated socket manager." alt="" coords="92,155,260,181"/>
-<area shape="rect" id="node2" href="$classCSocketManager.html" title="Best class to use to interact with the sockets." alt="" coords="111,80,241,107"/>
-<area shape="rect" id="node3" title="STL class." alt="" coords="5,5,176,32"/>
-<area shape="rect" id="node4" href="$classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock" alt="" coords="201,5,322,32"/>
+<area shape="rect" id="node1" title="Ease of use templated socket manager." alt="" coords="61,155,229,181"/>
+<area shape="rect" id="node2" href="$classCSocketManager.html" title="Best class to use to interact with the sockets." alt="" coords="79,80,210,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,5,135,32"/>
+<area shape="rect" id="node4" href="$classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock" alt="" coords="159,5,280,32"/>
 </map>

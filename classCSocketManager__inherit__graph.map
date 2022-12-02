@@ -1,8 +1,8 @@
 <map id="CSocketManager" name="CSocketManager">
-<area shape="rect" id="node1" title="Best class to use to interact with the sockets." alt="" coords="135,80,265,107"/>
-<area shape="rect" id="node4" href="$classTSocketManager.html" title="Ease of use templated socket manager." alt="" coords="5,155,173,181"/>
-<area shape="rect" id="node5" href="$classTSocketManager.html" title=" " alt="" coords="198,155,426,181"/>
-<area shape="rect" id="node2" title="STL class." alt="" coords="29,5,200,32"/>
-<area shape="rect" id="node3" href="$classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock" alt="" coords="225,5,346,32"/>
-<area shape="rect" id="node6" href="$classCSockManager.html" title=" " alt="" coords="253,229,371,256"/>
+<area shape="rect" id="node1" title="Best class to use to interact with the sockets." alt="" coords="165,80,295,107"/>
+<area shape="rect" id="node4" href="$classTSocketManager.html" title=" " alt="" coords="5,155,233,181"/>
+<area shape="rect" id="node6" href="$classTSocketManager.html" title="Ease of use templated socket manager." alt="" coords="258,155,426,181"/>
+<area shape="rect" id="node2" title=" " alt="" coords="91,5,220,32"/>
+<area shape="rect" id="node3" href="$classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock" alt="" coords="244,5,365,32"/>
+<area shape="rect" id="node5" href="$classCSockManager.html" title=" " alt="" coords="60,229,179,256"/>
 </map>
