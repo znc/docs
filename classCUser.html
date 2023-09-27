@@ -142,10 +142,14 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:af1c920f65be0d78a064858cf139d15af"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#af1c920f65be0d78a064858cf139d15af">eHashType</a> { <a class="el" href="classCUser.html#af1c920f65be0d78a064858cf139d15afae84df4f6040e1ada460cc5f73764a7f9">HASH_NONE</a>
+<tr class="memitem:af1c920f65be0d78a064858cf139d15af"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#af1c920f65be0d78a064858cf139d15af">eHashType</a> { <br />
+&#160;&#160;<a class="el" href="classCUser.html#af1c920f65be0d78a064858cf139d15afae84df4f6040e1ada460cc5f73764a7f9">HASH_NONE</a>
 , <a class="el" href="classCUser.html#af1c920f65be0d78a064858cf139d15afa0ebc63c2c8428f17c4c76708b7732cd0">HASH_MD5</a>
 , <a class="el" href="classCUser.html#af1c920f65be0d78a064858cf139d15afa0496c406ae3f37e4c2d9c9d14bb7271a">HASH_SHA256</a>
-, <a class="el" href="classCUser.html#af1c920f65be0d78a064858cf139d15afa5e2d0347b9c6f5b6a0c1b1082185d700">HASH_DEFAULT</a> = HASH_SHA256
+, <a class="el" href="classCUser.html#af1c920f65be0d78a064858cf139d15afa3634eb1d3af97ba65bd24f852d4ff222">HASH_ARGON2ID</a>
+, <br />
+&#160;&#160;<a class="el" href="classCUser.html#af1c920f65be0d78a064858cf139d15afa5e2d0347b9c6f5b6a0c1b1082185d700">HASH_DEFAULT</a> = HASH_SHA256
+<br />
  }</td></tr>
 <tr class="separator:af1c920f65be0d78a064858cf139d15af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -163,8 +167,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae17386027db366333a5d1914dbef2622"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1475122d2f6e9c3e0eb3a631451205e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCConfig.html">CConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a1475122d2f6e9c3e0eb3a631451205e5">ToConfig</a> () const</td></tr>
 <tr class="separator:a1475122d2f6e9c3e0eb3a631451205e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a906dfa564c7a5309191bd1d8f7ce21bb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a906dfa564c7a5309191bd1d8f7ce21bb">CheckPass</a> (const <a class="el" href="classCString.html">CString</a> &amp;sPass) const</td></tr>
-<tr class="separator:a906dfa564c7a5309191bd1d8f7ce21bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d44430610583c0e3673ac47025f7331"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a3d44430610583c0e3673ac47025f7331">CheckPass</a> (const <a class="el" href="classCString.html">CString</a> &amp;sPass)</td></tr>
+<tr class="memdesc:a3d44430610583c0e3673ac47025f7331"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks password, may upgrade the hash method.  <a href="classCUser.html#a3d44430610583c0e3673ac47025f7331">More...</a><br /></td></tr>
+<tr class="separator:a3d44430610583c0e3673ac47025f7331"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e0035f6e23425108972ae56b2fcac7d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#a4e0035f6e23425108972ae56b2fcac7d">AddAllowedHost</a> (const <a class="el" href="classCString.html">CString</a> &amp;sHostMask)</td></tr>
 <tr class="separator:a4e0035f6e23425108972ae56b2fcac7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae93ebb3929b88bac49d4d92c773f115e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUser.html#ae93ebb3929b88bac49d4d92c773f115e">RemAllowedHost</a> (const <a class="el" href="classCString.html">CString</a> &amp;sHostMask)</td></tr>
@@ -553,6 +558,7 @@ Protected Attributes</h2></td></tr>
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af1c920f65be0d78a064858cf139d15afae84df4f6040e1ada460cc5f73764a7f9"></a>HASH_NONE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="af1c920f65be0d78a064858cf139d15afa0ebc63c2c8428f17c4c76708b7732cd0"></a>HASH_MD5&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="af1c920f65be0d78a064858cf139d15afa0496c406ae3f37e4c2d9c9d14bb7271a"></a>HASH_SHA256&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af1c920f65be0d78a064858cf139d15afa3634eb1d3af97ba65bd24f852d4ff222"></a>HASH_ARGON2ID&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="af1c920f65be0d78a064858cf139d15afa5e2d0347b9c6f5b6a0c1b1082185d700"></a>HASH_DEFAULT&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
@@ -945,8 +951,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a906dfa564c7a5309191bd1d8f7ce21bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a906dfa564c7a5309191bd1d8f7ce21bb">&#9670;&nbsp;</a></span>CheckPass()</h2>
+<a id="a3d44430610583c0e3673ac47025f7331"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d44430610583c0e3673ac47025f7331">&#9670;&nbsp;</a></span>CheckPass()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -956,10 +962,12 @@ Protected Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>sPass</em></td><td>)</td>
-          <td> const</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Checks password, may upgrade the hash method. </p>
 
 </div>
 </div>
@@ -2669,7 +2677,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="classCUtils.html#a64da29f0a0d3d4fbedb97adeed80637c">CUtils::SaltedSHA256Hash()</a>.</p>
+<p class="reference">References <a class="el" href="classCUtils.html#a767715f3a9b8c143bdc939cb1a70826a">CUtils::SaltedHash()</a>.</p>
 
 </div>
 </div>
@@ -4716,7 +4724,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 2 2022 23:24:56 for ZNC by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Sep 27 2023 08:26:36 for ZNC by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

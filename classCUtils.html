@@ -65,7 +65,6 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="classCUtils-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">CUtils Class Reference</div>  </div>
@@ -73,19 +72,6 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="Utils_8h_source.html">Utils.h</a>&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for CUtils:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classCUtils__coll__graph.png" border="0" usemap="#aCUtils_coll__map" alt="Collaboration graph"/></div>
-<map name="aCUtils_coll__map" id="aCUtils_coll__map">
-<area shape="rect" title=" " alt="" coords="44,261,105,288"/>
-<area shape="rect" href="classCString.html" title="String class that is used inside ZNC." alt="" coords="40,172,109,199"/>
-<area shape="rect" title=" " alt="" coords="31,96,118,123"/>
-<area shape="rect" title=" " alt="" coords="5,5,144,47"/>
-</map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -110,14 +96,17 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:ad5128efe3eff62abc007a544e36658cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2766100b2ab61d7b24863cabeff9608"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUtils.html#ab2766100b2ab61d7b24863cabeff9608">PrintStatus</a> (bool bSuccess, const <a class="el" href="classCString.html">CString</a> &amp;sMessage=&quot;&quot;)</td></tr>
 <tr class="separator:ab2766100b2ab61d7b24863cabeff9608"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d842393cfe7dd57bc839e3015b5bf54"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUtils.html#a6d842393cfe7dd57bc839e3015b5bf54">GetSaltedHashPass</a> (<a class="el" href="classCString.html">CString</a> &amp;sSalt)</td></tr>
-<tr class="separator:a6d842393cfe7dd57bc839e3015b5bf54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bdc1b2806b2524e51a530793d5d54e1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUtils.html#a6bdc1b2806b2524e51a530793d5d54e1">AskSaltedHashPassForConfig</a> ()</td></tr>
+<tr class="memdesc:a6bdc1b2806b2524e51a530793d5d54e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asks password from stdin, with confirmation.  <a href="classCUtils.html#a6bdc1b2806b2524e51a530793d5d54e1">More...</a><br /></td></tr>
+<tr class="separator:a6bdc1b2806b2524e51a530793d5d54e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95c8761a0282623605d0aa595d1f37fb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUtils.html#a95c8761a0282623605d0aa595d1f37fb">GetSalt</a> ()</td></tr>
 <tr class="separator:a95c8761a0282623605d0aa595d1f37fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f0692075073b07d83bd22146f2eff3c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUtils.html#a2f0692075073b07d83bd22146f2eff3c">SaltedMD5Hash</a> (const <a class="el" href="classCString.html">CString</a> &amp;sPass, const <a class="el" href="classCString.html">CString</a> &amp;sSalt)</td></tr>
 <tr class="separator:a2f0692075073b07d83bd22146f2eff3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64da29f0a0d3d4fbedb97adeed80637c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUtils.html#a64da29f0a0d3d4fbedb97adeed80637c">SaltedSHA256Hash</a> (const <a class="el" href="classCString.html">CString</a> &amp;sPass, const <a class="el" href="classCString.html">CString</a> &amp;sSalt)</td></tr>
 <tr class="separator:a64da29f0a0d3d4fbedb97adeed80637c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a767715f3a9b8c143bdc939cb1a70826a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUtils.html#a767715f3a9b8c143bdc939cb1a70826a">SaltedHash</a> (const <a class="el" href="classCString.html">CString</a> &amp;sPass, const <a class="el" href="classCString.html">CString</a> &amp;sSalt)</td></tr>
+<tr class="separator:a767715f3a9b8c143bdc939cb1a70826a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d13d6a7dc5966633726cfd259c748f1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUtils.html#a2d13d6a7dc5966633726cfd259c748f1">GetPass</a> (const <a class="el" href="classCString.html">CString</a> &amp;sPrompt)</td></tr>
 <tr class="separator:a2d13d6a7dc5966633726cfd259c748f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf353cd3253aaa0e2c466be99d4b9048"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUtils.html#abf353cd3253aaa0e2c466be99d4b9048">GetInput</a> (const <a class="el" href="classCString.html">CString</a> &amp;sPrompt, <a class="el" href="classCString.html">CString</a> &amp;sRet, const <a class="el" href="classCString.html">CString</a> &amp;sDefault=&quot;&quot;, const <a class="el" href="classCString.html">CString</a> &amp;sHint=&quot;&quot;)</td></tr>
@@ -156,11 +145,6 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:ab7374d12ececc457863cbeb5aff8f5ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8227de4f84982154cdf8ab1435726e83"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUtils.html#a8227de4f84982154cdf8ab1435726e83">SetMessageTags</a> (<a class="el" href="classCString.html">CString</a> &amp;sLine, const <a class="el" href="classMCString.html">MCString</a> &amp;mssTags)</td></tr>
 <tr class="separator:a8227de4f84982154cdf8ab1435726e83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:ad020e37d2067a52212afe0158374a5b9"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCUtils.html#ad020e37d2067a52212afe0158374a5b9">sDefaultHash</a></td></tr>
-<tr class="separator:ad020e37d2067a52212afe0158374a5b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a1a00f2dc59d68a7c9bbdaf77e2f1a5c7"></a>
@@ -198,6 +182,34 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a6bdc1b2806b2524e51a530793d5d54e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bdc1b2806b2524e51a530793d5d54e1">&#9670;&nbsp;</a></span>AskSaltedHashPassForConfig()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classCString.html">CString</a> CUtils::AskSaltedHashPassForConfig </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Asks password from stdin, with confirmation. </p>
+<dl class="section return"><dt>Returns</dt><dd>Piece of znc.conf with &lt;Pass&gt; block </dd></dl>
+
+</div>
+</div>
 <a id="a0220c8fd9099441ae4b85a410537caea"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0220c8fd9099441ae4b85a410537caea">&#9670;&nbsp;</a></span>CheckCIDR()</h2>
 
@@ -786,32 +798,6 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a6d842393cfe7dd57bc839e3015b5bf54"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6d842393cfe7dd57bc839e3015b5bf54">&#9670;&nbsp;</a></span>GetSaltedHashPass()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="classCString.html">CString</a> CUtils::GetSaltedHashPass </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
-          <td class="paramname"><em>sSalt</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a9c19f18363208ffd290da11a345ba8ab"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9c19f18363208ffd290da11a345ba8ab">&#9670;&nbsp;</a></span>GetTime()</h2>
 
@@ -1038,6 +1024,44 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a767715f3a9b8c143bdc939cb1a70826a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a767715f3a9b8c143bdc939cb1a70826a">&#9670;&nbsp;</a></span>SaltedHash()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classCString.html">CString</a> CUtils::SaltedHash </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
+          <td class="paramname"><em>sPass</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
+          <td class="paramname"><em>sSalt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="classCUser.html#a9ca86456055ddab081c320ed01c176fe">CUser::SaltedHash()</a>.</p>
+
+</div>
+</div>
 <a id="a2f0692075073b07d83bd22146f2eff3c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2f0692075073b07d83bd22146f2eff3c">&#9670;&nbsp;</a></span>SaltedMD5Hash()</h2>
 
@@ -1108,8 +1132,6 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="classCUser.html#a9ca86456055ddab081c320ed01c176fe">CUser::SaltedHash()</a>.</p>
-
 </div>
 </div>
 <a id="a8227de4f84982154cdf8ab1435726e83"></a>
@@ -1149,36 +1171,13 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="ad020e37d2067a52212afe0158374a5b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad020e37d2067a52212afe0158374a5b9">&#9670;&nbsp;</a></span>sDefaultHash</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="classCString.html">CString</a> CUtils::sDefaultHash</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="Utils_8h_source.html">Utils.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 2 2022 23:24:56 for ZNC by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Sep 27 2023 08:26:36 for ZNC by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
