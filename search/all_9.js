@@ -67,12 +67,12 @@ var searchData=
   ['istrue_934',['IsTrue',['../classCTemplate.html#ac1bd3e2d29d53726294c898e69d74794',1,'CTemplate']]],
   ['isuserattached_935',['IsUserAttached',['../classCUser.html#ad1502aa16e310481ebf0c6f2c4822828',1,'CUser::IsUserAttached()'],['../classCIRCNetwork.html#a1af1a26176f446054c1febf55929db43',1,'CIRCNetwork::IsUserAttached() const']]],
   ['isuseronline_936',['IsUserOnline',['../classCIRCNetwork.html#a3ad99e4a8196b05116c07dcfc3601652',1,'CIRCNetwork']]],
-  ['isvalid_937',['IsValid',['../classCUser.html#a3de3189c2088f0de4898162b62368b5d',1,'CUser']]],
-  ['isvalid_938',['isValid',['../classCCron.html#aea03cbadbf195c0ce6f035c06557eef6',1,'CCron']]],
+  ['isvalid_937',['isValid',['../classCCron.html#aea03cbadbf195c0ce6f035c06557eef6',1,'CCron']]],
+  ['isvalid_938',['IsValid',['../classCUser.html#a3de3189c2088f0de4898162b62368b5d',1,'CUser']]],
   ['isvalidhostname_939',['IsValidHostName',['../classCServer.html#a90810ca5e292e219244a800ad8e7cee0',1,'CServer']]],
   ['isvalididentifier_940',['IsValidIdentifier',['../classCClient.html#a25e8c5f0e58ba2b8132d073576a295ef',1,'CClient']]],
   ['isvalidnetwork_941',['IsValidNetwork',['../classCIRCNetwork.html#a3253620b3dc05b53547a5cbc84c1872f',1,'CIRCNetwork']]],
-  ['isvalidusername_942',['IsValidUserName',['../classCUser.html#a1efe4435c5de75413209fedf51f985fd',1,'CUser']]],
-  ['isvalidusername_943',['IsValidUsername',['../classCUser.html#aa180668fe02e81c793e16efdd2f214fe',1,'CUser']]],
+  ['isvalidusername_942',['IsValidUsername',['../classCUser.html#aa180668fe02e81c793e16efdd2f214fe',1,'CUser']]],
+  ['isvalidusername_943',['IsValidUserName',['../classCUser.html#a1efe4435c5de75413209fedf51f985fd',1,'CUser']]],
   ['iterator_944',['iterator',['../classTCacheMap.html#ac29fbd1d01dec1b68e626e1c1bed4f8c',1,'TCacheMap']]]
 ];
