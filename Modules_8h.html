@@ -83,6 +83,7 @@ $(function() {
 <code>#include &lt;<a class="el" href="main_8h_source.html">znc/main.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="Translation_8h_source.html">znc/Translation.h</a>&gt;</code><br />
 <code>#include &lt;functional&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;set&gt;</code><br />
 <code>#include &lt;queue&gt;</code><br />
 <code>#include &lt;sys/time.h&gt;</code><br />
@@ -93,56 +94,56 @@ $(function() {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="Modules_8h__incl.png" border="0" usemap="#aModules_8h" alt=""/></div>
 <map name="aModules_8h" id="aModules_8h">
-<area shape="rect" title=" " alt="" coords="2206,5,2295,32"/>
-<area shape="rect" title=" " alt="" coords="866,528,987,555"/>
-<area shape="rect" href="WebModules_8h.html" title=" " alt="" coords="962,80,1105,107"/>
-<area shape="rect" title=" " alt="" coords="2241,528,2284,555"/>
-<area shape="rect" href="Threads_8h.html" title=" " alt="" coords="1568,304,1680,331"/>
-<area shape="rect" href="Utils_8h.html" title=" " alt="" coords="2009,379,2100,405"/>
-<area shape="rect" title=" " alt="" coords="2295,453,2385,480"/>
-<area shape="rect" href="Translation_8h.html" title=" " alt="" coords="837,304,968,331"/>
-<area shape="rect" href="Message_8h.html" title=" " alt="" coords="2189,304,2307,331"/>
-<area shape="rect" href="main_8h.html" title=" " alt="" coords="2204,80,2297,107"/>
-<area shape="rect" title=" " alt="" coords="2511,80,2598,107"/>
-<area shape="rect" title=" " alt="" coords="2622,80,2685,107"/>
-<area shape="rect" href="Template_8h.html" title=" " alt="" coords="639,304,759,331"/>
-<area shape="rect" href="HTTPSock_8h.html" title=" " alt="" coords="275,155,400,181"/>
-<area shape="rect" href="ZNCString_8h.html" title=" " alt="" coords="1107,453,1234,480"/>
-<area shape="rect" title=" " alt="" coords="519,379,599,405"/>
-<area shape="rect" title=" " alt="" coords="1117,379,1160,405"/>
-<area shape="rect" title=" " alt="" coords="623,379,700,405"/>
-<area shape="rect" title=" " alt="" coords="1725,528,1776,555"/>
-<area shape="rect" title=" " alt="" coords="1147,528,1205,555"/>
-<area shape="rect" title=" " alt="" coords="1939,528,2002,555"/>
-<area shape="rect" title=" " alt="" coords="1229,528,1304,555"/>
-<area shape="rect" title=" " alt="" coords="1328,528,1424,555"/>
-<area shape="rect" title=" " alt="" coords="1011,528,1122,555"/>
-<area shape="rect" href="Socket_8h.html" title=" " alt="" coords="379,229,482,256"/>
-<area shape="rect" href="FileUtils_8h.html" title=" " alt="" coords="279,379,393,405"/>
-<area shape="rect" title=" " alt="" coords="282,304,393,331"/>
-<area shape="rect" title=" " alt="" coords="1549,379,1611,405"/>
-<area shape="rect" title=" " alt="" coords="1635,379,1703,405"/>
-<area shape="rect" title=" " alt="" coords="1727,379,1793,405"/>
-<area shape="rect" title=" " alt="" coords="1817,379,1884,405"/>
-<area shape="rect" title=" " alt="" coords="1185,379,1269,405"/>
-<area shape="rect" title=" " alt="" coords="1293,379,1357,405"/>
-<area shape="rect" title=" " alt="" coords="1382,379,1525,405"/>
-<area shape="rect" title=" " alt="" coords="1567,453,1641,480"/>
-<area shape="rect" title=" " alt="" coords="1665,453,1727,480"/>
-<area shape="rect" title=" " alt="" coords="1021,453,1083,480"/>
-<area shape="rect" title=" " alt="" coords="1751,453,1831,480"/>
-<area shape="rect" title=" " alt="" coords="641,453,716,480"/>
-<area shape="rect" title=" " alt="" coords="1855,453,1966,480"/>
-<area shape="rect" title=" " alt="" coords="1258,453,1401,480"/>
-<area shape="rect" title=" " alt="" coords="1425,453,1543,480"/>
-<area shape="rect" title=" " alt="" coords="918,379,1042,405"/>
-<area shape="rect" title=" " alt="" coords="826,379,894,405"/>
-<area shape="rect" title=" " alt="" coords="93,453,165,480"/>
-<area shape="rect" title=" " alt="" coords="190,453,261,480"/>
-<area shape="rect" title=" " alt="" coords="285,453,355,480"/>
-<area shape="rect" title=" " alt="" coords="380,453,465,480"/>
-<area shape="rect" href="Nick_8h.html" title=" " alt="" coords="2194,379,2283,405"/>
-<area shape="rect" href="version_8h.html" title=" " alt="" coords="2226,155,2334,181"/>
+<area shape="rect" title=" " alt="" coords="2598,5,2687,32"/>
+<area shape="rect" title=" " alt="" coords="1970,528,2091,555"/>
+<area shape="rect" href="WebModules_8h.html" title=" " alt="" coords="1802,80,1945,107"/>
+<area shape="rect" title=" " alt="" coords="2536,528,2579,555"/>
+<area shape="rect" title=" " alt="" coords="2687,379,2764,405"/>
+<area shape="rect" href="Threads_8h.html" title=" " alt="" coords="2057,304,2169,331"/>
+<area shape="rect" href="Utils_8h.html" title=" " alt="" coords="903,379,993,405"/>
+<area shape="rect" title=" " alt="" coords="5,453,96,480"/>
+<area shape="rect" href="Translation_8h.html" title=" " alt="" coords="1248,304,1379,331"/>
+<area shape="rect" href="Message_8h.html" title=" " alt="" coords="327,304,446,331"/>
+<area shape="rect" href="main_8h.html" title=" " alt="" coords="2713,80,2807,107"/>
+<area shape="rect" title=" " alt="" coords="2991,80,3078,107"/>
+<area shape="rect" title=" " alt="" coords="3102,80,3165,107"/>
+<area shape="rect" href="Template_8h.html" title=" " alt="" coords="2456,304,2576,331"/>
+<area shape="rect" href="HTTPSock_8h.html" title=" " alt="" coords="1545,155,1671,181"/>
+<area shape="rect" href="ZNCString_8h.html" title=" " alt="" coords="323,453,450,480"/>
+<area shape="rect" title=" " alt="" coords="2583,379,2663,405"/>
+<area shape="rect" title=" " alt="" coords="2465,379,2508,405"/>
+<area shape="rect" title=" " alt="" coords="113,528,164,555"/>
+<area shape="rect" title=" " alt="" coords="636,528,695,555"/>
+<area shape="rect" title=" " alt="" coords="194,528,257,555"/>
+<area shape="rect" title=" " alt="" coords="281,528,356,555"/>
+<area shape="rect" title=" " alt="" coords="380,528,476,555"/>
+<area shape="rect" title=" " alt="" coords="501,528,611,555"/>
+<area shape="rect" href="Socket_8h.html" title=" " alt="" coords="1513,229,1615,256"/>
+<area shape="rect" href="FileUtils_8h.html" title=" " alt="" coords="1451,379,1565,405"/>
+<area shape="rect" title=" " alt="" coords="1454,304,1565,331"/>
+<area shape="rect" title=" " alt="" coords="2146,379,2209,405"/>
+<area shape="rect" title=" " alt="" coords="2233,379,2301,405"/>
+<area shape="rect" title=" " alt="" coords="2325,379,2390,405"/>
+<area shape="rect" title=" " alt="" coords="1691,379,1757,405"/>
+<area shape="rect" title=" " alt="" coords="1782,379,1866,405"/>
+<area shape="rect" title=" " alt="" coords="1891,379,1955,405"/>
+<area shape="rect" title=" " alt="" coords="1979,379,2122,405"/>
+<area shape="rect" title=" " alt="" coords="1108,453,1183,480"/>
+<area shape="rect" title=" " alt="" coords="475,453,536,480"/>
+<area shape="rect" title=" " alt="" coords="1407,453,1470,480"/>
+<area shape="rect" title=" " alt="" coords="560,453,640,480"/>
+<area shape="rect" title=" " alt="" coords="1257,453,1332,480"/>
+<area shape="rect" title=" " alt="" coords="665,453,775,480"/>
+<area shape="rect" title=" " alt="" coords="799,453,942,480"/>
+<area shape="rect" title=" " alt="" coords="967,453,1084,480"/>
+<area shape="rect" title=" " alt="" coords="1211,379,1335,405"/>
+<area shape="rect" title=" " alt="" coords="1359,379,1427,405"/>
+<area shape="rect" title=" " alt="" coords="1845,453,1917,480"/>
+<area shape="rect" title=" " alt="" coords="1546,453,1617,480"/>
+<area shape="rect" title=" " alt="" coords="1641,453,1711,480"/>
+<area shape="rect" title=" " alt="" coords="1736,453,1821,480"/>
+<area shape="rect" href="Nick_8h.html" title=" " alt="" coords="250,379,339,405"/>
+<area shape="rect" href="version_8h.html" title=" " alt="" coords="2706,155,2814,181"/>
 </map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -164,6 +165,8 @@ $(function() {
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCModuleEntry.html">CModuleEntry</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">C-style entry point to the module.  <a href="structCModuleEntry.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCapability.html">CCapability</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCTimer.html">CTimer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -306,10 +309,10 @@ Functions</h2></td></tr>
 <div class="line">        return &amp;ThisModule;                                                 \</div>
 <div class="line">    }                                                                       \</div>
 <div class="line">    }</div>
-<div class="ttc" id="aclassCModInfo_html"><div class="ttname"><a href="classCModInfo.html">CModInfo</a></div><div class="ttdef"><b>Definition:</b> Modules.h:244</div></div>
+<div class="ttc" id="aclassCModInfo_html"><div class="ttname"><a href="classCModInfo.html">CModInfo</a></div><div class="ttdef"><b>Definition:</b> Modules.h:258</div></div>
 <div class="ttc" id="aclassCModInfo_html_a648b736811e69acfd6b7c867bc671ad3"><div class="ttname"><a href="classCModInfo.html#a648b736811e69acfd6b7c867bc671ad3">CModInfo::t_s</a></div><div class="ttdeci">CString t_s(const CString &amp;sEnglish, const CString &amp;sContext=&quot;&quot;) const</div></div>
 <div class="ttc" id="aclassCString_html"><div class="ttname"><a href="classCString.html">CString</a></div><div class="ttdoc">String class that is used inside ZNC.</div><div class="ttdef"><b>Definition:</b> ZNCString.h:68</div></div>
-<div class="ttc" id="astructCModuleEntry_html"><div class="ttname"><a href="structCModuleEntry.html">CModuleEntry</a></div><div class="ttdoc">C-style entry point to the module.</div><div class="ttdef"><b>Definition:</b> Modules.h:80</div></div>
+<div class="ttc" id="astructCModuleEntry_html"><div class="ttname"><a href="structCModuleEntry.html">CModuleEntry</a></div><div class="ttdoc">C-style entry point to the module.</div><div class="ttdef"><b>Definition:</b> Modules.h:81</div></div>
 <div class="ttc" id="aversion_8h_html_a078eaa4fbbcc2c248521462f87787e87"><div class="ttname"><a href="version_8h.html#a078eaa4fbbcc2c248521462f87787e87">VERSION_EXTRA</a></div><div class="ttdeci">#define VERSION_EXTRA</div><div class="ttdef"><b>Definition:</b> version.h:24</div></div>
 </div><!-- fragment -->
 </div>
@@ -333,10 +336,10 @@ Functions</h2></td></tr>
 <div class="line">          <span class="keyword">const</span> <a class="code" href="classCString.html">CString</a>&amp; sModName, <span class="keyword">const</span> <a class="code" href="classCString.html">CString</a>&amp; sModPath,    \</div>
 <div class="line">          <a class="code" href="classCModInfo.html#a616fabebbbf49bf06cfff90b8f32c57f">CModInfo::EModuleType</a> eType)                         \</div>
 <div class="line">        : <a class="code" href="classCModule.html">CModule</a>(pDLL, pUser, pNetwork, sModName, sModPath, eType)</div>
-<div class="ttc" id="aModules_8h_html_a2f2b7746e7590ac0383278e975f13855"><div class="ttname"><a href="Modules_8h.html#a2f2b7746e7590ac0383278e975f13855">ModHandle</a></div><div class="ttdeci">void * ModHandle</div><div class="ttdef"><b>Definition:</b> Modules.h:242</div></div>
+<div class="ttc" id="aModules_8h_html_a2f2b7746e7590ac0383278e975f13855"><div class="ttname"><a href="Modules_8h.html#a2f2b7746e7590ac0383278e975f13855">ModHandle</a></div><div class="ttdeci">void * ModHandle</div><div class="ttdef"><b>Definition:</b> Modules.h:256</div></div>
 <div class="ttc" id="aclassCIRCNetwork_html"><div class="ttname"><a href="classCIRCNetwork.html">CIRCNetwork</a></div><div class="ttdef"><b>Definition:</b> IRCNetwork.h:40</div></div>
-<div class="ttc" id="aclassCModInfo_html_a616fabebbbf49bf06cfff90b8f32c57f"><div class="ttname"><a href="classCModInfo.html#a616fabebbbf49bf06cfff90b8f32c57f">CModInfo::EModuleType</a></div><div class="ttdeci">EModuleType</div><div class="ttdef"><b>Definition:</b> Modules.h:246</div></div>
-<div class="ttc" id="aclassCModule_html"><div class="ttname"><a href="classCModule.html">CModule</a></div><div class="ttdoc">The base class for your own ZNC modules.</div><div class="ttdef"><b>Definition:</b> Modules.h:406</div></div>
+<div class="ttc" id="aclassCModInfo_html_a616fabebbbf49bf06cfff90b8f32c57f"><div class="ttname"><a href="classCModInfo.html#a616fabebbbf49bf06cfff90b8f32c57f">CModInfo::EModuleType</a></div><div class="ttdeci">EModuleType</div><div class="ttdef"><b>Definition:</b> Modules.h:260</div></div>
+<div class="ttc" id="aclassCModule_html"><div class="ttname"><a href="classCModule.html">CModule</a></div><div class="ttdoc">The base class for your own ZNC modules.</div><div class="ttdef"><b>Definition:</b> Modules.h:420</div></div>
 <div class="ttc" id="aclassCUser_html"><div class="ttname"><a href="classCUser.html">CUser</a></div><div class="ttdef"><b>Definition:</b> User.h:38</div></div>
 </div><!-- fragment -->
 <p>Instead of writing a constructor, you should call this macro. </p>
@@ -346,7 +349,7 @@ Functions</h2></td></tr>
 <div class="line">        <span class="comment">// Your own constructor&#39;s code here</span></div>
 <div class="line">    }</div>
 <div class="line">}</div>
-<div class="ttc" id="aModules_8h_html_a4cb82bfe0e2c41d222152aaec5300156"><div class="ttname"><a href="Modules_8h.html#a4cb82bfe0e2c41d222152aaec5300156">MODCONSTRUCTOR</a></div><div class="ttdeci">#define MODCONSTRUCTOR(CLASS)</div><div class="ttdoc">Instead of writing a constructor, you should call this macro.</div><div class="ttdef"><b>Definition:</b> Modules.h:126</div></div>
+<div class="ttc" id="aModules_8h_html_a4cb82bfe0e2c41d222152aaec5300156"><div class="ttname"><a href="Modules_8h.html#a4cb82bfe0e2c41d222152aaec5300156">MODCONSTRUCTOR</a></div><div class="ttdeci">#define MODCONSTRUCTOR(CLASS)</div><div class="ttdoc">Instead of writing a constructor, you should call this macro.</div><div class="ttdef"><b>Definition:</b> Modules.h:127</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">CLASS</td><td>The name of your module's class. </td></tr>
@@ -574,7 +577,7 @@ template&lt;class M &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 19 2023 09:08:00 for ZNC by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Fri Jan 26 2024 02:07:20 for ZNC by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

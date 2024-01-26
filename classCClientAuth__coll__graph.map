@@ -1,49 +1,48 @@
 <map id="CClientAuth" name="CClientAuth">
-<area shape="rect" id="node1" title=" " alt="" coords="2435,1399,2533,1425"/>
-<area shape="rect" id="node2" href="$classCAuthBase.html" title=" " alt="" coords="1449,1409,1543,1436"/>
-<area shape="rect" id="node3" href="$classCCoreTranslationMixin.html" title=" " alt="" coords="1117,1417,1285,1444"/>
+<area shape="rect" id="node1" title=" " alt="" coords="2435,1232,2533,1259"/>
+<area shape="rect" id="node2" href="$classCAuthBase.html" title=" " alt="" coords="1449,1232,1543,1259"/>
+<area shape="rect" id="node3" href="$classCCoreTranslationMixin.html" title=" " alt="" coords="1117,1257,1285,1284"/>
 <area shape="rect" id="node6" href="$classCZNCSock.html" title=" " alt="" coords="1335,1460,1425,1487"/>
-<area shape="rect" id="node18" href="$classCUser.html" title=" " alt="" coords="2863,1215,2925,1241"/>
-<area shape="rect" id="node20" href="$classCModules.html" title=" " alt="" coords="3495,1223,3582,1249"/>
-<area shape="rect" id="node23" href="$classCIRCNetwork.html" title=" " alt="" coords="3138,925,3246,952"/>
-<area shape="rect" id="node29" href="$classCChan.html" title=" " alt="" coords="4082,595,4146,621"/>
-<area shape="rect" id="node4" href="$classCClient.html" title=" " alt="" coords="2068,1149,2137,1176"/>
-<area shape="rect" id="node19" title=" " alt="" coords="2395,1184,2573,1211"/>
+<area shape="rect" id="node17" href="$classCUser.html" title=" " alt="" coords="2863,1060,2925,1087"/>
+<area shape="rect" id="node19" href="$classCModules.html" title=" " alt="" coords="3495,1120,3582,1147"/>
+<area shape="rect" id="node22" href="$classCIRCNetwork.html" title=" " alt="" coords="3138,845,3246,872"/>
+<area shape="rect" id="node28" href="$classCChan.html" title=" " alt="" coords="4113,517,4177,544"/>
+<area shape="rect" id="node4" href="$classCClient.html" title=" " alt="" coords="2068,1160,2137,1187"/>
+<area shape="rect" id="node18" title=" " alt="" coords="2395,1068,2573,1095"/>
 <area shape="rect" id="node5" href="$classCIRCSocket.html" title="Base IRC socket for client&lt;&#45;&gt;ZNC, and ZNC&lt;&#45;&gt;server." alt="" coords="1629,1460,1725,1487"/>
-<area shape="rect" id="node27" href="$classCIRCSock.html" title=" " alt="" coords="4656,952,4740,979"/>
-<area shape="rect" id="node7" href="$classCsock.html" title="Basic socket class." alt="" coords="1171,1476,1232,1503"/>
-<area shape="rect" id="node8" href="$classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock" alt="" coords="938,1476,1059,1503"/>
-<area shape="rect" id="node9" title=" " alt="" coords="579,1451,750,1477"/>
-<area shape="rect" id="node10" href="$classCCron.html" title="this is the main cron job class" alt="" coords="359,1451,420,1477"/>
-<area shape="rect" id="node11" title=" " alt="" coords="556,1501,773,1528"/>
-<area shape="rect" id="node12" href="$classCSMonitorFD.html" title="Class to tie sockets to for monitoring by Csocket at either the Csock or TSockManager." alt="" coords="336,1501,443,1528"/>
-<area shape="rect" id="node13" title=" " alt="" coords="5,1494,167,1535"/>
-<area shape="rect" id="node14" title=" " alt="" coords="1597,1041,1756,1111"/>
-<area shape="rect" id="node15" href="$classCString.html" title="String class that is used inside ZNC." alt="" coords="1345,568,1415,595"/>
-<area shape="rect" id="node24" href="$classCNick.html" title=" " alt="" coords="3509,747,3569,773"/>
-<area shape="rect" id="node28" title=" " alt="" coords="4303,587,4448,629"/>
-<area shape="rect" id="node30" title=" " alt="" coords="3788,558,3933,599"/>
-<area shape="rect" id="node31" title=" " alt="" coords="1811,317,2003,344"/>
-<area shape="rect" id="node33" title=" " alt="" coords="2203,88,2371,115"/>
-<area shape="rect" id="node39" title=" " alt="" coords="1603,893,1750,920"/>
-<area shape="rect" id="node45" href="$classCServer.html" title=" " alt="" coords="1640,568,1713,595"/>
-<area shape="rect" id="node16" title=" " alt="" coords="1158,568,1245,595"/>
-<area shape="rect" id="node17" title=" " alt="" coords="929,561,1068,602"/>
-<area shape="rect" id="node21" title=" " alt="" coords="2624,999,2753,1025"/>
-<area shape="rect" id="node22" title=" " alt="" coords="1657,776,1696,803"/>
-<area shape="rect" id="node26" title=" " alt="" coords="2223,635,2351,661"/>
-<area shape="rect" id="node37" title=" " alt="" coords="2035,776,2170,803"/>
-<area shape="rect" id="node46" title=" " alt="" coords="3429,1047,3648,1073"/>
-<area shape="rect" id="node25" href="$classCBuffer.html" title=" " alt="" coords="2859,684,2929,711"/>
-<area shape="rect" id="node43" title=" " alt="" coords="4288,748,4463,775"/>
-<area shape="rect" id="node32" title=" " alt="" coords="4272,1597,4479,1638"/>
-<area shape="rect" id="node34" title=" " alt="" coords="4282,1663,4469,1689"/>
-<area shape="rect" id="node35" href="$classCMessage.html" title="Here is a small explanation of how messages on IRC work, and how you can use this class to get useful..." alt="" coords="4069,1663,4159,1689"/>
-<area shape="rect" id="node36" href="$classMCString.html" title="A dictionary for strings." alt="" coords="2443,767,2525,793"/>
-<area shape="rect" id="node38" title=" " alt="" coords="1657,680,1696,707"/>
-<area shape="rect" id="node40" title=" " alt="" coords="4311,1713,4439,1740"/>
-<area shape="rect" id="node41" title=" " alt="" coords="2804,921,2984,948"/>
-<area shape="rect" id="node42" href="$classCQuery.html" title=" " alt="" coords="2449,931,2519,957"/>
-<area shape="rect" id="node44" title=" " alt="" coords="2597,619,2780,645"/>
-<area shape="rect" id="node47" title=" " alt="" coords="1567,1257,1787,1284"/>
+<area shape="rect" id="node26" href="$classCIRCSock.html" title=" " alt="" coords="4687,943,4771,969"/>
+<area shape="rect" id="node7" href="$classCsock.html" title="Basic socket class." alt="" coords="1171,1568,1232,1595"/>
+<area shape="rect" id="node8" href="$classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock" alt="" coords="938,1568,1059,1595"/>
+<area shape="rect" id="node9" title=" " alt="" coords="579,1543,750,1569"/>
+<area shape="rect" id="node10" href="$classCCron.html" title="this is the main cron job class" alt="" coords="359,1543,420,1569"/>
+<area shape="rect" id="node11" title=" " alt="" coords="556,1593,773,1620"/>
+<area shape="rect" id="node12" href="$classCSMonitorFD.html" title="Class to tie sockets to for monitoring by Csocket at either the Csock or TSockManager." alt="" coords="336,1593,443,1620"/>
+<area shape="rect" id="node13" title=" " alt="" coords="5,1586,167,1627"/>
+<area shape="rect" id="node14" href="$classCString.html" title="String class that is used inside ZNC." alt="" coords="1345,361,1415,388"/>
+<area shape="rect" id="node23" href="$classCNick.html" title=" " alt="" coords="3509,781,3569,808"/>
+<area shape="rect" id="node27" title=" " alt="" coords="4333,194,4479,235"/>
+<area shape="rect" id="node29" title=" " alt="" coords="3819,451,3964,493"/>
+<area shape="rect" id="node30" title=" " alt="" coords="1811,285,2003,312"/>
+<area shape="rect" id="node32" title=" " alt="" coords="2203,97,2371,124"/>
+<area shape="rect" id="node38" title=" " alt="" coords="1603,747,1750,773"/>
+<area shape="rect" id="node44" href="$classCServer.html" title=" " alt="" coords="1640,437,1713,464"/>
+<area shape="rect" id="node15" title=" " alt="" coords="1158,361,1245,388"/>
+<area shape="rect" id="node16" title=" " alt="" coords="929,354,1068,395"/>
+<area shape="rect" id="node20" title=" " alt="" coords="2624,1396,2753,1423"/>
+<area shape="rect" id="node21" title=" " alt="" coords="1657,1384,1696,1411"/>
+<area shape="rect" id="node25" title=" " alt="" coords="2223,823,2351,849"/>
+<area shape="rect" id="node36" title=" " alt="" coords="2035,1371,2170,1397"/>
+<area shape="rect" id="node45" title=" " alt="" coords="3429,680,3648,707"/>
+<area shape="rect" id="node24" href="$classCBuffer.html" title=" " alt="" coords="2859,804,2929,831"/>
+<area shape="rect" id="node42" title=" " alt="" coords="4319,716,4493,743"/>
+<area shape="rect" id="node31" title=" " alt="" coords="4303,1434,4509,1475"/>
+<area shape="rect" id="node33" title=" " alt="" coords="4313,1500,4499,1527"/>
+<area shape="rect" id="node34" href="$classCMessage.html" title="Here is a small explanation of how messages on IRC work, and how you can use this class to get useful..." alt="" coords="4100,1500,4189,1527"/>
+<area shape="rect" id="node35" href="$classMCString.html" title="A dictionary for strings." alt="" coords="2443,1372,2525,1399"/>
+<area shape="rect" id="node37" title=" " alt="" coords="1657,1333,1696,1360"/>
+<area shape="rect" id="node39" title=" " alt="" coords="4342,1551,4470,1577"/>
+<area shape="rect" id="node40" title=" " alt="" coords="2804,751,2984,777"/>
+<area shape="rect" id="node41" href="$classCQuery.html" title=" " alt="" coords="2449,764,2519,791"/>
+<area shape="rect" id="node43" title=" " alt="" coords="2597,516,2780,543"/>
+<area shape="rect" id="node46" title=" " alt="" coords="1567,1155,1787,1181"/>
 </map>
