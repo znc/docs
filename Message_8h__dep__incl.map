@@ -1,12 +1,23 @@
 <map id="Message.h" name="Message.h">
-<area shape="rect" id="node1" title=" " alt="" coords="247,5,339,32"/>
-<area shape="rect" id="node2" href="$Buffer_8h.html" title=" " alt="" coords="109,80,181,107"/>
-<area shape="rect" id="node7" href="$Client_8h.html" title=" " alt="" coords="205,80,277,107"/>
-<area shape="rect" id="node9" href="$IRCSock_8h.html" title=" " alt="" coords="302,80,389,107"/>
-<area shape="rect" id="node10" href="$Modules_8h.html" title=" " alt="" coords="413,80,502,107"/>
-<area shape="rect" id="node3" href="$Chan_8h.html" title=" " alt="" coords="5,155,72,181"/>
-<area shape="rect" id="node4" href="$IRCNetwork_8h.html" title=" " alt="" coords="178,229,289,256"/>
-<area shape="rect" id="node5" href="$Query_8h.html" title=" " alt="" coords="147,155,218,181"/>
-<area shape="rect" id="node6" href="$User_8h.html" title=" " alt="" coords="242,155,305,181"/>
-<area shape="rect" id="node8" href="$znc_8h.html" title=" " alt="" coords="329,155,385,181"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="247,5,339,31"/>
+<area shape="rect" id="Node000002" href="$Buffer_8h.html" title=" " alt="" coords="109,79,181,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="259,39,171,81,168,76,256,34"/>
+<area shape="rect" id="Node000007" href="$Client_8h.html" title=" " alt="" coords="205,79,277,104"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="279,43,252,80,248,77,275,40"/>
+<area shape="rect" id="Node000009" href="$IRCSock_8h.html" title=" " alt="" coords="302,79,389,104"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="312,40,339,77,335,80,308,43"/>
+<area shape="rect" id="Node000010" href="$Modules_8h.html" title=" " alt="" coords="413,79,502,104"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="333,34,432,76,429,81,331,39"/>
+<area shape="rect" id="Node000003" href="$Chan_8h.html" title=" " alt="" coords="5,152,72,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="118,114,58,154,55,150,116,109"/>
+<area shape="rect" id="Node000004" href="$IRCNetwork_8h.html" title=" " alt="" coords="178,225,289,251"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="138,118,132,147,133,162,138,176,150,192,165,204,199,223,197,228,162,209,146,195,134,179,128,163,127,147,133,117"/>
+<area shape="rect" id="Node000005" href="$Query_8h.html" title=" " alt="" coords="147,152,218,177"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="160,115,179,151,174,153,155,117"/>
+<area shape="rect" id="Node000006" href="$User_8h.html" title=" " alt="" coords="242,152,305,177"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="179,108,254,149,251,154,177,113"/>
+<area shape="rect" id="Node000008" href="$znc_8h.html" title=" " alt="" coords="329,152,385,177"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="273,109,340,149,337,154,270,113"/>
+<area shape="poly" id="edge8_Node000008_Node000004" title=" " alt="" coords="327,186,255,227,252,223,324,182"/>
+<area shape="poly" id="edge11_Node000010_Node000008" title=" " alt="" coords="432,114,375,154,372,150,429,110"/>
 </map>

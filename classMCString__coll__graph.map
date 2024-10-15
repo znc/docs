@@ -1,6 +1,10 @@
 <map id="MCString" name="MCString">
-<area shape="rect" id="node1" title="A dictionary for strings." alt="" coords="32,171,113,197"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,95,140,121"/>
-<area shape="rect" id="node3" title=" " alt="" coords="21,5,60,32"/>
-<area shape="rect" id="node4" title=" " alt="" coords="87,5,125,32"/>
+<area shape="rect" id="Node000001" title="A dictionary for strings." alt="" coords="32,168,113,193"/>
+<area shape="poly" id="edge4_Node000001_Node000001" title=" " alt="" coords="129,172,140,181,131,188,114,190,113,185,129,183,135,181,126,177"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,93,140,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="75,133,75,168,70,168,70,133"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="21,5,60,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="41,44,44,68,61,91,57,95,40,70,35,45"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="87,5,125,31"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="99,45,80,94,75,92,94,43"/>
 </map>

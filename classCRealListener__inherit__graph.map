@@ -1,7 +1,11 @@
 <map id="CRealListener" name="CRealListener">
-<area shape="rect" id="node1" title=" " alt="" coords="79,229,191,256"/>
-<area shape="rect" id="node2" href="$classCZNCSock.html" title=" " alt="" coords="90,155,181,181"/>
-<area shape="rect" id="node3" href="$classCsock.html" title="Basic socket class." alt="" coords="35,80,97,107"/>
-<area shape="rect" id="node4" href="$classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock" alt="" coords="5,5,127,32"/>
-<area shape="rect" id="node5" href="$classCCoreTranslationMixin.html" title=" " alt="" coords="121,80,289,107"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="79,225,191,251"/>
+<area shape="rect" id="Node000002" href="$classCZNCSock.html" title=" " alt="" coords="90,152,181,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,191,138,225,133,225,133,191"/>
+<area shape="rect" id="Node000003" href="$classCsock.html" title="Basic socket class." alt="" coords="35,79,97,104"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="89,112,126,150,122,154,85,116"/>
+<area shape="rect" id="Node000004" href="$classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock" alt="" coords="5,5,127,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="69,44,69,79,63,79,63,44"/>
+<area shape="rect" id="Node000005" href="$classCCoreTranslationMixin.html" title=" " alt="" coords="121,79,289,104"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="186,116,148,154,145,150,182,112"/>
 </map>

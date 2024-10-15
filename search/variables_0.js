@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['block_3559',['block',['../structsha256__ctx.html#abe511cf139a8a5466d7eebcb1007f1c1',1,'sha256_ctx']]],
-  ['buffer_3560',['buffer',['../structmd5__context.html#ad668d3cb5e0affbbd214a69da28c6d55',1,'md5_context']]]
+  ['block_0',['block',['../structsha256__ctx.html#abe511cf139a8a5466d7eebcb1007f1c1',1,'sha256_ctx']]],
+  ['buffer_1',['buffer',['../structmd5__context.html#ad668d3cb5e0affbbd214a69da28c6d55',1,'md5_context']]]
 ];

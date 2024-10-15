@@ -1,8 +1,13 @@
 <map id="CSocketManager" name="CSocketManager">
-<area shape="rect" id="node1" title="Best class to use to interact with the sockets." alt="" coords="165,80,295,107"/>
-<area shape="rect" id="node4" href="$classTSocketManager.html" title=" " alt="" coords="5,155,233,181"/>
-<area shape="rect" id="node6" href="$classTSocketManager.html" title="Ease of use templated socket manager." alt="" coords="258,155,426,181"/>
-<area shape="rect" id="node2" title=" " alt="" coords="91,5,220,32"/>
-<area shape="rect" id="node3" href="$classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock" alt="" coords="244,5,365,32"/>
-<area shape="rect" id="node5" href="$classCSockManager.html" title=" " alt="" coords="60,229,179,256"/>
+<area shape="rect" id="Node000001" title="Best class to use to interact with the sockets." alt="" coords="165,79,295,104"/>
+<area shape="rect" id="Node000004" href="$classTSocketManager.html" title=" " alt="" coords="5,152,233,177"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="202,114,139,154,136,150,199,109"/>
+<area shape="rect" id="Node000006" href="$classTSocketManager.html" title="Ease of use templated socket manager." alt="" coords="258,152,426,177"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="261,109,325,150,322,154,258,114"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="91,5,220,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="179,38,220,77,216,80,175,42"/>
+<area shape="rect" id="Node000003" href="$classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock" alt="" coords="244,5,365,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="285,42,244,80,240,77,281,38"/>
+<area shape="rect" id="Node000005" href="$classCSockManager.html" title=" " alt="" coords="60,225,179,251"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="122,191,122,225,117,225,117,191"/>
 </map>

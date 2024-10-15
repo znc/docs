@@ -1,9 +1,15 @@
 <map id="CHTTPSock" name="CHTTPSock">
-<area shape="rect" id="node1" title=" " alt="" coords="87,304,183,331"/>
-<area shape="rect" id="node7" href="$classCWebSock.html" title=" " alt="" coords="90,379,181,405"/>
-<area shape="rect" id="node2" href="$classCSocket.html" title="Base Csock implementation to be used by modules." alt="" coords="98,229,173,256"/>
-<area shape="rect" id="node3" href="$classCZNCSock.html" title=" " alt="" coords="90,155,181,181"/>
-<area shape="rect" id="node4" href="$classCsock.html" title="Basic socket class." alt="" coords="35,80,97,107"/>
-<area shape="rect" id="node5" href="$classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock" alt="" coords="5,5,127,32"/>
-<area shape="rect" id="node6" href="$classCCoreTranslationMixin.html" title=" " alt="" coords="121,80,289,107"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="87,299,183,324"/>
+<area shape="rect" id="Node000007" href="$classCWebSock.html" title=" " alt="" coords="90,372,181,397"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="138,338,138,372,133,372,133,338"/>
+<area shape="rect" id="Node000002" href="$classCSocket.html" title="Base Csock implementation to be used by modules." alt="" coords="98,225,173,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,264,138,299,133,299,133,264"/>
+<area shape="rect" id="Node000003" href="$classCZNCSock.html" title=" " alt="" coords="90,152,181,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="138,191,138,225,133,225,133,191"/>
+<area shape="rect" id="Node000004" href="$classCsock.html" title="Basic socket class." alt="" coords="35,79,97,104"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="89,112,126,150,122,154,85,116"/>
+<area shape="rect" id="Node000005" href="$classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock" alt="" coords="5,5,127,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="69,44,69,79,63,79,63,44"/>
+<area shape="rect" id="Node000006" href="$classCCoreTranslationMixin.html" title=" " alt="" coords="121,79,289,104"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="186,116,148,154,145,150,182,112"/>
 </map>
