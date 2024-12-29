@@ -1,7 +1,11 @@
 <map id="Template.h" name="Template.h">
-<area shape="rect" id="node1" title=" " alt="" coords="17,5,111,32"/>
-<area shape="rect" id="node2" href="$WebModules_8h.html" title=" " alt="" coords="5,80,123,107"/>
-<area shape="rect" id="node3" href="$Modules_8h.html" title=" " alt="" coords="19,155,109,181"/>
-<area shape="rect" id="node4" href="$znc_8h.html" title=" " alt="" coords="36,229,92,256"/>
-<area shape="rect" id="node5" href="$IRCNetwork_8h.html" title=" " alt="" coords="9,304,119,331"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="17,5,111,31"/>
+<area shape="rect" id="Node000002" href="$WebModules_8h.html" title=" " alt="" coords="5,79,123,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="67,44,67,79,61,79,61,44"/>
+<area shape="rect" id="Node000003" href="$Modules_8h.html" title=" " alt="" coords="19,152,109,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="67,118,67,152,61,152,61,118"/>
+<area shape="rect" id="Node000004" href="$znc_8h.html" title=" " alt="" coords="36,225,92,251"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="67,191,67,225,61,225,61,191"/>
+<area shape="rect" id="Node000005" href="$IRCNetwork_8h.html" title=" " alt="" coords="9,299,119,324"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="67,264,67,299,61,299,61,264"/>
 </map>

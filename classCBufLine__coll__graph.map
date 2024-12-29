@@ -1,7 +1,11 @@
 <map id="CBufLine" name="CBufLine">
-<area shape="rect" id="node1" title=" " alt="" coords="87,261,167,288"/>
-<area shape="rect" id="node2" href="$classCString.html" title="String class that is used inside ZNC." alt="" coords="40,172,109,199"/>
-<area shape="rect" id="node3" title=" " alt="" coords="31,96,118,123"/>
-<area shape="rect" id="node4" title=" " alt="" coords="5,5,144,47"/>
-<area shape="rect" id="node5" href="$classCMessage.html" title="Here is a small explanation of how messages on IRC work, and how you can use this class to get useful..." alt="" coords="134,172,223,199"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="66,257,146,283"/>
+<area shape="rect" id="Node000002" href="$classCMessage.html" title="Here is a small explanation of how messages on IRC work, and how you can use this class to get useful..." alt="" coords="5,169,95,195"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="49,208,54,232,65,245,79,255,76,259,61,249,49,235,44,209"/>
+<area shape="rect" id="Node000003" href="$classCString.html" title="String class that is used inside ZNC." alt="" coords="129,169,198,195"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="153,208,136,235,118,259,114,256,132,232,148,205"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="120,95,207,120"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="166,134,166,169,161,169,161,134"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="94,5,233,45"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="166,59,166,94,161,94,161,59"/>
 </map>

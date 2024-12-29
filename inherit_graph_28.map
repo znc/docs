@@ -1,3 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classCServer.html" title=" " alt="" coords="5,5,79,32"/>
+<area shape="rect" id="Node000000" href="$classCSMonitorFD.html" title="Class to tie sockets to for monitoring by Csocket at either the Csock or TSockManager." alt="" coords="5,5,112,31"/>
+<area shape="rect" id="Node000001" href="$classCCurlSock.html" title="Csocket style wrapper around libcurl&#45;multi." alt="" coords="160,5,248,31"/>
+<area shape="poly" id="edge49_Node000000_Node000001" title=" " alt="" coords="126,15,160,15,160,21,126,21"/>
 </map>

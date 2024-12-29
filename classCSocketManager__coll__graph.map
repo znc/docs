@@ -1,11 +1,19 @@
 <map id="CSocketManager" name="CSocketManager">
-<area shape="rect" id="node1" title="Best class to use to interact with the sockets." alt="" coords="78,364,209,391"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,288,135,315"/>
-<area shape="rect" id="node3" title=" " alt="" coords="51,199,89,225"/>
-<area shape="rect" id="node4" href="$classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock" alt="" coords="159,288,280,315"/>
-<area shape="rect" id="node5" title=" " alt="" coords="123,199,294,225"/>
-<area shape="rect" id="node6" href="$classCCron.html" title="this is the main cron job class" alt="" coords="178,109,239,136"/>
-<area shape="rect" id="node7" title=" " alt="" coords="319,199,536,225"/>
-<area shape="rect" id="node8" href="$classCSMonitorFD.html" title="Class to tie sockets to for monitoring by Csocket at either the Csock or TSockManager." alt="" coords="374,109,481,136"/>
-<area shape="rect" id="node9" title=" " alt="" coords="347,5,508,47"/>
+<area shape="rect" id="Node000001" title="Best class to use to interact with the sockets." alt="" coords="78,359,209,384"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,284,135,309"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,317,133,356,130,360,90,321"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="51,196,89,221"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="73,235,73,283,67,283,67,235"/>
+<area shape="rect" id="Node000004" href="$classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock" alt="" coords="159,284,280,309"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="199,321,158,360,154,356,195,317"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="123,196,294,221"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="214,235,220,283,215,284,209,236"/>
+<area shape="rect" id="Node000006" href="$classCCron.html" title="this is the main cron job class" alt="" coords="178,108,239,133"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="211,147,211,195,206,195,206,147"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="319,196,536,221"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="388,229,248,286,246,281,386,224"/>
+<area shape="rect" id="Node000008" href="$classCSMonitorFD.html" title="Class to tie sockets to for monitoring by Csocket at either the Csock or TSockManager." alt="" coords="374,108,481,133"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="430,147,430,195,425,195,425,147"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="347,5,508,45"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="430,59,430,108,425,108,425,59"/>
 </map>

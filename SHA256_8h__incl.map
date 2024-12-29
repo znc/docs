@@ -1,6 +1,9 @@
 <map id="SHA256.h" name="SHA256.h">
-<area shape="rect" id="node1" title=" " alt="" coords="151,5,237,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,80,127,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="151,80,237,107"/>
-<area shape="rect" id="node4" title=" " alt="" coords="261,80,332,107"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="151,5,237,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,127,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,33,100,74,98,69,172,28"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="151,79,237,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="197,31,197,65,191,65,191,31"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="261,79,332,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="212,28,270,68,267,73,209,33"/>
 </map>
