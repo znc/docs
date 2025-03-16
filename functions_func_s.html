@@ -82,6 +82,7 @@ $(function() {
 <li>SendCookie()&#160;:&#160;<a class="el" href="classCHTTPSock.html#ad295edb34684206e925f73a089b4e1a9">CHTTPSock</a>, <a class="el" href="classCWebSock.html#a10d7ee6273b081e539c159dc6908fe81">CWebSock</a></li>
 <li>SendMotd()&#160;:&#160;<a class="el" href="classCClient.html#ac822872ee0c32117eccdee1398240a6b">CClient</a></li>
 <li>SendRequiredPasswordNotice()&#160;:&#160;<a class="el" href="classCClient.html#a12ab3fb05bf92cd3c470d2e861eb56e3">CClient</a></li>
+<li>SendSASLChallenge()&#160;:&#160;<a class="el" href="classCClient.html#a6795f4626517db5371c80ba742b6d6b9">CClient</a></li>
 <li>SentHeader()&#160;:&#160;<a class="el" href="classCHTTPSock.html#a5d9648a0057af4eb5912fba1d521bf09">CHTTPSock</a></li>
 <li>SetAcceptType()&#160;:&#160;<a class="el" href="classCListener.html#a8458ea2971076a822fbcc6fd6cd28804">CListener</a></li>
 <li>SetAdmin()&#160;:&#160;<a class="el" href="classCUser.html#afa77424fccbd7b9a2770eec5313c4a9f">CUser</a></li>
@@ -189,7 +190,7 @@ $(function() {
 <li>SetNoTrafficTimeout()&#160;:&#160;<a class="el" href="classCUser.html#ac0233a32e5efefb8cd60e96e2f401347">CUser</a></li>
 <li>SetNV()&#160;:&#160;<a class="el" href="classCModule.html#a7fe4ebfa8b30c371e8718fbe00728a7b">CModule</a></li>
 <li>SetParam()&#160;:&#160;<a class="el" href="classCMessage.html#ae5693433c2368e93095d194e24d19d14">CMessage</a></li>
-<li>SetParams()&#160;:&#160;<a class="el" href="classCMessage.html#ac67327999bcf0376782199c8fa0aa7d2">CMessage</a></li>
+<li>SetParams()&#160;:&#160;<a class="el" href="classCMessage.html#ae421d4c231ce054ea1bd8f5b2e8c0ae3">CMessage</a></li>
 <li>SetParentSockName()&#160;:&#160;<a class="el" href="classCsock.html#a15b6cad8607be4ab31e7a46f0eca55e1">Csock</a></li>
 <li>SetPass()&#160;:&#160;<a class="el" href="classCIRCSock.html#a26f286cdb8d788c0e97bffbd9a333b9e">CIRCSock</a>, <a class="el" href="classCUser.html#a1bf89a3d0ae097bcdc352aa047ef0db1">CUser</a></li>
 <li>SetPath()&#160;:&#160;<a class="el" href="classCModInfo.html#a93853f919494a05cb116ff054b533897">CModInfo</a>, <a class="el" href="classCTemplate.html#a7fff144d50d7dd85be3dcaa157a9e9cf">CTemplate</a></li>
@@ -228,7 +229,7 @@ $(function() {
 <li>SetTags()&#160;:&#160;<a class="el" href="classCBufLine.html#a1df881d8f3aa079121b2f238bc033926">CBufLine</a>, <a class="el" href="classCMessage.html#ad24f4c384e1ac3069b4871f176b26ec2">CMessage</a></li>
 <li>SetTagSupport()&#160;:&#160;<a class="el" href="classCClient.html#a16596197586e197a595e3c4cf574bc29">CClient</a>, <a class="el" href="classCIRCSock.html#a2674d4821ee84902368d04379ad0c684">CIRCSock</a></li>
 <li>SetTarget()&#160;:&#160;<a class="el" href="classCTargetMessage.html#ac7ed5de249bf8bc2d39545cf94405816">CTargetMessage</a></li>
-<li>SetText()&#160;:&#160;<a class="el" href="classCActionMessage.html#aeab4c7d7ac84bce7dfd7f0d9008b6959">CActionMessage</a>, <a class="el" href="classCBufLine.html#a218b3a44c729bdb276d01d564a6d2b40">CBufLine</a>, <a class="el" href="classCCTCPMessage.html#a9a4f528bd46325cfaa4696e68177f25c">CCTCPMessage</a>, <a class="el" href="classCKickMessage.html#a81aa772c497c19b28a84a38aa9eb1efe">CKickMessage</a>, <a class="el" href="classCNoticeMessage.html#ace6df2e329ed6b94f804f04fbe6465b7">CNoticeMessage</a>, <a class="el" href="classCPartMessage.html#a7ff271fa780db9deb9643d801997c748">CPartMessage</a>, <a class="el" href="classCQuitMessage.html#a73d50247465969181552ed632e131ac3">CQuitMessage</a>, <a class="el" href="classCTextMessage.html#a01734e0bafb08572b1d4bdadb91f8e66">CTextMessage</a>, <a class="el" href="classCTopicMessage.html#a58f0f022b929f70bd946fcf974d496bc">CTopicMessage</a></li>
+<li>SetText()&#160;:&#160;<a class="el" href="classCActionMessage.html#aeab4c7d7ac84bce7dfd7f0d9008b6959">CActionMessage</a>, <a class="el" href="classCAuthenticateMessage.html#a0d44de93d5b5bde1a2fdacf53f674847">CAuthenticateMessage</a>, <a class="el" href="classCBufLine.html#a218b3a44c729bdb276d01d564a6d2b40">CBufLine</a>, <a class="el" href="classCCTCPMessage.html#a9a4f528bd46325cfaa4696e68177f25c">CCTCPMessage</a>, <a class="el" href="classCKickMessage.html#a81aa772c497c19b28a84a38aa9eb1efe">CKickMessage</a>, <a class="el" href="classCNoticeMessage.html#ace6df2e329ed6b94f804f04fbe6465b7">CNoticeMessage</a>, <a class="el" href="classCPartMessage.html#a7ff271fa780db9deb9643d801997c748">CPartMessage</a>, <a class="el" href="classCQuitMessage.html#a73d50247465969181552ed632e131ac3">CQuitMessage</a>, <a class="el" href="classCTextMessage.html#a01734e0bafb08572b1d4bdadb91f8e66">CTextMessage</a>, <a class="el" href="classCTopicMessage.html#a58f0f022b929f70bd946fcf974d496bc">CTopicMessage</a></li>
 <li>SetTime()&#160;:&#160;<a class="el" href="classCBufLine.html#ab43e1feae2df949f070b22a5820c0119">CBufLine</a>, <a class="el" href="classCMessage.html#a3c6b3ce1115251b35190eced6de870a0">CMessage</a></li>
 <li>SetTimeout()&#160;:&#160;<a class="el" href="classCSConnection.html#ae514d04ce08b24901381f89f75dffaab">CSConnection</a>, <a class="el" href="classCSListener.html#a4bbf5197ef59e071e8f2ce463718717c">CSListener</a>, <a class="el" href="classCsock.html#a8d9f4c33c736ec6153257c647cf8fa9d">Csock</a></li>
 <li>SetTimeoutType()&#160;:&#160;<a class="el" href="classCsock.html#acff43c3905e9753cf948f97c297c89b9">Csock</a></li>
@@ -258,15 +259,16 @@ $(function() {
 <li>SNIConfigureClient()&#160;:&#160;<a class="el" href="classCsock.html#ab8a870f8df305f21a0307364fdb3c027">Csock</a>, <a class="el" href="classCZNCSock.html#ae3a5a70f2036f37f8f1d3d947a9f0aa4">CZNCSock</a></li>
 <li>SNIConfigureServer()&#160;:&#160;<a class="el" href="classCsock.html#a47ac65949b3713a2b32c5167225ffd99">Csock</a></li>
 <li>SockError()&#160;:&#160;<a class="el" href="classCIRCSock.html#a8f5bf9ae466d6cbbd17bcd794f6dbf66">CIRCSock</a>, <a class="el" href="classCRealListener.html#ac460e1868ec8b2f0d8a94c7298d95554">CRealListener</a>, <a class="el" href="classCsock.html#a2092f1cfd768211741d4d3c4b092563b">Csock</a>, <a class="el" href="classCSocket.html#adc26f9ac788363a79c3eeec2e92dbf46">CSocket</a></li>
-<li>Split()&#160;:&#160;<a class="el" href="classCString.html#abaa677ac0cfd1d021b30fbe1946fffdb">CString</a></li>
+<li>Split()&#160;:&#160;<a class="el" href="classCString.html#a090429f0db82055449c873bdc88dbe71">CString</a></li>
 <li>SSLCertError()&#160;:&#160;<a class="el" href="classCIRCSock.html#a537cd42f618ccbf10da99d3195806ab2">CIRCSock</a>, <a class="el" href="classCZNCSock.html#a8d45c048f33741188b8700fb06299d2d">CZNCSock</a></li>
 <li>SSLClientSetup()&#160;:&#160;<a class="el" href="classCsock.html#aea9dc7b9ef30b78fe2abe28245643071">Csock</a></li>
 <li>SSLFinishSetup()&#160;:&#160;<a class="el" href="classCsock.html#ab16f04115dc73a586503fd96926bf8ae">Csock</a></li>
 <li>SSLHandShakeFinished()&#160;:&#160;<a class="el" href="classCsock.html#a91e326e9416c4d6703ef06ecdc8f41ce">Csock</a>, <a class="el" href="classCZNCSock.html#a5d14ffa21747333136d0b5c62a66f2f5">CZNCSock</a></li>
 <li>SslIsEstablished()&#160;:&#160;<a class="el" href="classCsock.html#ae8730942efc12b1315c6bf67efbfc7a7">Csock</a></li>
 <li>SSLServerSetup()&#160;:&#160;<a class="el" href="classCsock.html#af4d988ee04ca005ea414eae536cc00e3">Csock</a></li>
-<li>Start()&#160;:&#160;<a class="el" href="classCCron.html#abaa282705c567ee2d7ac90feb6fbb613">CCron</a></li>
+<li>Start()&#160;:&#160;<a class="el" href="classCCron.html#a212dfe7e35c65f3c40d4da753088ccc8">CCron</a></li>
 <li>StartMaxCycles()&#160;:&#160;<a class="el" href="classCCron.html#ac10efd222d184d781a06605b8b1454e7">CCron</a></li>
+<li>StartSASLPasswordCheck()&#160;:&#160;<a class="el" href="classCClient.html#a7322cdf4544f7f011644cd3defe56dd2">CClient</a></li>
 <li>StartsWith()&#160;:&#160;<a class="el" href="classCString.html#ac80a365bce450fdeb467c55f97a51371">CString</a></li>
 <li>StartTLS()&#160;:&#160;<a class="el" href="classCsock.html#a564bc3d66c7e2396afe204691673435c">Csock</a></li>
 <li>StatusCTCP()&#160;:&#160;<a class="el" href="classCClient.html#a4a3b1d2d480961b57d63e69fe0cc0284">CClient</a></li>
@@ -285,7 +287,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 29 2024 10:27:12 for ZNC by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Mar 16 2025 14:10:05 for ZNC by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

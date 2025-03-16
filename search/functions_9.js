@@ -75,5 +75,5 @@ var searchData=
   ['isvalidhostname_72',['IsValidHostName',['../classCServer.html#a90810ca5e292e219244a800ad8e7cee0',1,'CServer']]],
   ['isvalididentifier_73',['IsValidIdentifier',['../classCClient.html#a25e8c5f0e58ba2b8132d073576a295ef',1,'CClient']]],
   ['isvalidnetwork_74',['IsValidNetwork',['../classCIRCNetwork.html#a3253620b3dc05b53547a5cbc84c1872f',1,'CIRCNetwork']]],
-  ['isvalidusername_75',['isvalidusername',['../classCUser.html#a1efe4435c5de75413209fedf51f985fd',1,'CUser::IsValidUserName(const CString &amp;sUsername)'],['../classCUser.html#aa180668fe02e81c793e16efdd2f214fe',1,'CUser::IsValidUsername(const CString &amp;sUsername)']]]
+  ['isvalidusername_75',['isvalidusername',['../classCUser.html#aa180668fe02e81c793e16efdd2f214fe',1,'CUser::IsValidUsername(const CString &amp;sUsername)'],['../classCUser.html#a1efe4435c5de75413209fedf51f985fd',1,'CUser::IsValidUserName(const CString &amp;sUsername)']]]
 ];

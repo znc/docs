@@ -10,5 +10,6 @@ var searchData=
   ['addr_5fipv6only_7',['ADDR_IPV6ONLY',['../Socket_8h.html#a0f0c0c7491ad9c25858ebadd095092e9a38c4377b3d3bbcc59de43076ab8ec15e',1,'Socket.h']]],
   ['admin_8',['Admin',['../classCChan.html#a8e48d2ab8131ea73f085d4dfb0591f16a6e860d128cd0aa6eeb1355bce9b5a0e8',1,'CChan']]],
   ['argwhenset_9',['ArgWhenSet',['../classCIRCSock.html#a8e68d9e0596157b56783e5e9603f7b69a9a9a2f16d8b03683b231cd84a3ac83b3',1,'CIRCSock']]],
-  ['away_10',['Away',['../classCMessage.html#a0c73f73428ca8fd0c3f10a497d2fcb11a312dc56ea9c386a6bc913f988a233791',1,'CMessage']]]
+  ['authenticate_10',['Authenticate',['../classCMessage.html#a0c73f73428ca8fd0c3f10a497d2fcb11aea80ace13d1f296d26cadbaca1992e36',1,'CMessage']]],
+  ['away_11',['Away',['../classCMessage.html#a0c73f73428ca8fd0c3f10a497d2fcb11a312dc56ea9c386a6bc913f988a233791',1,'CMessage']]]
 ];
