@@ -590,6 +590,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:abd12527b09eee5b7ba65b3a0201a2bd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d0094fc70d0e10957546d0a4ee6e8bb" id="r_a6d0094fc70d0e10957546d0a4ee6e8bb"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#a6d0094fc70d0e10957546d0a4ee6e8bb">OnSendToIRC</a> (<a class="el" href="classCString.html">CString</a> &amp;sLine)</td></tr>
 <tr class="separator:a6d0094fc70d0e10957546d0a4ee6e8bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca8a1d832aa64669cf668a21446effda" id="r_aca8a1d832aa64669cf668a21446effda"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#aca8a1d832aa64669cf668a21446effda">OnUserTagMessage</a> (<a class="el" href="classCTargetMessage.html">CTargetMessage</a> &amp;Message)</td></tr>
+<tr class="memdesc:aca8a1d832aa64669cf668a21446effda"><td class="mdescLeft">&#160;</td><td class="mdescRight">This module hook is called when a user sends a TAGMSG message.  <br /></td></tr>
+<tr class="separator:aca8a1d832aa64669cf668a21446effda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2f7cfe012257691df80a66ca99c578c" id="r_ab2f7cfe012257691df80a66ca99c578c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#ab2f7cfe012257691df80a66ca99c578c">OnChanTagMessage</a> (<a class="el" href="classCTargetMessage.html">CTargetMessage</a> &amp;Message)</td></tr>
+<tr class="memdesc:ab2f7cfe012257691df80a66ca99c578c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when we receive a channel TAGMSG message <em>from IRC</em>.  <br /></td></tr>
+<tr class="separator:ab2f7cfe012257691df80a66ca99c578c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70a06854ffd06dd2ad22298e315c1c63" id="r_a70a06854ffd06dd2ad22298e315c1c63"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#a70a06854ffd06dd2ad22298e315c1c63">OnPrivTagMessage</a> (<a class="el" href="classCTargetMessage.html">CTargetMessage</a> &amp;Message)</td></tr>
+<tr class="memdesc:a70a06854ffd06dd2ad22298e315c1c63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when we receive a private TAGMSG message <em>from IRC</em>.  <br /></td></tr>
+<tr class="separator:a70a06854ffd06dd2ad22298e315c1c63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21df1a7f9b964dd941ba0c970a265a56" id="r_a21df1a7f9b964dd941ba0c970a265a56"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Modules_8h.html#a2f2b7746e7590ac0383278e975f13855">ModHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#a21df1a7f9b964dd941ba0c970a265a56">GetDLL</a> ()</td></tr>
 <tr class="separator:a21df1a7f9b964dd941ba0c970a265a56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8c3ecd92352e21e203de4ff1a804f32" id="r_af8c3ecd92352e21e203de4ff1a804f32"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#af8c3ecd92352e21e203de4ff1a804f32">PutIRC</a> (const <a class="el" href="classCString.html">CString</a> &amp;sLine)</td></tr>
@@ -3485,6 +3494,42 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ab2f7cfe012257691df80a66ca99c578c" name="ab2f7cfe012257691df80a66ca99c578c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2f7cfe012257691df80a66ca99c578c">&#9670;&#160;</a></span>OnChanTagMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> CModule::OnChanTagMessage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCTargetMessage.html">CTargetMessage</a> &amp;&#160;</td>
+          <td class="paramname"><em>Message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when we receive a channel TAGMSG message <em>from IRC</em>. </p>
+<dl class="section since"><dt>Since</dt><dd>1.10.0 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Message</td><td>The channel message. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>See <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2" title="This enum is just used for return from module hooks.">CModule::EModRet</a>. </dd></dl>
+
+</div>
+</div>
 <a id="ab444e817a2cba122e70b2463b0f6212f" name="ab444e817a2cba122e70b2463b0f6212f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab444e817a2cba122e70b2463b0f6212f">&#9670;&#160;</a></span>OnChanTextMessage()</h2>
 
@@ -6154,6 +6199,42 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a70a06854ffd06dd2ad22298e315c1c63" name="a70a06854ffd06dd2ad22298e315c1c63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70a06854ffd06dd2ad22298e315c1c63">&#9670;&#160;</a></span>OnPrivTagMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> CModule::OnPrivTagMessage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCTargetMessage.html">CTargetMessage</a> &amp;&#160;</td>
+          <td class="paramname"><em>Message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when we receive a private TAGMSG message <em>from IRC</em>. </p>
+<dl class="section since"><dt>Since</dt><dd>1.10.0 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Message</td><td>The message. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>See <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2" title="This enum is just used for return from module hooks.">CModule::EModRet</a>. </dd></dl>
+
+</div>
+</div>
 <a id="a1b6722c3faf60c0a1a72a04f25671cd2" name="a1b6722c3faf60c0a1a72a04f25671cd2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1b6722c3faf60c0a1a72a04f25671cd2">&#9670;&#160;</a></span>OnPrivTextMessage()</h2>
 
@@ -7580,6 +7661,42 @@ Protected Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">Message</td><td>The message sent. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>See <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2" title="This enum is just used for return from module hooks.">CModule::EModRet</a>. </dd></dl>
+
+</div>
+</div>
+<a id="aca8a1d832aa64669cf668a21446effda" name="aca8a1d832aa64669cf668a21446effda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca8a1d832aa64669cf668a21446effda">&#9670;&#160;</a></span>OnUserTagMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classCModule.html#a0d9e974241b3b1a1e6d0d5db9577a9a2">EModRet</a> CModule::OnUserTagMessage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCTargetMessage.html">CTargetMessage</a> &amp;&#160;</td>
+          <td class="paramname"><em>Message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This module hook is called when a user sends a TAGMSG message. </p>
+<dl class="section since"><dt>Since</dt><dd>1.10.0 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Message</td><td>The message which was sent. </td></tr>
   </table>
   </dd>
 </dl>
@@ -9208,7 +9325,7 @@ CString&amp;, const CString&amp;) for each line in the table. </p>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Apr 11 2025 20:37:00 for ZNC by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Apr 13 2025 10:46:49 for ZNC by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

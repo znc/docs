@@ -71,7 +71,7 @@ var searchData=
   ['sethasdata_68',['SetHasData',['../classCTemplateLoopContext.html#aed6d4ae316b872f3597214af083ffd19',1,'CTemplateLoopContext']]],
   ['sethideversion_69',['SetHideVersion',['../classCZNC.html#acc31768cc4e0db8cf165eb242630ac28',1,'CZNC']]],
   ['sethost_70',['SetHost',['../classCNick.html#a7337ae55c6ff18ae998ad17232dcaf24',1,'CNick']]],
-  ['sethostname_71',['sethostname',['../classCsock.html#a3b4ccc73db014a4b7d231eb833ba3cb2',1,'Csock::SetHostName()'],['../classCSConnection.html#a0eba5a53292c9db9941ac5e996a432c0',1,'CSConnection::SetHostname()']]],
+  ['sethostname_71',['sethostname',['../classCSConnection.html#a0eba5a53292c9db9941ac5e996a432c0',1,'CSConnection::SetHostname()'],['../classCsock.html#a3b4ccc73db014a4b7d231eb833ba3cb2',1,'Csock::SetHostName()']]],
   ['sethosttoverifyssl_72',['SetHostToVerifySSL',['../classCZNCSock.html#a039ef960176025d06b43997a1156ea5f',1,'CZNCSock']]],
   ['setident_73',['setident',['../classCUser.html#ad3fc1e8e031648b75d042ab01dcdf1ab',1,'CUser::SetIdent()'],['../classCNick.html#a42e10f088a8f8a1abe74663de29353f9',1,'CNick::SetIdent()'],['../classCIRCNetwork.html#a3df9e0238c3f22a4e4a8927ff61b534c',1,'CIRCNetwork::SetIdent()']]],
   ['setinconfig_74',['SetInConfig',['../classCChan.html#a4979665fa7fa00cbc32b3db3cc3a7f1c',1,'CChan']]],

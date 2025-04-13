@@ -385,6 +385,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8052e65d1e46a4687d264bf7b4a698f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d67f4f447e6b0fa29179a43edd49954" id="r_a2d67f4f447e6b0fa29179a43edd49954"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a2d67f4f447e6b0fa29179a43edd49954">PutIRC</a> (const <a class="el" href="classCString.html">CString</a> &amp;sLine)</td></tr>
 <tr class="separator:a2d67f4f447e6b0fa29179a43edd49954"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85972662611561c5bc68d4f773599f68" id="r_a85972662611561c5bc68d4f773599f68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a85972662611561c5bc68d4f773599f68">PutIRCStripping</a> (<a class="el" href="classCMessage.html">CMessage</a> Message)</td></tr>
+<tr class="separator:a85972662611561c5bc68d4f773599f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a148fa379bd535cb44f9ebf1e215e3fa1" id="r_a148fa379bd535cb44f9ebf1e215e3fa1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a148fa379bd535cb44f9ebf1e215e3fa1">PutClientRaw</a> (const <a class="el" href="classCString.html">CString</a> &amp;sLine)</td></tr>
 <tr class="memdesc:a148fa379bd535cb44f9ebf1e215e3fa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a raw data line to the client.  <br /></td></tr>
 <tr class="separator:a148fa379bd535cb44f9ebf1e215e3fa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -974,6 +976,8 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a112ec23b06fbe15a5758eac95a3815b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bb61c829304606106fd7dc2fd3de042" id="r_a9bb61c829304606106fd7dc2fd3de042"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a9bb61c829304606106fd7dc2fd3de042">m_bSelfMessage</a></td></tr>
 <tr class="separator:a9bb61c829304606106fd7dc2fd3de042"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dcb4092d9638e793bab5e2c6aa50618" id="r_a1dcb4092d9638e793bab5e2c6aa50618"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a1dcb4092d9638e793bab5e2c6aa50618">m_bMessageTagCap</a></td></tr>
+<tr class="separator:a1dcb4092d9638e793bab5e2c6aa50618"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b5c04aa96dad6d81dc4047188fea5a3" id="r_a4b5c04aa96dad6d81dc4047188fea5a3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#a4b5c04aa96dad6d81dc4047188fea5a3">m_bSASLCap</a></td></tr>
 <tr class="separator:a4b5c04aa96dad6d81dc4047188fea5a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab32323dc38313311b4d7388a9019bd3b" id="r_ab32323dc38313311b4d7388a9019bd3b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCClient.html#ab32323dc38313311b4d7388a9019bd3b">m_bPlaybackActive</a></td></tr>
@@ -5892,6 +5896,24 @@ Message tags</h3>
 
 </div>
 </div>
+<a id="a85972662611561c5bc68d4f773599f68" name="a85972662611561c5bc68d4f773599f68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85972662611561c5bc68d4f773599f68">&#9670;&#160;</a></span>PutIRCStripping()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CClient::PutIRCStripping </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCMessage.html">CMessage</a>&#160;</td>
+          <td class="paramname"><em>Message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ab0f17c6d5c59a5646142215811904468" name="ab0f17c6d5c59a5646142215811904468"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab0f17c6d5c59a5646142215811904468">&#9670;&#160;</a></span>PutModNotice()</h2>
 
@@ -8716,6 +8738,28 @@ X509_free( pCert );
 
 </div>
 </div>
+<a id="a1dcb4092d9638e793bab5e2c6aa50618" name="a1dcb4092d9638e793bab5e2c6aa50618"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dcb4092d9638e793bab5e2c6aa50618">&#9670;&#160;</a></span>m_bMessageTagCap</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CClient::m_bMessageTagCap</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ab64f13eeabc94d15da06307cb6b5dd0d" name="ab64f13eeabc94d15da06307cb6b5dd0d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab64f13eeabc94d15da06307cb6b5dd0d">&#9670;&#160;</a></span>m_bNamesx</h2>
 
@@ -9250,7 +9294,7 @@ X509_free( pCert );
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 16 2025 14:10:04 for ZNC by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Apr 13 2025 10:46:49 for ZNC by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

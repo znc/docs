@@ -71,7 +71,7 @@ var searchData=
   ['istrue_68',['IsTrue',['../classCTemplate.html#ac1bd3e2d29d53726294c898e69d74794',1,'CTemplate']]],
   ['isuserattached_69',['isuserattached',['../classCIRCNetwork.html#a1af1a26176f446054c1febf55929db43',1,'CIRCNetwork::IsUserAttached()'],['../classCUser.html#ad1502aa16e310481ebf0c6f2c4822828',1,'CUser::IsUserAttached()']]],
   ['isuseronline_70',['IsUserOnline',['../classCIRCNetwork.html#a3ad99e4a8196b05116c07dcfc3601652',1,'CIRCNetwork']]],
-  ['isvalid_71',['isvalid',['../classCCron.html#aea03cbadbf195c0ce6f035c06557eef6',1,'CCron::isValid()'],['../classCUser.html#a3de3189c2088f0de4898162b62368b5d',1,'CUser::IsValid()']]],
+  ['isvalid_71',['isvalid',['../classCUser.html#a3de3189c2088f0de4898162b62368b5d',1,'CUser::IsValid()'],['../classCCron.html#aea03cbadbf195c0ce6f035c06557eef6',1,'CCron::isValid()']]],
   ['isvalidhostname_72',['IsValidHostName',['../classCServer.html#a90810ca5e292e219244a800ad8e7cee0',1,'CServer']]],
   ['isvalididentifier_73',['IsValidIdentifier',['../classCClient.html#a25e8c5f0e58ba2b8132d073576a295ef',1,'CClient']]],
   ['isvalidnetwork_74',['IsValidNetwork',['../classCIRCNetwork.html#a3253620b3dc05b53547a5cbc84c1872f',1,'CIRCNetwork']]],
