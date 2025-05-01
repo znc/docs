@@ -10,7 +10,7 @@ var searchData=
   ['listenhost_7',['ListenHost',['../classCSockManager.html#afc0da60cb021e5c2733f7b5b5fef9e36',1,'CSockManager']]],
   ['listening_8',['Listening',['../classCsock.html#aa8ab288dec0530dac35001c20694a86e',1,'Csock']]],
   ['listenrand_9',['ListenRand',['../classCSockManager.html#adc77f0bab68df1dc1facf65f923affe4',1,'CSockManager']]],
-  ['listenunix_10',['ListenUnix',['../classCsock.html#afd80c56cc554af8b2a13d3a9501d5b56',1,'Csock']]],
+  ['listenunixinternal_10',['ListenUnixInternal',['../classCsock.html#a12369b694aa2e51a481e4b5bc2ac49b1',1,'Csock']]],
   ['listsockets_11',['ListSockets',['../classCModule.html#aa9fd09b5f0dde4cb792b36778d9c1b24',1,'CModule']]],
   ['listtimers_12',['ListTimers',['../classCModule.html#a1e620f63bed45508a2ada1f67c047284',1,'CModule']]],
   ['loadmodule_13',['LoadModule',['../classCModules.html#a69ff7f35d2fdead4a8009b853a151562',1,'CModules']]],

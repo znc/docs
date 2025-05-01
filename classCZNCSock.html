@@ -287,12 +287,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aca10fb9ed6fae8ab232df34964be7e47" id="r_aca10fb9ed6fae8ab232df34964be7e47"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#aca10fb9ed6fae8ab232df34964be7e47">Connect</a> ()</td></tr>
 <tr class="memdesc:aca10fb9ed6fae8ab232df34964be7e47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the connection, this is used by the socket manager, and shouldn't be called directly by the user.  <br /></td></tr>
 <tr class="separator:aca10fb9ed6fae8ab232df34964be7e47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a104051ecd70cadd95f6cfda44ad7deb6" id="r_a104051ecd70cadd95f6cfda44ad7deb6"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a104051ecd70cadd95f6cfda44ad7deb6">ConnectUnix</a> (const <a class="el" href="include_2znc_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sPath)</td></tr>
-<tr class="memdesc:a104051ecd70cadd95f6cfda44ad7deb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to a UNIX socket.  <br /></td></tr>
-<tr class="separator:a104051ecd70cadd95f6cfda44ad7deb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd80c56cc554af8b2a13d3a9501d5b56" id="r_afd80c56cc554af8b2a13d3a9501d5b56"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#afd80c56cc554af8b2a13d3a9501d5b56">ListenUnix</a> (const <a class="el" href="include_2znc_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sBindFile, int iMaxConns=SOMAXCONN, uint32_t iTimeout=0)</td></tr>
-<tr class="memdesc:afd80c56cc554af8b2a13d3a9501d5b56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Listens for connections on an UNIX socket.  <br /></td></tr>
-<tr class="separator:afd80c56cc554af8b2a13d3a9501d5b56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2071c4d2ca496acae5777e3dae695a6c" id="r_a2071c4d2ca496acae5777e3dae695a6c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a2071c4d2ca496acae5777e3dae695a6c">ConnectUnixInternal</a> (const <a class="el" href="include_2znc_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sPath)</td></tr>
+<tr class="memdesc:a2071c4d2ca496acae5777e3dae695a6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to a UNIX socket.  <br /></td></tr>
+<tr class="separator:a2071c4d2ca496acae5777e3dae695a6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12369b694aa2e51a481e4b5bc2ac49b1" id="r_a12369b694aa2e51a481e4b5bc2ac49b1"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a12369b694aa2e51a481e4b5bc2ac49b1">ListenUnixInternal</a> (const <a class="el" href="include_2znc_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sBindFile, int iMaxConns=SOMAXCONN, uint32_t iTimeout=0)</td></tr>
+<tr class="memdesc:a12369b694aa2e51a481e4b5bc2ac49b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Listens for connections on an UNIX socket.  <br /></td></tr>
+<tr class="separator:a12369b694aa2e51a481e4b5bc2ac49b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32e80e3b3e655ceb34127c2c0ef8f3b0" id="r_a32e80e3b3e655ceb34127c2c0ef8f3b0"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCsock.html#a32e80e3b3e655ceb34127c2c0ef8f3b0">Listen</a> (uint16_t iPort, int iMaxConns=SOMAXCONN, const <a class="el" href="include_2znc_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sBindHost=&quot;&quot;, uint32_t iTimeout=0, bool bDetach=false)</td></tr>
 <tr class="memdesc:a32e80e3b3e655ceb34127c2c0ef8f3b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Listens for connections.  <br /></td></tr>
 <tr class="separator:a32e80e3b3e655ceb34127c2c0ef8f3b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1758,8 +1758,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a104051ecd70cadd95f6cfda44ad7deb6" name="a104051ecd70cadd95f6cfda44ad7deb6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a104051ecd70cadd95f6cfda44ad7deb6">&#9670;&#160;</a></span>ConnectUnix()</h2>
+<a id="a2071c4d2ca496acae5777e3dae695a6c" name="a2071c4d2ca496acae5777e3dae695a6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2071c4d2ca496acae5777e3dae695a6c">&#9670;&#160;</a></span>ConnectUnixInternal()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1768,7 +1768,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool Csock::ConnectUnix </td>
+          <td class="memname">virtual bool Csock::ConnectUnixInternal </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td>
           <td class="paramname"><em>sPath</em></td><td>)</td>
@@ -4170,8 +4170,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="afd80c56cc554af8b2a13d3a9501d5b56" name="afd80c56cc554af8b2a13d3a9501d5b56"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd80c56cc554af8b2a13d3a9501d5b56">&#9670;&#160;</a></span>ListenUnix()</h2>
+<a id="a12369b694aa2e51a481e4b5bc2ac49b1" name="a12369b694aa2e51a481e4b5bc2ac49b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12369b694aa2e51a481e4b5bc2ac49b1">&#9670;&#160;</a></span>ListenUnixInternal()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4180,7 +4180,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool Csock::ListenUnix </td>
+          <td class="memname">virtual bool Csock::ListenUnixInternal </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="Csocket_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;&#160;</td>
           <td class="paramname"><em>sBindFile</em>, </td>
@@ -6634,7 +6634,7 @@ X509_free( pCert );
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 29 2024 10:27:12 for ZNC by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Thu May 1 2025 21:41:52 for ZNC by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>
