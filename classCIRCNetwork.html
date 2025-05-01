@@ -332,6 +332,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa6a6b983ccabef0efa9fec607e6fd498"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa41c3df391a80704b62968f4ce7bba18" id="r_aa41c3df391a80704b62968f4ce7bba18"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#aa41c3df391a80704b62968f4ce7bba18">DelServer</a> (const <a class="el" href="classCString.html">CString</a> &amp;sName, unsigned short uPort, const <a class="el" href="classCString.html">CString</a> &amp;sPass)</td></tr>
 <tr class="separator:aa41c3df391a80704b62968f4ce7bba18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1054b321031bd42d913c2501a0657b83" id="r_a1054b321031bd42d913c2501a0657b83"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a1054b321031bd42d913c2501a0657b83">DelServer</a> (const <a class="el" href="classCServer.html">CServer</a> &amp;Server)</td></tr>
+<tr class="separator:a1054b321031bd42d913c2501a0657b83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a49c261ccf32e57520aacbef957a805" id="r_a2a49c261ccf32e57520aacbef957a805"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#a2a49c261ccf32e57520aacbef957a805">AddServer</a> (<a class="el" href="classCServer.html">CServer</a> Server)</td></tr>
+<tr class="separator:a2a49c261ccf32e57520aacbef957a805"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac003e051e57791f3e9f807dbf366eb82" id="r_ac003e051e57791f3e9f807dbf366eb82"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#ac003e051e57791f3e9f807dbf366eb82">AddServer</a> (const <a class="el" href="classCString.html">CString</a> &amp;sName)</td></tr>
 <tr class="separator:ac003e051e57791f3e9f807dbf366eb82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9590922fa4b039e76a45763b0ca0a7e" id="r_ab9590922fa4b039e76a45763b0ca0a7e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCIRCNetwork.html#ab9590922fa4b039e76a45763b0ca0a7e">AddServer</a> (const <a class="el" href="classCString.html">CString</a> &amp;sName, unsigned short uPort, const <a class="el" href="classCString.html">CString</a> &amp;sPass=&quot;&quot;, bool bSSL=false)</td></tr>
@@ -1023,7 +1027,7 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <a id="ac003e051e57791f3e9f807dbf366eb82" name="ac003e051e57791f3e9f807dbf366eb82"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac003e051e57791f3e9f807dbf366eb82">&#9670;&#160;</a></span>AddServer() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac003e051e57791f3e9f807dbf366eb82">&#9670;&#160;</a></span>AddServer() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1041,7 +1045,7 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <a id="ab9590922fa4b039e76a45763b0ca0a7e" name="ab9590922fa4b039e76a45763b0ca0a7e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab9590922fa4b039e76a45763b0ca0a7e">&#9670;&#160;</a></span>AddServer() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9590922fa4b039e76a45763b0ca0a7e">&#9670;&#160;</a></span>AddServer() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1074,6 +1078,24 @@ Protected Attributes</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2a49c261ccf32e57520aacbef957a805" name="a2a49c261ccf32e57520aacbef957a805"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a49c261ccf32e57520aacbef957a805">&#9670;&#160;</a></span>AddServer() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CIRCNetwork::AddServer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCServer.html">CServer</a>&#160;</td>
+          <td class="paramname"><em>Server</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1438,8 +1460,26 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a1054b321031bd42d913c2501a0657b83" name="a1054b321031bd42d913c2501a0657b83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1054b321031bd42d913c2501a0657b83">&#9670;&#160;</a></span>DelServer() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CIRCNetwork::DelServer </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCServer.html">CServer</a> &amp;&#160;</td>
+          <td class="paramname"><em>Server</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aa41c3df391a80704b62968f4ce7bba18" name="aa41c3df391a80704b62968f4ce7bba18"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa41c3df391a80704b62968f4ce7bba18">&#9670;&#160;</a></span>DelServer()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa41c3df391a80704b62968f4ce7bba18">&#9670;&#160;</a></span>DelServer() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4562,7 +4602,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 16 2025 14:10:04 for ZNC by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Thu May 1 2025 23:47:56 for ZNC by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

@@ -1,0 +1,32 @@
+<map id="CTCPListener" name="CTCPListener">
+<area shape="rect" id="Node000001" title=" " alt="" coords="27,685,133,711"/>
+<area shape="rect" id="Node000002" href="$classCListener.html" title=" " alt="" coords="179,611,261,636"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="187,645,104,687,101,683,184,640"/>
+<area shape="rect" id="Node000003" href="$classCString.html" title="String class that is used inside ZNC." alt="" coords="40,523,109,548"/>
+<area shape="poly" id="edge15_Node000001_Node000003" title=" " alt="" coords="77,562,79,636,82,685,76,685,73,636,72,562"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="96,556,129,584,181,608,179,613,127,589,92,560"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="31,448,118,473"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="77,488,77,522,72,522,72,488"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="5,359,144,399"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="77,412,77,448,72,448,72,412"/>
+<area shape="rect" id="Node000006" href="$classCRealListener.html" title=" " alt="" coords="175,523,287,548"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="230,562,224,610,219,610,225,562"/>
+<area shape="rect" id="Node000007" href="$classCZNCSock.html" title=" " alt="" coords="185,448,276,473"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="233,488,233,522,228,522,228,488"/>
+<area shape="rect" id="Node000008" href="$classCsock.html" title="Basic socket class." alt="" coords="189,366,251,391"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="226,405,232,448,226,448,221,405"/>
+<area shape="rect" id="Node000009" href="$classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock" alt="" coords="159,284,281,309"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="223,323,223,366,217,366,217,323"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="27,196,197,221"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="139,228,207,282,204,286,136,232"/>
+<area shape="rect" id="Node000011" href="$classCCron.html" title="this is the main cron job class" alt="" coords="81,108,143,133"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="115,147,115,195,109,195,109,147"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="222,196,439,221"/>
+<area shape="poly" id="edge11_Node000009_Node000012" title=" " alt="" coords="306,232,237,286,233,282,303,228"/>
+<area shape="rect" id="Node000013" href="$classCSMonitorFD.html" title="Class to tie sockets to for monitoring by Csocket at either the Csock or TSockManager." alt="" coords="277,108,384,133"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="333,147,333,195,328,195,328,147"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="250,5,411,45"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="333,59,333,108,328,108,328,59"/>
+<area shape="rect" id="Node000015" href="$classCCoreTranslationMixin.html" title=" " alt="" coords="275,366,443,391"/>
+<area shape="poly" id="edge14_Node000007_Node000015" title=" " alt="" coords="330,401,250,450,248,446,327,396"/>
+</map>

@@ -166,6 +166,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa004cf191979c0bde26a2c382611078a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0bd931246527c073926a8c7d728dc42" id="r_ab0bd931246527c073926a8c7d728dc42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSockManager.html#ab0bd931246527c073926a8c7d728dc42">Connect</a> (const <a class="el" href="classCString.html">CString</a> &amp;sHostname, u_short iPort, const <a class="el" href="classCString.html">CString</a> &amp;sSockName, int iTimeout=60, bool bSSL=false, const <a class="el" href="classCString.html">CString</a> &amp;sBindHost=&quot;&quot;, <a class="el" href="classCZNCSock.html">CZNCSock</a> *pcSock=nullptr)</td></tr>
 <tr class="separator:ab0bd931246527c073926a8c7d728dc42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea3f49671beea387b0831f6f965d2b01" id="r_aea3f49671beea387b0831f6f965d2b01"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSockManager.html#aea3f49671beea387b0831f6f965d2b01">ListenUnix</a> (const <a class="el" href="classCString.html">CString</a> &amp;sSockName, const <a class="el" href="classCString.html">CString</a> &amp;sPath, <a class="el" href="classCZNCSock.html">CZNCSock</a> *pcSock=nullptr)</td></tr>
+<tr class="separator:aea3f49671beea387b0831f6f965d2b01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb50ad049639e500109106043e6a4057" id="r_acb50ad049639e500109106043e6a4057"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSockManager.html#acb50ad049639e500109106043e6a4057">ConnectUnix</a> (const <a class="el" href="classCString.html">CString</a> &amp;sSockName, const <a class="el" href="classCString.html">CString</a> &amp;sPath, <a class="el" href="classCZNCSock.html">CZNCSock</a> *pcSock=nullptr)</td></tr>
+<tr class="separator:acb50ad049639e500109106043e6a4057"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a283ebd4eb99ada530369f620c3ad110c" id="r_a283ebd4eb99ada530369f620c3ad110c"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSockManager.html#a283ebd4eb99ada530369f620c3ad110c">GetAnonConnectionCount</a> (const <a class="el" href="classCString.html">CString</a> &amp;sIP) const</td></tr>
 <tr class="separator:a283ebd4eb99ada530369f620c3ad110c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51e3b4ab1e575d7ade95c542a502f838" id="r_a51e3b4ab1e575d7ade95c542a502f838"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSockManager.html#a51e3b4ab1e575d7ade95c542a502f838">DelSockByAddr</a> (<a class="el" href="classCsock.html">Csock</a> *pcSock) override</td></tr>
@@ -464,6 +468,8 @@ Friends</h2></td></tr>
 <p>Make this method virtual, so you can override it when a socket is added. </p>
 <p>Assuming you might want to do some extra stuff </p>
 
+<p class="reference">Referenced by <a class="el" href="classCSockManager.html#acb50ad049639e500109106043e6a4057">ConnectUnix()</a>, and <a class="el" href="classCSockManager.html#aea3f49671beea387b0831f6f965d2b01">ListenUnix()</a>.</p>
+
 </div>
 </div>
 <a id="a0f90529eb2f0bdf2f4e8d7899e931f07" name="a0f90529eb2f0bdf2f4e8d7899e931f07"></a>
@@ -728,6 +734,50 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="acb50ad049639e500109106043e6a4057" name="acb50ad049639e500109106043e6a4057"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb50ad049639e500109106043e6a4057">&#9670;&#160;</a></span>ConnectUnix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSockManager::ConnectUnix </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
+          <td class="paramname"><em>sSockName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
+          <td class="paramname"><em>sPath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classCZNCSock.html">CZNCSock</a> *&#160;</td>
+          <td class="paramname"><em>pcSock</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="classCSocketManager.html#ac4de086e66d55fcb3af4d7be074692fb">CSocketManager::AddSock()</a>.</p>
 
 </div>
 </div>
@@ -1789,6 +1839,50 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="aea3f49671beea387b0831f6f965d2b01" name="aea3f49671beea387b0831f6f965d2b01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea3f49671beea387b0831f6f965d2b01">&#9670;&#160;</a></span>ListenUnix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSockManager::ListenUnix </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
+          <td class="paramname"><em>sSockName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
+          <td class="paramname"><em>sPath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classCZNCSock.html">CZNCSock</a> *&#160;</td>
+          <td class="paramname"><em>pcSock</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="classCSocketManager.html#ac4de086e66d55fcb3af4d7be074692fb">CSocketManager::AddSock()</a>.</p>
+
+</div>
+</div>
 <a id="a2ee6d64a721d302b58e14630894cd939" name="a2ee6d64a721d302b58e14630894cd939"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2ee6d64a721d302b58e14630894cd939">&#9670;&#160;</a></span>Loop()</h2>
 
@@ -2099,7 +2193,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 29 2024 10:27:12 for ZNC by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Thu May 1 2025 23:47:57 for ZNC by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

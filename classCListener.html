@@ -72,29 +72,44 @@ $(function() {
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classCListener-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">CListener Class Reference</div></div>
+  <div class="headertitle"><div class="title">CListener Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="Listener_8h_source.html">Listener.h</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for CListener:</div>
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for CListener:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classCListener__inherit__graph.png" border="0" usemap="#aCListener_inherit__map" alt="Inheritance graph"/></div>
+<map name="aCListener_inherit__map" id="aCListener_inherit__map">
+<area shape="rect" title=" " alt="" coords="84,5,167,31"/>
+<area shape="rect" href="classCTCPListener.html" title=" " alt="" coords="5,79,112,104"/>
+<area shape="poly" title=" " alt="" coords="107,43,71,80,68,77,103,39"/>
+<area shape="rect" href="classCUnixListener.html" title=" " alt="" coords="137,79,250,104"/>
+<area shape="poly" title=" " alt="" coords="148,39,184,77,180,80,144,42"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for CListener:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classCListener__coll__graph.png" border="0" usemap="#aCListener_coll__map" alt="Collaboration graph"/></div>
 <map name="aCListener_coll__map" id="aCListener_coll__map">
-<area shape="rect" title=" " alt="" coords="96,625,179,651"/>
+<area shape="rect" title=" " alt="" coords="96,611,179,636"/>
 <area shape="rect" href="classCString.html" title="String class that is used inside ZNC." alt="" coords="41,523,111,548"/>
-<area shape="poly" title=" " alt="" coords="74,561,75,581,81,600,92,613,107,623,104,627,89,617,76,603,70,582,69,562"/>
+<area shape="poly" title=" " alt="" coords="75,561,80,585,91,599,107,608,104,613,88,603,75,588,69,563"/>
 <area shape="rect" title=" " alt="" coords="33,448,119,473"/>
 <area shape="poly" title=" " alt="" coords="79,488,79,522,73,522,73,488"/>
 <area shape="rect" title=" " alt="" coords="5,359,144,399"/>
 <area shape="poly" title=" " alt="" coords="78,412,78,448,73,448,73,412"/>
 <area shape="rect" href="classCRealListener.html" title=" " alt="" coords="143,523,255,548"/>
-<area shape="poly" title=" " alt="" coords="192,562,172,603,152,627,148,623,167,600,187,560"/>
+<area shape="poly" title=" " alt="" coords="188,562,171,588,151,612,147,608,167,585,184,559"/>
 <area shape="rect" href="classCZNCSock.html" title=" " alt="" coords="153,448,244,473"/>
 <area shape="poly" title=" " alt="" coords="201,488,201,522,196,522,196,488"/>
 <area shape="rect" href="classCsock.html" title="Basic socket class." alt="" coords="168,366,229,391"/>
@@ -126,22 +141,16 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ace70960cb65bb0c6d0055ed994bb75f1" id="r_ace70960cb65bb0c6d0055ed994bb75f1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCListener.html#ace70960cb65bb0c6d0055ed994bb75f1">CListener</a> (unsigned short uPort, const <a class="el" href="classCString.html">CString</a> &amp;sBindHost, const <a class="el" href="classCString.html">CString</a> &amp;sURIPrefix, bool bSSL, <a class="el" href="Socket_8h.html#a0f0c0c7491ad9c25858ebadd095092e9">EAddrType</a> eAddr, <a class="el" href="classCListener.html#a0cbd4274127b0bdd712ac8526a4d80ee">EAcceptType</a> eAccept)</td></tr>
-<tr class="separator:ace70960cb65bb0c6d0055ed994bb75f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b683a4704ee1582bf8a9832a19377a2" id="r_a3b683a4704ee1582bf8a9832a19377a2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCListener.html#a3b683a4704ee1582bf8a9832a19377a2">~CListener</a> ()</td></tr>
-<tr class="separator:a3b683a4704ee1582bf8a9832a19377a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8232a789b64a62699e04672e8ab0655" id="r_ad8232a789b64a62699e04672e8ab0655"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCListener.html#ad8232a789b64a62699e04672e8ab0655">CListener</a> (const <a class="el" href="classCString.html">CString</a> &amp;sURIPrefix, bool bSSL, <a class="el" href="classCListener.html#a0cbd4274127b0bdd712ac8526a4d80ee">EAcceptType</a> eAccept)</td></tr>
+<tr class="separator:ad8232a789b64a62699e04672e8ab0655"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafba8d811890429d42bd02ccc9d0e561" id="r_aafba8d811890429d42bd02ccc9d0e561"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCListener.html#aafba8d811890429d42bd02ccc9d0e561">~CListener</a> ()</td></tr>
+<tr class="separator:aafba8d811890429d42bd02ccc9d0e561"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4ac15f6cd04165cc077b13de596e1aa" id="r_ac4ac15f6cd04165cc077b13de596e1aa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCListener.html#ac4ac15f6cd04165cc077b13de596e1aa">CListener</a> (const <a class="el" href="classCListener.html">CListener</a> &amp;)=delete</td></tr>
 <tr class="separator:ac4ac15f6cd04165cc077b13de596e1aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad64a88f03235f210b4c42108642448a8" id="r_ad64a88f03235f210b4c42108642448a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCListener.html">CListener</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCListener.html#ad64a88f03235f210b4c42108642448a8">operator=</a> (const <a class="el" href="classCListener.html">CListener</a> &amp;)=delete</td></tr>
 <tr class="separator:ad64a88f03235f210b4c42108642448a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae675915a6fdf515ffac389e027fe7fcf" id="r_ae675915a6fdf515ffac389e027fe7fcf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCListener.html#ae675915a6fdf515ffac389e027fe7fcf">IsSSL</a> () const</td></tr>
 <tr class="separator:ae675915a6fdf515ffac389e027fe7fcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b9bcec01c4ab41d5611014d3c3fe3e7" id="r_a1b9bcec01c4ab41d5611014d3c3fe3e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Socket_8h.html#a0f0c0c7491ad9c25858ebadd095092e9">EAddrType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCListener.html#a1b9bcec01c4ab41d5611014d3c3fe3e7">GetAddrType</a> () const</td></tr>
-<tr class="separator:a1b9bcec01c4ab41d5611014d3c3fe3e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad4e9a8e9f2694f1adb66740b5422798" id="r_aad4e9a8e9f2694f1adb66740b5422798"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCListener.html#aad4e9a8e9f2694f1adb66740b5422798">GetPort</a> () const</td></tr>
-<tr class="separator:aad4e9a8e9f2694f1adb66740b5422798"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66a44320b2426254940385bd3145d9ea" id="r_a66a44320b2426254940385bd3145d9ea"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCListener.html#a66a44320b2426254940385bd3145d9ea">GetBindHost</a> () const</td></tr>
-<tr class="separator:a66a44320b2426254940385bd3145d9ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4c2c40796d30a637798ff75a9308dc0" id="r_ab4c2c40796d30a637798ff75a9308dc0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCRealListener.html">CRealListener</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCListener.html#ab4c2c40796d30a637798ff75a9308dc0">GetRealListener</a> () const</td></tr>
 <tr class="separator:ab4c2c40796d30a637798ff75a9308dc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51c347286e1c912da306bd8144f6b925" id="r_a51c347286e1c912da306bd8144f6b925"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCListener.html#a51c347286e1c912da306bd8144f6b925">GetURIPrefix</a> () const</td></tr>
@@ -150,21 +159,22 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a679184beeaf081261886a3d61dfd5d38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8458ea2971076a822fbcc6fd6cd28804" id="r_a8458ea2971076a822fbcc6fd6cd28804"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCListener.html#a8458ea2971076a822fbcc6fd6cd28804">SetAcceptType</a> (<a class="el" href="classCListener.html#a0cbd4274127b0bdd712ac8526a4d80ee">EAcceptType</a> eType)</td></tr>
 <tr class="separator:a8458ea2971076a822fbcc6fd6cd28804"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8da664485ce893bed4f1f03357d9c857" id="r_a8da664485ce893bed4f1f03357d9c857"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCListener.html#a8da664485ce893bed4f1f03357d9c857">Listen</a> ()</td></tr>
-<tr class="separator:a8da664485ce893bed4f1f03357d9c857"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16c6c6a40315c37f71ce9c4b6fb4b8a5" id="r_a16c6c6a40315c37f71ce9c4b6fb4b8a5"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCListener.html#a16c6c6a40315c37f71ce9c4b6fb4b8a5">Listen</a> ()=0</td></tr>
+<tr class="separator:a16c6c6a40315c37f71ce9c4b6fb4b8a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e5a700a7c6e4e4050b7c5f888e6f024" id="r_a9e5a700a7c6e4e4050b7c5f888e6f024"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCListener.html#a9e5a700a7c6e4e4050b7c5f888e6f024">ResetRealListener</a> ()</td></tr>
 <tr class="separator:a9e5a700a7c6e4e4050b7c5f888e6f024"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a462faab60dc2f07321b51047c3415a5a" id="r_a462faab60dc2f07321b51047c3415a5a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCConfig.html">CConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCListener.html#a462faab60dc2f07321b51047c3415a5a">ToConfig</a> () const</td></tr>
+<tr class="separator:a462faab60dc2f07321b51047c3415a5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a029d99894a2dcf89356ed257d413e150" id="r_a029d99894a2dcf89356ed257d413e150"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCListener.html#a029d99894a2dcf89356ed257d413e150">SetupSSL</a> () const</td></tr>
+<tr class="separator:a029d99894a2dcf89356ed257d413e150"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:ac64c9693713396bc58f20a1c66f356f7" id="r_ac64c9693713396bc58f20a1c66f356f7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCListener.html#ac64c9693713396bc58f20a1c66f356f7">m_bSSL</a></td></tr>
 <tr class="separator:ac64c9693713396bc58f20a1c66f356f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bd2af795b65951e39814c594c588265" id="r_a2bd2af795b65951e39814c594c588265"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Socket_8h.html#a0f0c0c7491ad9c25858ebadd095092e9">EAddrType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCListener.html#a2bd2af795b65951e39814c594c588265">m_eAddr</a></td></tr>
-<tr class="separator:a2bd2af795b65951e39814c594c588265"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04a8b2f6b2dfbcc7438e58050259d9bc" id="r_a04a8b2f6b2dfbcc7438e58050259d9bc"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCListener.html#a04a8b2f6b2dfbcc7438e58050259d9bc">m_uPort</a></td></tr>
-<tr class="separator:a04a8b2f6b2dfbcc7438e58050259d9bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80411ec4e69b10de0971dcd4db17f059" id="r_a80411ec4e69b10de0971dcd4db17f059"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCListener.html#a80411ec4e69b10de0971dcd4db17f059">m_sBindHost</a></td></tr>
-<tr class="separator:a80411ec4e69b10de0971dcd4db17f059"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a023713ba5b06eb9ee75de37eeedf9ee2" id="r_a023713ba5b06eb9ee75de37eeedf9ee2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCListener.html#a023713ba5b06eb9ee75de37eeedf9ee2">m_sURIPrefix</a></td></tr>
 <tr class="separator:a023713ba5b06eb9ee75de37eeedf9ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a242d94f002202ccb3cd8fb72376b94e9" id="r_a242d94f002202ccb3cd8fb72376b94e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCRealListener.html">CRealListener</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCListener.html#a242d94f002202ccb3cd8fb72376b94e9">m_pListener</a></td></tr>
@@ -193,8 +203,8 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ace70960cb65bb0c6d0055ed994bb75f1" name="ace70960cb65bb0c6d0055ed994bb75f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace70960cb65bb0c6d0055ed994bb75f1">&#9670;&#160;</a></span>CListener() <span class="overload">[1/2]</span></h2>
+<a id="ad8232a789b64a62699e04672e8ab0655" name="ad8232a789b64a62699e04672e8ab0655"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8232a789b64a62699e04672e8ab0655">&#9670;&#160;</a></span>CListener() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -205,18 +215,6 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">CListener::CListener </td>
           <td>(</td>
-          <td class="paramtype">unsigned short&#160;</td>
-          <td class="paramname"><em>uPort</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
-          <td class="paramname"><em>sBindHost</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>sURIPrefix</em>, </td>
         </tr>
@@ -225,12 +223,6 @@ Protected Attributes</h2></td></tr>
           <td></td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>bSSL</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="Socket_8h.html#a0f0c0c7491ad9c25858ebadd095092e9">EAddrType</a>&#160;</td>
-          <td class="paramname"><em>eAddr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -253,19 +245,27 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a3b683a4704ee1582bf8a9832a19377a2" name="a3b683a4704ee1582bf8a9832a19377a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b683a4704ee1582bf8a9832a19377a2">&#9670;&#160;</a></span>~CListener()</h2>
+<a id="aafba8d811890429d42bd02ccc9d0e561" name="aafba8d811890429d42bd02ccc9d0e561"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafba8d811890429d42bd02ccc9d0e561">&#9670;&#160;</a></span>~CListener()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">CListener::~CListener </td>
+          <td class="memname">virtual CListener::~CListener </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -321,87 +321,6 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="reference">References <a class="el" href="classCListener.html#a1a6f5bae1ca8ae9eeadbf3970934a000">m_eAcceptType</a>.</p>
-
-</div>
-</div>
-<a id="a1b9bcec01c4ab41d5611014d3c3fe3e7" name="a1b9bcec01c4ab41d5611014d3c3fe3e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b9bcec01c4ab41d5611014d3c3fe3e7">&#9670;&#160;</a></span>GetAddrType()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="Socket_8h.html#a0f0c0c7491ad9c25858ebadd095092e9">EAddrType</a> CListener::GetAddrType </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="classCListener.html#a2bd2af795b65951e39814c594c588265">m_eAddr</a>.</p>
-
-</div>
-</div>
-<a id="a66a44320b2426254940385bd3145d9ea" name="a66a44320b2426254940385bd3145d9ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a66a44320b2426254940385bd3145d9ea">&#9670;&#160;</a></span>GetBindHost()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="classCString.html">CString</a> &amp; CListener::GetBindHost </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="classCListener.html#a80411ec4e69b10de0971dcd4db17f059">m_sBindHost</a>.</p>
-
-</div>
-</div>
-<a id="aad4e9a8e9f2694f1adb66740b5422798" name="aad4e9a8e9f2694f1adb66740b5422798"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad4e9a8e9f2694f1adb66740b5422798">&#9670;&#160;</a></span>GetPort()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned short CListener::GetPort </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="classCListener.html#a04a8b2f6b2dfbcc7438e58050259d9bc">m_uPort</a>.</p>
 
 </div>
 </div>
@@ -486,20 +405,30 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a8da664485ce893bed4f1f03357d9c857" name="a8da664485ce893bed4f1f03357d9c857"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8da664485ce893bed4f1f03357d9c857">&#9670;&#160;</a></span>Listen()</h2>
+<a id="a16c6c6a40315c37f71ce9c4b6fb4b8a5" name="a16c6c6a40315c37f71ce9c4b6fb4b8a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16c6c6a40315c37f71ce9c4b6fb4b8a5">&#9670;&#160;</a></span>Listen()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool CListener::Listen </td>
+          <td class="memname">virtual bool CListener::Listen </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classCTCPListener.html#af5ba9c5d6288ae140f9bf854eefbec9c">CTCPListener</a>, and <a class="el" href="classCUnixListener.html#ae1666aea40daf5ffb0f1329320bfffe2">CUnixListener</a>.</p>
 
 </div>
 </div>
@@ -574,6 +503,58 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a029d99894a2dcf89356ed257d413e150" name="a029d99894a2dcf89356ed257d413e150"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a029d99894a2dcf89356ed257d413e150">&#9670;&#160;</a></span>SetupSSL()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CListener::SetupSSL </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a462faab60dc2f07321b51047c3415a5a" name="a462faab60dc2f07321b51047c3415a5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a462faab60dc2f07321b51047c3415a5a">&#9670;&#160;</a></span>ToConfig()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classCConfig.html">CConfig</a> CListener::ToConfig </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="classCTCPListener.html#adb2e1e49ffa218615847ad763f7eb2b6">CTCPListener</a>, and <a class="el" href="classCUnixListener.html#a8508510139d98f5a7972a07536e38480">CUnixListener</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="ac64c9693713396bc58f20a1c66f356f7" name="ac64c9693713396bc58f20a1c66f356f7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac64c9693713396bc58f20a1c66f356f7">&#9670;&#160;</a></span>m_bSSL</h2>
@@ -623,30 +604,6 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a2bd2af795b65951e39814c594c588265" name="a2bd2af795b65951e39814c594c588265"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2bd2af795b65951e39814c594c588265">&#9670;&#160;</a></span>m_eAddr</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="Socket_8h.html#a0f0c0c7491ad9c25858ebadd095092e9">EAddrType</a> CListener::m_eAddr</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="reference">Referenced by <a class="el" href="classCListener.html#a1b9bcec01c4ab41d5611014d3c3fe3e7">GetAddrType()</a>.</p>
-
-</div>
-</div>
 <a id="a242d94f002202ccb3cd8fb72376b94e9" name="a242d94f002202ccb3cd8fb72376b94e9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a242d94f002202ccb3cd8fb72376b94e9">&#9670;&#160;</a></span>m_pListener</h2>
 
@@ -668,30 +625,6 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="reference">Referenced by <a class="el" href="classCListener.html#ab4c2c40796d30a637798ff75a9308dc0">GetRealListener()</a>.</p>
-
-</div>
-</div>
-<a id="a80411ec4e69b10de0971dcd4db17f059" name="a80411ec4e69b10de0971dcd4db17f059"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a80411ec4e69b10de0971dcd4db17f059">&#9670;&#160;</a></span>m_sBindHost</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classCString.html">CString</a> CListener::m_sBindHost</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="reference">Referenced by <a class="el" href="classCListener.html#a66a44320b2426254940385bd3145d9ea">GetBindHost()</a>.</p>
 
 </div>
 </div>
@@ -719,37 +652,13 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a04a8b2f6b2dfbcc7438e58050259d9bc" name="a04a8b2f6b2dfbcc7438e58050259d9bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a04a8b2f6b2dfbcc7438e58050259d9bc">&#9670;&#160;</a></span>m_uPort</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned short CListener::m_uPort</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="reference">Referenced by <a class="el" href="classCListener.html#aad4e9a8e9f2694f1adb66740b5422798">GetPort()</a>.</p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="Listener_8h_source.html">Listener.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 29 2024 10:27:12 for ZNC by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Thu May 1 2025 23:47:56 for ZNC by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

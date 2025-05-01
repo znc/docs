@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['debug_0',['debug',['../classCDebug.html#a1639e4b89bfad4c29c9769e0bc3f4db5',1,'CDebug::debug'],['../classCDebug.html#a4d49b5a02ac1bd965ca05ed7192986b4',1,'CDebug::Debug()'],['../ZNCDebug_8h.html#a9c8bd5c22c538fb934e235b11ff3bf57',1,'DEBUG:&#160;ZNCDebug.h']]],
+  ['debug_0',['debug',['../classCDebug.html#a4d49b5a02ac1bd965ca05ed7192986b4',1,'CDebug::Debug()'],['../classCDebug.html#a1639e4b89bfad4c29c9769e0bc3f4db5',1,'CDebug::debug'],['../ZNCDebug_8h.html#a9c8bd5c22c538fb934e235b11ff3bf57',1,'DEBUG:&#160;ZNCDebug.h']]],
   ['decode_1',['Decode',['../classMCString.html#a65377296d4730565ce2bf202cd522d6c',1,'MCString']]],
   ['decrowindex_2',['DecRowIndex',['../classCTemplateLoopContext.html#a26d48bfd44148f9ae992c70b156ef2d3',1,'CTemplateLoopContext']]],
   ['decrypt_3',['Decrypt',['../classCString.html#ae30eccf1811c3054fc3159bcbac12e79',1,'CString']]],
@@ -19,7 +19,7 @@ var searchData=
   ['delnv_16',['delnv',['../classCModule.html#a75c3a7f237be34db1b10b457979cbf4a',1,'CModule::DelNV(const CString &amp;sName, bool bWriteToDisk=true)'],['../classCModule.html#a931dc8ba80bd445cc0f0e287cc5a3427',1,'CModule::DelNV(MCString::iterator it)']]],
   ['delquery_17',['DelQuery',['../classCIRCNetwork.html#a4da54a7debfa735b551f9d40bb544ff9',1,'CIRCNetwork']]],
   ['delreference_18',['DelReference',['../classCTranslation.html#a0f1d0b9fdcd732c3500f98e81086f9d6',1,'CTranslation']]],
-  ['delserver_19',['DelServer',['../classCIRCNetwork.html#aa41c3df391a80704b62968f4ce7bba18',1,'CIRCNetwork']]],
+  ['delserver_19',['delserver',['../classCIRCNetwork.html#aa41c3df391a80704b62968f4ce7bba18',1,'CIRCNetwork::DelServer(const CString &amp;sName, unsigned short uPort, const CString &amp;sPass)'],['../classCIRCNetwork.html#a1054b321031bd42d913c2501a0657b83',1,'CIRCNetwork::DelServer(const CServer &amp;Server)']]],
   ['delservers_20',['DelServers',['../classCIRCNetwork.html#a083879cf7ce5253a7be92cdc9de7729d',1,'CIRCNetwork']]],
   ['delsock_21',['DelSock',['../classCSocketManager.html#aee351fd02bdd11badbefde04df270a91',1,'CSocketManager']]],
   ['delsockbyaddr_22',['delsockbyaddr',['../classCSocketManager.html#a1a0731cb30af8a552de36b4c2cf9e931',1,'CSocketManager::DelSockByAddr()'],['../classCSockManager.html#a51e3b4ab1e575d7ade95c542a502f838',1,'CSockManager::DelSockByAddr()']]],

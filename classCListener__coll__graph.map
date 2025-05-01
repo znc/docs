@@ -1,13 +1,13 @@
 <map id="CListener" name="CListener">
-<area shape="rect" id="Node000001" title=" " alt="" coords="96,625,179,651"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="96,611,179,636"/>
 <area shape="rect" id="Node000002" href="$classCString.html" title="String class that is used inside ZNC." alt="" coords="41,523,111,548"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="74,561,75,581,81,600,92,613,107,623,104,627,89,617,76,603,70,582,69,562"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="75,561,80,585,91,599,107,608,104,613,88,603,75,588,69,563"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="33,448,119,473"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="79,488,79,522,73,522,73,488"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="5,359,144,399"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="78,412,78,448,73,448,73,412"/>
 <area shape="rect" id="Node000005" href="$classCRealListener.html" title=" " alt="" coords="143,523,255,548"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="192,562,172,603,152,627,148,623,167,600,187,560"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="188,562,171,588,151,612,147,608,167,585,184,559"/>
 <area shape="rect" id="Node000006" href="$classCZNCSock.html" title=" " alt="" coords="153,448,244,473"/>
 <area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="201,488,201,522,196,522,196,488"/>
 <area shape="rect" id="Node000007" href="$classCsock.html" title="Basic socket class." alt="" coords="168,366,229,391"/>

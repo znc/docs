@@ -476,6 +476,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a32e80e3b3e655ceb34127c2c0ef8f3b0" id="r_a32e80e3b3e655ceb34127c2c0ef8f3b0"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSocket.html#a32e80e3b3e655ceb34127c2c0ef8f3b0">Listen</a> (uint16_t iPort, int iMaxConns=SOMAXCONN, const <a class="el" href="include_2znc_2defines_8h.html#a6692c05392220a687252ecd5dacf78ad">CS_STRING</a> &amp;sBindHost=&quot;&quot;, uint32_t iTimeout=0, bool bDetach=false)</td></tr>
 <tr class="memdesc:a32e80e3b3e655ceb34127c2c0ef8f3b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Listens for connections.  <br /></td></tr>
 <tr class="separator:a32e80e3b3e655ceb34127c2c0ef8f3b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9999655ac5909f2225a574e6743e1cd" id="r_ae9999655ac5909f2225a574e6743e1cd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSocket.html#ae9999655ac5909f2225a574e6743e1cd">ConnectUnix</a> (const <a class="el" href="classCString.html">CString</a> &amp;sPath)</td></tr>
+<tr class="separator:ae9999655ac5909f2225a574e6743e1cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b1f8813639f9cc66cbe58e758d2e459" id="r_a0b1f8813639f9cc66cbe58e758d2e459"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSocket.html#a0b1f8813639f9cc66cbe58e758d2e459">ListenUnix</a> (const <a class="el" href="classCString.html">CString</a> &amp;sPath)</td></tr>
+<tr class="separator:a0b1f8813639f9cc66cbe58e758d2e459"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affa88485b059ec1a8025c069c84a96f7" id="r_affa88485b059ec1a8025c069c84a96f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSocket.html#affa88485b059ec1a8025c069c84a96f7">ConstructSockName</a> (const <a class="el" href="classCString.html">CString</a> &amp;sPart) const</td></tr>
+<tr class="memdesc:affa88485b059ec1a8025c069c84a96f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper for modperl and modpython, modules don't normally need to call this.  <br /></td></tr>
+<tr class="separator:affa88485b059ec1a8025c069c84a96f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10b44856db640196839f5612679f6707" id="r_a10b44856db640196839f5612679f6707"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCModule.html">CModule</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSocket.html#a10b44856db640196839f5612679f6707">GetModule</a> () const</td></tr>
 <tr class="separator:a10b44856db640196839f5612679f6707"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8fb853fda2864a8dc08362c33c02fd3" id="r_ab8fb853fda2864a8dc08362c33c02fd3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSocket.html#ab8fb853fda2864a8dc08362c33c02fd3">t_s</a> (const <a class="el" href="classCString.html">CString</a> &amp;sEnglish, const <a class="el" href="classCString.html">CString</a> &amp;sContext=&quot;&quot;) const</td></tr>
@@ -2251,6 +2258,32 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ae9999655ac5909f2225a574e6743e1cd" name="ae9999655ac5909f2225a574e6743e1cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9999655ac5909f2225a574e6743e1cd">&#9670;&#160;</a></span>ConnectUnix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSocket::ConnectUnix </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
+          <td class="paramname"><em>sPath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a2071c4d2ca496acae5777e3dae695a6c" name="a2071c4d2ca496acae5777e3dae695a6c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2071c4d2ca496acae5777e3dae695a6c">&#9670;&#160;</a></span>ConnectUnixInternal()</h2>
 
@@ -2282,6 +2315,34 @@ Protected Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="affa88485b059ec1a8025c069c84a96f7" name="affa88485b059ec1a8025c069c84a96f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affa88485b059ec1a8025c069c84a96f7">&#9670;&#160;</a></span>ConstructSockName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCString.html">CString</a> CSocket::ConstructSockName </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
+          <td class="paramname"><em>sPart</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Helper for modperl and modpython, modules don't normally need to call this. </p>
 
 </div>
 </div>
@@ -5593,6 +5654,32 @@ Protected Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a0b1f8813639f9cc66cbe58e758d2e459" name="a0b1f8813639f9cc66cbe58e758d2e459"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b1f8813639f9cc66cbe58e758d2e459">&#9670;&#160;</a></span>ListenUnix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSocket::ListenUnix </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
+          <td class="paramname"><em>sPath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -9451,7 +9538,7 @@ X509_free( pCert );
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 1 2025 21:41:52 for ZNC by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Thu May 1 2025 23:47:57 for ZNC by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>
