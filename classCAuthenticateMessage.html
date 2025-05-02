@@ -151,6 +151,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0d44de93d5b5bde1a2fdacf53f674847" id="r_a0d44de93d5b5bde1a2fdacf53f674847"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCAuthenticateMessage.html#a0d44de93d5b5bde1a2fdacf53f674847">SetText</a> (const <a class="el" href="classCString.html">CString</a> &amp;sText)</td></tr>
 <tr class="separator:a0d44de93d5b5bde1a2fdacf53f674847"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bdfc972e91880409195b63ee6d32c3b" id="r_a4bdfc972e91880409195b63ee6d32c3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCMessage.html#a0c73f73428ca8fd0c3f10a497d2fcb11">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMessage.html#a4bdfc972e91880409195b63ee6d32c3b">GetType</a> () const</td></tr>
+<tr class="memdesc:a4bdfc972e91880409195b63ee6d32c3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns which type of message this is.  <br /></td></tr>
 <tr class="separator:a4bdfc972e91880409195b63ee6d32c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83b8483118c5d94e026764ac6846d748" id="r_a83b8483118c5d94e026764ac6846d748"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMessage.html#a83b8483118c5d94e026764ac6846d748">Equals</a> (const <a class="el" href="classCMessage.html">CMessage</a> &amp;Other) const</td></tr>
 <tr class="separator:a83b8483118c5d94e026764ac6846d748"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -899,6 +900,9 @@ template&lt;typename M &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Returns which type of message this is. </p>
+<p>This is mostly about which subclass of <a class="el" href="classCMessage.html" title="Here is a small explanation of how messages on IRC work, and how you can use this class to get useful...">CMessage</a> is intended to be used, but does not map 1:1 to the subclasses. The number is NOT guaranteed to be the same across ZNC versions. For practical purposes, <a class="el" href="classCMessage.html#ac020d09ad7566d19d26cbe8bb7845da9">GetCommand()</a> may be more useful. </p>
+
 </div>
 </div>
 <a id="ae3cf491af7b96406696cfcf78704bda2" name="ae3cf491af7b96406696cfcf78704bda2"></a>
@@ -1359,7 +1363,7 @@ template&lt;typename M , typename  = typename std::enable_if&lt;                
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 19 2025 10:16:30 for ZNC by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Fri May 2 2025 18:33:10 for ZNC by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>
