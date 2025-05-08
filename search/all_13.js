@@ -229,7 +229,7 @@ var searchData=
   ['status_5ft_226',['status_t',['../classMCString.html#ad659058c5ac29c1649d0e7f368993fa4',1,'MCString']]],
   ['statusctcp_227',['StatusCTCP',['../classCClient.html#a4a3b1d2d480961b57d63e69fe0cc0284',1,'CClient']]],
   ['std_228',['std',['../namespacestd.html',1,'']]],
-  ['stdoutistty_229',['stdoutistty',['../classCDebug.html#adb24f500710ed31406b8c6baaf91ec22',1,'CDebug::StdoutIsTTY()'],['../classCDebug.html#a323faa86611d938380cb12e15f6df585',1,'CDebug::stdoutIsTTY']]],
+  ['stdoutistty_229',['stdoutistty',['../classCDebug.html#a323faa86611d938380cb12e15f6df585',1,'CDebug::stdoutIsTTY'],['../classCDebug.html#adb24f500710ed31406b8c6baaf91ec22',1,'CDebug::StdoutIsTTY()']]],
   ['stop_230',['Stop',['../classCCron.html#ab4506a41a334772b646354c9588fdf5c',1,'CCron']]],
   ['strcmp_231',['StrCmp',['../classCString.html#a476406fc87a95c110d9f90c0e8e695f2',1,'CString']]],
   ['stripcontrols_232',['StripControls',['../classCString.html#a75f7430b788f0af4d5ffc958b85c7bce',1,'CString']]],

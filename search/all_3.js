@@ -64,7 +64,7 @@ var searchData=
   ['cjoinmessage_61',['CJoinMessage',['../classCJoinMessage.html',1,'']]],
   ['ckickmessage_62',['CKickMessage',['../classCKickMessage.html',1,'']]],
   ['clanguagescope_63',['clanguagescope',['../structCLanguageScope.html#a49e61d09fbcb1ae4640b7ec231b7eb8b',1,'CLanguageScope::CLanguageScope()'],['../structCLanguageScope.html',1,'CLanguageScope']]],
-  ['cleanup_64',['cleanup',['../classTCacheMap.html#a310531274916c803f033df8fc47a8abc',1,'TCacheMap::Cleanup()'],['../classCSocketManager.html#afba19b3bbd9eb551bcc716565ef10d73',1,'CSocketManager::Cleanup()'],['../classCDir.html#a6ccc64efbb2deeeb70a6252dd2860686',1,'CDir::CleanUp()']]],
+  ['cleanup_64',['cleanup',['../classCDir.html#a6ccc64efbb2deeeb70a6252dd2860686',1,'CDir::CleanUp()'],['../classTCacheMap.html#a310531274916c803f033df8fc47a8abc',1,'TCacheMap::Cleanup()'],['../classCSocketManager.html#afba19b3bbd9eb551bcc716565ef10d73',1,'CSocketManager::Cleanup()']]],
   ['cleanupcrons_65',['CleanupCrons',['../classCSockCommon.html#a99c8b88340c7a3fc86b7864a20bdd562',1,'CSockCommon']]],
   ['cleanupfdmonitors_66',['CleanupFDMonitors',['../classCSockCommon.html#af27e285dc370946e91badb733542c0dd',1,'CSockCommon']]],
   ['clear_67',['clear',['../classCSocketManager.html#a14af95b2ed46e8134b81599e63af9b0b',1,'CSocketManager::clear()'],['../classTCacheMap.html#ab73bfc280a8b52c7664118c123eb317e',1,'TCacheMap::Clear()'],['../classCTable.html#ada2fd03e0f806e1c6b2df1ef9215c0d2',1,'CTable::Clear()'],['../classCBuffer.html#aeb76b075c8088d786660215a1c245aa2',1,'CBuffer::Clear()']]],
