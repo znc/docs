@@ -2,8 +2,8 @@ var searchData=
 [
   ['call_0',['Call',['../classCModCommand.html#a7e1ca9f48fc5a8498dd4238c81b25456',1,'CModCommand']]],
   ['callsockerror_1',['CallSockError',['../classCsock.html#a852f8794b44be3038fc00af483907de9',1,'Csock']]],
-  ['canceljob_2',['canceljob',['../classCModule.html#ac95547bf82cfdff81808b06be4352d07',1,'CModule::CancelJob(const CString &amp;sJobName)'],['../classCModule.html#a1055ab1635c5919999abb1d721dae388',1,'CModule::CancelJob(CModuleJob *pJob)'],['../classCThreadPool.html#af87af842468cb6e2ac73e20f1c36ebe4',1,'CThreadPool::cancelJob(CJob *job)']]],
-  ['canceljobs_3',['canceljobs',['../classCThreadPool.html#ac1940cd33219aacf1231dc59fff52f1d',1,'CThreadPool::cancelJobs()'],['../classCModule.html#a765f83d84d136b8e0d0714808662692a',1,'CModule::CancelJobs()']]],
+  ['canceljob_2',['canceljob',['../classCModule.html#ac95547bf82cfdff81808b06be4352d07',1,'CModule::CancelJob(const CString &amp;sJobName)'],['../classCModule.html#a1055ab1635c5919999abb1d721dae388',1,'CModule::CancelJob(CModuleJob *pJob)'],['../classCThreadPool.html#af87af842468cb6e2ac73e20f1c36ebe4',1,'CThreadPool::cancelJob()']]],
+  ['canceljobs_3',['canceljobs',['../classCModule.html#a765f83d84d136b8e0d0714808662692a',1,'CModule::CancelJobs()'],['../classCThreadPool.html#ac1940cd33219aacf1231dc59fff52f1d',1,'CThreadPool::cancelJobs()']]],
   ['capversion_4',['CapVersion',['../classCClient.html#ae710433a3d27308a343f5a5a8d45acb1',1,'CClient']]],
   ['casecmp_5',['CaseCmp',['../classCString.html#a63df04ab3a81efce16f029005eb3ca46',1,'CString']]],
   ['cauthbase_6',['cauthbase',['../classCAuthBase.html#a8c2d321675d0c4a7bec6a1593d5c486b',1,'CAuthBase::CAuthBase(const CString &amp;sUsername, const CString &amp;sPassword, CZNCSock *pSock)'],['../classCAuthBase.html#a11ddc5cc2ca8dcc958bba74670b09854',1,'CAuthBase::CAuthBase(const CAuthBase &amp;)=delete']]],

@@ -13,11 +13,12 @@ var searchData=
   ['cst_5fbindvhost_10',['CST_BINDVHOST',['../classCsock.html#a1ddb2a5d92aefe7db7a88b3824d7c4daa99332d097b7bfc7398cb33e643e0ef84',1,'Csock']]],
   ['cst_5fconnect_11',['CST_CONNECT',['../classCsock.html#a1ddb2a5d92aefe7db7a88b3824d7c4daa76d8cd9c008207eb41a36a3e371ac994',1,'Csock']]],
   ['cst_5fconnectssl_12',['CST_CONNECTSSL',['../classCsock.html#a1ddb2a5d92aefe7db7a88b3824d7c4daabb9dc057b8111a31121aa34271cfccd1',1,'Csock']]],
-  ['cst_5fdestdns_13',['CST_DESTDNS',['../classCsock.html#a1ddb2a5d92aefe7db7a88b3824d7c4daa934f08dc71d81115d5e95bdd2f7e80eb',1,'Csock']]],
-  ['cst_5fdns_14',['CST_DNS',['../classCsock.html#a1ddb2a5d92aefe7db7a88b3824d7c4daa5f7ae08bb9a49611e35aaca56e47b583',1,'Csock']]],
-  ['cst_5fok_15',['CST_OK',['../classCsock.html#a1ddb2a5d92aefe7db7a88b3824d7c4daa59f976336ffa12f10e0eebcccd5b84f7',1,'Csock']]],
-  ['cst_5fstart_16',['CST_START',['../classCsock.html#a1ddb2a5d92aefe7db7a88b3824d7c4daaa319f60f9dd920e4a51f93f27f552a87',1,'Csock']]],
-  ['ct_5fnone_17',['CT_NONE',['../Csocket_8h.html#a233f31a47c2ebf7099843a7b37a1bf61abc1edbe45d74e83b1f8330ebbfc19fb0',1,'Csocket.h']]],
-  ['ct_5fzlib_18',['CT_ZLIB',['../Csocket_8h.html#a233f31a47c2ebf7099843a7b37a1bf61ac6c3c3cb17d18ad46195ae78094a774e',1,'Csocket.h']]],
-  ['ctcp_19',['CTCP',['../classCMessage.html#a0c73f73428ca8fd0c3f10a497d2fcb11ae26f5a9b4908a956f8a2231164415e6b',1,'CMessage']]]
+  ['cst_5fconnectwait_13',['CST_CONNECTWAIT',['../classCsock.html#a1ddb2a5d92aefe7db7a88b3824d7c4daaf082a36ffd16bf278bdefacb94efa837',1,'Csock']]],
+  ['cst_5fdestdns_14',['CST_DESTDNS',['../classCsock.html#a1ddb2a5d92aefe7db7a88b3824d7c4daa934f08dc71d81115d5e95bdd2f7e80eb',1,'Csock']]],
+  ['cst_5fdns_15',['CST_DNS',['../classCsock.html#a1ddb2a5d92aefe7db7a88b3824d7c4daa5f7ae08bb9a49611e35aaca56e47b583',1,'Csock']]],
+  ['cst_5fok_16',['CST_OK',['../classCsock.html#a1ddb2a5d92aefe7db7a88b3824d7c4daa59f976336ffa12f10e0eebcccd5b84f7',1,'Csock']]],
+  ['cst_5fstart_17',['CST_START',['../classCsock.html#a1ddb2a5d92aefe7db7a88b3824d7c4daaa319f60f9dd920e4a51f93f27f552a87',1,'Csock']]],
+  ['ct_5fnone_18',['CT_NONE',['../Csocket_8h.html#a233f31a47c2ebf7099843a7b37a1bf61abc1edbe45d74e83b1f8330ebbfc19fb0',1,'Csocket.h']]],
+  ['ct_5fzlib_19',['CT_ZLIB',['../Csocket_8h.html#a233f31a47c2ebf7099843a7b37a1bf61ac6c3c3cb17d18ad46195ae78094a774e',1,'Csocket.h']]],
+  ['ctcp_20',['CTCP',['../classCMessage.html#a0c73f73428ca8fd0c3f10a497d2fcb11ae26f5a9b4908a956f8a2231164415e6b',1,'CMessage']]]
 ];
