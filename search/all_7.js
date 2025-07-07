@@ -107,7 +107,7 @@ var searchData=
   ['gethomepath_104',['gethomepath',['../classCFile.html#aa35b5be1dfd3d20890ee89808bdb31a4',1,'CFile::GetHomePath()'],['../classCZNC.html#aee86979d4e9808f023adcee9038c1ac2',1,'CZNC::GetHomePath()']]],
   ['gethost_105',['GetHost',['../classCNick.html#aae1e6ff3e2e8ae82f56596813004beb8',1,'CNick']]],
   ['gethostmask_106',['GetHostMask',['../classCNick.html#a89b2dd22f1b97559506b650027a30163',1,'CNick']]],
-  ['gethostname_107',['gethostname',['../classCUtils.html#a20415054782ce38123c70ebc49ade96a',1,'CUtils::GetHostName()'],['../classCsock.html#ad352baf82208085b48f1726a2de1f5a5',1,'Csock::GetHostName()'],['../classCSConnection.html#a5c41808b02b1d463a7d6c540bf318c0f',1,'CSConnection::GetHostname()']]],
+  ['gethostname_107',['gethostname',['../classCSConnection.html#a5c41808b02b1d463a7d6c540bf318c0f',1,'CSConnection::GetHostname()'],['../classCUtils.html#a20415054782ce38123c70ebc49ade96a',1,'CUtils::GetHostName()'],['../classCsock.html#ad352baf82208085b48f1726a2de1f5a5',1,'Csock::GetHostName()']]],
   ['getid_108',['GetId',['../classCWebSession.html#ae9f22fb07ea070c087d414004f3a11d7',1,'CWebSession']]],
   ['getident_109',['getident',['../classCNick.html#a38228dac1a7629bd229bd1a8bc83b212',1,'CNick::GetIdent()'],['../classCUser.html#a29bf84b1880aa3eb9e36b508a93ae90d',1,'CUser::GetIdent()'],['../classCIRCNetwork.html#a2c2bf388bbb807a86511aebe0ca853a6',1,'CIRCNetwork::GetIdent()']]],
   ['getidentifier_110',['GetIdentifier',['../classCClient.html#a4aeffa152ad223aa2f29ae0ed88edf0b',1,'CClient']]],
