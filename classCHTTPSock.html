@@ -906,6 +906,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a6cd159af9b3b4a5a9c6e4f38f1c04602" id="r_a6cd159af9b3b4a5a9c6e4f38f1c04602"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCHTTPSock.html#a6cd159af9b3b4a5a9c6e4f38f1c04602">IsValidHeaderField</a> (const <a class="el" href="classCString.html">CString</a> &amp;s)</td></tr>
+<tr class="memdesc:a6cd159af9b3b4a5a9c6e4f38f1c04602"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns false if <code>s</code> contains CR or LF.  <br /></td></tr>
+<tr class="separator:a6cd159af9b3b4a5a9c6e4f38f1c04602"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb21c37436df262b70ff1d1a66839dd1" id="r_aeb21c37436df262b70ff1d1a66839dd1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCHTTPSock.html#aeb21c37436df262b70ff1d1a66839dd1">ParseParams</a> (const <a class="el" href="classCString.html">CString</a> &amp;sParams, std::map&lt; <a class="el" href="classCString.html">CString</a>, <a class="el" href="ZNCString_8h.html#af7252b7c4a0d4ec44ddc136c6055ae51">VCString</a> &gt; &amp;msvsParams)</td></tr>
 <tr class="separator:aeb21c37436df262b70ff1d1a66839dd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa410b448fc998a220fdef6d616a879da" id="r_aa410b448fc998a220fdef6d616a879da"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classCString.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCHTTPSock.html#aa410b448fc998a220fdef6d616a879da">GetDate</a> (time_t tm=0)</td></tr>
@@ -5106,6 +5109,35 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a6cd159af9b3b4a5a9c6e4f38f1c04602" name="a6cd159af9b3b4a5a9c6e4f38f1c04602"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cd159af9b3b4a5a9c6e4f38f1c04602">&#9670;&#160;</a></span>IsValidHeaderField()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool CHTTPSock::IsValidHeaderField </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns false if <code>s</code> contains CR or LF. </p>
+<p>Used by AddHeader to reject inputs that could split the response into a separate header or body (RFC 7230 disallows obs-fold; treat any bare CR/LF as invalid). </p>
+
+</div>
+</div>
 <a id="a32e80e3b3e655ceb34127c2c0ef8f3b0" name="a32e80e3b3e655ceb34127c2c0ef8f3b0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a32e80e3b3e655ceb34127c2c0ef8f3b0">&#9670;&#160;</a></span>Listen() <span class="overload">[1/2]</span></h2>
 
@@ -8915,7 +8947,7 @@ X509_free( pCert );
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 17 2025 20:28:51 for ZNC by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Mon Apr 27 2026 00:38:33 for ZNC by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>
