@@ -73,10 +73,10 @@ var searchData=
   ['isunixsocket_70',['IsUnixSocket',['../classCServer.html#ac38a88e1d5733c4bf0f13d6928abdaa2',1,'CServer']]],
   ['isuserattached_71',['isuserattached',['../classCIRCNetwork.html#a1af1a26176f446054c1febf55929db43',1,'CIRCNetwork::IsUserAttached()'],['../classCUser.html#ad1502aa16e310481ebf0c6f2c4822828',1,'CUser::IsUserAttached()']]],
   ['isuseronline_72',['IsUserOnline',['../classCIRCNetwork.html#a3ad99e4a8196b05116c07dcfc3601652',1,'CIRCNetwork']]],
-  ['isvalid_73',['isvalid',['../classCUser.html#a3de3189c2088f0de4898162b62368b5d',1,'CUser::IsValid()'],['../classCCron.html#aea03cbadbf195c0ce6f035c06557eef6',1,'CCron::isValid()']]],
+  ['isvalid_73',['isvalid',['../classCCron.html#aea03cbadbf195c0ce6f035c06557eef6',1,'CCron::isValid()'],['../classCUser.html#a3de3189c2088f0de4898162b62368b5d',1,'CUser::IsValid()']]],
   ['isvalidheaderfield_74',['IsValidHeaderField',['../classCHTTPSock.html#a6cd159af9b3b4a5a9c6e4f38f1c04602',1,'CHTTPSock']]],
   ['isvalidhostname_75',['IsValidHostName',['../classCServer.html#a90810ca5e292e219244a800ad8e7cee0',1,'CServer']]],
   ['isvalididentifier_76',['IsValidIdentifier',['../classCClient.html#a25e8c5f0e58ba2b8132d073576a295ef',1,'CClient']]],
   ['isvalidnetwork_77',['IsValidNetwork',['../classCIRCNetwork.html#a3253620b3dc05b53547a5cbc84c1872f',1,'CIRCNetwork']]],
-  ['isvalidusername_78',['isvalidusername',['../classCUser.html#aa180668fe02e81c793e16efdd2f214fe',1,'CUser::IsValidUsername(const CString &amp;sUsername)'],['../classCUser.html#a1efe4435c5de75413209fedf51f985fd',1,'CUser::IsValidUserName(const CString &amp;sUsername)']]]
+  ['isvalidusername_78',['isvalidusername',['../classCUser.html#a1efe4435c5de75413209fedf51f985fd',1,'CUser::IsValidUserName(const CString &amp;sUsername)'],['../classCUser.html#aa180668fe02e81c793e16efdd2f214fe',1,'CUser::IsValidUsername(const CString &amp;sUsername)']]]
 ];
