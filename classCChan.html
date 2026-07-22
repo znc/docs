@@ -387,6 +387,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a403fe4c05f84a7390170fd2400635e36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31e908a84d95c8f3bb81010e883ce5e9" id="r_a31e908a84d95c8f3bb81010e883ce5e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCChan.html#a31e908a84d95c8f3bb81010e883ce5e9">ResetJoinTries</a> ()</td></tr>
 <tr class="separator:a31e908a84d95c8f3bb81010e883ce5e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a964369c4520f9eb3d104380ecdf710" id="r_a4a964369c4520f9eb3d104380ecdf710"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCChan.html#a4a964369c4520f9eb3d104380ecdf710">SetParting</a> (bool b)</td></tr>
+<tr class="separator:a4a964369c4520f9eb3d104380ecdf710"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f2ccf5b4efba377e0195c73fdc72d23" id="r_a6f2ccf5b4efba377e0195c73fdc72d23"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCIRCNetwork.html">CIRCNetwork</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCChan.html#a6f2ccf5b4efba377e0195c73fdc72d23">GetNetwork</a> () const</td></tr>
 <tr class="separator:a6f2ccf5b4efba377e0195c73fdc72d23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2fd3acd00020218171b14380e004587" id="r_ac2fd3acd00020218171b14380e004587"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCChan.html#ac2fd3acd00020218171b14380e004587">IsModeKnown</a> () const</td></tr>
@@ -435,6 +437,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac45cc476997c0531babdee99b3745771"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6defe47036cb6f2236b56b655f36f15" id="r_ac6defe47036cb6f2236b56b655f36f15"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCChan.html#ac6defe47036cb6f2236b56b655f36f15">HasAutoClearChanBufferSet</a> () const</td></tr>
 <tr class="separator:ac6defe47036cb6f2236b56b655f36f15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71f5fbb2e371c136feabb69a2b247d73" id="r_a71f5fbb2e371c136feabb69a2b247d73"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCChan.html#a71f5fbb2e371c136feabb69a2b247d73">IsParting</a> () const</td></tr>
+<tr class="separator:a71f5fbb2e371c136feabb69a2b247d73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -478,6 +482,8 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a2c9e974b0a35fe072fa939b3dbd1840a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81294037f4f3a8f79d311865b8e48fa8" id="r_a81294037f4f3a8f79d311865b8e48fa8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCChan.html#a81294037f4f3a8f79d311865b8e48fa8">m_bModeKnown</a></td></tr>
 <tr class="separator:a81294037f4f3a8f79d311865b8e48fa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a907a5aa1e324e26754754920c14230ce" id="r_a907a5aa1e324e26754754920c14230ce"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCChan.html#a907a5aa1e324e26754754920c14230ce">m_bParting</a></td></tr>
+<tr class="separator:a907a5aa1e324e26754754920c14230ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9e140400d4d8c1d04d349716b97907f" id="r_ab9e140400d4d8c1d04d349716b97907f"><td class="memItemLeft" align="right" valign="top">std::map&lt; char, <a class="el" href="classCString.html">CString</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCChan.html#ab9e140400d4d8c1d04d349716b97907f">m_mcsModes</a></td></tr>
 <tr class="separator:ab9e140400d4d8c1d04d349716b97907f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -1879,6 +1885,33 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a71f5fbb2e371c136feabb69a2b247d73" name="a71f5fbb2e371c136feabb69a2b247d73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71f5fbb2e371c136feabb69a2b247d73">&#9670;&#160;</a></span>IsParting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CChan::IsParting </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="classCChan.html#a907a5aa1e324e26754754920c14230ce">m_bParting</a>.</p>
+
+</div>
+</div>
 <a id="a8bbfdc0b3c792332419a96154f6ec890" name="a8bbfdc0b3c792332419a96154f6ec890"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8bbfdc0b3c792332419a96154f6ec890">&#9670;&#160;</a></span>JoinUser()</h2>
 
@@ -2509,6 +2542,34 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a4a964369c4520f9eb3d104380ecdf710" name="a4a964369c4520f9eb3d104380ecdf710"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a964369c4520f9eb3d104380ecdf710">&#9670;&#160;</a></span>SetParting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CChan::SetParting </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>b</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="classCChan.html#a907a5aa1e324e26754754920c14230ce">m_bParting</a>.</p>
+
+</div>
+</div>
 <a id="a004d950fdfce824aceed959dc6c20a60" name="a004d950fdfce824aceed959dc6c20a60"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a004d950fdfce824aceed959dc6c20a60">&#9670;&#160;</a></span>SetTopic()</h2>
 
@@ -2800,6 +2861,30 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="reference">Referenced by <a class="el" href="classCChan.html#ac2fd3acd00020218171b14380e004587">IsModeKnown()</a>, and <a class="el" href="classCChan.html#a9af828f1b570d93a93b393f63ed92669">SetModeKnown()</a>.</p>
+
+</div>
+</div>
+<a id="a907a5aa1e324e26754754920c14230ce" name="a907a5aa1e324e26754754920c14230ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a907a5aa1e324e26754754920c14230ce">&#9670;&#160;</a></span>m_bParting</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CChan::m_bParting</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="classCChan.html#a71f5fbb2e371c136feabb69a2b247d73">IsParting()</a>, and <a class="el" href="classCChan.html#a4a964369c4520f9eb3d104380ecdf710">SetParting()</a>.</p>
 
 </div>
 </div>
@@ -3121,7 +3206,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 9 2025 23:01:23 for ZNC by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Wed Jul 22 2026 07:48:13 for ZNC by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>
