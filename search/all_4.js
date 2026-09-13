@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['debug_0',['debug',['../classCDebug.html#a4d49b5a02ac1bd965ca05ed7192986b4',1,'CDebug::Debug()'],['../classCDebug.html#a1639e4b89bfad4c29c9769e0bc3f4db5',1,'CDebug::debug'],['../ZNCDebug_8h.html#a9c8bd5c22c538fb934e235b11ff3bf57',1,'DEBUG:&#160;ZNCDebug.h']]],
+  ['debug_0',['debug',['../classCDebug.html#a1639e4b89bfad4c29c9769e0bc3f4db5',1,'CDebug::debug'],['../classCDebug.html#a4d49b5a02ac1bd965ca05ed7192986b4',1,'CDebug::Debug()'],['../ZNCDebug_8h.html#a9c8bd5c22c538fb934e235b11ff3bf57',1,'DEBUG:&#160;ZNCDebug.h']]],
   ['decode_1',['Decode',['../classMCString.html#a65377296d4730565ce2bf202cd522d6c',1,'MCString']]],
   ['decrowindex_2',['DecRowIndex',['../classCTemplateLoopContext.html#a26d48bfd44148f9ae992c70b156ef2d3',1,'CTemplateLoopContext']]],
   ['decrypt_3',['Decrypt',['../classCString.html#ae30eccf1811c3054fc3159bcbac12e79',1,'CString']]],
@@ -46,7 +46,8 @@ var searchData=
   ['dns_5fdest_43',['DNS_DEST',['../classCsock.html#a94aab05249b29e4446077664dee91e5ea61e4aa93fa8c8d34d7393f13767f3817',1,'Csock']]],
   ['dns_5fvhost_44',['DNS_VHOST',['../classCsock.html#a94aab05249b29e4446077664dee91e5ea7ad7bffbc3827e2b09ded86d9d95e0c5',1,'Csock']]],
   ['dnslookup_45',['DNSLookup',['../classCsock.html#a765aca4259f116588f591762286905f4',1,'Csock']]],
-  ['done_46',['DONE',['../classCJob.html#a63886ce212f2f2560392adcc757139faa8a20e6a3cb504ac03d4270cb939d8ca5',1,'CJob']]],
-  ['dumpconfig_47',['DumpConfig',['../classCZNC.html#a94777b3548358a6b32a9512993d2bbc3',1,'CZNC']]],
-  ['dynamicselectloop_48',['DynamicSelectLoop',['../classCSocketManager.html#aa5259aaf7a27ee048eb2a6480f45c387',1,'CSocketManager']]]
+  ['doembeddedwebrequest_46',['DoEmbeddedWebRequest',['../classCModule.html#afc620a1e2c6f011b0df1ad0fd4db50ca',1,'CModule']]],
+  ['done_47',['DONE',['../classCJob.html#a63886ce212f2f2560392adcc757139faa8a20e6a3cb504ac03d4270cb939d8ca5',1,'CJob']]],
+  ['dumpconfig_48',['DumpConfig',['../classCZNC.html#a94777b3548358a6b32a9512993d2bbc3',1,'CZNC']]],
+  ['dynamicselectloop_49',['DynamicSelectLoop',['../classCSocketManager.html#aa5259aaf7a27ee048eb2a6480f45c387',1,'CSocketManager']]]
 ];

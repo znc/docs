@@ -43,6 +43,7 @@ var searchData=
   ['disablesslprotocols_40',['DisableSSLProtocols',['../classCsock.html#a0256789d876431c52f9e2e905440319f',1,'Csock']]],
   ['disconnected_41',['disconnected',['../classCClient.html#aa4e7bcf81ee42a4ac80b49bcda360e91',1,'CClient::Disconnected()'],['../classCIRCSock.html#acc0364838e622f6a7bec1b515cb49a37',1,'CIRCSock::Disconnected()'],['../classCsock.html#aea4ef32ddae3f80d3d9296f52bd51431',1,'Csock::Disconnected()']]],
   ['dnslookup_42',['DNSLookup',['../classCsock.html#a765aca4259f116588f591762286905f4',1,'Csock']]],
-  ['dumpconfig_43',['DumpConfig',['../classCZNC.html#a94777b3548358a6b32a9512993d2bbc3',1,'CZNC']]],
-  ['dynamicselectloop_44',['DynamicSelectLoop',['../classCSocketManager.html#aa5259aaf7a27ee048eb2a6480f45c387',1,'CSocketManager']]]
+  ['doembeddedwebrequest_43',['DoEmbeddedWebRequest',['../classCModule.html#afc620a1e2c6f011b0df1ad0fd4db50ca',1,'CModule']]],
+  ['dumpconfig_44',['DumpConfig',['../classCZNC.html#a94777b3548358a6b32a9512993d2bbc3',1,'CZNC']]],
+  ['dynamicselectloop_45',['DynamicSelectLoop',['../classCSocketManager.html#aa5259aaf7a27ee048eb2a6480f45c387',1,'CSocketManager']]]
 ];

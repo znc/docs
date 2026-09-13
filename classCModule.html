@@ -73,6 +73,7 @@ $(function() {
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="classCModule-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">CModule Class Reference</div></div>
 </div><!--header-->
@@ -267,6 +268,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af4f9c3de904e118e827b927ecb4e8015"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a650ba1a9af6b91ec0175a245382344eb" id="r_a650ba1a9af6b91ec0175a245382344eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#a650ba1a9af6b91ec0175a245382344eb">SetClient</a> (<a class="el" href="classCClient.html">CClient</a> *pClient)</td></tr>
 <tr class="separator:a650ba1a9af6b91ec0175a245382344eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd4bcb0412c74888745da69ddebb1119" id="r_afd4bcb0412c74888745da69ddebb1119"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#afd4bcb0412c74888745da69ddebb1119">IsCallStackEmpty</a> () const</td></tr>
+<tr class="memdesc:afd4bcb0412c74888745da69ddebb1119"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if the module can be safely unloaded.  <br /></td></tr>
+<tr class="separator:afd4bcb0412c74888745da69ddebb1119"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe4a1a37b1597db3a2f04ed7ac2ac7c9" id="r_afe4a1a37b1597db3a2f04ed7ac2ac7c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#afe4a1a37b1597db3a2f04ed7ac2ac7c9">Unload</a> ()</td></tr>
 <tr class="memdesc:afe4a1a37b1597db3a2f04ed7ac2ac7c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function throws <a class="el" href="classCModule.html#aad1b3611e4d3891b93fcb3aded5609f5a8f3ef8f7aa9f586ea2e375f063658f60" title="Your module can throw this enum at any given time.">CModule::UNLOAD</a> which causes this module to be unloaded.  <br /></td></tr>
 <tr class="separator:afe4a1a37b1597db3a2f04ed7ac2ac7c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -307,9 +311,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5a10774e82f40489d570ead6cca444e5" id="r_a5a10774e82f40489d570ead6cca444e5"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="WebModules_8h.html#ab585ce11740587b08deb0da25de3c2d6">VWebSubPages</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#a5a10774e82f40489d570ead6cca444e5">GetSubPages</a> ()</td></tr>
 <tr class="memdesc:a5a10774e82f40489d570ead6cca444e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a list of all registered SubPages.  <br /></td></tr>
 <tr class="separator:a5a10774e82f40489d570ead6cca444e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a044bbf55ea6afeef136fdf2ccc5321" id="r_a6a044bbf55ea6afeef136fdf2ccc5321"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#a6a044bbf55ea6afeef136fdf2ccc5321">OnEmbeddedWebRequest</a> (<a class="el" href="classCWebSock.html">CWebSock</a> &amp;WebSock, const <a class="el" href="classCString.html">CString</a> &amp;sPageName, <a class="el" href="classCTemplate.html">CTemplate</a> &amp;Tmpl)</td></tr>
-<tr class="memdesc:a6a044bbf55ea6afeef136fdf2ccc5321"><td class="mdescLeft">&#160;</td><td class="mdescRight">Using this hook, module can embed web stuff directly to different places.  <br /></td></tr>
-<tr class="separator:a6a044bbf55ea6afeef136fdf2ccc5321"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc620a1e2c6f011b0df1ad0fd4db50ca" id="r_afc620a1e2c6f011b0df1ad0fd4db50ca"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#afc620a1e2c6f011b0df1ad0fd4db50ca">DoEmbeddedWebRequest</a> (<a class="el" href="classCWebSock.html">CWebSock</a> &amp;WebSock, const <a class="el" href="classCString.html">CString</a> &amp;sPageName, <a class="el" href="classCTemplate.html">CTemplate</a> &amp;Tmpl)</td></tr>
+<tr class="separator:afc620a1e2c6f011b0df1ad0fd4db50ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afaffa3fe145cb88e3a3801338f0fa201" id="r_afaffa3fe145cb88e3a3801338f0fa201"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#afaffa3fe145cb88e3a3801338f0fa201">OnPreRehash</a> ()</td></tr>
 <tr class="memdesc:afaffa3fe145cb88e3a3801338f0fa201"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called just before znc.conf is rehashed.  <br /></td></tr>
 <tr class="separator:afaffa3fe145cb88e3a3801338f0fa201"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -875,6 +878,11 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a87846f2fa67be3dc184c64c3ec21989f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03452f76feaf8ecd96936ab600d674c7" id="r_a03452f76feaf8ecd96936ab600d674c7"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="classCString.html">CString</a>, std::unique_ptr&lt; <a class="el" href="classCCapability.html">CCapability</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#a03452f76feaf8ecd96936ab600d674c7">m_mServerDependentCaps</a></td></tr>
 <tr class="separator:a03452f76feaf8ecd96936ab600d674c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:af7b4b5dfe9fd1175ba31a3fc9950b837" id="r_af7b4b5dfe9fd1175ba31a3fc9950b837"><td class="memItemLeft" align="right" valign="top">struct&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCModule.html#af7b4b5dfe9fd1175ba31a3fc9950b837">CModCallProtector</a></td></tr>
+<tr class="separator:af7b4b5dfe9fd1175ba31a3fc9950b837"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The base class for your own ZNC modules. </p>
@@ -1552,6 +1560,40 @@ Protected Attributes</h2></td></tr>
 <span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afc620a1e2c6f011b0df1ad0fd4db50ca" name="afc620a1e2c6f011b0df1ad0fd4db50ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc620a1e2c6f011b0df1ad0fd4db50ca">&#9670;&#160;</a></span>DoEmbeddedWebRequest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CModule::DoEmbeddedWebRequest </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCWebSock.html">CWebSock</a> &amp;&#160;</td>
+          <td class="paramname"><em>WebSock</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
+          <td class="paramname"><em>sPageName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classCTemplate.html">CTemplate</a> &amp;&#160;</td>
+          <td class="paramname"><em>Tmpl</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>
@@ -2505,6 +2547,25 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="afd4bcb0412c74888745da69ddebb1119" name="afd4bcb0412c74888745da69ddebb1119"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd4bcb0412c74888745da69ddebb1119">&#9670;&#160;</a></span>IsCallStackEmpty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CModule::IsCallStackEmpty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>True if the module can be safely unloaded. </p>
 
 </div>
 </div>
@@ -4318,59 +4379,6 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Called when a nick is devoiced on a channel. </p>
-
-</div>
-</div>
-<a id="a6a044bbf55ea6afeef136fdf2ccc5321" name="a6a044bbf55ea6afeef136fdf2ccc5321"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a044bbf55ea6afeef136fdf2ccc5321">&#9670;&#160;</a></span>OnEmbeddedWebRequest()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool CModule::OnEmbeddedWebRequest </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classCWebSock.html">CWebSock</a> &amp;&#160;</td>
-          <td class="paramname"><em>WebSock</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classCString.html">CString</a> &amp;&#160;</td>
-          <td class="paramname"><em>sPageName</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classCTemplate.html">CTemplate</a> &amp;&#160;</td>
-          <td class="paramname"><em>Tmpl</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Using this hook, module can embed web stuff directly to different places. </p>
-<p>This method is called whenever embededded modules I/O happens. Name of used .tmpl file (if any) is up to caller. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">WebSock</td><td>Socket for web connection, don't do bad things with it. </td></tr>
-    <tr><td class="paramname">sPageName</td><td>Describes the place where web stuff is embedded to. </td></tr>
-    <tr><td class="paramname">Tmpl</td><td>Template. Depending on context, you can do various stuff with it. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>If you don't need to embed web stuff to the specified place, just return false. Exact meaning of return value is up to caller, and depends on context. </dd></dl>
 
 </div>
 </div>
@@ -8970,6 +8978,29 @@ CString&amp;, const CString&amp;) for each line in the table. </p>
 
 </div>
 </div>
+<h2 class="groupheader">Friends And Related Symbol Documentation</h2>
+<a id="af7b4b5dfe9fd1175ba31a3fc9950b837" name="af7b4b5dfe9fd1175ba31a3fc9950b837"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7b4b5dfe9fd1175ba31a3fc9950b837">&#9670;&#160;</a></span>CModCallProtector</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend struct <a class="el" href="structCModCallProtector.html">CModCallProtector</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a3d367bc958a42dfcf85bdafe036802da" name="a3d367bc958a42dfcf85bdafe036802da"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3d367bc958a42dfcf85bdafe036802da">&#9670;&#160;</a></span>m_eType</h2>
@@ -9363,7 +9394,7 @@ CString&amp;, const CString&amp;) for each line in the table. </p>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 9 2025 23:01:23 for ZNC by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Sep 13 2026 09:55:35 for ZNC by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>
