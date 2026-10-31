@@ -68,7 +68,7 @@ var searchData=
   ['escape_5fn_65',['escape_n',['../classCString.html#abe92d38847cbc14b068d6b19133a1e14',1,'CString::Escape_n(EEscape eFrom, EEscape eTo) const'],['../classCString.html#a1f4753c16dfcf6d03d6f0ac79677e7f6',1,'CString::Escape_n(EEscape eTo) const']]],
   ['esql_66',['ESQL',['../classCString.html#a8f63759db4ef372abb9cfa4751648e1fa5528b3d17d10fc5d915c4888b2c0c142',1,'CString']]],
   ['esslmethod_67',['ESSLMethod',['../classCsock.html#aa7da8fe2945d8cfca7c53aec88fdad68',1,'Csock']]],
-  ['estyle_68',['estyle',['../classCTable.html#abb56cf9ab1a3d5b2b09eaab3ed8a259c',1,'CTable::EStyle'],['../classCTable.html#a4ba341722c2fd87a7afe4041196c4cf3',1,'CTable::eStyle']]],
+  ['estyle_68',['estyle',['../classCTable.html#a4ba341722c2fd87a7afe4041196c4cf3',1,'CTable::eStyle'],['../classCTable.html#abb56cf9ab1a3d5b2b09eaab3ed8a259c',1,'CTable::EStyle']]],
   ['etconn_69',['ETConn',['../classCsock.html#a12ece5f34b7f197eb764e25b0b43b999',1,'Csock']]],
   ['etype_70',['EType',['../classCException.html#a6f33628b840f8d255299da8736136a88',1,'CException']]],
   ['eurl_71',['EURL',['../classCString.html#a8f63759db4ef372abb9cfa4751648e1fa51df786ffcb52b401ad2ef2d10170f75',1,'CString']]],
