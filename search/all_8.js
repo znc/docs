@@ -12,7 +12,7 @@ var searchData=
   ['handlepipereadable_9',['handlePipeReadable',['../classCThreadPool.html#a539303b55e17961509eaaf9ff5aecc13',1,'CThreadPool']]],
   ['handletag_10',['handletag',['../classCTemplateTagHandler.html#a87354dd5a2e1a70155508a199cd9a744',1,'CTemplateTagHandler::HandleTag()'],['../classCZNCTagHandler.html#a5c1516ae6d00dd6e786f5f9aa68e499d',1,'CZNCTagHandler::HandleTag()']]],
   ['handlevalue_11',['HandleValue',['../classCTemplateTagHandler.html#afd5c5ba2bf9fb315e667638804e2e730',1,'CTemplateTagHandler']]],
-  ['handlevar_12',['HandleVar',['../classCTemplateTagHandler.html#a7beaeb4197567e3f6866ba05e3d3568f',1,'CTemplateTagHandler']]],
+  ['handlevar_12',['handlevar',['../classCZNCTagHandler.html#afde6375d0061a0f0ebc44cc88fde463e',1,'CZNCTagHandler::HandleVar()'],['../classCTemplateTagHandler.html#a7beaeb4197567e3f6866ba05e3d3568f',1,'CTemplateTagHandler::HandleVar()']]],
   ['hasaccountnotify_13',['hasaccountnotify',['../classCClient.html#abeb1d3fe123e6b2056e61c86fe726a78',1,'CClient::HasAccountNotify()'],['../classCIRCSock.html#a91b1eccb2310b8c9db5573dc2a49db41',1,'CIRCSock::HasAccountNotify() const']]],
   ['hasarg_14',['HasArg',['../classCIRCSock.html#a8e68d9e0596157b56783e5e9603f7b69a2175a3f8935ca47e0cc580af476f5903',1,'CIRCSock']]],
   ['hasautoclearchanbufferset_15',['HasAutoClearChanBufferSet',['../classCChan.html#ac6defe47036cb6f2236b56b655f36f15',1,'CChan']]],
