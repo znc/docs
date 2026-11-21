@@ -1,21 +1,21 @@
 <map id="TSocketManager&lt; T &gt;" name="TSocketManager&lt; T &gt;">
-<area shape="rect" id="Node000001" title="Ease of use templated socket manager." alt="" coords="59,433,227,459"/>
-<area shape="rect" id="Node000002" href="$classCSocketManager.html" title="Best class to use to interact with the sockets." alt="" coords="78,359,209,384"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,398,146,433,141,433,141,398"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="5,284,135,309"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="94,317,133,356,130,360,90,321"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="51,196,89,221"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="73,235,73,283,67,283,67,235"/>
-<area shape="rect" id="Node000005" href="$classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock" alt="" coords="159,284,280,309"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="199,321,158,360,154,356,195,317"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="123,196,294,221"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="214,235,220,283,215,284,209,236"/>
-<area shape="rect" id="Node000007" href="$classCCron.html" title="this is the main cron job class" alt="" coords="178,108,239,133"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="211,147,211,195,206,195,206,147"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="319,196,536,221"/>
-<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="388,229,248,286,246,281,386,224"/>
-<area shape="rect" id="Node000009" href="$classCSMonitorFD.html" title="Class to tie sockets to for monitoring by Csocket at either the Csock or TSockManager." alt="" coords="374,108,481,133"/>
-<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="430,147,430,195,425,195,425,147"/>
-<area shape="rect" id="Node000010" title=" " alt="" coords="347,5,508,45"/>
-<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="430,59,430,108,425,108,425,59"/>
+<area shape="rect" id="Node000001" title="Ease of use templated socket manager." alt="" coords="59,478,226,506"/>
+<area shape="rect" id="Node000002" href="$classCSocketManager.html" title="Best class to use to interact with the sockets." alt="" coords="78,401,208,429"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,443,145,479,140,477,141,446"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,324,134,352"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="93,360,133,400,128,402,92,366"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="50,224,89,251"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="70,264,72,324,67,323,69,270"/>
+<area shape="rect" id="Node000005" href="$classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock" alt="" coords="157,324,278,352"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="196,361,157,403,154,399,192,365"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="122,224,292,251"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="211,264,219,324,213,323,209,269"/>
+<area shape="rect" id="Node000007" href="$classCCron.html" title="this is the main cron job class" alt="" coords="177,123,237,151"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="208,164,209,224,204,222,206,169"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="316,224,532,251"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="383,260,300,303,249,326,246,321,298,298,387,257"/>
+<area shape="rect" id="Node000009" href="$classCSMonitorFD.html" title="Class to tie sockets to for monitoring by Csocket at either the Csock or TSockManager." alt="" coords="371,123,477,151"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="426,164,427,224,422,222,423,169"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="344,5,504,50"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="425,63,427,124,422,122,423,68"/>
 </map>

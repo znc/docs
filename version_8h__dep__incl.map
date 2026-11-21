@@ -1,14 +1,14 @@
 <map id="version.h" name="version.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="52,5,135,31"/>
-<area shape="rect" id="Node000002" href="$main_8h.html" title=" " alt="" coords="60,79,127,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,44,96,79,91,79,91,44"/>
-<area shape="rect" id="Node000003" href="$Client_8h.html" title=" " alt="" coords="5,152,77,177"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="79,117,52,153,48,150,75,114"/>
-<area shape="rect" id="Node000006" href="$Modules_8h.html" title=" " alt="" coords="102,152,191,177"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="112,113,140,150,136,153,108,117"/>
-<area shape="rect" id="Node000004" href="$znc_8h.html" title=" " alt="" coords="65,225,121,251"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="60,187,87,224,83,227,56,190"/>
-<area shape="rect" id="Node000005" href="$IRCNetwork_8h.html" title=" " alt="" coords="38,299,149,324"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="96,264,96,299,91,299,91,264"/>
-<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="132,190,104,227,100,224,128,187"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="52,5,134,33"/>
+<area shape="rect" id="Node000002" href="$main_8h.html" title=" " alt="" coords="60,81,126,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,46,96,81,90,80,93,51"/>
+<area shape="rect" id="Node000003" href="$Client_8h.html" title=" " alt="" coords="5,157,77,184"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="74,124,53,157,48,155,76,119"/>
+<area shape="rect" id="Node000006" href="$Modules_8h.html" title=" " alt="" coords="101,157,189,184"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="111,119,138,156,133,157,111,124"/>
+<area shape="rect" id="Node000004" href="$znc_8h.html" title=" " alt="" coords="65,232,121,260"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="59,194,86,231,81,232,59,200"/>
+<area shape="rect" id="Node000005" href="$IRCNetwork_8h.html" title=" " alt="" coords="38,308,148,336"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="95,274,95,309,91,307,91,278"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="129,195,104,234,100,230,125,199"/>
 </map>

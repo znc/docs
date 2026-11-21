@@ -4,5 +4,5 @@ var searchData=
   ['validatewebrequestcsrfcheck_1',['ValidateWebRequestCSRFCheck',['../classCModule.html#aaa81a0768863f207aa0702777f534802',1,'CModule']]],
   ['validexpr_2',['ValidExpr',['../classCTemplate.html#ab14c5e2120ec433d72137a1a56e9e460',1,'CTemplate']]],
   ['validif_3',['ValidIf',['../classCTemplate.html#afada5e466c6e0aac83320ffdb1dabfa9',1,'CTemplate']]],
-  ['verifypeercertificate_4',['verifypeercertificate',['../classCZNCSock.html#a8af79eb2248469f40e088e7b8f7ae17b',1,'CZNCSock::VerifyPeerCertificate()'],['../classCsock.html#a40aec412d77fb21e3213271fc4a4f01c',1,'Csock::VerifyPeerCertificate()']]]
+  ['verifypeercertificate_4',['VerifyPeerCertificate',['../classCZNCSock.html#a8af79eb2248469f40e088e7b8f7ae17b',1,'CZNCSock::VerifyPeerCertificate()'],['../classCsock.html#a40aec412d77fb21e3213271fc4a4f01c',1,'Csock::VerifyPeerCertificate()']]]
 ];

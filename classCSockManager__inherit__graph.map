@@ -1,13 +1,13 @@
 <map id="CSockManager" name="CSockManager">
-<area shape="rect" id="Node000001" title=" " alt="" coords="196,225,315,251"/>
-<area shape="rect" id="Node000002" href="$classTSocketManager.html" title=" " alt="" coords="31,152,259,177"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,183,239,223,236,227,173,187"/>
-<area shape="rect" id="Node000003" href="$classCSocketManager.html" title="Best class to use to interact with the sockets." alt="" coords="79,79,210,104"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="147,118,147,152,142,152,142,118"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="5,5,135,31"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="94,38,134,77,131,80,90,42"/>
-<area shape="rect" id="Node000005" href="$classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock" alt="" coords="159,5,280,31"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="199,42,159,80,155,77,196,38"/>
-<area shape="rect" id="Node000006" href="$classCCoreTranslationMixin.html" title=" " alt="" coords="283,152,451,177"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="339,187,275,227,272,223,336,183"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="194,232,313,260"/>
+<area shape="rect" id="Node000002" href="$classTSocketManager.html" title=" " alt="" coords="29,157,256,184"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="176,190,237,232,231,232,174,196"/>
+<area shape="rect" id="Node000003" href="$classCSocketManager.html" title="Best class to use to interact with the sockets." alt="" coords="78,81,208,109"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="144,122,145,157,140,155,141,127"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,5,134,33"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="93,42,132,80,127,81,93,47"/>
+<area shape="rect" id="Node000005" href="$classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock" alt="" coords="157,5,278,33"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="191,46,158,82,154,79,195,42"/>
+<area shape="rect" id="Node000006" href="$classCCoreTranslationMixin.html" title=" " alt="" coords="280,157,448,184"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="335,192,274,234,272,229,329,194"/>
 </map>

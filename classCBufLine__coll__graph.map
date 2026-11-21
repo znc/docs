@@ -1,11 +1,11 @@
 <map id="CBufLine" name="CBufLine">
-<area shape="rect" id="Node000001" title=" " alt="" coords="66,257,146,283"/>
-<area shape="rect" id="Node000002" href="$classCMessage.html" title="Here is a small explanation of how messages on IRC work, and how you can use this class to get useful..." alt="" coords="5,169,95,195"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="49,208,54,232,65,245,79,255,76,259,61,249,49,235,44,209"/>
-<area shape="rect" id="Node000003" href="$classCString.html" title="String class that is used inside ZNC." alt="" coords="129,169,198,195"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="153,208,136,235,118,259,114,256,132,232,148,205"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="120,95,207,120"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="166,134,166,169,161,169,161,134"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="94,5,233,45"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="166,59,166,94,161,94,161,59"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="68,277,148,305"/>
+<area shape="rect" id="Node000002" href="$classCMessage.html" title="Here is a small explanation of how messages on IRC work, and how you can use this class to get useful..." alt="" coords="5,176,94,204"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="46,217,49,236,54,252,64,264,79,276,74,277,61,268,49,254,43,237,44,222"/>
+<area shape="rect" id="Node000003" href="$classCString.html" title="String class that is used inside ZNC." alt="" coords="133,176,201,204"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="158,216,140,254,122,279,118,274,135,252,154,219"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="124,99,210,127"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="168,140,169,177,164,175,166,145"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="98,5,236,50"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="168,63,169,100,164,98,166,68"/>
 </map>

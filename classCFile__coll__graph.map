@@ -1,9 +1,9 @@
 <map id="CFile" name="CFile">
-<area shape="rect" id="Node000001" title=" " alt="" coords="47,272,102,297"/>
-<area shape="rect" id="Node000002" href="$classCString.html" title="String class that is used inside ZNC." alt="" coords="40,169,109,195"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="77,209,77,272,72,272,72,209"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="31,95,118,120"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="77,134,77,169,72,169,72,134"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="5,5,144,45"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="77,59,77,94,72,94,72,59"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="48,299,101,327"/>
+<area shape="rect" id="Node000002" href="$classCString.html" title="String class that is used inside ZNC." alt="" coords="40,176,109,204"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="77,218,77,299,72,298,72,221"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="31,99,118,127"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="75,140,77,176,72,176,74,145"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,5,144,50"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="75,63,77,99,72,99,74,68"/>
 </map>

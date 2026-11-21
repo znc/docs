@@ -1,7 +1,7 @@
 <map id="CClientAuth" name="CClientAuth">
-<area shape="rect" id="Node000001" title=" " alt="" coords="40,152,139,177"/>
-<area shape="rect" id="Node000002" href="$classCAuthBase.html" title=" " alt="" coords="43,79,136,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,118,92,152,87,152,87,118"/>
-<area shape="rect" id="Node000003" href="$classCCoreTranslationMixin.html" title=" " alt="" coords="5,5,173,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="92,44,92,79,87,79,87,44"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="40,157,138,184"/>
+<area shape="rect" id="Node000002" href="$classCAuthBase.html" title=" " alt="" coords="43,81,135,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,123,91,157,87,155,87,126"/>
+<area shape="rect" id="Node000003" href="$classCCoreTranslationMixin.html" title=" " alt="" coords="5,5,173,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="90,46,92,81,86,80,88,51"/>
 </map>

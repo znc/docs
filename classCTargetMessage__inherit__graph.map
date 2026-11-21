@@ -1,23 +1,23 @@
 <map id="CTargetMessage" name="CTargetMessage">
-<area shape="rect" id="Node000001" title=" " alt="" coords="143,203,272,228"/>
-<area shape="rect" id="Node000003" href="$classCActionMessage.html" title=" " alt="" coords="320,5,451,31"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="216,189,254,116,283,75,318,40,337,29,340,33,322,44,287,79,259,119,221,191"/>
-<area shape="rect" id="Node000004" href="$classCCTCPMessage.html" title=" " alt="" coords="324,55,447,80"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="223,190,263,139,289,113,319,89,340,78,343,82,321,94,293,117,267,143,227,193"/>
-<area shape="rect" id="Node000005" href="$classCJoinMessage.html" title=" " alt="" coords="329,104,442,129"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="235,192,274,165,319,138,344,127,347,132,321,143,277,169,238,196"/>
-<area shape="rect" id="Node000006" href="$classCKickMessage.html" title=" " alt="" coords="327,153,444,179"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="266,196,338,176,339,181,268,201"/>
-<area shape="rect" id="Node000007" href="$classCModeMessage.html" title=" " alt="" coords="323,203,448,228"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="286,213,322,213,322,218,286,218"/>
-<area shape="rect" id="Node000008" href="$classCNoticeMessage.html" title=" " alt="" coords="320,252,451,277"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="268,229,339,249,338,254,266,234"/>
-<area shape="rect" id="Node000009" href="$classCPartMessage.html" title=" " alt="" coords="328,301,443,327"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="238,234,277,261,321,288,347,299,344,304,319,292,274,266,235,239"/>
-<area shape="rect" id="Node000010" href="$classCTextMessage.html" title=" " alt="" coords="327,351,443,376"/>
-<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="227,238,267,288,293,314,321,337,343,348,340,353,319,342,289,318,263,291,223,241"/>
-<area shape="rect" id="Node000011" href="$classCTopicMessage.html" title=" " alt="" coords="324,400,447,425"/>
-<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="221,240,259,312,287,352,322,387,340,398,337,402,318,391,283,355,254,315,216,242"/>
-<area shape="rect" id="Node000002" href="$classCMessage.html" title="Here is a small explanation of how messages on IRC work, and how you can use this class to get useful..." alt="" coords="5,203,95,228"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,213,143,213,143,218,109,218"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="142,213,270,241"/>
+<area shape="rect" id="Node000003" href="$classCActionMessage.html" title=" " alt="" coords="318,5,448,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="216,198,253,122,281,81,316,44,339,32,335,35,320,48,286,84,258,125,220,200"/>
+<area shape="rect" id="Node000004" href="$classCCTCPMessage.html" title=" " alt="" coords="322,57,444,85"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="223,199,262,147,288,120,316,96,342,84,337,87,320,100,291,124,266,151,227,202"/>
+<area shape="rect" id="Node000005" href="$classCJoinMessage.html" title=" " alt="" coords="327,109,439,137"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="235,202,273,174,317,147,346,136,341,139,319,152,276,179,239,206"/>
+<area shape="rect" id="Node000006" href="$classCKickMessage.html" title=" " alt="" coords="325,161,441,189"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="269,206,336,188,331,191,272,211"/>
+<area shape="rect" id="Node000007" href="$classCModeMessage.html" title=" " alt="" coords="321,213,445,241"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="285,225,323,226,318,228,286,230"/>
+<area shape="rect" id="Node000008" href="$classCNoticeMessage.html" title=" " alt="" coords="318,265,448,293"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="270,243,336,264,331,265,271,249"/>
+<area shape="rect" id="Node000009" href="$classCPartMessage.html" title=" " alt="" coords="326,317,440,345"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="237,248,276,275,319,302,346,317,341,317,317,307,273,280,237,253"/>
+<area shape="rect" id="Node000010" href="$classCTextMessage.html" title=" " alt="" coords="326,369,441,397"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="225,252,266,304,291,331,320,354,342,369,337,369,316,359,288,334,262,307,224,257"/>
+<area shape="rect" id="Node000011" href="$classCTopicMessage.html" title=" " alt="" coords="322,421,444,449"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="219,253,258,329,286,370,320,406,340,421,335,420,316,411,281,374,253,332,217,258"/>
+<area shape="rect" id="Node000002" href="$classCMessage.html" title="Here is a small explanation of how messages on IRC work, and how you can use this class to get useful..." alt="" coords="5,213,94,241"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,225,144,226,139,229,110,230"/>
 </map>

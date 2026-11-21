@@ -6,7 +6,7 @@ var searchData=
   ['validif_3',['ValidIf',['../classCTemplate.html#afada5e466c6e0aac83320ffdb1dabfa9',1,'CTemplate']]],
   ['value_4',['value',['../classTCacheMap.html#ad030261fdb9f2ec14b4afcffbce47b31',1,'TCacheMap']]],
   ['vcstring_5',['VCString',['../ZNCString_8h.html#af7252b7c4a0d4ec44ddc136c6055ae51',1,'ZNCString.h']]],
-  ['verifypeercertificate_6',['verifypeercertificate',['../classCZNCSock.html#a8af79eb2248469f40e088e7b8f7ae17b',1,'CZNCSock::VerifyPeerCertificate()'],['../classCsock.html#a40aec412d77fb21e3213271fc4a4f01c',1,'Csock::VerifyPeerCertificate()']]],
+  ['verifypeercertificate_6',['VerifyPeerCertificate',['../classCZNCSock.html#a8af79eb2248469f40e088e7b8f7ae17b',1,'CZNCSock::VerifyPeerCertificate()'],['../classCsock.html#a40aec412d77fb21e3213271fc4a4f01c',1,'Csock::VerifyPeerCertificate()']]],
   ['version_7',['VERSION',['../version_8h.html#a1c6d5de492ac61ad29aec7aa9a436bbf',1,'version.h']]],
   ['version_2eh_8',['version.h',['../version_8h.html',1,'']]],
   ['version_5fextra_9',['VERSION_EXTRA',['../version_8h.html#a078eaa4fbbcc2c248521462f87787e87',1,'version.h']]],

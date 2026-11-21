@@ -1,25 +1,25 @@
 <map id="Csock" name="Csock">
-<area shape="rect" id="Node000001" title="Basic socket class." alt="" coords="294,79,355,104"/>
-<area shape="rect" id="Node000003" href="$classCZNCSock.html" title=" " alt="" coords="279,152,370,177"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="327,118,327,152,322,152,322,118"/>
-<area shape="rect" id="Node000002" href="$classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock" alt="" coords="264,5,385,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="327,44,327,79,322,79,322,44"/>
-<area shape="rect" id="Node000004" href="$classCExecSock.html" title=" " alt="" coords="5,225,97,251"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="268,183,96,228,95,223,267,178"/>
-<area shape="rect" id="Node000005" href="$classCIRCSocket.html" title="Base IRC socket for client&lt;&#45;&gt;ZNC, and ZNC&lt;&#45;&gt;server." alt="" coords="122,225,218,251"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="289,185,196,228,194,223,286,181"/>
-<area shape="rect" id="Node000008" href="$classCIncomingConnection.html" title=" " alt="" coords="243,225,407,251"/>
-<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="327,191,327,225,322,225,322,191"/>
-<area shape="rect" id="Node000009" href="$classCRealListener.html" title=" " alt="" coords="431,225,543,251"/>
-<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="364,180,462,223,460,228,362,185"/>
-<area shape="rect" id="Node000010" href="$classCSocket.html" title="Base Csock implementation to be used by modules." alt="" coords="567,225,642,251"/>
-<area shape="poly" id="edge9_Node000003_Node000010" title=" " alt="" coords="383,178,568,225,566,230,382,183"/>
-<area shape="rect" id="Node000006" href="$classCClient.html" title=" " alt="" coords="85,299,154,324"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="156,264,130,300,125,297,151,261"/>
-<area shape="rect" id="Node000007" href="$classCIRCSock.html" title=" " alt="" coords="179,299,263,324"/>
-<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="189,261,215,297,210,300,184,264"/>
-<area shape="rect" id="Node000011" href="$classCHTTPSock.html" title=" " alt="" coords="557,299,653,324"/>
-<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="607,264,607,299,602,299,602,264"/>
-<area shape="rect" id="Node000012" href="$classCWebSock.html" title=" " alt="" coords="559,372,650,397"/>
-<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="607,338,607,372,602,372,602,338"/>
+<area shape="rect" id="Node000001" title="Basic socket class." alt="" coords="292,81,352,109"/>
+<area shape="rect" id="Node000003" href="$classCZNCSock.html" title=" " alt="" coords="277,157,366,184"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="323,122,324,157,319,155,320,127"/>
+<area shape="rect" id="Node000002" href="$classCSockCommon.html" title="simple class to share common code to both TSockManager and Csock" alt="" coords="262,5,382,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="323,46,324,81,319,80,321,51"/>
+<area shape="rect" id="Node000004" href="$classCExecSock.html" title=" " alt="" coords="5,232,97,260"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="261,190,98,235,96,230,263,186"/>
+<area shape="rect" id="Node000005" href="$classCIRCSocket.html" title="Base IRC socket for client&lt;&#45;&gt;ZNC, and ZNC&lt;&#45;&gt;server." alt="" coords="121,232,216,260"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="278,193,197,234,194,230,283,190"/>
+<area shape="rect" id="Node000008" href="$classCIncomingConnection.html" title=" " alt="" coords="240,232,403,260"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="323,198,324,233,319,231,320,202"/>
+<area shape="rect" id="Node000009" href="$classCRealListener.html" title=" " alt="" coords="427,232,539,260"/>
+<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="364,188,457,231,452,232,364,194"/>
+<area shape="rect" id="Node000010" href="$classCSocket.html" title="Base Csock implementation to be used by modules." alt="" coords="562,232,636,260"/>
+<area shape="poly" id="edge9_Node000003_Node000010" title=" " alt="" coords="382,185,564,234,559,236,381,190"/>
+<area shape="rect" id="Node000006" href="$classCClient.html" title=" " alt="" coords="84,308,152,336"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="152,271,129,309,125,306,149,275"/>
+<area shape="rect" id="Node000007" href="$classCIRCSock.html" title=" " alt="" coords="176,308,259,336"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="187,271,212,308,206,307,185,276"/>
+<area shape="rect" id="Node000011" href="$classCHTTPSock.html" title=" " alt="" coords="551,308,647,336"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="601,274,601,309,597,306,597,278"/>
+<area shape="rect" id="Node000012" href="$classCWebSock.html" title=" " alt="" coords="554,384,644,411"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="601,350,601,385,597,381,597,353"/>
 </map>

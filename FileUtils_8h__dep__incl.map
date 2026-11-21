@@ -1,13 +1,13 @@
 <map id="FileUtils.h" name="FileUtils.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="21,5,107,31"/>
-<area shape="rect" id="Node000002" href="$HTTPSock_8h.html" title=" " alt="" coords="15,79,113,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="67,44,67,79,61,79,61,44"/>
-<area shape="rect" id="Node000003" href="$WebModules_8h.html" title=" " alt="" coords="5,152,123,177"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="67,118,67,152,61,152,61,118"/>
-<area shape="rect" id="Node000004" href="$Modules_8h.html" title=" " alt="" coords="19,225,109,251"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="67,191,67,225,61,225,61,191"/>
-<area shape="rect" id="Node000005" href="$znc_8h.html" title=" " alt="" coords="36,299,92,324"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="67,264,67,299,61,299,61,264"/>
-<area shape="rect" id="Node000006" href="$IRCNetwork_8h.html" title=" " alt="" coords="9,372,119,397"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="67,338,67,372,61,372,61,338"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="20,5,107,33"/>
+<area shape="rect" id="Node000002" href="$HTTPSock_8h.html" title=" " alt="" coords="14,81,113,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="64,46,66,81,61,80,63,51"/>
+<area shape="rect" id="Node000003" href="$WebModules_8h.html" title=" " alt="" coords="5,157,122,184"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="64,122,66,156,61,156,63,127"/>
+<area shape="rect" id="Node000004" href="$Modules_8h.html" title=" " alt="" coords="19,232,108,260"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="64,198,66,232,61,232,63,203"/>
+<area shape="rect" id="Node000005" href="$znc_8h.html" title=" " alt="" coords="36,308,91,336"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="64,273,66,308,61,307,63,278"/>
+<area shape="rect" id="Node000006" href="$IRCNetwork_8h.html" title=" " alt="" coords="8,384,119,411"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="65,350,66,384,61,382,62,353"/>
 </map>

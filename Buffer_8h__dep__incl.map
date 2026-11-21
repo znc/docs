@@ -1,11 +1,11 @@
 <map id="Buffer.h" name="Buffer.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="173,5,245,31"/>
-<area shape="rect" id="Node000002" href="$Chan_8h.html" title=" " alt="" coords="5,79,72,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,38,68,81,66,76,168,33"/>
-<area shape="rect" id="Node000003" href="$IRCNetwork_8h.html" title=" " alt="" coords="97,79,207,104"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="194,43,163,80,159,77,189,40"/>
-<area shape="rect" id="Node000004" href="$Query_8h.html" title=" " alt="" coords="231,79,302,104"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="229,40,259,77,255,80,225,43"/>
-<area shape="rect" id="Node000005" href="$User_8h.html" title=" " alt="" coords="326,79,389,104"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="246,34,334,76,332,81,244,39"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="172,5,244,33"/>
+<area shape="rect" id="Node000002" href="$Chan_8h.html" title=" " alt="" coords="5,81,72,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="165,42,70,83,67,78,163,37"/>
+<area shape="rect" id="Node000003" href="$IRCNetwork_8h.html" title=" " alt="" coords="95,81,206,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="191,44,162,83,159,78,186,46"/>
+<area shape="rect" id="Node000004" href="$Query_8h.html" title=" " alt="" coords="230,81,300,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="229,43,258,81,252,80,226,48"/>
+<area shape="rect" id="Node000005" href="$User_8h.html" title=" " alt="" coords="325,81,387,109"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="249,38,332,80,327,81,247,43"/>
 </map>
